@@ -1,5 +1,5 @@
-# med-dispenserecord
-Medication Dispense Record
+# Medication
+Medication ImplementationGuide
 
 This is a draft publication by the HL7 Belgium Medication work group. 
 
