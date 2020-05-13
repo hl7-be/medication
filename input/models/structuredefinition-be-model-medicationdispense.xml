@@ -14,7 +14,7 @@
   <derivation value="specialization" />
   <differential>
     <element id="BeMedicationDispense">
-      <short value="A subject's addiction" />
+      <short value="An individual record of a medication dispense" />
       <path value="BeMedicationDispense" />
       <min value="0" />
       <max value="*" />
@@ -189,8 +189,8 @@
 
     <element id="BeMedicationDispense.note">
       <path value="BeMedicationDispense.note" />
-      <short value="Additional information about the addiction" />
-      <definition value="Additional information about the addiction - this can be relevant history, any remarks by the patient or professional, etc." />
+      <short value="Additional information about the dispense" />
+      <definition value="Additional information about the dispense - this can be relevant history, any remarks by the patient or professional, etc." />
       <min value="0" />
       <max value="*" />
       <type>
