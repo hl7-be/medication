@@ -1,8 +1,7 @@
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../src-generated/schemas/fhir-single.xsd" lang="en">
   <a name="scope"> </a>
 	<p>
-    This is the HL7 Belgium FHIR Implementation Guide for the Medication workgroup
- <a href="https://ehealthplatformstandards.github.io/">which can be consulted here</a>.
+    This is the HL7 Belgium FHIR Implementation Guide for the Medication workgroup.
    </p>
 	<blockquote class="stu-note">
 	<strong>This documentation and set of artefacts are still undergoing development.</strong>
