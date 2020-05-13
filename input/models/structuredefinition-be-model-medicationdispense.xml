@@ -185,8 +185,6 @@
 
 
 
-
-
     <element id="BeMedicationDispense.note">
       <path value="BeMedicationDispense.note" />
       <short value="Additional information about the dispense" />
