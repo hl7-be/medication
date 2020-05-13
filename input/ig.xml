@@ -5,8 +5,8 @@
   <url value="http://hl7.country.org/fhir/ig"/>
   <!-- This version will propagate to all artifacts unless the "propagate-version" extension is overridden -->
   <version value="0.2.0"/>
-  <name value="AffiliateIG"/>
-  <title value="Affiliate Implementation Guide"/>
+  <name value="BEMedicationIG"/>
+  <title value="HL7 Belgium Medication Implementation Guide"/>
   <status value="draft"/>
   <experimental value="false"/>
   <publisher value="HL7 Belgium"/>
@@ -17,7 +17,7 @@
       <value value="http://hl7belgium.org"/>
     </telecom>
   </contact>
-  <description value="A barebones ImplementationGuide for HL7 Affiliates"/>
+  <description value="ImplementationGuide for HL7 Belgium Medication Work Group"/>
   <jurisdiction>
     <!-- This will drive SNOMED release used -->
     <coding>
