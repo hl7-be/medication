@@ -44,17 +44,6 @@
     </element>
 
 
-    <element id="BeMedicationDispense.dispensingOrganisation">
-      <path value="BeMedicationDispense.dispensingOrganisation" />
-      <short value="The pharmacy that dispenses the medication." />
-      <definition value="." />
-      <min value="0" />
-      <max value="1" />
-      <type>
-        <code value="CodeableReference" />
-      </type>
-    </element>
-
 
 
     <element id="BeMedicationDispense.dispenser">
@@ -67,6 +56,7 @@
       <type>
       </type>
     </element>
+<!--
     <element id="BeMedicationDispense.dispenser">
       <path value="BeMedicationDispense.dispenser" />
       <short value="Person that performed the recording or reporting" />
@@ -77,9 +67,9 @@
         <code value="CodeableReference" />
       </type>
     </element>
-
-    <element id="BeMedicationDispense.dispenser.reference">
-      <path value="BeMedicationDispense.dispenser.reference" />
+-->
+    <element id="BeMedicationDispense.dispenser.person">
+      <path value="BeMedicationDispense.dispenser.dispenser" />
       <short value="Reference to person that performed the recording or reporting" />
       <definition value="Who was responsible for asserting the observed value as &quot;true&quot;. (Reference)" />
       <min value="1" />
@@ -87,6 +77,18 @@
       <type>
         <code value="Reference" />
         <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner"/>
+      </type>
+    </element>
+
+    <element id="BeMedicationDispense.dispenser.organization">
+      <path value="BeMedicationDispense.dispenser.organization" />
+      <short value="Reference to person that performed the recording or reporting" />
+      <definition value="Who was responsible for asserting the observed value as &quot;true&quot;. (Reference)" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-organization"/>
       </type>
     </element>
 

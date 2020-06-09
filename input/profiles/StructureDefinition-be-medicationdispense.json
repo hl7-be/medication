@@ -74,8 +74,9 @@
         "patternUri": "http://what-is-the-url-for-the-guid-od-the-dispense.question"
       },
       {
-        "id": "MedicationDispense.partOf",
-        "path": "MedicationDispense.partOf",
+        "id": "MedicationDispense.context",
+        "path": "MedicationDispense.context",
+        "short": "The encounter or session where the dispense occurs - for example a single visit to a pharmacy",
         "mustSupport": true
       },
       {
@@ -131,7 +132,6 @@
           ],
           "rules": "open"
         },
-        "min": 2,
         "mustSupport": true
       },
       {
@@ -147,7 +147,7 @@
         "id": "MedicationDispense.performer:dispensingOrganization",
         "path": "MedicationDispense.performer",
         "sliceName": "dispensingOrganization",
-        "min": 1,
+        "min": 0,
         "max": "1"
       },
       {
@@ -166,7 +166,7 @@
         "id": "MedicationDispense.performer:dispenser",
         "path": "MedicationDispense.performer",
         "sliceName": "dispenser",
-        "min": 1,
+        "min": 0,
         "max": "1"
       },
       {
