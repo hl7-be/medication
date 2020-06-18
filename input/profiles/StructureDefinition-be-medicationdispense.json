@@ -44,7 +44,8 @@
     "element": [
       {
         "id": "MedicationDispense",
-        "path": "MedicationDispense"
+        "path": "MedicationDispense",
+        "short": "The medication dispense entry"
       },
       {
         "id": "MedicationDispense.identifier",
@@ -74,9 +75,8 @@
         "patternUri": "http://what-is-the-url-for-the-guid-od-the-dispense.question"
       },
       {
-        "id": "MedicationDispense.context",
-        "path": "MedicationDispense.context",
-        "short": "The encounter or session where the dispense occurs - for example a single visit to a pharmacy",
+        "id": "MedicationDispense.partOf",
+        "path": "MedicationDispense.partOf",
         "mustSupport": true
       },
       {
@@ -119,6 +119,37 @@
           }
         ],
         "mustSupport": true
+      },
+      {
+        "id": "MedicationDispense.context",
+        "path": "MedicationDispense.context",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "identifier.system"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "MedicationDispense.context:SGUID",
+        "path": "MedicationDispense.context",
+        "sliceName": "SGUID",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "MedicationDispense.context:SGUID.identifier",
+        "path": "MedicationDispense.context.identifier",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationDispense.context:SGUID.identifier.system",
+        "path": "MedicationDispense.context.identifier.system",
+        "min": 1,
+        "patternUri": "http://what-is-the-url-for-the-guid-of-the-session.question"
       },
       {
         "id": "MedicationDispense.performer",
