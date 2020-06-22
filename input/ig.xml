@@ -70,8 +70,8 @@
         <reference value="MedicationDispense/medication-dispense-example-1"/>
       </reference>
       <fhirVersion value="4.0.1"/>
-      <name value="Logical Model Medication Dispense"/>
-      <description value="Medication Dispense entry - information captured when dispensing medication e.g. in pharmacies and hospitals"/>
+      <name value="Medication Dispense Example"/>
+      <description value="Medication Dispense Example 1 - a simple example of a dispensation in a pharmacy"/>
       <exampleCanonical value="https://www.hl7belgium.be/fhir/StructureDefinition/be-medicationdispense"/>
       <groupingId value="medicationdispense"/>
     </resource>
