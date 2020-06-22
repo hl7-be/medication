@@ -41,9 +41,14 @@
 
 
 
-    <grouping id="medication">
+    <grouping id="profiles">
       <name value="Medication Profiles"/>
       <description value="Medication related profiles"/>
+    </grouping>
+
+    <grouping id="examples">
+      <name value="Examples"/>
+      <description value="Example resources"/>
     </grouping>
 
 
@@ -59,6 +64,28 @@
       <description value="Medication Dispense entry - information captured when dispensing medication e.g. in pharmacies and hospitals"/>
       <groupingId value="logicalmodels"/>
     </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/be-medicationdispense"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Profile - Medication Dispense"/>
+      <description value="Medication Dispense entry - information captured when dispensing medication e.g. in pharmacies and hospitals"/>
+      <groupingId value="profiles"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="MedicationDispense/medication-dispense-example-1"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Logical Model Medication Dispense"/>
+      <description value="Medication Dispense entry - information captured when dispensing medication e.g. in pharmacies and hospitals"/>
+      <exampleCanonical value="https://www.hl7belgium.be/fhir/StructureDefinition/be-medicationdispense"/>
+      <groupingId value="examples"/>
+    </resource>
+
+
+
 
 
     <page>
