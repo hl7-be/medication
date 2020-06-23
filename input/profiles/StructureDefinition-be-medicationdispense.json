@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "be-medicationdispense",
-  "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-medicationdispense",
+  "url": "https://www.hl7belgium.be/fhir/StructureDefinition/be-medicationdispense",
   "version": "0.1.0",
   "name": "BeMedicationDispense",
   "title": "BeMedicationDispense",
