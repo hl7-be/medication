@@ -70,8 +70,18 @@
         <reference value="MedicationDispense/medication-dispense-example-1"/>
       </reference>
       <fhirVersion value="4.0.1"/>
-      <name value="Medication Dispense Example"/>
+      <name value="Medication Dispense Example 1"/>
       <description value="Medication Dispense Example 1 - a simple example of a dispensation in a pharmacy"/>
+      <exampleCanonical value="https://www.hl7belgium.be/fhir/StructureDefinition/be-medicationdispense"/>
+      <groupingId value="medicationdispense"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="MedicationDispense/medication-dispense-example-2"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Medication Dispense Example 2"/>
+      <description value="Medication Dispense Example 2 - a simple example of a dispensation in a pharmacy - with a geolocation"/>
       <exampleCanonical value="https://www.hl7belgium.be/fhir/StructureDefinition/be-medicationdispense"/>
       <groupingId value="medicationdispense"/>
     </resource>

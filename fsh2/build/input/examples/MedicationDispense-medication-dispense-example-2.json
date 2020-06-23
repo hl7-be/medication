@@ -1,6 +1,33 @@
 {
   "resourceType": "MedicationDispense",
-  "id": "medication-dispense-example-1",
+  "id": "medication-dispense-example-2",
+  "contained": [
+    {
+      "resourceType": "Organization",
+      "id": "apotheek-onder-de-toren",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/geolocation",
+          "extension": [
+            {
+              "url": "latitude",
+              "valueDecimal": 51.239847
+            },
+            {
+              "url": "longitude",
+              "valueDecimal": 3.319952
+            }
+          ]
+        }
+      ],
+      "identifier": [
+        {
+          "system": "https://www.gfd-dpp.be/fhir/NamingSystem/pharmacy/nihdi",
+          "value": "27457532"
+        }
+      ]
+    }
+  ],
   "language": "fr-BE",
   "subject": {
     "identifier": {
@@ -67,7 +94,8 @@
           "system": "https://www.gfd-dpp.be/fhir/NamingSystem/pharmacy/nihdi",
           "value": "27457532"
         },
-        "display": "Apotheek onder de toren"
+        "display": "Apotheek onder de toren",
+        "reference": "#apotheek-onder-de-toren"
       }
     }
   ],
