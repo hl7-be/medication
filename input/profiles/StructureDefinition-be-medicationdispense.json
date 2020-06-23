@@ -98,8 +98,7 @@
             }
           ],
           "strength": "example",
-          "description": "The drug code. For example CNK code for the medication",
-          "valueSet": "http://hl7.org/fhir/ValueSet/medication-codes"
+          "description": "The drug code. For example CNK code for the medication"
         }
       },
       {
