@@ -97,7 +97,6 @@
               "valueString": "MedicationCode"
             }
           ],
-          "strength": "example",
           "description": "The drug code. For example CNK code for the medication"
         }
       },
