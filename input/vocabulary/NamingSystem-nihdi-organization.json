@@ -1,6 +1,6 @@
 {
     "resourceType": "NamingSystem",
-    "id": "nihdi-professional",
+    "id": "nihdi-organization",
     "name": "Belgian Healthcare Identifier - Organization",
     "status": "active",
     "kind": "identifier",
