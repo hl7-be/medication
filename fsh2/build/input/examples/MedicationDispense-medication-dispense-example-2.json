@@ -28,7 +28,7 @@
       ]
     }
   ],
-  "language": "fr-BE",
+  "language": "nl-BE",
   "subject": {
     "identifier": {
       "system": "64110219106"
@@ -112,7 +112,24 @@
   "whenHandedOver": "2020-03-10",
   "dosageInstruction": [
     {
-      "text": "3 x per dag"
+      "text": "3 x per dag",
+      "_text": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/translation",
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "fr-BE"
+              },
+              {
+                "url": "content",
+                "valueString": "3 x par jour"
+              }
+            ]
+          }
+        ]
+      }
     }
   ]
 }
