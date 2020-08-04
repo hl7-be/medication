@@ -2,10 +2,51 @@
   "resourceType": "MedicationDispense",
   "id": "medication-dispense-example-1",
   "language": "fr-BE",
+  "contained": [
+    {
+      "resourceType" : "PractitionerRole",
+      "id" : "contained-pr1",
+      "practitioner":{
+        "identifier": [{
+          "system": "https://professional-registry",
+          "value": "27457532"
+        },{
+          "system": "https://national-registry",
+          "value": "1231324423"
+        }]
+      },
+      "speciality":{
+        "coding": [
+          {
+            "system": "https://specialties",
+            "code": "1439562",
+            "display": "Hospital Pharmacist"
+          }
+        ]
+      }  
+	  },
+    {
+      "resourceType" : "Practitioner",
+      "id" : "contained-p1",
+      "identifier": [{
+        "system": "https://professional-registry",
+        "value": "27457532"
+        },{
+          "system": "https://national-registry",
+          "value": "1231324423"
+        }],
+      "name" : [{
+        "family" : "Francis",
+        "given" : ["Pharmacist"]
+      }]
+	  }
+  ],
+
   "subject": {
     "identifier": {
-      "system": "64110219106"
-    }
+      "system": "https://patient-registry",
+      "value": "6734534332"
+  }
   },
   "context": {
     "identifier": {
@@ -63,13 +104,14 @@
   "performer": [
     {
       "actor": {
+        "reference":"#contained-pr1",
         "identifier": {
-          "system": "https://www.gfd-dpp.be/fhir/NamingSystem/pharmacy/nihdi",
+          "system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi-organization",
           "value": "27457532"
         },
         "display": "Apotheek onder de toren"
       }
-    }
+    }    
   ],
   "authorizingPrescription": [
     {
