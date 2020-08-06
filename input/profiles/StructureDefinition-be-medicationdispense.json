@@ -97,7 +97,9 @@
               "valueString": "MedicationCode"
             }
           ],
-          "description": "The drug code. For example CNK code for the medication"
+          "strength": "example",
+          "description": "The drug code. For example CNK code for the medication",
+          "valueSet": "http://hl7.org/fhir/ValueSet/medication-codes"
         }
       },
       {
@@ -174,7 +176,8 @@
         "path": "MedicationDispense.performer",
         "sliceName": "dispensingOrganization",
         "min": 0,
-        "max": "1"
+        "max": "1",
+        "mustSupport": true
       },
       {
         "id": "MedicationDispense.performer:dispensingOrganization.actor",
@@ -193,7 +196,8 @@
         "path": "MedicationDispense.performer",
         "sliceName": "dispenser",
         "min": 0,
-        "max": "1"
+        "max": "1",
+        "mustSupport": true
       },
       {
         "id": "MedicationDispense.performer:dispenser.actor",

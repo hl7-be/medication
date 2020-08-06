@@ -207,7 +207,8 @@
               "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner"
             ]
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "MedicationDispense.authorizingPrescription",
@@ -248,6 +249,11 @@
       {
         "id": "MedicationDispense.dosageInstruction.text",
         "path": "MedicationDispense.dosageInstruction.text",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationDispense.dosageInstruction.patientInstruction",
+        "path": "MedicationDispense.dosageInstruction.patientInstruction",
         "mustSupport": true
       }
     ]
