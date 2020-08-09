@@ -1,37 +1,16 @@
 {
   "resourceType": "MedicationDispense",
-  "id": "medication-dispense-example-2",
-  "contained": [
-    {
-      "resourceType": "Organization",
-      "id": "apotheek-onder-de-toren",
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/StructureDefinition/geolocation",
-          "extension": [
-            {
-              "url": "latitude",
-              "valueDecimal": 51.239847
-            },
-            {
-              "url": "longitude",
-              "valueDecimal": 3.319952
-            }
-          ]
-        }
-      ],
-      "identifier": [
-        {
-          "system": "https://www.gfd-dpp.be/fhir/NamingSystem/pharmacy/nihdi",
-          "value": "27457532"
-        }
-      ]
-    }
-  ],
-  "language": "nl-BE",
+  "id": "medication-dispense-example-1",
+  "meta": {
+    "profile": [
+      "https://www.hl7belgium.be/fhir/StructureDefinition/be-medicationdispense"
+    ]
+  },
+  "language": "fr-BE",
   "subject": {
     "identifier": {
-      "system": "64110219106"
+      "system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+      "value": "64110219106"
     }
   },
   "context": {
@@ -91,11 +70,10 @@
     {
       "actor": {
         "identifier": {
-          "system": "https://www.gfd-dpp.be/fhir/NamingSystem/pharmacy/nihdi",
+          "system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi-organization",
           "value": "27457532"
         },
-        "display": "Apotheek onder de toren",
-        "reference": "#apotheek-onder-de-toren"
+        "display": "Apotheek onder de toren"
       }
     }
   ],
@@ -112,7 +90,7 @@
   "whenHandedOver": "2020-03-10",
   "dosageInstruction": [
     {
-      "text": "3 x per dag",
+      "text": "3 x par jour",
       "_text": {
         "extension": [
           {
@@ -120,11 +98,11 @@
             "extension": [
               {
                 "url": "lang",
-                "valueCode": "fr-BE"
+                "valueCode": "nl-BE"
               },
               {
                 "url": "content",
-                "valueString": "3 x par jour"
+                "valueString": "3 x per dag"
               }
             ]
           }

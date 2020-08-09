@@ -2,7 +2,7 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../input-cache/schemas/R5/fhir-single.xsd">
 
   <id value="hl7-be-fhir-medicationig"/>
-  <url value="http://hl7belgium.org/fhir/hl7-be-fhir-medicationig"/>
+  <url value="https://www.hl7belgium.be/fhir/ImplementationGuide/hl7-be-fhir-medication"/>
   <!-- This version will propagate to all artifacts unless the "propagate-version" extension is overridden -->
   <version value="0.2.0"/>
   <name value="BEMedicationIG"/>
@@ -67,7 +67,7 @@
     </resource>
 
     <resource>
-      <reference>
+      <reference>                            
         <reference value="MedicationDispense/medication-dispense-example-1"/>
       </reference>
       <fhirVersion value="4.0.1"/>

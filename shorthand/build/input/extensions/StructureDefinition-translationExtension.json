@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "translationExtension",
-  "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/translationExtension",
+  "url": "https://www.hl7belgium.be/fhir/StructureDefinition/translationExtension",
   "version": "0.1.0",
   "name": "TranslationExtension",
   "title": "Translation Extension",
@@ -90,7 +90,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/translationExtension"
+        "fixedUri": "https://www.hl7belgium.be/fhir/StructureDefinition/translationExtension"
       },
       {
         "id": "Extension.value[x]",

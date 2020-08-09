@@ -1,12 +1,22 @@
 {
   "resourceType": "StructureDefinition",
   "id": "be-medicationdispense",
-  "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-medicationdispense",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Clinical.Medications"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "patient"
+    }
+  ],
+  "url": "https://www.hl7belgium.be/fhir/StructureDefinition/be-medicationdispense",
   "version": "0.1.0",
   "name": "BeMedicationDispense",
   "title": "BeMedicationDispense",
   "status": "active",
-  "description": "Defines constraints and extensions on the Medication Dispense resource for n.",
+  "description": "Defines constraints and extensions on the Medication Dispense resource for a regord of a dispensation in Belgium.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -45,7 +55,8 @@
       {
         "id": "MedicationDispense",
         "path": "MedicationDispense",
-        "short": "The medication dispense entry"
+        "short": "The medication dispense entry",
+        "definition": "A register of a medication dispense, describing the medication that has been dispensed by a professional or by an organization, including the medication, the patient, some prescription and treatment information."
       },
       {
         "id": "MedicationDispense.identifier",
@@ -77,7 +88,7 @@
         "id": "MedicationDispense.identifier:DGUID.system",
         "path": "MedicationDispense.identifier.system",
         "min": 1,
-        "patternUri": "https://www.gfd-dpp.be/fhir/reference/dguid"
+        "fixedUri": "https://www.gfd-dpp.be/fhir/reference/dguid"
       },
       {
         "id": "MedicationDispense.medicationCodeableConcept",
@@ -164,6 +175,7 @@
           ],
           "rules": "open"
         },
+        "min": 1,
         "mustSupport": true
       },
       {
@@ -176,7 +188,24 @@
         "path": "MedicationDispense.performer",
         "sliceName": "dispensingOrganization",
         "min": 0,
-        "max": "1"
+        "max": "1",
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          },
+          {
+            "key": "performer-organization-nidhi",
+            "severity": "warning",
+            "human": "When an organization is referred to by use of an identifier, the naming system SHOULD be NIHDI number",
+            "expression": "actor.identifier.exists() implies actor.identifier.system='https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi-organization'",
+            "source": "https://www.hl7belgium.be/fhir/StructureDefinition/be-medicationdispense"
+          }
+        ]
       },
       {
         "id": "MedicationDispense.performer:dispensingOrganization.actor",
@@ -207,8 +236,28 @@
               "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner"
             ]
           }
-        ],
-        "mustSupport": true
+        ]
+      },
+      {
+        "id": "MedicationDispense.performer:dispenser.actor.identifier.system",
+        "path": "MedicationDispense.performer.actor.identifier.system",
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          },
+          {
+            "key": "performer-practitioner-nidhi",
+            "severity": "warning",
+            "human": "When an organization is referred to by use of an identifier, the system naming SHOULD be NIHDI number",
+            "expression": "actor.identifier.exists() implies actor.identifier.system='https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi-practitioner'",
+            "source": "https://www.hl7belgium.be/fhir/StructureDefinition/be-medicationdispense"
+          }
+        ]
       },
       {
         "id": "MedicationDispense.authorizingPrescription",

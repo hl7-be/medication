@@ -1,6 +1,11 @@
 {
   "resourceType": "MedicationDispense",
   "id": "medication-dispense-example-2",
+  "meta": {
+    "profile": [
+      "https://www.hl7belgium.be/fhir/StructureDefinition/be-medicationdispense"
+    ]
+  },
   "contained": [
     {
       "resourceType": "Organization",
@@ -22,7 +27,7 @@
       ],
       "identifier": [
         {
-          "system": "https://www.gfd-dpp.be/fhir/NamingSystem/pharmacy/nihdi",
+          "system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi-organization",
           "value": "27457532"
         }
       ]
@@ -31,7 +36,8 @@
   "language": "nl-BE",
   "subject": {
     "identifier": {
-      "system": "64110219106"
+      "system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+      "value": "64110219106"
     }
   },
   "context": {
@@ -74,7 +80,7 @@
               "extension": [
                 {
                   "url": "lang",
-                  "valueCode": "fr-BE"
+                  "valueCode": "nl-BE"
                 },
                 {
                   "url": "content",
@@ -91,7 +97,7 @@
     {
       "actor": {
         "identifier": {
-          "system": "https://www.gfd-dpp.be/fhir/NamingSystem/pharmacy/nihdi",
+          "system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi-organization",
           "value": "27457532"
         },
         "display": "Apotheek onder de toren",
