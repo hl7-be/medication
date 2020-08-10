@@ -1,0 +1,11 @@
+---
+feedback:
+  active: true
+  formUrl: https://docs.google.com/forms/d/e/1FAIpQLSfFeLMvb7wmUDGa181obPb04Igny75iqSy2jMSp6Wg40LKWjw/viewform?usp=pp_url
+  parameters:
+  - name: "'entry.1353807103'"
+    value: encodeURIComponent($(document).attr('title'))
+  - name: "'entry.247644557'"
+    value: document.getElementById(id).textContent
+#  - name: "'entry.247644557'"
+#    value: "$(this).attr('id')"
