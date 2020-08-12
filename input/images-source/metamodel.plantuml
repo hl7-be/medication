@@ -1,0 +1,246 @@
+@startuml
+skinparam linetype polyline
+hide circle
+hide stereotype
+
+skinparam class<<AS>> {
+ BorderColor DarkRed
+ BackgroundColor MistyRose
+ HeaderBackgroundColor #f09090
+}
+
+
+
+skinparam class<<MD>> {
+ BorderColor DarkSlateGray
+ BackgroundColor WhiteSmoke
+ HeaderBackgroundColor #909090
+}
+
+
+
+
+skinparam class<<FL>> {
+ BorderColor #b07050
+ BackgroundColor BUSINESS
+ HeaderBackgroundColor #f2f295
+}
+
+skinparam class<<TM>> {
+ BorderColor #505090
+ BackgroundColor APPLICATION
+ HeaderBackgroundColor SkyBlue
+}
+
+
+
+skinparam class<<TL>> {
+ BorderColor DarkGreen
+ BackgroundColor PHYSICAL
+ HeaderBackgroundColor LimeGreen
+}
+
+
+package "HL7 Belgium Guide " as Guide {
+
+package "Functional Module" as Functional {
+  class "**Use Case**" as UCase<<FL>> {
+  }
+
+  Class "**Service**" as Interaction<<FL>> {
+  }
+
+
+  Class "**Logical Model**" as LogicalModel<<FL>> {
+  --
+  StructureDefinition
+  }
+
+/'
+  Class "**Example Content**" as Example<<TL>> {
+  --
+  ???
+  }
+'/
+}
+
+/'
+  Class "**Actor**" as Actor1<<AS>> {
+|_ **ID**
+|_ Name
+|_ Description
+|_ Transaction
+  |_ Role
+  |_ Condition
+|_ Option
+  |_ Required
+CapabilityStatement  
+--
+}
+'/
+
+  Class "** Metadata **" as ImpGuide<<MD>> {
+|_ **ID**
+|_ IG Name
+|_ IG Acronym
+|_ IG Name
+|_ IG Acronym
+|_ Contact
+|_ Status
+ImplementationGuide
+--
+}
+
+
+package "Terminology" as Term {
+  Class "**Glossary Term **" as BTerm<<TM>> {
+    |_ **ID**
+    |_ Name
+    |_ Definition
+    |_ Status
+    |_ Domain
+    CodeSystem    
+    --
+    }
+  Class "** Naming System **" as NamingSystem<<TM>> {
+    --
+    CodeSystem
+  }
+  Class "** Code System **" as CodeSystem<<TM>> {
+    --
+    CodeSystem
+  }
+  Class "** Value Set **" as ValueSet<<TM>> {
+    --
+    ValueSet
+  }
+CodeSystem -down[hidden]-> ValueSet
+}
+
+
+package "Technical Module" as Tech {
+
+  Class "**Transaction**" as Transaction<<TL>> {
+    |_ **ID**
+    |_ Name
+    |_ Description
+    |_ Actors
+    |_ Step
+    |_ Content
+      |_ Terminology?  
+    PlanDefinition?
+    --
+    }
+
+  Class "**   Profile    **" as Profile<<TL>> {
+  --
+  StructureDefinition
+  }
+
+  Class "** Operation Definition **" as OpDef<<TL>> {
+  --
+  OperationDefinition
+  }
+
+  Class "** Search Parameter **" as SearchParam<<TL>> {
+  --
+  SearchParameter
+  }
+
+
+  Class "** Example  **\n**  Instance **" as ExampleInstance<<TL>> {
+  (Diagram source)
+  --
+  Resource
+  }
+
+  Class "**Example**\n**Scenario**" as ExampleScenario<<TL>> {
+  --
+  ExampleScenario
+  }
+}
+
+
+
+
+
+
+package "Support Module" as Support {
+  class "**TestScript**" as TestScript<<FL>> {
+  }
+
+  class "**CapabilityStatement**" as CapabilityStatement<<FL>> {
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+Tech -down[hidden]-> Support
+SearchParam -down[hidden]-> Support
+Term -down[hidden]-> Support
+
+
+
+
+
+BTerm -down[hidden]-> NamingSystem
+NamingSystem -down[hidden]-> CodeSystem
+CodeSystem -down[hidden]-> ValueSet
+
+'UCase -up[hidden]-> Term
+
+Actor1 -down[hidden]-> UCase
+UCase -down[hidden]-> ExampleScenario
+
+Actor1 -right[hidden]-> ImpGuide : "     "
+ImpGuide -down[hidden]-> Term : "     "
+
+UCase -right[hidden]-> Interaction : "     "
+Interaction -right[hidden]-> LogicalModel : "     "
+
+UCase -down[hidden]-> ExampleScenario
+
+
+ExampleScenario -right[hidden]-> Transaction
+Transaction -right[hidden]-> Profile
+
+
+'Profile -right[hidden]-> OpDef
+OpDef -right[hidden]-> SearchParam
+
+Profile -down[hidden]-> ExampleInstance: " "
+'ExampleScenario -down[hidden]-> ExampleInstance: " "
+OpDef -up[hidden]-> Transaction
+
+Functional -right[hidden]-> Term
+
+
+LogicalModel -right[hidden]-> BTerm : "                  "
+'UCase -up[hidden]-> NamingSystem
+
+
+'ImpGuide -right[hidden]-> BTerm: "           "
+'BTerm -right[hidden]-> Actor1: "            "
+Functional -down[hidden]-> Tech
+
+'Actor -right[hidden]-> Term: "                       "
+
+
+}
+
+@enduml

@@ -8,22 +8,25 @@
 	The working groups of HL7 and the different interested parties are working on this specification. This publication is a development version that has not yet been validated by HL7 nor by the users and implementers.
 	</blockquote>
 	<p> </p>
+  <a name="content"> </a>
   <h3>Content</h3>
 	<p/>
 
 <p>This publication contains the specifications related to the medication areas and is structured in the following content sections:</p>
 <p></p>
-<p><strong>Background:</strong> Information about the HL7 Belgium specifications, or what you should know to be able to best navigate and use these specifications. Contains a general introduction to the publication structure and content, the artefact types, common privacy and security specifications and the official HL7 FHIR release that this specification is based upon.</p>
+<p><strong>Background:</strong> Information about the specifications, or what you should know to be able to best navigate and use these specifications. Contains a general introduction to the publication structure and content, the artefact types, common privacy and security specifications and the official HL7 FHIR release that this specification is based upon.</p>
 <p></p>
 <p><strong>Functional Description:</strong> Functional content, more relevant for business or functional analysts, as well as health professionals. Contains the context around these specifications (relevant projects, legal and implementation aspects), the interoperability actors and transactions, and especially the use cases that have been considered in the specification and the logical data models – the functional (i.e. non-technical) data sets that are used in data exchange.</p>
 <p></p>
 <p><strong>Detailed Specifications:</strong> The actual technical specifications – the FHIR conformance resources that are defined in this specification – profiles, data types, capability statements. This is targeted at (technical) implementers.</p>
 <p></p>
-<p><strong>Terminology:</strong> The vocabulary resources – Code Systems and value sets, that support semantic interoperability. These resources promote the use of standard, controlled terminologies (e.g. SNOMED-CT) and define internal codes for Belgium, e.g. official codes for Civil Status).</p>
+<p><strong>Terminology:</strong> The vocabulary resources – Naming Systems, Code Systems and Value Sets, which support semantic interoperability. These resources define the use of standard terminologies (e.g. LOINC, SNOMED-CT) or internal codes for Belgium, e.g. official codes for Civil Status).</p>
 <p></p>
-<p><strong>Implementation:</strong> Content, Tools and resources to help in implementation – test data (example resources), currently available test servers, and other tools to validate the compatibility between systems and these specifications.</p>
+<!--
+  <p><strong>Implementation:</strong> Content, Tools and resources to help in implementation – test data (example resources), currently available test servers, and other tools to validate the compatibility between systems and these specifications.</p>
 <p> </p>
 <p>There is also an overview of the projects and motivation for the specifications.</p>
+-->
 <p></p>
 
 <a name="navigation"> </a>
