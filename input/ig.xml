@@ -101,6 +101,11 @@
         <title value="MyIG Home Page"/>
         <generation value="html"/>
       </page>
+		  <page>
+			<nameUrl value="howto.html"/>
+			<title value="How to read this document"/>
+			<generation value="html"/>
+		  </page>
     </page>
     <!-- copyright year is a mandatory parameter -->
     <parameter>

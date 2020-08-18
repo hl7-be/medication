@@ -1,7 +1,8 @@
 {
     "resourceType": "NamingSystem",
     "id": "nihdi-organization",
-    "name": "Belgian Healthcare Identifier - Organization",
+    "name": "BeNSNihdiOrganization",
+    "description": "NIHDI identifier for care organizations",
     "status": "active",
     "kind": "identifier",
     "date": "2020-01-01",
@@ -28,7 +29,6 @@
       ],
       "text": "IHI"
     },
-    "description": "NIHDI identifier for care organizations",
     "jurisdiction": [
       {
         "coding": [

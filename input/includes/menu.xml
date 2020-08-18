@@ -14,15 +14,6 @@
 				<a href="howto.html">How to use this Publication</a>
 			</li>
 			<li>
-				<a href="standardsstatus.html">Standards Status</a>
-			</li>
-			<li>
-				<a href="privacy.html">Privacy considerations</a>
-			</li>
-			<li>
-				<a href="security.html">Security considerations</a>
-			</li>
-			<li>
 				<a target="_blank" href="{{site.data.fhir.path}}index.html">FHIR Spec<img src="external.png" style="text-align: baseline"/>
 				</a>
 			</li>
@@ -55,15 +46,6 @@
 			</li>
 		</ul>
 	</li>
-	<li class="dropdown">
-		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Terminology<b class="caret"></b>
-		</a>
-		<ul class="dropdown-menu">
-			<li>
-				<a href="terminology.html">Terminology Resources</a>
-			</li>
-		</ul>
-	</li>
 <!--
 	<li class="dropdown">
 		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Project-specific
@@ -86,9 +68,8 @@
 	<li class="dropdown">
 		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Implementation<b class="caret"></b></a>
 		<ul class="dropdown-menu">
-			<li><a href="testdata.html">Test Data<img src="external.png" style="text-align: baseline"/></a></li>
 			<li><a target="_blank" href="openapi.html">OpenAPI</a></li>
-			<li><a href="testservers.html">Test Servers<img src="external.png" style="text-align: baseline"/></a></li>
+			<li><a href="testservers.html">Test Servers</a></li>
 			<li><a href="downloads.html">Downloads</a></li>
 		</ul>
 	</li>
