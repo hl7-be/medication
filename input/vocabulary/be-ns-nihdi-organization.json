@@ -1,6 +1,6 @@
 {
     "resourceType": "NamingSystem",
-    "id": "nihdi-organization",
+    "id": "be-ns-nihdi-organization",
     "name": "BeNSNihdiOrganization",
     "description": "NIHDI identifier for care organizations",
     "status": "active",

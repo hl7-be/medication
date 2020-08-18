@@ -1,6 +1,6 @@
 {
     "resourceType": "NamingSystem",
-    "id": "nihdi-professional",
+    "id": "be-ns-nihdi-professional",
     "name": "BeNSNihdiIndividual",
     "description": "NIHDI identifier for individual care professionals",
     "status": "active",

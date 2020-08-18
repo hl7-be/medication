@@ -66,6 +66,26 @@
       <groupingId value="medicationdispense"/>
     </resource>
 
+
+    <resource>
+      <reference>
+        <reference value="NamingSystem/be-ns-nihdi-organization"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="NamingSystem - NIHDI Organization"/>
+      <description value="NIHDI identifier for care organizations"/>
+      <groupingId value="medicationdispense"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="NamingSystem/be-ns-nihdi-professional"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="NamingSystem - NIHDI Professional"/>
+      <description value="NIHDI identifier for care professionals"/>
+      <groupingId value="medicationdispense"/>
+    </resource>
+
     <resource>
       <reference>                            
         <reference value="MedicationDispense/medication-dispense-example-1"/>
