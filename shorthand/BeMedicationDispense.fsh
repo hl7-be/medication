@@ -36,7 +36,7 @@ Description:    """
 * performer[dispensingOrganization] obeys performer-organization-nidhi
 * performer[dispensingOrganization] MS
 * performer[dispenser].actor only Reference(BePractitioner)
-* performer[dispenser].actor.identifier.system obeys performer-practitioner-nidhi
+* performer[dispenser] obeys performer-practitioner-nidhi
 * performer[dispenser] MS
 * . ^short = "The medication dispense entry"
 * . ^definition = "A register of a medication dispense, describing the medication that has been dispensed by a professional or by an organization, including the medication, the patient, some prescription and treatment information."
@@ -68,7 +68,7 @@ Expression: "actor.identifier.exists() implies actor.identifier.system='https://
 Severity:   #warning
 
 Invariant:  performer-practitioner-nidhi
-Description: "When an organization is referred to by use of an identifier, the system naming SHOULD be NIHDI number"
+Description: "When an individual is referred to by use of an identifier, the system naming SHOULD be NIHDI number"
 Expression: "actor.identifier.exists() implies actor.identifier.system='https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi-practitioner'"
 Severity:   #warning
 
@@ -147,13 +147,16 @@ Usage: #inline
 * extension[0].extension[1].valueDecimal = 3.319952
 * identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi-organization"
 * identifier.value = "27457532"
+* type.coding.system = "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-hcparty"
+* type.coding.code = #pharmacy
+* type.text = "pharmacy"
 
 
 Instance: medication-dispense-example-2
 InstanceOf: MedicationDispense
 Usage: #example
 Description: "Medication Dispense example"
-Title:    "MedicationDispense Example - 2."
+Title:    "MedicationDispense Example - 2"
 * meta.profile[0] = "https://www.hl7belgium.be/fhir/StructureDefinition/be-medicationdispense"
 * contained[0] = apotheek-onder-de-toren
 * language = #nl-BE

@@ -224,23 +224,7 @@
         "path": "MedicationDispense.performer",
         "sliceName": "dispenser",
         "min": 0,
-        "max": "1"
-      },
-      {
-        "id": "MedicationDispense.performer:dispenser.actor",
-        "path": "MedicationDispense.performer.actor",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "MedicationDispense.performer:dispenser.actor.identifier.system",
-        "path": "MedicationDispense.performer.actor.identifier.system",
+        "max": "1",
         "constraint": [
           {
             "key": "ele-1",
@@ -253,9 +237,21 @@
           {
             "key": "performer-practitioner-nidhi",
             "severity": "warning",
-            "human": "When an organization is referred to by use of an identifier, the system naming SHOULD be NIHDI number",
+            "human": "When an individual is referred to by use of an identifier, the system naming SHOULD be NIHDI number",
             "expression": "actor.identifier.exists() implies actor.identifier.system='https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi-practitioner'",
             "source": "https://www.hl7belgium.be/fhir/StructureDefinition/be-medicationdispense"
+          }
+        ]
+      },
+      {
+        "id": "MedicationDispense.performer:dispenser.actor",
+        "path": "MedicationDispense.performer.actor",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner"
+            ]
           }
         ]
       },

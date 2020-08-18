@@ -30,6 +30,17 @@
           "system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi-organization",
           "value": "27457532"
         }
+      ],
+      "type": [
+        {
+          "coding": [
+            {
+              "system": "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-hcparty",
+              "code": "pharmacy"
+            }
+          ],
+          "text": "pharmacy"
+        }
       ]
     }
   ],
