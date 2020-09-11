@@ -93,7 +93,7 @@ Instance: medication-dispense-example-1
 InstanceOf: MedicationDispense
 Usage: #example
 Description: "Medication Dispense example"
-Title:    "MedicationDispense Example - 1."
+Title:    "MedicationDispense Example - Dispense of 1 known package by a pharmacy."
 * meta.profile[0] = "https://www.hl7belgium.be/fhir/StructureDefinition/be-medicationdispense"
 * language = #fr-BE
 * subject.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
@@ -156,7 +156,7 @@ Instance: medication-dispense-example-2
 InstanceOf: MedicationDispense
 Usage: #example
 Description: "Medication Dispense example"
-Title:    "MedicationDispense Example - 2"
+Title:    "MedicationDispense Example - Dispense of a single packaging, with inlined pharmacy and with an added dosage-instruction"
 * meta.profile[0] = "https://www.hl7belgium.be/fhir/StructureDefinition/be-medicationdispense"
 * contained[0] = apotheek-onder-de-toren
 * language = #nl-BE
