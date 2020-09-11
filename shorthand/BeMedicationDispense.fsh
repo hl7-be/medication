@@ -3,7 +3,8 @@ Parent:         MedicationDispense
 Id:             be-medicationdispense
 Title:          "BeMedicationDispense"
 Description:    """ 
-    Defines constraints and extensions on the Medication Dispense resource for a regord of a dispensation in Belgium."""
+ Defines constraints and extensions on the Medication Dispense resource for a record of a dispensation in Belgium.
+ """
 // NOTE: MS can also be done in multiple lines:
 // * identifier MS
 // * identifier.system MS
