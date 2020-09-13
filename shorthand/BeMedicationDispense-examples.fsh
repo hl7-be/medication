@@ -72,7 +72,7 @@ Instance: medication-dispense-example-2
 InstanceOf: MedicationDispense
 Usage: #example
 Description: "Medication Dispense example"
-Title:    "MedicationDispense Example - 2"
+Title:    "Dispense entry Example - Community Pharmacy dispense, from prescription, with contained org."
 * meta.profile[0] = "https://www.hl7belgium.be/fhir/StructureDefinition/be-medicationdispense"
 * contained[0] = apotheek-onder-de-toren
 * language = #nl-BE
