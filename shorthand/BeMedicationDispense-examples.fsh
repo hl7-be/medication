@@ -118,14 +118,14 @@ Usage:#example
 Description: "A dispense from a hospital pharmacy, with a hospital nihii and based on a prescription"
 Title: "A dispense from a hospital pharmacy"
 //Created from the concept on http://build.fhir.org/ig/hl7-be/hl7-be-fhir-medication/StructureDefinition-be-medicationdispense.html
-* id = 
+//* id = 
 * meta.versionId = "1"
 * meta.profile[0] = "https://www.hl7belgium.be/fhir/StructureDefinition/be-medicationdispense"
-* implicitRules = 
+//* implicitRules = 
 * language = #nl-BE
-* text = 
-* contained = 
-* extension = 
+//* text = 
+//* contained = 
+//* extension = 
 * modifierExtenstion = 
 * identifier[0].system = "https://www.gfd-dpp.be/fhir/reference/dguid" //If this is a local identifier, then constraining this is hard. a hospital presription will NOT have a dguid, we could gen a guid, which is extra
 * identifier[0].type.coding[0].id =  //Where does this come from? Coding doesn't have an id - https://www.hl7.org/fhir/datatypes.html#Coding, looks to be unique to extensions
@@ -140,24 +140,44 @@ Title: "A dispense from a hospital pharmacy"
 // See http://build.fhir.org/ig/hl7-be/hl7-be-fhir-medication/StructureDefinition-be-medicationdispense.html
 // This profile does not yet exist
 * medication[0].medicationCodeableConcept.coding.system = "https://cnk.apb.be/codings/cnk_product_codes"
-* medication[0].medicationCodeableConcept.coding.code = #
+* medication[0].medicationCodeableConcept.coding.code = #2055218
 * medication[0].medicationCodeableConcept.coding.display = //Display and extended display both needed? extended only needed in special cases? magistral medication? 
 * medication[0].medicationCodeableConcept.coding.display.extension[0].url = "http://hl7.org/fhir/StructureDefinition/translation"
 * medication[0].medicationCodeableConcept.coding.display.extension[0].extension[0].url = "lang"
 * medication[0].medicationCodeableConcept.coding.display.extension[0].extension[0].valueCode = #nl-BE
 * medication[0].medicationCodeableConcept.coding.display.extension[0].extension[1].url = "content"
-* medication[0].medicationCodeableConcept.coding.display.extension[0].extension[1].valueString = "Topazolam tab 50x 1,0mg"
+* medication[0].medicationCodeableConcept.coding.display.extension[0].extension[1].valueString = "Crestor filmomh. tabl. 100x 10mg"
 
 * subject.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
 * subject.identifier.value = "64110219106"
 
-* context.identifier = ...
-
+//* context.identifier = ...
 * authorizingPrescription.display = "Prescription"
 * authorizingPrescription.identifier.value = "BEP1TSRY1XGE"
 * authorizingPrescription.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/prescription-id" //Recip-e ID
-* type = 
-* quantity = 
+//* type = 
+* quantity.value = 1 
+* quantity.unit = package
+* quantity.system = http://hl7.org/fhir/Valueset/ucum-units
+* quantity.code = "{package}"
+//dayssupply
+//whenPrepared
 * whenHandedOver = "2020-09-21T13:00:00+02:00"
-
-//* dosageInstruction.id = 
+//Destination
+//Receiver 
+* dosageInstruction.text = "3 x a day"
+* dosageInstruction.timing.frequency = 3
+* dosageInstruction.timing.period = 1
+* dosageInstruction.timing.periodUnit.system = "http://hl7.org/fhir/ValueSet/units-"
+* dosageInstruction.timing.periodUnit.code = "d"
+* dosageInstruction.text.extension[0].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* dosageInstruction.text.extension[0].extension[0].url = "lang"
+* dosageInstruction.text.extension[0].extension[0].valueCode = #nl-BE
+* dosageInstruction.text.extension[0].extension[1].url = "content"
+* dosageInstruction.text.extension[0].extension[1].valueString = "3 x per dag"
+* dosageInstruction.text.extension[1].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* dosageInstruction.text.extension[1].extension[0].url = "lang"
+* dosageInstruction.text.extension[1].extension[0].valueCode = #fr-BE
+* dosageInstruction.text.extension[1].extension[1].url = "content"
+* dosageInstruction.text.extension[1].extension[1].valueString = "3 x par jour"
+//substitution
