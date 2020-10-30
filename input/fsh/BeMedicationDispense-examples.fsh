@@ -158,7 +158,7 @@ Title: "A dispense from a hospital pharmacy"
 //* type = 
 * quantity.value = 1 
 * quantity.unit = "package"
-* quantity.system = http://hl7.org/fhir/Valueset/ucum-units
+* quantity.system = "http://hl7.org/fhir/Valueset/ucum-units"
 * quantity.code = #{package}
 //dayssupply
 //whenPrepared
@@ -166,9 +166,9 @@ Title: "A dispense from a hospital pharmacy"
 //Destination
 //Receiver 
 * dosageInstruction.text = "3 x a day"
-* dosageInstruction.timing.frequency = 3
-* dosageInstruction.timing.period = 1
-* dosageInstruction.timing.periodUnit = "d"
+* dosageInstruction.timing.repeat.frequency = 3
+* dosageInstruction.timing.repeat.period = 1
+* dosageInstruction.timing.repeat.periodUnit = #d
 * dosageInstruction.text.extension[0].url = "http://hl7.org/fhir/StructureDefinition/translation"
 * dosageInstruction.text.extension[0].extension[0].url = "lang"
 * dosageInstruction.text.extension[0].extension[0].valueCode = #nl-BE
