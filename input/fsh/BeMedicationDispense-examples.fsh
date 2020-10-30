@@ -179,4 +179,24 @@ Title: "A dispense from a hospital pharmacy"
 * dosageInstruction.text.extension[1].extension[0].valueCode = #fr-BE
 * dosageInstruction.text.extension[1].extension[1].url = "content"
 * dosageInstruction.text.extension[1].extension[1].valueString = "3 x par jour"
-//substitution
+
+
+/*
+* An example of a medication dispense with the minimal amount of necessary information
+*/ 
+Instance: example-minimal-dispense
+InstanceOf: MedicationDispense
+Usage: #example
+Description: "Medication Dispense example"
+Title:    "Dispense Example - Minimal amount of information"
+* meta.profile[0] = "https://www.hl7belgium.be/fhir/StructureDefinition/be-medicationdispense"
+* subject.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
+* subject.identifier.value = "64110219106"
+* status = #completed
+* medicationCodeableConcept.coding.system = "https://cnk.apb.be/codings/cnk_product_codes"
+* medicationCodeableConcept.coding.code = #1439562
+* medicationCodeableConcept.coding.display = "Topazolam tab 50x 1,0mg"
+* performer[0].actor.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi-practitioner"
+* performer[0].actor.identifier.value = "6547432"
+* performer[0].actor.display = "Jan Janssen"
+* whenHandedOver = "2020-03-10"
