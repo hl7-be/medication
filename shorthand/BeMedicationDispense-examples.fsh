@@ -1,5 +1,3 @@
-
-
 Instance: example-dispense-communitypharmacy-1med
 InstanceOf: MedicationDispense
 Usage: #example
@@ -111,3 +109,74 @@ Title:    "Dispense entry Example - Community Pharmacy dispense, from prescripti
 * dosageInstruction.text.extension[0].extension[0].valueCode = #fr-BE
 * dosageInstruction.text.extension[0].extension[1].url = "content"
 * dosageInstruction.text.extension[0].extension[1].valueString = "3 x par jour"
+
+
+
+Instance: medication-dispense-hospital
+InstanceOf: MedicationDispense
+Usage: #example
+Description: "A dispense from a hospital pharmacy, with a hospital nihii and based on a prescription"
+Title: "A dispense from a hospital pharmacy"
+//Created from the concept on http://build.fhir.org/ig/hl7-be/hl7-be-fhir-medication/StructureDefinition-be-medicationdispense.html
+//* id = 
+* meta.versionId = "1"
+* meta.profile[0] = "https://www.hl7belgium.be/fhir/StructureDefinition/be-medicationdispense"
+//* implicitRules = 
+* language = #nl-BE
+//* text = 
+//* contained = 
+//* extension = 
+//* modifierExtenstion = 
+* identifier[0].system = "https://www.gfd-dpp.be/fhir/reference/dguid" //If this is a local identifier, then constraining this is hard. a hospital presription will NOT have a dguid, we could gen a guid, which is extra
+//* identifier[0].type.coding[0].id =  //Where does this come from? Coding doesn't have an id - https://www.hl7.org/fhir/datatypes.html#Coding, looks to be unique to extensions
+* identifier[0].type.coding[0].system = "https://www.nexuzhealth.be/fhir/prescription/ambulatory"
+* identifier[0].type.coding[0].code = #1000321345
+* identifier[0].type.coding[0].version = "1"
+* status = #completed
+//* category.system = "http://terminology.hl7.org/fhir/CodeSystem/medicationdispense-category"
+//* category.code = "discharge"
+//* category.version = "4.0.1"
+// Implementing the medication concept feels kind of weird, beMedication of cnkMedication should be hammered down in a profile imo
+// See http://build.fhir.org/ig/hl7-be/hl7-be-fhir-medication/StructureDefinition-be-medicationdispense.html
+// This profile does not yet exist
+* medicationCodeableConcept.coding.system = "https://cnk.apb.be/codings/cnk_product_codes"
+* medicationCodeableConcept.coding.code = #2055218
+//].medicationCodeableConcept.coding.display = //Display and extended display both needed? extended only needed in special cases? magistral medication? 
+* medicationCodeableConcept.coding.display.extension[0].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* medicationCodeableConcept.coding.display.extension[0].extension[0].url = "lang"
+* medicationCodeableConcept.coding.display.extension[0].extension[0].valueCode = #nl-BE
+* medicationCodeableConcept.coding.display.extension[0].extension[1].url = "content"
+* medicationCodeableConcept.coding.display.extension[0].extension[1].valueString = "Crestor filmomh. tabl. 100x 10mg"
+
+* subject.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
+* subject.identifier.value = "64110219106"
+
+//* context.identifier = ...
+* authorizingPrescription.display = "Prescription"
+* authorizingPrescription.identifier.value = "BEP1TSRY1XGE"
+* authorizingPrescription.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/prescription-id" //Recip-e ID
+//* type = 
+* quantity.value = 1 
+* quantity.unit = "package"
+* quantity.system = http://hl7.org/fhir/Valueset/ucum-units
+* quantity.code = #{package}
+//dayssupply
+//whenPrepared
+* whenHandedOver = "2020-09-21T13:00:00+02:00"
+//Destination
+//Receiver 
+* dosageInstruction.text = "3 x a day"
+* dosageInstruction.timing.frequency = 3
+* dosageInstruction.timing.period = 1
+* dosageInstruction.timing.periodUnit = "d"
+* dosageInstruction.text.extension[0].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* dosageInstruction.text.extension[0].extension[0].url = "lang"
+* dosageInstruction.text.extension[0].extension[0].valueCode = #nl-BE
+* dosageInstruction.text.extension[0].extension[1].url = "content"
+* dosageInstruction.text.extension[0].extension[1].valueString = "3 x per dag"
+* dosageInstruction.text.extension[1].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* dosageInstruction.text.extension[1].extension[0].url = "lang"
+* dosageInstruction.text.extension[1].extension[0].valueCode = #fr-BE
+* dosageInstruction.text.extension[1].extension[1].url = "content"
+* dosageInstruction.text.extension[1].extension[1].valueString = "3 x par jour"
+//substitution
