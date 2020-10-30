@@ -1,9 +1,3 @@
-https://www.gfd-dpp.be/fhir/prescription
-
-
-
-
-
 Instance: be-ns-cnk-codes
 InstanceOf: NamingSystem
 Usage: #definition
