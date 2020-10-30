@@ -168,8 +168,7 @@ Title: "A dispense from a hospital pharmacy"
 * dosageInstruction.text = "3 x a day"
 * dosageInstruction.timing.frequency = 3
 * dosageInstruction.timing.period = 1
-* dosageInstruction.timing.periodUnit.system = "http://hl7.org/fhir/ValueSet/units-"
-* dosageInstruction.timing.periodUnit.code = "d"
+* dosageInstruction.timing.periodUnit = "d"
 * dosageInstruction.text.extension[0].url = "http://hl7.org/fhir/StructureDefinition/translation"
 * dosageInstruction.text.extension[0].extension[0].url = "lang"
 * dosageInstruction.text.extension[0].extension[0].valueCode = #nl-BE
