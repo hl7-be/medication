@@ -69,11 +69,11 @@ Expression: "actor.identifier.exists() implies actor.identifier.system='https://
 Severity:   #warning
 
 Invariant:  performer-practitioner-nidhi
-Description: "When an individual is referred to by use of an identifier, the system naming SHOULD be NIHDI number"
+Description: "When a practitioner is referred to by use of an identifier, the system naming SHOULD be NIHDI number"
 Expression: "actor.identifier.exists() implies actor.identifier.system='https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi-practitioner'"
 Severity:   #warning
 
-
+/*
 
 Extension:      TranslationExtension
 Id:             translationExtension
@@ -87,4 +87,4 @@ Description:    "Language translation from base language of resource to another 
 * extension[content].value[x] only string
 * extension[content] ^short = "Content in other language"
 
-
+*/
