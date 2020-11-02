@@ -185,3 +185,35 @@ Title:    "Dispense Example - Minimal amount of information"
 * dosageInstruction[1].doseAndRate.doseQuantity.unit = "tablet"
 * dosageInstruction[1].doseAndRate.doseQuantity.code = #{tbl}
 * dosageInstruction[1].doseAndRate.doseQuantity.system = "http://hl7.org/fhir/Valueset/ucum-units"
+
+/*
+* Example 4: 3 times a day with food
+*/
+Instance: posology-1-spoon-with-food-3-times
+InstanceOf: MedicationDispense
+Usage: #example
+Description: "Posology example: a spoonful 3 times a day"
+Title:    "Posology example - three times a day"
+* meta.profile[0] = "https://www.hl7belgium.be/fhir/StructureDefinition/be-medicationdispense"
+* subject.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
+* subject.identifier.value = "64110219106"
+* status = #completed
+* medicationCodeableConcept.coding.system = "https://cnk.apb.be/codings/cnk_product_codes"
+* medicationCodeableConcept.coding.code = #1682251
+* medicationCodeableConcept.coding.display = "MUCO-RHINATHIOL 5% SIR AD 200ML"
+* performer[0].actor.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi-practitioner"
+* performer[0].actor.identifier.value = "6547432"
+* performer[0].actor.display = "Jan Janssen"
+* whenHandedOver = "2020-03-10"
+* dosageInstruction.additionalInstruction.text = "Inslikken en doorspoelen met een glas water" //snomed-able met SC419303009
+* dosageInstruction.timing.repeat.frequency = 3
+* dosageInstruction.timing.repeat.period = 1
+* dosageInstruction.timing.repeat.periodUnit = #d
+* dosageInstruction.timing.repeat.when = #C
+* dosageInstruction.route.coding.system = "http://hl7.org/fhir/ValueSet/route-codes"
+* dosageInstruction.route.coding.code = #26643006
+* dosageInstruction.route.coding.display = "Via de mond"
+* dosageInstruction.doseAndRate.doseQuantity.value = 1
+* dosageInstruction.doseAndRate.doseQuantity.unit = "tablespoon"
+* dosageInstruction.doseAndRate.doseQuantity.code = #{tbs_m}
+* dosageInstruction.doseAndRate.doseQuantity.system = "http://hl7.org/fhir/Valueset/ucum-units"
