@@ -95,3 +95,93 @@ Title:    "Dispense Example - Minimal amount of information"
 * dosageInstruction.doseAndRate.doseQuantity.unit = "tablet"
 * dosageInstruction.doseAndRate.doseQuantity.code = #{tbl}
 * dosageInstruction.doseAndRate.doseQuantity.system = "http://hl7.org/fhir/Valueset/ucum-units"
+
+/*
+* Example 2b: Before breakfast and before dinner with multiple dosageInstructions
+* I personally feel better with this example, since it locks out the possibility that a patient can take a whole tablet in the morning
+*/
+Instance: posology-2-tablets-breakfast-dinner-multiple-instructions
+InstanceOf: MedicationDispense
+Usage: #example
+Description: "Posology example: 2 half tablets before breakfast and dinner"
+Title:    "Dispense Example - Minimal amount of information"
+* meta.profile[0] = "https://www.hl7belgium.be/fhir/StructureDefinition/be-medicationdispense"
+* subject.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
+* subject.identifier.value = "64110219106"
+* status = #completed
+* medicationCodeableConcept.coding.system = "https://cnk.apb.be/codings/cnk_product_codes"
+* medicationCodeableConcept.coding.code = #1439562
+* medicationCodeableConcept.coding.display = "Topazolam tab 50x 1,0mg"
+* performer[0].actor.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi-practitioner"
+* performer[0].actor.identifier.value = "6547432"
+* performer[0].actor.display = "Jan Janssen"
+* whenHandedOver = "2020-03-10"
+* dosageInstruction[0].additionalInstruction.text = "In te nemen met een glas water" 
+* dosageInstruction[0].timing.repeat.frequency = 1
+* dosageInstruction[0].timing.repeat.period = 1
+* dosageInstruction[0].timing.repeat.periodUnit = #d
+* dosageInstruction[0].timing.repeat.when = #ACM
+* dosageInstruction[0].route.coding.system = "http://hl7.org/fhir/ValueSet/route-codes"
+* dosageInstruction[0].route.coding.code = #26643006
+* dosageInstruction[0].route.coding.display = "Via de mond"
+* dosageInstruction[0].doseAndRate.doseQuantity.value = 0.5
+* dosageInstruction[0].doseAndRate.doseQuantity.unit = "tablet"
+* dosageInstruction[0].doseAndRate.doseQuantity.code = #{tbl}
+* dosageInstruction[0].doseAndRate.doseQuantity.system = "http://hl7.org/fhir/Valueset/ucum-units"
+* dosageInstruction[1].additionalInstruction.text = "In te nemen met een glas water"
+* dosageInstruction[1].timing.repeat.frequency = 1
+* dosageInstruction[1].timing.repeat.period = 1
+* dosageInstruction[1].timing.repeat.periodUnit = #d
+* dosageInstruction[1].timing.repeat.when = #ACV
+* dosageInstruction[1].route.coding.system = "http://hl7.org/fhir/ValueSet/route-codes"
+* dosageInstruction[1].route.coding.code = #26643006
+* dosageInstruction[1].route.coding.display = "Via de mond"
+* dosageInstruction[1].doseAndRate.doseQuantity.value = 0.5
+* dosageInstruction[1].doseAndRate.doseQuantity.unit = "tablet"
+* dosageInstruction[1].doseAndRate.doseQuantity.code = #{tbl}
+* dosageInstruction[1].doseAndRate.doseQuantity.system = "http://hl7.org/fhir/Valueset/ucum-units"
+
+/* 
+* Example 3: 1 before breakfast and one at 20 PM
+* If there's a timeOfDay, there cannot be a when, or vice versa
+*/
+Instance: posology-3-tablets-beforebreakfast-20PM
+InstanceOf: MedicationDispense
+Usage: #example
+Description: "Posology example: one tablet before breakfast, one tablet at 20pm"
+Title:    "Dispense Example - Minimal amount of information"
+* meta.profile[0] = "https://www.hl7belgium.be/fhir/StructureDefinition/be-medicationdispense"
+* subject.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
+* subject.identifier.value = "64110219106"
+* status = #completed
+* medicationCodeableConcept.coding.system = "https://cnk.apb.be/codings/cnk_product_codes"
+* medicationCodeableConcept.coding.code = #1439562
+* medicationCodeableConcept.coding.display = "Topazolam tab 50x 1,0mg"
+* performer[0].actor.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi-practitioner"
+* performer[0].actor.identifier.value = "6547432"
+* performer[0].actor.display = "Jan Janssen"
+* whenHandedOver = "2020-03-10"
+* dosageInstruction[0].additionalInstruction.text = "In te nemen met een glas water" 
+* dosageInstruction[0].timing.repeat.frequency = 1
+* dosageInstruction[0].timing.repeat.period = 1
+* dosageInstruction[0].timing.repeat.periodUnit = #d
+* dosageInstruction[0].timing.repeat.when = #ACM
+* dosageInstruction[0].route.coding.system = "http://hl7.org/fhir/ValueSet/route-codes"
+* dosageInstruction[0].route.coding.code = #26643006
+* dosageInstruction[0].route.coding.display = "Via de mond"
+* dosageInstruction[0].doseAndRate.doseQuantity.value = 1
+* dosageInstruction[0].doseAndRate.doseQuantity.unit = "tablet"
+* dosageInstruction[0].doseAndRate.doseQuantity.code = #{tbl}
+* dosageInstruction[0].doseAndRate.doseQuantity.system = "http://hl7.org/fhir/Valueset/ucum-units"
+* dosageInstruction[1].additionalInstruction.text = "In te nemen met een glas water"
+* dosageInstruction[1].timing.repeat.frequency = 1
+* dosageInstruction[1].timing.repeat.period = 1
+* dosageInstruction[1].timing.repeat.periodUnit = #d
+* dosageInstruction[1].timing.repeat.timeOfDay = "20:00:00"
+* dosageInstruction[1].route.coding.system = "http://hl7.org/fhir/ValueSet/route-codes"
+* dosageInstruction[1].route.coding.code = #26643006
+* dosageInstruction[1].route.coding.display = "Via de mond"
+* dosageInstruction[1].doseAndRate.doseQuantity.value = 1
+* dosageInstruction[1].doseAndRate.doseQuantity.unit = "tablet"
+* dosageInstruction[1].doseAndRate.doseQuantity.code = #{tbl}
+* dosageInstruction[1].doseAndRate.doseQuantity.system = "http://hl7.org/fhir/Valueset/ucum-units"
