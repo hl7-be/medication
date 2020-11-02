@@ -20,7 +20,8 @@ Title:    "Dispense Example - Minimal amount of information"
 * performer[0].actor.identifier.value = "6547432"
 * performer[0].actor.display = "Jan Janssen"
 * whenHandedOver = "2020-03-10"
-* dosageInstruction.additionalInstruction.text = "In te nemen met een glas water" //snomed-able met SC419303009
+* dosageInstruction.additionalInstruction.text = "In te nemen met een glas water" 
+* dosageInstruction.text = "'s ochtend 1 tablet'"
 * dosageInstruction.timing.repeat.frequency = 1
 * dosageInstruction.timing.repeat.period = 1
 * dosageInstruction.timing.repeat.periodUnit = #d
@@ -82,7 +83,8 @@ Title:    "Dispense Example - Minimal amount of information"
 * performer[0].actor.identifier.value = "6547432"
 * performer[0].actor.display = "Jan Janssen"
 * whenHandedOver = "2020-03-10"
-* dosageInstruction.additionalInstruction.text = "In te nemen met een glas water" //snomed-able met SC419303009
+* dosageInstruction.additionalInstruction.text = "In te nemen met een glas water"
+* dosageInstruction.text = "een halve tablet bij het ontbijt, en een halve tablet bij het avondeten"
 * dosageInstruction.timing.repeat.frequency = 2
 * dosageInstruction.timing.repeat.period = 1
 * dosageInstruction.timing.repeat.periodUnit = #d
@@ -117,6 +119,7 @@ Title:    "Dispense Example - Minimal amount of information"
 * performer[0].actor.display = "Jan Janssen"
 * whenHandedOver = "2020-03-10"
 * dosageInstruction[0].additionalInstruction.text = "In te nemen met een glas water" 
+* dosageInstruction[0].text = "een halve tablet bij het ontbijt"
 * dosageInstruction[0].timing.repeat.frequency = 1
 * dosageInstruction[0].timing.repeat.period = 1
 * dosageInstruction[0].timing.repeat.periodUnit = #d
@@ -129,6 +132,7 @@ Title:    "Dispense Example - Minimal amount of information"
 * dosageInstruction[0].doseAndRate.doseQuantity.code = #{tbl}
 * dosageInstruction[0].doseAndRate.doseQuantity.system = "http://hl7.org/fhir/Valueset/ucum-units"
 * dosageInstruction[1].additionalInstruction.text = "In te nemen met een glas water"
+* dosageInstruction[1].text = "een halve tablet bij het avondeten"
 * dosageInstruction[1].timing.repeat.frequency = 1
 * dosageInstruction[1].timing.repeat.period = 1
 * dosageInstruction[1].timing.repeat.periodUnit = #d
@@ -162,6 +166,7 @@ Title:    "Dispense Example - Minimal amount of information"
 * performer[0].actor.display = "Jan Janssen"
 * whenHandedOver = "2020-03-10"
 * dosageInstruction[0].additionalInstruction.text = "In te nemen met een glas water" 
+* dosageInstruction[0].text = "1 tablet bij het ontbijt"
 * dosageInstruction[0].timing.repeat.frequency = 1
 * dosageInstruction[0].timing.repeat.period = 1
 * dosageInstruction[0].timing.repeat.periodUnit = #d
@@ -174,6 +179,7 @@ Title:    "Dispense Example - Minimal amount of information"
 * dosageInstruction[0].doseAndRate.doseQuantity.code = #{tbl}
 * dosageInstruction[0].doseAndRate.doseQuantity.system = "http://hl7.org/fhir/Valueset/ucum-units"
 * dosageInstruction[1].additionalInstruction.text = "In te nemen met een glas water"
+* dosageInstruction[1].text = "1 tablet om 8h 's avonds'"
 * dosageInstruction[1].timing.repeat.frequency = 1
 * dosageInstruction[1].timing.repeat.period = 1
 * dosageInstruction[1].timing.repeat.periodUnit = #d
@@ -219,3 +225,60 @@ Title:    "Posology example - three times a day"
 * dosageInstruction.doseAndRate.doseQuantity.unit = "tablespoon"
 * dosageInstruction.doseAndRate.doseQuantity.code = #{tbs_m}
 * dosageInstruction.doseAndRate.doseQuantity.system = "http://hl7.org/fhir/Valueset/ucum-units"
+
+/* 
+* Example 5: medrol phase-out schedule
+* The first 4 days: 3 times a day
+* The next 4 days: 2 times a day
+*/ 
+Instance: posology-medrol-afbouwschema
+InstanceOf: MedicationDispense
+Usage: #example
+Description: "Posology example: one tablet before breakfast, one tablet at 20pm"
+Title:    "Dispense Example - Minimal amount of information"
+* meta.profile[0] = "https://www.hl7belgium.be/fhir/StructureDefinition/be-medicationdispense"
+* subject.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
+* subject.identifier.value = "64110219106"
+* status = #completed
+* medicationCodeableConcept.coding.system = "https://cnk.apb.be/codings/cnk_product_codes"
+* medicationCodeableConcept.coding.code = #56028
+* medicationCodeableConcept.coding.display = "Medrol tab 30x 4mg"
+* performer[0].actor.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi-practitioner"
+* performer[0].actor.identifier.value = "6547432"
+* performer[0].actor.display = "Jan Janssen"
+* whenHandedOver = "2020-03-10"
+
+* dosageInstruction[0].additionalInstruction.text = "Inslikken en doorspoelen met een glas water" 
+* dosageInstruction[0].text = "3 tabletten per dag, bij het eten"
+* dosageInstruction[0].sequence = 1
+* dosageInstruction[0].timing.repeat.frequency = 3
+* dosageInstruction[0].timing.repeat.period = 1
+* dosageInstruction[0].timing.repeat.periodUnit = #d
+* dosageInstruction[0].timing.repeat.when = #ACM
+* dosageInstruction[0].timing.repeat.when = #ACD
+* dosageInstruction[0].timing.repeat.when = #ACV
+* dosageInstruction[0].timing.repeat.count = 4
+* dosageInstruction[0].route.coding.system = "http://hl7.org/fhir/ValueSet/route-codes"
+* dosageInstruction[0].route.coding.code = #26643006
+* dosageInstruction[0].route.coding.display = "Via de mond"
+* dosageInstruction[0].doseAndRate.doseQuantity.value = 1
+* dosageInstruction[0].doseAndRate.doseQuantity.unit = "tablet"
+* dosageInstruction[0].doseAndRate.doseQuantity.code = #{tbl}
+* dosageInstruction[0].doseAndRate.doseQuantity.system = "http://hl7.org/fhir/Valueset/ucum-units"
+
+* dosageInstruction[1].additionalInstruction.text = "Inslikken en doorspoelen met een glas water"
+* dosageInstruction[1].text = "2 tabletten per dag, bij het eten"
+* dosageInstruction[1].sequence = 2
+* dosageInstruction[1].timing.repeat.frequency = 2
+* dosageInstruction[1].timing.repeat.period = 1
+* dosageInstruction[1].timing.repeat.periodUnit = #d
+* dosageInstruction[1].timing.repeat.when = #ACM
+* dosageInstruction[1].timing.repeat.when = #ACV
+* dosageInstruction[1].timing.repeat.count = 4
+* dosageInstruction[1].route.coding.system = "http://hl7.org/fhir/ValueSet/route-codes"
+* dosageInstruction[1].route.coding.code = #26643006
+* dosageInstruction[1].route.coding.display = "Via de mond"
+* dosageInstruction[1].doseAndRate.doseQuantity.value = 1
+* dosageInstruction[1].doseAndRate.doseQuantity.unit = "tablet"
+* dosageInstruction[1].doseAndRate.doseQuantity.code = #{tbl}
+* dosageInstruction[1].doseAndRate.doseQuantity.system = "http://hl7.org/fhir/Valueset/ucum-units"
