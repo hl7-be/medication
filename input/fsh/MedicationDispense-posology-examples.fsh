@@ -7,7 +7,7 @@
 Instance: posology-1-tablet-a-day
 InstanceOf: MedicationDispense
 Usage: #example
-Description: "Medication Dispense example"
+Description: "Posology example: once a day in the morning , with a glass of water"
 Title:    "Dispense Example - Minimal amount of information"
 * meta.profile[0] = "https://www.hl7belgium.be/fhir/StructureDefinition/be-medicationdispense"
 * subject.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
@@ -27,7 +27,7 @@ Title:    "Dispense Example - Minimal amount of information"
 * dosageInstruction.timing.repeat.when = #MORN 
 * dosageInstruction.route.coding.system = "http://hl7.org/fhir/ValueSet/route-codes"
 * dosageInstruction.route.coding.code = #26643006
-* dosageInstruction.route.coding.dislay = "Via de mond"
+* dosageInstruction.route.coding.display = "Via de mond"
 * dosageInstruction.doseAndRate.doseQuantity.value = 1
 * dosageInstruction.doseAndRate.doseQuantity.unit = "tablet"
 * dosageInstruction.doseAndRate.doseQuantity.code = #{tbl}
@@ -63,3 +63,35 @@ The mapping to a kmehr - table should happen through a valueset-mapping. Putting
 confusion on the actual dosage-rate that needs to be used in the case of multiple doses. 
 */
 
+/*
+* Example 2: Before breakfast and before dinner
+*/
+Instance: posology-2-tablets-breakfast-dinner
+InstanceOf: MedicationDispense
+Usage: #example
+Description: "Posology example: 2 half tablets before breakfast and dinner"
+Title:    "Dispense Example - Minimal amount of information"
+* meta.profile[0] = "https://www.hl7belgium.be/fhir/StructureDefinition/be-medicationdispense"
+* subject.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
+* subject.identifier.value = "64110219106"
+* status = #completed
+* medicationCodeableConcept.coding.system = "https://cnk.apb.be/codings/cnk_product_codes"
+* medicationCodeableConcept.coding.code = #1439562
+* medicationCodeableConcept.coding.display = "Topazolam tab 50x 1,0mg"
+* performer[0].actor.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi-practitioner"
+* performer[0].actor.identifier.value = "6547432"
+* performer[0].actor.display = "Jan Janssen"
+* whenHandedOver = "2020-03-10"
+* dosageInstruction.additionalInstruction.text = "In te nemen met een glas water" //snomed-able met SC419303009
+* dosageInstruction.timing.repeat.frequency = 2
+* dosageInstruction.timing.repeat.period = 1
+* dosageInstruction.timing.repeat.periodUnit = #d
+* dosageInstruction.timing.repeat.when[0] = #ACM
+* dosageInstruction.timing.repeat.when[1] = #ACV
+* dosageInstruction.route.coding.system = "http://hl7.org/fhir/ValueSet/route-codes"
+* dosageInstruction.route.coding.code = #26643006
+* dosageInstruction.route.coding.display = "Via de mond"
+* dosageInstruction.doseAndRate.doseQuantity.value = 0.5
+* dosageInstruction.doseAndRate.doseQuantity.unit = "tablet"
+* dosageInstruction.doseAndRate.doseQuantity.code = #{tbl}
+* dosageInstruction.doseAndRate.doseQuantity.system = "http://hl7.org/fhir/Valueset/ucum-units"
