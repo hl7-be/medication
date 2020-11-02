@@ -187,7 +187,7 @@ Title:    "Dispense Example - Minimal amount of information"
 * dosageInstruction[1].doseAndRate.doseQuantity.system = "http://hl7.org/fhir/Valueset/ucum-units"
 
 /*
-* Example 4: 3 times a day with food
+* Example 4: 3 times a day with food, for a single day
 */
 Instance: posology-1-spoon-with-food-3-times
 InstanceOf: MedicationDispense
@@ -206,10 +206,12 @@ Title:    "Posology example - three times a day"
 * performer[0].actor.display = "Jan Janssen"
 * whenHandedOver = "2020-03-10"
 * dosageInstruction.additionalInstruction.text = "Inslikken en doorspoelen met een glas water" //snomed-able met SC419303009
+* dosageInstruction.text = "3 x 1 eetlepel per dag bij het eten"
 * dosageInstruction.timing.repeat.frequency = 3
 * dosageInstruction.timing.repeat.period = 1
 * dosageInstruction.timing.repeat.periodUnit = #d
 * dosageInstruction.timing.repeat.when = #C
+* dosageInstruction.timing.repeat.count = 1
 * dosageInstruction.route.coding.system = "http://hl7.org/fhir/ValueSet/route-codes"
 * dosageInstruction.route.coding.code = #26643006
 * dosageInstruction.route.coding.display = "Via de mond"
