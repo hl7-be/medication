@@ -126,9 +126,24 @@
         <generation value="html"/>
       </page>
 		  <page>
-			<nameUrl value="howto.html"/>
-			<title value="How to read this document"/>
-			<generation value="html"/>
+		  	<nameUrl value="howto.html"/>
+	  		<title value="How to read this document"/>
+	  		<generation value="html"/>
+		  </page>
+		  <page>
+  			<nameUrl value="usecases.html"/>
+  			<title value="Use Cases"/>
+	  		<generation value="markdown"/>
+		  </page>
+		  <page>
+  			<nameUrl value="logical-models.html"/>
+  			<title value="Logical Models"/>
+	  		<generation value="markdown"/>
+		  </page>
+		  <page>
+  			<nameUrl value="downloads.html"/>
+  			<title value="Downloads"/>
+	  		<generation value="html"/>
 		  </page>
     </page>
     <!-- copyright year is a mandatory parameter -->

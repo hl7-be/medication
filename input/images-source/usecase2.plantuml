@@ -1,0 +1,22 @@
+@startuml
+title Use Case 2 - Retrieve Dispense
+skinparam actorStyle awesome
+
+hide footbox
+
+'!include ./style.iuml
+
+'actor "**Patient**" as P
+actor "**Pharmacist**" as PHARM
+Participant "** Pharmacy **\n**  System  **" as PIS
+Participant "** Vault / other **\n **  System  **" as V
+
+
+...
+PHARM --> PIS : Request Dispenses
+activate PIS
+PIS -> V : Query for Dispenses
+activate V
+PIS <- V : **Return Dispenses**
+
+@enduml

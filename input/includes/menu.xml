@@ -14,7 +14,7 @@
 				<a href="howto.html">How to use this Publication</a>
 			</li>
 			<li>
-				<a target="_blank" href="{{site.data.fhir.path}}index.html">FHIR Spec<img src="external.png" style="text-align: baseline"/>
+				<a target="_blank" href="{{site.data.fhir.path}}index.html">FHIR Spec
 				</a>
 			</li>
 		</ul>
@@ -68,8 +68,9 @@
 	<li class="dropdown">
 		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Implementation<b class="caret"></b></a>
 		<ul class="dropdown-menu">
-			<li><a target="_blank" href="openapi.html">OpenAPI</a></li>
+<!--			<li><a target="_blank" href="openapi.html">OpenAPI</a></li>
 			<li><a href="testservers.html">Test Servers</a></li>
+-->
 			<li><a href="downloads.html">Downloads</a></li>
 		</ul>
 	</li>

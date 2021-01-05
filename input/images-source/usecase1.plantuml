@@ -1,0 +1,24 @@
+@startuml
+title Use Case 1 - Register Dispense
+skinparam actorStyle awesome
+
+hide footbox
+
+'!include ./style.iuml
+
+actor "**Patient**" as P
+actor "**Pharmacist**" as PHARM
+Participant "** Pharmacy **\n**  System  **" as PIS
+Participant "** Vault / other **\n **  System  **" as V
+
+P --> PHARM : Request medication\n (prescription / OTC)
+activate PHARM
+PHARM --> PHARM: Dispense 
+PHARM --> PIS: Register Dispense
+deactivate PHARM
+activate PIS
+
+PIS -> V : **Submit Dispense Record**
+
+
+@enduml
