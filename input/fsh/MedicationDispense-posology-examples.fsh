@@ -165,7 +165,7 @@ Title:    "Dispense Example - Minimal amount of information"
 * performer[0].actor.identifier.value = "6547432"
 * performer[0].actor.display = "Jan Janssen"
 * whenHandedOver = "2020-03-10"
-* dosageInstruction[0].additionalInstruction.text = "In te nemen met een glas water" 
+* dosageInstruction[0].additionalInstruction.text = "In te nemen met een koud glas water" 
 * dosageInstruction[0].text = "1 tablet bij het ontbijt"
 * dosageInstruction[0].timing.repeat.frequency = 1
 * dosageInstruction[0].timing.repeat.period = 1
