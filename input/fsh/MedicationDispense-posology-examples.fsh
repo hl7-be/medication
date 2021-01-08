@@ -32,7 +32,7 @@ Title:    "Dispense Example - Minimal amount of information"
 * dosageInstruction.doseAndRate.doseQuantity.value = 1
 * dosageInstruction.doseAndRate.doseQuantity.unit = "tablet"
 * dosageInstruction.doseAndRate.doseQuantity.code = #{tbl}
-* dosageInstruction.doseAndRate.doseQuantity.system = "http://hl7.org/fhir/Valueset/ucum-units"
+* dosageInstruction.doseAndRate.doseQuantity.system = "http://unitsofmeasure.org"
 //todo: per discussion: a couple of different systems that all implement a 'tablet'
 //* dosageInstruction.doseAndRate.doseQuantity.code = #00005
 //* dosageInstruction.doseAndRate.doseQuantity.system = "http://ehealth.fgov.be/kmehr-administrationunit"
@@ -96,7 +96,7 @@ Title:    "Dispense Example - Minimal amount of information"
 * dosageInstruction.doseAndRate.doseQuantity.value = 0.5
 * dosageInstruction.doseAndRate.doseQuantity.unit = "tablet"
 * dosageInstruction.doseAndRate.doseQuantity.code = #{tbl}
-* dosageInstruction.doseAndRate.doseQuantity.system = "http://hl7.org/fhir/Valueset/ucum-units"
+* dosageInstruction.doseAndRate.doseQuantity.system = "http://unitsofmeasure.org"
 
 /*
 * Example 2b: Before breakfast and before dinner with multiple dosageInstructions
@@ -130,7 +130,7 @@ Title:    "Dispense Example - Minimal amount of information"
 * dosageInstruction[0].doseAndRate.doseQuantity.value = 0.5
 * dosageInstruction[0].doseAndRate.doseQuantity.unit = "tablet"
 * dosageInstruction[0].doseAndRate.doseQuantity.code = #{tbl}
-* dosageInstruction[0].doseAndRate.doseQuantity.system = "http://hl7.org/fhir/Valueset/ucum-units"
+* dosageInstruction[0].doseAndRate.doseQuantity.system = "http://unitsofmeasure.org"
 * dosageInstruction[1].additionalInstruction.text = "In te nemen met een glas water"
 * dosageInstruction[1].text = "een halve tablet bij het avondeten"
 * dosageInstruction[1].timing.repeat.frequency = 1
@@ -143,7 +143,7 @@ Title:    "Dispense Example - Minimal amount of information"
 * dosageInstruction[1].doseAndRate.doseQuantity.value = 0.5
 * dosageInstruction[1].doseAndRate.doseQuantity.unit = "tablet"
 * dosageInstruction[1].doseAndRate.doseQuantity.code = #{tbl}
-* dosageInstruction[1].doseAndRate.doseQuantity.system = "http://hl7.org/fhir/Valueset/ucum-units"
+* dosageInstruction[1].doseAndRate.doseQuantity.system = "http://unitsofmeasure.org"
 
 /* 
 * Example 3: 1 before breakfast and one at 20 PM
@@ -177,7 +177,7 @@ Title:    "Dispense Example - Minimal amount of information"
 * dosageInstruction[0].doseAndRate.doseQuantity.value = 1
 * dosageInstruction[0].doseAndRate.doseQuantity.unit = "tablet"
 * dosageInstruction[0].doseAndRate.doseQuantity.code = #{tbl}
-* dosageInstruction[0].doseAndRate.doseQuantity.system = "http://hl7.org/fhir/Valueset/ucum-units"
+* dosageInstruction[0].doseAndRate.doseQuantity.system = "http://unitsofmeasure.org"
 * dosageInstruction[1].additionalInstruction.text = "In te nemen met een glas water"
 * dosageInstruction[1].text = "1 tablet om 8h 's avonds'"
 * dosageInstruction[1].timing.repeat.frequency = 1
@@ -190,7 +190,7 @@ Title:    "Dispense Example - Minimal amount of information"
 * dosageInstruction[1].doseAndRate.doseQuantity.value = 1
 * dosageInstruction[1].doseAndRate.doseQuantity.unit = "tablet"
 * dosageInstruction[1].doseAndRate.doseQuantity.code = #{tbl}
-* dosageInstruction[1].doseAndRate.doseQuantity.system = "http://hl7.org/fhir/Valueset/ucum-units"
+* dosageInstruction[1].doseAndRate.doseQuantity.system = "http://unitsofmeasure.org"
 
 /*
 * Example 4: 3 times a day with food, for a single day
@@ -224,7 +224,7 @@ Title:    "Posology example - three times a day"
 * dosageInstruction.doseAndRate.doseQuantity.value = 1
 * dosageInstruction.doseAndRate.doseQuantity.unit = "tablespoon"
 * dosageInstruction.doseAndRate.doseQuantity.code = #{tbs_m}
-* dosageInstruction.doseAndRate.doseQuantity.system = "http://hl7.org/fhir/Valueset/ucum-units"
+* dosageInstruction.doseAndRate.doseQuantity.system = "http://unitsofmeasure.org"
 
 /* 
 * Example 5: medrol phase-out schedule
@@ -264,7 +264,7 @@ Title:    "Dispense Example - Minimal amount of information"
 * dosageInstruction[0].doseAndRate.doseQuantity.value = 1
 * dosageInstruction[0].doseAndRate.doseQuantity.unit = "tablet"
 * dosageInstruction[0].doseAndRate.doseQuantity.code = #{tbl}
-* dosageInstruction[0].doseAndRate.doseQuantity.system = "http://hl7.org/fhir/Valueset/ucum-units"
+* dosageInstruction[0].doseAndRate.doseQuantity.system = "http://unitsofmeasure.org"
 
 * dosageInstruction[1].additionalInstruction.text = "Inslikken en doorspoelen met een glas water"
 * dosageInstruction[1].text = "2 tabletten per dag, bij het eten"
@@ -281,4 +281,4 @@ Title:    "Dispense Example - Minimal amount of information"
 * dosageInstruction[1].doseAndRate.doseQuantity.value = 1
 * dosageInstruction[1].doseAndRate.doseQuantity.unit = "tablet"
 * dosageInstruction[1].doseAndRate.doseQuantity.code = #{tbl}
-* dosageInstruction[1].doseAndRate.doseQuantity.system = "http://hl7.org/fhir/Valueset/ucum-units"
+* dosageInstruction[1].doseAndRate.doseQuantity.system = "http://unitsofmeasure.org"
