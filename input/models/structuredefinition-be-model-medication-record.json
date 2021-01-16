@@ -1,0 +1,366 @@
+{
+    "resourceType": "StructureDefinition",
+    "id": "be-model-medication-record",
+    "url": "http://hl7belgium.org/fhir/be-model-medication-record",
+    "version": "1.0.0",
+    "name": "BeModelMedicationRecord",
+    "status": "draft",
+    "date": "2021-01-07",
+    "publisher": "HL7 Belgium",
+    "contact": [
+        {
+            "telecom": [
+                {
+                    "system": "url",
+                    "value": "http://hl7belgium.org"
+                }
+            ]
+        }
+    ],
+    "description": "The Logical Data Model for a patient's Medication Record - detailed or summary",
+    "jurisdiction": [
+        {
+            "coding": [
+                {
+                    "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+                    "code": "056"
+                }
+            ]
+        }
+    ],
+    "fhirVersion": "4.0.1",
+    "kind": "logical",
+    "abstract": false,
+    "type": "BeMedicationRecord",
+    "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+    "derivation": "specialization",
+    "differential": {
+        "element": [
+            {
+                "id": "BeMedicationRecord.BeMedicationRecord",
+                "path": "BeMedicationRecord.BeMedicationRecord",
+                "short": "A patient's Medication Record",
+                "definition": "",
+                "min": "0",
+                "max": "*",
+                "type": [
+                    {
+                        "code": ""
+                    }
+                ]
+            },
+            {
+                "id": "BeMedicationRecord.BeMedicationRecord.patient",
+                "path": "BeMedicationRecord.BeMedicationRecord.patient",
+                "short": "The patient that has the medication",
+                "definition": "",
+                "min": "1",
+                "max": "1",
+                "type": [
+                    {
+                        "code": ""
+                    }
+                ]
+            },
+            {
+                "id": "BeMedicationRecord.BeMedicationRecord.medicationSummary",
+                "path": "BeMedicationRecord.BeMedicationRecord.medicationSummary",
+                "short": "A summary view of a patient's medication",
+                "definition": "The medication record may have different 'summary' views - it is possible to have one 'short' summary, or an 'official' summary, or a 'detailed' summary - the inclusion and exclusion criteria for what is in a summary may differ broadly. ",
+                "min": "0",
+                "max": "*",
+                "type": [
+                    {
+                        "code": "BackboneElement"
+                    }
+                ]
+            },
+            {
+                "id": "BeMedicationRecord.BeMedicationRecord.medicationSummary.treatmentLine",
+                "path": "BeMedicationRecord.BeMedicationRecord.medicationSummary.treatmentLine",
+                "short": "A medication item in the summary.",
+                "definition": "The summary consists of medication treatment lines. The distinction between treatments may be different. In Belgium, the medication treatment line is identified as one active principle for one indication, which conditions the cardinality of these fields.",
+                "min": "0",
+                "max": "*",
+                "type": [
+                    {
+                        "code": "BackboneElement"
+                    }
+                ]
+            },
+            {
+                "id": "BeMedicationRecord.BeMedicationRecord.medicationSummary.recordDate",
+                "path": "BeMedicationRecord.BeMedicationRecord.medicationSummary.recordDate",
+                "short": "The date when the summary was recorded or updated",
+                "definition": "The date when the summary was recorded or updated",
+                "min": "1",
+                "max": "1",
+                "type": [
+                    {
+                        "code": "date"
+                    }
+                ]
+            },
+            {
+                "id": "BeMedicationRecord.BeMedicationRecord.medicationSummary.uniqueIdentifiertreatmentLine",
+                "path": "BeMedicationRecord.BeMedicationRecord.medicationSummary.uniqueIdentifiertreatmentLine",
+                "short": "A unique identifier for the treatment line",
+                "definition": "This identifier is used when reconciling information across different sources or sharing the same item across different summaries.",
+                "min": "1",
+                "max": "*",
+                "type": [
+                    {
+                        "code": "Identifier"
+                    }
+                ]
+            },
+            {
+                "id": "BeMedicationRecord.BeMedicationRecord.medicationSummary.uniqueIdentifierMedicationTreatment",
+                "path": "BeMedicationRecord.BeMedicationRecord.medicationSummary.uniqueIdentifierMedicationTreatment",
+                "short": "A unique identifier for the treatment",
+                "definition": "It is important to group medication lines per treatment, for example for filtering, data analysis, etc.",
+                "min": "0",
+                "max": "*",
+                "type": [
+                    {
+                        "code": "Identifier"
+                    }
+                ]
+            },
+            {
+                "id": "BeMedicationRecord.BeMedicationRecord.medicationSummary.treatmentLifecycleStatus",
+                "path": "BeMedicationRecord.BeMedicationRecord.medicationSummary.treatmentLifecycleStatus",
+                "short": "The status of the treatment",
+                "definition": "The status of the treatment for this treatment line - whether it is stopped, ongoing, etc.",
+                "min": "0",
+                "max": "1",
+                "type": [
+                    {
+                        "code": "CodeableConcept"
+                    }
+                ]
+            },
+            {
+                "id": "BeMedicationRecord.BeMedicationRecord.medicationSummary.statusReason",
+                "path": "BeMedicationRecord.BeMedicationRecord.medicationSummary.statusReason",
+                "short": "The reason for status change",
+                "definition": "When a status exists, it may be important to keep record of such change, for example 'stopped due to this allergy'",
+                "min": "0",
+                "max": "1",
+                "type": [
+                    {
+                        "code": "Reference"
+                    }
+                ]
+            },
+            {
+                "id": "BeMedicationRecord.BeMedicationRecord.medicationSummary.originType",
+                "path": "BeMedicationRecord.BeMedicationRecord.medicationSummary.originType",
+                "short": "The type of medication treatment, typically inpatient, ambulatory, prescribed, etc",
+                "definition": "The type of medication treatment, typically inpatient, ambulatory, prescribed, etc. Several types can exist - e.g. 'emergency' + 'inpatient'",
+                "min": "0",
+                "max": "*",
+                "type": [
+                    {
+                        "code": "CodeableConcept"
+                    }
+                ]
+            },
+            {
+                "id": "BeMedicationRecord.BeMedicationRecord.medicationSummary.recorder",
+                "path": "BeMedicationRecord.BeMedicationRecord.medicationSummary.recorder",
+                "short": "The person that recorded or updated this record",
+                "definition": "The person that recorded or updated this record",
+                "min": "1",
+                "max": "1",
+                "type": [
+                    {
+                        "code": "Reference"
+                    }
+                ]
+            },
+            {
+                "id": "BeMedicationRecord.BeMedicationRecord.medicationSummary.treatmentStartDate",
+                "path": "BeMedicationRecord.BeMedicationRecord.medicationSummary.treatmentStartDate",
+                "short": "The start date for the treatment, if known",
+                "definition": "The start date for the treatment, if known",
+                "min": "1",
+                "max": "1",
+                "type": [
+                    {
+                        "code": "date"
+                    }
+                ]
+            },
+            {
+                "id": "BeMedicationRecord.BeMedicationRecord.medicationSummary.treatmentEndDate",
+                "path": "BeMedicationRecord.BeMedicationRecord.medicationSummary.treatmentEndDate",
+                "short": "The end date for the treatment, if known",
+                "definition": "The end date for the treatment, if known",
+                "min": "0",
+                "max": "1",
+                "type": [
+                    {
+                        "code": "date"
+                    }
+                ]
+            },
+            {
+                "id": "BeMedicationRecord.BeMedicationRecord.medicationSummary.indication",
+                "path": "BeMedicationRecord.BeMedicationRecord.medicationSummary.indication",
+                "short": "The indication for the treatment",
+                "definition": "The indication for which this medication is being taken. This can be typically available from a prescription or from other treatment guidance.",
+                "min": "1",
+                "max": "1",
+                "type": [
+                    {
+                        "code": "CodeableConcept"
+                    }
+                ]
+            },
+            {
+                "id": "BeMedicationRecord.BeMedicationRecord.medicationSummary.product",
+                "path": "BeMedicationRecord.BeMedicationRecord.medicationSummary.product",
+                "short": "The medication product or substance",
+                "definition": "The level to capture the product or substance may differ according to the implementations. For example, if the product is at brand level, then different brands will correspond to different treatment lines",
+                "min": "1",
+                "max": "1",
+                "type": [
+                    {
+                        "code": "Reference"
+                    }
+                ]
+            },
+            {
+                "id": "BeMedicationRecord.BeMedicationRecord.medicationSummary.medicationType",
+                "path": "BeMedicationRecord.BeMedicationRecord.medicationSummary.medicationType",
+                "short": "The type of medicinal product - e.g. if it is a hospital formulation, or magistral, or commercial product..",
+                "definition": "The type of medicinal product - e.g. if it is a hospital formulation, or magistral, or commercial product..",
+                "min": "1",
+                "max": "1",
+                "type": [
+                    {
+                        "code": "CodeableConcept"
+                    }
+                ]
+            },
+            {
+                "id": "BeMedicationRecord.BeMedicationRecord.medicationSummary.lotNumber",
+                "path": "BeMedicationRecord.BeMedicationRecord.medicationSummary.lotNumber",
+                "short": "the lot number --TO CHECK",
+                "definition": "the lot number --TO CHECK",
+                "min": "0",
+                "max": "*",
+                "type": [
+                    {
+                        "code": "Identifier"
+                    }
+                ]
+            },
+            {
+                "id": "BeMedicationRecord.BeMedicationRecord.medicationSummary.dosage",
+                "path": "BeMedicationRecord.BeMedicationRecord.medicationSummary.dosage",
+                "short": "The dosage followed",
+                "definition": "The dosage followed",
+                "min": "0",
+                "max": "*",
+                "type": [
+                    {
+                        "code": "BackboneElement"
+                    }
+                ]
+            },
+            {
+                "id": "BeMedicationRecord.BeMedicationRecord.medicationSummary.dosage.period",
+                "path": "BeMedicationRecord.BeMedicationRecord.medicationSummary.dosage.period",
+                "short": "The period during which this specific dosage regime was in use",
+                "definition": "The period during which this specific dosage regime was in use",
+                "min": "0",
+                "max": "1",
+                "type": [
+                    {
+                        "code": "Period"
+                    }
+                ]
+            },
+            {
+                "id": "BeMedicationRecord.BeMedicationRecord.medicationSummary.dosage.quantity",
+                "path": "BeMedicationRecord.BeMedicationRecord.medicationSummary.dosage.quantity",
+                "short": "The quantity of the drug taken",
+                "definition": "The quantity of the drug taken",
+                "min": "0",
+                "max": "1",
+                "type": [
+                    {
+                        "code": "SimpleQuantity"
+                    }
+                ]
+            },
+            {
+                "id": "BeMedicationRecord.BeMedicationRecord.medicationSummary.dosage.periodicity",
+                "path": "BeMedicationRecord.BeMedicationRecord.medicationSummary.dosage.periodicity",
+                "short": "The frequency of usage",
+                "definition": "The frequency of usage",
+                "min": "0",
+                "max": "1",
+                "type": [
+                    {
+                        "code": "CodeableConcept"
+                    }
+                ]
+            },
+            {
+                "id": "BeMedicationRecord.BeMedicationRecord.medicationSummary.dosage.route",
+                "path": "BeMedicationRecord.BeMedicationRecord.medicationSummary.dosage.route",
+                "short": "The route of administration",
+                "definition": "The route of administration",
+                "min": "1",
+                "max": "1",
+                "type": [
+                    {
+                        "code": "CodeableConcept"
+                    }
+                ]
+            },
+            {
+                "id": "BeMedicationRecord.BeMedicationRecord.medicationSummary.dosage.dayPeriod",
+                "path": "BeMedicationRecord.BeMedicationRecord.medicationSummary.dosage.dayPeriod",
+                "short": "The period of the day when the drug was taken or administered",
+                "definition": "The period of the day when the drug was taken or administered",
+                "min": "0",
+                "max": "*",
+                "type": [
+                    {
+                        "code": "CodeableConcept"
+                    }
+                ]
+            },
+            {
+                "id": "BeMedicationRecord.BeMedicationRecord.medicationSummary.dosage.instructionForUse",
+                "path": "BeMedicationRecord.BeMedicationRecord.medicationSummary.dosage.instructionForUse",
+                "short": "The textual representation of the instructions for use",
+                "definition": "The textual representation of the instructions for use",
+                "min": "0",
+                "max": "*",
+                "type": [
+                    {
+                        "code": "Annotation"
+                    }
+                ]
+            },
+            {
+                "id": "BeMedicationRecord.BeMedicationRecord.medicationSummary.reaction",
+                "path": "BeMedicationRecord.BeMedicationRecord.medicationSummary.reaction",
+                "short": "Any known reactions noted for this product",
+                "definition": "Any known reactions noted for this product",
+                "min": "0",
+                "max": "*",
+                "type": [
+                    {
+                        "code": "Reference"
+                    }
+                ]
+            }
+        ]
+    }
+}

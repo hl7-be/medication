@@ -46,6 +46,11 @@
       <description value="Medication Dispense"/>
     </grouping>
 
+    <grouping id="medicationrecord">
+      <name value="Medication Record"/>
+      <description value="Medication Record / Medication Schema"/>
+    </grouping>
+
 
 
 
@@ -69,6 +74,21 @@
       <description value="Medication Dispense entry - information captured when dispensing medication e.g. in pharmacies and hospitals"/>
       <groupingId value="medicationdispense"/>
     </resource>
+
+
+
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/be-model-medication-record"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Logical Model Medication Record"/>
+      <description value="Medication Record - summary or detailed information about the usage of medication by a patient"/>
+      <groupingId value="medicationrecord"/>
+    </resource>
+
+
+
 
 
     <resource>
@@ -131,9 +151,29 @@
 	  		<generation value="html"/>
 		  </page>
 		  <page>
-  			<nameUrl value="usecases.html"/>
-  			<title value="Use Cases"/>
+  			<nameUrl value="usecases-dispense.html"/>
+  			<title value="Use Cases - Dispense"/>
 	  		<generation value="markdown"/>
+		  </page>
+		  <page>
+  			<nameUrl value="usecases-medschema.html"/>
+  			<title value="Use Cases - Medication Schema"/>
+	  		<generation value="markdown"/>
+        <page>
+          <nameUrl value="usecases-medschema-1.html"/>
+          <title value="Use Case 1 - Consult a patient's medication schema"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="usecases-medschema-2.html"/>
+          <title value="Use Case 2 - update a patient's medication schema"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="usecases-medschema-3.html"/>
+          <title value="Use Case 3 - Compile a medication schema"/>
+          <generation value="markdown"/>
+        </page>
 		  </page>
 		  <page>
   			<nameUrl value="logical-models.html"/>

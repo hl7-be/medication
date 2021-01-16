@@ -1,0 +1,30 @@
+@startuml
+title Use Case 1 - Consult Medication Schema
+skinparam actorStyle awesome
+
+hide footbox
+
+'!include ./style.iuml
+
+actor "**Patient**" as P
+actor "**GP**" as GP
+Participant "** Pharmacy **\n**  System  **" as PIS
+Participant "** Vault / other **\n **  System  **" as V
+
+group Identification
+P -[#A92]-> PIS : Identification / authorization
+end
+...
+
+group Request Medication Summary
+GP --> PIS : Request Patient's\nmedication schema 
+activate PIS
+PIS -> V : Query for Medication Summary
+activate V
+PIS <- V : **Return Medication Summary**
+deactivate V
+deactivate PIS
+end
+
+
+@enduml

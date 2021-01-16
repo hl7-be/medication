@@ -20,17 +20,18 @@
       <max value="*" />
     </element>
 
+
+
     <element id="BeMedicationDispense.identifier">
       <path value="BeMedicationDispense.identifier" />
-      <short value="The business identifier(s) for the medication dispense" />
-      <definition value="The business identifier(s) for the medication dispense. The DGUID is the current identifier." />
+      <short value="The business identifier(s) for the medication dispense session" />
+      <definition value="The business identifier(s) for the medication dispense session, also known as Session GUID (SGUID)." />
       <min value="0" />
       <max value="1" />
       <type>
         <code value="Identifier" />
       </type>
     </element>
-
     <element id="BeMedicationDispense.patient">
       <path value="BeMedicationDispense.patient" />
       <short value="The person for which the medication is dispensed." />
@@ -42,10 +43,6 @@
         <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient" />
       </type>
     </element>
-
-
-
-
     <element id="BeMedicationDispense.dispenser">
       <path value="BeMedicationDispense.dispenser" />
       <short value="The dispenser, if known and relevant" />
@@ -56,18 +53,6 @@
       <type>
       </type>
     </element>
-<!--
-    <element id="BeMedicationDispense.dispenser">
-      <path value="BeMedicationDispense.dispenser" />
-      <short value="Person that performed the recording or reporting" />
-      <definition value="Who was responsible for asserting the observed value as &quot;true&quot;." />
-      <min value="1" />
-      <max value="1" />
-      <type>
-        <code value="CodeableReference" />
-      </type>
-    </element>
--->
     <element id="BeMedicationDispense.dispenser.person">
       <path value="BeMedicationDispense.dispenser.dispenser" />
       <short value="Reference to person that performed the recording or reporting" />
@@ -91,8 +76,6 @@
         <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-organization"/>
       </type>
     </element>
-
-	
     <element id="BeMedicationDispense.dispenseDate">
       <path value="BeMedicationDispense.dispenseDate" />
       <short value="The date when the dispense ocurred" />
@@ -139,19 +122,50 @@
       </type>
     </element>
 
-    <element id="BeMedicationDispense.dispenseSession">
-      <path value="BeMedicationDispense.dispenseSession" />
-      <short value="The dispense group or session that includes this dispense. The SGUID is used" />
-      <definition value="." />
+
+
+
+
+    <element id="BeMedicationDispense.identifier">
+      <path value="BeMedicationDispense.identifier" />
+      <short value="The business identifier(s) for the medication dispense" />
+      <definition value="The business identifier(s) for the medication dispense. The DGUID is the current identifier." />
       <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Identifier" />
+      </type>
+    </element>
+
+
+
+<!--
+    <element id="BeMedicationDispense.dispenser">
+      <path value="BeMedicationDispense.dispenser" />
+      <short value="Person that performed the recording or reporting" />
+      <definition value="Who was responsible for asserting the observed value as &quot;true&quot;." />
+      <min value="1" />
       <max value="1" />
       <type>
         <code value="CodeableReference" />
       </type>
     </element>
+-->
 
+	
     <element id="BeMedicationDispense.dispensedItem">
       <path value="BeMedicationDispense.dispensedItem" />
+      <short value="Each product that was dispensed" />
+      <definition value="." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="CodeableReference" />
+      </type>
+    </element>
+
+    <element id="BeMedicationDispense.dispensedItem.product">
+      <path value="BeMedicationDispense.dispensedItem.product" />
       <short value="The product that was dispensed - coded or not (e.g. for magistral preparations)" />
       <definition value="." />
       <min value="0" />
@@ -162,8 +176,8 @@
     </element>
 
 
-    <element id="BeMedicationDispense.quantityDispensed">
-      <path value="BeMedicationDispense.quantityDispensed" />
+    <element id="BeMedicationDispense.dispensedItem.quantityDispensed">
+      <path value="BeMedicationDispense.dispensedItem.quantityDispensed" />
       <short value="The amound of product that was dispensed" />
       <definition value="." />
       <min value="0" />
@@ -173,8 +187,8 @@
       </type>
     </element>
 
-    <element id="BeMedicationDispense.dosageInstructions">
-      <path value="BeMedicationDispense.dosageInstructions" />
+    <element id="BeMedicationDispense.dispensedItem.dosageInstructions">
+      <path value="BeMedicationDispense.dispensedItem.dosageInstructions" />
       <short value="The instructions for use" />
       <definition value="." />
       <min value="0" />
@@ -186,6 +200,18 @@
 
 
 
+
+    <element id="BeMedicationDispense.dispensedItem.note">
+      <path value="BeMedicationDispense.dispensedItem.note" />
+      <short value="Additional information about the dispensed item" />
+      <definition value="Additional information about the dispense - this can be relevant history, any remarks by the patient or professional, etc." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Annotation" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Annotation" />
+      </type>
+    </element>
 
     <element id="BeMedicationDispense.note">
       <path value="BeMedicationDispense.note" />
