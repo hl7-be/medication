@@ -37,34 +37,34 @@
     "differential": {
         "element": [
             {
-                "id": "BeMedicationRecord.BeMedicationRecord",
-                "path": "BeMedicationRecord.BeMedicationRecord",
-                "short": "A patient's Medication Record",
-                "definition": "",
-                "min": "0",
-                "max": "*",
-                "type": [
-                    {
-                        "code": ""
-                    }
-                ]
-            },
-            {
-                "id": "BeMedicationRecord.BeMedicationRecord.patient",
-                "path": "BeMedicationRecord.BeMedicationRecord.patient",
+                "id": "BeMedicationRecord.patient",
+                "path": "BeMedicationRecord.patient",
                 "short": "The patient that has the medication",
-                "definition": "",
+                "definition": "The patient that has the medication",
                 "min": "1",
                 "max": "1",
                 "type": [
                     {
-                        "code": ""
+                        "code": "Reference"
                     }
                 ]
             },
             {
-                "id": "BeMedicationRecord.BeMedicationRecord.medicationSummary",
-                "path": "BeMedicationRecord.BeMedicationRecord.medicationSummary",
+                "id": "BeMedicationRecord.identifier",
+                "path": "BeMedicationRecord.identifier",
+                "short": "An identifier of the meidcation record when it needs to be exchanged or tracked",
+                "definition": "An identifier of the meidcation record when it needs to be exchanged or tracked",
+                "min": "0",
+                "max": "*",
+                "type": [
+                    {
+                        "code": "Identifier"
+                    }
+                ]
+            },
+            {
+                "id": "BeMedicationRecord.medicationSummary",
+                "path": "BeMedicationRecord.medicationSummary",
                 "short": "A summary view of a patient's medication",
                 "definition": "The medication record may have different 'summary' views - it is possible to have one 'short' summary, or an 'official' summary, or a 'detailed' summary - the inclusion and exclusion criteria for what is in a summary may differ broadly. ",
                 "min": "0",
@@ -76,21 +76,8 @@
                 ]
             },
             {
-                "id": "BeMedicationRecord.BeMedicationRecord.medicationSummary.treatmentLine",
-                "path": "BeMedicationRecord.BeMedicationRecord.medicationSummary.treatmentLine",
-                "short": "A medication item in the summary.",
-                "definition": "The summary consists of medication treatment lines. The distinction between treatments may be different. In Belgium, the medication treatment line is identified as one active principle for one indication, which conditions the cardinality of these fields.",
-                "min": "0",
-                "max": "*",
-                "type": [
-                    {
-                        "code": "BackboneElement"
-                    }
-                ]
-            },
-            {
-                "id": "BeMedicationRecord.BeMedicationRecord.medicationSummary.recordDate",
-                "path": "BeMedicationRecord.BeMedicationRecord.medicationSummary.recordDate",
+                "id": "BeMedicationRecord.medicationSummary.recordDate",
+                "path": "BeMedicationRecord.medicationSummary.recordDate",
                 "short": "The date when the summary was recorded or updated",
                 "definition": "The date when the summary was recorded or updated",
                 "min": "1",
@@ -102,21 +89,21 @@
                 ]
             },
             {
-                "id": "BeMedicationRecord.BeMedicationRecord.medicationSummary.uniqueIdentifiertreatmentLine",
-                "path": "BeMedicationRecord.BeMedicationRecord.medicationSummary.uniqueIdentifiertreatmentLine",
-                "short": "A unique identifier for the treatment line",
-                "definition": "This identifier is used when reconciling information across different sources or sharing the same item across different summaries.",
-                "min": "1",
+                "id": "BeMedicationRecord.medicationSummary.treatmentLine",
+                "path": "BeMedicationRecord.medicationSummary.treatmentLine",
+                "short": "A medication item in the summary.",
+                "definition": "The summary consists of medication treatment lines. The distinction between treatments may be different. In Belgium, the medication treatment line is identified as one active principle for one indication, which conditions the cardinality of these fields.",
+                "min": "0",
                 "max": "*",
                 "type": [
                     {
-                        "code": "Identifier"
+                        "code": "BackboneElement"
                     }
                 ]
             },
             {
-                "id": "BeMedicationRecord.BeMedicationRecord.medicationSummary.uniqueIdentifierMedicationTreatment",
-                "path": "BeMedicationRecord.BeMedicationRecord.medicationSummary.uniqueIdentifierMedicationTreatment",
+                "id": "BeMedicationRecord.medicationSummarytreatmentLine.uniqueIdentifierMedicationTreatment",
+                "path": "BeMedicationRecord.medicationSummarytreatmentLine.uniqueIdentifierMedicationTreatment",
                 "short": "A unique identifier for the treatment",
                 "definition": "It is important to group medication lines per treatment, for example for filtering, data analysis, etc.",
                 "min": "0",
@@ -128,8 +115,21 @@
                 ]
             },
             {
-                "id": "BeMedicationRecord.BeMedicationRecord.medicationSummary.treatmentLifecycleStatus",
-                "path": "BeMedicationRecord.BeMedicationRecord.medicationSummary.treatmentLifecycleStatus",
+                "id": "BeMedicationRecord.medicationSummary.treatmentLine.uniqueIdentifiertreatmentLine",
+                "path": "BeMedicationRecord.medicationSummary.treatmentLine.uniqueIdentifiertreatmentLine",
+                "short": "A unique identifier for the treatment line",
+                "definition": "This identifier is used when reconciling information across different sources or sharing the same item across different summaries.",
+                "min": "1",
+                "max": "*",
+                "type": [
+                    {
+                        "code": "Identifier"
+                    }
+                ]
+            },
+            {
+                "id": "BeMedicationRecord.medicationSummary.treatmentLine.treatmentLifecycleStatus",
+                "path": "BeMedicationRecord.medicationSummary.treatmentLine.treatmentLifecycleStatus",
                 "short": "The status of the treatment",
                 "definition": "The status of the treatment for this treatment line - whether it is stopped, ongoing, etc.",
                 "min": "0",
@@ -141,8 +141,8 @@
                 ]
             },
             {
-                "id": "BeMedicationRecord.BeMedicationRecord.medicationSummary.statusReason",
-                "path": "BeMedicationRecord.BeMedicationRecord.medicationSummary.statusReason",
+                "id": "BeMedicationRecord.medicationSummary.treatmentLine.statusReason",
+                "path": "BeMedicationRecord.medicationSummary.treatmentLine.statusReason",
                 "short": "The reason for status change",
                 "definition": "When a status exists, it may be important to keep record of such change, for example 'stopped due to this allergy'",
                 "min": "0",
@@ -154,8 +154,8 @@
                 ]
             },
             {
-                "id": "BeMedicationRecord.BeMedicationRecord.medicationSummary.originType",
-                "path": "BeMedicationRecord.BeMedicationRecord.medicationSummary.originType",
+                "id": "BeMedicationRecord.medicationSummary.treatmentLine.originType",
+                "path": "BeMedicationRecord.medicationSummary.treatmentLine.originType",
                 "short": "The type of medication treatment, typically inpatient, ambulatory, prescribed, etc",
                 "definition": "The type of medication treatment, typically inpatient, ambulatory, prescribed, etc. Several types can exist - e.g. 'emergency' + 'inpatient'",
                 "min": "0",
@@ -167,8 +167,8 @@
                 ]
             },
             {
-                "id": "BeMedicationRecord.BeMedicationRecord.medicationSummary.recorder",
-                "path": "BeMedicationRecord.BeMedicationRecord.medicationSummary.recorder",
+                "id": "BeMedicationRecord.medicationSummary.treatmentLine.recorder",
+                "path": "BeMedicationRecord.medicationSummary.treatmentLine.recorder",
                 "short": "The person that recorded or updated this record",
                 "definition": "The person that recorded or updated this record",
                 "min": "1",
@@ -180,8 +180,8 @@
                 ]
             },
             {
-                "id": "BeMedicationRecord.BeMedicationRecord.medicationSummary.treatmentStartDate",
-                "path": "BeMedicationRecord.BeMedicationRecord.medicationSummary.treatmentStartDate",
+                "id": "BeMedicationRecord.medicationSummary.treatmentLine.treatmentStartDate",
+                "path": "BeMedicationRecord.medicationSummary.treatmentLine.treatmentStartDate",
                 "short": "The start date for the treatment, if known",
                 "definition": "The start date for the treatment, if known",
                 "min": "1",
@@ -193,8 +193,8 @@
                 ]
             },
             {
-                "id": "BeMedicationRecord.BeMedicationRecord.medicationSummary.treatmentEndDate",
-                "path": "BeMedicationRecord.BeMedicationRecord.medicationSummary.treatmentEndDate",
+                "id": "BeMedicationRecord.medicationSummary.treatmentLine.treatmentEndDate",
+                "path": "BeMedicationRecord.medicationSummary.treatmentLine.treatmentEndDate",
                 "short": "The end date for the treatment, if known",
                 "definition": "The end date for the treatment, if known",
                 "min": "0",
@@ -206,8 +206,8 @@
                 ]
             },
             {
-                "id": "BeMedicationRecord.BeMedicationRecord.medicationSummary.indication",
-                "path": "BeMedicationRecord.BeMedicationRecord.medicationSummary.indication",
+                "id": "BeMedicationRecord.medicationSummary.treatmentLine.indication",
+                "path": "BeMedicationRecord.medicationSummary.treatmentLine.indication",
                 "short": "The indication for the treatment",
                 "definition": "The indication for which this medication is being taken. This can be typically available from a prescription or from other treatment guidance.",
                 "min": "1",
@@ -219,8 +219,8 @@
                 ]
             },
             {
-                "id": "BeMedicationRecord.BeMedicationRecord.medicationSummary.product",
-                "path": "BeMedicationRecord.BeMedicationRecord.medicationSummary.product",
+                "id": "BeMedicationRecord.medicationSummary.treatmentLine.product",
+                "path": "BeMedicationRecord.medicationSummary.treatmentLine.product",
                 "short": "The medication product or substance",
                 "definition": "The level to capture the product or substance may differ according to the implementations. For example, if the product is at brand level, then different brands will correspond to different treatment lines",
                 "min": "1",
@@ -232,8 +232,8 @@
                 ]
             },
             {
-                "id": "BeMedicationRecord.BeMedicationRecord.medicationSummary.medicationType",
-                "path": "BeMedicationRecord.BeMedicationRecord.medicationSummary.medicationType",
+                "id": "BeMedicationRecord.medicationSummary.treatmentLine.medicationType",
+                "path": "BeMedicationRecord.medicationSummary.treatmentLine.medicationType",
                 "short": "The type of medicinal product - e.g. if it is a hospital formulation, or magistral, or commercial product..",
                 "definition": "The type of medicinal product - e.g. if it is a hospital formulation, or magistral, or commercial product..",
                 "min": "1",
@@ -245,21 +245,8 @@
                 ]
             },
             {
-                "id": "BeMedicationRecord.BeMedicationRecord.medicationSummary.lotNumber",
-                "path": "BeMedicationRecord.BeMedicationRecord.medicationSummary.lotNumber",
-                "short": "the lot number --TO CHECK",
-                "definition": "the lot number --TO CHECK",
-                "min": "0",
-                "max": "*",
-                "type": [
-                    {
-                        "code": "Identifier"
-                    }
-                ]
-            },
-            {
-                "id": "BeMedicationRecord.BeMedicationRecord.medicationSummary.dosage",
-                "path": "BeMedicationRecord.BeMedicationRecord.medicationSummary.dosage",
+                "id": "BeMedicationRecord.medicationSummary.treatmentLine.dosage",
+                "path": "BeMedicationRecord.medicationSummary.treatmentLine.dosage",
                 "short": "The dosage followed",
                 "definition": "The dosage followed",
                 "min": "0",
@@ -271,8 +258,8 @@
                 ]
             },
             {
-                "id": "BeMedicationRecord.BeMedicationRecord.medicationSummary.dosage.period",
-                "path": "BeMedicationRecord.BeMedicationRecord.medicationSummary.dosage.period",
+                "id": "BeMedicationRecord.medicationSummary.treatmentLine.dosage.period",
+                "path": "BeMedicationRecord.medicationSummary.treatmentLine.dosage.period",
                 "short": "The period during which this specific dosage regime was in use",
                 "definition": "The period during which this specific dosage regime was in use",
                 "min": "0",
@@ -284,8 +271,8 @@
                 ]
             },
             {
-                "id": "BeMedicationRecord.BeMedicationRecord.medicationSummary.dosage.quantity",
-                "path": "BeMedicationRecord.BeMedicationRecord.medicationSummary.dosage.quantity",
+                "id": "BeMedicationRecord.medicationSummary.treatmentLine.dosage.quantity",
+                "path": "BeMedicationRecord.medicationSummary.treatmentLine.dosage.quantity",
                 "short": "The quantity of the drug taken",
                 "definition": "The quantity of the drug taken",
                 "min": "0",
@@ -297,8 +284,8 @@
                 ]
             },
             {
-                "id": "BeMedicationRecord.BeMedicationRecord.medicationSummary.dosage.periodicity",
-                "path": "BeMedicationRecord.BeMedicationRecord.medicationSummary.dosage.periodicity",
+                "id": "BeMedicationRecord.medicationSummary.treatmentLine.dosage.periodicity",
+                "path": "BeMedicationRecord.medicationSummary.treatmentLine.dosage.periodicity",
                 "short": "The frequency of usage",
                 "definition": "The frequency of usage",
                 "min": "0",
@@ -310,8 +297,8 @@
                 ]
             },
             {
-                "id": "BeMedicationRecord.BeMedicationRecord.medicationSummary.dosage.route",
-                "path": "BeMedicationRecord.BeMedicationRecord.medicationSummary.dosage.route",
+                "id": "BeMedicationRecord.medicationSummary.treatmentLine.dosage.route",
+                "path": "BeMedicationRecord.medicationSummary.treatmentLine.dosage.route",
                 "short": "The route of administration",
                 "definition": "The route of administration",
                 "min": "1",
@@ -323,8 +310,8 @@
                 ]
             },
             {
-                "id": "BeMedicationRecord.BeMedicationRecord.medicationSummary.dosage.dayPeriod",
-                "path": "BeMedicationRecord.BeMedicationRecord.medicationSummary.dosage.dayPeriod",
+                "id": "BeMedicationRecord.medicationSummary.treatmentLine.dosage.dayPeriod",
+                "path": "BeMedicationRecord.medicationSummary.treatmentLine.dosage.dayPeriod",
                 "short": "The period of the day when the drug was taken or administered",
                 "definition": "The period of the day when the drug was taken or administered",
                 "min": "0",
@@ -336,8 +323,8 @@
                 ]
             },
             {
-                "id": "BeMedicationRecord.BeMedicationRecord.medicationSummary.dosage.instructionForUse",
-                "path": "BeMedicationRecord.BeMedicationRecord.medicationSummary.dosage.instructionForUse",
+                "id": "BeMedicationRecord.medicationSummary.treatmentLine.dosage.instructionForUse",
+                "path": "BeMedicationRecord.medicationSummary.treatmentLine.dosage.instructionForUse",
                 "short": "The textual representation of the instructions for use",
                 "definition": "The textual representation of the instructions for use",
                 "min": "0",
@@ -349,12 +336,64 @@
                 ]
             },
             {
-                "id": "BeMedicationRecord.BeMedicationRecord.medicationSummary.reaction",
-                "path": "BeMedicationRecord.BeMedicationRecord.medicationSummary.reaction",
+                "id": "BeMedicationRecord.medicationSummary.treatmentLine.reaction",
+                "path": "BeMedicationRecord.medicationSummary.treatmentLine.reaction",
                 "short": "Any known reactions noted for this product",
                 "definition": "Any known reactions noted for this product",
                 "min": "0",
                 "max": "*",
+                "type": [
+                    {
+                        "code": "Reference"
+                    }
+                ]
+            },
+            {
+                "id": "BeMedicationRecord.medicationSummary.type",
+                "path": "BeMedicationRecord.medicationSummary.type",
+                "short": "The type of summary that is present",
+                "definition": "The type of summary that is present",
+                "min": "1",
+                "max": "1",
+                "type": [
+                    {
+                        "code": "CodeableConcept"
+                    }
+                ]
+            },
+            {
+                "id": "BeMedicationRecord.medicationSummary.sources",
+                "path": "BeMedicationRecord.medicationSummary.sources",
+                "short": "The data sources used in this sumamry",
+                "definition": "The data sources used in this sumamry",
+                "min": "0",
+                "max": "*",
+                "type": [
+                    {
+                        "code": "Reference"
+                    }
+                ]
+            },
+            {
+                "id": "BeMedicationRecord.medicationSummary.criteria",
+                "path": "BeMedicationRecord.medicationSummary.criteria",
+                "short": "A description of the criteria used in this summary",
+                "definition": "A description of the criteria used in this summary",
+                "min": "0",
+                "max": "1",
+                "type": [
+                    {
+                        "code": "Annotation"
+                    }
+                ]
+            },
+            {
+                "id": "BeMedicationRecord.medicationSummary.author",
+                "path": "BeMedicationRecord.medicationSummary.author",
+                "short": "The author of this summary",
+                "definition": "The author of this summary",
+                "min": "1",
+                "max": "1",
                 "type": [
                     {
                         "code": "Reference"
