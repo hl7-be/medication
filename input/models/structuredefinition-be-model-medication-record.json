@@ -89,6 +89,58 @@
                 ]
             },
             {
+                "id": "BeMedicationRecord.medicationSummary.type",
+                "path": "BeMedicationRecord.medicationSummary.type",
+                "short": "The type of summary that is present",
+                "definition": "The type of summary that is present",
+                "min": "1",
+                "max": "1",
+                "type": [
+                    {
+                        "code": "CodeableConcept"
+                    }
+                ]
+            },
+            {
+                "id": "BeMedicationRecord.medicationSummary.sources",
+                "path": "BeMedicationRecord.medicationSummary.sources",
+                "short": "The data sources used in this sumamry",
+                "definition": "The data sources used in this sumamry",
+                "min": "0",
+                "max": "*",
+                "type": [
+                    {
+                        "code": "Reference"
+                    }
+                ]
+            },
+            {
+                "id": "BeMedicationRecord.medicationSummary.criteria",
+                "path": "BeMedicationRecord.medicationSummary.criteria",
+                "short": "A description of the criteria used in this summary",
+                "definition": "A description of the criteria used in this summary",
+                "min": "0",
+                "max": "1",
+                "type": [
+                    {
+                        "code": "Annotation"
+                    }
+                ]
+            },
+            {
+                "id": "BeMedicationRecord.medicationSummary.author",
+                "path": "BeMedicationRecord.medicationSummary.author",
+                "short": "The author of this summary",
+                "definition": "The author of this summary",
+                "min": "1",
+                "max": "1",
+                "type": [
+                    {
+                        "code": "Reference"
+                    }
+                ]
+            },
+            {
                 "id": "BeMedicationRecord.medicationSummary.treatmentLine",
                 "path": "BeMedicationRecord.medicationSummary.treatmentLine",
                 "short": "A medication item in the summary.",
@@ -102,8 +154,8 @@
                 ]
             },
             {
-                "id": "BeMedicationRecord.medicationSummarytreatmentLine.uniqueIdentifierMedicationTreatment",
-                "path": "BeMedicationRecord.medicationSummarytreatmentLine.uniqueIdentifierMedicationTreatment",
+                "id": "BeMedicationRecord.medicationSummary.treatmentLine.uniqueIdentifierMedicationTreatment",
+                "path": "BeMedicationRecord.medicationSummary.treatmentLine.uniqueIdentifierMedicationTreatment",
                 "short": "A unique identifier for the treatment",
                 "definition": "It is important to group medication lines per treatment, for example for filtering, data analysis, etc.",
                 "min": "0",
@@ -342,58 +394,6 @@
                 "definition": "Any known reactions noted for this product",
                 "min": "0",
                 "max": "*",
-                "type": [
-                    {
-                        "code": "Reference"
-                    }
-                ]
-            },
-            {
-                "id": "BeMedicationRecord.medicationSummary.type",
-                "path": "BeMedicationRecord.medicationSummary.type",
-                "short": "The type of summary that is present",
-                "definition": "The type of summary that is present",
-                "min": "1",
-                "max": "1",
-                "type": [
-                    {
-                        "code": "CodeableConcept"
-                    }
-                ]
-            },
-            {
-                "id": "BeMedicationRecord.medicationSummary.sources",
-                "path": "BeMedicationRecord.medicationSummary.sources",
-                "short": "The data sources used in this sumamry",
-                "definition": "The data sources used in this sumamry",
-                "min": "0",
-                "max": "*",
-                "type": [
-                    {
-                        "code": "Reference"
-                    }
-                ]
-            },
-            {
-                "id": "BeMedicationRecord.medicationSummary.criteria",
-                "path": "BeMedicationRecord.medicationSummary.criteria",
-                "short": "A description of the criteria used in this summary",
-                "definition": "A description of the criteria used in this summary",
-                "min": "0",
-                "max": "1",
-                "type": [
-                    {
-                        "code": "Annotation"
-                    }
-                ]
-            },
-            {
-                "id": "BeMedicationRecord.medicationSummary.author",
-                "path": "BeMedicationRecord.medicationSummary.author",
-                "short": "The author of this summary",
-                "definition": "The author of this summary",
-                "min": "1",
-                "max": "1",
                 "type": [
                     {
                         "code": "Reference"
