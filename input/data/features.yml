@@ -8,7 +8,7 @@ feedback:
       url: https://github.com/orgs/hl7-be/projects/2
       label: "Issues"    
     parameters:
-    - name: "'entry.1353807103'"
-      value: encodeURIComponent($(document).attr('title'))
-    - name: "'entry.247644557'"
-      value: document.getElementById(id).textContent
+    - fieldId: "1353807103"
+      variableName: "pageTitle"
+    - fieldId: "247644557"
+      variableName: "sectionName"

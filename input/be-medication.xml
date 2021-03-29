@@ -51,6 +51,11 @@
       <description value="Medication Record / Medication Schema"/>
     </grouping>
 
+    <grouping id="vocabulary">
+      <name value="Vocabulary"/>
+      <description value="Terminology and Vocabulary"/>
+    </grouping>
+
 
 
 
@@ -98,7 +103,7 @@
       <fhirVersion value="4.0.1"/>
       <name value="NamingSystem - NIHDI Organization"/>
       <description value="NIHDI identifier for care organizations"/>
-      <groupingId value="medicationdispense"/>
+      <groupingId value="terminology"/>
     </resource>
     <resource>
       <reference>
@@ -107,7 +112,7 @@
       <fhirVersion value="4.0.1"/>
       <name value="NamingSystem - NIHDI Professional"/>
       <description value="NIHDI identifier for care professionals"/>
-      <groupingId value="medicationdispense"/>
+      <groupingId value="terminology"/>
     </resource>
 
     <resource>
@@ -156,24 +161,54 @@
 	  		<generation value="markdown"/>
 		  </page>
 		  <page>
-  			<nameUrl value="usecases-medschema.html"/>
-  			<title value="Use Cases - Medication Schema"/>
+  			<nameUrl value="medicationrecord.html"/>
+  			<title value="The Belgian Medication Record"/>
 	  		<generation value="markdown"/>
         <page>
-          <nameUrl value="usecases-medschema-1.html"/>
-          <title value="Use Case 1 - Consult a patient's medication schema"/>
+          <nameUrl value="medicationrecord-scenarios.html"/>
+          <title value="Medication Record Scenarios"/>
+          <generation value="markdown"/>
+          <page>
+            <nameUrl value="medicationrecord-scenario-1.html"/>
+            <title value="Scenario 1 - concurrent medications"/>
+            <generation value="markdown"/>
+          </page>
+          <page>
+            <nameUrl value="medicationrecord-scenario-2.html"/>
+            <title value="Scenario 2 - medication protocols"/>
+            <generation value="markdown"/>
+          </page>
+        </page>
+        <page>
+          <nameUrl value="medicationrecord-definitions.html"/>
+          <title value="Definitions - Medication Record"/>
           <generation value="markdown"/>
         </page>
         <page>
-          <nameUrl value="usecases-medschema-2.html"/>
-          <title value="Use Case 2 - update a patient's medication schema"/>
+          <nameUrl value="medicationrecord-requirements.html"/>
+          <title value="Requirements - Medication Record"/>
           <generation value="markdown"/>
         </page>
         <page>
-          <nameUrl value="usecases-medschema-3.html"/>
-          <title value="Use Case 3 - Compile a medication schema"/>
+          <nameUrl value="medicationrecord-patterns.html"/>
+          <title value="Architectural patterns - Medication Record"/>
           <generation value="markdown"/>
-        </page>
+          <page>
+            <nameUrl value="medicationrecord-pattern-1.html"/>
+            <title value="Pattern 1 - Consult a patient's medication record"/>
+            <generation value="markdown"/>
+          </page>
+          <page>
+            <nameUrl value="medicationrecord-pattern-2.html"/>
+            <title value="Pattern 2 - update a patient's medication record"/>
+            <generation value="markdown"/>
+          </page>
+          <page>
+            <nameUrl value="medicationrecord-pattern-3.html"/>
+            <title value="Pattern 3 - Compile a medication record"/>
+            <generation value="markdown"/>
+          </page>
+  		  </page>
 		  </page>
 		  <page>
   			<nameUrl value="logical-models.html"/>
