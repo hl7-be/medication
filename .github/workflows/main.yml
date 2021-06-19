@@ -32,8 +32,15 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
+      - name: Get branch names
+        id: branch-name
+        uses: tj-actions/branch-names@v4.3
+
       - name: Get branch name
-        run: echo ${GITHUB_REF##*/}
+        run: |
+          echo ${GITHUB_REF##*/}
+          echo ${{ steps.branch-name.outputs.current_branch }}
+        
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
       - name: Update the image to the latest publisher
@@ -47,10 +54,6 @@ jobs:
         with:
           # Run the publisher - don't run the batch script but run the line directly
           args: java -jar ./input-cache/publisher.jar publisher -ig .
-
-      - name: Get branch names
-        id: branch-name
-        uses: tj-actions/branch-names@v4.3
 
       - name: Deploy candidate
         uses: JamesIves/github-pages-deploy-action@4.1.4
