@@ -40,6 +40,7 @@ jobs:
         run: |
           echo ${GITHUB_REF##*/}
           echo ${{ steps.branch-name.outputs.current_branch }}
+          echo ${{ steps.branch-name.outputs.is_default }}
         
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
@@ -57,7 +58,7 @@ jobs:
 
       - name: Deploy candidate
         uses: JamesIves/github-pages-deploy-action@4.1.4
-        if: steps.branch-name.outputs.is_default == 'false'
+        if: ${{ steps.branch-name.outputs.is_default }} == 'false'
         with:
           branch: gh-pages # The branch the action should deploy to.
           folder: ./output # The folder the action should deploy.
@@ -67,7 +68,7 @@ jobs:
 
       - name: Deploy main
         uses: JamesIves/github-pages-deploy-action@4.1.4
-        if: steps.branch-name.outputs.is_default == 'true'
+        if: ${{ steps.branch-name.outputs.is_default }} == 'true'
         with:
           branch: gh-pages # The branch the action should deploy to.
           folder: ./output # The folder the action should deploy.
