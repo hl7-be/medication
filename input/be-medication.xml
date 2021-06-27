@@ -87,7 +87,7 @@ The registration of a Dispensation event, whether in a hospital or community set
       <fhirVersion value="4.0.1"/>
       <name value="NamingSystem - NIHDI Organization"/>
       <description value="NIHDI identifier for care organizations"/>
-      <groupingId value="terminology"/>
+      <groupingId value="vocabulary"/>
     </resource>
     <resource>
       <reference>
@@ -96,7 +96,7 @@ The registration of a Dispensation event, whether in a hospital or community set
       <fhirVersion value="4.0.1"/>
       <name value="NamingSystem - NIHDI Professional"/>
       <description value="NIHDI identifier for care professionals"/>
-      <groupingId value="terminology"/>
+      <groupingId value="vocabulary"/>
     </resource>
 
     <resource>
