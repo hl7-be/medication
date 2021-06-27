@@ -112,10 +112,10 @@ Title:    "Dispense entry Example - Community Pharmacy dispense, from prescripti
 
 
 
-Instance: medication-dispense-hospital
+Instance: example-dispense-hospital
 InstanceOf: MedicationDispense
 Usage: #example
-Description: "A dispense from a hospital pharmacy, with a hospital nihii and based on a prescription"
+Description: "A dispense from a hospital pharmacy, with a hospital nihdi and based on a prescription"
 Title: "A dispense from a hospital pharmacy"
 //Created from the concept on http://build.fhir.org/ig/hl7-be/hl7-be-fhir-medication/StructureDefinition-be-medicationdispense.html
 //* id = 

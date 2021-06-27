@@ -43,15 +43,11 @@
 
     <grouping id="medicationdispense">
       <name value="Medication Dispense"/>
-      <description value="Medication Dispense"/>
+      <description value="Artifacts related to Medication Dispense:  
+The registration of a Dispensation event, whether in a hospital or community setting. This applies principally to prescribed medications, but may also be used to capture other medications that are dispensed - OTCs, contrast or anesthesia products used in imaging procedures, etc."/>
     </grouping>
 
-    <grouping id="medicationrecord">
-      <name value="Medication Record"/>
-      <description value="Medication Record / Medication Schema"/>
-    </grouping>
-
-    <grouping id="vocabulary">
+     <grouping id="vocabulary">
       <name value="Vocabulary"/>
       <description value="Terminology and Vocabulary"/>
     </grouping>
@@ -78,18 +74,6 @@
       <name value="Profile - Medication Dispense"/>
       <description value="Medication Dispense entry - information captured when dispensing medication e.g. in pharmacies and hospitals"/>
       <groupingId value="medicationdispense"/>
-    </resource>
-
-
-
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/be-model-medication-record"/>
-      </reference>
-      <fhirVersion value="4.0.1"/>
-      <name value="Logical Model Medication Record"/>
-      <description value="Medication Record - summary or detailed information about the usage of medication by a patient"/>
-      <groupingId value="medicationrecord"/>
     </resource>
 
 
@@ -137,6 +121,42 @@
     </resource>
 
 
+    <resource>
+      <reference>
+        <reference value="MedicationDispense/example-dispense-communitypharmacy-1med"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Medication Dispense Example 3"/>
+      <description value="Medication Dispense Example 3 - a simple example of a dispensation in a pharmacy - with a geolocation"/>
+      <exampleCanonical value="https://www.hl7belgium.be/fhir/StructureDefinition/be-medicationdispense"/>
+      <groupingId value="medicationdispense"/>
+    </resource>
+
+    <resource>
+      <reference>
+        <reference value="MedicationDispense/example-minimal-dispense"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Medication Dispense - minimal example"/>
+      <description value="An example of a medication dispense with the minimal amount of necessary information"/>
+      <exampleCanonical value="https://www.hl7belgium.be/fhir/StructureDefinition/be-medicationdispense"/>
+      <groupingId value="medicationdispense"/>
+    </resource>
+
+
+
+    <resource>
+      <reference>
+        <reference value="MedicationDispense/example-dispense-hospital"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Hospital Medication Dispense"/>
+      <description value="A dispense from a hospital pharmacy, with a hospital nihdi and based on a prescription"/>
+      <exampleCanonical value="https://www.hl7belgium.be/fhir/StructureDefinition/be-medicationdispense"/>
+      <groupingId value="medicationdispense"/>
+    </resource>
+
+
 
 
 
@@ -147,7 +167,7 @@
       <generation value="html"/>
       <page>
         <nameUrl value="index.html"/>
-        <title value="MyIG Home Page"/>
+        <title value="Medication Home Page"/>
         <generation value="html"/>
       </page>
 		  <page>
