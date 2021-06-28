@@ -1,3 +1,8 @@
+Alias: $be-patient = https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient
+Alias: $be-organization = https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-organization
+Alias: $be-practitioner = https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner
+
+
 Profile:        BeMedicationDispense
 Parent:         MedicationDispense
 Id:             be-medicationdispense
@@ -5,10 +10,10 @@ Title:          "BeMedicationDispense"
 Description:    """ 
  Defines constraints and extensions on the Medication Dispense resource for a record of a dispensation in Belgium.
  """
-// NOTE: MS can also be done in multiple lines:
-// * identifier MS
-// * identifier.system MS
-// ...
+* ^version = "0.2.0"
+* ^status = #active
+
+
 * identifier MS
 * subject MS
 * performer MS
@@ -57,11 +62,10 @@ Description:    """
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "system"
 * identifier ^slicing.rules = #open
-* identifier contains DGUID 0..1
+* identifier contains DGUID 0..1 MS
 
-* identifier[DGUID].system = "https://www.gfd-dpp.be/fhir/reference/dguid" (exactly)
 * identifier[DGUID].type.coding.code = #dguid
-* identifier[DGUID] MS
+* identifier[DGUID].system = "https://www.gfd-dpp.be/fhir/reference/dguid" (exactly)
 
 * dosageInstruction.patientInstruction MS
 
@@ -78,12 +82,7 @@ Description:    """
 
 Invariant:  performer-organization-nidhi
 Description: "When an organization is referred to by use of an identifier, the naming system SHOULD be NIHDI number"
-Expression: "actor.identifier.exists() implies actor.identifier.system='https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi-organization'"
-Severity:   #warning
-
-Invariant:  performer-practitioner-nidhi
-Description: "When a practitioner is referred to by use of an identifier, the system naming SHOULD be NIHDI number"
-Expression: "actor.identifier.exists() implies actor.identifier.system='https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi-practitioner'"
+Expression: "actor.identifier.exists() implies (actor.identifier.system='https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi-organization' or  actor.identifier.system='https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi-practitioner'"
 Severity:   #warning
 
 /*
