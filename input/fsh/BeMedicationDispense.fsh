@@ -7,76 +7,48 @@ Profile:        BeMedicationDispense
 Parent:         MedicationDispense
 Id:             be-medicationdispense
 Title:          "BeMedicationDispense"
-Description:    """ 
- Defines constraints and extensions on the Medication Dispense resource for a record of a dispensation in Belgium.
- """
+Description: "Defines constraints and extensions on the Medication Dispense resource for a record of a dispensation in Belgium."
 * ^version = "0.2.0"
 * ^status = #active
-
-
-* identifier MS
-* subject MS
-* performer MS
-* whenHandedOver MS
-* authorizingPrescription MS
-* medicationCodeableConcept MS
-* medicationReference MS
-* quantity MS
-* dosageInstruction MS
-* note MS
-
-* subject 1..1
-* subject only Reference(BePatient)
-* whenHandedOver 1..1 
-* whenHandedOver MS
-* authorizingPrescription.identifier MS
-* authorizingPrescription.display MS
-
-* performer 1..*
-* performer.function.text = "dispenser"
-
-/*
-* performer ^slicing.discriminator.type = #pattern
-* performer ^slicing.discriminator.path = "actor"
-* performer ^slicing.rules = #open
-* performer contains 
-   dispensingOrganization 0..1 MS and dispenser 0..1 MS
-
-* performer[dispensingOrganization].actor only Reference(BeOrganization)
-* performer[dispensingOrganization].actor ^type.profile = Canonical(BeOrganization)
-* performer[dispensingOrganization] obeys performer-organization-nidhi
-* performer[dispensingOrganization] MS
-
-* performer[dispenser].actor only Reference(BePractitioner)
-* performer[dispenser].actor ^type.profile = Canonical(BePractitioner)
-* performer[dispenser] obeys performer-practitioner-nidhi
-* performer[dispenser] MS
-*/
-
-* performer.actor only Reference(BeOrganization or BePractitioner)
-
-
 * . ^short = "The medication dispense entry"
 * . ^definition = "A register of a medication dispense, describing the medication that has been dispensed by a professional or by an organization, including the medication, the patient, some prescription and treatment information."
-
+* identifier MS
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "system"
 * identifier ^slicing.rules = #open
 * identifier contains DGUID 0..1 MS
-
 * identifier[DGUID].type.coding.code = #dguid
+* identifier[DGUID].system 1..
 * identifier[DGUID].system = "https://www.gfd-dpp.be/fhir/reference/dguid" (exactly)
-
-* dosageInstruction.patientInstruction MS
-
+* medicationCodeableConcept 0..1 MS
+* medicationCodeableConcept only CodeableConcept
+* medicationCodeableConcept from SNOMEDCTMedicationCodes (example)
+* medicationCodeableConcept ^binding.extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
+* medicationCodeableConcept ^binding.extension.valueString = "MedicationCode"
+* medicationCodeableConcept ^binding.description = "The drug code. For example CNK code for the medication"
+* medicationReference 0..1 MS
+* medicationReference only Reference(Medication)
+* subject 1.. MS
+* subject only Reference($be-patient)
 * context MS
 * context ^short = "The dispense session identifier, for example an identifier of a visit to a pharmacy"
-* medicationCodeableConcept  ^binding.description = "The drug code. For example CNK code for the medication"
+* context.identifier MS
 * context.identifier.system = "https://www.gfd-dpp.be/fhir/reference/sguid"
 * context.identifier.type.coding.code = #sguid
-* context.identifier MS
-* dosageInstruction.text MS
+* context.identifier.type.coding.system = "https://www.gfd-dpp.be/fhir/reference/identifier_types"
 
+* performer 1.. MS
+* performer.function.text = "dispenser"
+* performer.actor only Reference($be-organization or $be-practitioner)
+* authorizingPrescription MS
+* authorizingPrescription.identifier MS
+* authorizingPrescription.display MS
+* quantity MS
+* whenHandedOver 1.. MS
+* note MS
+* dosageInstruction MS
+* dosageInstruction.text MS
+* dosageInstruction.patientInstruction MS
 
 
 
