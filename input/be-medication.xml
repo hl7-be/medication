@@ -126,6 +126,15 @@ The registration of a Dispensation event, whether in a hospital or community set
       <groupingId value="vocabulary"/>
     </resource>
 
+    <resource>
+      <reference>
+        <reference value="CodeSystem/cd-hcparty"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="CodeSystem - HCParty"/>
+      <description value="CodeSystem - HCParty"/>
+      <groupingId value="vocabulary"/>
+    </resource>
 
 
 
