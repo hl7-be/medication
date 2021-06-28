@@ -1,7 +1,7 @@
 {
  "package-id" : "hl7-be-medication",
  "title" : "HL7 Belgium Medication IG", 
- "canonical" : "https://www.hl7belgium.be/fhir/ImplementationGuide/hl7-be-fhir-medication", 
+ "canonical" : "https://www.hl7belgium.org/fhir/ImplementationGuide/hl7-be-fhir-medication", 
  "introduction" : "Belgian Medication Implementation Guide",
  "list" : [{
   "version" : "current",

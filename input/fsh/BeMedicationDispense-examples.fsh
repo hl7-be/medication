@@ -3,7 +3,7 @@ InstanceOf: MedicationDispense
 Usage: #example
 Description: "Medication Dispense example"
 Title:    "Dispense entry Example - Community Pharmacy dispense, from prescription"
-* meta.profile[0] = "https://www.hl7belgium.be/fhir/StructureDefinition/be-medicationdispense"
+* meta.profile[0] = "https://www.hl7belgium.org/fhir/StructureDefinition/be-medicationdispense"
 * language = #fr-BE
 * subject.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
 * subject.identifier.value = "64110219106"
@@ -52,13 +52,15 @@ Title:    "Dispense entry Example - Community Pharmacy dispense, from prescripti
 
 
 Instance: apotheek-onder-de-toren
-InstanceOf: Organization
+InstanceOf: BeOrganization
 Usage: #inline
+/*
 * extension[0].url = "http://hl7.org/fhir/StructureDefinition/geolocation"
 * extension[0].extension[0].url = "latitude"
 * extension[0].extension[0].valueDecimal = 51.239847
 * extension[0].extension[1].url = "longitude"
 * extension[0].extension[1].valueDecimal = 3.319952
+*/
 * identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi-organization"
 * identifier.value = "27457532"
 * type.coding.system = "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-hcparty"
@@ -71,7 +73,7 @@ InstanceOf: MedicationDispense
 Usage: #example
 Description: "Medication Dispense example"
 Title:    "Dispense entry Example - Community Pharmacy dispense, from prescription, with contained org."
-* meta.profile[0] = "https://www.hl7belgium.be/fhir/StructureDefinition/be-medicationdispense"
+* meta.profile[0] = "https://www.hl7belgium.org/fhir/StructureDefinition/be-medicationdispense"
 * contained[0] = apotheek-onder-de-toren
 * language = #nl-BE
 * subject.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
@@ -120,7 +122,7 @@ Title: "A dispense from a hospital pharmacy"
 //Created from the concept on http://build.fhir.org/ig/hl7-be/hl7-be-fhir-medication/StructureDefinition-be-medicationdispense.html
 //* id = 
 * meta.versionId = "1"
-* meta.profile[0] = "https://www.hl7belgium.be/fhir/StructureDefinition/be-medicationdispense"
+* meta.profile[0] = "https://www.hl7belgium.org/fhir/StructureDefinition/be-medicationdispense"
 //* implicitRules = 
 * language = #nl-BE
 //* text = 
@@ -130,7 +132,8 @@ Title: "A dispense from a hospital pharmacy"
 * identifier[0].system = "https://www.gfd-dpp.be/fhir/reference/dguid" //If this is a local identifier, then constraining this is hard. a hospital presription will NOT have a dguid, we could gen a guid, which is extra
 //* identifier[0].type.coding[0].id =  //Where does this come from? Coding doesn't have an id - https://www.hl7.org/fhir/datatypes.html#Coding, looks to be unique to extensions
 * identifier[0].type.coding[0].system = "https://www.nexuzhealth.be/fhir/prescription/ambulatory"
-* identifier[0].type.coding[0].code = #1000321345
+* identifier[0].type.coding[0].code = #dguid
+* identifier[0].value = "1000321345"
 * identifier[0].type.coding[0].version = "1"
 * status = #completed
 //* category.system = "http://terminology.hl7.org/fhir/CodeSystem/medicationdispense-category"
@@ -139,7 +142,7 @@ Title: "A dispense from a hospital pharmacy"
 // Implementing the medication concept feels kind of weird, beMedication of cnkMedication should be hammered down in a profile imo
 // See http://build.fhir.org/ig/hl7-be/hl7-be-fhir-medication/StructureDefinition-be-medicationdispense.html
 // This profile does not yet exist
-* medicationCodeableConcept.coding.system = "https://cnk.apb.be/codings/cnk_product_codes"
+* medicationCodeableConcept.coding.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/cnk-codes"
 * medicationCodeableConcept.coding.code = #2055218
 //].medicationCodeableConcept.coding.display = //Display and extended display both needed? extended only needed in special cases? magistral medication? 
 * medicationCodeableConcept.coding.display.extension[0].url = "http://hl7.org/fhir/StructureDefinition/translation"
@@ -158,7 +161,7 @@ Title: "A dispense from a hospital pharmacy"
 //* type = 
 * quantity.value = 1 
 * quantity.unit = "package"
-* quantity.system = "http://hl7.org/fhir/Valueset/ucum-units"
+* quantity.system = "http://hl7.org/fhir/ValueSet/ucum-units"
 * quantity.code = #{package}
 //dayssupply
 //whenPrepared
@@ -189,7 +192,7 @@ InstanceOf: MedicationDispense
 Usage: #example
 Description: "Medication Dispense example"
 Title:    "Dispense Example - Minimal amount of information"
-* meta.profile[0] = "https://www.hl7belgium.be/fhir/StructureDefinition/be-medicationdispense"
+* meta.profile[0] = "https://www.hl7belgium.org/fhir/StructureDefinition/be-medicationdispense"
 * subject.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
 * subject.identifier.value = "64110219106"
 * status = #completed

@@ -26,19 +26,31 @@ Description:    """
 * whenHandedOver MS
 * authorizingPrescription.identifier MS
 * authorizingPrescription.display MS
+
+* performer 1..*
 * performer.function.text = "dispenser"
+
+/*
 * performer ^slicing.discriminator.type = #pattern
 * performer ^slicing.discriminator.path = "actor"
 * performer ^slicing.rules = #open
-* performer 1..*
 * performer contains 
-   dispensingOrganization 0..1 and dispenser 0..1
+   dispensingOrganization 0..1 MS and dispenser 0..1 MS
+
 * performer[dispensingOrganization].actor only Reference(BeOrganization)
+* performer[dispensingOrganization].actor ^type.profile = Canonical(BeOrganization)
 * performer[dispensingOrganization] obeys performer-organization-nidhi
 * performer[dispensingOrganization] MS
+
 * performer[dispenser].actor only Reference(BePractitioner)
+* performer[dispenser].actor ^type.profile = Canonical(BePractitioner)
 * performer[dispenser] obeys performer-practitioner-nidhi
 * performer[dispenser] MS
+*/
+
+* performer.actor only Reference(BeOrganization or BePractitioner)
+
+
 * . ^short = "The medication dispense entry"
 * . ^definition = "A register of a medication dispense, describing the medication that has been dispensed by a professional or by an organization, including the medication, the patient, some prescription and treatment information."
 
@@ -46,6 +58,7 @@ Description:    """
 * identifier ^slicing.discriminator.path = "system"
 * identifier ^slicing.rules = #open
 * identifier contains DGUID 0..1
+
 * identifier[DGUID].system = "https://www.gfd-dpp.be/fhir/reference/dguid" (exactly)
 * identifier[DGUID].type.coding.code = #dguid
 * identifier[DGUID] MS
