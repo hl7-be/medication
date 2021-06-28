@@ -50,9 +50,25 @@ Description: "Defines constraints and extensions on the Medication Dispense reso
 * dosageInstruction.text MS
 * dosageInstruction.patientInstruction MS
 
+/*
+* performer ^slicing.discriminator.type = #pattern
+* performer ^slicing.discriminator.path = "actor"
+* performer ^slicing.rules = #open
+* performer contains 
+   dispensingOrganization 0..1 MS and dispenser 0..1 MS
+* performer[dispensingOrganization].actor only Reference(BeOrganization)
+* performer[dispensingOrganization].actor ^type.profile = Canonical(BeOrganization)
+* performer[dispensingOrganization] obeys performer-nidhi
+* performer[dispensingOrganization] MS
+* performer[dispenser].actor only Reference(BePractitioner)
+* performer[dispenser].actor ^type.profile = Canonical(BePractitioner)
+* performer[dispenser] obeys performer-nidhi
+* performer[dispenser] MS
+*/
 
 
-Invariant:  performer-organization-nidhi
+
+Invariant:  performer-nidhi
 Description: "When an organization is referred to by use of an identifier, the naming system SHOULD be NIHDI number"
 Expression: "actor.identifier.exists() implies (actor.identifier.system='https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi-organization' or  actor.identifier.system='https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi-practitioner'"
 Severity:   #warning

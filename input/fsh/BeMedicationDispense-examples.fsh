@@ -64,8 +64,8 @@ Usage: #inline
 * identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi-organization"
 * identifier.value = "27457532"
 * type.coding.system = "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-hcparty"
-* type.coding.code = #pharmacy
-* type.text = "pharmacy"
+* type.coding.code = $hcparty#orgpharmacy
+
 
 
 Instance: medication-dispense-example-2
@@ -154,6 +154,11 @@ Title: "A dispense from a hospital pharmacy"
 * subject.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
 * subject.identifier.value = "64110219106"
 
+* performer.actor.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi-organization"
+* performer.actor.identifier.value = "123123123"
+
+
+
 //* context.identifier = ...
 * authorizingPrescription.display = "Prescription"
 * authorizingPrescription.identifier.value = "BEP1TSRY1XGE"
@@ -161,7 +166,7 @@ Title: "A dispense from a hospital pharmacy"
 //* type = 
 * quantity.value = 1 
 * quantity.unit = "package"
-* quantity.system = "http://hl7.org/fhir/ValueSet/ucum-units"
+* quantity.system = "http://unitsofmeasure.org"
 * quantity.code = #{package}
 //dayssupply
 //whenPrepared

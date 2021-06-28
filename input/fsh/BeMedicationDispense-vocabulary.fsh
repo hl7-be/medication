@@ -1,3 +1,6 @@
+Alias: $hcparty = https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-hcparty
+
+
 Instance: be-ns-cnk-codes
 InstanceOf: NamingSystem
 Usage: #definition
@@ -42,5 +45,19 @@ Description: "Naming System - Prescription IDs"
 * uniqueId[0].value = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/product-package-type"
 * uniqueId[0].preferred = true
 * jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#056
+
+
+ValueSet: DispenserTypes
+Title: "Dispenser Types"
+Description: "Dispenser Types - from hcparty"
+
+* $hcparty#deptpharmacy
+* $hcparty#perspharmacist
+* $hcparty#orgpharmacy
+* $hcparty#perspharmacyassistant
+* $hcparty#perspharmacistclinicalbiologist
+* $hcparty#persdentist
+* $hcparty#deptdentistry
+
 
 
