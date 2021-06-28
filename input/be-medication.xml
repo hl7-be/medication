@@ -284,6 +284,15 @@ The registration of a Dispensation event, whether in a hospital or community set
       <value value="CI Build"/>
     </parameter>
     <parameter>
+      <code value="special-url"/>
+      <value value="https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-hcparty"/>
+    </parameter>
+
+
+    
+
+
+    <parameter>
       <code value="find-other-resources"/>
       <value value="true"/>
     </parameter>
