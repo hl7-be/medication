@@ -53,6 +53,10 @@ The registration of a Dispensation event, whether in a hospital or community set
       <name value="Vocabulary"/>
       <description value="Terminology and Vocabulary"/>
     </grouping>
+     <grouping id="dependencies">
+      <name value="Dependencies"/>
+      <description value="External dependencies"/>
+    </grouping>
 
 
 
@@ -128,6 +132,9 @@ The registration of a Dispensation event, whether in a hospital or community set
       <groupingId value="vocabulary"/>
     </resource>
 
+
+
+
     <resource>
       <reference>
         <reference value="CodeSystem/cd-hcparty"/>
@@ -135,8 +142,45 @@ The registration of a Dispensation event, whether in a hospital or community set
       <fhirVersion value="4.0.1"/>
       <name value="CodeSystem - HCParty"/>
       <description value="CodeSystem - HCParty"/>
-      <groupingId value="vocabulary"/>
+      <groupingId value="dependencies"/>
     </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/be-patient"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="eHealth BePatient profile"/>
+      <description value="eHealth BePatient profile"/>
+      <groupingId value="dependencies"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/be-organization"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="eHealth BeOrganization profile"/>
+      <description value="eHealth BeOrganization profile"/>
+      <groupingId value="dependencies"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/be-practitioner"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="eHealth BePractitioner profile"/>
+      <description value="eHealth BePractitioner profile"/>
+      <groupingId value="dependencies"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/be-practitionerrole"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="eHealth BePractitionerRole profile"/>
+      <description value="eHealth BePractitionerRole profile"/>
+      <groupingId value="dependencies"/>
+    </resource>
+
 
 
 
@@ -294,13 +338,28 @@ The registration of a Dispensation event, whether in a hospital or community set
     <!-- releaselabel should be the ballot status for HL7-published IGs. -->
     <parameter>
       <code value="releaselabel"/>
-      <value value="CI Build"/>
+      <value value="ReleaseCandidate"/>
     </parameter>
     <parameter>
       <code value="special-url"/>
       <value value="https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-hcparty"/>
     </parameter>
-
+    <parameter>
+      <code value="special-url"/>
+      <value value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient"/>
+    </parameter>
+    <parameter>
+      <code value="special-url"/>
+      <value value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-organization"/>
+    </parameter>
+    <parameter>
+      <code value="special-url"/>
+      <value value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitionerrole"/>
+    </parameter>
+    <parameter>
+      <code value="special-url"/>
+      <value value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner"/>
+    </parameter>
 
     
 
