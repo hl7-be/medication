@@ -208,7 +208,7 @@ The registration of a Dispensation event, whether in a hospital or community set
       <generation value="html"/>
       <page>
         <nameUrl value="index.html"/>
-        <title value="Medication Home Page"/>
+        <title value="Belgium Medication Implementation Guide Home Page"/>
         <generation value="html"/>
       </page>
 		  <page>
@@ -221,6 +221,7 @@ The registration of a Dispensation event, whether in a hospital or community set
   			<title value="Use Cases - Dispense"/>
 	  		<generation value="markdown"/>
 		  </page>
+<!--
 		  <page>
   			<nameUrl value="medicationrecord.html"/>
   			<title value="The Belgian Medication Record"/>
@@ -271,6 +272,7 @@ The registration of a Dispensation event, whether in a hospital or community set
           </page>
   		  </page>
 		  </page>
+-->
 		  <page>
   			<nameUrl value="logical-models.html"/>
   			<title value="Logical Models"/>
