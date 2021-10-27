@@ -13,6 +13,8 @@ on:
       - main
       - master
       - releasecandidate
+      - releasecandidate-corrections
+      
   pull_request:
     branches: 
       - main
