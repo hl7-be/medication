@@ -1,6 +1,6 @@
-Alias: $be-patient = https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient
-Alias: $be-organization = https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-organization
-Alias: $be-practitioner = https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner
+Alias: $be-patient = https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-patient
+Alias: $be-organization = https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-organization
+Alias: $be-practitioner = https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitioner
 
 
 Profile:        BeMedicationDispense

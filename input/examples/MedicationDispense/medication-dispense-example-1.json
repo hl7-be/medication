@@ -3,7 +3,7 @@
   "id": "medication-dispense-example-1",
   "meta": {
     "profile": [
-      "https://www.hl7belgium.org/fhir/StructureDefinition/be-medicationdispense"
+      "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationdispense"
     ]
   },
   "language": "fr-BE",
