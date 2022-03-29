@@ -1,12 +1,12 @@
 {
  "package-id" : "hl7-be-medication",
  "title" : "HL7 Belgium Medication IG", 
- "canonical" : "https://www.hl7belgium.org/fhir/ImplementationGuide/hl7-be-fhir-medication", 
+ "canonical" : "https://www.ehealth.fgov.be/standards/fhir/medication", 
  "introduction" : "Belgian Medication Implementation Guide",
  "list" : [{
   "version" : "current",
   "desc" : "Continuous Integration Build (latest in version control)",
-  "path" : "http://build.fhir.org/ig/hl7-be/hl7-be-fhir-medication/branches/master",
+  "path" : "http://build.fhir.org/ig/hl7-be/medication/branches/master",
   "status" : "ci-build",
   "current" : true
  }]

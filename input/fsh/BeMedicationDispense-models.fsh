@@ -3,7 +3,7 @@ Alias: $m49.htm = http://unstats.un.org/unsd/methods/m49/m49.htm
 Instance: be-model-medication-dispense
 InstanceOf: StructureDefinition
 Usage: #definition
-* url = "https://www.hl7belgium.org/fhir/StructureDefinition/be-model-medication-dispense"
+* url = "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-model-medication-dispense"
 * version = "0.2.0"
 * name = "BeModelMedicationDispense"
 * status = #draft
@@ -42,7 +42,7 @@ Usage: #definition
 * differential.element[=].min = 1
 * differential.element[=].max = "1"
 * differential.element[=].type.code = "Reference"
-* differential.element[=].type.targetProfile = "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient"
+* differential.element[=].type.targetProfile = "https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-patient"
 * differential.element[+].id = "BeModelMedicationDispense.dispenser"
 * differential.element[=].path = "BeModelMedicationDispense.dispenser"
 * differential.element[=].short = "The dispenser, if known and relevant"
@@ -57,7 +57,7 @@ Usage: #definition
 * differential.element[=].min = 1
 * differential.element[=].max = "1"
 * differential.element[=].type.code = "Reference"
-* differential.element[=].type.targetProfile = "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner"
+* differential.element[=].type.targetProfile = "https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitioner"
 * differential.element[+].id = "BeModelMedicationDispense.dispenser.organization"
 * differential.element[=].path = "BeModelMedicationDispense.dispenser.organization"
 * differential.element[=].short = "Reference to person that performed the recording or reporting"
@@ -65,7 +65,7 @@ Usage: #definition
 * differential.element[=].min = 1
 * differential.element[=].max = "1"
 * differential.element[=].type.code = "Reference"
-* differential.element[=].type.targetProfile = "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-organization"
+* differential.element[=].type.targetProfile = "https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-organization"
 * differential.element[+].id = "BeModelMedicationDispense.dispenseDate"
 * differential.element[=].path = "BeModelMedicationDispense.dispenseDate"
 * differential.element[=].short = "The date when the dispense ocurred"
