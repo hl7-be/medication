@@ -42,6 +42,121 @@
       inappropriate to use the defaults.  Feel free to provide feedback about the defaults... -->
 
 
+
+    <grouping id="medicationdispense">
+      <name value="Medication Dispense"/>
+      <description value="Artifacts related to Medication Dispense:  
+The registration of a Dispensation event, whether in a hospital or community setting. This applies principally to prescribed medications, but may also be used to capture other medications that are dispensed - OTCs, contrast or anesthesia products used in imaging procedures, etc."/>
+    </grouping>
+
+     <grouping id="vocabulary">
+      <name value="Vocabulary"/>
+      <description value="Terminology and Vocabulary"/>
+    </grouping>
+     <grouping id="dependencies">
+      <name value="Dependencies"/>
+      <description value="External dependencies"/>
+    </grouping>
+
+
+
+
+
+
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/be-model-medication-dispense"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Logical Model Medication Dispense"/>
+      <description value="Medication Dispense entry - information captured when dispensing medication e.g. in pharmacies and hospitals"/>
+      <groupingId value="medicationdispense"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/be-medicationdispense"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Profile - Medication Dispense"/>
+      <description value="Medication Dispense entry - information captured when dispensing medication e.g. in pharmacies and hospitals"/>
+      <groupingId value="medicationdispense"/>
+    </resource>
+
+
+
+
+
+    
+
+
+
+    
+
+
+
+
+
+    <resource>
+      <reference>                            
+        <reference value="MedicationDispense/medication-dispense-example-1"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Medication Dispense Example 1"/>
+      <description value="Medication Dispense Example 1 - a simple example of a dispensation in a pharmacy"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationdispense"/>
+      <groupingId value="medicationdispense"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="MedicationDispense/medication-dispense-example-2"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Medication Dispense Example 2"/>
+      <description value="Medication Dispense Example 2 - a simple example of a dispensation in a pharmacy - with a geolocation"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationdispense"/>
+      <groupingId value="medicationdispense"/>
+    </resource>
+
+
+    <resource>
+      <reference>
+        <reference value="MedicationDispense/example-dispense-communitypharmacy-1med"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Medication Dispense Example 3"/>
+      <description value="Medication Dispense Example 3 - a simple example of a dispensation in a pharmacy - with a geolocation"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationdispense"/>
+      <groupingId value="medicationdispense"/>
+    </resource>
+
+    <resource>
+      <reference>
+        <reference value="MedicationDispense/example-minimal-dispense"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Medication Dispense - minimal example"/>
+      <description value="An example of a medication dispense with the minimal amount of necessary information"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationdispense"/>
+      <groupingId value="medicationdispense"/>
+    </resource>
+
+
+
+    <resource>
+      <reference>
+        <reference value="MedicationDispense/example-dispense-hospital"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Hospital Medication Dispense"/>
+      <description value="A dispense from a hospital pharmacy, with a hospital nihdi and based on a prescription"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationdispense"/>
+      <groupingId value="medicationdispense"/>
+    </resource>
+
+
+
+
+
     <page>
       <!-- The root will always be toc.html - the template will force it if you don't do it -->
       <nameUrl value="toc.html"/>
