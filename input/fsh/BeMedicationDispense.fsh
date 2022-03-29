@@ -27,7 +27,7 @@ Description: "Defines constraints and extensions on the Medication Dispense reso
 * medicationCodeableConcept ^binding.extension.valueString = "MedicationCode"
 * medicationCodeableConcept ^binding.description = "The drug code. For example CNK code for the medication"
 * medicationReference 0..1 MS
-* medicationReference only Reference(Medication)
+* medicationReference only Reference(http://hl7.org/fhir/StructureDefinition/Medication)
 * subject 1.. MS
 * subject only Reference($be-patient)
 * context MS
