@@ -190,9 +190,4 @@ dependencies:
   hl7.fhir.be.core: 2.0.0
 
 
-parameters:
-  shownav: 'true'
-  apply-contact: 'true'
-  apply-jurisdiction: 'true'
-  apply-publisher: 'true'
-  apply-version: 'true'  
+  
