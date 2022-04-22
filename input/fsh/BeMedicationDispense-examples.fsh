@@ -14,8 +14,10 @@ Title:    "Dispense entry Example - Community Pharmacy dispense, from prescripti
 * identifier[0].type.coding.code = #dguid
 * identifier[0].value = "a8ca980c-72aa-11e7-8cf7-a6006ad3dba0"
 * status = #completed
-* medicationCodeableConcept.coding.system = "https://cnk.apb.be/codings/cnk_product_codes"
-* medicationCodeableConcept.coding.code = #1439562
+* medicationCodeableConcept.coding[+].system = "https://cnk.apb.be/codings/cnk_product_codes"
+* medicationCodeableConcept.coding[=].code = #1439562
+* medicationCodeableConcept.coding[+].system = "http://www.whocc.no/atc"
+* medicationCodeableConcept.coding[=].code = #N05CD05
 * medicationCodeableConcept.coding.display = "Topazolam tab 50x 1,0mg"
 
 * medicationCodeableConcept.coding.display.extension[0].url = "http://hl7.org/fhir/StructureDefinition/translation"
