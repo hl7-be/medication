@@ -3,7 +3,7 @@ InstanceOf: MedicationDispense
 Usage: #example
 Description: "Medication Dispense example"
 Title:    "Dispense entry Example - Community Pharmacy dispense, from prescription"
-* meta.profile[0] = "https://www.hl7belgium.org/fhir/StructureDefinition/be-medicationdispense"
+* meta.profile[0] = "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationdispense"
 * language = #fr-BE
 * subject.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
 * subject.identifier.value = "64110219106"
@@ -14,8 +14,10 @@ Title:    "Dispense entry Example - Community Pharmacy dispense, from prescripti
 * identifier[0].type.coding.code = #dguid
 * identifier[0].value = "a8ca980c-72aa-11e7-8cf7-a6006ad3dba0"
 * status = #completed
-* medicationCodeableConcept.coding.system = "https://cnk.apb.be/codings/cnk_product_codes"
-* medicationCodeableConcept.coding.code = #1439562
+* medicationCodeableConcept.coding[+].system = "https://cnk.apb.be/codings/cnk_product_codes"
+* medicationCodeableConcept.coding[=].code = #1439562
+* medicationCodeableConcept.coding[+].system = "http://www.whocc.no/atc"
+* medicationCodeableConcept.coding[=].code = #N05CD05
 * medicationCodeableConcept.coding.display = "Topazolam tab 50x 1,0mg"
 
 * medicationCodeableConcept.coding.display.extension[0].url = "http://hl7.org/fhir/StructureDefinition/translation"
@@ -63,7 +65,7 @@ Usage: #inline
 */
 * identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi-organization"
 * identifier.value = "27457532"
-* type.coding.system = "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-hcparty"
+* type.coding.system = "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty"
 * type.coding.code = $hcparty#orgpharmacy
 
 
@@ -73,7 +75,7 @@ InstanceOf: MedicationDispense
 Usage: #example
 Description: "Medication Dispense example"
 Title:    "Dispense entry Example - Community Pharmacy dispense, from prescription, with contained org."
-* meta.profile[0] = "https://www.hl7belgium.org/fhir/StructureDefinition/be-medicationdispense"
+* meta.profile[0] = "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationdispense"
 * contained[0] = apotheek-onder-de-toren
 * language = #nl-BE
 * subject.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
@@ -122,7 +124,7 @@ Title: "A dispense from a hospital pharmacy"
 //Created from the concept on http://build.fhir.org/ig/hl7-be/hl7-be-fhir-medication/StructureDefinition-be-medicationdispense.html
 //* id = 
 * meta.versionId = "1"
-* meta.profile[0] = "https://www.hl7belgium.org/fhir/StructureDefinition/be-medicationdispense"
+* meta.profile[0] = "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationdispense"
 //* implicitRules = 
 * language = #nl-BE
 //* text = 
@@ -142,7 +144,7 @@ Title: "A dispense from a hospital pharmacy"
 // Implementing the medication concept feels kind of weird, beMedication of cnkMedication should be hammered down in a profile imo
 // See http://build.fhir.org/ig/hl7-be/hl7-be-fhir-medication/StructureDefinition-be-medicationdispense.html
 // This profile does not yet exist
-* medicationCodeableConcept.coding.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/cnk-codes"
+* medicationCodeableConcept.coding.system = "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes"
 * medicationCodeableConcept.coding.code = #2055218
 //].medicationCodeableConcept.coding.display = //Display and extended display both needed? extended only needed in special cases? magistral medication? 
 * medicationCodeableConcept.coding.display.extension[0].url = "http://hl7.org/fhir/StructureDefinition/translation"
@@ -197,7 +199,7 @@ InstanceOf: MedicationDispense
 Usage: #example
 Description: "Medication Dispense example"
 Title:    "Dispense Example - Minimal amount of information"
-* meta.profile[0] = "https://www.hl7belgium.org/fhir/StructureDefinition/be-medicationdispense"
+* meta.profile[0] = "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationdispense"
 * subject.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
 * subject.identifier.value = "64110219106"
 * status = #completed

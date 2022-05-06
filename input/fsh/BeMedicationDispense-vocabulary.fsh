@@ -1,4 +1,4 @@
-Alias: $hcparty = https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-hcparty
+Alias: $hcparty = https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty
 
 
 Instance: be-ns-cnk-codes
@@ -11,7 +11,7 @@ Description: "Naming System - CNK Product Codes"
 * kind = #codesystem
 * description = "Naming System - CNK Product Codes"
 * uniqueId[0].type = #uri
-* uniqueId[0].value = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/cnk-codes"
+* uniqueId[0].value = "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes"
 * uniqueId[0].preferred = true
 * jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#056
 
@@ -48,6 +48,7 @@ Description: "Naming System - Prescription IDs"
 
 
 ValueSet: DispenserTypes
+Id: be-vs-dispenser-types
 Title: "Dispenser Types"
 Description: "Dispenser Types - from hcparty"
 

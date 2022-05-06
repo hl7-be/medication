@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ImplementationGuide xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../input-cache/schemas/R5/fhir-single.xsd">
 
-  <id value="hl7-be-fhir-medicationig"/>
-  <url value="https://www.hl7belgium.org/fhir/ImplementationGuide/hl7-be-fhir-medication"/>
+  <id value="hl7.fhir.be.medication"/>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/medication/ImplementationGuide/hl7-be-fhir-medication"/>
   <!-- This version will propagate to all artifacts unless the "propagate-version" extension is overridden -->
   <version value="0.2.0"/>
   <name value="BEMedicationIG"/>
   <title value="HL7 Belgium Medication Implementation Guide"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <publisher value="HL7 Belgium"/>
+  <publisher value="HL7 Belgium/eHealth Platform"/>
   <contact>
     <telecom>
       <!-- Or whatever URL and/or email address(es) are appropriate -->
@@ -20,12 +20,12 @@
   <description value="ImplementationGuide for HL7 Belgium Medication Work Group"/>
   <jurisdiction>
     <coding>
-      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-      <code value="056"/>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
     </coding>
     <text value="Belgium" />
   </jurisdiction>
-  <packageId value="hl7.be.fhir.medicationig"/>
+  <packageId value="hl7.fhir.be.medication"/>
   <!-- This should be changed to 'not-open-source' or another license if appropriate for non-HL7-published content -->
   <license value="CC0-1.0"/>
   <!-- This is whatever FHIR version(s) the IG artifacts are targeting (not the version of this file, which should always be 'current release') -->
@@ -86,101 +86,11 @@ The registration of a Dispensation event, whether in a hospital or community set
 
 
 
-    <resource>
-      <reference>
-        <reference value="NamingSystem/be-ns-nihdi-organization"/>
-      </reference>
-      <fhirVersion value="4.0.1"/>
-      <name value="NamingSystem - NIHDI Organization"/>
-      <description value="NIHDI identifier for care organizations"/>
-      <groupingId value="vocabulary"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="NamingSystem/be-ns-nihdi-professional"/>
-      </reference>
-      <fhirVersion value="4.0.1"/>
-      <name value="NamingSystem - NIHDI Professional"/>
-      <description value="NIHDI identifier for care professionals"/>
-      <groupingId value="vocabulary"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="NamingSystem/be-ns-cnk-codes"/>
-      </reference>
-      <fhirVersion value="4.0.1"/>
-      <name value="NamingSystem - CNK product codes"/>
-      <description value="NamingSystem for CNK product codes"/>
-      <groupingId value="vocabulary"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="NamingSystem/be-ns-prescription-ids"/>
-      </reference>
-      <fhirVersion value="4.0.1"/>
-      <name value="NamingSystem - Prescription unique IDs"/>
-      <description value="NamingSystem for Prescription unique IDs"/>
-      <groupingId value="vocabulary"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="NamingSystem/be-ns-product-package-type"/>
-      </reference>
-      <fhirVersion value="4.0.1"/>
-      <name value="NamingSystem - Medication Package type"/>
-      <description value="NamingSystem for Medication Package types"/>
-      <groupingId value="vocabulary"/>
-    </resource>
+    
 
 
 
-
-    <resource>
-      <reference>
-        <reference value="CodeSystem/cd-hcparty"/>
-      </reference>
-      <fhirVersion value="4.0.1"/>
-      <name value="CodeSystem - HCParty"/>
-      <description value="CodeSystem - HCParty"/>
-      <groupingId value="dependencies"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/be-patient"/>
-      </reference>
-      <fhirVersion value="4.0.1"/>
-      <name value="eHealth BePatient profile"/>
-      <description value="eHealth BePatient profile"/>
-      <groupingId value="dependencies"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/be-organization"/>
-      </reference>
-      <fhirVersion value="4.0.1"/>
-      <name value="eHealth BeOrganization profile"/>
-      <description value="eHealth BeOrganization profile"/>
-      <groupingId value="dependencies"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/be-practitioner"/>
-      </reference>
-      <fhirVersion value="4.0.1"/>
-      <name value="eHealth BePractitioner profile"/>
-      <description value="eHealth BePractitioner profile"/>
-      <groupingId value="dependencies"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/be-practitionerrole"/>
-      </reference>
-      <fhirVersion value="4.0.1"/>
-      <name value="eHealth BePractitionerRole profile"/>
-      <description value="eHealth BePractitionerRole profile"/>
-      <groupingId value="dependencies"/>
-    </resource>
-
+    
 
 
 
@@ -193,7 +103,7 @@ The registration of a Dispensation event, whether in a hospital or community set
       <fhirVersion value="4.0.1"/>
       <name value="Medication Dispense Example 1"/>
       <description value="Medication Dispense Example 1 - a simple example of a dispensation in a pharmacy"/>
-      <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-medicationdispense"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationdispense"/>
       <groupingId value="medicationdispense"/>
     </resource>
     <resource>
@@ -203,7 +113,7 @@ The registration of a Dispensation event, whether in a hospital or community set
       <fhirVersion value="4.0.1"/>
       <name value="Medication Dispense Example 2"/>
       <description value="Medication Dispense Example 2 - a simple example of a dispensation in a pharmacy - with a geolocation"/>
-      <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-medicationdispense"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationdispense"/>
       <groupingId value="medicationdispense"/>
     </resource>
 
@@ -215,7 +125,7 @@ The registration of a Dispensation event, whether in a hospital or community set
       <fhirVersion value="4.0.1"/>
       <name value="Medication Dispense Example 3"/>
       <description value="Medication Dispense Example 3 - a simple example of a dispensation in a pharmacy - with a geolocation"/>
-      <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-medicationdispense"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationdispense"/>
       <groupingId value="medicationdispense"/>
     </resource>
 
@@ -226,7 +136,7 @@ The registration of a Dispensation event, whether in a hospital or community set
       <fhirVersion value="4.0.1"/>
       <name value="Medication Dispense - minimal example"/>
       <description value="An example of a medication dispense with the minimal amount of necessary information"/>
-      <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-medicationdispense"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationdispense"/>
       <groupingId value="medicationdispense"/>
     </resource>
 
@@ -239,7 +149,7 @@ The registration of a Dispensation event, whether in a hospital or community set
       <fhirVersion value="4.0.1"/>
       <name value="Hospital Medication Dispense"/>
       <description value="A dispense from a hospital pharmacy, with a hospital nihdi and based on a prescription"/>
-      <exampleCanonical value="https://www.hl7belgium.org/fhir/StructureDefinition/be-medicationdispense"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationdispense"/>
       <groupingId value="medicationdispense"/>
     </resource>
 
@@ -340,26 +250,7 @@ The registration of a Dispensation event, whether in a hospital or community set
       <code value="releaselabel"/>
       <value value="ReleaseCandidate"/>
     </parameter>
-    <parameter>
-      <code value="special-url"/>
-      <value value="https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-hcparty"/>
-    </parameter>
-    <parameter>
-      <code value="special-url"/>
-      <value value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient"/>
-    </parameter>
-    <parameter>
-      <code value="special-url"/>
-      <value value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-organization"/>
-    </parameter>
-    <parameter>
-      <code value="special-url"/>
-      <value value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitionerrole"/>
-    </parameter>
-    <parameter>
-      <code value="special-url"/>
-      <value value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner"/>
-    </parameter>
+    
 
     
 
