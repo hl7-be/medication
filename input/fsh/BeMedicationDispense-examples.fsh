@@ -14,10 +14,10 @@ Title:    "Dispense entry Example - Community Pharmacy dispense, from prescripti
 * identifier[0].type.coding.code = #dguid
 * identifier[0].value = "a8ca980c-72aa-11e7-8cf7-a6006ad3dba0"
 * status = #completed
-* medicationCodeableConcept.coding[+].system = "https://cnk.apb.be/codings/cnk_product_codes"
+* medicationCodeableConcept.coding[+].system = "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes"
 * medicationCodeableConcept.coding[=].code = #1439562
 * medicationCodeableConcept.coding[+].system = "http://www.whocc.no/atc"
-* medicationCodeableConcept.coding[=].code = #N05CD05
+* medicationCodeableConcept.coding[=].code = #N05BA12
 * medicationCodeableConcept.coding.display = "Topazolam tab 50x 1,0mg"
 
 * medicationCodeableConcept.coding.display.extension[0].url = "http://hl7.org/fhir/StructureDefinition/translation"
@@ -55,7 +55,7 @@ Title:    "Dispense entry Example - Community Pharmacy dispense, from prescripti
 
 Instance: apotheek-onder-de-toren
 InstanceOf: BeOrganization
-Usage: #inline
+Usage: #example
 /*
 * extension[0].url = "http://hl7.org/fhir/StructureDefinition/geolocation"
 * extension[0].extension[0].url = "latitude"
@@ -87,7 +87,7 @@ Title:    "Dispense entry Example - Community Pharmacy dispense, from prescripti
 * identifier[0].type.coding.code = #dguid
 * identifier[0].value = "a8ca980c-72aa-11e7-8cf7-a6006ad3dba0"
 * status = #completed
-* medicationCodeableConcept.coding.system = "https://cnk.apb.be/codings/cnk_product_codes"
+* medicationCodeableConcept.coding.system = "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes"
 * medicationCodeableConcept.coding.code = #1439562
 * medicationCodeableConcept.coding.display = "Topazolam tab 50x 1,0mg"
 * medicationCodeableConcept.coding.display.extension[0].url = "http://hl7.org/fhir/StructureDefinition/translation"
@@ -203,8 +203,27 @@ Title:    "Dispense Example - Minimal amount of information"
 * subject.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
 * subject.identifier.value = "64110219106"
 * status = #completed
-* medicationCodeableConcept.coding.system = "https://cnk.apb.be/codings/cnk_product_codes"
+* medicationCodeableConcept.coding.system = "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes"
 * medicationCodeableConcept.coding.code = #1439562
+* medicationCodeableConcept.coding.display = "Topazolam tab 50x 1,0mg"
+* performer[0].actor.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi-practitioner"
+* performer[0].actor.identifier.value = "6547432"
+* performer[0].actor.display = "Jan Janssen"
+* whenHandedOver = "2020-03-10"
+
+Instance: example-dispense-with-atc
+InstanceOf: MedicationDispense
+Usage: #example
+Description: "Medication Dispense example with ATC code"
+Title:    "Dispense Example - Minimal amount of information"
+* meta.profile[0] = "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationdispense"
+* subject.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
+* subject.identifier.value = "64110219106"
+* status = #completed
+* medicationCodeableConcept.coding[+].system = "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes"
+* medicationCodeableConcept.coding[=].code = #1439562
+* medicationCodeableConcept.coding[+].system = "http://www.whocc.no/atc"
+* medicationCodeableConcept.coding[=].code = #N05BA12
 * medicationCodeableConcept.coding.display = "Topazolam tab 50x 1,0mg"
 * performer[0].actor.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi-practitioner"
 * performer[0].actor.identifier.value = "6547432"
