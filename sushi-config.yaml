@@ -9,7 +9,7 @@
 
 id: hl7.fhir.be.medication
 canonical: https://www.ehealth.fgov.be/standards/fhir/medication
-url: https://www.ehealth.fgov.be/standards/fhir/medication
+url: https://www.ehealth.fgov.be/standards/fhir/medication/ImplementationGuide-hl7.fhir.be.medication
 name: Medication 
 title: "Medication"
 description: Medication
@@ -188,7 +188,7 @@ FSHOnly: false
 
 dependencies: 
   hl7.fhir.be.core: 2.0.0
-  hl7.terminology: current
+  hl7.terminology: 3.1.0
 
 parameters:
   shownav: 'true'
