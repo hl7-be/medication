@@ -14,7 +14,7 @@ Description: "Naming System - CNK Product Codes"
 * uniqueId[0].value = "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes"
 * uniqueId[0].preferred = true
 * jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#056
-* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 1
+
 
 
 Instance: be-ns-prescription-ids
@@ -30,7 +30,7 @@ Description: "Naming System - Prescription IDs"
 * uniqueId[0].value = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/prescription-id"
 * uniqueId[0].preferred = true
 * jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#056
-* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 1
+
 
 
 
@@ -47,7 +47,7 @@ Description: "Naming System - Prescription IDs"
 * uniqueId[0].value = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/product-package-type"
 * uniqueId[0].preferred = true
 * jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#056
-* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 1
+
 
 
 ValueSet: DispenserTypes
