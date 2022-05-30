@@ -16,6 +16,7 @@ Description: "Naming System - CNK Product Codes"
 * jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#056
 
 
+
 Instance: be-ns-prescription-ids
 InstanceOf: NamingSystem
 Usage: #definition
@@ -29,6 +30,7 @@ Description: "Naming System - Prescription IDs"
 * uniqueId[0].value = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/prescription-id"
 * uniqueId[0].preferred = true
 * jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#056
+
 
 
 
@@ -47,11 +49,12 @@ Description: "Naming System - Prescription IDs"
 * jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#056
 
 
+
 ValueSet: DispenserTypes
 Id: be-vs-dispenser-types
 Title: "Dispenser Types"
 Description: "Dispenser Types - from hcparty"
-
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 1
 * $hcparty#deptpharmacy
 * $hcparty#perspharmacist
 * $hcparty#orgpharmacy
