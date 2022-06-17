@@ -43,7 +43,7 @@
   "medicationCodeableConcept": {
     "coding": [
       {
-        "system": "https://cnk.apb.be/codings/cnk_product_codes",
+        "system": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
         "code": "1439562",
         "display": "Topazolam tab 50x 1,0mg",
         "_display": {

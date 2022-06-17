@@ -3,10 +3,6 @@
 	<p>
     This is the HL7 Belgium FHIR Implementation Guide for the Medication workgroup.
    </p>
-	<blockquote class="stu-note">
-	<strong>This documentation and set of artefacts are still undergoing development.</strong>
-	The working groups of HL7 and the different interested parties are working on this specification. This publication is a development version that has not yet been validated by HL7 nor by the users and implementers.
-	</blockquote>
 	<p> </p>
   <a name="content"> </a>
   <h3>Content</h3>
@@ -43,11 +39,5 @@
     licensing requirements may limit the systems that data captured using certain questionnaires may be shared with.
   </p>
 
-	<a name="disclaimer"> </a>
-	<h3>Disclaimer</h3>
-	<p>
-    The specification herewith documented is a draft working specification, and may not be used for any implementation purposes. 
-    This draft is provided without warranty of completeness or consistency, and the official publication supersedes this draft.
-    No liability can be inferred from the use or misuse of this specification, or its consequences.
-  </p>
+	
 </div>

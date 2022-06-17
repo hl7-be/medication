@@ -12,6 +12,7 @@ Description: "Defines constraints and extensions on the Medication Dispense reso
 * ^status = #active
 * . ^short = "The medication dispense entry"
 * . ^definition = "A register of a medication dispense, describing the medication that has been dispensed by a professional or by an organization, including the medication, the patient, some prescription and treatment information."
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 1
 * identifier MS
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "system"
