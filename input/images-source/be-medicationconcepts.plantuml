@@ -1,0 +1,171 @@
+@startuml
+hide stereotype
+hide circle
+skinparam linetype polyline
+skinparam shadowing false
+
+
+!pragma layout smetana
+
+
+
+skinparam class<<S>> {
+ BorderColor DarkSlateGray
+ BackgroundColor WhiteSmoke
+ HeaderBackgroundColor #909090
+}
+
+skinparam class<<VMPP>> {
+ BorderColor #997700
+ BackgroundColor BUSINESS
+ HeaderBackgroundColor #ffcc33
+}
+
+skinparam class<<PhP>> {
+ BorderColor #505090
+ BackgroundColor APPLICATION
+ HeaderBackgroundColor SkyBlue
+}
+
+skinparam class<<Oth>> {
+ BorderColor #99770055
+ BackgroundColor #FFFFE055
+ HeaderBackgroundColor #ffDD7344
+ HeaderFontColor 	#ffcc3355
+}
+
+skinparam class<<MP>> {
+ BorderColor DarkGreen
+ BackgroundColor PHYSICAL
+ HeaderBackgroundColor LimeGreen
+}
+
+
+skinparam class<<PMP>> {
+ BorderColor DarkRed
+ BackgroundColor MistyRose
+ HeaderBackgroundColor #f09090
+}
+
+skinparam class<<VMPG>> {
+ BorderColor DarkSlateGrey
+ BackgroundColor #DEE
+ HeaderBackgroundColor #A0B0B0
+}
+
+
+
+  package " Belgium Medication Concepts   " as MR #E9EAE0 {
+
+    class "**VTM**" as VTM<<S>> {
+' e.g. amlodipine
+      --
+      |_ identifier (76)
+      |_ name (amlodipine)  
+    }
+
+
+    class "**Substance**" as SUB<<S>> {
+      --
+      |_ identifier (6307)
+      |_ name (Amlodipine besilate)  
+      |_ other_codes
+        |_ type (snomed)
+        |_ code (384976003)
+    }
+
+
+    class "**VMP Group**" as VMPG<<S>> {
+' e.g. amlodipine oraal 10 mg        
+      --
+      |_ identifier (1651)
+      |_ ingredient 
+        |_ vtm_substance (amlodipine) 
+        |_ strength (10 mg)
+      |_ route (oral)
+    }
+
+    class " **VMP** " as PhP<<PhP>> {
+      --
+      |_ designation (amlodipine 10 mg capsule (or.)) 
+      |_ identifier (1834) 
+      |_ ingredient
+        |_ substance (amlodipine)   
+        |_ strength (10mg)
+      |_ route (oral)
+      |_ doseForm (capsule)
+    }
+
+    class " **AMP ** " as MP<<MP>>{
+      --
+      |_ name (Amlor 10 mg harde caps)
+      |_ identifier (SAM148303-00)
+      |_ active_ingredient
+        |_ substance (amlodipine besilate = 6307)
+        |_ strength???
+      |_ actualRoute (Oraal gebruik)
+      |_ actualPharmaceuticalDoseForm (Capsule, hard)  
+    }
+
+    class " **AMPP **  " as AMPP<<PMP>>{
+      --
+      |_ name (Amlor 10 mg harde caps. 30)
+      |_ cti_extended (148303-01)
+      |_ classification
+        |_ atc (C08CA01)
+      |_ actualRoute (Oraal gebruik)
+      |_ actualPharmaceuticalDoseForm (Capsule, hard)  
+      |_ otherNames
+        |_ type (BCFI)
+        |_ name (Amlor harde caps. 30x 10mg)  
+      |_ marketingAuthorization (BE148303)
+      |_ marketingAuthorizationHolder (Upjohn)   
+      |_ packageComponent
+        |_ type (Blisterverpakking)
+        |_ pack_size (30)
+        |_ pack_units (U)
+    }
+
+
+
+
+    class " **DMPP **  " as DMPP<<VMPG>>{
+      --
+      |_ cnk (1588-581)
+      |_ context (public)   
+      |_ cost (9,87 €)
+    }
+
+
+
+    class "  (REIMB)  " as REIMB<<Oth>>{
+      --
+      |_ cnk (1588-581)  
+      |_ cost (9,87 €)
+      |_ copayment
+        |_ regimen (reg) 
+        |_ value (1,78 €)   
+    }
+
+
+  SUB <-l- VTM: "    Grouping of      "
+
+
+  PhP <-u- VMPG: "    Grouping of  "
+  
+  AMPP <-u- VMPG: "   Grouping of  "
+  
+  VTM <-d- PhP: "   Contains      "
+  
+  VTM <-d- VMPG: "   Contains "
+  
+  PhP <-r- MP: "   Medicinal Product of"
+  
+  AMPP -l-> MP: "   Packaged Form of "
+  
+  DMPP -d-> AMPP: " Reimbursed product "
+
+  DMPP <-u- REIMB: " Reimbursement rule "
+  
+}
+@enduml
