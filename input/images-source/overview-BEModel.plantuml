@@ -4,7 +4,7 @@
 !includeurl ICONURL/font-awesome-5/database.puml
 
 'skinparam linetype ortho
-skinparam linetype polyline
+'skinparam linetype polyline
 hide circle
 hide stereotype
 
@@ -53,10 +53,10 @@ file {
 
 
 class "** Medication Schema **" as MS<<TM>> {
-|_ Patient
-|_ LastUpdate
-|_ Label
-|_ Version
+|_ patient
+|_ lastUpdate
+|_ label
+|_ version
 '|_ VersionDate
 }
 
@@ -72,24 +72,24 @@ class "** Medication Product **" as M<<TM>> {
 
 class "**Medication Line**" as ML<<TM>> {
   |_ uniqueIdentifier 1..*
-  |_ version
+  |_ lastRecordedDate 1..*
   |_ status
   |_ statusReason
   |_ recordedDate
   |_ assertedDate
   |_ recorder
   |_ exposure
-  |_ patient 0..1
+  |_ patient 1..1
   |_ medication
     |_ product/substance
     |_ type
   |_ reason
     |_ reference 
     |_ code
-  |_ EffectivePeriod
+  |_ effectivePeriod
     |_ start
     |_ end
-  |_ Dosage
+  |_ dosage
     |_ dosageOverride
     |_ dosageOverrideReason
     |_ dosageDetails
@@ -107,33 +107,29 @@ class "**Medication Line**" as ML<<TM>> {
         |_ value
         |_ unit
       |_ patientInstruction
-  |_ Adherence
+  |_ adherence
     |_ code
     |_ reason
-  |_ Note
+  |_ note
   |_ <i>originType
-  |_ DispenseRequestNeeded?   
-  |_ Visible
+  |_ dispenseRequestNeeded?   
+  |_ visible
 --
 <i>Identifier NameSpace
 }
 
 
-ML -u-o MS : ""
-
-class "**Prescription (Group)**" as P<<TM>> {
-  |_ identifier 1..* 
-  |_ status?
-  |_ period?
-  |_ indication
-  |_ comment?
-  |_ coverage?
-}
+' class "**Prescription (Group)**" as P<<TM>> {
+'   |_ identifier 1..* 
+'   |_ status?
+'   |_ period?
+'   |_ indication
+'   |_ comment?
+'   |_ coverage?
+' }
 
 
 'P -u-> ML : supportingInformation
-PL -u-> ML : supportingInformation
-
 class "**Prescription Line**" as PL<<TM>> {
   |_ identifier 1..* 
   |_ authoredOn
@@ -186,14 +182,25 @@ class "**Dispense**" as D<<TM>> {
 
 'M <-u- ML : medication
 
+ML -u-o MS : ""
 
-D .u.> ML : supportingInformation
+PL -r-> M :" medication "
+
+
+
+PL <.l.> ML : supportingInformation
+
+D <.u.> ML : supportingInformation
+ML -d-> M : "                   "
+
+'M -u[hidden]-> MS
+
+
 
 D -l-> PL :" authorizedBy "
-D -d-> M :" medication "
-P o-r- PL :"           "
+D -l-> M :" medication "
+'P o-r- PL :"           "
 'PL -r[hidden]- M
-PL -r-> M :" medication "
 'PL ||-d-o{ M :"                  "
 
 @enduml
