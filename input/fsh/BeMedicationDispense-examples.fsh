@@ -16,8 +16,8 @@ Title:    "Dispense entry Example - Community Pharmacy dispense, from prescripti
 * status = #completed
 * medicationCodeableConcept.coding[+].system = "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes"
 * medicationCodeableConcept.coding[=].code = #1439562
-#* medicationCodeableConcept.coding[+].system = "http://www.whocc.no/atc"
-#* medicationCodeableConcept.coding[=].code = #N05BA12
+//* medicationCodeableConcept.coding[+].system = "http://www.whocc.no/atc"
+//* medicationCodeableConcept.coding[=].code = #N05BA12
 * medicationCodeableConcept.coding.display = "Topazolam tab 50x 1,0mg"
 
 * medicationCodeableConcept.coding.display.extension[0].url = "http://hl7.org/fhir/StructureDefinition/translation"
@@ -222,8 +222,8 @@ Title:    "Dispense Example - Minimal amount of information"
 * status = #completed
 * medicationCodeableConcept.coding[+].system = "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes"
 * medicationCodeableConcept.coding[=].code = #1439562
-#* medicationCodeableConcept.coding[+].system = "http://www.whocc.no/atc"
-#* medicationCodeableConcept.coding[=].code = #N05BA12
+//* medicationCodeableConcept.coding[+].system = "http://www.whocc.no/atc"
+//* medicationCodeableConcept.coding[=].code = #N05BA12
 * medicationCodeableConcept.coding.display = "Topazolam tab 50x 1,0mg"
 * performer[0].actor.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi-practitioner"
 * performer[0].actor.identifier.value = "6547432"
