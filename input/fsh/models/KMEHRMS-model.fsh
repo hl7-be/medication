@@ -6,21 +6,22 @@
 
 Logical: KMEHRMS
 Title: "KMEHR Medication Schema v5.8"
-Description: "This model represents the Medication Schema KMEHR V5.8. It is shown for demonstrating the field correspondence/equivalence"
-* KMEHRMessage 1..1 Class "KMEHR Message"
+Description: "This model represents the Medication Schema KMEHR V5.8. It is shown for demonstrating the field correspondence/equivalence, and not to imply any intended scope or intended behaviour."
+
+* KMEHRMessage 1..1 Class "KMEHR Message" "KMEHR Message"
   * header 1..1 Class "KMEHR Message header"
 //    * id 1..1 string ""
-    * standard 1..1 Class ""
+    * standard 1..1 Class "Which version of the standard is used"
       * cd 1..1 CD "The version of the KMEHR standard used"
         * ^comment = """
 * S-VALUE = CD-STANDARD 
 * value = always '20161201' " refering the eHealth XSD version
 """
-    * date 0..1 date ""
-    * time 0..1 time ""
-    * sender 0..1 Class ""
+    * date 0..1 date "Date"
+    * time 0..1 time "Time"
+    * sender 0..1 Class "Sender"
       * insert hcparties
-    * recipient 0..1 Class ""
+    * recipient 0..1 Class "Recipient"
       * insert hcparties
   * folder 1..1 Class "The only data that matters"
     * idkmehr 1..1 integer "ID-KMEHR"
@@ -39,13 +40,13 @@ Description: "This model represents the Medication Schema KMEHR V5.8. It is show
       * birthdate 0..1 date "Birth date of the patient (uses the basic data types for dates)"
       * deathdate 0..1 date "this is not used"
       * sex 1..1 Class "Sex of the patient"
-        * cd 1..1 code ""
+        * cd 1..1 code "Coded value of patient sex"
           * ^requirements = """
             * S = CD-sex
             * ^example.valueString = female
           """            
       * address 0..1 Class "Home, work, … address(es) of the patient."
-        * cd 1..1 code ""
+        * cd 1..1 code "Coded value"
           * ^requirements = """
             * S = CD-ADDRESS 
             * ^example.valueString = home
@@ -56,7 +57,7 @@ Description: "This model represents the Medication Schema KMEHR V5.8. It is show
         * street 0..1 string "The name of the street"
         * housenumber 0..1 string "Housenumber within the street"
       * nationality 0..1 string "Nationality of the patient. Initially, the use of the CD-COUNTRY dictionary was required. We now recommend the use of the CD-FED-COUNTRY dictionary."
-        * cd 1..1 code ""
+        * cd 1..1 code "Coded value"
           * ^requirements = """
             * S = CD-FED-COUNTRY
             * ^example.valueString = de
@@ -88,7 +89,7 @@ Description: "This model represents the Medication Schema KMEHR V5.8. It is show
             * RSBID
             * RSWID
         """
-      * cd 1..1 code ""
+      * cd 1..1 code "code"
         * ^requirements = """
           * S= CD-TRANSACTION
           * valueset:
@@ -119,7 +120,7 @@ Description: "This model represents the Medication Schema KMEHR V5.8. It is show
             * RSBID
             * RSWID
         """
-      * cd 0..* code ""
+      * cd 0..* code "Coded value"
         * ^requirements = """
         * S= CD-TRANSACTION
         * valueset:
@@ -165,10 +166,11 @@ Description: "This model represents the Medication Schema KMEHR V5.8. It is show
             * S = CD-ITEM
             * value = transactionreason
             """
-        * contenttext 0..* Class ""
+        * contenttext 0..* Class "Text"
           * text 1..* string "cardinality to be checked"
             * ^comment = "L-VALUE = [language] fr or nl or ..."
             * ^example.valueString = "Temporairement ne pas prendre en raison de l'interaction avec Y."
+            * ^example.label = "Example"
 
 
 
@@ -195,7 +197,7 @@ Description: "This model represents the Medication Schema KMEHR V5.8. It is show
             * RSBID
             * RSWID
         """
-      * cd 0..* code ""
+      * cd 0..* code "Coded value"
         * ^requirements = """
         * S= CD-TRANSACTION
         * valueset:
@@ -219,16 +221,17 @@ Description: "This model represents the Medication Schema KMEHR V5.8. It is show
             * S = CD-ITEM
             * value = healthcareelement
             """
-        * contentcategory 1..* Class ""
-          * cd 0..* Class ""
+        * contentcategory 1..* Class "Category"
+          * cd 0..* Class "Coded value"
             * ^requirements = """
             * S-VALUE=CD-ITEM-MS
             * value = medicationuse
             """
-        * contenttext 0..* Class ""
+        * contenttext 0..* Class "Text"
           * text 1..* string "cardinality to be checked"
             * ^comment = "L-VALUE = [language] fr or nl or ..."
             * ^example.valueString = "pression artérielle" 
+            * ^example.label = "Example"
       * itemendCondition 0..1 Class "Extra information on the endcondition of the medication within this MSE-transaction"
         * itemId 0..* integer "a sequential unique item ID within the transaction, start=1"
         * cd 0..* ANY "describes the item category"
@@ -236,16 +239,18 @@ Description: "This model represents the Medication Schema KMEHR V5.8. It is show
             * S = CD-ITEM
             * value = healthcareelement
             """
-        * contentcategory 1..* Class ""
-          * cd 0..* Class ""
+        * contentcategory 1..* Class "Category"
+          * cd 0..* Class "Coded value"
             * ^requirements = """
             * S-VALUE=CD-ITEM-MS
             * value = endcondition
             """
-        * contenttext 0..* Class ""
+        * contenttext 0..* Class "Text"
           * text 1..* string "cardinality to be checked"
             * ^comment = "L-VALUE = [language] fr or nl or ..."
             * ^example.valueString = "pression artérielle" 
+            * ^example.label = "Example"
+            
       * itembeginCondition 0..1 Class "Extra information on the begincondition of the medication within this MSE-transaction"
         * itemId 0..* integer "a sequential unique item ID within the transaction, start=1"
         * cd 0..* ANY "describes the item category"
@@ -253,16 +258,18 @@ Description: "This model represents the Medication Schema KMEHR V5.8. It is show
             * S = CD-ITEM
             * value = healthcareelement
             """
-        * contentcategory 1..* Class ""
-          * cd 0..* Class ""
+        * contentcategory 1..* Class "Category"
+          * cd 0..* Class "Coded value"
             * ^requirements = """
             * S-VALUE=CD-ITEM-MS
             * value = begincondition
             """
-        * contenttext 0..* Class ""
+        * contenttext 0..* Class "Text"
           * text 1..* string "cardinality to be checked"
             * ^comment = "L-VALUE = [language] fr or nl or ..."
             * ^example.valueString = "pression artérielle" 
+            * ^example.label = "Example"
+
       * itemorigin 0..0 Class "non-permitted"
       * itemmedicationType 0..0 Class "non-permitted"
       * itemadaptationFlag 0..0 Class "non-permitted"
@@ -290,8 +297,10 @@ Description: "This model represents the Medication Schema KMEHR V5.8. It is show
         * text 0..* string "Mandatory if compoundprescription is used"
           * ^comment = "L-VALUE = [language] fr or nl or ..."
           * ^example.valueString = "Aluminiumchloride transpiratieremmende hydroalcoholische oplossing 15 % TMF" 
+            * ^example.label = "Example"
+
         * temporality 0..* Class "The temporality"
-          * cd 0..1 string ""
+          * cd 0..1 string "Coded value"
           * ^requirements = """
           * S = CD-TEMPORALITY
           * valueset:
@@ -313,6 +322,8 @@ Description: "This model represents the Medication Schema KMEHR V5.8. It is show
           * text 1..1 string "Contains the ingestion pattern in textual form"
             * ^comment = "L-VALUE = [language] fr or nl or ..."
             * ^example.valueString = "tot 4 x per dag 1 tablet"
+            * ^example.label = "Example"
+
           * low 0..0 ANY "Not used here, only in SumEHR" 
           * high 0..0 ANY "Not used here, only in SumEHR"
           * unit 0..0 ANY "Not used here, only in SumEHR"
@@ -327,11 +338,13 @@ Description: "This model represents the Medication Schema KMEHR V5.8. It is show
             * cd 1..1 string "the day of the week"
               * ^comment = "S-VALUE=CD-WEEKDAY"
               * ^example.valueString = "monday"
+              * ^example.label = "Example"
+
           * daynumber 0..* integer "Daynumber, mostly used icw periodicity=weekly or daily"
           * daytime 0..* Class "indication of the intake moment"
             * insert timeMandatory 
-            * dayperiod 1..* Class "mutual exclusive with <time>"
-              * cd 0..* string ""
+            * dayperiod 1..* Class "mutual exclusive with &lt;time&gt;"
+              * cd 0..* string "Coded value"
                 * ^requirements = """
                 * S = CD-DAYPERIOD
                 * valueset:
@@ -377,6 +390,7 @@ Description: "This model represents the Medication Schema KMEHR V5.8. It is show
         * instructionforpatient 0..1 string "Usage instructions for the patient."
           * ^comment = "L-VALUE = [language] fr or nl or ..."
           * ^example.valueString = "A diminuer si possible"
+          * ^example.label = "Example"
           
 
                 
@@ -398,6 +412,8 @@ RuleSet: hcparties
   * itemId 1..1 string "the hub identifier"
     * ^comment = "S-VALUE= ID-HCPARTY"
     * ^example.valueString = "1990001916"
+    * ^example.label = "Example"
+
   * cd 1..1 code "the type of the hcparty"
     * ^comment = "S-VALUE= CD-HCPARTY"
   * name 0..1 string "the name of the hub"
@@ -405,6 +421,8 @@ RuleSet: hcparties
 * hcpartyOrg 0..1 Class "the identifier of the org"
   * itemId 0..1 string "the org identifier - NIHDII number of the org"
     * ^example.valueString = "1990001916"
+    * ^example.label = "Example"
+
   * cd 1..1 code "the type of the hcparty"
     * ^comment = "S-VALUE= CD-HCPARTY"
   * idencryptionActor 0..1 integer "to be checked: usage & cardinality"
@@ -412,7 +430,7 @@ RuleSet: hcparties
       * S-VALUE = ID-ENCRYPTION-ACTOR
       * value = [selection of you NIHII nr]
     """
-  * idencryptionApplication 0..1 ANY ""
+  * idencryptionApplication 0..1 ANY "Application"
     * ^requirements = """
       * S-VALUE = ID-ENCRYPTION-APPLICATION
     """
@@ -425,13 +443,15 @@ RuleSet: hcparties
         * SSIN
         *...
     """
-  * name 0..1 string "the name of the org"
+  * name 0..1 string "The name of the org"
 * hcpartyindividual 1..1 Class "the identifier of the individual"
   * idriziv 0..1 string "the RIZIV individual identifier"
     * ^comment = "S-VALUE= ID-HCPARTY"
   * idinss 0..1 string "the Belgian Social Security Number identifier"
     * ^comment = "S-VALUE= INSS"
     * ^example.valueString = "69060733632"
+    * ^example.label = "Example"
+
   * idencryptionActor 0..1 integer "to be checked: usage & cardinality"
     * ^requirements = """
       * S-VALUE = ID-ENCRYPTION-ACTOR
@@ -439,6 +459,8 @@ RuleSet: hcparties
     """
   * cd 1..1 code "the type of the hcparty"
     * ^example.valueString = "persphysician"
+    * ^example.label = "Example"
+
     * ^comment = "S-VALUE= CD-HCPARTY"
   * cdencryptionActor 0..1 Class "to be checked: usage & cardinality"
     * ^requirements = """
@@ -451,14 +473,18 @@ RuleSet: hcparties
   * firstname 0..1 string "the first name of the individual"
   * familyname 0..1 string "the last name of the individual"
     * ^example.valueString = "Hendrix"
+    * ^example.label = "Example"
+
   * address 0..* Class "Home, work, ... address(es) of the patient or healthcare party."
-    * cd 1..1 Class ""
+    * cd 1..1 Class "Coded value"
       * ^requirements = """
         * S-VALUE = CD-ADDRESS
         * example.valueString = home
       """
     * nis 0..1 code "explanation: https://nl.wikipedia.org/wiki/NIS-code"
       * ^example.valueString = "24062"
+      * ^example.label = "Example"
+
   * telecom 0..* string "Fax, phone, … number(s) of the healthcare party."
 * hcpartyapplication 0..1 Class "the software identifier"
   * itemId 0..1 string "the software identifier"
@@ -483,6 +509,8 @@ RuleSet: medicationIdentification
 * substanceproduct 0..* Class "Description of the generic product"
   * intendedName 0..1 ST "Name of prescribed product"
     * ^example.valueString = "chloorfenamine + paracetamol oraal 3,2 mg + 240 mg" 
+    * ^example.label = "Example"
+
   * intendedCd 0..1 CD "Code of prescribed product (VMPGROUP or CNK)"
     * ^requirements = """
     * S-Value= CD-INNCLUSTER is not supported
@@ -499,6 +527,7 @@ RuleSet: medicationIdentification
   * ^comment = "Note that in XML this can directly be populated with the description (as it is in Wallonia)"
   * magistraltext 1..1 ST "Recipe of the prescription"
     * ^example.valueString = "R/ Aluminiumchloride hexahydraat 15 g + Isopropylalcohol 78 g + Gezuiverd water q.s. ad 100 g T"
+    * ^example.label = "Example"
   * compound 0..0 Class "NOT USED"
   * formularyReference 0..0 ANY "TBD"
     // * id 0..1 string "description of the compound prescription"
@@ -509,14 +538,14 @@ RuleSet: medicationIdentification
 RuleSet: periodDefinition
 * beginMoment 1..1 Class "The beginmoment of the medication/treatment suspension"
     
-  * date 1..1 date  ""
+  * date 1..1 date  "Date"
     * ^requirements = "Format = yyyy-mm-dd"
-  * time 0..1 time ""
+  * time 0..1 time "Time"
     * ^requirements = "Format = HH:MM:SS or HH:MM:SS.xxxxxxx+02:00 or ... "
 * endMoment 0..1 Class "The end moment of the medication/treatment suspension"
-  * date 1..1 date  ""
+  * date 1..1 date  "Date"
     * ^requirements = "Format = yyyy-mm-dd"
-  * time 0..1 time ""
+  * time 0..1 time "Time"
     * ^requirements = "Format = HH:MM:SS or HH:MM:SS.xxxxxxx+02:00 or ... "
 
 RuleSet: dateMandatory
