@@ -1,4 +1,4 @@
-Logical: BEMedicationLine
+Logical: BELMMedicationLine
 Title: "Medication Treatment Line - logical model"
 Description: "A model for representing a Treatment Line."
 
@@ -38,7 +38,7 @@ Description: "A model for representing a Treatment Line."
 //.category
 
 * medication 1..1 BackboneElement "The product or substance"
-  * product 1..1 Reference(MedProduct) "Product reference, identifier or name"
+  * product 1..1 Reference(BELMMedProduct) "Product reference, identifier or name"
 // .medicationReference or medicationCodeableConcept      
   * type 1..1 CodeableConcept "Type of medication - magistral, medicinal product, non-medicinal product"
 // .medicationReference.resolve().classification or medicationCodeableConcept[]
@@ -110,7 +110,7 @@ Description: "A model for representing a Treatment Line."
 
 
 
-Logical: MedProduct
+Logical: BELMMedProduct
 Title: "Medicinal Product"
 Description: "A model for representing a medicinal product."
 
@@ -140,6 +140,7 @@ Description: "Medication preparation type"
 
 ValueSet: BEMLMedicationTypeVS
 Id:         medication-type-vs
+Description: "Medication preparation type value set"
 * codes from system BEMLMedicationType
 
 
