@@ -1,4 +1,5 @@
 Logical: BELMMedicationLine
+Id: be-lm-medicationline
 Title: "Medication Treatment Line - logical model"
 Description: "A model for representing a Treatment Line."
 

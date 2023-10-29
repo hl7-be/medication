@@ -1,6 +1,6 @@
 Logical: BeModelMedicationDispense
 Parent: Base
-Id: BeModelMedicationDispense
+Id: be-lm-medicationdispense
 Title: "BeModelMedicationDispense"
 Description: "The logical model for the Dispense Record entry - the information that can be captured upon the act of dispensing - in a hospital pharmacy, or a community pharmacy. This is not for a future dispense, rather a record of an actual dispense."
 
