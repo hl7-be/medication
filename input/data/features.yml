@@ -1,11 +1,11 @@
 ---
 feedback:
-  - active: true
+  - active: false
     type: "googleform"   
     label: Feedback
     formUrl: https://docs.google.com/forms/d/e/1FAIpQLSfFeLMvb7wmUDGa181obPb04Igny75iqSy2jMSp6Wg40LKWjw/viewform?usp=pp_url
     dashboard: 
-      url: https://github.com/hl7-be/hl7-be-fhir-medication/projects/1
+      url: https://github.com/hl7-be/medication/projects/1
       label: "Issues"    
     parameters:
     - fieldId: "1353807103"

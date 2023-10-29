@@ -2,6 +2,7 @@ Logical: BELMMedicationLine
 Title: "Medication Treatment Line - logical model"
 Description: "A model for representing a Treatment Line."
 
+* ^name = "MedicationLine"
 * ^extension[+].url = "http://hl7.org/fhir/tools/StructureDefinition/logical-target"
 * ^extension[=].valueBoolean = true
 
@@ -79,7 +80,7 @@ Description: "A model for representing a Treatment Line."
 // .note
 
 * dispenseRequestNeeded 0..* CodeableConcept "Whether the medication needs a prescription or request to be dispensed"
-* visibilityle 0..* CodeableConcept "Whether the patient has explicitly requested the medication line not to be seen - when other rules don't prevail"
+* visibility 0..* CodeableConcept "Whether the patient has explicitly requested the medication line not to be seen - when other rules don't prevail"
 
 // TO DO: Reaction??
 
