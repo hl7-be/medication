@@ -70,7 +70,7 @@ Usage: #example
 
 
 
-Instance: medication-dispense-example-2
+Instance: medicationdispense-example-2
 InstanceOf: MedicationDispense
 Usage: #example
 Description: "Medication Dispense example"

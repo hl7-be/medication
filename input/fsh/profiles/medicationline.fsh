@@ -46,7 +46,7 @@ Description: "Medication Line profile - contains the overview information for a 
 Extension: ExposureCategory
 Description: "Exposure - category."
 * value[x] only CodeableConcept
-//* value[x] from VSExposureCategory (required)
+* value[x] from MedicationExposureCategoryVS (extensible)
 
 
 Extension: VisibilityFlag

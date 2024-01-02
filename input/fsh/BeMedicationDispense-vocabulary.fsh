@@ -54,6 +54,8 @@ ValueSet: DispenserTypes
 Id: be-vs-dispenser-types
 Title: "Dispenser Types"
 Description: "Dispenser Types - from hcparty"
+* ^status = #draft
+* ^experimental = false
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 1
 * $hcparty#deptpharmacy
 * $hcparty#perspharmacist

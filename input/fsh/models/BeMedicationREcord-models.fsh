@@ -1,5 +1,5 @@
-Logical: BELMMedicationLine
-Id: be-lm-medicationline
+Logical: BEModelMedicationLine
+Id: be-model-medicationline
 Title: "Medication Treatment Line - logical model"
 Description: "A model for representing a Treatment Line."
 
@@ -14,7 +14,6 @@ Description: "A model for representing a Treatment Line."
 * lastUpdatedDate 1..1 string "Timestamp the medication line content was recorded or last updated."
 // .extension[artifactDate]
   * ^comment = " We consider this is redundant with the above, given the intended use in Belgium (version is a date). How to ensure the compatibility?"
-
 
 * status 1..1 code "Status of the treatment line entry"
 //.status
@@ -132,6 +131,8 @@ CodeSystem: BEMLMedicationType
 Id:         medication-type
 Title:     "Medication preparation Type"
 Description: "Medication preparation type"
+* ^status = #draft
+* ^experimental = false
 * #magistral "Magistral preparation"
 * #officinal "Officinal preparation"
 * #medicinal-product "Medicinal Product"
@@ -142,7 +143,10 @@ Description: "Medication preparation type"
 
 ValueSet: BEMLMedicationTypeVS
 Id:         medication-type-vs
+Title:     "Medication preparation Type value set"
 Description: "Medication preparation type value set"
+* ^status = #draft
+* ^experimental = false
 * codes from system BEMLMedicationType
 
 
@@ -150,6 +154,8 @@ CodeSystem: BEMLMExposureType
 Id:         medication-exposuretype
 Title:     "Medication exposure purpose"
 Description: "Medication exposure purpose"
+* ^status = #draft
+* ^experimental = false
 * #prophylaxys "Prophylactic purpose"
 * #therapy "Therapeutic purpose"
 * #other "Other e.g. diagnostic purposes"
@@ -159,5 +165,7 @@ ValueSet: BEMLMExposureTypeVS
 Id:         medication-exposuretype-vs
 Title:     "Medication exposure purpose"
 Description: "Medication exposure purpose"
+* ^status = #draft
+* ^experimental = false
 * codes from system BEMLMExposureType
 

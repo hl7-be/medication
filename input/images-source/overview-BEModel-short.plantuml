@@ -69,7 +69,7 @@ class "** Medication Product **" as M<<TM>> {
     '   |_ product 0..1
     }
 
-class "** [[StructureDefinition-BELMMedicationLine.html Medication Line]] **" as ML<<TM>> {
+class "** [[StructureDefinition-be-model-medicationline.html Medication Line]] **" as ML<<TM>> {
 '   |_ uniqueIdentifier 1..1   
 '   |_ versionIdentifier 1..1   
 '   |_ lastUpdatedDate 1..1   
@@ -142,7 +142,7 @@ class "**Prescription Line**" as PL<<TM>> {
 }
 
 
-class "** [[StructureDefinition-BEModelMedicationDispense.html Dispense]] **" as D<<TM>> {
+class "** [[StructureDefinition-be-model-medicationdispense.html Dispense]] **" as D<<TM>> {
    ' |_ patient 0..1 
   ' |_ receiver 0..1 
   ' |_ dispenser 0..1

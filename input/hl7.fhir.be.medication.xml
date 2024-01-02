@@ -65,7 +65,7 @@ The registration of a Dispensation event, whether in a hospital or community set
 
     <resource>
       <reference>
-        <reference value="StructureDefinition/be-model-medication-dispense"/>
+        <reference value="StructureDefinition/be-model-medicationdispense"/>
       </reference>
       <fhirVersion value="4.0.1"/>
       <name value="Logical Model Medication Dispense"/>
@@ -98,7 +98,7 @@ The registration of a Dispensation event, whether in a hospital or community set
 
     <resource>
       <reference>                            
-        <reference value="MedicationDispense/medication-dispense-example-1"/>
+        <reference value="MedicationDispense/medicationdispense-example-1"/>
       </reference>
       <fhirVersion value="4.0.1"/>
       <name value="Medication Dispense Example 1"/>
@@ -108,7 +108,7 @@ The registration of a Dispensation event, whether in a hospital or community set
     </resource>
     <resource>
       <reference>
-        <reference value="MedicationDispense/medication-dispense-example-2"/>
+        <reference value="MedicationDispense/medicationdispense-example-2"/>
       </reference>
       <fhirVersion value="4.0.1"/>
       <name value="Medication Dispense Example 2"/>

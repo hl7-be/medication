@@ -153,7 +153,7 @@ Description: "This model represents the Medication Schema KMEHR V5.8. It is show
             * S = CD-LIFECYCLE
             * value = suspended
           """
-        * lnk 1..1 string "using a link to the transaction (in the current MedicationSchema) of the related medicine, "
+        * lnk 1..1 string "using a link to the transaction (in the current MedicationSchema) of the related medicine"
           * ^requirements = """
             * TYPE = isplannedfor
             * URL = link to the ID-KMEHR of the medication this TS relates to
