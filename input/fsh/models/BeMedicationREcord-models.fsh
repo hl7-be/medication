@@ -35,7 +35,7 @@ Description: "A model for representing a Treatment Line."
 * patient 1..1 Reference(Patient) "Patient"
 // .subject
 * category 0..1 BackboneElement "Category for the treatment line"
-  * originType 0..1 CodeableConcept "The origin..."
+  * originType 0..1 CodeableConcept "The origin of the line - hospital, ambulatory"
 //.category
 
 * medication 1..1 BackboneElement "The product or substance"

@@ -18,10 +18,9 @@ Description: "Medication Line profile - contains the overview information for a 
 
 
 * extension contains 
-  ExposureCategory named exposureCategory 0..1 MS and 
+  ExposureCategory named exposure-category 0..1 MS and 
   DispenseRequestNeededCategory named dispense-request-needed 0..1 MS and 
   VisibilityFlag named visibility-flag 0..1 MS and 
-  ExposureCategory named exposure-category 0..1 MS and 
   http://hl7.org/fhir/StructureDefinition/artifact-version named artifact-version 1..1 MS and
   http://hl7.org/fhir/StructureDefinition/artifact-date named artifact-date 0..1 MS and
   http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence named adherence 1..1 MS
@@ -30,9 +29,8 @@ Description: "Medication Line profile - contains the overview information for a 
 * extension[exposure-category] ^short = "Exposure category"
 * extension[dispense-request-needed] ^short = "Indication of whether a dispense request is needed for delivering the medication"
 * extension[visibility-flag] ^short = "Coded preference or assertion about the visibility of the medication line"
-* extension[exposureCategory] ^short = "The nature of the treatment - e.g. prophylaxis, therapy, etc."
-* extension[artifact-version] ^short = "The version of the medication line"
-* extension[artifact-date] ^short = "The date the medication line was created or changed"
+* extension[artifact-version] ^short = "The business version of the medication line - this version changes when the content update is considered clinically relevant"
+* extension[artifact-date] ^short = "The business-relevant recorded date - the date the medication line was created or changed"
 * extension[adherence] ^short = "Indicates whether the medication is or is not being consumed or administered"
 
 
@@ -59,30 +57,35 @@ Description: "Medication Line profile - contains the overview information for a 
   * extension[dosage-override-reason] ^short = "The reason why the recommended dosage was overridden"
 
 
-
-
 * effective[x] 1..1 MS
 * note MS
 
 Extension: ExposureCategory
 Description: "Exposure - category."
+Context: MedicationStatement
 * value[x] only CodeableConcept
 * value[x] from MedicationExposureCategoryVS (extensible)
 
 
 Extension: VisibilityFlag
 Description: "Visibility Flag."
+Context: MedicationStatement
 * value[x] only boolean
+
 
 Extension: DispenseRequestNeededCategory
 Description: "Dispense Request Needed - category."
+Context: MedicationStatement
 * value[x] only boolean
 
 Extension: DosageOverride
 Description: "Dispense override."
+Context: MedicationStatement.dosage
 * value[x] only boolean
+//* context = #MedicationStatement.dosage
 
 Extension: DosageOverrideReason
 Description: "Dispense Request Needed - category."
+Context: MedicationStatement.dosage
 * value[x] only CodeableConcept
 
