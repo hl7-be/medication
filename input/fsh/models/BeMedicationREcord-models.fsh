@@ -46,7 +46,7 @@ Description: "A model for representing a Treatment Line."
   * type from BEMLMedicationTypeVS (required)
 
 * exposure 0..1 CodeableConcept "Therapeutic, Prophylactic"
-* exposure from BEMLMExposureTypeVS
+* exposure from MedicationExposureCategoryVS
 
 * reason 0..* BackboneElement "Reason for the medication treatment"
   * reference 0..1 Reference "Reference to existing condition or reason"
@@ -150,22 +150,22 @@ Description: "Medication preparation type value set"
 * codes from system BEMLMedicationType
 
 
-CodeSystem: BEMLMExposureType
-Id:         medication-exposuretype
-Title:     "Medication exposure purpose"
-Description: "Medication exposure purpose"
-* ^status = #draft
-* ^experimental = false
-* #prophylaxys "Prophylactic purpose"
-* #therapy "Therapeutic purpose"
-* #other "Other e.g. diagnostic purposes"
+// CodeSystem: BEMLMExposureType
+// Id:         medication-exposuretype
+// Title:     "Medication exposure purpose"
+// Description: "Medication exposure purpose"
+// * ^status = #draft
+// * ^experimental = false
+// * #prophylaxys "Prophylactic purpose"
+// * #therapy "Therapeutic purpose"
+// * #other "Other e.g. diagnostic purposes"
 
 
-ValueSet: BEMLMExposureTypeVS
-Id:         medication-exposuretype-vs
-Title:     "Medication exposure purpose"
-Description: "Medication exposure purpose"
-* ^status = #draft
-* ^experimental = false
-* codes from system BEMLMExposureType
+// ValueSet: BEMLMExposureTypeVS
+// Id:         medication-exposuretype-vs
+// Title:     "Medication exposure purpose"
+// Description: "Medication exposure purpose"
+// * ^status = #draft
+// * ^experimental = false
+// * codes from system BEMLMExposureType
 
