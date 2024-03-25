@@ -9,7 +9,7 @@
 
 id: hl7.fhir.be.medication
 canonical: https://www.ehealth.fgov.be/standards/fhir/medication
-url: https://www.ehealth.fgov.be/standards/fhir/medication
+#url: https://www.ehealth.fgov.be/standards/fhir/medication/ImplementationGuide-hl7.fhir.be.medication
 name: Medication 
 title: "Medication"
 description: Medication
@@ -132,7 +132,7 @@ pages:
   index.xml:
     title: Home
   medicationrecord.md:
-    title: Melgian Medication Record overview
+    title: Belgian Medication Record overview
   definitions.md:
     title: Definitions
   usecases-medicationrecord.md:
@@ -141,8 +141,12 @@ pages:
     title: Medication Record - Extended scenarios
   usecases-dispense.md:
     title: Dispense - Use cases
-    
+  howto.xml:
+    title: How to read this specification
+  downloads.xml:
+    title: Downloads
 
+  
 #  examples.xml:
 #    title: Examples Overview
 #    simpleExamples.xml:

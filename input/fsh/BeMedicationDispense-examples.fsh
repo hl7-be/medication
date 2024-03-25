@@ -55,6 +55,7 @@ Title:    "Dispense entry Example - Community Pharmacy dispense, from prescripti
 
 Instance: apotheek-onder-de-toren
 InstanceOf: BeOrganization
+Description: "Example organization for a pharmacy"
 Usage: #example
 /*
 * extension[0].url = "http://hl7.org/fhir/StructureDefinition/geolocation"
@@ -169,7 +170,7 @@ Title: "A dispense from a hospital pharmacy"
 * quantity.value = 1 
 * quantity.unit = "package"
 * quantity.system = "http://unitsofmeasure.org"
-* quantity.code = #{package}
+* quantity.code = #1
 //dayssupply
 //whenPrepared
 * whenHandedOver = "2020-09-21T13:00:00+02:00"

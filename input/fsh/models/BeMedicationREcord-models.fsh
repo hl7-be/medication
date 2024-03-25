@@ -133,6 +133,7 @@ Title:     "Medication preparation Type"
 Description: "Medication preparation type"
 * ^status = #draft
 * ^experimental = false
+* ^caseSensitive = false
 * #magistral "Magistral preparation"
 * #officinal "Officinal preparation"
 * #medicinal-product "Medicinal Product"
