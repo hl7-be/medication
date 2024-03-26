@@ -11,7 +11,7 @@ Description: "A model for representing a Treatment Line."
 // .identifier
 * versionIdentifier 1..1 string "Version of the medication line at the time the content was recorded or last updated."
 // .extension[artifactVersion]
-* lastUpdatedDate 1..1 string "Timestamp the medication line content was recorded or last updated."
+* lastUpdatedDate 1..1 dateTime "Timestamp the medication line content was recorded or last updated."
 // .extension[artifactDate]
   * ^comment = " We consider this is redundant with the above, given the intended use in Belgium (version is a date). How to ensure the compatibility?"
 
