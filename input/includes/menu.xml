@@ -24,10 +24,14 @@
 		</a>
 		<ul class="dropdown-menu">
 			<li>
-				<a href="usecases-dispense.html">Use Cases</a>
+				<a href="medicationrecord.html">Medication Record overview</a>
 			</li>
 			<li>
-				<a href="logical-models.html">Logical Models</a>
+				<a href="usecases-medicationrecord.html">Use Cases - Medication Record</a>
+			</li>
+			<li>
+				<a href="usecases-dispense.html">Use Cases - Dispense</a>
+			</li>
 			</li>
 <!--
 			<li>
