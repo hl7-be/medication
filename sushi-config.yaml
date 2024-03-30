@@ -204,6 +204,7 @@ FSHOnly: false
 dependencies: 
   hl7.fhir.be.core: 2.0.1
   hl7.terminology: 5.5.0
+  hl7.fhir.extensions.r5: 4.0.1
 
 parameters:
   shownav: 'true'
