@@ -53,11 +53,17 @@ jobs:
           # Get the latest publisher - don't run the batch script but run the line directly
           args: curl -L https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar -o ./input-cache/publisher.jar --create-dirs
 
+      - name: Create package cache folder
+        uses: docker://hl7fhir/ig-publisher-base:latest
+        with:
+          entrypoint: /bin/sh
+          args: -c "mkdir -p ./fhir-package-cache && chown 1001:127 ./fhir-package-cache"
+
       - name: Run the IG publisher
         uses: docker://hl7fhir/ig-publisher-base:latest
         with:
           # Run the publisher - don't run the batch script but run the line directly
-          args: java -jar ./input-cache/publisher.jar publisher -ig .
+          args: java -Xmx4g -jar ./input-cache/publisher.jar publisher -ig . -auto-ig-build -repo https://github.com/${{github.repository}} -package-cache-folder ./fhir-package-cache
 
       - name: Deploy candidate
         uses: JamesIves/github-pages-deploy-action@4.1.4
