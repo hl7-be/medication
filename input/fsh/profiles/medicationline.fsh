@@ -13,7 +13,7 @@ Description: "Medication Line profile - contains the overview information for a 
 * identifier contains vidis 0..1 MS
 * identifier[vidis] ^short = "VIDIS identifier"
 * identifier[vidis] ^definition = "The national identifier for medication lines."
-* identifier[vidis].system = "http://ehealth.fgov.be/vidis"
+* identifier[vidis].system = "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline"
 * identifier[vidis].value MS
 
 
@@ -32,7 +32,8 @@ Description: "Medication Line profile - contains the overview information for a 
 * extension[artifact-version] ^short = "The business version of the medication line - this version changes when the content update is considered clinically relevant"
 * extension[artifact-date] ^short = "The business-relevant recorded date - the date the medication line was created or changed"
 * extension[adherence] ^short = "Indicates whether the medication is or is not being consumed or administered"
-* extension[adherence] ^comment = "This is an R5 element, preadopted as a R4 extension - for the full definition see here: [http://hl7.org/fhir/R5/medicationstatement-definitions.html#MedicationStatement.adherence](http://hl7.org/fhir/R5/medicationstatement-definitions.html#MedicationStatement.adherence)"
+* extension[adherence] ^comment = """This is a FHIR R5 element, preadopted as an extension in this FHIR R4 specification. 
+For the full definition see here: [http://hl7.org/fhir/R5/medicationstatement-definitions.html#MedicationStatement.adherence](http://hl7.org/fhir/R5/medicationstatement-definitions.html#MedicationStatement.adherence)"""
 
 * status MS
 * statusReason MS
@@ -59,6 +60,11 @@ Description: "Medication Line profile - contains the overview information for a 
 
 * effective[x] 1..1 MS
 * note MS
+
+* subject only Reference (BePatient)
+* informationSource only Reference (BePatient or BePractitioner or BePractitionerRole or RelatedPerson or BeOrganization)
+
+
 
 Extension: ExposureCategory
 Description: "Exposure - category."
