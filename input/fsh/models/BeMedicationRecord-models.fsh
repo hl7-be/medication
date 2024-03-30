@@ -5,8 +5,6 @@ Description: "A logical data model of the medication treatment line."
 Characteristics: #can-be-target
 
 * ^name = "MedicationLine"
-* ^extension[+].url = "http://hl7.org/fhir/tools/StructureDefinition/logical-target"
-* ^extension[=].valueBoolean = true
 
 * uniqueIdentifier 1..* Identifier "Unique identifier" "A unique identifier for the medication line. This identifier alone may be the same for different versions of the medication line."
 // .identifier
@@ -60,6 +58,7 @@ Characteristics: #can-be-target
 // .effectiveDateTime OR .effectivePeriod.start
   * ^comment = ".effectiveDateTime OR .effectivePeriod.start. Do we need to support both? Can we use effectivePeriod when .end is known? And when only .start is known, we use dateTime?"
 * effectivePeriod
+  * start 0..1 dateTime "The start time of the medication line"
   * end 0..1 dateTime "The end of the medication line"
 
 * adherence 0..1 BackboneElement "Whether the patient is known to be taking the medication"
@@ -82,33 +81,6 @@ Characteristics: #can-be-target
 
 * dispenseRequestNeeded 0..* CodeableConcept "Whether the medication needs a prescription or request to be dispensed"
 * visibility 0..* CodeableConcept "Whether the patient has explicitly requested the medication line not to be seen - when other rules don't prevail"
-
-// TO DO: Reaction??
-
-/*  |_ Dosage
-    |_ dosageOverride
-    |_ dosageOverrideReason
-    |_ dosageDetails
-      |_ text
-      |_ timing
-        |_ event
-        |_ repeat
-          |_ duration
-          |_ period
-          |_ dayOfWeek
-            |_ when
-              |_ BePeriod
-      |_ route
-      |_ doseQuantity
-        |_ value
-        |_ unit
-      |_ patientInstruction
-*/
-/*
-  |_ <i>originType
-  |_ DispenseRequestNeeded?   
-  |_ Visible
-*/
 
 
 
