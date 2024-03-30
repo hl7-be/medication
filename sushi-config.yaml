@@ -9,14 +9,14 @@
 
 id: hl7.fhir.be.medication
 canonical: https://www.ehealth.fgov.be/standards/fhir/medication
-url: https://www.ehealth.fgov.be/standards/fhir/medication
+# url: https://www.ehealth.fgov.be/standards/fhir/medication/ImplementationGuide-hl7.fhir.be.medication
 name: Medication 
 title: "Medication"
-description: Medication
+description: FHIR Medication specifications
 status: draft
 license: CC0-1.0
 date: 2020-02-26
-version: 1.0.1
+version: 2.0.0
 
 # Although fhirVersions is 0..* in the ImplementationGuide resource
 # it can be a single item OR and array here (but so far SUSHI only
@@ -30,7 +30,7 @@ fhirVersion: 4.0.1
 # will recognize them as well. In either case, they'll be copied
 # to the IG JSON using the formal names.
 copyrightYear: 2021+
-releaseLabel: STU1
+releaseLabel: STU
 
 # The publisher can be a single item or a list, each with a name and
 # optional url and/or email. The first publisher's name will be used
@@ -187,8 +187,8 @@ FSHOnly: false
 #applyExtensionMetadataToRoot: false
 
 dependencies: 
-  hl7.fhir.be.core: 2.0.0
-  hl7.terminology: 3.1.0
+  hl7.fhir.be.core: 2.0.1
+  hl7.terminology: 5.5.0
 
 parameters:
   shownav: 'true'
