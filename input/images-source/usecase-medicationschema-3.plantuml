@@ -8,19 +8,19 @@ hide footbox
 
 'actor "**Patient**" as P
 actor "**GP**" as GP
-Participant "** Pharmacy **\n**  System  **" as PIS
-Participant "** Vault / other **\n **  System  **" as V
-Participant "** Other **\n **  Sources  **" as Src
+Participant " **Pharmacy**\n  **System**  " as PIS
+Participant " **Vault / other **\n  **System** " as V
+Participant " **Other **\n  **Sources**" as Src
 
 ...
 
 group Collect Medication Information
-PIS -> V
+PIS -> V : Submit Medication Lines\n(or other information)
 activate PIS
-& Src -> V : Submit other\nMedication information
 activate V
+Src -> V : Submit other\nMedication Lines \n(or other information)
 deactivate PIS
-V -> V : Aggregate\nMedication information
+V -> V : Aggregate\nMedication Lines\n(or other information)
 deactivate V
 
 end
@@ -30,18 +30,18 @@ group Compile Medication Summary
 V -> V : Reconcile \nMedication Information
 activate V
 ...
-V -> V : Create / Update\nMedication Summary
+V -> V : Create / Update\nMedication Record
 deactivate V
 end
 
 ...
 
 group Request Medication Summary
-GP --> PIS : Request Patient's\nmedication schema 
+GP --> PIS : Request Patient's\nmedication record
 activate PIS
-PIS -> V : Query for Medication Summary
+PIS -> V : Query for Medication Record
 activate V
-PIS <- V : **Return Medication Summary**
+PIS <- V : **Return Medication Record**
 deactivate V
 deactivate PIS
 end

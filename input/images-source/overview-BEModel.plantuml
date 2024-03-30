@@ -1,0 +1,195 @@
+@startuml
+!define ICONURL https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/v2.4.0
+!includeurl ICONURL/common.puml
+!includeurl ICONURL/font-awesome-5/database.puml
+
+skinparam linetype ortho
+'skinparam linetype polyline
+hide circle
+hide stereotype
+
+'skinparam defaultFontName Avenir-Book
+'skinparam defaultFontSize 17
+'skinparam monochrome true
+
+
+'!pragma layout smetana
+
+skinparam class<<MD>> {
+ BorderColor DarkSlateGray
+ BackgroundColor WhiteSmoke
+ HeaderBackgroundColor #909090
+}
+
+skinparam class<<TM>> {
+ BorderColor #505090
+ BackgroundColor APPLICATION
+ HeaderBackgroundColor SkyBlue
+}
+
+
+skinparam class<<Doc>> {
+ BorderColor #505090
+ BackgroundColor APPLICATION
+ HeaderBackgroundColor SkyBlue
+}
+
+<style>
+file {
+  BackGroundColor APPLICATION
+  LineThickness 1
+  LineColor black
+}
+</style>
+
+'file MDd [
+'  MedicationSchema
+'  ===
+'  |_ patient
+'  |_ LastUpdate
+'  |_ Label
+'  |_ Version
+'  ]
+
+
+class "** Medication Schema **" as MS<<TM>> {
+  |_ patient
+  |_ lastUpdate
+  |_ label
+  |_ version
+}
+
+
+class "** Medication Product **" as M<<TM>> {
+    |_ identifier 1..*
+    |_ doseForm 0..1
+    |_ name 0..1
+    |_ ingredient 0..1
+      |_ strength 0..1
+      |_ product 0..1
+    }
+
+class "**Medication Line**" as ML<<TM>> {
+  |_ uniqueIdentifier 1..1   
+  |_ versionIdentifier 1..1   
+  |_ lastUpdatedDate 1..1   
+  |_ status 1..1   
+  |_ statusReason 0..1   
+  |_ recordedDate 0..1   
+  |_ assertedDate 0..1   
+  |_ recorder 1..1   
+  |_ patient 1..1   
+  |_ category 0..1   
+    |_ originType 0..1   
+  |_ medication 1..1   
+    |_ product 1..1   
+    |_ type 1..1   
+  |_ exposure 0..1   
+  |_ reason 0..*   
+    |_ reference 0..1   
+    |_ code 0..1   
+  |_ effectivePeriod 1..1   
+    |_ start 1..1   
+    |_ end 0..1   
+  |_ adherence 0..1   
+    |_ code 1..1   
+    |_ adherenceReason 0..1   
+  |_ dosage 0..1   
+    |_ dosageDetails 0..1   
+    |_ dosageOverride 0..1   
+    |_ dosageOverrideReason 1..1   
+  |_ note 0..*   
+  |_ dispenseRequestNeeded 0..*   
+  |_ visibilityle 0..*   
+'--
+'<i>Identifier NameSpace
+}
+
+
+' class "**Prescription (Group)**" as P<<TM>> {
+'   |_ identifier 1..* 
+'   |_ status?
+'   |_ period?
+'   |_ indication
+'   |_ comment?
+'   |_ coverage?
+' }
+
+
+'P -u-> ML : supportingInformation
+class "**Prescription Line**" as PL<<TM>> {
+  |_ identifier 1..* 
+  |_ authoredOn
+  |_ supportingInformation   
+  |_ subject
+  |_ status
+  |_ statusReason
+  |_ intent?
+  |_ medication
+  |_ requester
+  |_ reason
+  |_ dosage
+  |_ effectivePeriod
+    |_ start
+    |_ end
+  |_ dispenseRequest
+    |_ quantity
+    |_ dispenseInterval
+    |_ validityPeriod
+  |_ visible
+'--
+'<i>Substitution?
+}
+
+
+class "**Dispense**" as D<<TM>> {
+  |_ identifier 1..*
+  |_ patient 0..1 
+  |_ receiver 0..1 
+  |_ dispenser 0..1
+    |_ dispenser 0..1
+    |_ <i>organization 0..1
+  |_ prescription 1..1
+    |_ isPrescribed 1..1
+    |_ request 1..1
+  |_ <b>status 1..1 
+  |_ statusReasonCoded 0..1 
+  |_ statusReasonText 0..1 
+  |_ dispenseDate  <b><u>1</u></b>..1
+  |_ dispensedItem 0..1
+    |_ medication 0..1 
+    |_ dispensedQuantity 0..1
+    |_ dosageInstructions 0..1
+    |_ note 0..1
+  |_ <b>substitution  0..1 
+  |_ <b>coverage 0..1 
+    |_ <b>reimbursementRate 0..1  
+}
+
+
+ML .u.o MS : ""
+
+
+
+PL <.u.> ML 
+
+D <.l.> ML 
+ML -d-> M : ""
+
+'M -u[hidden]-> MS
+PL -u[hidden]-> M
+D -u[hidden]> M
+
+PL -r-> M :" "
+
+
+
+D -l-> PL :"  "
+'D -l-> PL
+'D -l-> PL :" authorizedBy  "
+D -l-> M :" "
+'P o-r- PL :"           "
+'PL -r[hidden]- M
+'PL ||-d-o{ M :"                  "
+
+@enduml
