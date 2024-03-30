@@ -3,3 +3,4 @@
 Code System URI 'http://www.ama-assn.org/go/cpt' is unknown so the code cannot be validated
 # example for suppressing information messages
 Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+The Implementation Guide contains no examples for this data type profile
