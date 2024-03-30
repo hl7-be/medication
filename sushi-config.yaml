@@ -128,10 +128,25 @@ jurisdiction: urn:iso:std:iso:3166#BE "Belgium"
 # file name extension.  Any subproperties that are valid filenames
 # with supported extensions (e.g., .md/.xml) will be treated as
 # sub-pages.
-#pages:
-#  index.md:
-#    title: Example Home
-#  implementation.xml:
+pages:
+  index.xml:
+    title: Home
+  medicationrecord.md:
+    title: Belgian Medication Record overview
+  definitions.md:
+    title: Definitions
+  usecases-medicationrecord.md:
+    title: Medication Record - Use cases
+  medicationrecord-scenarios.md:
+    title: Medication Record - Extended scenarios
+  usecases-dispense.md:
+    title: Dispense - Use cases
+  howto.xml:
+    title: How to read this specification
+  downloads.xml:
+    title: Downloads
+
+  
 #  examples.xml:
 #    title: Examples Overview
 #    simpleExamples.xml:
