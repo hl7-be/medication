@@ -57,8 +57,6 @@ Characteristics: #can-be-target
   * start 1..1 dateTime "The begin of the medication line"
 // .effectiveDateTime OR .effectivePeriod.start
   * ^comment = ".effectiveDateTime OR .effectivePeriod.start. Do we need to support both? Can we use effectivePeriod when .end is known? And when only .start is known, we use dateTime?"
-* effectivePeriod
-  * start 0..1 dateTime "The start time of the medication line"
   * end 0..1 dateTime "The end of the medication line"
 
 * adherence 0..1 BackboneElement "Whether the patient is known to be taking the medication"
