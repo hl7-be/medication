@@ -22,6 +22,7 @@ version: 2.0.0
 # it can be a single item OR and array here (but so far SUSHI only
 # supports 4.0.1 anyway).
 fhirVersion: 4.0.1
+releaseLabel: STU
 
 # The following two lines correspond to items that used to be in
 # ig.ini but were moved to IG.definition.parameter. For
