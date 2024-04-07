@@ -128,10 +128,6 @@ jurisdiction: urn:iso:std:iso:3166#BE "Belgium"
 # file name extension.  Any subproperties that are valid filenames
 # with supported extensions (e.g., .md/.xml) will be treated as
 # sub-pages.
-#pages:
-#  index.md:
-#    title: Example Home
-#  implementation.xml:
 pages:
   index.xml:
     title: Home
@@ -202,7 +198,7 @@ FSHOnly: false
 
 dependencies: 
   hl7.fhir.be.core: 2.0.1
-  hl7.terminology: 5.5.0
+  hl7.fhir.extensions.r5: 4.0.1
 
 parameters:
   shownav: 'true'
