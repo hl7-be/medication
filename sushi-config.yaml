@@ -135,7 +135,16 @@ jurisdiction: urn:iso:std:iso:3166#BE "Belgium"
 pages:
   index.xml:
     title: Home
+  medicationrecord.md:
+    title: Belgian Medication Record overview
+  definitions.md:
+    title: Definitions
   usecases-medicationrecord.md:
+    title: Medication Record - Use cases
+  medicationrecord-scenarios.md:
+    title: Medication Record - Extended scenarios
+  usecases-dispense.md:
+    title: Dispense - Use cases
   howto.xml:
 #  examples.xml:
 #    title: Examples Overview
