@@ -1,5 +1,5 @@
 @startuml
-title Use Case 2 - Update Medication Schema
+title Use Case 2 - Update Medication Record \n (e.g. add a new medication line)
 skinparam actorStyle awesome
 
 hide footbox
@@ -8,27 +8,28 @@ hide footbox
 
 actor "**Patient**" as P
 actor "**GP**" as GP
-Participant "** Pharmacy **\n**  System  **" as PIS
-Participant "** Vault / other **\n **  System  **" as V
+Participant " **Order Entry** \n ** System **" as PIS
+Participant " **Vault / other** \n **  System  **" as V
 
 group Identification
 P -[#A92]-> PIS : Identification / authorization
 end
 ...
 
-group Request Medication Summary
-PIS <- V : **Return Medication Summary**
+group Request Medication Record
+PIS <- V : Return Medication Record
 end
 
 ...
 
-group Request Medication Summary
-GP --> PIS : Update Medication Summary
+group Request Medication Record
+GP --> PIS : Create new medication line
 activate PIS
-PIS -> V : Submit updated\nMedication Summary
+
+PIS -> V : Send new Medication Line
 deactivate PIS
 activate V
-V -> V : Update version\nMedication Summary
+V -> V : Update version\nMedication Line
 deactivate V
 end
 
