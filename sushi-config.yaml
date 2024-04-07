@@ -37,9 +37,9 @@ releaseLabel: STU
 # as IG.publisher.  The contact details and/or additional publishers
 # will be translated into IG.contact values.
 publisher:
-  name: eHealth Platform 
-  url: https://www.ehealth.fgov.be/standards/fhir
-  email: message-structure@ehealth.fgov.be
+  name: HL7 Belgium 
+  url: https://www.hl7belgium.org
+  email: hl7belgium@hl7belgium.org
 
 # ContactDetail is required by the template.
 contact:
@@ -142,6 +142,10 @@ pages:
   usecases-dispense.md:
     title: Dispense - Use cases
   howto.xml:
+    title: How to read this specification
+  downloads.xml:
+    title: Downloads
+
 #  examples.xml:
 #    title: Examples Overview
 #    simpleExamples.xml:
