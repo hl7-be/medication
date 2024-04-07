@@ -16,8 +16,8 @@ Title:    "Dispense entry Example - Community Pharmacy dispense, from prescripti
 * status = #completed
 * medicationCodeableConcept.coding[+].system = "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes"
 * medicationCodeableConcept.coding[=].code = #1439562
-* medicationCodeableConcept.coding[+].system = "http://www.whocc.no/atc"
-* medicationCodeableConcept.coding[=].code = #N05BA12
+//* medicationCodeableConcept.coding[+].system = "http://www.whocc.no/atc"
+//* medicationCodeableConcept.coding[=].code = #N05BA12
 * medicationCodeableConcept.coding.display = "Topazolam tab 50x 1,0mg"
 
 * medicationCodeableConcept.coding.display.extension[0].url = "http://hl7.org/fhir/StructureDefinition/translation"
@@ -55,6 +55,7 @@ Title:    "Dispense entry Example - Community Pharmacy dispense, from prescripti
 
 Instance: apotheek-onder-de-toren
 InstanceOf: BeOrganization
+Description: "Example organization for a pharmacy"
 Usage: #example
 /*
 * extension[0].url = "http://hl7.org/fhir/StructureDefinition/geolocation"
@@ -70,7 +71,7 @@ Usage: #example
 
 
 
-Instance: medication-dispense-example-2
+Instance: medicationdispense-example-2
 InstanceOf: MedicationDispense
 Usage: #example
 Description: "Medication Dispense example"
@@ -85,7 +86,7 @@ Title:    "Dispense entry Example - Community Pharmacy dispense, from prescripti
 * context.identifier.value = "b8ca980c-72aa-11e7-8cf7-a6006ad3dba0"
 * identifier[0].system = "https://www.gfd-dpp.be/fhir/reference/dguid"
 * identifier[0].type.coding.code = #dguid
-* identifier[0].value = "a8ca980c-72aa-11e7-8cf7-a6006ad3dba0"
+* identifier[0].value = "a8ca980c-aa4f-44f3-8cf7-547e6ad3dba0"
 * status = #completed
 * medicationCodeableConcept.coding.system = "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes"
 * medicationCodeableConcept.coding.code = #1439562
@@ -169,7 +170,7 @@ Title: "A dispense from a hospital pharmacy"
 * quantity.value = 1 
 * quantity.unit = "package"
 * quantity.system = "http://unitsofmeasure.org"
-* quantity.code = #{package}
+* quantity.code = #1
 //dayssupply
 //whenPrepared
 * whenHandedOver = "2020-09-21T13:00:00+02:00"
@@ -211,21 +212,68 @@ Title:    "Dispense Example - Minimal amount of information"
 * performer[0].actor.display = "Jan Janssen"
 * whenHandedOver = "2020-03-10"
 
-Instance: example-dispense-with-atc
+// Instance: example-dispense-with-atc
+// InstanceOf: MedicationDispense
+// Usage: #example
+// Description: "Medication Dispense example with ATC code"
+// Title:    "Dispense Example - Minimal amount of information"
+// * meta.profile[0] = "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationdispense"
+// * subject.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
+// * subject.identifier.value = "64110219106"
+// * status = #completed
+// * medicationCodeableConcept.coding[+].system = "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes"
+// * medicationCodeableConcept.coding[=].code = #1439562
+// //* medicationCodeableConcept.coding[+].system = "http://www.whocc.no/atc"
+// //* medicationCodeableConcept.coding[=].code = #N05BA12
+// * medicationCodeableConcept.coding.display = "Topazolam tab 50x 1,0mg"
+// * performer[0].actor.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi-practitioner"
+// * performer[0].actor.identifier.value = "6547432"
+// * performer[0].actor.display = "Jan Janssen"
+// * whenHandedOver = "2020-03-10"
+
+
+Alias: $cnk-codes = https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes
+
+Instance: medicationdispense-example-1
 InstanceOf: MedicationDispense
 Usage: #example
-Description: "Medication Dispense example with ATC code"
-Title:    "Dispense Example - Minimal amount of information"
-* meta.profile[0] = "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationdispense"
-* subject.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
-* subject.identifier.value = "64110219106"
+* meta.profile = "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationdispense"
+* language = #fr-BE
+* subject.identifier
+  * system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
+  * value = "64110219106"
+* context.identifier
+  * system = "https://www.gfd-dpp.be/fhir/reference/sguid"
+  * type.coding.code = #sguid
+  * value = "b8ca980c-72aa-11e7-8cf7-a6006ad3dba0"
+* identifier
+  * system = "https://www.gfd-dpp.be/fhir/reference/dguid"
+  * type.coding.code = #dguid
+  * value = "a8ca980c-72aa-11e7-8cf7-a6006ad3dba0"
 * status = #completed
-* medicationCodeableConcept.coding[+].system = "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes"
-* medicationCodeableConcept.coding[=].code = #1439562
-* medicationCodeableConcept.coding[+].system = "http://www.whocc.no/atc"
-* medicationCodeableConcept.coding[=].code = #N05BA12
-* medicationCodeableConcept.coding.display = "Topazolam tab 50x 1,0mg"
-* performer[0].actor.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi-practitioner"
-* performer[0].actor.identifier.value = "6547432"
-* performer[0].actor.display = "Jan Janssen"
+* medicationCodeableConcept.coding = $cnk-codes#1439562 "Topazolam tab 50x 1,0mg"
+  * display.extension
+    * url = "http://hl7.org/fhir/StructureDefinition/translation"
+    * extension[0]
+      * url = "lang"
+      * valueCode = #nl-BE
+    * extension[+]
+      * url = "content"
+      * valueString = "Topazolam tab 50x 1,0mg"
+* performer.actor
+  * identifier
+    * system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi-organization"
+    * value = "27457532"
+  * display = "Apotheek onder de toren"
+* authorizingPrescription.display = "Prescription"
+* quantity = 1 https://www.gfd-dpp.be/fhir/reference/packaging#package
 * whenHandedOver = "2020-03-10"
+* dosageInstruction.text = "3 x par jour"
+  * extension
+    * url = "http://hl7.org/fhir/StructureDefinition/translation"
+    * extension[0]
+      * url = "lang"
+      * valueCode = #nl-BE
+    * extension[+]
+      * url = "content"
+      * valueString = "3 x per dag"
