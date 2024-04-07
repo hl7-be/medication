@@ -1,0 +1,69 @@
+/*
+uniqueIdentifier
+versionIdentifier
+lastUpdated
+status
+statusReason
+assertedDate
+recorder
+patient
+origintype
+medication.product.code
+medication.product.type
+exposure
+reason
+reasonCode
+reasonReference
+effectivePeriod.start
+effectivePeriod.end
+adherence.code
+adererence.reason
+dosage.dosageDetails
+dosage.dosageOverride
+dosage.dosageOverrideReason
+note
+dispenseRequestNeeded
+visibility
+*/
+
+Instance: MedLineExample1
+InstanceOf: BEMedicationLine
+
+* identifier[vidis].value = "123456"
+* extension[exposure-category].valueCodeableConcept = $SCT#360270004 
+
+* extension[artifact-version].valueString = "20240330"
+* extension[adherence].extension[code].valueCodeableConcept = $SCT#360270004
+* status = #active
+
+* medicationCodeableConcept = #CNK0001
+* subject.identifier.value = "79121137740"
+* effectivePeriod.start = "2022-02-02"
+* effectivePeriod.end = "2022-02-09"
+* informationSource = Reference(Patient/P1234567)
+
+
+Instance: MedLineExample2
+InstanceOf: BEMedicationLine
+
+* identifier[vidis].value = "2345678"
+* extension[exposure-category].valueCodeableConcept = $SCT#360270004 
+
+* extension[artifact-version].valueString = "20240330"
+* extension[adherence].extension[code].valueCodeableConcept = $SCT#360270004
+* status = #active
+
+* medicationCodeableConcept = #CNK0002
+* subject.identifier.value = "79121137740"
+* effectivePeriod.start = "2022-05-02"
+* effectivePeriod.end = "2022-06-01"
+* informationSource = Reference(Patient/P1234567)
+
+
+
+// Instance: Medlines
+// InstanceOf: Bundle
+
+// * type = #collection
+// * entry[+].resource = MedLineExample1
+// * entry[+].resource = MedLineExample2
