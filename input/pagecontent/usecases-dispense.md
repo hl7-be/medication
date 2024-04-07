@@ -1,5 +1,5 @@
 
-The following use cases are supported with this specification:
+The following use cases related to the Dispense process are supported with this specification:
 
 ### Registering a dispense
 <div>
