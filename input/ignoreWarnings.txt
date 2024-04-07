@@ -2,4 +2,9 @@
 # The following code systems are external and not supported by terminology server
 Code System URI 'http://www.ama-assn.org/go/cpt' is unknown so the code cannot be validated
 # example for suppressing information messages
-Code System URI "http://example.org" is unknown so the code cannot be validated
+Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+# data types don't require an example
+The Implementation Guide contains no examples for this data type profile
+
+# Skipe extension examples
+The Implementation Guide contains no examples for this extension
