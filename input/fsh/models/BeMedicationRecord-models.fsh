@@ -1,7 +1,7 @@
 Logical: BEModelMedicationLine
 Id: be-model-medicationline
-Title: "Medication Treatment Line - logical model"
-Description: "A logical data model of the medication treatment line."
+Title: "Medication Line - logical model"
+Description: "A logical data model of the medication line."
 Characteristics: #can-be-target
 
 * ^name = "MedicationLine"
@@ -14,7 +14,7 @@ Characteristics: #can-be-target
 // .extension[artifactDate]
   * ^comment = " We consider this is redundant with the above, given the intended use in Belgium (version is a date). How to ensure the compatibility?"
 
-* status 1..1 code "Status of the treatment line entry"
+* status 1..1 code "Status of the line entry"
 //.status
 
 * statusReason 0..1 CodeableConcept "Reason for the status" 
@@ -33,7 +33,7 @@ Characteristics: #can-be-target
 
 * patient 1..1 Reference(Patient) "Patient"
 // .subject
-* category 0..1 BackboneElement "Category for the treatment line"
+* category 0..1 BackboneElement "Category for the line"
   * originType 0..1 CodeableConcept "The origin of the line - hospital, ambulatory"
 //.category
 
