@@ -12,7 +12,7 @@ Title:    "Dispense entry Example - Community Pharmacy dispense, from prescripti
 * context.identifier.value = "b8ca980c-72aa-11e7-8cf7-a6006ad3dba0"
 * identifier[0].system = "https://www.gfd-dpp.be/fhir/reference/dguid"
 * identifier[0].type.coding.code = #dguid
-* identifier[0].value = "a8ca980c-72aa-11e7-8cf7-a6006ad3dba0"
+* identifier[0].value = "a8c45fdc-72aa-11e7-8cf7-a6007ad37dc0"
 * status = #completed
 * medicationCodeableConcept.coding[+].system = "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes"
 * medicationCodeableConcept.coding[=].code = #1439562
@@ -36,8 +36,8 @@ Title:    "Dispense entry Example - Community Pharmacy dispense, from prescripti
 * performer[1].actor.display = "Apotheek onder de toren"
 
 
-* authorizingPrescription.display = "Prescription"
-* authorizingPrescription.identifier.value = "Prescription"
+* authorizingPrescription.display = "Prescription 2014fd"
+* authorizingPrescription.identifier.value = "2d8dab92-5c38-4380-96a9-e461be2014fd"
 * authorizingPrescription.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/prescription-id"
 * quantity.value = 1
 * quantity.system = "https://www.gfd-dpp.be/fhir/reference/packaging"
