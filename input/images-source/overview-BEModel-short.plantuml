@@ -117,7 +117,7 @@ class "** [[StructureDefinition-be-model-medicationline.html Medication Line]] *
 
 
 'P -u-> ML : supportingInformation
-class "**Prescription Line**" as PL<<TM>> {
+class "** [[StructureDefinition-be-model-medicationprescription.html Medication Order]] **" as PL<<TM>> {
 '   |_ identifier 1..* 
 '   |_ authoredOn
 '   |_ supportingInformation   
