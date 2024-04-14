@@ -146,7 +146,6 @@ pages:
   downloads.xml:
     title: Downloads
 
-  
 #  examples.xml:
 #    title: Examples Overview
 #    simpleExamples.xml:
@@ -203,9 +202,7 @@ FSHOnly: false
 
 dependencies: 
   hl7.fhir.be.core: 2.0.1
-#  hl7.terminology: 5.5.0
   hl7.fhir.extensions.r5: 4.0.1
-#  hl7.fhir.uv.sdc: 3.0.0
 
 parameters:
   shownav: 'true'

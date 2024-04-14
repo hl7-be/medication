@@ -43,6 +43,5 @@ class "**MedicationLine**" as BELMMedicationLine <<TM>>{
   |_ note 0..*   
   |_ dispenseRequestNeeded 0..*   
   |_ visibility 0..*   
-  --
 }
 @enduml
