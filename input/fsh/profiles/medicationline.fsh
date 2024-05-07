@@ -74,6 +74,7 @@ Extension: MedicationType
 Description: "Medication Type."
 Context: MedicationStatement.medication[x]
 * value[x] only CodeableConcept
+* valueCodeableConcept from medication-type-vs
 
 
 Extension: ExposureCategory
