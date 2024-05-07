@@ -18,7 +18,6 @@ Characteristics: #can-be-target
 //.status
 
 * statusReason 0..1 CodeableConcept "Reason for the status" 
-  * ^comment = " We consider this is not necessary - should we add?"
 
 //* recordedDate 0..1 dateTime "Date the medication line was recorded or last updated"
 //  * ^comment = " We consider this is not necessary"
@@ -33,7 +32,7 @@ Characteristics: #can-be-target
 
 * patient 1..1 Reference(Patient) "Patient"
 // .subject
-* category 0..1 BackboneElement "Category for the line"
+* category 0..* BackboneElement "Category for the line"
   * originType 0..1 CodeableConcept "The origin of the line - hospital, ambulatory"
 //.category
 
@@ -50,7 +49,7 @@ Characteristics: #can-be-target
 * reason 0..* BackboneElement "Reason for the medication treatment"
   * reference 0..1 Reference "Reference to existing condition or reason"
 // .reasonReference
-  * code 0..1 CodeableConcept "Code of the condition, or free text" 
+  * code 0..1 CodeableConcept "Code of the condition, or free text" // adding the code or free text as per FHIR, to support additional use cases
 // .reasonCode
 
 * effectivePeriod 1..1 BackboneElement "Period of medication treatment"
@@ -61,7 +60,7 @@ Characteristics: #can-be-target
 
 * adherence 0..1 BackboneElement "Whether the patient is known to be taking the medication"
 // extension[adherence]
-  * code 1..1 CodeableConcept "The status - taking, not taking,..."
+  * status 1..1 CodeableConcept "The status - taking, not taking,..."
   * adherenceReason 0..1 CodeableConcept "Reason for the adherence status" 
 
 * dosage 0..1 BackboneElement "Dosage"
@@ -70,14 +69,13 @@ Characteristics: #can-be-target
   * dosageOverride 0..1 boolean "Dosage Override"
     * ^comment = "should these be extensions on dosage or on the line?"
 //.dosage.extension[]
-  * dosageOverrideReason 1..1 CodeableConcept "Dosage Override reason"
-    * ^comment = "should these be extensions on dosage or on the line?"
+  * dosageOverrideReason 0..1 CodeableConcept "Dosage Override reason"
 //.dosage.extension[]
 
 * note 0..* Annotation "A note captured by a professional"
 // .note
 
-* dispenseRequestNeeded 0..* CodeableConcept "Whether the medication needs a prescription or request to be dispensed"
+* dispenseRequestNeeded 0..1 CodeableConcept "Whether the medication needs a prescription or request to be dispensed"
 //* visibility 0..* CodeableConcept "Whether the patient has explicitly requested the medication line not to be seen - when other rules don't prevail"
 
 

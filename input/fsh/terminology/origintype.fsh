@@ -1,4 +1,4 @@
-CodeSystem: MedicationLineOrigintype
+CodeSystem: MedicationLineOriginType
 Id: medication-line-origin-type
 Title: "Medication origin type"
 Description: "Medication treatment origin type - what is the type of care that originated the medication treatment"
@@ -9,10 +9,10 @@ Description: "Medication treatment origin type - what is the type of care that o
 * #hospital "Hospital"
 
 
-ValueSet: MedicationLineOrigintypeVS
+ValueSet: MedicationLineOriginTypeVS
 Id: medication-line-origin-type-vs
 Title: "Medication origin type ValueSet"
 Description: "Medication treatment origin type - what is the type of care that originated the medication treatment"
 * ^status = #active
 * ^experimental = false
-* include codes from system MedicationLineOrigintype
+* include codes from system MedicationLineOriginType

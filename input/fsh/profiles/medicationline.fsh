@@ -21,9 +21,9 @@ Description: "Medication Line profile - contains the overview information for a 
   ExposureCategory named exposure-category 0..1 MS and 
   DispenseRequestNeededCategory named dispense-request-needed 0..1 MS and 
   //VisibilityFlag named visibility-flag 0..1 MS and 
-  http://hl7.org/fhir/StructureDefinition/artifact-version named artifact-version 1..1 MS and
-  http://hl7.org/fhir/StructureDefinition/artifact-date named artifact-date 0..1 MS and
-  http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence named adherence 1..1 MS
+  http://hl7.org/fhir/StructureDefinition/artifact-version named artifact-version 0..1 MS and
+  http://hl7.org/fhir/StructureDefinition/artifact-date named artifact-date 1..1 MS and
+  http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence named adherence 0..1 MS
 
 
 * extension[exposure-category] ^short = "Exposure category"
@@ -42,9 +42,13 @@ For the full definition see here: [http://hl7.org/fhir/R5/medicationstatement-de
 
 * subject 1..1 MS
 * category MS
-* category ^short = "Type of medication usage"
+* category from MedicationLineOriginTypeVS (extensible)
+* category ^short = "Origin type of medication usage"
 // why is this 0..1?
 * medication[x] MS
+* medication[x].extension contains MedicationType named medication-type 0..1 MS
+
+
 
 * reasonCode MS
 * reasonReference MS
@@ -66,6 +70,12 @@ For the full definition see here: [http://hl7.org/fhir/R5/medicationstatement-de
 
 
 
+Extension: MedicationType
+Description: "Medication Type."
+Context: MedicationStatement.medication[x]
+* value[x] only CodeableConcept
+
+
 Extension: ExposureCategory
 Description: "Exposure - category."
 Context: MedicationStatement
@@ -84,14 +94,54 @@ Description: "Dispense Request Needed - category."
 Context: MedicationStatement
 * value[x] only boolean
 
+
 Extension: DosageOverride
-Description: "Dispense override."
+Description: "Dosage override."
 Context: MedicationStatement.dosage
 * value[x] only boolean
 //* context = #MedicationStatement.dosage
 
+
 Extension: DosageOverrideReason
-Description: "Dispense Request Needed - category."
+Description: "Dosage override reason."
 Context: MedicationStatement.dosage
 * value[x] only CodeableConcept
+
+
+
+
+
+Mapping: BeMedicationLineModeltoProfile
+Source: BEMedicationLine
+Target: "https://www.ehealth.fgov.be/standards/fhir/vaccination/StructureDefinition/be-model-medicationline"
+Id: map-be-medicationline-model-to-profile
+Title: "BeModelVaccinationToBVaccination"
+* -> "BEModelMedicationLine"
+
+* identifier -> uniqueIdentifier
+* extension[artifact-version] -> "versionIdentifier"
+* extension[artifact-date] -> "lastUpdatedDate" 
+* status -> "status"
+* statusReason -> "statusReason" // left as 0..* as we don't need to further constrain
+* dateAsserted -> "assertedDate"
+* informationSource -> "recorder"
+* subject -> "patient"
+* category -> "category.originType"
+* medicationReference -> "medication.product"
+* medication[x].extension[type] -> "medication.type"  // left as 0.. as we don't need to further constrain
+* extension[exposure-category] -> "exposure"
+* reasonReference -> "reason.reference" 
+* reasonCode -> "reason.code" 
+* effectivePeriod -> "effectivePeriod"
+* effectivePeriod.start -> "effectivePeriod.start"  // left as 0.. as we don't need to further constrain
+* effectivePeriod.end -> "effectivePeriod.end"
+* extension[adherence] -> "adherence" // left as 0.. as we don't need to further constrain
+* extension[adherence].extension[code] -> "adherence.code"
+* extension[adherence].extension[reason] -> "adherence.adherenceReason"
+* dosage -> "dosage.dosageDetails"
+* dosage.extension[dosage-override] -> "dosage.dosageOverride"
+* dosage.extension[dosage-override-reason] -> "dosage.dosageOverrideReason"
+* note -> "note"
+* .extension[dispense-request-needed] -> "dispenseRequestNeeded"
+
 
