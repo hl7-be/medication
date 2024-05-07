@@ -118,7 +118,7 @@ Id: map-be-medicationline-model-to-profile
 Title: "BeModelVaccinationToBVaccination"
 * -> "BEModelMedicationLine"
 
-* identifier -> uniqueIdentifier
+* identifier -> "uniqueIdentifier"
 * extension[artifact-version] -> "versionIdentifier"
 * extension[artifact-date] -> "lastUpdatedDate" 
 * status -> "status"
@@ -128,7 +128,7 @@ Title: "BeModelVaccinationToBVaccination"
 * subject -> "patient"
 * category -> "category.originType"
 * medicationReference -> "medication.product"
-* medication[x].extension[type] -> "medication.type"  // left as 0.. as we don't need to further constrain
+* medication[x].extension[medication-type] -> "medication.type"  // left as 0.. as we don't need to further constrain
 * extension[exposure-category] -> "exposure"
 * reasonReference -> "reason.reference" 
 * reasonCode -> "reason.code" 
