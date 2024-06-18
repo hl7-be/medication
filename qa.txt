@@ -3,7 +3,7 @@ Medication : Validation Results
 
 err = 0, warn = 12, info = 11
 IG Publisher Version: 1.6.11
-Generated Tue Jun 18 08:50:24 UTC 2024. FHIR version 4.0.1 for hl7.fhir.be.medication#1.1.0 (canonical = https://www.ehealth.fgov.be/standards/fhir/medication)
+Generated Tue Jun 18 11:00:52 UTC 2024. FHIR version 4.0.1 for hl7.fhir.be.medication#1.1.0 (canonical = https://www.ehealth.fgov.be/standards/fhir/medication)
  Build Errors : 0 / 4 / 0
  /github/workspace/fsh-generated/resources/CodeSystem-medication-line-origin-type : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-medication-type : 0 / 0 / 1
@@ -29,6 +29,7 @@ Generated Tue Jun 18 08:50:24 UTC 2024. FHIR version 4.0.1 for hl7.fhir.be.medic
  /github/workspace/fsh-generated/resources/StructureDefinition-DispenseRequestNeededCategory : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-DosageOverride : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-DosageOverrideReason : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-DosagingInformation : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-EN : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-ExposureCategory : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-II : 0 / 1 / 1
@@ -40,9 +41,12 @@ Generated Tue Jun 18 08:50:24 UTC 2024. FHIR version 4.0.1 for hl7.fhir.be.medic
  /github/workspace/fsh-generated/resources/StructureDefinition-ST : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-TS : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-Untyped : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-VisibilityFlag : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-be-medicationdispense : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-be-model-medication : 0 / 74 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-be-model-medicationdispense : 0 / 41 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-be-model-medicationline : 0 / 78 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-be-model-medicationline : 0 / 80 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-be-model-medicationprescription : 0 / 73 / 1
  /github/workspace/fsh-generated/resources/ValueSet-be-vs-dispenser-types : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-medication-exposure-category-vs : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-medication-line-origin-type-vs : 0 / 0 / 1
@@ -95,6 +99,7 @@ WARNING: StructureDefinition.where(url = 'https://www.ehealth.fgov.be/standards/
 == fsh-generated/resources/StructureDefinition-DispenseRequestNeededCategory.json ==
 == fsh-generated/resources/StructureDefinition-DosageOverride.json ==
 == fsh-generated/resources/StructureDefinition-DosageOverrideReason.json ==
+== fsh-generated/resources/StructureDefinition-DosagingInformation.json ==
 == fsh-generated/resources/StructureDefinition-EN.json ==
 == fsh-generated/resources/StructureDefinition-ExposureCategory.json ==
 == fsh-generated/resources/StructureDefinition-II.json ==
@@ -106,10 +111,13 @@ WARNING: StructureDefinition.where(url = 'https://www.ehealth.fgov.be/standards/
 == fsh-generated/resources/StructureDefinition-ST.json ==
 == fsh-generated/resources/StructureDefinition-TS.json ==
 == fsh-generated/resources/StructureDefinition-Untyped.json ==
+== fsh-generated/resources/StructureDefinition-VisibilityFlag.json ==
 == fsh-generated/resources/StructureDefinition-be-medicationdispense.json ==
 INFORMATION: StructureDefinition/be-medicationdispense: StructureDefinition.snapshot.element[85].mapping[0].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+== fsh-generated/resources/StructureDefinition-be-model-medication.json ==
 == fsh-generated/resources/StructureDefinition-be-model-medicationdispense.json ==
 == fsh-generated/resources/StructureDefinition-be-model-medicationline.json ==
+== fsh-generated/resources/StructureDefinition-be-model-medicationprescription.json ==
 == fsh-generated/resources/ValueSet-be-vs-dispenser-types.json ==
 == fsh-generated/resources/ValueSet-medication-exposure-category-vs.json ==
 == fsh-generated/resources/ValueSet-medication-line-origin-type-vs.json ==

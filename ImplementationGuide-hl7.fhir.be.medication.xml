@@ -717,6 +717,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DosagingInformation"/>
+      </reference>
+      <name value="Dosaging - Data Model"/>
+      <description value="Usage instructions. Instructions about requested administration of the product. Based on FHIR Dosage complex data type."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:complex-type"/>
       </extension>
       <reference>
@@ -783,6 +794,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/be-model-medication"/>
+      </reference>
+      <name value="Medication - logical model"/>
+      <description value="A logical data model of the medication."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
@@ -845,6 +867,17 @@
       </reference>
       <name value="Medication preparation Type value set"/>
       <description value="Medication preparation type value set"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/be-model-medicationprescription"/>
+      </reference>
+      <name value="Medication prescription - Data Model"/>
+      <description value="Logical model for medication prescription (or some other form of order)"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -932,6 +965,17 @@
       </reference>
       <name value="Untyped"/>
       <description value="No data type defined"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/VisibilityFlag"/>
+      </reference>
+      <name value="VisibilityFlag"/>
+      <description value="Visibility Flag."/>
       <exampleBoolean value="false"/>
     </resource>
     <page>
