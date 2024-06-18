@@ -56,7 +56,7 @@ jobs:
           args: java -Xmx4g -jar ./input-cache/publisher.jar publisher -ig . -auto-ig-build -repo https://github.com/${{github.repository}} -package-cache-folder ./fhir-package-cache
 
       - name: Deploy candidate
-        uses: JamesIves/github-pages-deploy-action@4.6.1
+        uses: JamesIves/github-pages-deploy-action@v4.6.1
         if: ${{ steps.branch-name.outputs.is_default }} == 'false'
         with:
           branch: gh-pages # The branch the action should deploy to.
@@ -66,7 +66,7 @@ jobs:
           clean: false 
 
       - name: Deploy main
-        uses: JamesIves/github-pages-deploy-action@4.6.1
+        uses: JamesIves/github-pages-deploy-action@v4.6.1
         if: ${{ steps.branch-name.outputs.is_default }} == 'true'
         with:
           branch: gh-pages # The branch the action should deploy to.
