@@ -20,7 +20,7 @@ Characteristics: #can-be-target
   * code 0..* CD "Reason for the prescription (typically diagnosis, or a procedure)"
   * text 0..1 ST "Reason for the prescription in textual form. This might not be allowed by some implementations."
 
-* dosage 1..1 DosagingInformation "Dosaging and administration instructions"
+* dosage 1..* DosagingInformation "Dosaging and administration instructions"
 
 
 * validFrom 0..1 DT "Effective date of the prescription. The prescription is not dispensable before this date. In most cases this information repeats issueDate"
