@@ -14,6 +14,7 @@ Characteristics: #can-be-target
 * statusReasonText 0..1 ST "Textual reason for the current status of prescription"
 * medication 1..1 Reference (BeModelMedication) "Prescribed product, branded, generic, virtual, extemporaneous, etc"
 * prescriber 1..1 Reference (Practitioner or PractitionerRole) "The person who made the prescription, and who takes the responsibility of the treatment" "Question: would we want to add basic Practicioner model?"
+* organization 0..1 Reference (BeOrganization) "The organization from which the prescriber issues the prescription."
 
 * indication 0..* Class "Reason for the prescription (typically diagnosis, or a procedure)"
   * reference 0..* CD "Reason for the prescription (typically diagnosis, or a procedure)"
@@ -21,6 +22,8 @@ Characteristics: #can-be-target
   * text 0..1 ST "Reason for the prescription in textual form. This might not be allowed by some implementations."
 
 * dosage 1..* DosagingInformation "Dosaging and administration instructions"
+* dosageOverride 0..1 BL "Indication if standard dosage is overriden"
+* dosageOverrideReason 0..1 CD "Reason why standard dosage is overriden"
 
 
 * validFrom 0..1 DT "Effective date of the prescription. The prescription is not dispensable before this date. In most cases this information repeats issueDate"
