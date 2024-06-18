@@ -701,7 +701,7 @@
         <reference value="StructureDefinition/DosageOverride"/>
       </reference>
       <name value="DosageOverride"/>
-      <description value="Dosage override."/>
+      <description value="Dispense override."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -712,7 +712,7 @@
         <reference value="StructureDefinition/DosageOverrideReason"/>
       </reference>
       <name value="DosageOverrideReason"/>
-      <description value="Dosage override reason."/>
+      <description value="Dispense Request Needed - category."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -856,17 +856,6 @@
       </reference>
       <name value="medicationdispense-example-1"/>
       <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationdispense"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/MedicationType"/>
-      </reference>
-      <name value="MedicationType"/>
-      <description value="Medication Type."/>
-      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

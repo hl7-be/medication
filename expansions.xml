@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="606a0744-113e-4d33-81c9-a68f7754205f"/>
+  <id value="01766181-b4e6-467c-95d2-e1a4ecc96b5c"/>
   <meta>
-    <lastUpdated value="2024-05-07T13:22:03.923+00:00"/>
+    <lastUpdated value="2024-06-18T08:46:48.912+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -16,7 +16,7 @@
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
               <a href="https://www.ehealth.fgov.be/standards/fhir/core/2.0.1/CodeSystem-cd-hcparty.html">codesystem BeCdHcParty v2.0.1 (CodeSystem)</a>
             </p>
-            <p>This value set contains 7 concepts.</p>
+            <p>This value set contains 7 concepts</p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -94,7 +94,7 @@
         <title value="Dispenser Types"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2024-05-07T13:22:03+00:00"/>
+        <date value="2024-06-18T08:46:48+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -103,8 +103,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:54113d2c-3ace-48c8-9cfc-f668d12637d5"/>
-          <timestamp value="2024-05-07T13:23:01+00:00"/>
+          <identifier value="urn:uuid:779193aa-298a-4799-a6ea-47bdd12e9b4b"/>
+          <timestamp value="2024-06-18T08:47:45+00:00"/>
           <total value="7"/>
           <offset value="0"/>
           <parameter>
@@ -170,7 +170,7 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 01-Feb 2024</p>
-            <p>This value set contains 2 concepts.</p>
+            <p>This value set contains 2 concepts</p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -208,7 +208,7 @@
         <title value="Medication exposure intent"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2024-05-07T13:22:03+00:00"/>
+        <date value="2024-06-18T08:46:48+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -217,8 +217,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:0edbdbb5-14ea-4928-bd6a-e951f2447b0b"/>
-          <timestamp value="2024-05-07T13:23:01+00:00"/>
+          <identifier value="urn:uuid:8376735a-3e62-463f-8019-f7ec40dda068"/>
+          <timestamp value="2024-06-18T08:47:45+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -269,7 +269,7 @@
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
               <a href="CodeSystem-medication-line-origin-type.html">codesystem Medication origin type v1.1.0 (CodeSystem)</a>
             </p>
-            <p>This value set contains 2 concepts.</p>
+            <p>This value set contains 2 concepts</p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -303,11 +303,11 @@
         </text>
         <url value="https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/medication-line-origin-type-vs"/>
         <version value="1.1.0"/>
-        <name value="MedicationLineOriginTypeVS"/>
+        <name value="MedicationLineOrigintypeVS"/>
         <title value="Medication origin type ValueSet"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2024-05-07T13:22:03+00:00"/>
+        <date value="2024-06-18T08:46:48+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -316,8 +316,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:8bc653fa-f097-4b9b-8665-d9c45e6dcf0b"/>
-          <timestamp value="2024-05-07T13:23:01+00:00"/>
+          <identifier value="urn:uuid:83a3c51e-c661-41af-be73-0286b809626c"/>
+          <timestamp value="2024-06-18T08:47:45+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -360,7 +360,7 @@
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
               <a href="CodeSystem-medication-type.html">codesystem Medication preparation Type v1.1.0 (CodeSystem)</a>
             </p>
-            <p>This value set contains 4 concepts.</p>
+            <p>This value set contains 4 concepts</p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -414,7 +414,7 @@
         <title value="Medication preparation Type value set"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2024-05-07T13:22:03+00:00"/>
+        <date value="2024-06-18T08:46:48+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -423,8 +423,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:164cce65-68cf-4a24-a96d-fda21265f52d"/>
-          <timestamp value="2024-05-07T13:23:01+00:00"/>
+          <identifier value="urn:uuid:45a5d790-9aa4-4302-8381-207057846a19"/>
+          <timestamp value="2024-06-18T08:47:45+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>

@@ -882,7 +882,7 @@
         "reference" : "StructureDefinition/DosageOverride"
       },
       "name" : "DosageOverride",
-      "description" : "Dosage override.",
+      "description" : "Dispense override.",
       "exampleBoolean" : false
     },
     {
@@ -894,7 +894,7 @@
         "reference" : "StructureDefinition/DosageOverrideReason"
       },
       "name" : "DosageOverrideReason",
-      "description" : "Dosage override reason.",
+      "description" : "Dispense Request Needed - category.",
       "exampleBoolean" : false
     },
     {
@@ -1051,18 +1051,6 @@
       },
       "name" : "medicationdispense-example-1",
       "exampleCanonical" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationdispense"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/MedicationType"
-      },
-      "name" : "MedicationType",
-      "description" : "Medication Type.",
-      "exampleBoolean" : false
     },
     {
       "extension" : [{

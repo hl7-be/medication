@@ -295,7 +295,7 @@
         
           Draft
           
-            as of 2024-05-07
+            as of 2024-06-18
           
         
       </td>
@@ -311,39 +311,7 @@
 
 
 
-  <a name="map-be-medicationline-model-to-profile"> </a><h3>Mappings for BeModelVaccinationToBVaccination (https://www.ehealth.fgov.be/standards/fhir/vaccination/StructureDefinition/be-model-medicationline)</h3><table class="grid">
- <tr><td colspan="3"><b>BEMedicationLine</b></td></tr>
- <tr><td>MedicationStatement</td><td>BEModelMedicationLine</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;extension</td><td></td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;extension (exposure-category)</td><td>exposure</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;extension (dispense-request-needed)</td><td>dispenseRequestNeeded</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;extension (artifact-version)</td><td>versionIdentifier</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;extension (artifact-date)</td><td>lastUpdatedDate</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;extension (adherence)</td><td>adherence</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension (code)</td><td>adherence.code</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension (reason)</td><td>adherence.adherenceReason</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>uniqueIdentifier</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;status</td><td>status</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;statusReason</td><td>statusReason</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;category</td><td>category.originType</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;medication[x]</td><td></td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension (medication-type)</td><td>medication.type</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;medication[x] (medicationReference)</td><td>medication.product</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;subject</td><td>patient</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;effective[x]</td><td></td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;effective[x] (effectivePeriod)</td><td>effectivePeriod</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;start</td><td>effectivePeriod.start</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;end</td><td>effectivePeriod.end</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;dateAsserted</td><td>assertedDate</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;informationSource</td><td>recorder</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;reasonCode</td><td>reason.code</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;reasonReference</td><td>reason.reference</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;note</td><td>note</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;dosage</td><td>dosage.dosageDetails</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension (dosage-override)</td><td>dosage.dosageOverride</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension (dosage-override-reason)</td><td>dosage.dosageOverrideReason</td> </tr>
-</table>
-<a name="workflow"> </a><h3>Mappings for Workflow Pattern (<a href="http://hl7.org/fhir/workflow.html">http://hl7.org/fhir/workflow</a>)</h3><table class="grid">
+  <a name="workflow"> </a><h3>Mappings for Workflow Pattern (<a href="http://hl7.org/fhir/workflow.html">http://hl7.org/fhir/workflow</a>)</h3><table class="grid">
  <tr><td colspan="3"><b>BEMedicationLine</b></td></tr>
  <tr><td>MedicationStatement</td><td>Event</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>Event.identifier</td> </tr>
@@ -353,11 +321,9 @@
  <tr><td>&nbsp;&nbsp;&nbsp;status</td><td>Event.status</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;statusReason</td><td>Event.statusReason</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;medication[x]</td><td>Event.code</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;medication[x] (medicationReference)</td><td>Event.code</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;subject</td><td>Event.subject</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;context</td><td>Event.context</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;effective[x]</td><td>Event.occurrence[x]</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;effective[x] (effectivePeriod)</td><td>Event.occurrence[x]</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;reasonCode</td><td>Event.reasonCode</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;reasonReference</td><td>Event.reasonReference</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;note</td><td>Event.note</td> </tr>
@@ -367,23 +333,7 @@
  <tr><td>MedicationStatement</td><td>Entity. Role, or Act, SubstanceAdministration</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;text</td><td>Act.text?</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;contained</td><td>N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;extension</td><td></td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;extension (exposure-category)</td><td></td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;extension (dispense-request-needed)</td><td></td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;extension (artifact-version)</td><td></td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;extension (artifact-date)</td><td></td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;extension (adherence)</td><td>n/a, N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension (code)</td><td></td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;url</td><td>N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;value[x]</td><td>N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension (reason)</td><td></td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;url</td><td>N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;value[x]</td><td>N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;url</td><td>N/A</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;modifierExtension</td><td>N/A</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>.id</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;identifier (vidis)</td><td>.id</td> </tr>
@@ -401,17 +351,9 @@
  <tr><td>&nbsp;&nbsp;&nbsp;statusReason</td><td>.inboundRelationship[typeCode=SUBJ].source[classCode=CACT, moodCode=EVN].reasonCOde</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;category</td><td>.inboundRelationship[typeCode=COMP].source[classCode=OBS, moodCode=EVN, code=&quot;type of medication usage&quot;].value</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;medication[x]</td><td>.participation[typeCode=CSM].role[classCode=ADMM or MANU]</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;medication[x] (medicationReference)</td><td>.participation[typeCode=CSM].role[classCode=ADMM or MANU]</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;subject</td><td>.participation[typeCode=SBJ].role[classCode=PAT]</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;context</td><td>.inboundRelationship[typeCode=COMP].source[classCode=ENC, moodCode=EVN, code=&quot;type of encounter or episode&quot;]</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;effective[x]</td><td>.effectiveTime</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;effective[x] (effectivePeriod)</td><td>.effectiveTime</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;start</td><td>./low</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;end</td><td>./high</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;dateAsserted</td><td>.participation[typeCode=AUT].time</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;informationSource</td><td>.participation[typeCode=INF].role[classCode=PAT, or codes for Practioner or Related Person (if PAT is the informer, then syntax for self-reported =true)</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;derivedFrom</td><td>.outboundRelationship[typeCode=SPRT]/target[classCode=ACT,moodCode=EVN]</td> </tr>
@@ -448,10 +390,8 @@
  <tr><td>&nbsp;&nbsp;&nbsp;status</td><td>FiveWs.status</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;category</td><td>FiveWs.class</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;medication[x]</td><td>FiveWs.what[x]</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;medication[x] (medicationReference)</td><td>FiveWs.what[x]</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;subject</td><td>FiveWs.subject[x], FiveWs.subject</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;effective[x]</td><td>FiveWs.done[x]</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;effective[x] (effectivePeriod)</td><td>FiveWs.done[x]</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;dateAsserted</td><td>FiveWs.recorded</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;informationSource</td><td>FiveWs.source</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;reasonCode</td><td>FiveWs.why[x]</td> </tr>
@@ -469,10 +409,6 @@
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;period</td><td>CX.7 + CX.8</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;assigner</td><td>CX.4 / (CX.4,CX.9,CX.10)</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;subject</td><td>PID-3-Patient ID List</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;effective[x]</td><td></td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;effective[x] (effectivePeriod)</td><td></td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;start</td><td>DR.1</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;end</td><td>DR.2</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;dosage</td><td></td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sequence</td><td>TQ1-1</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text</td><td>RXO-6; RXE-21</td> </tr>
@@ -536,7 +472,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.hl7belgium.org">HL7 Belgium</a>.  Package hl7.fhir.be.medication#1.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, May 7, 2024 13:22+0000">2024-05-07</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.hl7belgium.org">HL7 Belgium</a>.  Package hl7.fhir.be.medication#1.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jun 18, 2024 08:46+0000">2024-06-18</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- HL7 Belgium -->

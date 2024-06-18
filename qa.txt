@@ -2,8 +2,8 @@ Medication : Validation Results
 =========================================
 
 err = 0, warn = 12, info = 11
-IG Publisher Version: 1.6.6
-Generated Tue May 07 13:25:39 UTC 2024. FHIR version 4.0.1 for hl7.fhir.be.medication#1.1.0 (canonical = https://www.ehealth.fgov.be/standards/fhir/medication)
+IG Publisher Version: 1.6.11
+Generated Tue Jun 18 08:50:24 UTC 2024. FHIR version 4.0.1 for hl7.fhir.be.medication#1.1.0 (canonical = https://www.ehealth.fgov.be/standards/fhir/medication)
  Build Errors : 0 / 4 / 0
  /github/workspace/fsh-generated/resources/CodeSystem-medication-line-origin-type : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-medication-type : 0 / 0 / 1
@@ -34,7 +34,6 @@ Generated Tue May 07 13:25:39 UTC 2024. FHIR version 4.0.1 for hl7.fhir.be.medic
  /github/workspace/fsh-generated/resources/StructureDefinition-II : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-INT : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-KMEHRMS : 0 / 851 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-MedicationType : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-PQ : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-REAL : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-RTO : 0 / 1 / 1
@@ -101,7 +100,6 @@ WARNING: StructureDefinition.where(url = 'https://www.ehealth.fgov.be/standards/
 == fsh-generated/resources/StructureDefinition-II.json ==
 == fsh-generated/resources/StructureDefinition-INT.json ==
 == fsh-generated/resources/StructureDefinition-KMEHRMS.json ==
-== fsh-generated/resources/StructureDefinition-MedicationType.json ==
 == fsh-generated/resources/StructureDefinition-PQ.json ==
 == fsh-generated/resources/StructureDefinition-REAL.json ==
 == fsh-generated/resources/StructureDefinition-RTO.json ==

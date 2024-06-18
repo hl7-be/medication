@@ -24,7 +24,7 @@
       "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/medication-line-origin-type-vs",
       "version" : "1.1.0",
       "status" : "active",
-      "name" : "MedicationLineOriginTypeVS",
+      "name" : "MedicationLineOrigintypeVS",
       "title" : "Medication origin type ValueSet",
       "description" : "Medication treatment origin type - what is the type of care that originated the medication treatment",
       "systems" : [

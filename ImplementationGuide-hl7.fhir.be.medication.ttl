@@ -803,7 +803,7 @@
          fhir:reference [ fhir:v "StructureDefinition/DosageOverride" ]
        ] ;
        fhir:name [ fhir:v "DosageOverride" ] ;
-       fhir:description [ fhir:v "Dosage override." ] ;
+       fhir:description [ fhir:v "Dispense override." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -815,7 +815,7 @@
          fhir:reference [ fhir:v "StructureDefinition/DosageOverrideReason" ]
        ] ;
        fhir:name [ fhir:v "DosageOverrideReason" ] ;
-       fhir:description [ fhir:v "Dosage override reason." ] ;
+       fhir:description [ fhir:v "Dispense Request Needed - category." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -975,18 +975,6 @@
          fhir:v "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationdispense"^^xsd:anyURI ;
          fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationdispense>
        ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:extension" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/MedicationType> ;
-         fhir:reference [ fhir:v "StructureDefinition/MedicationType" ]
-       ] ;
-       fhir:name [ fhir:v "MedicationType" ] ;
-       fhir:description [ fhir:v "Medication Type." ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;

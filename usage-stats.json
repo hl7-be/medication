@@ -31,13 +31,6 @@
       "types": [
         "CodeableConcept"
       ]
-    },
-    {
-      "url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/MedicationType",
-      "title": "MedicationType",
-      "types": [
-        "CodeableConcept"
-      ]
     }
   ],
   "profiles": {
@@ -133,9 +126,6 @@
     ],
     "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/ExposureCategory": [
       "MedicationStatement"
-    ],
-    "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/MedicationType": [
-      "MedicationStatement.medication[x]"
     ]
   }
 }

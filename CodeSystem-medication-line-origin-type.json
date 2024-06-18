@@ -7,11 +7,11 @@
   },
   "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-line-origin-type",
   "version" : "1.1.0",
-  "name" : "MedicationLineOriginType",
+  "name" : "MedicationLineOrigintype",
   "title" : "Medication origin type",
   "status" : "active",
   "experimental" : false,
-  "date" : "2024-05-07T13:22:03+00:00",
+  "date" : "2024-06-18T08:46:48+00:00",
   "publisher" : "HL7 Belgium",
   "contact" : [{
     "name" : "HL7 Belgium",
