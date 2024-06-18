@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "bf278a1d-405d-49ca-8730-2f8082740e40-9",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/bf278a1d-405d-49ca-8730-2f8082740e40-9",
+  "id" : "f211977f-027e-4951-b60a-bfe8eb40d0f4-9",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/f211977f-027e-4951-b60a-bfe8eb40d0f4-9",
   "name" : "IntersectionBeAddressAndBeAddress",
   "title" : "Intersection of Address core BE profile And BeAddress",
   "status" : "active",
-  "date" : "2024-06-18T10:57:48+00:00",
+  "date" : "2024-06-18T10:58:32+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
