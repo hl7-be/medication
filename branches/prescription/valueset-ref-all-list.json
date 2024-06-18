@@ -351,8 +351,8 @@
       "systems" : ["http://snomed.info/sct"],
       "uses" : {
       },
-      "StructureDefinition-be-model-medicationline.html" : "Medication Line - logical model",
-      "StructureDefinition-ExposureCategory.html" : "ExposureCategory"
+      "StructureDefinition-ExposureCategory.html" : "ExposureCategory",
+      "StructureDefinition-be-model-medicationline.html" : "Medication Line - logical model"
     },
     {
       "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/medication-line-origin-type-vs",
