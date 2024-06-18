@@ -35,7 +35,7 @@ Characteristics: #can-be-target
   * quantityPerDispense 0..1 SimpleQuantity "Amount of medication to supply per dispense"
 
 
-
+* instructionsForReimbursement 0..1 CD "Instructions for reimbursement"
 
 * groupIdentifier 0..1 II "Identifier for the group that this prescription belongs to. This might be the common identifier in use cases where one national prescription contains several medication items, which can be handled as separate orders"
 * recordingDate 0..1 DT "Time of authoring the prescription/draft in the information system"
