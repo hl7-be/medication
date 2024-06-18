@@ -288,7 +288,7 @@
     },
     {
       "url" : "http://terminology.hl7.org/ValueSet/v3-ActPharmacySupplyType",
-      "version" : "2.0.0",
+      "version" : "3.0.0",
       "status" : "active",
       "name" : "ActPharmacySupplyType",
       "title" : "ActPharmacySupplyType",
@@ -302,11 +302,11 @@
     },
     {
       "url" : "http://terminology.hl7.org/ValueSet/v3-ActSubstanceAdminSubstitutionCode",
-      "version" : "2.0.0",
+      "version" : "3.0.0",
       "status" : "active",
       "name" : "ActSubstanceAdminSubstitutionCode",
       "title" : "ActSubstanceAdminSubstitutionCode",
-      "description" : null,
+      "description" : "***No description***",
       "systems" : [
         "http://terminology.hl7.org/CodeSystem/v3-substanceAdminSubstitution"
       ],
@@ -318,11 +318,11 @@
     },
     {
       "url" : "http://terminology.hl7.org/ValueSet/v3-SubstanceAdminSubstitutionReason",
-      "version" : "2.0.0",
+      "version" : "3.0.0",
       "status" : "active",
       "name" : "SubstanceAdminSubstitutionReason",
       "title" : "SubstanceAdminSubstitutionReason",
-      "description" : null,
+      "description" : "***No description***",
       "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActReason"],
       "oids" : ["2.16.840.1.113883.1.11.19377"],
       "sources" : ["2.16.840.1.113883.1.11.19377"],

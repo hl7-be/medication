@@ -26,4 +26,4 @@ Generic: line 0, col 0, Warning - The HTML fragment 'globals-table.xhtml' is not
 /github/workspace/fsh-generated/resources/StructureDefinition-be-medicationdispense.json: line 1, col 184383, Info - The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk (INVALID)
 
 err = 0, warn = 12, info = 11
-IG Publisher Version: 1.6.4
+IG Publisher Version: 1.6.11

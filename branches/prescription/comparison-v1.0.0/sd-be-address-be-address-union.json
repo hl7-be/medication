@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "8d63d47a-01c6-4eb4-911c-cbc4b40803c3-8",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/8d63d47a-01c6-4eb4-911c-cbc4b40803c3-8",
+  "id" : "bf278a1d-405d-49ca-8730-2f8082740e40-8",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/bf278a1d-405d-49ca-8730-2f8082740e40-8",
   "name" : "UnionBeAddressAndBeAddress",
   "title" : "Union of Address core BE profile And BeAddress",
   "status" : "active",
-  "date" : "2024-04-14T06:15:49+00:00",
+  "date" : "2024-06-18T10:57:48+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

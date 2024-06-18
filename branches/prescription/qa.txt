@@ -2,8 +2,8 @@ Medication : Validation Results
 =========================================
 
 err = 0, warn = 12, info = 11
-IG Publisher Version: 1.6.4
-Generated Sun Apr 14 06:18:50 UTC 2024. FHIR version 4.0.1 for hl7.fhir.be.medication#1.1.0 (canonical = https://www.ehealth.fgov.be/standards/fhir/medication)
+IG Publisher Version: 1.6.11
+Generated Tue Jun 18 11:00:52 UTC 2024. FHIR version 4.0.1 for hl7.fhir.be.medication#1.1.0 (canonical = https://www.ehealth.fgov.be/standards/fhir/medication)
  Build Errors : 0 / 4 / 0
  /github/workspace/fsh-generated/resources/CodeSystem-medication-line-origin-type : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-medication-type : 0 / 0 / 1
@@ -46,7 +46,7 @@ Generated Sun Apr 14 06:18:50 UTC 2024. FHIR version 4.0.1 for hl7.fhir.be.medic
  /github/workspace/fsh-generated/resources/StructureDefinition-be-model-medication : 0 / 74 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-be-model-medicationdispense : 0 / 41 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-be-model-medicationline : 0 / 80 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-be-model-medicationprescription : 0 / 69 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-be-model-medicationprescription : 0 / 73 / 1
  /github/workspace/fsh-generated/resources/ValueSet-be-vs-dispenser-types : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-medication-exposure-category-vs : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-medication-line-origin-type-vs : 0 / 0 / 1
