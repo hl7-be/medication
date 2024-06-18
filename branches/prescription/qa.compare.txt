@@ -46,7 +46,7 @@ Generated $--. FHIR version $-- for hl7.fhir.be.medication#$-- (canonical = http
  /github/workspace/fsh-generated/resources/StructureDefinition-be-model-medication : 0 / 74 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-be-model-medicationdispense : 0 / 41 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-be-model-medicationline : 0 / 80 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-be-model-medicationprescription : 0 / 75 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-be-model-medicationprescription : 0 / 77 / 1
  /github/workspace/fsh-generated/resources/ValueSet-be-vs-dispenser-types : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-medication-exposure-category-vs : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-medication-line-origin-type-vs : 0 / 0 / 1
