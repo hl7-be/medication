@@ -64,7 +64,7 @@ Characteristics: #can-be-target
   * code 1..1 CodeableConcept "The status - taking, not taking,..."
   * adherenceReason 0..1 CodeableConcept "Reason for the adherence status" 
 
-* dosage 0..1 BackboneElement "Dosage"
+* dosage 1..* BackboneElement "Dosage"
 //.dosage  
   * dosageDetails 0..1 Dosage "Structure Dosage"
   * dosageOverride 0..1 boolean "Dosage Override"
