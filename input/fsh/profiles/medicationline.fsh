@@ -48,7 +48,7 @@ For the full definition see here: [http://hl7.org/fhir/R5/medicationstatement-de
 
 * reasonCode MS
 * reasonReference MS
-* dosage MS
+* dosage 1..* MS
 * dosage
   * extension contains 
     DosageOverride named dosage-override 0..1 MS and 
