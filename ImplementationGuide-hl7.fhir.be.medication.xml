@@ -3,7 +3,7 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="hl7.fhir.be.medication"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>Medication</h2><p>The official URL for this implementation guide is: </p><pre>https://www.ehealth.fgov.be/standards/fhir/medication/ImplementationGuide/hl7.fhir.be.medication</pre><div><p>FHIR Medication specifications</p>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide hl7.fhir.be.medication</b></p><a name="hl7.fhir.be.medication"> </a><a name="hchl7.fhir.be.medication"> </a><a name="hchl7.fhir.be.medication-en"> </a><h2>Medication</h2><p>The official URL for this implementation guide is: </p><pre>https://www.ehealth.fgov.be/standards/fhir/medication/ImplementationGuide/hl7.fhir.be.medication</pre><div><p>FHIR Medication specifications</p>
 </div></div>
   </text>
   <url value="https://www.ehealth.fgov.be/standards/fhir/medication/ImplementationGuide/hl7.fhir.be.medication"/>

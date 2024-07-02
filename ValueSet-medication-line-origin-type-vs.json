@@ -3,7 +3,7 @@
   "id" : "medication-line-origin-type-vs",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-medication-line-origin-type.html\"><code>https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-line-origin-type</code></a></li></ul></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet medication-line-origin-type-vs</b></p><a name=\"medication-line-origin-type-vs\"> </a><a name=\"hcmedication-line-origin-type-vs\"> </a><a name=\"hcmedication-line-origin-type-vs-en\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-medication-line-origin-type.html\"><code>https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-line-origin-type</code></a></li></ul></div>"
   },
   "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/medication-line-origin-type-vs",
   "version" : "1.1.0",
@@ -11,7 +11,7 @@
   "title" : "Medication origin type ValueSet",
   "status" : "active",
   "experimental" : false,
-  "date" : "2024-06-18T11:16:13+00:00",
+  "date" : "2024-07-02T10:09:21+00:00",
   "publisher" : "HL7 Belgium",
   "contact" : [{
     "name" : "HL7 Belgium",

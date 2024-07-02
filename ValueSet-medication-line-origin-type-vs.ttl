@@ -10,7 +10,7 @@
   fhir:id [ fhir:v "medication-line-origin-type-vs"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-medication-line-origin-type.html\"><code>https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-line-origin-type</code></a></li></ul></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet medication-line-origin-type-vs</b></p><a name=\"medication-line-origin-type-vs\"> </a><a name=\"hcmedication-line-origin-type-vs\"> </a><a name=\"hcmedication-line-origin-type-vs-en\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-medication-line-origin-type.html\"><code>https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-line-origin-type</code></a></li></ul></div>"
   ] ; # 
   fhir:url [ fhir:v "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/medication-line-origin-type-vs"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "1.1.0"] ; # 
@@ -18,7 +18,7 @@
   fhir:title [ fhir:v "Medication origin type ValueSet"] ; # 
   fhir:status [ fhir:v "active"] ; # 
   fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
-  fhir:date [ fhir:v "2024-06-18T11:16:13+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-07-02T10:09:21+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 Belgium"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 Belgium" ] ;
