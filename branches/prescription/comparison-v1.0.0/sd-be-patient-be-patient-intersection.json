@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "88bc5bfd-032e-48f4-9c52-ca57a431ba26-6",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/88bc5bfd-032e-48f4-9c52-ca57a431ba26-6",
+  "id" : "09dca262-b60e-4112-9171-9ab46ac8502e-6",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/09dca262-b60e-4112-9171-9ab46ac8502e-6",
   "name" : "IntersectionBePatientAndBePatient",
   "title" : "Intersection of Patient core BE profile And BePatient",
   "status" : "active",
-  "date" : "2024-06-18T11:16:51+00:00",
+  "date" : "2024-07-02T10:09:53+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

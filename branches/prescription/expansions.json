@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "299a4d3b-6c2e-4171-b643-74bfce940a69",
+  "id" : "33d425c8-6223-4cb8-8a3f-cebe1cd98bc4",
   "meta" : {
-    "lastUpdated" : "2024-06-18T11:16:13.410+00:00"
+    "lastUpdated" : "2024-07-02T10:09:21.906+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -11,7 +11,7 @@
       "resourceType" : "ValueSet",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"https://www.ehealth.fgov.be/standards/fhir/core/2.0.1/CodeSystem-cd-hcparty.html\">codesystem BeCdHcParty v2.0.1 (CodeSystem)</a></p><p>This value set contains 7 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.ehealth.fgov.be-standards-fhir-core-CodeSystem-cd-hcparty-deptpharmacy\"> </a>\u00a0\u00a0<a href=\"https://www.ehealth.fgov.be/standards/fhir/core/2.0.1/CodeSystem-cd-hcparty.html#cd-hcparty-deptpharmacy\">deptpharmacy</a></td><td>https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty</td><td>Pharmacy service or department within an organisation</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.ehealth.fgov.be-standards-fhir-core-CodeSystem-cd-hcparty-perspharmacist\"> </a>\u00a0\u00a0<a href=\"https://www.ehealth.fgov.be/standards/fhir/core/2.0.1/CodeSystem-cd-hcparty.html#cd-hcparty-perspharmacist\">perspharmacist</a></td><td>https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty</td><td>pharmacist</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.ehealth.fgov.be-standards-fhir-core-CodeSystem-cd-hcparty-orgpharmacy\"> </a>\u00a0\u00a0<a href=\"https://www.ehealth.fgov.be/standards/fhir/core/2.0.1/CodeSystem-cd-hcparty.html#cd-hcparty-orgpharmacy\">orgpharmacy</a></td><td>https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty</td><td>Independent pharmacy</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.ehealth.fgov.be-standards-fhir-core-CodeSystem-cd-hcparty-perspharmacyassistant\"> </a>\u00a0\u00a0<a href=\"https://www.ehealth.fgov.be/standards/fhir/core/2.0.1/CodeSystem-cd-hcparty.html#cd-hcparty-perspharmacyassistant\">perspharmacyassistant</a></td><td>https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty</td><td>pharmacy assistant</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.ehealth.fgov.be-standards-fhir-core-CodeSystem-cd-hcparty-perspharmacistclinicalbiologist\"> </a>\u00a0\u00a0<a href=\"https://www.ehealth.fgov.be/standards/fhir/core/2.0.1/CodeSystem-cd-hcparty.html#cd-hcparty-perspharmacistclinicalbiologist\">perspharmacistclinicalbiologist</a></td><td>https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty</td><td>pharmacist-clinical biologist</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.ehealth.fgov.be-standards-fhir-core-CodeSystem-cd-hcparty-persdentist\"> </a>\u00a0\u00a0<a href=\"https://www.ehealth.fgov.be/standards/fhir/core/2.0.1/CodeSystem-cd-hcparty.html#cd-hcparty-persdentist\">persdentist</a></td><td>https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty</td><td>dentist</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.ehealth.fgov.be-standards-fhir-core-CodeSystem-cd-hcparty-deptdentistry\"> </a>\u00a0\u00a0<a href=\"https://www.ehealth.fgov.be/standards/fhir/core/2.0.1/CodeSystem-cd-hcparty.html#cd-hcparty-deptdentistry\">deptdentistry</a></td><td>https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty</td><td>dentistry</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"https://www.ehealth.fgov.be/standards/fhir/core/2.0.1/CodeSystem-cd-hcparty.html\">codesystem BeCdHcParty v2.0.1 (CodeSystem)</a></p><p>This value set contains 7 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---www.ehealth.fgov.be-standards-fhir-core-CodeSystem-cd-hcparty-deptpharmacy\"> </a>\u00a0\u00a0<a href=\"https://www.ehealth.fgov.be/standards/fhir/core/2.0.1/CodeSystem-cd-hcparty.html#cd-hcparty-deptpharmacy\">deptpharmacy</a></td><td>https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty</td><td>Pharmacy service or department within an organisation</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---www.ehealth.fgov.be-standards-fhir-core-CodeSystem-cd-hcparty-perspharmacist\"> </a>\u00a0\u00a0<a href=\"https://www.ehealth.fgov.be/standards/fhir/core/2.0.1/CodeSystem-cd-hcparty.html#cd-hcparty-perspharmacist\">perspharmacist</a></td><td>https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty</td><td>pharmacist</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---www.ehealth.fgov.be-standards-fhir-core-CodeSystem-cd-hcparty-orgpharmacy\"> </a>\u00a0\u00a0<a href=\"https://www.ehealth.fgov.be/standards/fhir/core/2.0.1/CodeSystem-cd-hcparty.html#cd-hcparty-orgpharmacy\">orgpharmacy</a></td><td>https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty</td><td>Independent pharmacy</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---www.ehealth.fgov.be-standards-fhir-core-CodeSystem-cd-hcparty-perspharmacyassistant\"> </a>\u00a0\u00a0<a href=\"https://www.ehealth.fgov.be/standards/fhir/core/2.0.1/CodeSystem-cd-hcparty.html#cd-hcparty-perspharmacyassistant\">perspharmacyassistant</a></td><td>https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty</td><td>pharmacy assistant</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---www.ehealth.fgov.be-standards-fhir-core-CodeSystem-cd-hcparty-perspharmacistclinicalbiologist\"> </a>\u00a0\u00a0<a href=\"https://www.ehealth.fgov.be/standards/fhir/core/2.0.1/CodeSystem-cd-hcparty.html#cd-hcparty-perspharmacistclinicalbiologist\">perspharmacistclinicalbiologist</a></td><td>https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty</td><td>pharmacist-clinical biologist</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---www.ehealth.fgov.be-standards-fhir-core-CodeSystem-cd-hcparty-persdentist\"> </a>\u00a0\u00a0<a href=\"https://www.ehealth.fgov.be/standards/fhir/core/2.0.1/CodeSystem-cd-hcparty.html#cd-hcparty-persdentist\">persdentist</a></td><td>https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty</td><td>dentist</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---www.ehealth.fgov.be-standards-fhir-core-CodeSystem-cd-hcparty-deptdentistry\"> </a>\u00a0\u00a0<a href=\"https://www.ehealth.fgov.be/standards/fhir/core/2.0.1/CodeSystem-cd-hcparty.html#cd-hcparty-deptdentistry\">deptdentistry</a></td><td>https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty</td><td>dentistry</td></tr></table></div>"
       },
       "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/be-vs-dispenser-types",
       "version" : "1.1.0",
@@ -19,7 +19,7 @@
       "title" : "Dispenser Types",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2024-06-18T11:16:13+00:00",
+      "date" : "2024-07-02T10:09:21+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -28,8 +28,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:cd2696c2-fff7-4f92-a618-b630326f412c",
-        "timestamp" : "2024-06-18T11:17:19+00:00",
+        "identifier" : "urn:uuid:d76d0552-6ce0-418d-95b1-20b3e1fe84d5",
+        "timestamp" : "2024-07-02T10:10:20+00:00",
         "total" : 7,
         "offset" : 0,
         "parameter" : [{
@@ -92,7 +92,7 @@
       "resourceType" : "ValueSet",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 01-Feb 2024</p><p>This value set contains 2 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-360271000\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/360271000\">360271000</a></td><td>http://snomed.info/sct</td><td>Prophylaxis - intent</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-360270004\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/360270004\">360270004</a></td><td>http://snomed.info/sct</td><td>Therapy - action</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 01-Feb 2024</p><p>This value set contains 2 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-http---snomed.info-sct-360271000\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/360271000\">360271000</a></td><td>http://snomed.info/sct</td><td>Prophylaxis - intent</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-http---snomed.info-sct-360270004\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/360270004\">360270004</a></td><td>http://snomed.info/sct</td><td>Therapy - action</td></tr></table></div>"
       },
       "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/medication-exposure-category-vs",
       "version" : "1.1.0",
@@ -100,7 +100,7 @@
       "title" : "Medication exposure intent",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2024-06-18T11:16:13+00:00",
+      "date" : "2024-07-02T10:09:21+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -109,8 +109,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:8f7af7c8-136b-4c21-9127-bc626f94e973",
-        "timestamp" : "2024-06-18T11:17:19+00:00",
+        "identifier" : "urn:uuid:33c43301-f420-46a0-8418-b5341d651920",
+        "timestamp" : "2024-07-02T10:10:20+00:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{
@@ -156,7 +156,7 @@
       "resourceType" : "ValueSet",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-medication-line-origin-type.html\">codesystem Medication origin type v1.1.0 (CodeSystem)</a></p><p>This value set contains 2 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.ehealth.fgov.be-standards-fhir-medication-CodeSystem-medication-line-origin-type-ambulatory\"> </a>\u00a0\u00a0<a href=\"CodeSystem-medication-line-origin-type.html#medication-line-origin-type-ambulatory\">ambulatory</a></td><td>https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-line-origin-type</td><td>Ambulatory</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.ehealth.fgov.be-standards-fhir-medication-CodeSystem-medication-line-origin-type-hospital\"> </a>\u00a0\u00a0<a href=\"CodeSystem-medication-line-origin-type.html#medication-line-origin-type-hospital\">hospital</a></td><td>https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-line-origin-type</td><td>Hospital</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-medication-line-origin-type.html\">codesystem Medication origin type v1.1.0 (CodeSystem)</a></p><p>This value set contains 2 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---www.ehealth.fgov.be-standards-fhir-medication-CodeSystem-medication-line-origin-type-ambulatory\"> </a>\u00a0\u00a0<a href=\"CodeSystem-medication-line-origin-type.html#medication-line-origin-type-ambulatory\">ambulatory</a></td><td>https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-line-origin-type</td><td>Ambulatory</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---www.ehealth.fgov.be-standards-fhir-medication-CodeSystem-medication-line-origin-type-hospital\"> </a>\u00a0\u00a0<a href=\"CodeSystem-medication-line-origin-type.html#medication-line-origin-type-hospital\">hospital</a></td><td>https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-line-origin-type</td><td>Hospital</td></tr></table></div>"
       },
       "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/medication-line-origin-type-vs",
       "version" : "1.1.0",
@@ -164,7 +164,7 @@
       "title" : "Medication origin type ValueSet",
       "status" : "active",
       "experimental" : false,
-      "date" : "2024-06-18T11:16:13+00:00",
+      "date" : "2024-07-02T10:09:21+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -173,8 +173,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:0626cc5c-dff4-41ed-910e-a36dad4aface",
-        "timestamp" : "2024-06-18T11:17:19+00:00",
+        "identifier" : "urn:uuid:f6a72417-857a-42bb-80ad-deb587559b77",
+        "timestamp" : "2024-07-02T10:10:20+00:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{
@@ -212,7 +212,7 @@
       "resourceType" : "ValueSet",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-medication-type.html\">codesystem Medication preparation Type v1.1.0 (CodeSystem)</a></p><p>This value set contains 4 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.ehealth.fgov.be-standards-fhir-medication-CodeSystem-medication-type-magistral\"> </a>\u00a0\u00a0<a href=\"CodeSystem-medication-type.html#medication-type-magistral\">magistral</a></td><td>https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type</td><td>Magistral preparation</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.ehealth.fgov.be-standards-fhir-medication-CodeSystem-medication-type-officinal\"> </a>\u00a0\u00a0<a href=\"CodeSystem-medication-type.html#medication-type-officinal\">officinal</a></td><td>https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type</td><td>Officinal preparation</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.ehealth.fgov.be-standards-fhir-medication-CodeSystem-medication-type-medicinal-product\"> </a>\u00a0\u00a0<a href=\"CodeSystem-medication-type.html#medication-type-medicinal-product\">medicinal-product</a></td><td>https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type</td><td>Medicinal Product</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.ehealth.fgov.be-standards-fhir-medication-CodeSystem-medication-type-non-medicinal-product\"> </a>\u00a0\u00a0<a href=\"CodeSystem-medication-type.html#medication-type-non-medicinal-product\">non-medicinal-product</a></td><td>https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type</td><td>non-medicinal product e.g. supplement</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-medication-type.html\">codesystem Medication preparation Type v1.1.0 (CodeSystem)</a></p><p>This value set contains 4 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---www.ehealth.fgov.be-standards-fhir-medication-CodeSystem-medication-type-magistral\"> </a>\u00a0\u00a0<a href=\"CodeSystem-medication-type.html#medication-type-magistral\">magistral</a></td><td>https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type</td><td>Magistral preparation</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---www.ehealth.fgov.be-standards-fhir-medication-CodeSystem-medication-type-officinal\"> </a>\u00a0\u00a0<a href=\"CodeSystem-medication-type.html#medication-type-officinal\">officinal</a></td><td>https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type</td><td>Officinal preparation</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---www.ehealth.fgov.be-standards-fhir-medication-CodeSystem-medication-type-medicinal-product\"> </a>\u00a0\u00a0<a href=\"CodeSystem-medication-type.html#medication-type-medicinal-product\">medicinal-product</a></td><td>https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type</td><td>Medicinal Product</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---www.ehealth.fgov.be-standards-fhir-medication-CodeSystem-medication-type-non-medicinal-product\"> </a>\u00a0\u00a0<a href=\"CodeSystem-medication-type.html#medication-type-non-medicinal-product\">non-medicinal-product</a></td><td>https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type</td><td>non-medicinal product e.g. supplement</td></tr></table></div>"
       },
       "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/medication-type-vs",
       "version" : "1.1.0",
@@ -220,7 +220,7 @@
       "title" : "Medication preparation Type value set",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2024-06-18T11:16:13+00:00",
+      "date" : "2024-07-02T10:09:21+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -229,8 +229,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:a5b7f6f0-58ee-4002-8c14-d800cba81c51",
-        "timestamp" : "2024-06-18T11:17:19+00:00",
+        "identifier" : "urn:uuid:efbc189c-8b13-4fe1-b14d-7fbbd397f242",
+        "timestamp" : "2024-07-02T10:10:20+00:00",
         "total" : 4,
         "offset" : 0,
         "parameter" : [{
