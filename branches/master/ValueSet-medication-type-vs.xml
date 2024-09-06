@@ -3,7 +3,7 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="medication-type-vs"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-medication-type.html"><code>https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type</code></a></li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet medication-type-vs</b></p><a name="medication-type-vs"> </a><a name="hcmedication-type-vs"> </a><a name="medication-type-vs-en-US"> </a><ul><li>Include all codes defined in <a href="CodeSystem-medication-type.html"><code>https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type</code></a></li></ul></div>
   </text>
   <url value="https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/medication-type-vs"/>
   <version value="1.1.0"/>
@@ -11,7 +11,7 @@
   <title value="Medication preparation Type value set"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2024-05-06T21:25:42+00:00"/>
+  <date value="2024-09-06T15:59:56+00:00"/>
   <publisher value="HL7 Belgium"/>
   <contact>
     <name value="HL7 Belgium"/>

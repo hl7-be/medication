@@ -47,7 +47,8 @@
   <body onload="document.body.style.opacity='1'">
 
 	  <script src="assets/js/prism.js"></script>
-
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
     <style type="text/css">h2{--heading-prefix:"9.41"}
     h3,h4,h5,h6{--heading-prefix:"9.41"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
@@ -275,7 +276,7 @@
 
 
 
-  <div xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr-BE" lang="fr-BE"><p><b>Generated Narrative: MedicationDispense</b><a name="medicationdispense-example-1"> </a><a name="hcmedicationdispense-example-1"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource MedicationDispense &quot;medicationdispense-example-1&quot;  (Language &quot;fr-BE&quot;) </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-be-medicationdispense.html">BeMedicationDispense</a></p></div><p><b>identifier</b>: dguid/a8ca980c-72aa-11e7-8cf7-a6006ad3dba0</p><p><b>status</b>: completed</p><p><b>medication</b>: Topazolam tab 50x 1,0mg <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (cnk-codes#1439562)</span></p><p><b>subject</b>: <span><code>https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin</code>/64110219106</span></p><p><b>context</b>: <span>sguid/b8ca980c-72aa-11e7-8cf7-a6006ad3dba0</span></p><h3>Performers</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Actor</b></td></tr><tr><td style="display: none">*</td><td><span>: Apotheek onder de toren</span></td></tr></table><p><b>authorizingPrescription</b>: <span>: Prescription</span></p><p><b>quantity</b>: 1(unit package from https://www.gfd-dpp.be/fhir/reference/packaging)<span style="background: LightGoldenRodYellow"> (Details: https://www.gfd-dpp.be/fhir/reference/packaging code package = 'package')</span></p><p><b>whenHandedOver</b>: 2020-03-10</p><h3>DosageInstructions</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Text</b></td></tr><tr><td style="display: none">*</td><td>3 x par jour</td></tr></table></div>
+  <div xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr-BE" lang="fr-BE"><p class="res-header-id"><b>Generated Narrative: MedicationDispense medicationdispense-example-1</b></p><a name="medicationdispense-example-1"> </a><a name="hcmedicationdispense-example-1"> </a><a name="medicationdispense-example-1-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Language: fr-BE</p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-be-medicationdispense.html">BeMedicationDispense</a></p></div><p><b>identifier</b>: dguid/a8ca980c-72aa-11e7-8cf7-a6006ad3dba0</p><p><b>status</b>: Completed</p><p><b>medication</b>: <span title="Codes:{https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes 1439562}">Topazolam tab 50x 1,0mg</span></p><p><b>subject</b>: Identifier: <code>https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin</code>/64110219106</p><p><b>context</b>: Identifier: sguid/b8ca980c-72aa-11e7-8cf7-a6006ad3dba0</p><h3>Performers</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Actor</b></td></tr><tr><td style="display: none">*</td><td>Apotheek onder de toren (Identifier: <code>https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi-organization</code>/27457532)</td></tr></table><p><b>authorizingPrescription</b>: Prescription</p><p><b>quantity</b>: 1(unit package from https://www.gfd-dpp.be/fhir/reference/packaging)<span style="background: LightGoldenRodYellow"> (Details: packaging  codepackage = 'package')</span></p><p><b>whenHandedOver</b>: 2020-03-10</p><h3>DosageInstructions</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Text</b></td></tr><tr><td style="display: none">*</td><td>3 x par jour</td></tr></table></div>
 
   
 
@@ -322,7 +323,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.hl7belgium.org">HL7 Belgium</a>.  Package hl7.fhir.be.medication#1.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, May 6, 2024 21:25+0000">2024-05-06</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.hl7belgium.org">HL7 Belgium</a>.  Package hl7.fhir.be.medication#1.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Sep 6, 2024 15:59+0000">2024-09-06</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- HL7 Belgium -->
@@ -346,7 +347,7 @@ Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Tabl
     <div class="container">  <!-- container -->
     </div>  <!-- /container -->
   </div>  <!-- /segment-post-footer -->
-  
+
   <!-- JS and analytics only. -->
   <!-- Bootstrap core JavaScript
   ================================================== -->
@@ -357,7 +358,6 @@ Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Tabl
   <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
   <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
-  
   <!-- Analytics Below
   ================================================== -->
   </body>

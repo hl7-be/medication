@@ -2,8 +2,8 @@ Medication : Validation Results
 =========================================
 
 err = 0, warn = 12, info = 11
-IG Publisher Version: 1.6.6
-Generated Mon May 06 21:29:12 UTC 2024. FHIR version 4.0.1 for hl7.fhir.be.medication#1.1.0 (canonical = https://www.ehealth.fgov.be/standards/fhir/medication)
+IG Publisher Version: 1.6.22
+Generated Fri Sep 06 16:01:24 UTC 2024. FHIR version 4.0.1 for hl7.fhir.be.medication#1.1.0 (canonical = https://www.ehealth.fgov.be/standards/fhir/medication)
  Build Errors : 0 / 4 / 0
  /github/workspace/fsh-generated/resources/CodeSystem-medication-line-origin-type : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-medication-type : 0 / 0 / 1

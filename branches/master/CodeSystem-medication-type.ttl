@@ -10,7 +10,7 @@
   fhir:id [ fhir:v "medication-type"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-insensitive code system <code>https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">magistral<a name=\"medication-type-magistral\"> </a></td><td>Magistral preparation</td></tr><tr><td style=\"white-space:nowrap\">officinal<a name=\"medication-type-officinal\"> </a></td><td>Officinal preparation</td></tr><tr><td style=\"white-space:nowrap\">medicinal-product<a name=\"medication-type-medicinal-product\"> </a></td><td>Medicinal Product</td></tr><tr><td style=\"white-space:nowrap\">non-medicinal-product<a name=\"medication-type-non-medicinal-product\"> </a></td><td>non-medicinal product e.g. supplement</td></tr></table></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem medication-type</b></p><a name=\"medication-type\"> </a><a name=\"hcmedication-type\"> </a><a name=\"medication-type-en-US\"> </a><p>This case-insensitive code system <code>https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">magistral<a name=\"medication-type-magistral\"> </a></td><td>Magistral preparation</td></tr><tr><td style=\"white-space:nowrap\">officinal<a name=\"medication-type-officinal\"> </a></td><td>Officinal preparation</td></tr><tr><td style=\"white-space:nowrap\">medicinal-product<a name=\"medication-type-medicinal-product\"> </a></td><td>Medicinal Product</td></tr><tr><td style=\"white-space:nowrap\">non-medicinal-product<a name=\"medication-type-non-medicinal-product\"> </a></td><td>non-medicinal product e.g. supplement</td></tr></table></div>"
   ] ; # 
   fhir:url [ fhir:v "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "1.1.0"] ; # 
@@ -18,7 +18,7 @@
   fhir:title [ fhir:v "Medication preparation Type"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
-  fhir:date [ fhir:v "2024-05-06T21:25:42+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-09-06T15:59:56+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 Belgium"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 Belgium" ] ;
