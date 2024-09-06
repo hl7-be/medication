@@ -8,7 +8,7 @@ Characteristics: #can-be-target
 * identifier 1..* II "Business identifier(s) for the prescription"
 
 * basedOnMedicationLine 0..1 Reference (BEModelMedicationLine) "Link to the Medication Line from which this request is based"
-* patient 1..1 Reference "The person for whom the medication is prescribed/ordered" "Question: would we want to add basic Patient model?"
+* patient 1..1 Reference "The person for whom the medication is prescribed/ordered" // "Question: would we want to add basic Patient model?"
 * status 1..1 CD "Status of the prescription, this should not be status of treatment"
 //* statusReason 0..* CD "Reason for the current status of prescription, for example the reason why the prescription was made invalid"
 //* statusReasonText 0..1 ST "Textual reason for the current status of prescription"
@@ -33,12 +33,15 @@ Characteristics: #can-be-target
 
 * note 0..* ST "Additional information or comments"
 
-* dispenseRequest 0..1 Class "Dispense Request oir authorization for the prescribed medication"
+* dispenseRequest 0..1 Class "Dispense Request or authorization for the prescribed medication"
   * dispenseInterval 0..1 Duration "Minimum period of time between dispenses"
   * quantityPerDispense 0..1 SimpleQuantity "Amount of medication to supply per dispense"
 
 
 * instructionsForReimbursement 0..1 CD "Instructions for reimbursement"
+* instructionsForReimbursement ^binding.strength = #extensible
+* instructionsForReimbursement ^binding.description = "Instructions for reimbursement"
+* instructionsForReimbursement ^binding.valueSet = MedicationRequestReimbursementTypeVS
 
 * groupIdentifier 0..1 II "Identifier for the group that this prescription belongs to. This might be the common identifier in use cases where one national prescription contains several medication items, which can be handled as separate orders"
 * recordingDate 0..1 DT "Time of authoring the prescription/draft in the information system"
