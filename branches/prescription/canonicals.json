@@ -7,6 +7,13 @@
     "name" : "MedicationLineOrigintype"
   },
   {
+    "id" : "medication-request-reimbursement-type",
+    "type" : "CodeSystem",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-request-reimbursement-type",
+    "version" : "1.1.0",
+    "name" : "MedicationRequestReimbursementType"
+  },
+  {
     "id" : "medication-type",
     "type" : "CodeSystem",
     "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
@@ -271,6 +278,13 @@
     "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/medication-line-origin-type-vs",
     "version" : "1.1.0",
     "name" : "MedicationLineOrigintypeVS"
+  },
+  {
+    "id" : "medication-request-reimbursement-type",
+    "type" : "ValueSet",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/medication-request-reimbursement-type",
+    "version" : "1.1.0",
+    "name" : "MedicationRequestReimbursementTypeVS"
   },
   {
     "id" : "medication-type-vs",

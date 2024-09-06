@@ -9,6 +9,14 @@
       "description" : "Medication treatment origin type - what is the type of care that originated the medication treatment"
     },
     {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-request-reimbursement-type",
+      "version" : "1.1.0",
+      "status" : "draft",
+      "name" : "MedicationRequestReimbursementType",
+      "title" : "Medication request reimbursement type",
+      "description" : "Medication request reimbursement type - instructions for reimbursement of the medication request"
+    },
+    {
       "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
       "version" : "1.1.0",
       "status" : "draft",

@@ -3,7 +3,7 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="hl7.fhir.be.medication"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide hl7.fhir.be.medication</b></p><a name="hl7.fhir.be.medication"> </a><a name="hchl7.fhir.be.medication"> </a><a name="hchl7.fhir.be.medication-en"> </a><h2>Medication</h2><p>The official URL for this implementation guide is: </p><pre>https://www.ehealth.fgov.be/standards/fhir/medication/ImplementationGuide/hl7.fhir.be.medication</pre><div><p>FHIR Medication specifications</p>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide hl7.fhir.be.medication</b></p><a name="hl7.fhir.be.medication"> </a><a name="hchl7.fhir.be.medication"> </a><a name="hl7.fhir.be.medication-en-US"> </a><h2>Medication</h2><p>The official URL for this implementation guide is: </p><pre>https://www.ehealth.fgov.be/standards/fhir/medication/ImplementationGuide/hl7.fhir.be.medication</pre><div><p>FHIR Medication specifications</p>
 </div></div>
   </text>
   <url value="https://www.ehealth.fgov.be/standards/fhir/medication/ImplementationGuide/hl7.fhir.be.medication"/>
@@ -49,7 +49,7 @@
     </extension>
     <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
     <packageId value="hl7.terminology.r4"/>
-    <version value="5.5.0"/>
+    <version value="6.0.2"/>
   </dependsOn>
   <dependsOn id="hl7ext">
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
@@ -274,7 +274,7 @@
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
-      <valueCode value="hl7.fhir.uv.tools#0.1.0"/>
+      <valueCode value="hl7.fhir.uv.tools#0.2.0"/>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
@@ -878,6 +878,28 @@
       </reference>
       <name value="Medication prescription - Data Model"/>
       <description value="Logical model for medication prescription (or some other form of order)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/medication-request-reimbursement-type"/>
+      </reference>
+      <name value="Medication request reimbursement type"/>
+      <description value="Medication request reimbursement type - instructions for reimbursement of the medication request"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/medication-request-reimbursement-type"/>
+      </reference>
+      <name value="Medication request reimbursement type ValueSet"/>
+      <description value="Medication request reimbursement type - instructions for reimbursement of the medication request"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

@@ -10,8 +10,8 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
-      "ValueSet-medication-exposure-category-vs.html" : "Medication exposure intent",
-      "http://hl7.org/fhir/R4/valueset-medication-codes.html" : "SNOMED CT Medication Codes"
+      "http://hl7.org/fhir/R4/valueset-medication-codes.html" : "SNOMED CT Medication Codes",
+      "ValueSet-medication-exposure-category-vs.html" : "Medication exposure intent"
     },
     {
       "url" : "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty",
@@ -34,6 +34,17 @@
       "uses" : {
       },
       "ValueSet-medication-line-origin-type-vs.html" : "Medication origin type ValueSet"
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-request-reimbursement-type",
+      "version" : "1.1.0",
+      "status" : "draft",
+      "name" : "MedicationRequestReimbursementType",
+      "title" : "Medication request reimbursement type",
+      "description" : "Medication request reimbursement type - instructions for reimbursement of the medication request",
+      "uses" : {
+      },
+      "ValueSet-medication-request-reimbursement-type.html" : "Medication request reimbursement type ValueSet"
     },
     {
       "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
