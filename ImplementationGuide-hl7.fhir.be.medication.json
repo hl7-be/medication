@@ -3,7 +3,7 @@
   "id" : "hl7.fhir.be.medication",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide hl7.fhir.be.medication</b></p><a name=\"hl7.fhir.be.medication\"> </a><a name=\"hchl7.fhir.be.medication\"> </a><a name=\"hchl7.fhir.be.medication-en\"> </a><h2>Medication</h2><p>The official URL for this implementation guide is: </p><pre>https://www.ehealth.fgov.be/standards/fhir/medication/ImplementationGuide/hl7.fhir.be.medication</pre><div><p>FHIR Medication specifications</p>\n</div></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide hl7.fhir.be.medication</b></p><a name=\"hl7.fhir.be.medication\"> </a><a name=\"hchl7.fhir.be.medication\"> </a><a name=\"hl7.fhir.be.medication-en-US\"> </a><h2>Medication</h2><p>The official URL for this implementation guide is: </p><pre>https://www.ehealth.fgov.be/standards/fhir/medication/ImplementationGuide/hl7.fhir.be.medication</pre><div><p>FHIR Medication specifications</p>\n</div></div>"
   },
   "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/ImplementationGuide/hl7.fhir.be.medication",
   "version" : "1.1.0",
@@ -50,7 +50,7 @@
     }],
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r4",
-    "version" : "5.5.0"
+    "version" : "6.0.2"
   },
   {
     "id" : "hl7ext",
@@ -357,7 +357,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
-      "valueCode" : "hl7.fhir.uv.tools#0.1.0"
+      "valueCode" : "hl7.fhir.uv.tools#0.2.0"
     },
     {
       "extension" : [{
@@ -900,18 +900,6 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/DosagingInformation"
-      },
-      "name" : "Dosaging - Data Model",
-      "description" : "Usage instructions. Instructions about requested administration of the product. Based on FHIR Dosage complex data type.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:complex-type"
       }],
       "reference" : {
@@ -984,18 +972,6 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/be-model-medication"
-      },
-      "name" : "Medication - logical model",
-      "description" : "A logical data model of the medication.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
       }],
       "reference" : {
@@ -1063,18 +1039,6 @@
       },
       "name" : "Medication preparation Type value set",
       "description" : "Medication preparation type value set",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/be-model-medicationprescription"
-      },
-      "name" : "Medication prescription - Data Model",
-      "description" : "Logical model for medication prescription (or some other form of order)",
       "exampleBoolean" : false
     },
     {
@@ -1170,18 +1134,6 @@
       },
       "name" : "Untyped",
       "description" : "No data type defined",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/VisibilityFlag"
-      },
-      "name" : "VisibilityFlag",
-      "description" : "Visibility Flag.",
       "exampleBoolean" : false
     }],
     "page" : {
