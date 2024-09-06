@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="fd2d30c2-e6e9-4f32-b37f-68bac9858d68"/>
+  <id value="6844a584-80ed-41cb-8684-f3147c4dc459"/>
   <meta>
-    <lastUpdated value="2024-09-06T15:59:56.271+00:00"/>
+    <lastUpdated value="2024-09-06T16:05:52.930+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -97,7 +97,7 @@
         <title value="Dispenser Types"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2024-09-06T15:59:56+00:00"/>
+        <date value="2024-09-06T16:05:52+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -106,8 +106,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:87b999a3-b670-4ed7-9e64-7351d4a6d418"/>
-          <timestamp value="2024-09-06T16:00:59+00:00"/>
+          <identifier value="urn:uuid:9dd0b898-50a5-4afa-b19a-713ee00fa9e5"/>
+          <timestamp value="2024-09-06T16:06:55+00:00"/>
           <total value="7"/>
           <offset value="0"/>
           <parameter>
@@ -214,7 +214,7 @@
         <title value="Medication exposure intent"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2024-09-06T15:59:56+00:00"/>
+        <date value="2024-09-06T16:05:52+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -223,8 +223,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:5e9a14bb-cb64-49c2-b15f-2a4c17136f0f"/>
-          <timestamp value="2024-09-06T16:00:59+00:00"/>
+          <identifier value="urn:uuid:d9f36e5d-d3cc-4782-a145-e99468c7435c"/>
+          <timestamp value="2024-09-06T16:06:55+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -316,7 +316,7 @@
         <title value="Medication origin type ValueSet"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2024-09-06T15:59:56+00:00"/>
+        <date value="2024-09-06T16:05:52+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -325,8 +325,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:e74ecf53-afd5-4775-8bbc-739bda1802a3"/>
-          <timestamp value="2024-09-06T16:00:59+00:00"/>
+          <identifier value="urn:uuid:1db22aa1-33bc-40af-b057-3be513fdf96b"/>
+          <timestamp value="2024-09-06T16:06:55+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -354,6 +354,191 @@
             <system value="https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-line-origin-type"/>
             <code value="hospital"/>
             <display value="Hospital"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/medication-request-reimbursement-type"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>Generated Narrative: ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-medication-request-reimbursement-type.html">codesystem Medication request reimbursement type v1.1.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 9 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-request-reimbursement-type-third-party-payer-applicable"> </a>  
+                  <a href="CodeSystem-medication-request-reimbursement-type.html#medication-request-reimbursement-type-third-party-payer-applicable">third-party-payer-applicable</a>
+                </td>
+                <td>https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-request-reimbursement-type</td>
+                <td>Third-party payer applicable</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-request-reimbursement-type-first-dose"> </a>  
+                  <a href="CodeSystem-medication-request-reimbursement-type.html#medication-request-reimbursement-type-first-dose">first-dose</a>
+                </td>
+                <td>https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-request-reimbursement-type</td>
+                <td>First dose</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-request-reimbursement-type-second-dose"> </a>  
+                  <a href="CodeSystem-medication-request-reimbursement-type.html#medication-request-reimbursement-type-second-dose">second-dose</a>
+                </td>
+                <td>https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-request-reimbursement-type</td>
+                <td>Second dose + [date of the first dose]</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-request-reimbursement-type-third-dose"> </a>  
+                  <a href="CodeSystem-medication-request-reimbursement-type.html#medication-request-reimbursement-type-third-dose">third-dose</a>
+                </td>
+                <td>https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-request-reimbursement-type</td>
+                <td>Third dose + [date of the first and second dose]</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-request-reimbursement-type-chronic-renal-failure-pathway"> </a>  
+                  <a href="CodeSystem-medication-request-reimbursement-type.html#medication-request-reimbursement-type-chronic-renal-failure-pathway">chronic-renal-failure-pathway</a>
+                </td>
+                <td>https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-request-reimbursement-type</td>
+                <td>Care pathway chronic renal failure</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-request-reimbursement-type-diabetes-care-pathway"> </a>  
+                  <a href="CodeSystem-medication-request-reimbursement-type.html#medication-request-reimbursement-type-diabetes-care-pathway">diabetes-care-pathway</a>
+                </td>
+                <td>https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-request-reimbursement-type</td>
+                <td>Care pathway diabetes</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-request-reimbursement-type-diabetes-convention"> </a>  
+                  <a href="CodeSystem-medication-request-reimbursement-type.html#medication-request-reimbursement-type-diabetes-convention">diabetes-convention</a>
+                </td>
+                <td>https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-request-reimbursement-type</td>
+                <td>Diabetes convention</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-request-reimbursement-type-non-reimbursable"> </a>  
+                  <a href="CodeSystem-medication-request-reimbursement-type.html#medication-request-reimbursement-type-non-reimbursable">non-reimbursable</a>
+                </td>
+                <td>https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-request-reimbursement-type</td>
+                <td>Non-reimbursable</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-request-reimbursement-type-startup-pathway-type-2-diabetes"> </a>  
+                  <a href="CodeSystem-medication-request-reimbursement-type.html#medication-request-reimbursement-type-startup-pathway-type-2-diabetes">startup-pathway-type-2-diabetes</a>
+                </td>
+                <td>https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-request-reimbursement-type</td>
+                <td>Start-up pathway type 2 diabetes</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/medication-request-reimbursement-type"/>
+        <version value="1.1.0"/>
+        <name value="MedicationRequestReimbursementTypeVS"/>
+        <title value="Medication request reimbursement type ValueSet"/>
+        <status value="draft"/>
+        <experimental value="false"/>
+        <date value="2024-09-06T16:05:52+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="BE"/>
+            <display value="Belgium"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:3e9b7373-3dba-4bf4-9772-0498dd246fd6"/>
+          <timestamp value="2024-09-06T16:06:55+00:00"/>
+          <total value="9"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-request-reimbursement-type|1.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-request-reimbursement-type"/>
+            <code value="third-party-payer-applicable"/>
+            <display value="Third-party payer applicable"/>
+          </contains>
+          <contains>
+            <system value="https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-request-reimbursement-type"/>
+            <code value="first-dose"/>
+            <display value="First dose"/>
+          </contains>
+          <contains>
+            <system value="https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-request-reimbursement-type"/>
+            <code value="second-dose"/>
+            <display value="Second dose + [date of the first dose]"/>
+          </contains>
+          <contains>
+            <system value="https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-request-reimbursement-type"/>
+            <code value="third-dose"/>
+            <display value="Third dose + [date of the first and second dose]"/>
+          </contains>
+          <contains>
+            <system value="https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-request-reimbursement-type"/>
+            <code value="chronic-renal-failure-pathway"/>
+            <display value="Care pathway chronic renal failure"/>
+          </contains>
+          <contains>
+            <system value="https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-request-reimbursement-type"/>
+            <code value="diabetes-care-pathway"/>
+            <display value="Care pathway diabetes"/>
+          </contains>
+          <contains>
+            <system value="https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-request-reimbursement-type"/>
+            <code value="diabetes-convention"/>
+            <display value="Diabetes convention"/>
+          </contains>
+          <contains>
+            <system value="https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-request-reimbursement-type"/>
+            <code value="non-reimbursable"/>
+            <display value="Non-reimbursable"/>
+          </contains>
+          <contains>
+            <system value="https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-request-reimbursement-type"/>
+            <code value="startup-pathway-type-2-diabetes"/>
+            <display value="Start-up pathway type 2 diabetes"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -426,7 +611,7 @@
         <title value="Medication preparation Type value set"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2024-09-06T15:59:56+00:00"/>
+        <date value="2024-09-06T16:05:52+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -435,8 +620,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:3873b15c-a5bb-46b0-8fc2-b9a1cfeaf8d0"/>
-          <timestamp value="2024-09-06T16:00:59+00:00"/>
+          <identifier value="urn:uuid:d5efc911-7dfb-4b9d-aee8-371ad8e16ea6"/>
+          <timestamp value="2024-09-06T16:06:55+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>

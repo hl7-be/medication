@@ -34,6 +34,10 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Indication of whether a dispense request is needed for delivering the medication","Dispense Request Needed - category.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"MedicationStatement.extension:visibility-flag","MedicationStatement.extension","visibility-flag","","",0,1,"Y","","","Extension {[CanonicalType[https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/VisibilityFlag]]} {[]}
+","Coded preference or assertion about the visibility of the medication line","Visibility Flag.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "MedicationStatement.extension:artifact-version","MedicationStatement.extension","artifact-version","","",1,1,"Y","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/artifact-version]]} {[]}
 ","The business version of the medication line - this version changes when the content update is considered clinically relevant","The identifier that is used to identify this version of the artifact when it is referenced in a specification, model, design or instance. This is an arbitrary value managed by the artifact author and is not expected to be globally unique. For example, it might be a timestamp (e.g. yyyymmdd) if a managed version is not available. There is also no expectation that versions can be placed in a lexicographical sequence.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"

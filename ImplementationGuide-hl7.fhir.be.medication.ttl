@@ -820,6 +820,18 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:logical" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/DosagingInformation> ;
+         fhir:reference [ fhir:v "StructureDefinition/DosagingInformation" ]
+       ] ;
+       fhir:name [ fhir:v "Dosaging - Data Model" ] ;
+       fhir:description [ fhir:v "Usage instructions. Instructions about requested administration of the product. Based on FHIR Dosage complex data type." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "StructureDefinition:complex-type" ]
        ] ) ;
        fhir:reference [
@@ -892,6 +904,18 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:logical" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-model-medication> ;
+         fhir:reference [ fhir:v "StructureDefinition/be-model-medication" ]
+       ] ;
+       fhir:name [ fhir:v "Medication - logical model" ] ;
+       fhir:description [ fhir:v "A logical data model of the medication." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
@@ -960,6 +984,42 @@
        ] ;
        fhir:name [ fhir:v "Medication preparation Type value set" ] ;
        fhir:description [ fhir:v "Medication preparation type value set" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:logical" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-model-medicationprescription> ;
+         fhir:reference [ fhir:v "StructureDefinition/be-model-medicationprescription" ]
+       ] ;
+       fhir:name [ fhir:v "Medication prescription - Data Model" ] ;
+       fhir:description [ fhir:v "Logical model for medication prescription (or some other form of order)" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-request-reimbursement-type> ;
+         fhir:reference [ fhir:v "CodeSystem/medication-request-reimbursement-type" ]
+       ] ;
+       fhir:name [ fhir:v "Medication request reimbursement type" ] ;
+       fhir:description [ fhir:v "Medication request reimbursement type - instructions for reimbursement of the medication request" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/medication-request-reimbursement-type> ;
+         fhir:reference [ fhir:v "ValueSet/medication-request-reimbursement-type" ]
+       ] ;
+       fhir:name [ fhir:v "Medication request reimbursement type ValueSet" ] ;
+       fhir:description [ fhir:v "Medication request reimbursement type - instructions for reimbursement of the medication request" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1058,6 +1118,18 @@
        ] ;
        fhir:name [ fhir:v "Untyped" ] ;
        fhir:description [ fhir:v "No data type defined" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/VisibilityFlag> ;
+         fhir:reference [ fhir:v "StructureDefinition/VisibilityFlag" ]
+       ] ;
+       fhir:name [ fhir:v "VisibilityFlag" ] ;
+       fhir:description [ fhir:v "Visibility Flag." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] ) ;
      fhir:page [
