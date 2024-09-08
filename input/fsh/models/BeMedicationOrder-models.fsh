@@ -10,6 +10,7 @@ Characteristics: #can-be-target
 * basedOnMedicationLine 0..1 Reference (BEModelMedicationLine) "Link to the Medication Line from which this request is based"
 * patient 1..1 Reference "The person for whom the medication is prescribed/ordered" // "Question: would we want to add basic Patient model?"
 * status 1..1 CD "Status of the prescription, this should not be status of treatment"
+* priority 0..1 code "Indication of the urgency of the prescription."
 //* statusReason 0..* CD "Reason for the current status of prescription, for example the reason why the prescription was made invalid"
 //* statusReasonText 0..1 ST "Textual reason for the current status of prescription"
 * medication 1..1 Reference (BeModelMedication) "Prescribed product, branded, generic, virtual, extemporaneous, etc"

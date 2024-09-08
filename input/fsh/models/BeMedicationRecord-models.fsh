@@ -20,8 +20,6 @@ Characteristics: #can-be-target
 * statusReason 0..1 CodeableConcept "Reason for the status" 
   * ^comment = " We consider this is not necessary - should we add?"
 
-* priority 0..1 code "Indication of the urgency of the prescription."
-
 //* recordedDate 0..1 dateTime "Date the medication line was recorded or last updated"
 //  * ^comment = " We consider this is not necessary"
 
