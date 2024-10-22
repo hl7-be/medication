@@ -93,5 +93,5 @@ Context: MedicationStatement.dosage
 Extension: DosageOverrideReason
 Description: "Dispense Request Needed - category."
 Context: MedicationStatement.dosage
-* value[x] only CodeableConcept
+* value[x] only CodeableConcept or string
 
