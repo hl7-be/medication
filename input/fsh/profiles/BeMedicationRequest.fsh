@@ -19,12 +19,12 @@ Description: "Medication Request profile - The common structure for medication r
 * groupIdentifier MS
 
 * extension contains
-BasedOnMedicationLine named basedOn 0..1 MS and
+BasedOnMedicationLine named basedOnMedicationLine 0..1 MS and
 OrganizationOfRequester named organization 0..1 MS and
 InstructionsForReimbursement named instructionsForReimbursement 0..1 MS and
 http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationRequest.statusChanged named statusChanged 0..1
 
-* extension[basedOn] ^short = "Medication Line where this prescription is based upon"
+* extension[basedOnMedicationLine] ^short = "Medication Line where this prescription is based upon"
 * extension[organization] ^short = "The organization where the requester is operating, e.g. an hospital"
 * extension[instructionsForReimbursement] ^short = "Instructions for reimbursement"
 * extension[statusChanged] ^short = "Indicates when the status of the medication request was last changed."
