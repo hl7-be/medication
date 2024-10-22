@@ -63,8 +63,9 @@ For the full definition see here: [http://hl7.org/fhir/R5/medicationrequest-defi
 * dispenseRequest.numberOfRepeatsAllowed MS
 
 * note MS
-* substitution 1..1 MS
+* substitution MS
 * substitution.allowed[x] MS
+* substitution.allowed[x] only boolean
 * substitution.reason MS
 
 Extension: OrganizationOfRequester
