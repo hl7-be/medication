@@ -10,12 +10,12 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-medication-codes.html" : "SNOMED CT Medication Codes",
-      "ValueSet-medication-exposure-category-vs.html" : "Medication exposure intent"
+      "ValueSet-medication-exposure-category-vs.html" : "Medication exposure intent",
+      "http://hl7.org/fhir/R4/valueset-medication-codes.html" : "SNOMED CT Medication Codes"
     },
     {
       "url" : "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty",
-      "version" : "2.0.1",
+      "version" : "2.1.2",
       "status" : "active",
       "name" : "HCParty",
       "title" : "BeCdHcParty",

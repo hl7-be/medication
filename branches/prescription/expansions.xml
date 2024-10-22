@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="6844a584-80ed-41cb-8684-f3147c4dc459"/>
+  <id value="2abeac5e-7eb7-474b-ba23-7f0a47c9e7f3"/>
   <meta>
-    <lastUpdated value="2024-09-06T16:05:52.930+00:00"/>
+    <lastUpdated value="2024-10-22T10:07:22.141+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -17,7 +17,7 @@
               <b>Generated Narrative: ValueSet </b>
             </p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="https://www.ehealth.fgov.be/standards/fhir/core/2.0.1/CodeSystem-cd-hcparty.html">codesystem BeCdHcParty v2.0.1 (CodeSystem)</a>
+              <a href="https://www.ehealth.fgov.be/standards/fhir/core/2.1.2/CodeSystem-cd-hcparty.html">codesystem BeCdHcParty v2.1.2 (CodeSystem)</a>
             </p>
             <p>This value set contains 7 concepts</p>
             <table class="codes">
@@ -35,15 +35,15 @@
               <tr>
                 <td style="white-space:nowrap">
                   <a name="x-https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty-deptpharmacy"> </a>  
-                  <a href="https://www.ehealth.fgov.be/standards/fhir/core/2.0.1/CodeSystem-cd-hcparty.html#cd-hcparty-deptpharmacy">deptpharmacy</a>
+                  <a href="https://www.ehealth.fgov.be/standards/fhir/core/2.1.2/CodeSystem-cd-hcparty.html#cd-hcparty-deptpharmacy">deptpharmacy</a>
                 </td>
                 <td>https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty</td>
-                <td>Pharmacy service or department within an organisation</td>
+                <td>pharmacy service or department within an organisation</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
                   <a name="x-https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty-perspharmacist"> </a>  
-                  <a href="https://www.ehealth.fgov.be/standards/fhir/core/2.0.1/CodeSystem-cd-hcparty.html#cd-hcparty-perspharmacist">perspharmacist</a>
+                  <a href="https://www.ehealth.fgov.be/standards/fhir/core/2.1.2/CodeSystem-cd-hcparty.html#cd-hcparty-perspharmacist">perspharmacist</a>
                 </td>
                 <td>https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty</td>
                 <td>pharmacist</td>
@@ -51,15 +51,15 @@
               <tr>
                 <td style="white-space:nowrap">
                   <a name="x-https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty-orgpharmacy"> </a>  
-                  <a href="https://www.ehealth.fgov.be/standards/fhir/core/2.0.1/CodeSystem-cd-hcparty.html#cd-hcparty-orgpharmacy">orgpharmacy</a>
+                  <a href="https://www.ehealth.fgov.be/standards/fhir/core/2.1.2/CodeSystem-cd-hcparty.html#cd-hcparty-orgpharmacy">orgpharmacy</a>
                 </td>
                 <td>https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty</td>
-                <td>Independent pharmacy</td>
+                <td>independent pharmacy</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
                   <a name="x-https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty-perspharmacyassistant"> </a>  
-                  <a href="https://www.ehealth.fgov.be/standards/fhir/core/2.0.1/CodeSystem-cd-hcparty.html#cd-hcparty-perspharmacyassistant">perspharmacyassistant</a>
+                  <a href="https://www.ehealth.fgov.be/standards/fhir/core/2.1.2/CodeSystem-cd-hcparty.html#cd-hcparty-perspharmacyassistant">perspharmacyassistant</a>
                 </td>
                 <td>https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty</td>
                 <td>pharmacy assistant</td>
@@ -67,7 +67,7 @@
               <tr>
                 <td style="white-space:nowrap">
                   <a name="x-https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty-perspharmacistclinicalbiologist"> </a>  
-                  <a href="https://www.ehealth.fgov.be/standards/fhir/core/2.0.1/CodeSystem-cd-hcparty.html#cd-hcparty-perspharmacistclinicalbiologist">perspharmacistclinicalbiologist</a>
+                  <a href="https://www.ehealth.fgov.be/standards/fhir/core/2.1.2/CodeSystem-cd-hcparty.html#cd-hcparty-perspharmacistclinicalbiologist">perspharmacistclinicalbiologist</a>
                 </td>
                 <td>https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty</td>
                 <td>pharmacist-clinical biologist</td>
@@ -75,7 +75,7 @@
               <tr>
                 <td style="white-space:nowrap">
                   <a name="x-https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty-persdentist"> </a>  
-                  <a href="https://www.ehealth.fgov.be/standards/fhir/core/2.0.1/CodeSystem-cd-hcparty.html#cd-hcparty-persdentist">persdentist</a>
+                  <a href="https://www.ehealth.fgov.be/standards/fhir/core/2.1.2/CodeSystem-cd-hcparty.html#cd-hcparty-persdentist">persdentist</a>
                 </td>
                 <td>https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty</td>
                 <td>dentist</td>
@@ -83,7 +83,7 @@
               <tr>
                 <td style="white-space:nowrap">
                   <a name="x-https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty-deptdentistry"> </a>  
-                  <a href="https://www.ehealth.fgov.be/standards/fhir/core/2.0.1/CodeSystem-cd-hcparty.html#cd-hcparty-deptdentistry">deptdentistry</a>
+                  <a href="https://www.ehealth.fgov.be/standards/fhir/core/2.1.2/CodeSystem-cd-hcparty.html#cd-hcparty-deptdentistry">deptdentistry</a>
                 </td>
                 <td>https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty</td>
                 <td>dentistry</td>
@@ -97,7 +97,7 @@
         <title value="Dispenser Types"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2024-09-06T16:05:52+00:00"/>
+        <date value="2024-10-22T10:07:22+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -106,8 +106,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:9dd0b898-50a5-4afa-b19a-713ee00fa9e5"/>
-          <timestamp value="2024-09-06T16:06:55+00:00"/>
+          <identifier value="urn:uuid:04522151-204d-497e-b6c0-675ee77478e3"/>
+          <timestamp value="2024-10-22T10:08:18+00:00"/>
           <total value="7"/>
           <offset value="0"/>
           <parameter>
@@ -124,12 +124,12 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty|2.0.1"/>
+            <valueUri value="https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty|2.1.2"/>
           </parameter>
           <contains>
             <system value="https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty"/>
             <code value="deptpharmacy"/>
-            <display value="Pharmacy service or department within an organisation"/>
+            <display value="pharmacy service or department within an organisation"/>
           </contains>
           <contains>
             <system value="https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty"/>
@@ -139,7 +139,7 @@
           <contains>
             <system value="https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty"/>
             <code value="orgpharmacy"/>
-            <display value="Independent pharmacy"/>
+            <display value="independent pharmacy"/>
           </contains>
           <contains>
             <system value="https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty"/>
@@ -175,7 +175,7 @@
             <p class="res-header-id">
               <b>Generated Narrative: ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 01-Feb 2024</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 01-Aug 2024</p>
             <p>This value set contains 2 concepts</p>
             <table class="codes">
               <tr>
@@ -214,7 +214,7 @@
         <title value="Medication exposure intent"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2024-09-06T16:05:52+00:00"/>
+        <date value="2024-10-22T10:07:22+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -223,8 +223,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:d9f36e5d-d3cc-4782-a145-e99468c7435c"/>
-          <timestamp value="2024-09-06T16:06:55+00:00"/>
+          <identifier value="urn:uuid:a1de8094-659a-4497-8ee6-52718f1bd922"/>
+          <timestamp value="2024-10-22T10:08:18+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -245,11 +245,11 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240201"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"/>
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240201"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"/>
           </parameter>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -316,7 +316,7 @@
         <title value="Medication origin type ValueSet"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2024-09-06T16:05:52+00:00"/>
+        <date value="2024-10-22T10:07:22+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -325,8 +325,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:1db22aa1-33bc-40af-b057-3be513fdf96b"/>
-          <timestamp value="2024-09-06T16:06:55+00:00"/>
+          <identifier value="urn:uuid:0661ade4-bd69-4de7-92d6-6561d16b698b"/>
+          <timestamp value="2024-10-22T10:08:19+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -466,7 +466,7 @@
         <title value="Medication request reimbursement type ValueSet"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2024-09-06T16:05:52+00:00"/>
+        <date value="2024-10-22T10:07:22+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -475,8 +475,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:3e9b7373-3dba-4bf4-9772-0498dd246fd6"/>
-          <timestamp value="2024-09-06T16:06:55+00:00"/>
+          <identifier value="urn:uuid:4fa5d962-609c-4992-8c6d-3b970d08dc10"/>
+          <timestamp value="2024-10-22T10:08:19+00:00"/>
           <total value="9"/>
           <offset value="0"/>
           <parameter>
@@ -611,7 +611,7 @@
         <title value="Medication preparation Type value set"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2024-09-06T16:05:52+00:00"/>
+        <date value="2024-10-22T10:07:22+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -620,8 +620,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:d5efc911-7dfb-4b9d-aee8-371ad8e16ea6"/>
-          <timestamp value="2024-09-06T16:06:55+00:00"/>
+          <identifier value="urn:uuid:e6be5e63-bb84-497f-86c3-8eed74f2e03b"/>
+          <timestamp value="2024-10-22T10:08:19+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>

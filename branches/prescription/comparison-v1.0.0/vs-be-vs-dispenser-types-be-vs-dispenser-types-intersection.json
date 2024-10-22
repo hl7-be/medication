@@ -1,11 +1,11 @@
 {
   "resourceType" : "ValueSet",
-  "id" : "cde19c13-bce5-4428-a0ac-3cad3a084dd9-18",
-  "url" : "http://hl7.org/fhir/comparison/ValueSet/cde19c13-bce5-4428-a0ac-3cad3a084dd9-18",
+  "id" : "f46f6d38-49e6-43f6-baea-afc28624cb06-18",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/f46f6d38-49e6-43f6-baea-afc28624cb06-18",
   "name" : "IntersectionDispenserTypesAndDispenserTypes",
   "title" : "Intersection of Dispenser Types And Dispenser Types",
   "status" : "active",
-  "date" : "2024-09-06T16:06:28+00:00",
+  "date" : "2024-10-22T10:07:52+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

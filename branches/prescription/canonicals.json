@@ -91,6 +91,13 @@
     "name" : "BL"
   },
   {
+    "id" : "BasedOnMedicationLine",
+    "type" : "StructureDefinition",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BasedOnMedicationLine",
+    "version" : "1.1.0",
+    "name" : "BasedOnMedicationLine"
+  },
+  {
     "id" : "CD",
     "type" : "StructureDefinition",
     "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/CD",
@@ -168,11 +175,25 @@
     "name" : "INT"
   },
   {
+    "id" : "InstructionsForReimbursement",
+    "type" : "StructureDefinition",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/InstructionsForReimbursement",
+    "version" : "1.1.0",
+    "name" : "InstructionsForReimbursement"
+  },
+  {
     "id" : "KMEHRMS",
     "type" : "StructureDefinition",
     "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/KMEHRMS",
     "version" : "1.1.0",
     "name" : "KMEHRMS"
+  },
+  {
+    "id" : "OrganizationOfRequester",
+    "type" : "StructureDefinition",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/OrganizationOfRequester",
+    "version" : "1.1.0",
+    "name" : "OrganizationOfRequester"
   },
   {
     "id" : "PQ",
@@ -222,6 +243,13 @@
     "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/VisibilityFlag",
     "version" : "1.1.0",
     "name" : "VisibilityFlag"
+  },
+  {
+    "id" : "be-medication-request",
+    "type" : "StructureDefinition",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medication-request",
+    "version" : "1.1.0",
+    "name" : "BeMedicationRequest"
   },
   {
     "id" : "be-medicationdispense",
