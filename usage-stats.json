@@ -5,6 +5,13 @@
   "jurisdiction": "BE",
   "extensions": [
     {
+      "url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BasedOnMedicationLine",
+      "title": "BasedOnMedicationLine",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
       "url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/DispenseRequestNeededCategory",
       "title": "DispenseRequestNeededCategory",
       "types": [
@@ -33,6 +40,20 @@
       ]
     },
     {
+      "url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/InstructionsForReimbursement",
+      "title": "InstructionsForReimbursement",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/OrganizationOfRequester",
+      "title": "OrganizationOfRequester",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
       "url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/VisibilityFlag",
       "title": "VisibilityFlag",
       "types": [
@@ -47,6 +68,12 @@
         "title": "BEMedicationLine"
       }
     ],
+    "MedicationRequest": [
+      {
+        "url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medication-request",
+        "title": "BeMedicationRequest"
+      }
+    ],
     "MedicationDispense": [
       {
         "url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationdispense",
@@ -55,6 +82,9 @@
     ]
   },
   "usage": {
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationRequest.statusChanged": [
+      "MedicationRequest"
+    ],
     "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence": [
       "MedicationStatement"
     ],
@@ -122,17 +152,28 @@
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
     ],
+    "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BasedOnMedicationLine": [
+      "MedicationRequest"
+    ],
     "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/DispenseRequestNeededCategory": [
       "MedicationStatement"
     ],
     "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/DosageOverride": [
+      "MedicationRequest.dosageInstruction",
       "MedicationStatement.dosage"
     ],
     "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/DosageOverrideReason": [
+      "MedicationRequest.dosageInstruction",
       "MedicationStatement.dosage"
     ],
     "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/ExposureCategory": [
       "MedicationStatement"
+    ],
+    "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/InstructionsForReimbursement": [
+      "MedicationRequest"
+    ],
+    "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/OrganizationOfRequester": [
+      "MedicationRequest"
     ],
     "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/VisibilityFlag": [
       "MedicationStatement"

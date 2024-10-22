@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "cde19c13-bce5-4428-a0ac-3cad3a084dd9-5",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/cde19c13-bce5-4428-a0ac-3cad3a084dd9-5",
+  "id" : "f46f6d38-49e6-43f6-baea-afc28624cb06-5",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/f46f6d38-49e6-43f6-baea-afc28624cb06-5",
   "name" : "UnionBePatientAndBePatient",
   "title" : "Union of Patient core BE profile And BePatient",
   "status" : "active",
-  "date" : "2024-09-06T16:06:28+00:00",
+  "date" : "2024-10-22T10:07:52+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -111,6 +111,13 @@
         "extension" : [{
           "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
           "valueUrl" : "string"
+        }],
+        "code" : "http://hl7.org/fhirpath/System.String"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
+          "valueUrl" : "id"
         }],
         "code" : "http://hl7.org/fhirpath/System.String"
       }],
@@ -489,9 +496,9 @@
       "path" : "Patient.gender",
       "short" : "male | female | other | unknown",
       "definition" : "Administrative Gender - the gender that the patient is considered to have for administration and record keeping purposes.",
-      "comment" : "The gender might not match the biological sex as determined by genetics or the individual's preferred identification. Note that for both humans and particularly animals, there are other legitimate possibilities than male and female, though the vast majority of systems and contexts only support male and female.  Systems providing decision support or enforcing business rules should ideally do this on the basis of Observations dealing with the specific sex or gender aspect of interest (anatomical, chromosomal, social, etc.)  However, because these observations are infrequently recorded, defaulting to the administrative gender is common practice.  Where such defaulting occurs, rule enforcement should allow for the variation between administrative and biological, chromosomal and other gender aspects.  For example, an alert about a hysterectomy on a male should be handled as a warning or overridable error, not a \"hard\" error.  See the Patient Gender and Sex section for additional information about communicating patient gender and sex.\n\nSpecial remarks for KMEHR users: \n\nPlease note gender in KMEHR is typically expressed using CD-SEX. The two values that do not map directly to the HL7 dataset are 'undefined' (use 'other') and 'changed' (use the actual gender)",
+      "comment" : "left: The gender might not match the biological sex as determined by genetics or the individual's preferred identification. Note that for both humans and particularly animals, there are other legitimate possibilities than male and female, though the vast majority of systems and contexts only support male and female.  Systems providing decision support or enforcing business rules should ideally do this on the basis of Observations dealing with the specific sex or gender aspect of interest (anatomical, chromosomal, social, etc.)  However, because these observations are infrequently recorded, defaulting to the administrative gender is common practice.  Where such defaulting occurs, rule enforcement should allow for the variation between administrative and biological, chromosomal and other gender aspects.  For example, an alert about a hysterectomy on a male should be handled as a warning or overridable error, not a \"hard\" error.  See the Patient Gender and Sex section for additional information about communicating patient gender and sex.\n\nSpecial remarks for KMEHR users: \n\nPlease note gender in KMEHR is typically expressed using CD-SEX. The two values that do not map directly to the HL7 dataset are 'undefined' (use 'other') and 'changed' (use the actual gender); right: This is primarily the administrative gender. The gender might not match the biological sex as determined by genetics or the individual's preferred identification. Note that for both humans and particularly animals, there are other legitimate possibilities than male and female, though the vast majority of systems and contexts only support male and female.  Systems providing decision support or enforcing business rules should ideally do this on the basis of Observations dealing with the specific sex or gender aspect of interest (anatomical, chromosomal, social, etc.)  However, because these observations are infrequently recorded, defaulting to the administrative gender is common practice.  Where such defaulting occurs, rule enforcement should allow for the variation between administrative and biological, chromosomal and other gender aspects.  For example, an alert about a hysterectomy on a male should be handled as a warning or overridable error, not a \"hard\" error.  See the Patient Gender and Sex section for additional information about communicating patient gender and sex.\n\nSpecial remarks for KMEHR users: \n\nPlease note gender in KMEHR is typically expressed using CD-SEX. The two values that do not map directly to the HL7 dataset are 'undefined' (use 'other') and 'changed' (use the actual gender)",
       "requirements" : "Needed for identification of the individual, in combination with (at least) name and birth date.",
-      "min" : 1,
+      "min" : 0,
       "max" : "1",
       "type" : [{
         "code" : "code"

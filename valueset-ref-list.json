@@ -58,7 +58,10 @@
       "description" : "Medication request reimbursement type - instructions for reimbursement of the medication request",
       "systems" : [
         "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-request-reimbursement-type"
-      ]
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-InstructionsForReimbursement.html" : "InstructionsForReimbursement"
     },
     {
       "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/medication-type-vs",

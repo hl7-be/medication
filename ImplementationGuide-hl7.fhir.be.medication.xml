@@ -62,7 +62,7 @@
   <dependsOn id="hl7_fhir_be_core">
     <uri value="https://www.ehealth.fgov.be/standards/fhir/core/ImplementationGuide/hl7.fhir.be.core"/>
     <packageId value="hl7.fhir.be.core"/>
-    <version value="2.0.1"/>
+    <version value="2.1.2"/>
   </dependsOn>
   <definition>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -530,6 +530,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/BasedOnMedicationLine"/>
+      </reference>
+      <name value="BasedOnMedicationLine"/>
+      <description value="Based on medication line."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="NamingSystem"/>
       </extension>
       <reference>
@@ -592,6 +603,17 @@
       </reference>
       <name value="BEMedicationLine"/>
       <description value="Medication Line profile - contains the overview information for a single medication item"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/be-medication-request"/>
+      </reference>
+      <name value="BeMedicationRequest"/>
+      <description value="Medication Request profile - The common structure for medication request"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -772,6 +794,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/InstructionsForReimbursement"/>
+      </reference>
+      <name value="InstructionsForReimbursement"/>
+      <description value="Instructions for Reimbursement."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:complex-type"/>
       </extension>
       <reference>
@@ -921,6 +954,17 @@
       </reference>
       <name value="Medicinal Product"/>
       <description value="A logical data model for representing a medicinal product."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/OrganizationOfRequester"/>
+      </reference>
+      <name value="OrganizationOfRequester"/>
+      <description value="The organization where the requester is operating, e.g. an hospital"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

@@ -78,7 +78,7 @@
        fhir:link <https://www.ehealth.fgov.be/standards/fhir/core/ImplementationGuide/hl7.fhir.be.core>
      ] ;
      fhir:packageId [ fhir:v "hl7.fhir.be.core" ] ;
-     fhir:version [ fhir:v "2.0.1" ]
+     fhir:version [ fhir:v "2.1.2" ]
   ] ) ; # 
   fhir:definition [
      fhir:extension ( [
@@ -607,6 +607,18 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BasedOnMedicationLine> ;
+         fhir:reference [ fhir:v "StructureDefinition/BasedOnMedicationLine" ]
+       ] ;
+       fhir:name [ fhir:v "BasedOnMedicationLine" ] ;
+       fhir:description [ fhir:v "Based on medication line." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "NamingSystem" ]
        ] ) ;
        fhir:reference [
@@ -675,6 +687,18 @@
        ] ;
        fhir:name [ fhir:v "BEMedicationLine" ] ;
        fhir:description [ fhir:v "Medication Line profile - contains the overview information for a single medication item" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medication-request> ;
+         fhir:reference [ fhir:v "StructureDefinition/be-medication-request" ]
+       ] ;
+       fhir:name [ fhir:v "BeMedicationRequest" ] ;
+       fhir:description [ fhir:v "Medication Request profile - The common structure for medication request" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -880,6 +904,18 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/InstructionsForReimbursement> ;
+         fhir:reference [ fhir:v "StructureDefinition/InstructionsForReimbursement" ]
+       ] ;
+       fhir:name [ fhir:v "InstructionsForReimbursement" ] ;
+       fhir:description [ fhir:v "Instructions for Reimbursement." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "StructureDefinition:complex-type" ]
        ] ) ;
        fhir:reference [
@@ -1046,6 +1082,18 @@
        ] ;
        fhir:name [ fhir:v "Medicinal Product" ] ;
        fhir:description [ fhir:v "A logical data model for representing a medicinal product." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/OrganizationOfRequester> ;
+         fhir:reference [ fhir:v "StructureDefinition/OrganizationOfRequester" ]
+       ] ;
+       fhir:name [ fhir:v "OrganizationOfRequester" ] ;
+       fhir:description [ fhir:v "The organization where the requester is operating, e.g. an hospital" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
