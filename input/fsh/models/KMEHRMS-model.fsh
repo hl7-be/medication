@@ -15,7 +15,7 @@ Description: "This model represents the Medication Schema KMEHR V5.8. It is show
       * cd 1..1 CD "The version of the KMEHR standard used"
         * ^comment = """
 * S-VALUE = CD-STANDARD 
-* value = always '20161201' " refering the eHealth XSD version
+* value = always '20161201' " referring the eHealth XSD version
 """
     * date 0..1 date "Date"
     * time 0..1 time "Time"

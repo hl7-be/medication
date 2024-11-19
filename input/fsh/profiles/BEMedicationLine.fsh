@@ -1,10 +1,11 @@
 Profile: BEMedicationLine
 Parent: MedicationStatement
+Id: be-medicationline
 Description: "Medication Line profile - contains the overview information for a single medication item"
 
 * identifier 1.. MS
 
-* identifier ^slicing.discriminator.type = #pattern
+* identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "system"
 * identifier ^slicing.rules = #open
 * identifier ^slicing.description = "Slice based on the identifier system"
@@ -18,8 +19,8 @@ Description: "Medication Line profile - contains the overview information for a 
 
 
 * extension contains 
-  ExposureCategory named exposure-category 0..1 MS and 
-  DispenseRequestNeededCategory named dispense-request-needed 0..1 MS and 
+  BeExtExposureCategory named exposure-category 0..1 MS and 
+  BeExtDispenseRequestNeededCategory named dispense-request-needed 0..1 MS and 
   //VisibilityFlag named visibility-flag 0..1 MS and 
   http://hl7.org/fhir/StructureDefinition/artifact-version named artifact-version 1..1 MS and
   http://hl7.org/fhir/StructureDefinition/artifact-date named artifact-date 0..1 MS and
@@ -45,14 +46,19 @@ For the full definition see here: [http://hl7.org/fhir/R5/medicationstatement-de
 * category ^short = "Type of medication usage"
 // why is this 0..1?
 * medication[x] MS
+* medicationCodeableConcept
+  * extension contains 
+    BeExtMedicationType named medication-type 1..1 MS
+
+
 
 * reasonCode MS
 * reasonReference MS
 * dosage MS
 * dosage
   * extension contains 
-    DosageOverride named dosage-override 0..1 MS and 
-    DosageOverrideReason named dosage-override-reason 0..1 MS
+    BeExtDosageOverride named dosage-override 0..1 MS and 
+    BeExtDosageOverrideReason named dosage-override-reason 0..1 MS
 
   * extension[dosage-override] ^short = "Indicates that the recommended dosage was overridden"
   * extension[dosage-override-reason] ^short = "The reason why the recommended dosage was overridden"
@@ -63,35 +69,4 @@ For the full definition see here: [http://hl7.org/fhir/R5/medicationstatement-de
 
 * subject only Reference (BePatient)
 * informationSource only Reference (BePatient or BePractitioner or BePractitionerRole or RelatedPerson or BeOrganization)
-
-
-
-Extension: ExposureCategory
-Description: "Exposure - category."
-Context: MedicationStatement
-* value[x] only CodeableConcept
-* value[x] from MedicationExposureCategoryVS (extensible)
-
-
-//Extension: VisibilityFlag
-//Description: "Visibility Flag."
-//Context: MedicationStatement
-//* value[x] only boolean
-
-
-Extension: DispenseRequestNeededCategory
-Description: "Dispense Request Needed - category."
-Context: MedicationStatement
-* value[x] only boolean
-
-Extension: DosageOverride
-Description: "Dispense override."
-Context: MedicationStatement.dosage
-* value[x] only boolean
-//* context = #MedicationStatement.dosage
-
-Extension: DosageOverrideReason
-Description: "Dispense Request Needed - category."
-Context: MedicationStatement.dosage
-* value[x] only CodeableConcept
 

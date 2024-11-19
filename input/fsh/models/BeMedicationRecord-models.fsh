@@ -42,7 +42,7 @@ Characteristics: #can-be-target
 // .medicationReference or medicationCodeableConcept      
   * type 1..1 CodeableConcept "Type of medication - magistral, medicinal product, non-medicinal product"
 // .medicationReference.resolve().classification or medicationCodeableConcept[]
-  * type from BEMLMedicationTypeVS (required)
+  * type from BEMedicationTypeVS (required)
 
 * exposure 0..1 CodeableConcept "Therapeutic, Prophylactic"
 * exposure from MedicationExposureCategoryVS
@@ -99,7 +99,7 @@ Characteristics: #can-be-target
 
 // TO DO:  dose form - which one? - e.g. solution for injection? or injection?
 
-CodeSystem: BEMLMedicationType
+CodeSystem: BEMedicationType
 Id:         medication-type
 Title:     "Medication preparation Type"
 Description: "Medication preparation type"
@@ -114,13 +114,13 @@ Description: "Medication preparation type"
 // TO DO: Do we need non-authorized products?
 
 
-ValueSet: BEMLMedicationTypeVS
+ValueSet: BEMedicationTypeVS
 Id:         medication-type-vs
 Title:     "Medication preparation Type value set"
 Description: "Medication preparation type value set"
 * ^status = #draft
 * ^experimental = false
-* codes from system BEMLMedicationType
+* codes from system BEMedicationType
 
 
 // CodeSystem: BEMLMExposureType
