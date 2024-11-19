@@ -5,7 +5,7 @@ Description: "Medication Dispense example"
 Title:    "Dispense entry Example - Community Pharmacy dispense, from prescription"
 * meta.profile[0] = "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationdispense"
 * language = #fr-BE
-* subject.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
+* subject.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin"
 * subject.identifier.value = "64110219106"
 * context.identifier.system = "https://www.gfd-dpp.be/fhir/reference/sguid"
 * context.identifier.type.coding.code = #sguid
@@ -27,18 +27,18 @@ Title:    "Dispense entry Example - Community Pharmacy dispense, from prescripti
 * medicationCodeableConcept.coding.display.extension[0].extension[1].valueString = "Topazolam tab 50x 1,0mg"
 
 
-* performer[0].actor.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi-practitioner"
+* performer[0].actor.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi-practitioner"
 * performer[0].actor.identifier.value = "6547432"
 * performer[0].actor.display = "Jan Janssen"
 
-* performer[1].actor.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi-organization"
+* performer[1].actor.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi-organization"
 * performer[1].actor.identifier.value = "27457532"
 * performer[1].actor.display = "Apotheek onder de toren"
 
 
 * authorizingPrescription.display = "Prescription 2014fd"
 * authorizingPrescription.identifier.value = "2d8dab92-5c38-4380-96a9-e461be2014fd"
-* authorizingPrescription.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/prescription-id"
+* authorizingPrescription.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/prescription-id"
 * quantity.value = 1
 * quantity.system = "https://www.gfd-dpp.be/fhir/reference/packaging"
 * quantity.code = #package
@@ -64,7 +64,7 @@ Usage: #example
 * extension[0].extension[1].url = "longitude"
 * extension[0].extension[1].valueDecimal = 3.319952
 */
-* identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi-organization"
+* identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi-organization"
 * identifier.value = "27457532"
 * type.coding.system = "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty"
 * type.coding.code = $hcparty#orgpharmacy
@@ -79,7 +79,7 @@ Title:    "Dispense entry Example - Community Pharmacy dispense, from prescripti
 * meta.profile[0] = "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationdispense"
 * contained[0] = apotheek-onder-de-toren
 * language = #nl-BE
-* subject.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
+* subject.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin"
 * subject.identifier.value = "64110219106"
 * context.identifier.system = "https://www.gfd-dpp.be/fhir/reference/sguid"
 * context.identifier.type.coding.code = #sguid
@@ -97,7 +97,7 @@ Title:    "Dispense entry Example - Community Pharmacy dispense, from prescripti
 * medicationCodeableConcept.coding.display.extension[0].extension[1].url = "content"
 * medicationCodeableConcept.coding.display.extension[0].extension[1].valueString = "Topazolam tab 50x 1,0mg"
 
-* performer[0].actor.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi-organization"
+* performer[0].actor.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi-organization"
 * performer[0].actor.identifier.value = "27457532"
 * performer[0].actor.display = "Apotheek onder de toren"
 * performer[0].actor.reference = "#apotheek-onder-de-toren"
@@ -154,10 +154,10 @@ Title: "A dispense from a hospital pharmacy"
 * medicationCodeableConcept.coding.display.extension[0].extension[1].url = "content"
 * medicationCodeableConcept.coding.display.extension[0].extension[1].valueString = "Crestor filmomh. tabl. 100x 10mg"
 
-* subject.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
+* subject.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin"
 * subject.identifier.value = "64110219106"
 
-* performer.actor.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi-organization"
+* performer.actor.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi-organization"
 * performer.actor.identifier.value = "123123123"
 
 
@@ -165,7 +165,7 @@ Title: "A dispense from a hospital pharmacy"
 //* context.identifier = ...
 * authorizingPrescription.display = "Prescription"
 * authorizingPrescription.identifier.value = "BEP1TSRY1XGE"
-* authorizingPrescription.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/prescription-id" //Recip-e ID
+* authorizingPrescription.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/prescription-id" //Recip-e ID
 //* type = 
 * quantity.value = 1 
 * quantity.unit = "package"
@@ -201,13 +201,13 @@ Usage: #example
 Description: "Medication Dispense example"
 Title:    "Dispense Example - Minimal amount of information"
 * meta.profile[0] = "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationdispense"
-* subject.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
+* subject.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin"
 * subject.identifier.value = "64110219106"
 * status = #completed
 * medicationCodeableConcept.coding.system = "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes"
 * medicationCodeableConcept.coding.code = #1439562
 * medicationCodeableConcept.coding.display = "Topazolam tab 50x 1,0mg"
-* performer[0].actor.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi-practitioner"
+* performer[0].actor.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi-practitioner"
 * performer[0].actor.identifier.value = "6547432"
 * performer[0].actor.display = "Jan Janssen"
 * whenHandedOver = "2020-03-10"
@@ -218,7 +218,7 @@ Title:    "Dispense Example - Minimal amount of information"
 // Description: "Medication Dispense example with ATC code"
 // Title:    "Dispense Example - Minimal amount of information"
 // * meta.profile[0] = "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationdispense"
-// * subject.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
+// * subject.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin"
 // * subject.identifier.value = "64110219106"
 // * status = #completed
 // * medicationCodeableConcept.coding[+].system = "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes"
@@ -226,7 +226,7 @@ Title:    "Dispense Example - Minimal amount of information"
 // //* medicationCodeableConcept.coding[+].system = "http://www.whocc.no/atc"
 // //* medicationCodeableConcept.coding[=].code = #N05BA12
 // * medicationCodeableConcept.coding.display = "Topazolam tab 50x 1,0mg"
-// * performer[0].actor.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi-practitioner"
+// * performer[0].actor.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi-practitioner"
 // * performer[0].actor.identifier.value = "6547432"
 // * performer[0].actor.display = "Jan Janssen"
 // * whenHandedOver = "2020-03-10"
@@ -240,7 +240,7 @@ Usage: #example
 * meta.profile = "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationdispense"
 * language = #fr-BE
 * subject.identifier
-  * system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
+  * system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin"
   * value = "64110219106"
 * context.identifier
   * system = "https://www.gfd-dpp.be/fhir/reference/sguid"
@@ -262,7 +262,7 @@ Usage: #example
       * valueString = "Topazolam tab 50x 1,0mg"
 * performer.actor
   * identifier
-    * system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi-organization"
+    * system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi-organization"
     * value = "27457532"
   * display = "Apotheek onder de toren"
 * authorizingPrescription.display = "Prescription"

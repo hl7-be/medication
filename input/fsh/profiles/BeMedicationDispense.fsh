@@ -6,7 +6,6 @@ Alias: $be-practitioner = https://www.ehealth.fgov.be/standards/fhir/core/Struct
 Profile:        BeMedicationDispense
 Parent:         MedicationDispense
 Id:             be-medicationdispense
-Title:          "BeMedicationDispense"
 Description: "Defines constraints and extensions on the Medication Dispense resource for a record of a dispensation in Belgium."
 * ^version = "0.2.0"
 * ^status = #active
@@ -71,7 +70,7 @@ Description: "Defines constraints and extensions on the Medication Dispense reso
 
 Invariant:  performer-nidhi
 Description: "When an organization is referred to by use of an identifier, the naming system SHOULD be NIHDI number"
-Expression: "actor.identifier.exists() implies (actor.identifier.system='https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi-organization' or  actor.identifier.system='https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi-practitioner'"
+Expression: "actor.identifier.exists() implies (actor.identifier.system='https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi-organization' or  actor.identifier.system='https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi-practitioner'"
 Severity:   #warning
 
 /*

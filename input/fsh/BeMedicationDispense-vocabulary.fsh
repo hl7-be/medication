@@ -27,7 +27,7 @@ Description: "Naming System - Prescription IDs"
 * kind = #identifier
 * description = "Naming System - Prescription IDs"
 * uniqueId[0].type = #uri
-* uniqueId[0].value = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/prescription-id"
+* uniqueId[0].value = "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/prescription-id"
 * uniqueId[0].preferred = true
 * jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#056
 
@@ -44,7 +44,7 @@ Description: "Naming System - Prescription IDs"
 * kind = #codesystem
 * description = "Naming System - Product Package Types"
 * uniqueId[0].type = #uri
-* uniqueId[0].value = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/product-package-type"
+* uniqueId[0].value = "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/product-package-type"
 * uniqueId[0].preferred = true
 * jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#056
 
