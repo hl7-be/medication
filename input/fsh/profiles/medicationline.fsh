@@ -73,10 +73,10 @@ Context: MedicationStatement
 * value[x] from MedicationExposureCategoryVS (extensible)
 
 
-Extension: VisibilityFlag
-Description: "Visibility Flag."
-Context: MedicationStatement
-* value[x] only boolean
+// Extension: VisibilityFlag
+// Description: "Visibility Flag."
+// Context: MedicationStatement
+// * value[x] only boolean
 
 
 Extension: DispenseRequestNeededCategory

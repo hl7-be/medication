@@ -78,7 +78,7 @@ Characteristics: #can-be-target
 // .note
 
 * dispenseRequestNeeded 0..* CodeableConcept "Whether the medication needs a prescription or request to be dispensed"
-* visibility 0..* CodeableConcept "Whether the patient has explicitly requested the medication line not to be seen - when other rules don't prevail"
+// * visibility 0..* CodeableConcept "Whether the patient has explicitly requested the medication line not to be seen - when other rules don't prevail"
 
 
 
