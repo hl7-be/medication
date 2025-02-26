@@ -74,4 +74,4 @@ Characteristics: #can-be-target
   * noSubstitutionReasonText 0..1 ST "Textual reason for the no-substitution requirement"
 * allowedSubstitutionType 0..* CD "Specific type of substitution that is allowed. Can be an explicit relaxation to normal jurisdictional substitution rules, especially in hospital context."
 
-
+* visibility 0..* CD "Whether the patient has explicitly requested the prescription not to be seen by prescriber/pharmacist."
