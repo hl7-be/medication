@@ -20,12 +20,10 @@ Description: "Medication Request profile - The common structure for medication r
 
 * extension contains
 BasedOnMedicationLine named basedOnMedicationLine 0..1 MS and
-OrganizationOfRequester named organization 0..1 MS and
 InstructionsForReimbursement named instructionsForReimbursement 0..1 MS and
 http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationRequest.statusChanged named statusChanged 0..1
 
 * extension[basedOnMedicationLine] ^short = "Medication Line where this prescription is based upon"
-* extension[organization] ^short = "The organization where the requester is operating, e.g. an hospital"
 * extension[instructionsForReimbursement] ^short = "Instructions for reimbursement"
 * extension[statusChanged] ^short = "Indicates when the status of the medication request was last changed."
 * extension[statusChanged] ^comment = """This is a FHIR R5 element, preadopted as an extension in this FHIR R4 specification.
@@ -67,11 +65,6 @@ For the full definition see here: [http://hl7.org/fhir/R5/medicationrequest-defi
 * substitution.allowed[x] MS
 * substitution.allowed[x] only boolean
 * substitution.reason MS
-
-Extension: OrganizationOfRequester
-Description: "The organization where the requester is operating, e.g. an hospital"
-Context: MedicationRequest
-* value[x] only Reference (BeOrganization)
 
 Extension: BasedOnMedicationLine
 Description: "Based on medication line."
