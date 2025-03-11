@@ -1,4 +1,4 @@
-# This is a simple workflow that runs the publisher and copies the output to https://<owner>.github.io/<repo>/index.html
+v# This is a simple workflow that runs the publisher and copies the output to https://<owner>.github.io/<repo>/index.html
 # Change log:
 # 2021-06-18: (JCT): publish default branches to / , other branches branches/<branch>
 # 2021-11-26: (JCT): Reusable workflow
@@ -35,7 +35,7 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Get branch name
         run: echo "BRANCH_NAME=${GITHUB_REF##*/}" >> $GITHUB_ENV
@@ -92,7 +92,7 @@ jobs:
       # Additional step to upload qa.json as an artifact
       - name: Upload qa.json artifact
         if: success()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: qa-json-artifact
           path: ./output/qa.json  # Adjust the path based on where qa.json is located
