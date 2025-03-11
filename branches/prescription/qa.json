@@ -1,0 +1,20 @@
+{
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/ImplementationGuide/hl7.fhir.be.medication",
+  "name" : "Medication",
+  "title" : "Medication",
+  "description" : "FHIR Medication specifications",
+  "ig-date" : "2020-02-26",
+  "status" : "draft",
+  "package-id" : "hl7.fhir.be.medication",
+  "ig-ver" : "1.1.0",
+  "date" : "Tue, 22 Oct, 2024 10:07:22 +0000",
+  "dateISO8601" : "2024-10-22T10:07:22+00:00",
+  "errs" : 7,
+  "warnings" : 19,
+  "hints" : 6,
+  "suppressed-hints" : 0,
+  "suppressed-warnings" : 1142,
+  "version" : "4.0.1",
+  "tool" : "5.0.0 (3)",
+  "maxMemory" : 2103967760
+}
