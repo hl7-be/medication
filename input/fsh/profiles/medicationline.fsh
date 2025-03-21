@@ -20,7 +20,7 @@ Description: "Medication Line profile - contains the overview information for a 
 * extension contains 
   ExposureCategory named exposure-category 0..1 MS and 
   DispenseRequestNeededCategory named dispense-request-needed 0..1 MS and 
-  VisibilityFlag named visibility-flag 0..1 MS and 
+  //VisibilityFlag named visibility-flag 0..1 MS and 
   http://hl7.org/fhir/StructureDefinition/artifact-version named artifact-version 1..1 MS and
   http://hl7.org/fhir/StructureDefinition/artifact-date named artifact-date 0..1 MS and
   http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence named adherence 1..1 MS
@@ -28,7 +28,7 @@ Description: "Medication Line profile - contains the overview information for a 
 
 * extension[exposure-category] ^short = "Exposure category"
 * extension[dispense-request-needed] ^short = "Indication of whether a dispense request is needed for delivering the medication"
-* extension[visibility-flag] ^short = "Coded preference or assertion about the visibility of the medication line"
+//* extension[visibility-flag] ^short = "Coded preference or assertion about the visibility of the medication line"
 * extension[artifact-version] ^short = "The business version of the medication line - this version changes when the content update is considered clinically relevant"
 * extension[artifact-date] ^short = "The business-relevant recorded date - the date the medication line was created or changed"
 * extension[adherence] ^short = "Indicates whether the medication is or is not being consumed or administered"
