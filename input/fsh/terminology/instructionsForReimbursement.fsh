@@ -2,7 +2,7 @@ CodeSystem: MedicationRequestReimbursementType
 Id: be-cs-medication-request-reimbursement-type
 Title: "Medication request reimbursement type"
 Description: "Medication request reimbursement type - instructions for reimbursement of the medication request"
-* ^status = #draft
+* ^status = #active
 * ^content = #complete
 * ^version = "1.0.0"
 * ^caseSensitive = true
