@@ -1,0 +1,21 @@
+{
+  "resourceType" : "Organization",
+  "id" : "apotheek-onder-de-toren",
+  "meta" : {
+    "profile" : ["https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-organization"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Organization apotheek-onder-de-toren</b></p><a name=\"apotheek-onder-de-toren\"> </a><a name=\"hcapotheek-onder-de-toren\"> </a><a name=\"apotheek-onder-de-toren-en-US\"> </a><p><b>identifier</b>: <code>https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi-organization</code>/27457532</p><p><b>type</b>: <span title=\"Codes:{https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty orgpharmacy}\">Independent pharmacy</span></p></div>"
+  },
+  "identifier" : [{
+    "system" : "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi-organization",
+    "value" : "27457532"
+  }],
+  "type" : [{
+    "coding" : [{
+      "system" : "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty",
+      "code" : "orgpharmacy"
+    }]
+  }]
+}
