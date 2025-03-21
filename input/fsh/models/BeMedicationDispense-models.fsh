@@ -15,6 +15,11 @@ Description: "The logical model for the Dispense Record entry - the information 
 * ^jurisdiction = $m49.htm#056
 * ^jurisdiction.text = "Belgium"
 
+
+* status 1..1 code "The status of the dispense record"
+* statusReason 0..1 CodeableConcept "The reason why the dispense was not performed, if it was not performed"
+//* dispenseLocation 0..1 Reference(BeLocation) "The location where the dispense was performed"
+
 //* ^short = "An individual record of a medication dispense"
 * identifier 0..* Identifier "The business identifier(s) for the medication dispense record" "The business identifier(s) for the medication dispense session, also known as Session GUID (SGUID)."
 * patient 1..1 Reference(BePatient) "The person for which the medication is dispensed" "The person for which the medication is dispensed."
