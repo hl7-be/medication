@@ -56,7 +56,7 @@ Characteristics: #can-be-target
 * effectivePeriod 1..1 BackboneElement "Period of medication treatment"
   * start 1..1 dateTime "The begin of the medication line"
 // .effectiveDateTime OR .effectivePeriod.start
-  * ^comment = ".effectiveDateTime OR .effectivePeriod.start. Do we need to support both? Can we use effectivePeriod when .end is known? And when only .start is known, we use dateTime?"
+//  * ^comment = ".effectiveDateTime OR .effectivePeriod.start. Do we need to support both? Can we use effectivePeriod when .end is known? And when only .start is known, we use dateTime?"
   * end 0..1 dateTime "The end of the medication line"
 
 * adherence 0..1 BackboneElement "Whether the patient is known to be taking the medication"
@@ -68,10 +68,9 @@ Characteristics: #can-be-target
 //.dosage  
   * dosageDetails 0..1 Dosage "Structure Dosage"
 * dosageOverride 0..1 boolean "Dosage Override"
-  * ^comment = "should these be extensions on dosage or on the line?"
+  * ^comment = "dosageOverride and dosageOverrideReason are expected to be manually filled by the prescriber, indicating that this dosage is not entered in error. This information is an indication (for example) for the pharmacist to see that there is a justification of the dosage difference."
 * dosageOverrideReason 1..1 CodeableConcept "Dosage Override reason"
-  * ^comment = "should these be extensions on dosage or on the line?"
-//.dosage.extension[]
+  * ^comment = "dosageOverride and dosageOverrideReason are expected to be manually filled by the prescriber, indicating that this dosage is not entered in error. This information is an indication (for example) for the pharmacist to see that there is a justification of the dosage difference."
 
 * note 0..* Annotation "A note captured by a professional"
 // .note

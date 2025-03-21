@@ -1,4 +1,11 @@
+Invariant: dosage-override-reason-required
+Description: "If dosageOverride is true, dosageOverrideReason must be provided"
+Severity: #error
+Expression: "extension.where(url = 'https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/dosageOverride').value = true implies extension.where(url = 'https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/dosage-override-reason').exists()"
+
+
 Profile: BeMedicationRequest
+Title: "BEMedicationRequest"
 Parent: MedicationRequest
 Id: be-medication-request
 Description: "Medication Request profile - The common structure for medication request"
@@ -19,10 +26,14 @@ Description: "Medication Request profile - The common structure for medication r
 * groupIdentifier MS
 
 * extension contains
-BasedOnMedicationLine named basedOnMedicationLine 0..1 MS and
-OrganizationOfRequester named organization 0..1 MS and
-InstructionsForReimbursement named instructionsForReimbursement 0..1 MS and
-http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationRequest.statusChanged named statusChanged 0..1
+  DosageOverride named dosageOverride 0..1 MS and
+  DosageOverrideReason named dosageOverrideReason 0..1 MS and
+  BasedOnMedicationLine named basedOnMedicationLine 0..1 MS and
+  OrganizationOfRequester named organization 0..1 MS and
+  InstructionsForReimbursement named instructionsForReimbursement 0..1 MS and
+  http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationRequest.statusChanged named statusChanged 0..1
+
+* obeys dosage-override-reason-required
 
 * extension[basedOnMedicationLine] ^short = "Medication Line where this prescription is based upon"
 * extension[organization] ^short = "The organization where the requester is operating, e.g. an hospital"
@@ -49,11 +60,9 @@ For the full definition see here: [http://hl7.org/fhir/R5/medicationrequest-defi
 * recorder only Reference (BePractitioner or BePractitionerRole)
 * dosageInstruction 1.. MS
 * dosageInstruction
-  * extension contains
-    DosageOverride named dosageOverride 0..1 MS and
-    DosageOverrideReason named dosageOverrideReason 0..1 MS
-  * extension[dosageOverride] ^short = "Indicates that the recommended dosage was overridden"
-  * extension[dosageOverrideReason] ^short = "The reason why the recommended dosage was overridden"
+
+* extension[dosageOverride] ^short = "Indicates that the recommended dosage was overridden"
+* extension[dosageOverrideReason] ^short = "The reason why the recommended dosage was overridden"
 
 * dispenseRequest MS
 * dispenseRequest.validityPeriod MS
