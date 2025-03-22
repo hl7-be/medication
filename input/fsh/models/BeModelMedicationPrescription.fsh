@@ -35,11 +35,11 @@ Characteristics: #can-be-target
 
 * dosage 1..* DosagingInformation "Dosaging and administration instructions"
 // .dosageInstruction
-* dosageOverride 0..1 boolean "Indication if standard dosage is overriden"
+* offLabelUse 0..1 boolean "Indication if standard dosage is overriden"
   * ^comment = "dosageOverride and dosageOverrideReason are expected to be manually filled by the prescriber, indicating that this dosage is not entered in error. This information is an indication (for example) for the pharmacist to see that there is a justification of the dosage difference."
 // .dosageInstruction.extensions.dossageOveride
 
-* dosageOverrideReason 0..1 CodeableConcept "Reason why standard dosage is overriden"
+* offLabelUseReason 0..1 CodeableConcept "Reason why standard dosage is overriden"
   * ^comment = "dosageOverride and dosageOverrideReason are expected to be manually filled by the prescriber, indicating that this dosage is not entered in error. This information is an indication (for example) for the pharmacist to see that there is a justification of the dosage difference."
 // .dosageInstruction.extensions.dossageOverrideReason
 
