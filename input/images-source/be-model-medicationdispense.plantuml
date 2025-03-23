@@ -38,8 +38,9 @@ class "**MedicationLine**" as BELMMedicationLine <<TM>>{
     |_ adherenceReason 0..1   
   |_ dosage 0..1   
     |_ dosageDetails 0..1   
-    |_ dosageOverride 0..1   
-    |_ dosageOverrideReason 1..1   
+  |_ offLabel 0..1   
+    |_ isOffLabelUse 1..1   
+    |_ reason 0..*
   |_ note 0..*   
   |_ dispenseRequestNeeded 0..*   
   |_ visibility 0..*   

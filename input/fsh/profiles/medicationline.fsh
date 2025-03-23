@@ -20,18 +20,17 @@ Description: "Medication Line profile - contains the overview information for a 
 
 
 * extension contains 
-  DosageOverride named dosage-override 0..1 MS and
-  DosageOverrideReason named dosage-override-reason 0..1 MS and
-  ExposureCategory named exposure-category 0..1 MS and 
-  DispenseRequestNeededCategory named dispense-request-needed 0..1 MS and 
-  //VisibilityFlag named visibility-flag 0..1 MS and 
-  http://hl7.org/fhir/StructureDefinition/artifact-version named artifact-version 1..1 MS and
-  http://hl7.org/fhir/StructureDefinition/artifact-date named artifact-date 0..1 MS and
-  http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence named adherence 1..1 MS
+    OffLabel named offLabel 0..1 MS and
+    ExposureCategory named exposure-category 0..1 MS and 
+    DispenseRequestNeededCategory named dispense-request-needed 0..1 MS and 
+    //VisibilityFlag named visibility-flag 0..1 MS and 
+    http://hl7.org/fhir/StructureDefinition/artifact-version named artifact-version 1..1 MS and
+    http://hl7.org/fhir/StructureDefinition/artifact-date named artifact-date 0..1 MS and
+    http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence named adherence 1..1 MS
 
 
-* extension[dosage-override] ^short = "Indicates that the recommended dosage was overridden"
-* extension[dosage-override-reason] ^short = "The reason why the recommended dosage was overridden"
+* extension[offLabel].extension[isOffLabelUse] ^short = "Indicates that the recommended dosage was overridden"
+* extension[offLabel].extension[reason] ^short = "The reason why the recommended dosage was overridden"
 
 * extension[exposure-category] ^short = "Exposure category"
 * extension[dispense-request-needed] ^short = "Indication of whether a dispense request is needed for delivering the medication"
@@ -86,14 +85,16 @@ Description: "Dispense Request Needed - category."
 Context: MedicationStatement
 * value[x] only boolean
 
-Extension: DosageOverride
-Description: "Dispense override."
-Context: MedicationStatement.dosage
-* value[x] only boolean
-//* context = #MedicationStatement.dosage
+Extension: OffLabel
+Id:        be-ext-OffLabel
+Title:     "MedicationRequest - Off-label use"
+Description: "Indicates that the order placer has knowingly prescribed the medication for an indication, age group, dosage, or route of administration that is not approved by the regulatory agencies and is not mentioned in the prescribing information for the product."
+Context: MedicationRequest, MedicationStatement
 
-Extension: DosageOverrideReason
-Description: "Dispense Request Needed - category."
-Context: MedicationStatement.dosage
-* value[x] only CodeableConcept
-
+* extension contains
+    isOffLabelUse 1..1 and
+    reason 0..*
+* extension[isOffLabelUse].value[x] only boolean
+* extension[isOffLabelUse] ^short = "Indicates that the recommended dosage was overridden. Must be 'true' when .reason is provided."
+* extension[reason].value[x] only CodeableConcept
+* extension[reason] ^short = "Reason or related clarification for off-label use."

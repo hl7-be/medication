@@ -17,8 +17,9 @@ class "**BeModelMedicationPrescription**" as BeModelMedicationPrescription {
     |_ reference 0..*   
     |_ code 0..*   
   |_ dosage 1..*   
-  |_ dosageOverride 0..1   
-  |_ dosageOverrideReason 0..1   
+  |_ offLabel 0..1   
+    |_ isOffLabelUse 1..1   
+    |_ reason .0.*   
   |_ validFrom 0..1   
   |_ validUntil 0..1   
   |_ category 0..*   

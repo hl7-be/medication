@@ -1,7 +1,7 @@
 Invariant: dosage-override-reason-required
-Description: "If dosageOverride is true, dosageOverrideReason must be provided"
+Description: "If isOffLabelUse is true, reason must be provided"
 Severity: #error
-Expression: "extension.where(url = 'https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/dosageOverride').value = true implies extension.where(url = 'https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/dosage-override-reason').exists()"
+Expression: "extension.where(url = 'https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/offLabel').value = true implies extension.where(url = 'https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/offlabel').exists()"
 
 
 Profile: BeMedicationRequest
@@ -26,8 +26,7 @@ Description: "Medication Request profile - The common structure for medication r
 * groupIdentifier MS
 
 * extension contains
-  DosageOverride named dosageOverride 0..1 MS and
-  DosageOverrideReason named dosageOverrideReason 0..1 MS and
+  be-ext-OffLabel named offLabel 0..1 MS and
   BasedOnMedicationLine named basedOnMedicationLine 0..1 MS and
   OrganizationOfRequester named organization 0..1 MS and
   InstructionsForReimbursement named instructionsForReimbursement 0..1 MS and
@@ -61,8 +60,8 @@ For the full definition see here: [http://hl7.org/fhir/R5/medicationrequest-defi
 * dosageInstruction 1.. MS
 * dosageInstruction
 
-* extension[dosageOverride] ^short = "Indicates that the recommended dosage was overridden"
-* extension[dosageOverrideReason] ^short = "The reason why the recommended dosage was overridden"
+* extension[offLabel].extension[isOffLabelUse] ^short = "Indicates that the recommended dosage was overridden"
+* extension[offLabel].extension[reason] ^short = "The reason why the recommended dosage was overridden"
 
 * dispenseRequest MS
 * dispenseRequest.validityPeriod MS

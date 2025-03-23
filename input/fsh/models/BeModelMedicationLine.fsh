@@ -67,10 +67,12 @@ Characteristics: #can-be-target
 * dosage 1..1 BackboneElement "Dosage"
 //.dosage  
   * dosageDetails 0..1 Dosage "Structure Dosage"
-* dosageOverride 0..1 boolean "Dosage Override"
-  * ^comment = "dosageOverride and dosageOverrideReason are expected to be manually filled by the prescriber, indicating that this dosage is not entered in error. This information is an indication (for example) for the pharmacist to see that there is a justification of the dosage difference."
-* dosageOverrideReason 1..1 CodeableConcept "Dosage Override reason"
-  * ^comment = "dosageOverride and dosageOverrideReason are expected to be manually filled by the prescriber, indicating that this dosage is not entered in error. This information is an indication (for example) for the pharmacist to see that there is a justification of the dosage difference."
+
+* offLabel 0..1 boolean "Off-Label / Dosage Override"
+  * isOffLabelUse 0..1 boolean "Off-Label / Dosage Override"
+    * ^comment = "isOffLabelUse and reason are expected to be manually filled by the prescriber, indicating that this dosage is not entered in error. This information is an indication (for example) for the pharmacist to see that there is a justification of the dosage difference."
+  * reason 1..1 CodeableConcept "Dosage Override reason"
+    * ^comment = "isOffLabelUse and reason are expected to be manually filled by the prescriber, indicating that this dosage is not entered in error. This information is an indication (for example) for the pharmacist to see that there is a justification of the dosage difference."
 
 * note 0..* Annotation "A note captured by a professional"
 // .note
