@@ -141,8 +141,8 @@ groups:
     - StructureDefinition/BeMedicationLine
     - StructureDefinition/BeMedicationDispense
     - StructureDefinition/BeMedicationPrescription
-    - StructureDefinition/BeMedication
-    - StructureDefinition/BeMedicationDosage
+#    - StructureDefinition/BeMedication
+
 
   # Extensions:
   #   name: Extensions
