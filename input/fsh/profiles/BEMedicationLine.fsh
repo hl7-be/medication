@@ -1,5 +1,5 @@
-Profile: BEMedicationLine
-Title: "BEMedicationLine"
+Profile: BeMedicationLine
+Title: "BeMedicationLine"
 
 Parent: MedicationStatement
 Description: "Medication Line profile - contains the overview information for a single medication item"
@@ -66,35 +66,3 @@ For the full definition see here: [http://hl7.org/fhir/R5/medicationstatement-de
 * informationSource only Reference (BePatient or BePractitioner or BePractitionerRole or RelatedPerson or BeOrganization)
 
 
-
-Extension: ExposureCategory
-Description: "Exposure - category."
-Context: MedicationStatement
-* value[x] only CodeableConcept
-* value[x] from MedicationExposureCategoryVS (extensible)
-
-
-// Extension: VisibilityFlag
-// Description: "Visibility Flag."
-// Context: MedicationStatement
-// * value[x] only boolean
-
-
-Extension: DispenseRequestNeededCategory
-Description: "Dispense Request Needed - category."
-Context: MedicationStatement
-* value[x] only boolean
-
-Extension: OffLabel
-Id:        be-ext-OffLabel
-Title:     "MedicationRequest - Off-label use"
-Description: "Indicates that the order placer has knowingly prescribed the medication for an indication, age group, dosage, or route of administration that is not approved by the regulatory agencies and is not mentioned in the prescribing information for the product."
-Context: MedicationRequest, MedicationStatement
-
-* extension contains
-    isOffLabelUse 1..1 and
-    reason 0..*
-* extension[isOffLabelUse].value[x] only boolean
-* extension[isOffLabelUse] ^short = "Indicates that the recommended dosage was overridden. Must be 'true' when .reason is provided."
-* extension[reason].value[x] only CodeableConcept
-* extension[reason] ^short = "Reason or related clarification for off-label use."
