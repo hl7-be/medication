@@ -81,24 +81,6 @@ Characteristics: #can-be-target
 // * visibility 0..* CodeableConcept "Whether the patient has explicitly requested the medication line not to be seen - when other rules don't prevail"
 
 
-
-Logical: BeModelMedicinalProduct
-Title: "Medicinal Product"
-Description: "A logical data model for representing a medicinal product."
-Characteristics: #can-be-target
-
-* ^extension[http://hl7.org/fhir/tools/StructureDefinition/logical-target].valueBoolean = true
-
-* identifier 0..* Identifier "Unique identifier" "A unique identifier for the medication line"
-* name 0..1 string "The name or designation of the product"
-* description 0..1 string "The text description of the product when not coded"
-* ingredient 0..* BackboneElement "The ingredients or components of the product"
-  * product 1..1 CodeableConcept "The product or substance"
-  * strength 0..1 SimpleQuantity "The quantity or amount of ingredient in the parent product"
-* doseForm 0..1 CodeableConcept "The dose form of the product"
-
-// TO DO:  dose form - which one? - e.g. solution for injection? or injection?
-
 CodeSystem: BeModelMedicationType
 Id:         medication-type
 Title:     "Medication preparation Type"
