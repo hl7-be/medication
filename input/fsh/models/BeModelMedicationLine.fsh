@@ -1,5 +1,5 @@
-Logical: BEModelMedicationLine
-Id: be-model-medicationline
+Logical: BeModelMedicationLine
+Id: BeModelMedicationLine
 Title: "Medication Line - logical model"
 Description: "A logical data model of the medication line."
 Characteristics: #can-be-target
@@ -71,7 +71,7 @@ Characteristics: #can-be-target
 * offLabel 0..1 boolean "Off-Label / Dosage Override"
   * isOffLabelUse 0..1 boolean "Off-Label / Dosage Override"
     * ^comment = "isOffLabelUse and reason are expected to be manually filled by the prescriber, indicating that this dosage is not entered in error. This information is an indication (for example) for the pharmacist to see that there is a justification of the dosage difference."
-  * reason 1..1 CodeableConcept "Dosage Override reason"
+  * reason 1..1 CodeableConcept "Reason for Off-label use or dosage override"
     * ^comment = "isOffLabelUse and reason are expected to be manually filled by the prescriber, indicating that this dosage is not entered in error. This information is an indication (for example) for the pharmacist to see that there is a justification of the dosage difference."
 
 * note 0..* Annotation "A note captured by a professional"
