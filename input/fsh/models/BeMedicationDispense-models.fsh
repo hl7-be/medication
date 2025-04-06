@@ -1,11 +1,11 @@
-Logical: BEModelMedicationDispense
+Logical: BeModelMedicationDispense
 Parent: Base
-Id: be-model-medicationdispense
+Id: BeModelMedicationDispense
 Title: "Medication Dispense - Data model"
 Description: "The logical model for the Dispense Record entry - the information that can be captured upon the act of dispensing - in a hospital pharmacy, or a community pharmacy. This is not for a future dispense, rather a record of an actual dispense."
 
 
-* ^url = "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-model-medicationdispense"
+* ^url = "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeModelMedicationDispense"
 
 * ^publisher = "HL7 Belgium"
 * ^contact.telecom.system = #url

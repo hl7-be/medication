@@ -1,4 +1,4 @@
-Logical: DosagingInformation
+Logical: BeModelDosagingInformation
 Title: "Dosaging - Data Model"
 Description: "Usage instructions. Instructions about requested administration of the product. Based on FHIR Dosage complex data type."
 Characteristics: #can-be-target

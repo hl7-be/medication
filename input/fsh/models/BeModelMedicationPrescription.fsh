@@ -1,7 +1,7 @@
 
 
 Logical: BeModelMedicationPrescription
-Id: be-model-medicationprescription
+Id: BeModelMedicationPrescription
 Title: "Medication prescription - Data Model"
 Description: "Logical model for medication prescription (or some other form of order)"
 Characteristics: #can-be-target
