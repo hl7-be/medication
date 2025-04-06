@@ -38,7 +38,7 @@ Characteristics: #can-be-target
 * validUntil 0..1 dateTime "The validity period end date. The prescription is not dispensable after this date."
 // .dispenseRequest.validityPeriod.end
 
-* basedOnMedicationLine 0..1 Reference (BEModelMedicationLine) "Link to the Medication Line from which this request is based"
+* basedOnMedicationLine 0..1 Reference (BeModelMedicationLine) "Link to the Medication Line from which this request is based"
 
 
 
@@ -51,7 +51,7 @@ Characteristics: #can-be-target
 // .reasonCode
 // .reasonReference
 
-* dosage 1..* DosagingInformation "Dosaging and administration instructions"
+* dosage 1..* BeModelDosagingInformation "Dosaging and administration instructions"
 // .dosageInstruction
 
 * dispenseRequest 0..1 BackboneElement "Dispense Request or authorization for the prescribed medication"
@@ -63,9 +63,9 @@ Characteristics: #can-be-target
 
 //* usageInstructions 1..1 Reference(DosagingInformation) "Dosaging and administration instructions"
 //* preparationInstructions 0..* ST "Additional instructions about preparation or dispense" 
-* substitution 0..1 BackboneElement "Substitution is not allowed for a given reason"
+* substitution 0..1 BackboneElement "Whether substitution is allowed, and reason"
 // .substitution(.allowed)
-  * substitutionallowed 1..1 boolean "Substitution of the product is not allowed."
+  * substitutionallowed 1..1 boolean "Substitution of the product is allowed."
   * substitutionReason 0..1 CodeableConcept "Coded or Text reason for the no-substitution requirement"
 
 * offLabel 0..1 boolean "Off-Label / Dosage Override"
@@ -81,7 +81,8 @@ Characteristics: #can-be-target
 
 * instructionsForReimbursement 0..1 CodeableConcept "Instructions for reimbursement"
 // .extensions.instructionsForReimbursement
-* instructionsForReimbursement ^binding.strength = #extensible
-* instructionsForReimbursement ^binding.description = "Instructions for reimbursement"
-* instructionsForReimbursement ^binding.valueSet = MedicationRequestReimbursementTypeVS
+* instructionsForReimbursement from MedicationRequestReimbursementTypeVS (extensible) //"Instructions for reimbursement"
+// * instructionsForReimbursement ^binding.strength = #extensible
+// * instructionsForReimbursement ^binding.description = "Instructions for reimbursement"
+// * instructionsForReimbursement ^binding.valueSet = MedicationRequestReimbursementTypeVS
 

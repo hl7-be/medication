@@ -53,8 +53,9 @@ Description: "Medication request reimbursement type - instructions for reimburse
   * ^designation[+].language = #nl-BE
   * ^designation[=].value = "Opstarttraject diabetes type 2"
 
+
 ValueSet: MedicationRequestReimbursementTypeVS
-Id: be-vs-medication-request-reimbursement-type
+Id: MedicationRequestReimbursementTypeVS
 Title: "Medication request reimbursement type ValueSet"
 Description: "Medication request reimbursement type - instructions for reimbursement of the medication request"
 * ^status = #draft
