@@ -1,7 +1,7 @@
 Logical: BeModelMedication
 Id:  BeModelMedication
-Title: "Medication - logical model"
-Description: "A logical data model of the medication."
+Title: "Medication (model)"
+Description: "Logical data model for medication."
 Characteristics: #can-be-target
 
 * ^status = #active

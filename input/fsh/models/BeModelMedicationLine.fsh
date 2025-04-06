@@ -1,7 +1,7 @@
 Logical: BeModelMedicationLine
 Id: BeModelMedicationLine
-Title: "Medication Line - logical model"
-Description: "A logical data model of the medication line."
+Title: "Medication Line (model)"
+Description: "Logical data model for medication line."
 Characteristics: #can-be-target
 
 * ^name = "MedicationLine"

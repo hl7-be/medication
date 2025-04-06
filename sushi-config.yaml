@@ -96,22 +96,6 @@ resources:
     name: DosagingInformation
     description: Logical data model for Dosaging Information
     exampleBoolean: false
-   StructureDefinition/BeModelMedication:
-    name: Medication (model)
-    description: Logical data model for DosagingInformation
-    exampleBoolean: false
-   StructureDefinition/BeModelMedicationDispense:
-    name: Medication Dispense (model)
-    description: Logical data model for Medication Dispense 
-    exampleBoolean: false
-   StructureDefinition/BeModelMedicationLine:
-    name: Medication Line (model)
-    description: Logical data model for Medication Line 
-    exampleBoolean: false
-   StructureDefinition/BeModelMedicationPrescription:
-    name: Medication Prescription (model)
-    description: Logical data model for Medication Prescription 
-    exampleBoolean: false
 
    StructureDefinition/BeMedicationLine:
     name: Medication Prescription
@@ -157,6 +141,8 @@ groups:
     - StructureDefinition/BeMedicationLine
     - StructureDefinition/BeMedicationDispense
     - StructureDefinition/BeMedicationPrescription
+    - StructureDefinition/BeMedication
+    - StructureDefinition/BeMedicationDosage
 
   # Extensions:
   #   name: Extensions
@@ -267,5 +253,5 @@ parameters:
   apply-jurisdiction: 'true'
   apply-publisher: 'true'
   apply-version: 'true'  
-  pin-canonicals: pin-all
+  pin-canonicals: pin-multiples
 

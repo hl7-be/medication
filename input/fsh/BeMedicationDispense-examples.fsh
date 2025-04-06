@@ -1,8 +1,8 @@
 Instance: example-dispense-communitypharmacy-1med
 InstanceOf: MedicationDispense
 Usage: #example
-Description: "Medication Dispense example"
-Title:    "Dispense entry Example - Community Pharmacy dispense, from prescription"
+Title: "Medication Dispense example"
+Description:    "Dispense entry Example - Community Pharmacy dispense, from prescription"
 * meta.profile[0] = "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationDispense"
 * language = #fr-BE
 * subject.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin"
@@ -55,8 +55,8 @@ Title:    "Dispense entry Example - Community Pharmacy dispense, from prescripti
 
 Instance: apotheek-onder-de-toren
 InstanceOf: BeOrganization
-Title: "Example Pharmacy (Organization): Apotheek onder de toren"
-Description: "Example organization for a pharmacy"
+Description: "Example Pharmacy (Organization): Apotheek onder de toren"
+Title: "Example organization for a pharmacy"
 Usage: #example
 /*
 * extension[0].url = "http://hl7.org/fhir/StructureDefinition/geolocation"
