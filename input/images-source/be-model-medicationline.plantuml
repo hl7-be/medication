@@ -4,25 +4,23 @@ hide circle
 hide stereotype
 
 
-skinparam class<<TM>> {
+skinparam class {
  BorderColor #505090
  BackgroundColor APPLICATION
  HeaderBackgroundColor SkyBlue
 }
 
-
-class "**MedicationLine**" as BELMMedicationLine <<TM>>{
-  |_ uniqueIdentifier 1..1   
-  |_ versionIdentifier 1..1   
+class "**MedicationLine**" as MedicationLine {
+  |_ uniqueIdentifier 1..*   
+  |_ versionIdentifier 0..1   
   |_ lastUpdatedDate 1..1   
   |_ status 1..1   
   |_ statusReason 0..1   
-  |_ recordedDate 0..1   
   |_ assertedDate 0..1   
   |_ recorder 1..1   
   |_ patient 1..1   
   |_ category 0..*   
-    |_ :originType 0..1   
+    |_ originType 0..1   
   |_ medication 1..1   
     |_ product 1..1   
     |_ type 1..1   
@@ -34,15 +32,14 @@ class "**MedicationLine**" as BELMMedicationLine <<TM>>{
     |_ start 1..1   
     |_ end 0..1   
   |_ adherence 0..1   
-    |_ code 1..1   
+    |_ status 1..1   
     |_ adherenceReason 0..1   
-  |_ dosage 0..1   
+  |_ dosage 1..1   
     |_ dosageDetails 0..1   
   |_ offLabel 0..1   
-    |_ isOffLabelUse 1..1   
-    |_ reason .0.*   
+    |_ isOffLabelUse 0..1   
+    |_ reason 1..1   
   |_ note 0..*   
-  |_ dispenseRequestNeeded 0..*   
-  |_ visibility 0..*   
+  |_ dispenseRequestNeeded 0..1   
 }
 @enduml
