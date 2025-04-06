@@ -3,7 +3,7 @@ InstanceOf: MedicationDispense
 Usage: #example
 Description: "Medication Dispense example"
 Title:    "Dispense entry Example - Community Pharmacy dispense, from prescription"
-* meta.profile[0] = "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationdispense"
+* meta.profile[0] = "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationDispense"
 * language = #fr-BE
 * subject.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin"
 * subject.identifier.value = "64110219106"
@@ -55,6 +55,7 @@ Title:    "Dispense entry Example - Community Pharmacy dispense, from prescripti
 
 Instance: apotheek-onder-de-toren
 InstanceOf: BeOrganization
+Title: "Example Pharmacy (Organization): Apotheek onder de toren"
 Description: "Example organization for a pharmacy"
 Usage: #example
 /*
@@ -75,8 +76,8 @@ Instance: medicationdispense-example-2
 InstanceOf: MedicationDispense
 Usage: #example
 Description: "Medication Dispense example"
-Title:    "Dispense entry Example - Community Pharmacy dispense, from prescription, with contained org."
-* meta.profile[0] = "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationdispense"
+Title:    "Example Dispense entry - Community Pharmacy dispense, from prescription, with contained org."
+* meta.profile[0] = "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationDispense"
 * contained[0] = apotheek-onder-de-toren
 * language = #nl-BE
 * subject.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin"
@@ -121,11 +122,11 @@ Instance: example-dispense-hospital
 InstanceOf: MedicationDispense
 Usage: #example
 Description: "A dispense from a hospital pharmacy, with a hospital nihdi and based on a prescription"
-Title: "A dispense from a hospital pharmacy"
+Title: "Example Dispense from a hospital pharmacy"
 //Created from the concept on http://build.fhir.org/ig/hl7-be/hl7-be-fhir-medication/StructureDefinition-be-medicationdispense.html
 //* id = 
 * meta.versionId = "1"
-* meta.profile[0] = "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationdispense"
+* meta.profile[0] = "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationDispense"
 //* implicitRules = 
 * language = #nl-BE
 //* text = 
@@ -198,9 +199,9 @@ Title: "A dispense from a hospital pharmacy"
 Instance: example-minimal-dispense
 InstanceOf: MedicationDispense
 Usage: #example
-Description: "Medication Dispense example"
-Title:    "Dispense Example - Minimal amount of information"
-* meta.profile[0] = "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationdispense"
+Title: "Example Dispense (minimal)"
+Description:    "Dispense Example - Minimal amount of information"
+* meta.profile[0] = "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationDispense"
 * subject.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin"
 * subject.identifier.value = "64110219106"
 * status = #completed
@@ -237,7 +238,9 @@ Alias: $cnk-codes = https://www.ehealth.fgov.be/standards/fhir/medication/Naming
 Instance: medicationdispense-example-1
 InstanceOf: MedicationDispense
 Usage: #example
-* meta.profile = "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationdispense"
+Title: "Example Dispense (simple)"
+Description: "Dispense Example - Simple example of a dispense"
+* meta.profile = "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationDispense"
 * language = #fr-BE
 * subject.identifier
   * system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin"
