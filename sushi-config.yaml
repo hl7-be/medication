@@ -98,16 +98,16 @@ resources:
     exampleBoolean: false
 
    StructureDefinition/BeMedicationLine:
+    name: Medication Line
+    description: Belgian profile for Medication Line 
+    exampleBoolean: false
+   StructureDefinition/BeMedicationPrescription:
     name: Medication Prescription
     description: Belgian profile for Medication Prescription 
     exampleBoolean: false
    StructureDefinition/BeMedicationDispense:
     name: Medication Dispense
     description: Belgian profile for Medication Dispense
-    exampleBoolean: false
-   StructureDefinition/BeMedicationPrescription:
-    name: Medication Prescription
-    description: Belgian profile for Medication Prescription 
     exampleBoolean: false
 
     
