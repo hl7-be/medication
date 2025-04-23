@@ -3,7 +3,11 @@
 Medication ImplementationGuide
 
 This is a draft publication by the HL7 Belgium Medication work group. 
-The continuous Build for this branch is published in https://hl7-be.github.io/medication
+
+Currently, the continuous Build for the work in progress is published in https://hl7-be.github.io/medication/branches/prescription 
+The publication last approved by the group for publication is in https://hl7-be.github.io/medication
+
+
 
 This framework is published under a Creative Commons - IGO [license](LICENSE.md).
 
