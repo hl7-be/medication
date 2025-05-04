@@ -1,4 +1,5 @@
-Profile: BEMedicationLine
+Profile: BeMedicationLine
+Title: "BeMedicationLine"
 Parent: MedicationStatement
 Description: "Medication Line profile - contains the overview information for a single medication item"
 
@@ -18,12 +19,12 @@ Description: "Medication Line profile - contains the overview information for a 
 
 
 * extension contains 
-  ExposureCategory named exposure-category 0..1 MS and 
-  DispenseRequestNeededCategory named dispense-request-needed 0..1 MS and 
-  //VisibilityFlag named visibility-flag 0..1 MS and 
-  http://hl7.org/fhir/StructureDefinition/artifact-version named artifact-version 1..1 MS and
-  http://hl7.org/fhir/StructureDefinition/artifact-date named artifact-date 0..1 MS and
-  http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence named adherence 1..1 MS
+    ExposureCategory named exposure-category 0..1 MS and 
+    DispenseRequestNeededCategory named dispense-request-needed 0..1 MS and 
+    //VisibilityFlag named visibility-flag 0..1 MS and 
+    http://hl7.org/fhir/StructureDefinition/artifact-version named artifact-version 1..1 MS and
+    http://hl7.org/fhir/StructureDefinition/artifact-date named artifact-date 0..1 MS and
+    http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence named adherence 1..1 MS
 
 
 * extension[exposure-category] ^short = "Exposure category"
