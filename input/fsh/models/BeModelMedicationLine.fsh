@@ -42,7 +42,7 @@ Characteristics: #can-be-target
 // .medicationReference or medicationCodeableConcept      
   * type 1..1 CodeableConcept "Type of medication - magistral, medicinal product, non-medicinal product"
 // .medicationReference.resolve().classification or medicationCodeableConcept[]
-  * type from BeModelMedicationTypeVS (required)
+  * type from BeMedicationTypeVS (required)
 
 * exposure 0..1 CodeableConcept "Therapeutic, Prophylactic"
 * exposure from MedicationExposureCategoryVS
@@ -80,29 +80,6 @@ Characteristics: #can-be-target
 * dispenseRequestNeeded 0..1 CodeableConcept "Whether the medication needs a prescription or request to be dispensed"
 // * visibility 0..* CodeableConcept "Whether the patient has explicitly requested the medication line not to be seen - when other rules don't prevail"
 
-
-CodeSystem: BeModelMedicationType
-Id:         medication-type
-Title:     "Medication preparation Type"
-Description: "Medication preparation type"
-* ^status = #draft
-* ^experimental = false
-* ^caseSensitive = false
-* #magistral "Magistral preparation"
-* #officinal "Officinal preparation"
-* #medicinal-product "Medicinal Product"
-* #non-medicinal-product "non-medicinal product e.g. supplement"
-
-// TO DO: Do we need non-authorized products?
-
-
-ValueSet: BeModelMedicationTypeVS
-Id:         medication-type-vs
-Title:     "Medication preparation Type value set"
-Description: "Medication preparation type value set"
-* ^status = #draft
-* ^experimental = false
-* codes from system BeModelMedicationType
 
 
 // CodeSystem: BEMLMExposureType
