@@ -19,6 +19,7 @@ Description: "Medication Line profile - contains the overview information for a 
 
 
 * extension contains 
+    OffLabel named offLabel 0..1 MS and
     ExposureCategory named exposure-category 0..1 MS and 
     DispenseRequestNeededCategory named dispense-request-needed 0..1 MS and 
     //VisibilityFlag named visibility-flag 0..1 MS and 
@@ -51,12 +52,7 @@ For the full definition see here: [http://hl7.org/fhir/R5/medicationstatement-de
 * reasonReference MS
 * dosage MS
 * dosage
-  * extension contains 
-    DosageOverride named dosage-override 0..1 MS and 
-    DosageOverrideReason named dosage-override-reason 0..1 MS
 
-  * extension[dosage-override] ^short = "Indicates that the recommended dosage was overridden"
-  * extension[dosage-override-reason] ^short = "The reason why the recommended dosage was overridden"
 
 
 * effective[x] 1..1 MS
@@ -65,34 +61,4 @@ For the full definition see here: [http://hl7.org/fhir/R5/medicationstatement-de
 * subject only Reference (BePatient)
 * informationSource only Reference (BePatient or BePractitioner or BePractitionerRole or RelatedPerson or BeOrganization)
 
-
-
-Extension: ExposureCategory
-Description: "Exposure - category."
-Context: MedicationStatement
-* value[x] only CodeableConcept
-* value[x] from MedicationExposureCategoryVS (extensible)
-
-
-//Extension: VisibilityFlag
-//Description: "Visibility Flag."
-//Context: MedicationStatement
-//* value[x] only boolean
-
-
-Extension: DispenseRequestNeededCategory
-Description: "Dispense Request Needed - category."
-Context: MedicationStatement
-* value[x] only boolean
-
-Extension: DosageOverride
-Description: "Dispense override."
-Context: MedicationStatement.dosage
-* value[x] only boolean
-//* context = #MedicationStatement.dosage
-
-Extension: DosageOverrideReason
-Description: "Dispense Request Needed - category."
-Context: MedicationStatement.dosage
-* value[x] only CodeableConcept
 
