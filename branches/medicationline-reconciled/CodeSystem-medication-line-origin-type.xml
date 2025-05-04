@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="medication-line-origin-type"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This case-sensitive code system <code>https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-line-origin-type</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">ambulatory<a name="medication-line-origin-type-ambulatory"> </a></td><td>Ambulatory</td></tr><tr><td style="white-space:nowrap">hospital<a name="medication-line-origin-type-hospital"> </a></td><td>Hospital</td></tr></table></div>
+  </text>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-line-origin-type"/>
+  <version value="1.1.0"/>
+  <name value="MedicationLineOrigintype"/>
+  <title value="Medication origin type"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2024-04-07T13:19:46+00:00"/>
+  <publisher value="HL7 Belgium"/>
+  <contact>
+    <name value="HL7 Belgium"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.hl7belgium.org"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="hl7belgium@hl7belgium.org"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Message Structure eHealth"/>
+    <telecom>
+      <system value="email"/>
+      <value value="message-structure@ehealth.fgov.be"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Medication treatment origin type - what is the type of care that originated the medication treatment"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
+      <display value="Belgium"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="2"/>
+  <concept>
+    <code value="ambulatory"/>
+    <display value="Ambulatory"/>
+  </concept>
+  <concept>
+    <code value="hospital"/>
+    <display value="Hospital"/>
+  </concept>
+</CodeSystem>

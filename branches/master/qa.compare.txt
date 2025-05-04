@@ -1,0 +1,116 @@
+Medication : Validation Results
+=========================================
+
+err = 0, warn = 12, info = 11
+$--
+Generated $--. FHIR version $-- for hl7.fhir.be.medication#$-- (canonical = https://www.ehealth.fgov.be/standards/fhir/medication)
+ Build Errors : 0 / 4 / 0
+ /github/workspace/fsh-generated/resources/CodeSystem-medication-line-origin-type : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/CodeSystem-medication-type : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ImplementationGuide-hl7.fhir.be.medication : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/MedicationDispense-example-dispense-communitypharmacy-1med : 0 / 2 / 3
+ /github/workspace/fsh-generated/resources/MedicationDispense-example-dispense-hospital : 0 / 1 / 2
+ /github/workspace/fsh-generated/resources/MedicationDispense-example-minimal-dispense : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/MedicationDispense-medicationdispense-example-1 : 0 / 2 / 3
+ /github/workspace/fsh-generated/resources/MedicationDispense-medicationdispense-example-2 : 0 / 2 / 6
+ /github/workspace/fsh-generated/resources/NamingSystem-be-ns-cnk-codes : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/NamingSystem-be-ns-cti-extended-code : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/NamingSystem-be-ns-prescription-ids : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/NamingSystem-be-ns-product-package-type : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Organization-apotheek-onder-de-toren : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-AD : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-ANY : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-BELMMedProduct : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-BEMedicationLine : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-BL : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-CD : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-Class : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-DT : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-DispenseRequestNeededCategory : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-DosageOverride : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-DosageOverrideReason : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-EN : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-ExposureCategory : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-II : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-INT : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-KMEHRMS : 0 / 851 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-PQ : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-REAL : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-RTO : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-ST : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-TS : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-Untyped : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-be-medicationdispense : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-be-model-medicationdispense : 0 / 41 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-be-model-medicationline : 0 / 78 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-be-vs-dispenser-types : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-medication-exposure-category-vs : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-medication-line-origin-type-vs : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-medication-type-vs : 0 / 0 / 1
+</table>
+== n/a ==
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationDispense/medicationdispense-example-1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+== fsh-generated/resources/CodeSystem-medication-line-origin-type.json ==
+== fsh-generated/resources/CodeSystem-medication-type.json ==
+== fsh-generated/resources/ImplementationGuide-hl7.fhir.be.medication.json ==
+== fsh-generated/resources/MedicationDispense-example-dispense-communitypharmacy-1med.json ==
+WARNING: MedicationDispense/example-dispense-communitypharmacy-1med: MedicationDispense.identifier[0].type.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+INFORMATION: MedicationDispense/example-dispense-communitypharmacy-1med: MedicationDispense.medication.ofType(CodeableConcept).coding[0]: A definition for CodeSystem 'https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes' could not be found, so the code cannot be validated
+WARNING: MedicationDispense/example-dispense-communitypharmacy-1med: MedicationDispense.context.identifier.type.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+INFORMATION: MedicationDispense/example-dispense-communitypharmacy-1med: MedicationDispense.quantity: A definition for CodeSystem 'https://www.gfd-dpp.be/fhir/reference/packaging' could not be found, so the code cannot be validated
+== fsh-generated/resources/MedicationDispense-example-dispense-hospital.json ==
+WARNING: MedicationDispense/example-dispense-hospital: MedicationDispense.identifier[0].type.coding[0].system: De CodeSystem https://www.nexuzhealth.be/fhir/prescription/ambulatory versie 1 is onbekend. Geldige versies: []
+INFORMATION: MedicationDispense/example-dispense-hospital: MedicationDispense.medication.ofType(CodeableConcept).coding[0]: A definition for CodeSystem 'https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes' could not be found, so the code cannot be validated
+== fsh-generated/resources/MedicationDispense-example-minimal-dispense.json ==
+INFORMATION: MedicationDispense/example-minimal-dispense: MedicationDispense.medication.ofType(CodeableConcept).coding[0]: A definition for CodeSystem 'https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes' could not be found, so the code cannot be validated
+== fsh-generated/resources/MedicationDispense-medicationdispense-example-1.json ==
+WARNING: MedicationDispense/medicationdispense-example-1: MedicationDispense.identifier[0].type.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+INFORMATION: MedicationDispense/medicationdispense-example-1: MedicationDispense.medication.ofType(CodeableConcept).coding[0]: A definition for CodeSystem 'https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes' could not be found, so the code cannot be validated
+WARNING: MedicationDispense/medicationdispense-example-1: MedicationDispense.context.identifier.type.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+INFORMATION: MedicationDispense/medicationdispense-example-1: MedicationDispense.quantity: A definition for CodeSystem 'https://www.gfd-dpp.be/fhir/reference/packaging' could not be found, so the code cannot be validated
+== fsh-generated/resources/MedicationDispense-medicationdispense-example-2.json ==
+INFORMATION: MedicationDispense/medicationdispense-example-2: MedicationDispense.contained[0]/*Organization/apotheek-onder-de-toren*/.identifier[0]: This element does not match any known slice defined in the profile https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-organization|2.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)
+WARNING: MedicationDispense/medicationdispense-example-2: MedicationDispense.identifier[0].type.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+INFORMATION: MedicationDispense/medicationdispense-example-2: MedicationDispense.medication.ofType(CodeableConcept).coding[0]: A definition for CodeSystem 'https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes' could not be found, so the code cannot be validated
+WARNING: MedicationDispense/medicationdispense-example-2: MedicationDispense.context.identifier.type.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+INFORMATION: MedicationDispense/medicationdispense-example-2: MedicationDispense.quantity: A definition for CodeSystem 'https://www.gfd-dpp.be/fhir/reference/packaging' could not be found, so the code cannot be validated
+== fsh-generated/resources/NamingSystem-be-ns-cnk-codes.json ==
+== fsh-generated/resources/NamingSystem-be-ns-cti-extended-code.json ==
+== fsh-generated/resources/NamingSystem-be-ns-prescription-ids.json ==
+== fsh-generated/resources/NamingSystem-be-ns-product-package-type.json ==
+== fsh-generated/resources/Organization-apotheek-onder-de-toren.json ==
+INFORMATION: Organization/apotheek-onder-de-toren: Organization.identifier[0]: This element does not match any known slice defined in the profile https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-organization|2.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)
+== fsh-generated/resources/StructureDefinition-AD.json ==
+== fsh-generated/resources/StructureDefinition-ANY.json ==
+== fsh-generated/resources/StructureDefinition-BELMMedProduct.json ==
+== fsh-generated/resources/StructureDefinition-BEMedicationLine.json ==
+WARNING: StructureDefinition.where(url = 'https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BEMedicationLine'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-BL.json ==
+== fsh-generated/resources/StructureDefinition-CD.json ==
+== fsh-generated/resources/StructureDefinition-Class.json ==
+== fsh-generated/resources/StructureDefinition-DT.json ==
+== fsh-generated/resources/StructureDefinition-DispenseRequestNeededCategory.json ==
+== fsh-generated/resources/StructureDefinition-DosageOverride.json ==
+== fsh-generated/resources/StructureDefinition-DosageOverrideReason.json ==
+== fsh-generated/resources/StructureDefinition-EN.json ==
+== fsh-generated/resources/StructureDefinition-ExposureCategory.json ==
+== fsh-generated/resources/StructureDefinition-II.json ==
+== fsh-generated/resources/StructureDefinition-INT.json ==
+== fsh-generated/resources/StructureDefinition-KMEHRMS.json ==
+== fsh-generated/resources/StructureDefinition-PQ.json ==
+== fsh-generated/resources/StructureDefinition-REAL.json ==
+== fsh-generated/resources/StructureDefinition-RTO.json ==
+== fsh-generated/resources/StructureDefinition-ST.json ==
+== fsh-generated/resources/StructureDefinition-TS.json ==
+== fsh-generated/resources/StructureDefinition-Untyped.json ==
+== fsh-generated/resources/StructureDefinition-be-medicationdispense.json ==
+INFORMATION: StructureDefinition/be-medicationdispense: StructureDefinition.snapshot.element[85].mapping[0].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+== fsh-generated/resources/StructureDefinition-be-model-medicationdispense.json ==
+== fsh-generated/resources/StructureDefinition-be-model-medicationline.json ==
+== fsh-generated/resources/ValueSet-be-vs-dispenser-types.json ==
+== fsh-generated/resources/ValueSet-medication-exposure-category-vs.json ==
+== fsh-generated/resources/ValueSet-medication-line-origin-type-vs.json ==
+== fsh-generated/resources/ValueSet-medication-type-vs.json ==

@@ -1,0 +1,44 @@
+{
+  "resourceType": "ValueSet",
+  "id": "be-vs-medication-summary-types",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-be-cs-medication-summary-types.html\"><code>https://www.hl7belgium.be/fhir/CodeSystem/be-cs-medication-summary-types</code></a></li></ul></div>"
+  },
+  "url": "https://www.hl7belgium.be/fhir/ValueSet/be-vs-medication-summary-types",
+  "version": "0.2.0",
+  "name": "BeVSMedicationSummaryTypes",
+  "title": "Medication Summary types",
+  "status": "active",
+  "date": "2021-10-27T14:10:56+00:00",
+  "publisher": "HL7 Belgium",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7belgium.org"
+        }
+      ]
+    }
+  ],
+  "description": "Valueset -  Medication Summary types",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "056"
+        }
+      ],
+      "text": "Belgium"
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.hl7belgium.be/fhir/CodeSystem/be-cs-medication-summary-types"
+      }
+    ]
+  }
+}

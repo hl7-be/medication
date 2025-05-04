@@ -1,0 +1,65 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.hl7belgium.org/fhir/NamingSystem/be-ns-nihdi-professional> a fhir:NamingSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "be-ns-nihdi-professional"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h3>Summary</h3><table class=\"grid\"><tr><td>Defining URL</td><td>https://www.hl7belgium.org/fhir/NamingSystem/be-ns-nihdi-professional</td></tr><tr><td>Version</td><td>0.2.0</td></tr><tr><td>Name</td><td>BeNSNihdiIndividual</td></tr><tr><td>Status</td><td>active</td></tr><tr><td>Definition</td><td><div><p>NIHDI identifier for individual care professionals</p>\n</div></td></tr><tr><td>Publisher</td><td>HL7 Belgium</td></tr></table><h3>Identifiers</h3><table class=\"grid\"><tr><td><b>Type</b></td><td><b>Value</b></td><td><b>Preferred</b></td><td><b>Period</b></td></tr><tr><td>URI</td><td>https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi-individual</td><td>true</td><td>2020-01-01 --&gt; (ongoing)</td></tr></table></div>"
+  ];
+  fhir:NamingSystem.name [ fhir:value "BeNSNihdiIndividual"];
+  fhir:NamingSystem.status [ fhir:value "active"];
+  fhir:NamingSystem.kind [ fhir:value "identifier"];
+  fhir:NamingSystem.date [ fhir:value "2020-01-01"^^xsd:date];
+  fhir:NamingSystem.publisher [ fhir:value "HL7 Belgium"];
+  fhir:NamingSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://hl7belgium.org" ]
+     ]
+  ];
+  fhir:NamingSystem.responsible [ fhir:value "---"];
+  fhir:NamingSystem.type [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ];
+       fhir:Coding.code [ fhir:value "NI" ];
+       fhir:Coding.display [ fhir:value "National unique individual identifier" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "IHI" ]
+  ];
+  fhir:NamingSystem.description [ fhir:value "NIHDI identifier for individual care professionals"];
+  fhir:NamingSystem.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ];
+       fhir:Coding.code [ fhir:value "056" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "Belgium" ]
+  ];
+  fhir:NamingSystem.usage [ fhir:value "Used in Belgium for identifying professionals"];
+  fhir:NamingSystem.uniqueId [
+     fhir:index 0;
+     fhir:NamingSystem.uniqueId.type [ fhir:value "uri" ];
+     fhir:NamingSystem.uniqueId.value [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi-individual" ];
+     fhir:NamingSystem.uniqueId.preferred [ fhir:value "true"^^xsd:boolean ];
+     fhir:NamingSystem.uniqueId.period [
+       fhir:Period.start [ fhir:value "2020-01-01"^^xsd:date ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://www.hl7belgium.org/fhir/NamingSystem/be-ns-nihdi-professional.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
