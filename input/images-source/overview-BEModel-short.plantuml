@@ -142,7 +142,7 @@ class "**[[StructureDefinition-BeModelMedicationPrescription.html Prescription]]
 }
 
 
-class "** [[StructureDefinition-be-model-medicationdispense.html Dispense]] **" as D<<TM>> {
+class "** [[StructureDefinition-BeModelMedicationDispense.html Dispense]] **" as D<<TM>> {
    ' |_ patient 0..1 
   ' |_ receiver 0..1 
   ' |_ dispenser 0..1
