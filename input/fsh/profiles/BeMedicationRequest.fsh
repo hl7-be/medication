@@ -29,7 +29,7 @@ Description: "Medication Request profile - The common structure for medication r
   be-ext-OffLabel named offLabel 0..1 MS and
   BasedOnMedicationLine named basedOnMedicationLine 0..1 MS and
   //OrganizationOfRequester named organization 0..1 MS and
-  InstructionsForReimbursement named instructionsForReimbursement 0..1 MS and
+  //InstructionsForReimbursement named instructionsForReimbursement 0..1 MS and
   http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationRequest.statusChanged named statusChanged 0..1
 
 * obeys dosage-override-reason-required
