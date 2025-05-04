@@ -1,3 +1,5 @@
+Logical: BeModelMedicationPrescription
+Id: BeModelMedicationPrescription
 Title: "Medication prescription (model)"
 Description: "Logical model for medication prescription (or some other form of order)"
 Characteristics: #can-be-target
@@ -5,6 +7,8 @@ Characteristics: #can-be-target
 
 * groupIdentifier 0..1 identifier "Identifier for the group that this prescription belongs to. This might be the common identifier in use cases where one national prescription contains several medication items, which can be handled as separate orders"
 // .groupIdentifier
+* identifier 1..* identifier "Business identifier(s) for the prescription"
+
 * prescriber 1..1 Reference (Practitioner or PractitionerRole) "The person who made the prescription, and who takes the responsibility of the treatment" "Question: would we want to add basic Practicioner model?"
 // .requester
 * organization 0..1 Reference (BeOrganization) "The organization from which the prescriber issues the prescription."
@@ -72,4 +76,11 @@ Characteristics: #can-be-target
 * note 0..* string "Additional information or comments"
 // .note
 
+
+// * instructionsForReimbursement 0..1 CodeableConcept "Instructions for reimbursement"
+// // .extensions.instructionsForReimbursement
+// * instructionsForReimbursement from MedicationRequestReimbursementTypeVS (extensible) //"Instructions for reimbursement"
+// // * instructionsForReimbursement ^binding.strength = #extensible
+// // * instructionsForReimbursement ^binding.description = "Instructions for reimbursement"
+// // * instructionsForReimbursement ^binding.valueSet = MedicationRequestReimbursementTypeVS
 
