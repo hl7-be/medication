@@ -58,6 +58,6 @@ ValueSet: MedicationRequestReimbursementTypeVS
 Id: MedicationRequestReimbursementTypeVS
 Title: "Medication request reimbursement type ValueSet"
 Description: "Medication request reimbursement type - instructions for reimbursement of the medication request"
-* ^status = #draft
+* ^status = #active
 * ^experimental = false
 * include codes from system MedicationRequestReimbursementType

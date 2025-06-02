@@ -16,25 +16,27 @@ Characteristics: #can-be-target
 
 * status 1..1 code "Status of the line entry"
 //.status
+* status from BeMedicationLineStatusVS
 
 * statusReason 0..1 CodeableConcept "Reason for the status" 
-  * ^comment = " We consider this is not necessary - should we add?"
+  * ^comment = "We consider this is not necessary - should we add?"
 
 //* recordedDate 0..1 dateTime "Date the medication line was recorded or last updated"
 //  * ^comment = " We consider this is not necessary"
 
-* assertedDate 0..1 dateTime "Date the medication line was first asserted or known"
-  * ^comment = " We consider this is not necessary"
+// * assertedDate 0..1 dateTime "Date the medication line was first asserted or known"
+//   * ^comment = " We consider this is not necessary"
 // .assertedDate
 
-* recorder 1..1 Reference(Practitioner) "Recorder"
+* recorder 1..1 Reference(BePractitioner) "Recorder"
 // .informationSource
   * ^comment = "We understand this will be updated as the line changes"
 
-* patient 1..1 Reference(Patient) "Patient"
+* patient 1..1 Reference(BePatient) "Patient"
 // .subject
 * category 0..* BackboneElement "Category for the line"
   * originType 0..1 CodeableConcept "The origin of the line - hospital, ambulatory"
+  * originType from BeMedicationLineOriginTypeVS
 //.category
 
 * medication 1..1 BackboneElement "The product or substance"
@@ -42,7 +44,7 @@ Characteristics: #can-be-target
 // .medicationReference or medicationCodeableConcept      
   * type 1..1 CodeableConcept "Type of medication - magistral, medicinal product, non-medicinal product"
 // .medicationReference.resolve().classification or medicationCodeableConcept[]
-  * type from BeModelMedicationTypeVS (required)
+  * type from BeMedicationTypeVS (required)
 
 * exposure 0..1 CodeableConcept "Therapeutic, Prophylactic"
 * exposure from MedicationExposureCategoryVS
@@ -62,7 +64,9 @@ Characteristics: #can-be-target
 * adherence 0..1 BackboneElement "Whether the patient is known to be taking the medication"
 // extension[adherence]
   * status 1..1 CodeableConcept "The status - taking, not taking,..."
+  * status from BeModelMedicationLineStatusVS
   * adherenceReason 0..1 CodeableConcept "Reason for the adherence status" 
+
 
 * dosage 1..1 BackboneElement "Dosage"
 //.dosage  
@@ -81,11 +85,11 @@ Characteristics: #can-be-target
 // * visibility 0..* CodeableConcept "Whether the patient has explicitly requested the medication line not to be seen - when other rules don't prevail"
 
 
-CodeSystem: BeModelMedicationType
+CodeSystem: BeMedicationType
 Id:         medication-type
 Title:     "Medication preparation Type"
 Description: "Medication preparation type"
-* ^status = #draft
+* ^status = #active
 * ^experimental = false
 * ^caseSensitive = false
 * #magistral "Magistral preparation"
@@ -96,13 +100,13 @@ Description: "Medication preparation type"
 // TO DO: Do we need non-authorized products?
 
 
-ValueSet: BeModelMedicationTypeVS
+ValueSet: BeMedicationTypeVS
 Id:         medication-type-vs
 Title:     "Medication preparation Type value set"
 Description: "Medication preparation type value set"
-* ^status = #draft
+* ^status = #active
 * ^experimental = false
-* codes from system BeModelMedicationType
+* codes from system BeMedicationType
 
 
 // CodeSystem: BEMLMExposureType
@@ -124,3 +128,60 @@ Description: "Medication preparation type value set"
 // * ^experimental = false
 // * codes from system BEMLMExposureType
 
+
+ValueSet: BeMedicationLineStatusVS
+Title: "Medication Statement Status Codes"
+Description: "This value set includes a selection of medication statement status codes from FHIR."
+* ^status = #active
+* ^experimental = false
+
+
+* http://hl7.org/fhir/CodeSystem/medication-statement-status#complete
+* http://hl7.org/fhir/CodeSystem/medication-statement-status#entered-in-error
+* http://hl7.org/fhir/CodeSystem/medication-statement-status#draft
+
+
+
+
+
+CodeSystem: BeMedicationLineOriginType
+Id:         BeMedicationLineOriginType
+Title:     "Medication exposure Type"
+Description: "Medication exposure type"
+* ^status = #active
+* ^experimental = false
+* ^caseSensitive = false
+* #ambulatory-request "Ambulatory prescription"
+* #hospital-request "Hospital prescription"
+* #self-medication "Upon patient demand - Self-medication"
+* #with-request "Medication not sold in Belgium, with prescription"
+* #without-request "Medication not sold in Belgium, without prescription"
+* #pharmacist-advice "Upon pharmacist advice"
+
+// TO DO: Do we need non-authorized products?
+
+
+ValueSet: BeMedicationLineOriginTypeVS
+Id:       BeMedicationLineOriginTypeVS
+Title:     "Medication exposure Type value set"
+Description: "Medication exposure type value set"
+* ^status = #active
+* ^experimental = false
+* codes from system BeMedicationLineOriginType
+
+
+
+
+
+ValueSet: BeModelMedicationLineStatusVS
+Id:       BeModelMedicationLineStatusVS
+Title:     "Medication line adherence status value set"
+Description: "Medication line adherence status value set"
+* ^status = #active
+* ^experimental = false
+
+* http://hl7.org/fhir/CodeSystem/medication-statement-adherence#taking
+* http://hl7.org/fhir/CodeSystem/medication-statement-adherence#not-taking
+* http://hl7.org/fhir/CodeSystem/medication-statement-adherence#stopped
+* http://hl7.org/fhir/CodeSystem/medication-statement-adherence#on-hold
+* http://hl7.org/fhir/CodeSystem/medication-statement-adherence#unknown
