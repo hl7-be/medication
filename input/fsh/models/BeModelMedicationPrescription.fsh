@@ -26,7 +26,7 @@ Characteristics: #can-be-target
 * status 1..1 CodeableConcept "Status of the prescription, this should not be status of treatment"
 * status from BeMedicationPrescriptionStatusVS
 // .status
-* statusReason 0..* CodeableConcept "Reason for the current status of prescription, for example the reason why the prescription was made invalid"
+* statusReason 0..1 CodeableConcept "Reason for the current status of prescription, for example the reason why the prescription was made invalid"
 // .statusReason
 
 * statusChanged 0..1 dateTime "Date and time when the status of the prescription was changed"
