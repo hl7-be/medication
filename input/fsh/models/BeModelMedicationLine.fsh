@@ -35,6 +35,7 @@ Characteristics: #can-be-target
 // .subject
 * category 0..* BackboneElement "Category for the line"
   * originType 0..1 CodeableConcept "The origin of the line - hospital, ambulatory"
+  * originType from BeMedicationLineOriginTypeVS
 //.category
 
 * medication 1..1 BackboneElement "The product or substance"
