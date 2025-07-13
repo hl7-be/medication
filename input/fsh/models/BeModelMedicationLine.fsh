@@ -16,6 +16,7 @@ Characteristics: #can-be-target
 
 * status 1..1 code "Status of the line entry"
 //.status
+* status from BeMedicationLineStatusVS
 
 //* statusReason 0..1 CodeableConcept "Reason for the status" 
 //  * ^comment = "We consider this is not necessary - should we add?"
@@ -104,6 +105,15 @@ Characteristics: #can-be-target
 // * ^experimental = false
 // * codes from system BEMLMExposureType
 
+ValueSet: BeMedicationLineStatusVS
+Title: "Medication Statement Status Codes"
+Description: "This value set includes a selection of medication statement status codes from FHIR."
+* ^status = #active
+* ^experimental = false
+
+* http://hl7.org/fhir/CodeSystem/medication-statement-status#complete
+* http://hl7.org/fhir/CodeSystem/medication-statement-status#entered-in-error
+* http://hl7.org/fhir/CodeSystem/medication-statement-status#draft
 ValueSet: BeMedicationLineAdherenceStatusReasonVS
 Title: "Medication Treatment Status Change Reason"
 Description: "Reasons for changes in the medication treatment status."
