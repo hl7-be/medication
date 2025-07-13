@@ -7,10 +7,14 @@ Description: "Medication treatment origin type - what is the type of care that o
 * ^caseSensitive = true
 * #ambulatory "Ambulatory"
 * #hospital "Hospital"
+* #self-medication "Self-medication"
+* #with-request "With request"
+* #without-request "Without request"
+* #pharmacist-advice "Pharmacist advice"
 
 
 ValueSet: MedicationLineOrigintypeVS
-Id: medication-line-origin-type-vs
+Id: MedicationLineOrigintypeVS
 Title: "Medication origin type ValueSet"
 Description: "Medication treatment origin type - what is the type of care that originated the medication treatment"
 * ^status = #active

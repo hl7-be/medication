@@ -46,6 +46,7 @@ For the full definition see here: [http://hl7.org/fhir/R5/medicationstatement-de
 * subject 1..1 MS
 * category MS
 * category ^short = "Type of medication usage"
+* category from BeMedicationLineOriginTypeVS
 // why is this 0..1?
 * medication[x] MS
 
