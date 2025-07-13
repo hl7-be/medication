@@ -64,15 +64,13 @@ Characteristics: #can-be-target
   * status 1..1 CodeableConcept "The status - taking, not taking,..."
   * adherenceReason 0..1 CodeableConcept "Reason for the adherence status" 
 
-* dosage 1..1 BackboneElement "Dosage"
-//.dosage  
-  * dosageDetails 0..1 Dosage "Structure Dosage"
 
 * offLabel 0..1 boolean "Off-Label / Dosage Override"
   * isOffLabelUse 0..1 boolean "Off-Label / Dosage Override"
     * ^comment = "isOffLabelUse and reason are expected to be manually filled by the prescriber, indicating that this dosage is not entered in error. This information is an indication (for example) for the pharmacist to see that there is a justification of the dosage difference."
   * reason 1..1 CodeableConcept "Reason for Off-label use or dosage override"
     * ^comment = "isOffLabelUse and reason are expected to be manually filled by the prescriber, indicating that this dosage is not entered in error. This information is an indication (for example) for the pharmacist to see that there is a justification of the dosage difference."
+* dosage 0..* BeModelDosagingInformation "Structured Dosage"
 
 * note 0..* Annotation "A note captured by a professional"
 // .note
