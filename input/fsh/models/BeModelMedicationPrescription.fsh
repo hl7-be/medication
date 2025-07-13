@@ -28,6 +28,7 @@ Characteristics: #can-be-target
 * statusReason 0..* CodeableConcept "Reason for the current status of prescription, for example the reason why the prescription was made invalid"
 // .statusReason
 
+* statusChanged 0..1 dateTime "Date and time when the status of the prescription was changed"
 * category 0..* CodeableConcept "Category or categories of prescription. For example type of reimbursement, or type of prescription (e.g. hospital, private, etc)."
 // .category
 
