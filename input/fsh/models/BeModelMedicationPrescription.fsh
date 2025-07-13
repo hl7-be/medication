@@ -20,7 +20,7 @@ Characteristics: #can-be-target
 
 * recorder 0..1 Reference(Practitioner or PractitionerRole) "The recorder of the prescription/draft in the information system"
 // .recorder
-* recordedDate 0..1 dateTime "Time of authoring the prescription/draft in the information system"
+* recordedDate 1..1 dateTime "Time of authoring the prescription/draft in the information system"
 
 * status 1..1 CodeableConcept "Status of the prescription, this should not be status of treatment"
 * status from BeMedicationPrescriptionStatusVS
