@@ -22,7 +22,7 @@ Description: "Medication Line profile - contains the overview information for a 
 * extension contains 
     OffLabel named offLabel 0..1 MS and
     ExposureCategory named exposure-category 0..1 MS and 
-    DispenseRequestNeeded named dispense-request-needed 0..1 MS and 
+//    DispenseRequestNeededCategory named dispense-request-needed 0..1 MS and 
     //VisibilityFlag named visibility-flag 0..1 MS and 
     http://hl7.org/fhir/StructureDefinition/artifact-version named artifact-version 1..1 MS and
     http://hl7.org/fhir/StructureDefinition/artifact-date named artifact-date 0..1 MS and
@@ -30,7 +30,7 @@ Description: "Medication Line profile - contains the overview information for a 
 
 
 * extension[exposure-category] ^short = "Exposure category"
-* extension[dispense-request-needed] ^short = "Indication of whether a dispense request is needed for delivering the medication"
+//* extension[dispense-request-needed] ^short = "Indication of whether a dispense request is needed for delivering the medication"
 //* extension[visibility-flag] ^short = "Coded preference or assertion about the visibility of the medication line"
 * extension[artifact-version] ^short = "The business version of the medication line - this version changes when the content update is considered clinically relevant"
 * extension[artifact-date] ^short = "The business-relevant recorded date - the date the medication line was created or changed"
@@ -40,7 +40,9 @@ For the full definition see here: [http://hl7.org/fhir/R5/medicationstatement-de
 
 * extension[adherenceStatus].valueCodeableConcept from BeMedicationLineAdherenceStatusVS
 * status MS
+* status from BeMedicationLineAdherenceStatusReasonVS
 * statusReason MS
+* statusReason from BeMedicationLineAdherenceStatusReasonVS
 * dateAsserted MS
 * informationSource 1..1 MS
 
