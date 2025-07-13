@@ -1,4 +1,4 @@
 Detailed diagram:
 <figure>
-  {% include BeModelMedicationLine.svg %}
+  {% include BeModelMedicationDispense.svg %}
 </figure>
