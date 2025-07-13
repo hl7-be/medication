@@ -25,8 +25,8 @@ Characteristics: #can-be-target
 //* recordedDate 0..1 dateTime "Date the medication line was recorded or last updated"
 //  * ^comment = " We consider this is not necessary"
 
-* assertedDate 0..1 dateTime "Date the medication line was first asserted or known"
-  * ^comment = " We consider this is not necessary"
+// * assertedDate 0..1 dateTime "Date the medication line was first asserted or known"
+//   * ^comment = " We consider this is not necessary"
 // .assertedDate
 
 * recorder 1..1 Reference(Practitioner) "Recorder"
