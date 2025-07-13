@@ -67,7 +67,7 @@ Characteristics: #can-be-target
   * adherenceStatusReason from BeMedicationLineAdherenceStatusReasonVS
 
 
-* dosage 0..* BeModelDosagingInformation "Structured Dosage"
+* dosage 0..1 BeModelDosagingInformation "Structured Dosage"
 
 // * offLabel 0..1 boolean "Off-Label / Dosage Override"
 //   * isOffLabelUse 0..1 boolean "Off-Label / Dosage Override"
