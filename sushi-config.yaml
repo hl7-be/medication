@@ -91,24 +91,6 @@ jurisdiction: urn:iso:std:iso:3166#BE "Belgium"
 #     better option (see below).
 # The following are simple examples to demonstrate what this might
 # look like:
-resources:
-   StructureDefinition/BeModelDosagingInformation:
-    name: DosagingInformation
-    description: Logical data model for Dosaging Information
-    exampleBoolean: false
-
-   StructureDefinition/BeMedicationLine:
-    name: Medication Line
-    description: Belgian profile for Medication Line 
-    exampleBoolean: false
-   StructureDefinition/BeMedicationPrescription:
-    name: Medication Prescription
-    description: Belgian profile for Medication Prescription 
-    exampleBoolean: false
-   StructureDefinition/BeMedicationDispense:
-    name: Medication Dispense
-    description: Belgian profile for Medication Dispense
-    exampleBoolean: false
 
     
 

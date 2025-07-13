@@ -1,0 +1,26 @@
+@startuml
+skinparam linetype polyline
+hide circle
+hide stereotype
+
+skinparam class {
+ BorderColor #505090
+ BackgroundColor APPLICATION
+ HeaderBackgroundColor SkyBlue
+}
+
+class "**BeModelMedication**" as BeModelMedication {
+  |_ status 1..1   
+  |_ code 1..1   
+  |_ doseForm 0..1   
+  |_ item 0..*   
+    |_ ingredient 1..*   
+      |_ item 1..1   
+      |_ role 0..1   
+      |_ strength 1..1   
+    |_ amount 0..1   
+  |_ batch 0..1   
+    |_ lotNumber 1..1   
+    |_ expirationDate 0..1   
+}
+@enduml
