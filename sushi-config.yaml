@@ -91,7 +91,27 @@ jurisdiction: urn:iso:std:iso:3166#BE "Belgium"
 #     better option (see below).
 # The following are simple examples to demonstrate what this might
 # look like:
-#resources:
+resources:
+   StructureDefinition/BeModelDosagingInformation:
+    name: DosagingInformation
+    description: Logical data model for Dosaging Information
+    exampleBoolean: false
+
+   StructureDefinition/BeMedicationLine:
+    name: Medication Line
+    description: Belgian profile for Medication Line 
+    exampleBoolean: false
+   StructureDefinition/BeMedicationPrescription:
+    name: Medication Prescription
+    description: Belgian profile for Medication Prescription 
+    exampleBoolean: false
+   StructureDefinition/BeMedicationDispense:
+    name: Medication Dispense
+    description: Belgian profile for Medication Dispense
+    exampleBoolean: false
+
+    
+
 #  Patient/my-example-patient:
 #    name: My Example Patient
 #    description: An example Patient
@@ -104,9 +124,33 @@ jurisdiction: urn:iso:std:iso:3166#BE "Belgium"
 # use their own instead, they can use the mechanism below.  This will
 # create IG.definition.grouping entries and associate the individual
 # resource entries with the corresponding groupIds.
-#groups:
-#  GroupA:
-#    name: Group A
+groups:
+  LogicalModels:
+    name: Logical Data Models
+    description: Logical data models for Medication
+    resources:
+    - StructureDefinition/BeModelDosagingInformation
+    - StructureDefinition/BeModelMedication
+    - StructureDefinition/BeModelMedicationDispense
+    - StructureDefinition/BeModelMedicationLine
+    - StructureDefinition/BeModelMedicationPrescription
+  Profiles:
+    name: Profiles
+    description: Profiles for Medication
+    resources:
+    - StructureDefinition/BeMedicationLine
+    - StructureDefinition/BeMedicationDispense
+    - StructureDefinition/BeMedicationPrescription
+#    - StructureDefinition/BeMedication
+
+
+  # Extensions:
+  #   name: Extensions
+  #   description: Extensions for Medication
+  #   resources:
+  #   - StructureDefinition/BeExtensionMedication
+
+
 #    description: The Alpha Group
 #    resources:
 #    - StructureDefinition/animal-patient
@@ -187,8 +231,7 @@ pages:
 # values, the value in the YAML should be a sequence/array. For a
 # partial list of allowed parameters see:
 # https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters
-#parameters:
-#  excludettl: true
+
 #  validation: [allow-any-extensions, no-broken-links]
 
 # The FSHOnly flag indicates if only FSH resources should be exported.
@@ -210,5 +253,5 @@ parameters:
   apply-jurisdiction: 'true'
   apply-publisher: 'true'
   apply-version: 'true'  
-
+  pin-canonicals: pin-multiples
 
