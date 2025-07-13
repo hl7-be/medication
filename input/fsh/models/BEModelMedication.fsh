@@ -12,3 +12,6 @@ Characteristics: #can-be-target
     * strengthInfo 0..* BackboneElement "Concentration or presentation strength"
       * strength 1..1 Ratio "Concentration or presentation strength of the precise active ingredient"
   * amount 0..1 SimpleQuantity "Number of such manufactured items in this product (5 vials)"
+* batch 0..1 BackboneElement "Batch or production information for the product"
+  * lotNumber 1..1 string "Batch number"
+  * expirationDate 0..1 dateTime "Expiry date"
