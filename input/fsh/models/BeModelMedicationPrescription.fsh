@@ -81,9 +81,9 @@ Characteristics: #can-be-target
 
 
 // * instructionsForReimbursement 0..1 CodeableConcept "Instructions for reimbursement"
-// // .extensions.instructionsForReimbursement
+// .extensions.instructionsForReimbursement
 // * instructionsForReimbursement from MedicationRequestReimbursementTypeVS (extensible) //"Instructions for reimbursement"
-// // * instructionsForReimbursement ^binding.strength = #extensible
-// // * instructionsForReimbursement ^binding.description = "Instructions for reimbursement"
-// // * instructionsForReimbursement ^binding.valueSet = MedicationRequestReimbursementTypeVS
+// * instructionsForReimbursement ^binding.strength = #extensible
+// * instructionsForReimbursement ^binding.description = "Instructions for reimbursement"
+// * instructionsForReimbursement ^binding.valueSet = MedicationRequestReimbursementTypeVS
 
