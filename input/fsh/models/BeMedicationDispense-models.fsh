@@ -22,7 +22,7 @@ Description: "Logical data model for Medication Dispense."
 
 * medicationLine 0..1 Reference(BeModelMedicationLine) "The medication line that this dispense is related to"
 //* ^short = "An individual record of a medication dispense"
-* identifier 0..* Identifier "The business identifier(s) for the medication dispense record" "The business identifier(s) for the medication dispense session. This includes the identifier known as Session GUID (SGUID)."
+* identifier 0..* Identifier "The business identifier(s) for the medication dispense record" "The business identifier(s) for the medication dispense session, also known as Session GUID (SGUID)."
 * patient 1..1 Reference(BePatient) "The person for which the medication is dispensed" "The person for which the medication is dispensed."
 
 * dispenser 0..1 BackboneElement "The dispenser, if known and relevant"
