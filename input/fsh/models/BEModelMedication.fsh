@@ -9,7 +9,7 @@ Characteristics: #can-be-target
   * ingredient 1..* BackboneElement "Ingredients"
     * role 0..1 CodeableConcept "Role (active ingredient, excipient). Typically excipients are not needed, so by default active ingredients are expected."
     * item 1..1 CodeableConcept "Substance or product that is ingredient"
-    * strengthInfo 0..* BackboneElement "Concentration or presentation strength"
+    * strengthInfo 0..1 BackboneElement "Concentration or presentation strength"
       * strength 1..1 Ratio "Concentration or presentation strength of the precise active ingredient"
   * amount 0..1 SimpleQuantity "Number of such manufactured items in this product (5 vials)"
 * batch 0..1 BackboneElement "Batch or production information for the product"
