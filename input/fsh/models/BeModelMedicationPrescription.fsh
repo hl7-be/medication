@@ -50,7 +50,7 @@ Characteristics: #can-be-target
 // .reasonCode
 // .reasonReference
 
-* dosage 1..* BeModelDosagingInformation "Dosaging and administration instructions"
+* dosage 0..* BeModelDosagingInformation "Dosaging and administration instructions"
 // .dosageInstruction
 
 * dispenseRequest 0..1 BackboneElement "Dispense Request or authorization for the prescribed medication"
