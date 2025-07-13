@@ -48,7 +48,7 @@ Characteristics: #can-be-target
   * type from BeMedicationTypeVS (required)
 
 * exposure 0..1 CodeableConcept "Therapeutic, Prophylactic"
-* exposure from MedicationExposureCategoryVS
+* exposure from BeMedicationExposureIntentVS
 
 * reason 0..* BackboneElement "Reason for the medication treatment"
   * reference 0..1 Reference "Reference to existing condition or reason"

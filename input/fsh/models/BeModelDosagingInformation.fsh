@@ -1,7 +1,7 @@
 Logical: BeModelDosagingInformation
 Parent: Base
-Title: "Dosaging - Data Model"
-Description: "Usage instructions. Instructions about requested administration of the product. Based on FHIR Dosage complex data type."
+Title: "Dosaging (model)"
+Description: "Structured Dosage data model."
 Characteristics: #can-be-target
 
 * timing 0..1 BackboneElement "When medication should be administered (period, time of day, frequency, etc)" 

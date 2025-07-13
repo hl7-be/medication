@@ -20,8 +20,8 @@ Description: "Medication Line profile - contains the overview information for a 
 
 
 * extension contains 
-    OffLabel named offLabel 0..1 MS and
-    ExposureCategory named exposure-category 0..1 MS and 
+    BeExtOffLabel named offLabel 0..1 MS and
+    BeMedicationExposureCategory named exposure-category 0..1 MS and 
 //    DispenseRequestNeededCategory named dispense-request-needed 0..1 MS and 
     //VisibilityFlag named visibility-flag 0..1 MS and 
     http://hl7.org/fhir/StructureDefinition/artifact-version named artifact-version 1..1 MS and
