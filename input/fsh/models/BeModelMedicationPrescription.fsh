@@ -23,6 +23,7 @@ Characteristics: #can-be-target
 * recordedDate 0..1 dateTime "Time of authoring the prescription/draft in the information system"
 
 * status 1..1 CodeableConcept "Status of the prescription, this should not be status of treatment"
+* status from BeMedicationPrescriptionStatusVS
 // .status
 * statusReason 0..* CodeableConcept "Reason for the current status of prescription, for example the reason why the prescription was made invalid"
 // .statusReason
