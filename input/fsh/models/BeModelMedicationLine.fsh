@@ -17,8 +17,8 @@ Characteristics: #can-be-target
 * status 1..1 code "Status of the line entry"
 //.status
 
-* statusReason 0..1 CodeableConcept "Reason for the status" 
-  * ^comment = " We consider this is not necessary - should we add?"
+//* statusReason 0..1 CodeableConcept "Reason for the status" 
+//  * ^comment = "We consider this is not necessary - should we add?"
 
 //* recordedDate 0..1 dateTime "Date the medication line was recorded or last updated"
 //  * ^comment = " We consider this is not necessary"
@@ -62,7 +62,9 @@ Characteristics: #can-be-target
 * adherence 0..1 BackboneElement "Whether the patient is known to be taking the medication"
 // extension[adherence]
   * status 1..1 CodeableConcept "The status - taking, not taking,..."
-  * adherenceReason 0..1 CodeableConcept "Reason for the adherence status" 
+  * status from BeMedicationLineAdherenceStatusVS
+  * adherenceStatusReason 0..1 CodeableConcept "Reason for the adherence status" 
+  * adherenceStatusReason from BeMedicationLineAdherenceStatusReasonVS
 
 
 * offLabel 0..1 boolean "Off-Label / Dosage Override"
@@ -99,3 +101,16 @@ Characteristics: #can-be-target
 // * ^experimental = false
 // * codes from system BEMLMExposureType
 
+ValueSet: BeMedicationLineAdherenceStatusReasonVS
+Title: "Medication Treatment Status Change Reason"
+Description: "Reasons for changes in the medication treatment status."
+* ^status = #active
+* ^experimental = false
+
+* http://terminology.hl7.org/CodeSystem/v3-ActReason#MEDPREC "Medical precaution"
+* http://terminology.hl7.org/CodeSystem/v3-ActReason#IMMUNE "Immunological reason"
+* http://terminology.hl7.org/CodeSystem/v3-ActReason#PATOBJ "Patient objection"
+* http://terminology.hl7.org/CodeSystem/v3-ActReason#OSTOCK "Out of stock"
+* http://terminology.hl7.org/CodeSystem/v3-ActReason#ALLERGY "Allergy"
+* http://terminology.hl7.org/CodeSystem/v3-ActReason#MODIFIED "Modified treatment"
+* http://terminology.hl7.org/CodeSystem/v3-ActReason#OTHER "Other reason"
