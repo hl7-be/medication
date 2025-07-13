@@ -1,7 +1,7 @@
 CodeSystem: BeMedicationLineOriginType
 Id:         BeMedicationLineOriginType
-Title:     "Medication exposure Type"
-Description: "Medication exposure type"
+Title:     "Medication origin Type"
+Description: "Medication origin type"
 * ^status = #active
 * ^experimental = false
 * ^caseSensitive = false

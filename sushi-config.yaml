@@ -109,22 +109,50 @@ jurisdiction: urn:iso:std:iso:3166#BE "Belgium"
 groups:
   LogicalModels:
     name: Logical Data Models
-    description: Logical data models for Medication
+    description: Logical data models. The Logical data models are representations of the data needs for the scope of this Implementation Guide. The data models are primarily aligned with key projects, namely VIDIS, but are prepared in coordination with the Belgian community to ensure a common data structure that supports the projects and the implementation data needs.
     resources:
+    - StructureDefinition/BeModelMedicationLine
+    - StructureDefinition/BeModelMedicationDispense
+    - StructureDefinition/BeModelMedicationPrescription
     - StructureDefinition/BeModelDosagingInformation
     - StructureDefinition/BeModelMedication
-    - StructureDefinition/BeModelMedicationDispense
-    - StructureDefinition/BeModelMedicationLine
-    - StructureDefinition/BeModelMedicationPrescription
+
   Profiles:
     name: Profiles
-    description: Profiles for Medication
+    description: Profiles for Medication. These are implementable FHIR profiles.
     resources:
-    - StructureDefinition/BeMedicationLine
     - StructureDefinition/BeMedicationDispense
+    - StructureDefinition/BeMedicationLine
     - StructureDefinition/BeMedicationPrescription
-#    - StructureDefinition/BeMedication
+    - StructureDefinition/BeDosage
 
+  Extensions:
+    name: Extensions
+    description: Extensions for FHIR resources, to be used in Profiles
+    resources:
+    - StructureDefinition/BeMedicationExposureCategory
+    - StructureDefinition/BeExtOffLabel
+    - StructureDefinition/BasedOnMedicationLine
+
+  Terminology:
+    name: Terminology
+    description: Terminology for Medication. These are value sets, code systems and naming systems for identifiers.
+    resources:
+    - ValueSet/be-vs-dispenser-types
+    - ValueSet/BeMedicationPrescriptionStatus
+    - ValueSet/BeMedicationLineStatusVS
+    - ValueSet/BeMedicationLineAdherenceStatusReasonVS
+    - ValueSet/BeMedicationLineAdherenceStatusVS
+    - ValueSet/BeMedicationLineOriginTypeVS
+    - ValueSet/BeMedicationTypeVS
+    - ValueSet/BeMedicationExposureIntentVS
+    - ValueSet/BeRouteOfAdministrationVS
+    - CodeSystem/BeMedicationLineOriginType
+    - CodeSystem/BeMedicationType
+    - NamingSystem/be-ns-cnk-codes
+    - NamingSystem/be-ns-cti-extended-code
+    - NamingSystem/be-ns-prescription-ids
+    - NamingSystem/be-ns-product-package-type
 
   # Extensions:
   #   name: Extensions

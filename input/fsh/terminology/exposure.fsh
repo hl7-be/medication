@@ -1,5 +1,4 @@
-ValueSet: MedicationExposureCategoryVS
-Id: medication-exposure-category-vs
+ValueSet: BeMedicationExposureIntentVS
 Title: "Medication exposure intent"
 Description: "The exposure purpose of a medication - whether the medication is given for therapeutic or prophylactic purposes."
 * ^status = #active

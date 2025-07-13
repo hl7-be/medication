@@ -1,5 +1,4 @@
 CodeSystem: BeMedicationType
-Id:         medication-type
 Title:     "Medication preparation Type"
 Description: "Medication preparation type"
 * ^status = #active
@@ -14,7 +13,6 @@ Description: "Medication preparation type"
 
 
 ValueSet: BeMedicationTypeVS
-Id:         medication-type-vs
 Title:     "Medication preparation Type value set"
 Description: "Medication preparation type value set"
 * ^status = #active
