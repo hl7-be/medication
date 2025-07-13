@@ -29,6 +29,7 @@ Description: "Logical data model for Medication Dispense."
   * dispenser 1..1 Reference (BePractitioner) "Reference to person that performed the recording or reporting"
   * organization 1..1 Reference (BeOrganization) "Reference to person that performed the recording or reporting" 
 
+* recordedDate 1..1 dateTime "The date (or date+time) when the dispense was recorded"
 * dispenseDate 1..1 dateTime "The date (or date+time) when the dispense ocurred"
 * prescription 0..1 BackboneElement  "Information about a prescription related to the dispense"
   * isPrescribed 0..1 boolean "Whether this dispense was performed against a prescription"
