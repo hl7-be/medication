@@ -34,7 +34,7 @@ Characteristics: #can-be-target
 // .category
 
 
-* validFrom 0..1 dateTime "Effective date of the prescription. The prescription is not dispensable before this date. In most cases this information repeats issueDate"
+* validFrom 1..1 dateTime "Effective date of the prescription. The prescription is not dispensable before this date. In most cases this information repeats issueDate"
 // .dispenseRequest.validityPeriod.start
 * validUntil 0..1 dateTime "The validity period end date. The prescription is not dispensable after this date."
 // .dispenseRequest.validityPeriod.end

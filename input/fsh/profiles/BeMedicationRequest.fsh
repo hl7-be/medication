@@ -69,7 +69,7 @@ For the full definition see here: [http://hl7.org/fhir/R5/medicationrequest-defi
 * dispenseRequest.validityPeriod ^comment = "The period of time that the prescription is valid for dispensing. The validity of the prescription for administration (i.e. whether the prescription can be administered after a given date) is conveyed in the dosage information."
 
 * dispenseRequest.validityPeriod.start 1.. MS
-* dispenseRequest.validityPeriod.end 1.. MS
+* dispenseRequest.validityPeriod.end 0.. MS
 * dispenseRequest.quantity MS
 * dispenseRequest.numberOfRepeatsAllowed MS
 
