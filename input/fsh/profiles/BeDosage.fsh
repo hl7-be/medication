@@ -1,7 +1,7 @@
 
 Profile:        BeDosage
 Parent:         Dosage
-Id:             be-dosage
+Id:             BeDosage
 Title:          "BeMedicationDosage"
 Description: "Specifications for a medication dosage for use in Belgian profiles."
 

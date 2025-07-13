@@ -1,4 +1,5 @@
 Profile: BeMedicationLine
+Id: BeMedicationLine
 Title: "BeMedicationLine"
 Parent: MedicationStatement
 Description: "Medication Line profile - contains the overview information for a single medication item"

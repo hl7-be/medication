@@ -5,7 +5,7 @@ Alias: $be-practitioner = https://www.ehealth.fgov.be/standards/fhir/core/Struct
 
 Profile:        BeMedicationDispense
 Parent:         MedicationDispense
-Id:             be-medicationdispense
+Id:             BeMedicationDispense
 Title:          "BeMedicationDispense"
 Description: "Defines constraints and extensions on the Medication Dispense resource for a record of a dispensation in Belgium."
 * ^version = "0.2.0"
