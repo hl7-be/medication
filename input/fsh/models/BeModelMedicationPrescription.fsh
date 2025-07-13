@@ -1,5 +1,6 @@
 Logical: BeModelMedicationPrescription
 Id: BeModelMedicationPrescription
+Parent: Base
 Title: "Medication prescription (model)"
 Description: "Logical model for medication prescription (or some other form of order)"
 Characteristics: #can-be-target

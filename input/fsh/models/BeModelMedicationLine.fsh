@@ -1,5 +1,6 @@
 Logical: BeModelMedicationLine
 Id: BeModelMedicationLine
+Parent: Base
 Title: "Medication Line (model)"
 Description: "Logical data model for medication line."
 Characteristics: #can-be-target

@@ -40,6 +40,7 @@
 
 Logical: BeModelMedication
 Id:  BeModelMedication
+Parent: Base
 Title: "Medication (model)"
 Description: "Logical data model for medication."
 Characteristics: #can-be-target
