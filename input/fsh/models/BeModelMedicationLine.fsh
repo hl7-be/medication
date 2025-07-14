@@ -9,7 +9,7 @@ Characteristics: #can-be-target
 
 * uniqueIdentifier 1..* Identifier "Unique identifier" "A unique identifier for the medication line. This identifier alone may be the same for different versions of the medication line."
 
-* versionIdentifier 0..1 string "Version of the medication line at the time the content was recorded or last updated."
+//* versionIdentifier 0..1 string "Version of the medication line at the time the content was recorded or last updated."
 // .extension[artifactVersion]
 * recordedDate 1..1 dateTime "Timestamp the medication line content was recorded or last updated."
 // .extension[artifactDate]
