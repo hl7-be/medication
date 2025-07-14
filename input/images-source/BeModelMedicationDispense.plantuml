@@ -26,8 +26,7 @@ class "**BeModelMedicationDispense**" as BeModelMedicationDispense {
     |_ product 1..1   
     |_ quantityDispensed 0..1   
     |_ dosageInstructions 0..1   
-    |_ note 0..*   
+    |_ offLabel 0..1   
   |_ note 0..*   
 }
-@enduml
 @enduml

@@ -11,8 +11,7 @@ skinparam class {
 
 class "**MedicationLine**" as MedicationLine {
   |_ uniqueIdentifier 1..*   
-  |_ versionIdentifier 0..1   
-  |_ lastUpdatedDate 1..1   
+  |_ recordedDate 1..1   
   |_ status 1..1   
   |_ recorder 1..1   
   |_ patient 1..1   
