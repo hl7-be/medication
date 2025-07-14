@@ -133,6 +133,9 @@ groups:
     - StructureDefinition/BeMedicationExposureCategory
     - StructureDefinition/BeExtOffLabel
     - StructureDefinition/BasedOnMedicationLine
+    - StructureDefinition/BeExtRecordedDate
+    - StructureDefinition/BeExtRecorder
+    - StructureDefinition/BeMedicationRequestReimbursementType
 
   Terminology:
     name: Terminology
