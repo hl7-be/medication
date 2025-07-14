@@ -71,7 +71,7 @@ class "** Medication Product **" as M<<TM>> {
 
 class "**Medication Line**" as ML<<TM>> {
   |_ uniqueIdentifier 1..1   
-  |_ versionIdentifier 1..1   
+'  |_ versionIdentifier 1..1   
   |_ lastUpdatedDate 1..1   
   |_ status 1..1   
   |_ statusReason 0..1   
