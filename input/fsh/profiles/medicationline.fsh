@@ -18,9 +18,14 @@ Description: "Medication Line profile - contains the overview information for a 
 * identifier[vidis].system = "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline"
 * identifier[vidis].value MS
 
+* medication[x]
+  * extension contains BeMedicationType named medicationType 0..1 MS
+  * extension[medicationType] ^short = "Type of medication"
 
 * extension contains 
-    BeExtOffLabel named offLabel 0..1 MS and
+    BeExtRecordedDate named recordedDate 1..1 MS and
+    BeExtRecorder named recorder 1..1 MS and
+//    BeExtOffLabel named offLabel 0..1 MS and
     BeMedicationExposureCategory named exposure-category 0..1 MS and 
 //    DispenseRequestNeededCategory named dispense-request-needed 0..1 MS and 
     //VisibilityFlag named visibility-flag 0..1 MS and 
@@ -53,14 +58,22 @@ For the full definition see here: [http://hl7.org/fhir/R5/medicationstatement-de
 // why is this 0..1?
 * medication[x] MS
 
+* dateAsserted 1..1
+* reasonReference 0..1 MS
 * reasonCode MS
 * reasonReference MS
 * dosage MS
-* dosage
-
+* dosage.extension contains 
+   BeExtOffLabel named offLabel 0..1 MS
+      
+* dosage.extension[offLabel].extension[reason] ^short = "The reason why the recommended dosage was overridden"
 
 
 * effective[x] 1..1 MS
+* effectivePeriod 1..1 MS
+* effectivePeriod.start 1.. MS
+* effectivePeriod.end 0.. MS
+
 * note MS
 
 * subject only Reference (BePatient)
