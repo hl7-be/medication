@@ -46,7 +46,6 @@ For the full definition see here: [http://hl7.org/fhir/R5/medicationrequest-defi
 * statusReason MS
 * priority MS
 * intent MS
-* category MS
 * medication[x] MS
 * reasonCode MS // only if reason/indication is allowed?
 * reasonReference MS // only if reason/indication is allowed?
@@ -56,8 +55,8 @@ For the full definition see here: [http://hl7.org/fhir/R5/medicationrequest-defi
 * authoredOn 1.. MS
 * requester 1.. MS
 * requester only Reference (BePractitioner or BePractitionerRole)
-* recorder MS
-* recorder only Reference (BePractitioner or BePractitionerRole)
+//* recorder MS
+//* recorder only Reference (BePractitioner or BePractitionerRole)
 * dosageInstruction 1.. MS
 * dosageInstruction
 
