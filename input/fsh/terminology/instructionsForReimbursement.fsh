@@ -1,5 +1,4 @@
-CodeSystem: MedicationRequestReimbursementType
-Id: be-cs-medication-request-reimbursement-type
+CodeSystem: BeMedicationRequestReimbursementType
 Title: "Medication request reimbursement type"
 Description: "Medication request reimbursement type - instructions for reimbursement of the medication request"
 * ^status = #active
@@ -54,10 +53,10 @@ Description: "Medication request reimbursement type - instructions for reimburse
   * ^designation[=].value = "Opstarttraject diabetes type 2"
 
 
-ValueSet: MedicationRequestReimbursementTypeVS
-Id: MedicationRequestReimbursementTypeVS
+ValueSet: BeMedicationRequestReimbursementTypeVS
+Id: BeMedicationRequestReimbursementTypeVS
 Title: "Medication request reimbursement type ValueSet"
 Description: "Medication request reimbursement type - instructions for reimbursement of the medication request"
 * ^status = #active
 * ^experimental = false
-* include codes from system MedicationRequestReimbursementType
+* include codes from system BeMedicationRequestReimbursementType

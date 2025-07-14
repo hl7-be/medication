@@ -68,6 +68,8 @@ Characteristics: #can-be-target
 // .substitution(.allowed)
   * substitutionallowed 1..1 boolean "Substitution of the product is allowed."
   * substitutionReason 0..1 CodeableConcept "Coded or Text reason for the no-substitution requirement"
+* instructionForReimbursement 0..1 CodeableConcept "Instructions for reimbursement"
+* instructionForReimbursement from BeMedicationRequestReimbursementTypeVS (extensible)
 
 * offLabel 0..1 boolean "Off-Label / Dosage Override"
   * isOffLabelUse 0..1 boolean "Off-Label / Dosage Override"

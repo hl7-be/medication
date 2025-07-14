@@ -147,13 +147,14 @@ groups:
     - ValueSet/BeMedicationTypeVS
     - ValueSet/BeMedicationExposureIntentVS
     - ValueSet/BeRouteOfAdministrationVS
+    - ValueSet/BeMedicationRequestReimbursementTypeVS
+    - CodeSystem/BeMedicationRequestReimbursementType
     - CodeSystem/BeMedicationLineOriginType
     - CodeSystem/BeMedicationType
     - NamingSystem/be-ns-cnk-codes
     - NamingSystem/be-ns-cti-extended-code
     - NamingSystem/be-ns-prescription-ids
     - NamingSystem/be-ns-product-package-type
-
   # Extensions:
   #   name: Extensions
   #   description: Extensions for Medication
