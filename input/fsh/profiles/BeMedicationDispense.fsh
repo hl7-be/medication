@@ -13,6 +13,11 @@ Description: "Defines constraints and extensions on the Medication Dispense reso
 * . ^short = "The medication dispense entry"
 * . ^definition = "A register of a medication dispense, describing the medication that has been dispensed by a professional or by an organization, including the medication, the patient, some prescription and treatment information."
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 1
+
+* extension contains 
+     http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationDispense.recorded named recorded 1..1 MS and 
+     BasedOnMedicationLine named basedOnMedicationLine 0..1 MS 
+
 * identifier MS
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "system"
@@ -50,6 +55,9 @@ Description: "Defines constraints and extensions on the Medication Dispense reso
 * dosageInstruction MS
 * dosageInstruction.text MS
 * dosageInstruction.patientInstruction MS
+* dosageInstruction.extension contains 
+   BeExtOffLabel named beExtOffLabel 0..1 MS
+      
 
 /*
 * performer ^slicing.discriminator.type = #pattern
