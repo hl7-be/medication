@@ -1,4 +1,4 @@
 Extension: BasedOnMedicationLine
 Description: "Based on medication line."
-Context: MedicationRequest
+Context: MedicationRequest, MedicationDispense
 * value[x] only Reference (BeMedicationLine)
