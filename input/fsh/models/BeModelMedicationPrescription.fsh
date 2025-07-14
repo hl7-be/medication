@@ -5,8 +5,7 @@ Title: "Medication prescription (model)"
 Description: "Logical model for medication prescription (or some other form of order)"
 Characteristics: #can-be-target
 
-
-* groupIdentifier 0..1 identifier "Identifier for the group that this prescription belongs to. This might be the common identifier in use cases where one national prescription contains several medication items, which can be handled as separate orders"
+//* groupIdentifier 0..1 identifier "Identifier for the group that this prescription belongs to. This might be the common identifier in use cases where one national prescription contains several medication items, which can be handled as separate orders"
 // .groupIdentifier
 * identifier 1..* identifier "Business identifier(s) for the prescription"
 
@@ -14,12 +13,12 @@ Characteristics: #can-be-target
 // .requester
 * organization 0..1 Reference (BeOrganization) "The organization from which the prescriber issues the prescription."
 // .organization
-* issueDate 1..1 dateTime "Time of issuing (signing) the prescription by health care practicioner"
+//* issueDate 1..1 dateTime "Time of issuing (signing) the prescription by health care practicioner"
 
 * patient 1..1 Reference "The person for whom the medication is prescribed/ordered" // "Question: would we want to add basic Patient model?"
 // .subject
 
-* recorder 0..1 Reference(Practitioner or PractitionerRole) "The recorder of the prescription/draft in the information system"
+//* recorder 0..1 Reference(Practitioner or PractitionerRole) "The recorder of the prescription/draft in the information system"
 // .recorder
 * recordedDate 1..1 dateTime "Time of authoring the prescription/draft in the information system"
 
@@ -30,7 +29,7 @@ Characteristics: #can-be-target
 // .statusReason
 
 * statusChanged 0..1 dateTime "Date and time when the status of the prescription was changed"
-* category 0..* CodeableConcept "Category or categories of prescription. For example type of reimbursement, or type of prescription (e.g. hospital, private, etc)."
+//* category 0..* CodeableConcept "Category or categories of prescription. For example type of reimbursement, or type of prescription (e.g. hospital, private, etc)."
 // .category
 
 
@@ -66,8 +65,9 @@ Characteristics: #can-be-target
 //* preparationInstructions 0..* ST "Additional instructions about preparation or dispense" 
 * substitution 0..1 BackboneElement "Whether substitution is allowed, and reason"
 // .substitution(.allowed)
-  * substitutionallowed 1..1 boolean "Substitution of the product is allowed."
-  * substitutionReason 0..1 CodeableConcept "Coded or Text reason for the no-substitution requirement"
+  * substitutionAllowed 1..1 boolean "Substitution of the product is allowed."
+  * substitutionAllowedReason 0..1 CodeableConcept "Coded or Text reason for the no-substitution requirement"
+
 * instructionForReimbursement 0..1 CodeableConcept "Instructions for reimbursement"
 * instructionForReimbursement from BeMedicationRequestReimbursementTypeVS (extensible)
 
