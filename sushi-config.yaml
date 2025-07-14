@@ -135,7 +135,7 @@ groups:
     - StructureDefinition/BasedOnMedicationLine
     - StructureDefinition/BeExtRecordedDate
     - StructureDefinition/BeExtRecorder
-    - StructureDefinition/BeMedicationRequestReimbursementType
+    - StructureDefinition/BeExtInstructionsForReimbursement
 
   Terminology:
     name: Terminology

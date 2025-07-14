@@ -1,4 +1,4 @@
-Extension: InstructionsForReimbursement
+Extension: BeExtInstructionsForReimbursement
 Description: "Instructions for Reimbursement."
 Context: MedicationRequest
 * value[x] only CodeableConcept
