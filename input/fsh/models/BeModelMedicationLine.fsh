@@ -11,7 +11,7 @@ Characteristics: #can-be-target
 
 * versionIdentifier 0..1 string "Version of the medication line at the time the content was recorded or last updated."
 // .extension[artifactVersion]
-* lastUpdatedDate 1..1 dateTime "Timestamp the medication line content was recorded or last updated."
+* recordedDate 1..1 dateTime "Timestamp the medication line content was recorded or last updated."
 // .extension[artifactDate]
   * ^comment = " We consider this is redundant with the above, given the intended use in Belgium (version is a date). How to ensure the compatibility?"
 
