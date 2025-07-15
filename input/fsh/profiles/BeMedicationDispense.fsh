@@ -49,6 +49,7 @@ Description: "Defines constraints and extensions on the Medication Dispense reso
 * authorizingPrescription MS
 * authorizingPrescription.identifier MS
 * authorizingPrescription.display MS
+* authorizingPrescription.display ^comment = "When there is a prescription but that prescription is not known to the system (e.g. a paper prescription from another country or a prescription that is not yet entered in the system), the display can be used to provide a confirmation that there is a prescription."
 * quantity MS
 * whenHandedOver 1.. MS
 * note MS
