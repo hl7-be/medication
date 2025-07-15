@@ -54,6 +54,13 @@ Characteristics: #can-be-target
 * dosage 0..* BeModelDosagingInformation "Dosaging and administration instructions"
 // .dosageInstruction
 
+* offLabel 0..1 boolean "Off-Label / Dosage Override"
+  * isOffLabelUse 0..1 boolean "Off-Label / Dosage Override"
+    * ^comment = "isOffLabelUse and reason are expected to be manually filled by the prescriber, indicating that this dosage is not entered in error. This information is an indication (for example) for the pharmacist to see that there is a justification of the dosage difference."
+  * reason 1..1 CodeableConcept "Dosage Override reason"
+    * ^comment = "isOffLabelUse and reason are expected to be manually filled by the prescriber, indicating that this dosage is not entered in error. This information is an indication (for example) for the pharmacist to see that there is a justification of the dosage difference."
+
+
 * dispenseRequest 0..1 BackboneElement "Dispense Request or authorization for the prescribed medication"
   * dispenseInterval 0..1 Duration "Minimum period of time between dispenses"
   // .dispenseRequest.dispenseInterval
@@ -71,11 +78,6 @@ Characteristics: #can-be-target
 * instructionForReimbursement 0..1 CodeableConcept "Instructions for reimbursement"
 * instructionForReimbursement from BeMedicationRequestReimbursementTypeVS (extensible)
 
-* offLabel 0..1 boolean "Off-Label / Dosage Override"
-  * isOffLabelUse 0..1 boolean "Off-Label / Dosage Override"
-    * ^comment = "isOffLabelUse and reason are expected to be manually filled by the prescriber, indicating that this dosage is not entered in error. This information is an indication (for example) for the pharmacist to see that there is a justification of the dosage difference."
-  * reason 1..1 CodeableConcept "Dosage Override reason"
-    * ^comment = "isOffLabelUse and reason are expected to be manually filled by the prescriber, indicating that this dosage is not entered in error. This information is an indication (for example) for the pharmacist to see that there is a justification of the dosage difference."
 
 
 * note 0..* string "Additional information or comments"
