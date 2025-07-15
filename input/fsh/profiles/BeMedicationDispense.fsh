@@ -56,7 +56,7 @@ Description: "Defines constraints and extensions on the Medication Dispense reso
 * dosageInstruction MS
 * dosageInstruction.text MS
 * dosageInstruction.patientInstruction MS
-* dosageInstruction.extension contains 
+* extension contains 
    BeExtOffLabel named beExtOffLabel 0..1 MS
       
 
