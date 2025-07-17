@@ -65,29 +65,30 @@ Characteristics: #can-be-target
   * code 0..1 CodeableConcept "Code of the condition, or free text" 
 // .reasonCode
 
+
 * effectivePeriod 1..1 BackboneElement "Period of medication treatment"
   * start 1..1 dateTime "The begin of the medication line"
 // .effectiveDateTime OR .effectivePeriod.start
 //  * ^comment = ".effectiveDateTime OR .effectivePeriod.start. Do we need to support both? Can we use effectivePeriod when .end is known? And when only .start is known, we use dateTime?"
   * end 0..1 dateTime "The end of the medication line"
 
-* category 0..* BackboneElement "Category for the line"
-  * originType 0..1 CodeableConcept "The origin of the line - hospital, ambulatory"
-  * originType from BeMedicationLineOriginTypeVS
+* dosage 0..* BeModelDosagingInformation "Structured Dosage"
+
+* offLabel 0..1 string "Reason for Off-label use or dosage override"
+  * ^comment = "isOffLabelUse and reason are expected to be manually filled by the prescriber, indicating that this dosage is not entered in error. This information is an indication (for example) for the pharmacist to see that there is a justification of the dosage difference."
 
 * exposure 0..1 CodeableConcept "Therapeutic, Prophylactic"
 * exposure from BeMedicationExposureIntentVS
 
+* originType 0..1 CodeableConcept "The origin of the line - hospital, ambulatory"
+* originType from BeMedicationLineOriginTypeVS
 
-* dosage 0..* BeModelDosagingInformation "Structured Dosage"
 
 // * offLabel 0..1 boolean "Off-Label / Dosage Override"
 //   * isOffLabelUse 0..1 boolean "Off-Label / Dosage Override"
 //     * ^comment = "isOffLabelUse and reason are expected to be manually filled by the prescriber, indicating that this dosage is not entered in error. This information is an indication (for example) for the pharmacist to see that there is a justification of the dosage difference."
 //   * reason 0..1 CodeableConcept "Reason for Off-label use or dosage override"
 //     * ^comment = "isOffLabelUse and reason are expected to be manually filled by the prescriber, indicating that this dosage is not entered in error. This information is an indication (for example) for the pharmacist to see that there is a justification of the dosage difference."
-* offLabel 0..1 string "Reason for Off-label use or dosage override"
-  * ^comment = "isOffLabelUse and reason are expected to be manually filled by the prescriber, indicating that this dosage is not entered in error. This information is an indication (for example) for the pharmacist to see that there is a justification of the dosage difference."
 * note 0..* Annotation "A note captured by a professional"
 // .note
 
