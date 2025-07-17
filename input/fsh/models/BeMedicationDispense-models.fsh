@@ -26,10 +26,13 @@ Description: "Logical data model for Medication Dispense."
 * patient 1..1 Reference(BePatient) "The person for which the medication is dispensed" "The person for which the medication is dispensed."
 
 * status 1..1 code "The status of the dispense record"
+* status from http://hl7.org/fhir/ValueSet/medicationdispense-status
 
 
 * statusReason 0..1 CodeableConcept "The reason why the dispense was not performed, if it was not performed"
 //* dispenseLocation 0..1 Reference(BeLocation) "The location where the dispense was performed"
+* statusReason from http://hl7.org/fhir/ValueSet/medicationdispense-status-reason
+
 * dispenser 0..1 BackboneElement "The dispenser, if known and relevant"
   * dispenser 0..1 Reference (BePractitioner) "Reference to person that performed the recording or reporting"
   * organization 0..1 Reference (BeOrganization) "Reference to person that performed the recording or reporting" 
