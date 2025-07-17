@@ -6,7 +6,7 @@ The Medication Prescription relates to the other data structures in the followin
 </figure>
 
 
-* A [Medication Prescription](StructureDefinition-BeModelMedicationPrescription.html) may be based on a [Medication Line](StructureDefinition-medicationline.html) 
+* A [Medication Prescription](StructureDefinition-BeModelMedicationPrescription.html) may be based on a [Medication Line](StructureDefinition-BeModelMedicationLine.html) 
 
 * A [Medication Prescription](StructureDefinition-BeModelMedicationPrescription.html) may also be initiating a [Medication Line](StructureDefinition-BeModelMedicationLine.html) 
 
