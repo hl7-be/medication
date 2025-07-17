@@ -9,18 +9,12 @@ Characteristics: #can-be-target
 // .groupIdentifier
 * identifier 1..* identifier "Business identifier(s) for the prescription"
 
-* prescriber 1..1 Reference (Practitioner or PractitionerRole) "The person who made the prescription, and who takes the responsibility of the treatment" "Question: would we want to add basic Practicioner model?"
-// .requester
-* organization 0..1 Reference (BeOrganization) "The organization from which the prescriber issues the prescription."
-// .organization
-//* issueDate 1..1 dateTime "Time of issuing (signing) the prescription by health care practicioner"
+* recordedDate 1..1 dateTime "Time of authoring the prescription/draft in the information system"
+
+* basedOnMedicationLine 0..1 Reference (BeModelMedicationLine) "Link to the Medication Line from which this request is based"
 
 * patient 1..1 Reference "The person for whom the medication is prescribed/ordered" // "Question: would we want to add basic Patient model?"
 // .subject
-
-//* recorder 0..1 Reference(Practitioner or PractitionerRole) "The recorder of the prescription/draft in the information system"
-// .recorder
-* recordedDate 1..1 dateTime "Time of authoring the prescription/draft in the information system"
 
 * status 1..1 CodeableConcept "Status of the prescription, this should not be status of treatment"
 * status from BeMedicationPrescriptionStatusVS
@@ -28,19 +22,23 @@ Characteristics: #can-be-target
 * statusReason 0..1 CodeableConcept "Reason for the current status of prescription, for example the reason why the prescription was made invalid"
 // .statusReason
 
+//  The statusReason is NOT binding, and FHIR has already a valueset, so we don'd add it here.
+
+
 * statusChanged 0..1 dateTime "Date and time when the status of the prescription was changed"
 //* category 0..* CodeableConcept "Category or categories of prescription. For example type of reimbursement, or type of prescription (e.g. hospital, private, etc)."
 // .category
 
+* prescriber 1..1 Reference (Practitioner or PractitionerRole) "The person who made the prescription, and who takes the responsibility of the treatment" "Question: would we want to add basic Practicioner model?"
+// .requester
 
 * validFrom 1..1 dateTime "Effective date of the prescription. The prescription is not dispensable before this date. In most cases this information repeats issueDate"
 // .dispenseRequest.validityPeriod.start
 * validUntil 0..1 dateTime "The validity period end date. The prescription is not dispensable after this date."
 // .dispenseRequest.validityPeriod.end
 
-* basedOnMedicationLine 0..1 Reference (BeModelMedicationLine) "Link to the Medication Line from which this request is based"
 
-
+* organization 0..1 Reference (BeOrganization) "The organization from which the prescriber issues the prescription."
 
 
 * medication 1..1 Reference (BeModelMedication) "Prescribed product, branded, generic, virtual, extemporaneous, etc"
@@ -48,8 +46,8 @@ Characteristics: #can-be-target
 * indication 0..* BackboneElement "Reason for the prescription (typically diagnosis, or a procedure)"
   * reference 0..* Reference "Reason for the prescription (typically diagnosis, or a procedure)"
   * code 0..* CodeableConcept "Reason or text for the prescription (typically diagnosis, or a procedure)"
-// .reasonCode
-// .reasonReference
+
+
 
 * dosage 0..* BeModelDosagingInformation "Dosaging and administration instructions"
 // .dosageInstruction
