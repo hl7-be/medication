@@ -48,10 +48,7 @@ Characteristics: #can-be-target
 // .assertedDate
 
 
-// .subject
-* category 0..* BackboneElement "Category for the line"
-  * originType 0..1 CodeableConcept "The origin of the line - hospital, ambulatory"
-  * originType from BeMedicationLineOriginTypeVS
+
 //.category
 
 * medication 1..1 BackboneElement "The product or substance"
@@ -61,8 +58,6 @@ Characteristics: #can-be-target
 // .medicationReference.resolve().classification or medicationCodeableConcept[]
   * type from BeMedicationTypeVS (required)
 
-* exposure 0..1 CodeableConcept "Therapeutic, Prophylactic"
-* exposure from BeMedicationExposureIntentVS
 
 * reason 0..* BackboneElement "Reason for the medication treatment"
   * reference 0..1 Reference "Reference to existing condition or reason"
@@ -76,6 +71,12 @@ Characteristics: #can-be-target
 //  * ^comment = ".effectiveDateTime OR .effectivePeriod.start. Do we need to support both? Can we use effectivePeriod when .end is known? And when only .start is known, we use dateTime?"
   * end 0..1 dateTime "The end of the medication line"
 
+* category 0..* BackboneElement "Category for the line"
+  * originType 0..1 CodeableConcept "The origin of the line - hospital, ambulatory"
+  * originType from BeMedicationLineOriginTypeVS
+
+* exposure 0..1 CodeableConcept "Therapeutic, Prophylactic"
+* exposure from BeMedicationExposureIntentVS
 
 
 * dosage 0..* BeModelDosagingInformation "Structured Dosage"
