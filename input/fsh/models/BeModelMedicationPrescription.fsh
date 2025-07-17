@@ -56,7 +56,7 @@ Characteristics: #can-be-target
 * substitution 0..1 BackboneElement "Whether substitution is allowed, and reason"
 // .substitution(.allowed)
   * substitutionAllowed 1..1 boolean "Substitution of the product is allowed."
-  * substitutionAllowedReason 0..1 CodeableConcept "Coded or Text reason for the no-substitution requirement"
+//  * substitutionAllowedReason 0..1 CodeableConcept "Coded or Text reason for the no-substitution requirement"
 
 * instructionForReimbursement 0..1 CodeableConcept "Instructions for reimbursement"
 * instructionForReimbursement from BeMedicationRequestReimbursementTypeVS (extensible)
