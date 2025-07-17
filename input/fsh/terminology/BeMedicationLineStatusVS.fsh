@@ -4,8 +4,8 @@ Description: "This value set includes a selection of medication statement status
 * ^status = #active
 * ^experimental = false
 
-* http://hl7.org/fhir/CodeSystem/medication-statement-status#complete
-* http://hl7.org/fhir/CodeSystem/medication-statement-status#entered-in-error
-* http://hl7.org/fhir/CodeSystem/medication-statement-status#draft
+* http://hl7.org/fhir/CodeSystem/medication-statement-status|5.0.0#recorded
+* http://hl7.org/fhir/CodeSystem/medication-statement-status|5.0.0#entered-in-error
+* http://hl7.org/fhir/CodeSystem/medication-statement-status|5.0.0#draft
 
 

@@ -45,7 +45,14 @@ For the full definition see here: [http://hl7.org/fhir/R5/medicationstatement-de
 
 * extension[adherenceStatus].valueCodeableConcept from BeMedicationLineAdherenceStatusVS
 * status MS
-* status from BeMedicationLineAdherenceStatusReasonVS
+
+* status = #unknown
+* status
+* extension contains BeExtMedicationLineRegistrationStatus named registrationStatus 1..1 MS
+* extension[registrationStatus] ^short = "The registration status of the medication line - preadopting the values in R5"
+* extension[registrationStatus] ^definition = "The registration status of the medication line, indicating whether it is draft, recorded, or entered-in-error."
+
+
 * statusReason MS
 * statusReason from BeMedicationLineAdherenceStatusReasonVS
 * dateAsserted MS
