@@ -7,7 +7,7 @@ Characteristics: #can-be-target
 
 * ^name = "MedicationLine"
 
-* uniqueIdentifier 1..* Identifier "Unique identifier" "A unique identifier for the medication line. This identifier alone may be the same for different versions of the medication line."
+* identifier 1..* Identifier "Unique identifier" "A unique identifier for the medication line. This identifier alone may be the same for different versions of the medication line."
 
 //* versionIdentifier 0..1 string "Version of the medication line at the time the content was recorded or last updated."
 // .extension[artifactVersion]
@@ -15,11 +15,29 @@ Characteristics: #can-be-target
 // .extension[artifactDate]
   * ^comment = " We consider this is redundant with the above, given the intended use in Belgium (version is a date). How to ensure the compatibility?"
 
+* recorder 1..1 Reference(BePractitioner) "Recorder"
+// .informationSource
+  * ^comment = "We understand this will be updated as the line changes"
+
+* patient 1..1 Reference(BePatient) "Patient"
+// .subject
+
 * status 1..1 code "Status of the line entry"
 //.status
 * status from BeMedicationLineStatusVS
 
+
+* adherence 0..1 BackboneElement "Whether the patient is known to be taking the medication"
+// extension[adherence]
+  * status 1..1 CodeableConcept "The status - taking, not taking,..."
+  * status from BeMedicationLineAdherenceStatusVS
+  * adherenceStatusReason 0..1 CodeableConcept "Reason for the adherence status" 
+  * adherenceStatusReason from BeMedicationLineAdherenceStatusReasonVS
+
+
+
 //* statusReason 0..1 CodeableConcept "Reason for the status" 
+//* statusReason from BeMedicationTreatmentStatusChangeReasonVS
 //  * ^comment = "We consider this is not necessary - should we add?"
 
 //* recordedDate 0..1 dateTime "Date the medication line was recorded or last updated"
@@ -29,11 +47,7 @@ Characteristics: #can-be-target
 //   * ^comment = " We consider this is not necessary"
 // .assertedDate
 
-* recorder 1..1 Reference(Practitioner) "Recorder"
-// .informationSource
-  * ^comment = "We understand this will be updated as the line changes"
 
-* patient 1..1 Reference(Patient) "Patient"
 // .subject
 * category 0..* BackboneElement "Category for the line"
   * originType 0..1 CodeableConcept "The origin of the line - hospital, ambulatory"
@@ -62,12 +76,6 @@ Characteristics: #can-be-target
 //  * ^comment = ".effectiveDateTime OR .effectivePeriod.start. Do we need to support both? Can we use effectivePeriod when .end is known? And when only .start is known, we use dateTime?"
   * end 0..1 dateTime "The end of the medication line"
 
-* adherence 0..1 BackboneElement "Whether the patient is known to be taking the medication"
-// extension[adherence]
-  * status 1..1 CodeableConcept "The status - taking, not taking,..."
-  * status from BeMedicationLineAdherenceStatusVS
-  * adherenceStatusReason 0..1 CodeableConcept "Reason for the adherence status" 
-  * adherenceStatusReason from BeMedicationLineAdherenceStatusReasonVS
 
 
 * dosage 0..* BeModelDosagingInformation "Structured Dosage"
