@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="BeMedicationLineAdherenceStatusVS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet BeMedicationLineAdherenceStatusVS</b></p><a name="BeMedicationLineAdherenceStatusVS"> </a><a name="hcBeMedicationLineAdherenceStatusVS"> </a><ul><li>Include these codes as defined in <code>http://hl7.org/fhir/CodeSystem/medication-statement-adherence</code> version <code>5.0.0</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>taking</td><td/></tr><tr><td>not-taking</td><td/></tr><tr><td>stopped</td><td/></tr><tr><td>on-hold</td><td/></tr><tr><td>unknown</td><td/></tr></table></li></ul></div>
+  </text>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/BeMedicationLineAdherenceStatusVS"/>
+  <version value="1.1.0"/>
+  <name value="BeMedicationLineAdherenceStatusVS"/>
+  <title value="Medication line adherence status value set"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-07-17T13:48:32+00:00"/>
+  <publisher value="HL7 Belgium"/>
+  <contact>
+    <name value="HL7 Belgium"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.hl7belgium.org"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="hl7belgium@hl7belgium.org"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Message Structure eHealth"/>
+    <telecom>
+      <system value="email"/>
+      <value value="message-structure@ehealth.fgov.be"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Medication line adherence status value set"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
+      <display value="Belgium"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/CodeSystem/medication-statement-adherence"/>
+      <version value="5.0.0"/>
+      <concept>
+        <code value="taking"/>
+      </concept>
+      <concept>
+        <code value="not-taking"/>
+      </concept>
+      <concept>
+        <code value="stopped"/>
+      </concept>
+      <concept>
+        <code value="on-hold"/>
+      </concept>
+      <concept>
+        <code value="unknown"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,5 @@
+URL,Version,Status,OIDs,Name,Title,Description,Used
+https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/BeMedicationLineOriginType,1.1.0,active,,BeMedicationLineOriginType,Medication origin Type,"Medication origin type",
+https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/BeMedicationLineRegistrationStatus,1.1.0,draft,,BeMedicationLineRegistrationStatus,Medication Line Registration Status,"This code system defines the registration statuses for medication lines.",
+https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/BeMedicationRequestReimbursementType,1.1.0,active,,BeMedicationRequestReimbursementType,Medication request reimbursement type,"Medication request reimbursement type - instructions for reimbursement of the medication request",
+https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/BeMedicationType,1.1.0,active,,BeMedicationType,Medication preparation Type,"Medication preparation type",

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="BeMedicationLineAdherenceStatusReasonVS"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet BeMedicationLineAdherenceStatusReasonVS</b></p><a name="BeMedicationLineAdherenceStatusReasonVS"> </a><a name="hcBeMedicationLineAdherenceStatusReasonVS"> </a><ul><li>Include these codes as defined in <a href="http://terminology.hl7.org/6.5.0/CodeSystem-v3-ActReason.html"><code>http://terminology.hl7.org/CodeSystem/v3-ActReason</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="http://terminology.hl7.org/6.5.0/CodeSystem-v3-ActReason.html#v3-ActReason-MEDPREC">MEDPREC</a></td><td>Medical precaution</td><td>**Definition:**The patient currently has a medical condition for which the vaccine is contraindicated or for which precaution is warranted.</td></tr><tr><td><a href="http://terminology.hl7.org/6.5.0/CodeSystem-v3-ActReason.html#v3-ActReason-IMMUNE">IMMUNE</a></td><td>Immunological reason</td><td>**Definition:**Testing has shown that the patient already has immunity to the agent targeted by the immunization.</td></tr><tr><td><a href="http://terminology.hl7.org/6.5.0/CodeSystem-v3-ActReason.html#v3-ActReason-PATOBJ">PATOBJ</a></td><td>Patient objection</td><td>**Definition:**The patient or their guardian objects to receiving the vaccine.</td></tr><tr><td><a href="http://terminology.hl7.org/6.5.0/CodeSystem-v3-ActReason.html#v3-ActReason-OSTOCK">OSTOCK</a></td><td>Out of stock</td><td>**Definition:**There was no supply of the product on hand to perform the service.</td></tr><tr><td><a href="http://terminology.hl7.org/6.5.0/CodeSystem-v3-ActReason.html#v3-ActReason-ALGINT">ALGINT</a></td><td>Allergy</td><td>**Definition:** Patient has had a prior allergic intolerance response to alternate product or one of its components.</td></tr><tr><td><a href="http://terminology.hl7.org/6.5.0/CodeSystem-v3-ActReason.html#v3-ActReason-MODIFY">MODIFY</a></td><td>Modified treatment</td><td>**Definition:**Therapy has been changed and new prescription issued</td></tr><tr><td><a href="http://terminology.hl7.org/6.5.0/CodeSystem-v3-ActReason.html#v3-ActReason-OTHER">OTHER</a></td><td>Other reason</td><td/></tr></table></li></ul></div>
+  </text>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/BeMedicationLineAdherenceStatusReasonVS"/>
+  <version value="1.1.0"/>
+  <name value="BeMedicationLineAdherenceStatusReasonVS"/>
+  <title value="Medication Treatment Status Change Reason"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-07-17T13:48:32+00:00"/>
+  <publisher value="HL7 Belgium"/>
+  <contact>
+    <name value="HL7 Belgium"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.hl7belgium.org"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="hl7belgium@hl7belgium.org"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Message Structure eHealth"/>
+    <telecom>
+      <system value="email"/>
+      <value value="message-structure@ehealth.fgov.be"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Reasons for changes in the medication treatment status."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
+      <display value="Belgium"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+      <concept>
+        <code value="MEDPREC"/>
+        <display value="Medical precaution"/>
+      </concept>
+      <concept>
+        <code value="IMMUNE"/>
+        <display value="Immunological reason"/>
+      </concept>
+      <concept>
+        <code value="PATOBJ"/>
+        <display value="Patient objection"/>
+      </concept>
+      <concept>
+        <code value="OSTOCK"/>
+        <display value="Out of stock"/>
+      </concept>
+      <concept>
+        <code value="ALGINT"/>
+        <display value="Allergy"/>
+      </concept>
+      <concept>
+        <code value="MODIFY"/>
+        <display value="Modified treatment"/>
+      </concept>
+      <concept>
+        <code value="OTHER"/>
+        <display value="Other reason"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

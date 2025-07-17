@@ -1,0 +1,100 @@
+[
+  {
+    "id": "cd-hcparty",
+    "type": "CodeSystem",
+    "url": "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-hcparty",
+    "version": "0.2.0",
+    "name": "HCParty"
+  },
+  {
+    "id": "be-organization",
+    "type": "StructureDefinition",
+    "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-organization",
+    "version": "0.2.0",
+    "name": "BeOrganization"
+  },
+  {
+    "id": "be-patient",
+    "type": "StructureDefinition",
+    "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient",
+    "version": "0.2.0",
+    "name": "BePatient"
+  },
+  {
+    "id": "be-practitioner",
+    "type": "StructureDefinition",
+    "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner",
+    "version": "0.2.0",
+    "name": "BePractitioner"
+  },
+  {
+    "id": "be-practitionerrole",
+    "type": "StructureDefinition",
+    "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitionerrole",
+    "version": "0.2.0",
+    "name": "BePractitionerRole"
+  },
+  {
+    "id": "hl7.be.fhir.medicationig",
+    "type": "ImplementationGuide",
+    "url": "https://www.hl7belgium.org/fhir/ImplementationGuide/hl7.be.fhir.medicationig",
+    "version": "0.2.0",
+    "name": "BEMedicationIG"
+  },
+  {
+    "id": "be-ns-cnk-codes",
+    "type": "NamingSystem",
+    "url": "https://www.hl7belgium.org/fhir/NamingSystem/be-ns-cnk-codes",
+    "version": "0.2.0",
+    "name": "BeNSCNK"
+  },
+  {
+    "id": "be-ns-nihdi-organization",
+    "type": "NamingSystem",
+    "url": "https://www.hl7belgium.org/fhir/NamingSystem/be-ns-nihdi-organization",
+    "version": "0.2.0",
+    "name": "BeNSNihdiOrganization"
+  },
+  {
+    "id": "be-ns-nihdi-professional",
+    "type": "NamingSystem",
+    "url": "https://www.hl7belgium.org/fhir/NamingSystem/be-ns-nihdi-professional",
+    "version": "0.2.0",
+    "name": "BeNSNihdiIndividual"
+  },
+  {
+    "id": "be-ns-prescription-ids",
+    "type": "NamingSystem",
+    "url": "https://www.hl7belgium.org/fhir/NamingSystem/be-ns-prescription-ids",
+    "version": "0.2.0",
+    "name": "BeNSPrescriptions"
+  },
+  {
+    "id": "be-ns-product-package-type",
+    "type": "NamingSystem",
+    "url": "https://www.hl7belgium.org/fhir/NamingSystem/be-ns-product-package-type",
+    "version": "0.2.0",
+    "name": "BeNSProductPackage"
+  },
+  {
+    "id": "be-medicationdispense",
+    "type": "StructureDefinition",
+    "url": "https://www.hl7belgium.org/fhir/StructureDefinition/be-medicationdispense",
+    "version": "0.2.0",
+    "name": "BeMedicationDispense"
+  },
+  {
+    "id": "be-model-medication-dispense",
+    "type": "StructureDefinition",
+    "url": "https://www.hl7belgium.org/fhir/StructureDefinition/be-model-medication-dispense",
+    "version": "0.2.0",
+    "name": "BeModelMedicationDispense"
+  },
+  {
+    "id": "be-vs-dispenser-types",
+    "type": "ValueSet",
+    "url": "https://www.hl7belgium.org/fhir/ValueSet/be-vs-dispenser-types",
+    "version": "0.2.0",
+    "name": "DispenserTypes"
+  }
+]

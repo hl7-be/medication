@@ -1,0 +1,64 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "BeMedicationLineAdherenceStatusVS",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet BeMedicationLineAdherenceStatusVS</b></p><a name=\"BeMedicationLineAdherenceStatusVS\"> </a><a name=\"hcBeMedicationLineAdherenceStatusVS\"> </a><ul><li>Include these codes as defined in <code>http://hl7.org/fhir/CodeSystem/medication-statement-adherence</code> version <code>5.0.0</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>taking</td><td/></tr><tr><td>not-taking</td><td/></tr><tr><td>stopped</td><td/></tr><tr><td>on-hold</td><td/></tr><tr><td>unknown</td><td/></tr></table></li></ul></div>"
+  },
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/BeMedicationLineAdherenceStatusVS",
+  "version" : "1.1.0",
+  "name" : "BeMedicationLineAdherenceStatusVS",
+  "title" : "Medication line adherence status value set",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-07-17T13:48:32+00:00",
+  "publisher" : "HL7 Belgium",
+  "contact" : [{
+    "name" : "HL7 Belgium",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.hl7belgium.org"
+    },
+    {
+      "system" : "email",
+      "value" : "hl7belgium@hl7belgium.org"
+    }]
+  },
+  {
+    "name" : "Message Structure eHealth",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "message-structure@ehealth.fgov.be",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Medication line adherence status value set",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BE",
+      "display" : "Belgium"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://hl7.org/fhir/CodeSystem/medication-statement-adherence",
+      "version" : "5.0.0",
+      "concept" : [{
+        "code" : "taking"
+      },
+      {
+        "code" : "not-taking"
+      },
+      {
+        "code" : "stopped"
+      },
+      {
+        "code" : "on-hold"
+      },
+      {
+        "code" : "unknown"
+      }]
+    }]
+  }
+}

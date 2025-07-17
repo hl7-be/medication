@@ -1,0 +1,36 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/BeMedicationLineOriginType",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "BeMedicationLineOriginType",
+      "title" : "Medication origin Type",
+      "description" : "Medication origin type"
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/BeMedicationLineRegistrationStatus",
+      "version" : "1.1.0",
+      "status" : "draft",
+      "name" : "BeMedicationLineRegistrationStatus",
+      "title" : "Medication Line Registration Status",
+      "description" : "This code system defines the registration statuses for medication lines."
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/BeMedicationRequestReimbursementType",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "BeMedicationRequestReimbursementType",
+      "title" : "Medication request reimbursement type",
+      "description" : "Medication request reimbursement type - instructions for reimbursement of the medication request"
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/BeMedicationType",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "BeMedicationType",
+      "title" : "Medication preparation Type",
+      "description" : "Medication preparation type"
+    }
+  ]
+}
