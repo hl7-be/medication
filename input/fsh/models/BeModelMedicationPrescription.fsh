@@ -34,12 +34,6 @@ Characteristics: #can-be-target
 * prescriber 1..1 Reference (Practitioner or PractitionerRole) "The person who made the prescription, and who takes the responsibility of the treatment" "Question: would we want to add basic Practicioner model?"
 // .requester
 
-* validFrom 1..1 dateTime "Effective date of the prescription. The prescription is not dispensable before this date. In most cases this information repeats issueDate"
-// .dispenseRequest.validityPeriod.start
-* validUntil 0..1 dateTime "The validity period end date. The prescription is not dispensable after this date."
-// .dispenseRequest.validityPeriod.end
-
-
 * organization 0..1 Reference (BeOrganization) "The organization from which the prescriber issues the prescription."
 
 
@@ -51,12 +45,35 @@ Characteristics: #can-be-target
 
 * dosage 0..* BeModelDosagingInformation "Dosaging and administration instructions"
 // .dosageInstruction
-
 * offLabel 0..1 boolean "Off-Label / Dosage Override"
   * isOffLabelUse 0..1 boolean "Off-Label / Dosage Override"
     * ^comment = "isOffLabelUse and reason are expected to be manually filled by the prescriber, indicating that this dosage is not entered in error. This information is an indication (for example) for the pharmacist to see that there is a justification of the dosage difference."
   * reason 1..1 CodeableConcept "Dosage Override reason"
     * ^comment = "isOffLabelUse and reason are expected to be manually filled by the prescriber, indicating that this dosage is not entered in error. This information is an indication (for example) for the pharmacist to see that there is a justification of the dosage difference."
+
+
+//* preparationInstructions 0..* ST "Additional instructions about preparation or dispense" 
+* substitution 0..1 BackboneElement "Whether substitution is allowed, and reason"
+// .substitution(.allowed)
+  * substitutionAllowed 1..1 boolean "Substitution of the product is allowed."
+  * substitutionAllowedReason 0..1 CodeableConcept "Coded or Text reason for the no-substitution requirement"
+
+* instructionForReimbursement 0..1 CodeableConcept "Instructions for reimbursement"
+* instructionForReimbursement from BeMedicationRequestReimbursementTypeVS (extensible)
+
+
+// .organization
+//* issueDate 1..1 dateTime "Time of issuing (signing) the prescription by health care practicioner"
+
+//* recorder 0..1 Reference(Practitioner or PractitionerRole) "The recorder of the prescription/draft in the information system"
+// .recorder
+
+
+* validFrom 1..1 dateTime "Effective date of the prescription. The prescription is not dispensable before this date. In most cases this information repeats issueDate"
+// .dispenseRequest.validityPeriod.start
+* validUntil 0..1 dateTime "The validity period end date. The prescription is not dispensable after this date."
+// .dispenseRequest.validityPeriod.end
+
 
 
 * dispenseRequest 0..1 BackboneElement "Dispense Request or authorization for the prescribed medication"
@@ -67,15 +84,6 @@ Characteristics: #can-be-target
 
 
 //* usageInstructions 1..1 Reference(DosagingInformation) "Dosaging and administration instructions"
-//* preparationInstructions 0..* ST "Additional instructions about preparation or dispense" 
-* substitution 0..1 BackboneElement "Whether substitution is allowed, and reason"
-// .substitution(.allowed)
-  * substitutionAllowed 1..1 boolean "Substitution of the product is allowed."
-  * substitutionAllowedReason 0..1 CodeableConcept "Coded or Text reason for the no-substitution requirement"
-
-* instructionForReimbursement 0..1 CodeableConcept "Instructions for reimbursement"
-* instructionForReimbursement from BeMedicationRequestReimbursementTypeVS (extensible)
-
 
 
 * note 0..* string "Additional information or comments"
