@@ -29,6 +29,8 @@ Characteristics: #can-be-target
 //* category 0..* CodeableConcept "Category or categories of prescription. For example type of reimbursement, or type of prescription (e.g. hospital, private, etc)."
 // .category
 
+* medication 1..1 Reference (BeModelMedication) "Prescribed product, branded, generic, virtual, extemporaneous, etc"
+// .medication
 * prescriber 1..1 Reference (Practitioner or PractitionerRole) "The person who made the prescription, and who takes the responsibility of the treatment" "Question: would we want to add basic Practicioner model?"
 // .requester
 
@@ -41,8 +43,6 @@ Characteristics: #can-be-target
 * organization 0..1 Reference (BeOrganization) "The organization from which the prescriber issues the prescription."
 
 
-* medication 1..1 Reference (BeModelMedication) "Prescribed product, branded, generic, virtual, extemporaneous, etc"
-// .medication
 * indication 0..* BackboneElement "Reason for the prescription (typically diagnosis, or a procedure)"
   * reference 0..* Reference "Reason for the prescription (typically diagnosis, or a procedure)"
   * code 0..* CodeableConcept "Reason or text for the prescription (typically diagnosis, or a procedure)"
