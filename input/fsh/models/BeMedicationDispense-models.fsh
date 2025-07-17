@@ -29,9 +29,10 @@ Description: "Logical data model for Medication Dispense."
 
 
 * statusReason 0..1 CodeableConcept "The reason why the dispense was not performed, if it was not performed"
+//* dispenseLocation 0..1 Reference(BeLocation) "The location where the dispense was performed"
 * dispenser 0..1 BackboneElement "The dispenser, if known and relevant"
-  * dispenser 1..1 Reference (BePractitioner) "Reference to person that performed the recording or reporting"
-  * organization 1..1 Reference (BeOrganization) "Reference to person that performed the recording or reporting" 
+  * dispenser 0..1 Reference (BePractitioner) "Reference to person that performed the recording or reporting"
+  * organization 0..1 Reference (BeOrganization) "Reference to person that performed the recording or reporting" 
 
 * dispenseDate 1..1 dateTime "The date (or date+time) when the dispense ocurred"
 
@@ -43,8 +44,8 @@ Description: "Logical data model for Medication Dispense."
 * dispensedItem 1..1 BackboneElement  "Each product that was dispensed"
   * product 1..1 CodeableConcept "The product that was dispensed - coded or not (e.g. for magistral preparations)"
   * quantityDispensed 0..1 SimpleQuantity "The amount of product that was dispensed"
-  * dosageInstructions 0..1 Dosage "The structured dosage or text instructions for use"
-  * offLabel 0..1 Dosage "Text or coded reason for different dosage"
+  * dosage 0..* Dosage "The structured dosage or text instructions for use"
+  * offLabel 0..1 CodeableConcept "Text or coded reason for different dosage"
 //  * note 0..* Annotation "Additional information about the dispensed item - this can be relevant history, any remarks by the patient or professional, etc."
 * note 0..* Annotation "Additional information about the dispense - this can be relevant history, any remarks by the patient or professional, etc."
 
