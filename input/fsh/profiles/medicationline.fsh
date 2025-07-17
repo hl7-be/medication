@@ -66,7 +66,7 @@ For the full definition see here: [http://hl7.org/fhir/R5/medicationstatement-de
 * extension contains 
    BeExtOffLabel named offLabel 0..1 MS
       
-* dosage.extension[offLabel].extension[reason] ^short = "The reason why the recommended dosage was overridden"
+* extension[offLabel].extension[reason] ^short = "The reason why the recommended dosage was overridden"
 
 
 * effective[x] 1..1 MS
