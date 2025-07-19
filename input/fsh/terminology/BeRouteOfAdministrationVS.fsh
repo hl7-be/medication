@@ -5,6 +5,8 @@ Description: "This ValueSet contains codes for the route of administration of me
 * ^status = #active
 * ^experimental = false
 
+* ^copyright = "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO); Belgium is a member of IHTSDO. Implementers of SNOMED CT should review usage terms or directly contact SNOMED International: info@snomed.org"
+
 * $SCT#738982001 "Oromucosal use" 
 * $SCT#54471007 "Buccal use"
 * $SCT#448598008 "Cutaneous use"

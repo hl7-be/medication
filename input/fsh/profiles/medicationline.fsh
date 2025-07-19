@@ -19,7 +19,7 @@ Description: "Medication Line profile - contains the overview information for a 
 * identifier[vidis].value MS
 
 * medication[x]
-  * extension contains BeMedicationType named medicationType 0..1 MS
+  * extension contains BeExtMedicationType named medicationType 0..1 MS
   * extension[medicationType] ^short = "Type of medication"
 
 * extension contains 
@@ -31,7 +31,10 @@ Description: "Medication Line profile - contains the overview information for a 
     //VisibilityFlag named visibility-flag 0..1 MS and 
     http://hl7.org/fhir/StructureDefinition/artifact-version named artifact-version 1..1 MS and
     http://hl7.org/fhir/StructureDefinition/artifact-date named artifact-date 0..1 MS and
+
     http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence.code named adherenceStatus 1..1 MS
+//    BeExtAdherenceStatus named adherenceStatus 1..1 MS
+
 
 
 * extension[exposure-category] ^short = "Exposure category"
@@ -44,6 +47,8 @@ Description: "Medication Line profile - contains the overview information for a 
 For the full definition see here: [http://hl7.org/fhir/R5/medicationstatement-definitions.html#MedicationStatement.adherence](http://hl7.org/fhir/R5/medicationstatement-definitions.html#MedicationStatement.adherence)"""
 
 * extension[adherenceStatus].valueCodeableConcept from BeMedicationLineAdherenceStatusVS
+
+//* extension[adherenceStatus].valueCodeableConcept from BeMedicationLineAdherenceStatusVS
 * status MS
 
 * status = #unknown
@@ -54,7 +59,7 @@ For the full definition see here: [http://hl7.org/fhir/R5/medicationstatement-de
 
 
 * statusReason MS
-* statusReason from BeMedicationLineAdherenceStatusReasonVS
+* statusReason from BeMedicationLineAdherenceStatusReasonVS (example)
 * dateAsserted MS
 * informationSource 1..1 MS
 

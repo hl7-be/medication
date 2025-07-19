@@ -24,7 +24,9 @@ Characteristics: #can-be-target
 
 * status 1..1 code "Status of the line entry"
 //.status
-* status from BeMedicationLineStatusVS
+* status
+  * ^binding.description = "`Draft`, `Recorded`, or `Entered in Error`"
+  * ^binding.strength = #preferred
 
 
 * adherence 0..1 BackboneElement "Whether the patient is known to be taking the medication"
@@ -32,7 +34,8 @@ Characteristics: #can-be-target
   * status 1..1 CodeableConcept "The status - taking, not taking,..."
   * status from BeMedicationLineAdherenceStatusVS
   * adherenceStatusReason 0..1 CodeableConcept "Reason for the adherence status" 
-  * adherenceStatusReason from BeMedicationLineAdherenceStatusReasonVS
+  * adherenceStatusReason from BeMedicationLineAdherenceStatusReasonVS (example)
+  * adherenceStatusReason ^comment = "The value set provided is an indicative example"
 
 
 
