@@ -2,6 +2,7 @@ CodeSystem: BeMedicationLineAdherenceStatusReason
 // Id: adherence-status-reason
 Title: "Adherence Status Reason"
 Description: "Reasons for non-adherence to a treatment or intervention."
+* ^url = "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatusReason"
 * ^status = #active
 * ^content = #complete
 * ^caseSensitive = true
@@ -52,6 +53,7 @@ Description: "Reasons for non-adherence to a treatment or intervention."
 ValueSet: BeMedicationLineAdherenceStatusReasonVS
 Title: "Adherence Status Reason ValueSet"
 Description: "ValueSet containing reasons for non-adherence to a treatment or intervention."
+* ^url = "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/BeMedicationLineAdherenceStatusReasonVS"
 * ^status = #active
 * ^experimental  = true
 * include codes from system BeMedicationLineAdherenceStatusReason

@@ -3,9 +3,9 @@ Title: "Medication request reimbursement type"
 Description: "Medication request reimbursement type - instructions for reimbursement of the medication request"
 * ^status = #active
 * ^content = #complete
-* ^version = "1.0.0"
 * ^caseSensitive = true
 * ^experimental = false
+* ^url = "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationRequestReimbursementType"
 * #third-party-payer-applicable "Third-party payer applicable"
   * ^designation[0].language = #fr-BE
   * ^designation[=].value = "Tiers-payant applicable"
@@ -59,4 +59,5 @@ Title: "Medication request reimbursement type ValueSet"
 Description: "Medication request reimbursement type - instructions for reimbursement of the medication request"
 * ^status = #active
 * ^experimental = false
+* ^url = "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/BeMedicationRequestReimbursementTypeVS"
 * include codes from system BeMedicationRequestReimbursementType

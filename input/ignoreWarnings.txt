@@ -33,4 +33,4 @@ No definition could be found for URL value 'https://www.gfd-dpp.be/fhir/referenc
 A definition for CodeSystem 'https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes' could not be found, so the code cannot be validated
 
 # The example code systems and identifier systems will be reviewed
-A definition for CodeSystem 'https://www.nexuzhealth.be/fhir/prescription/ambulatory' version '1' could not be found, so the code cannot be validated.
+A definition for CodeSystem 'https://www.nexuzhealth.be/fhir/prescription/ambulatory' version '1' could not be found, so the code cannot be validated. Valid versions: []

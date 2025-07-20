@@ -142,7 +142,7 @@ groups:
     description: Terminology for Medication. These are value sets, code systems and naming systems for identifiers.
     resources:
     - ValueSet/be-vs-dispenser-types
-    - ValueSet/BeMedicationPrescriptionStatus
+    - ValueSet/BeMedicationPrescriptionStatusVS
 #    - ValueSet/BeMedicationLineStatusVS
     - ValueSet/BeMedicationLineAdherenceStatusReasonVS
     - ValueSet/BeMedicationLineAdherenceStatusVS
@@ -270,4 +270,5 @@ parameters:
   apply-publisher: 'true'
   apply-version: 'true'  
   pin-canonicals: pin-multiples
+  special-url-base: https://www.ehealth.fgov.be/standards/fhir/terminology
 

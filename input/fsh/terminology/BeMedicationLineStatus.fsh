@@ -8,6 +8,8 @@ Description: "Medication Line Adherence Status - ValueSet."
 * ^jurisdiction = $m49.htm#001 "World"
 * ^caseSensitive = true
 * ^hierarchyMeaning = #is-a
+* ^url = "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatus"
+
 * #taking "Taking" "The medication is being taken."
   * #taking-as-directed "Taking As Directed" "The medication is being taken as directed."
   * #taking-not-as-directed "Taking Not As Directed" "The medication is not being taken as directed."
@@ -24,6 +26,7 @@ Description: "Medication Line Adherence Status - ValueSet."
 ValueSet: BeMedicationLineAdherenceStatusVS
 Title: "BeExtAdherenceStatus"
 Description: "The status of taking the medication."
+* ^url = "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/BeMedicationLineAdherenceStatusVS"
 
 * ^status = #draft
 * ^experimental = false

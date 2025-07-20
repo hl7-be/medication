@@ -2,6 +2,7 @@ CodeSystem: BeMedicationLineOriginType
 Id:         BeMedicationLineOriginType
 Title:     "Medication origin Type"
 Description: "Medication origin type"
+* ^url = "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineOriginType"
 * ^status = #active
 * ^experimental = false
 * ^caseSensitive = false
