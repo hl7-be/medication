@@ -10,6 +10,7 @@ Parent: MedicationRequest
 Id: BeMedicationPrescription
 Description: "Medication Request profile - The common structure for medication request"
 
+* identifier 1.. 
 * identifier MS
 
 * identifier ^slicing.discriminator.type = #pattern
@@ -76,6 +77,6 @@ For the full definition see here: [http://hl7.org/fhir/R5/medicationrequest-defi
 * substitution MS
 * substitution.allowed[x] MS
 * substitution.allowed[x] only boolean
-* substitution.reason MS
+//* substitution.reason MS
 
 
