@@ -25,7 +25,6 @@ No definition could be found for URL value 'https://www.ehealth.fgov.be/standard
 # The identifier system for NIHDI Practitioner needs to change - https://github.com/hl7-be/terminology/issues/4
 No definition could be found for URL value 'https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin'
 
-
 # The packaging units code system is not defined
 No definition could be found for URL value 'https://www.gfd-dpp.be/fhir/reference/packaging'
 
@@ -34,3 +33,9 @@ A definition for CodeSystem 'https://www.ehealth.fgov.be/standards/fhir/medicati
 
 # The example code systems and identifier systems will be reviewed
 A definition for CodeSystem 'https://www.nexuzhealth.be/fhir/prescription/ambulatory' version '1' could not be found, so the code cannot be validated. Valid versions: []
+
+# In the first release, no examples are provided for Medication Line and Prescription
+The Implementation Guide contains no examples for this profile
+
+# Dispense examples will be updated with better terminology content - https://github.com/hl7-be/medication/issues/301
+Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided

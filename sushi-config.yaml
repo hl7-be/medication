@@ -124,6 +124,7 @@ groups:
     - StructureDefinition/BeMedicationDispense
     - StructureDefinition/BeMedicationLine
     - StructureDefinition/BeMedicationPrescription
+    - StructureDefinition/BeMedicationDispense
     - StructureDefinition/BeDosage
 
   Extensions:
@@ -136,6 +137,9 @@ groups:
     - StructureDefinition/BeExtRecordedDate
     - StructureDefinition/BeExtRecorder
     - StructureDefinition/BeExtInstructionsForReimbursement
+    - StructureDefinition/BeExtAdherenceStatus
+    - StructureDefinition/BeExtMedicationType
+    - StructureDefinition/BeExtMedicationLineRegistrationStatus
 
   Terminology:
     name: Terminology
@@ -158,6 +162,11 @@ groups:
     - NamingSystem/be-ns-cti-extended-code
     - NamingSystem/be-ns-prescription-ids
     - NamingSystem/be-ns-product-package-type
+    - CodeSystem/BeMedicationLineRegistrationStatus
+    - CodeSystem/BeMedicationLineAdherenceStatus
+    - CodeSystem/BeMedicationLineAdherenceStatusReason
+    - ValueSet/BeMedicationLineRegistrationStatusVS
+
 
   # Extensions:
   #   name: Extensions
@@ -272,3 +281,5 @@ parameters:
   pin-canonicals: pin-multiples
   special-url-base: https://www.ehealth.fgov.be/standards/fhir/terminology
 
+
+  path-expansion-params: ../../input/Parameters-terminology-expansion.json
