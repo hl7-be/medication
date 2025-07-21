@@ -10,6 +10,7 @@ Parent: MedicationRequest
 Id: BeMedicationPrescription
 Description: "Medication Request profile - The common structure for medication request"
 
+* identifier 1.. 
 * identifier MS
 
 * identifier ^slicing.discriminator.type = #pattern
@@ -26,26 +27,26 @@ Description: "Medication Request profile - The common structure for medication r
 * groupIdentifier MS
 
 * extension contains
-  be-ext-OffLabel named offLabel 0..1 MS and
+  BeExtOffLabel named offLabel 0..1 MS and
   BasedOnMedicationLine named basedOnMedicationLine 0..1 MS and
   //OrganizationOfRequester named organization 0..1 MS and
-  //InstructionsForReimbursement named instructionsForReimbursement 0..1 MS and
-  http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationRequest.statusChanged named statusChanged 0..1
+  BeExtInstructionsForReimbursement named instructionsForReimbursement 0..1 MS and
+  http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationRequest.statusChanged named statusChanged 0..1 MS
 
 * obeys dosage-override-reason-required
 
 * extension[basedOnMedicationLine] ^short = "Medication Line where this prescription is based upon"
 //* extension[organization] ^short = "The organization where the requester is operating, e.g. an hospital"
-//* extension[instructionsForReimbursement] ^short = "Instructions for reimbursement"
+* extension[instructionsForReimbursement] ^short = "Instructions for reimbursement"
 * extension[statusChanged] ^short = "Indicates when the status of the medication request was last changed."
 * extension[statusChanged] ^comment = """This is a FHIR R5 element, preadopted as an extension in this FHIR R4 specification.
 For the full definition see here: [http://hl7.org/fhir/R5/medicationrequest-definitions.html#MedicationRequest.statusChanged](http://hl7.org/fhir/R5/medicationrequest-definitions.html#MedicationRequest.statusChanged)"""
 
 * status MS
+* status from BeMedicationPrescriptionStatusVS
 * statusReason MS
 * priority MS
 * intent MS
-* category MS
 * medication[x] MS
 * reasonCode MS // only if reason/indication is allowed?
 * reasonReference MS // only if reason/indication is allowed?
@@ -55,8 +56,8 @@ For the full definition see here: [http://hl7.org/fhir/R5/medicationrequest-defi
 * authoredOn 1.. MS
 * requester 1.. MS
 * requester only Reference (BePractitioner or BePractitionerRole)
-* recorder MS
-* recorder only Reference (BePractitioner or BePractitionerRole)
+//* recorder MS
+//* recorder only Reference (BePractitioner or BePractitionerRole)
 * dosageInstruction 1.. MS
 * dosageInstruction
 
@@ -68,7 +69,7 @@ For the full definition see here: [http://hl7.org/fhir/R5/medicationrequest-defi
 * dispenseRequest.validityPeriod ^comment = "The period of time that the prescription is valid for dispensing. The validity of the prescription for administration (i.e. whether the prescription can be administered after a given date) is conveyed in the dosage information."
 
 * dispenseRequest.validityPeriod.start 1.. MS
-* dispenseRequest.validityPeriod.end 1.. MS
+* dispenseRequest.validityPeriod.end 0.. MS
 * dispenseRequest.quantity MS
 * dispenseRequest.numberOfRepeatsAllowed MS
 
@@ -76,6 +77,6 @@ For the full definition see here: [http://hl7.org/fhir/R5/medicationrequest-defi
 * substitution MS
 * substitution.allowed[x] MS
 * substitution.allowed[x] only boolean
-* substitution.reason MS
+//* substitution.reason MS
 
 

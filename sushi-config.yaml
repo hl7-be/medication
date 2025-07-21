@@ -91,7 +91,9 @@ jurisdiction: urn:iso:std:iso:3166#BE "Belgium"
 #     better option (see below).
 # The following are simple examples to demonstrate what this might
 # look like:
-#resources:
+
+    
+
 #  Patient/my-example-patient:
 #    name: My Example Patient
 #    description: An example Patient
@@ -104,9 +106,75 @@ jurisdiction: urn:iso:std:iso:3166#BE "Belgium"
 # use their own instead, they can use the mechanism below.  This will
 # create IG.definition.grouping entries and associate the individual
 # resource entries with the corresponding groupIds.
-#groups:
-#  GroupA:
-#    name: Group A
+groups:
+  LogicalModels:
+    name: Logical Data Models
+    description: Logical data models. The Logical data models are representations of the data needs for the scope of this Implementation Guide. The data models are primarily aligned with key projects, namely VIDIS, but are prepared in coordination with the Belgian community to ensure a common data structure that supports the projects and the implementation data needs.
+    resources:
+    - StructureDefinition/BeModelMedicationLine
+    - StructureDefinition/BeModelMedicationDispense
+    - StructureDefinition/BeModelMedicationPrescription
+    - StructureDefinition/BeModelDosagingInformation
+    - StructureDefinition/BeModelMedication
+
+  Profiles:
+    name: Profiles
+    description: Profiles for Medication. These are implementable FHIR profiles.
+    resources:
+    - StructureDefinition/BeMedicationDispense
+    - StructureDefinition/BeMedicationLine
+    - StructureDefinition/BeMedicationPrescription
+    - StructureDefinition/BeMedicationDispense
+    - StructureDefinition/BeDosage
+
+  Extensions:
+    name: Extensions
+    description: Extensions for FHIR resources, to be used in Profiles
+    resources:
+    - StructureDefinition/BeMedicationExposureCategory
+    - StructureDefinition/BeExtOffLabel
+    - StructureDefinition/BasedOnMedicationLine
+    - StructureDefinition/BeExtRecordedDate
+    - StructureDefinition/BeExtRecorder
+    - StructureDefinition/BeExtInstructionsForReimbursement
+    - StructureDefinition/BeExtAdherenceStatus
+    - StructureDefinition/BeExtMedicationType
+    - StructureDefinition/BeExtMedicationLineRegistrationStatus
+
+  Terminology:
+    name: Terminology
+    description: Terminology for Medication. These are value sets, code systems and naming systems for identifiers.
+    resources:
+    - ValueSet/be-vs-dispenser-types
+    - ValueSet/BeMedicationPrescriptionStatusVS
+#    - ValueSet/BeMedicationLineStatusVS
+    - ValueSet/BeMedicationLineAdherenceStatusReasonVS
+    - ValueSet/BeMedicationLineAdherenceStatusVS
+    - ValueSet/BeMedicationLineOriginTypeVS
+    - ValueSet/BeMedicationTypeVS
+    - ValueSet/BeMedicationExposureIntentVS
+    - ValueSet/BeRouteOfAdministrationVS
+    - ValueSet/BeMedicationRequestReimbursementTypeVS
+    - CodeSystem/BeMedicationRequestReimbursementType
+    - CodeSystem/BeMedicationLineOriginType
+    - CodeSystem/BeMedicationType
+    - NamingSystem/be-ns-cnk-codes
+    - NamingSystem/be-ns-cti-extended-code
+    - NamingSystem/be-ns-prescription-ids
+    - NamingSystem/be-ns-product-package-type
+    - CodeSystem/BeMedicationLineRegistrationStatus
+    - CodeSystem/BeMedicationLineAdherenceStatus
+    - CodeSystem/BeMedicationLineAdherenceStatusReason
+    - ValueSet/BeMedicationLineRegistrationStatusVS
+
+
+  # Extensions:
+  #   name: Extensions
+  #   description: Extensions for Medication
+  #   resources:
+  #   - StructureDefinition/BeExtensionMedication
+
+
 #    description: The Alpha Group
 #    resources:
 #    - StructureDefinition/animal-patient
@@ -187,8 +255,7 @@ pages:
 # values, the value in the YAML should be a sequence/array. For a
 # partial list of allowed parameters see:
 # https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters
-#parameters:
-#  excludettl: true
+
 #  validation: [allow-any-extensions, no-broken-links]
 
 # The FSHOnly flag indicates if only FSH resources should be exported.
@@ -203,6 +270,7 @@ FSHOnly: false
 dependencies: 
   hl7.fhir.be.core: 2.1.2
   hl7.fhir.extensions.r5: 4.0.1
+#  hl7.terminology.r4: 6.5.0
 
 parameters:
   shownav: 'true'
@@ -210,5 +278,8 @@ parameters:
   apply-jurisdiction: 'true'
   apply-publisher: 'true'
   apply-version: 'true'  
+  pin-canonicals: pin-multiples
+  special-url-base: https://www.ehealth.fgov.be/standards/fhir/terminology
 
 
+  path-expansion-params: ../../input/Parameters-terminology-expansion.json

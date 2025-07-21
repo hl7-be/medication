@@ -6,5 +6,36 @@ Constraint failed: eld-20: 'Element names should be simple alphanumerics with a 
 # data types don't require an example
 The Implementation Guide contains no examples for this data type profile
 
-# Skipe extension examples
+# Skip extension examples
 The Implementation Guide contains no examples for this extension
+
+# The identifier system for Dispense GUID is not yet defined
+No definition could be found for URL value 'https://www.gfd-dpp.be/fhir/reference/dguid'
+                                            
+# The identifier system for Dispense Session GUID is not yet defined
+No definition could be found for URL value 'https://www.gfd-dpp.be/fhir/reference/sguid'
+
+# The identifier system for NIHDI Organization needs to change - https://github.com/hl7-be/terminology/issues/2
+No definition could be found for URL value 'https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi-organization'
+
+# The identifier system for NIHDI Practitioner needs to change - https://github.com/hl7-be/terminology/issues/3
+No definition could be found for URL value 'https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi-practitioner'
+
+
+# The identifier system for NIHDI Practitioner needs to change - https://github.com/hl7-be/terminology/issues/4
+No definition could be found for URL value 'https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin'
+
+# The packaging units code system is not defined
+No definition could be found for URL value 'https://www.gfd-dpp.be/fhir/reference/packaging'
+
+# The code systems for SAM are not yet defined
+A definition for CodeSystem 'https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes' could not be found, so the code cannot be validated
+
+# The example code systems and identifier systems will be reviewed
+A definition for CodeSystem 'https://www.nexuzhealth.be/fhir/prescription/ambulatory' version '1' could not be found, so the code cannot be validated. Valid versions: []
+
+# In the first release, no examples are provided for Medication Line and Prescription
+The Implementation Guide contains no examples for this profile
+
+# Dispense examples will be updated with better terminology content - https://github.com/hl7-be/medication/issues/301
+Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided

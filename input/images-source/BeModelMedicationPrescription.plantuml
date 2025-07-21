@@ -9,37 +9,33 @@ skinparam class {
  HeaderBackgroundColor SkyBlue
 }
 
-
 class "**BeModelMedicationPrescription**" as BeModelMedicationPrescription {
-  |_ groupIdentifier 0..1   
   |_ identifier 1..*   
   |_ prescriber 1..1   
   |_ organization 0..1   
-  |_ issueDate 1..1   
   |_ patient 1..1   
-  |_ recorder 0..1   
-  |_ recordedDate 0..1   
+  |_ recordedDate 1..1   
   |_ status 1..1   
-  |_ statusReason 0..*   
-  |_ category 0..*   
-  |_ validFrom 0..1   
+  |_ statusReason 0..1   
+  |_ statusChanged 0..1   
+  |_ validFrom 1..1   
   |_ validUntil 0..1   
   |_ basedOnMedicationLine 0..1   
   |_ medication 1..1   
   |_ indication 0..*   
     |_ reference 0..*   
     |_ code 0..*   
-  |_ dosage 1..*   
+  |_ dosage 0..*   
   |_ dispenseRequest 0..1   
     |_ dispenseInterval 0..1   
     |_ quantityPerDispense 0..1   
   |_ substitution 0..1   
-    |_ substitutionallowed 1..1   
-    |_ substitutionReason 0..1   
+    |_ substitutionAllowed 1..1   
+    |_ substitutionAllowedReason 0..1   
+  |_ instructionForReimbursement 0..1   
   |_ offLabel 0..1   
     |_ isOffLabelUse 0..1   
     |_ reason 1..1   
   |_ note 0..*   
-  |_ instructionsForReimbursement 0..1   
 }
 @enduml

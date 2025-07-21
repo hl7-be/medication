@@ -1,18 +1,7 @@
-This is the HL7 Belgium FHIR Implementation Guide for the Medication workgroup.
-
-### Content
-
-
-This publication contains the specifications related to the medication: 
-
+This is the specification for the Medication CareSet, developed by the HL7 Belgium community. It includes the following parts:
 * Medication Dispense
-* Medication Line (part of a medication list / schema, or placeholder for an entry in a medication treatment)
-* Prescription
-
-### Navigation
-This implementation guide is a FHIR web-based publication. This allows easy navigation between the Belgium-specific portion of the implementation guide and the resources, data types, value sets and other specification components leveraged from the FHIR core specification. This approach allows implementers to easily navigate the publication.  
-
-The top menu allows quick navigation to the different sections, and a [Table of Contents](toc.html) is provided with the entire content of this Implementation Guide. (Be aware that some pages have multiple tabs).
+* Medication Line
+* Medication Prescription
 
 
 
@@ -69,5 +58,3 @@ This IG Contains the following dependencies on other IGs.
 ### Intellectual Property
 
 {% include ip-statements.xhtml %}
-
-

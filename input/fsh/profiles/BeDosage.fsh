@@ -1,12 +1,16 @@
 
 Profile:        BeDosage
 Parent:         Dosage
-Id:             be-dosage
+Id:             BeDosage
 Title:          "BeMedicationDosage"
 Description: "Specifications for a medication dosage for use in Belgian profiles."
 
-
-* route from http://hl7.org/fhir/ValueSet/route-codes (preferred)
-* timing MS
-* timing.event MS
-* timing.code MS
+* timing
+  * event MS
+  * code MS
+* doseAndRate
+  * doseRange MS
+  * doseQuantity MS
+* route from BeRouteOfAdministrationVS
+* patientInstruction MS
+* text MS

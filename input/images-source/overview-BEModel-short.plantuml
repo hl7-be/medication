@@ -60,7 +60,7 @@ file {
 ' }
 
 
-class "** Medication Product **" as M<<TM>> {
+class "** [[StructureDefinition-BeModelMedication.html Medication]] **" as M<<TM>> {
     ' |_ identifier 1..*
     ' |_ doseForm 0..1
     ' |_ name 0..1

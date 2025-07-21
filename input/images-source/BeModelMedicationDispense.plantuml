@@ -3,8 +3,7 @@ skinparam linetype polyline
 hide circle
 hide stereotype
 
-
-skinparam classBeModelM {
+skinparam class {
  BorderColor #505090
  BackgroundColor APPLICATION
  HeaderBackgroundColor SkyBlue
@@ -13,20 +12,21 @@ skinparam classBeModelM {
 class "**BeModelMedicationDispense**" as BeModelMedicationDispense {
   |_ status 1..1   
   |_ statusReason 0..1   
+  |_ medicationLine 0..1   
   |_ identifier 0..*   
   |_ patient 1..1   
   |_ dispenser 0..1   
     |_ dispenser 1..1   
     |_ organization 1..1   
+  |_ recordedDate 1..1   
   |_ dispenseDate 1..1   
   |_ prescription 0..1   
-    |_ isPrescribed 0..1   
     |_ prescription 0..1   
-  |_ dispensedItem 0..*   
-    |_ product 0..1   
+  |_ dispensedItem 1..1   
+    |_ product 1..1   
     |_ quantityDispensed 0..1   
     |_ dosageInstructions 0..1   
-    |_ note 0..*   
+    |_ offLabel 0..1   
   |_ note 0..*   
 }
 @enduml

@@ -1,0 +1,9 @@
+Instance: terminology-expansion
+InstanceOf: Parameters
+Usage: #example
+* parameter[0]
+  * name = "includeDesignations"
+  * valueBoolean = true
+* parameter[+]
+  * name = "system-version"
+  * valueCanonical = "http://snomed.info/sct|http://snomed.info/sct/11000172109"

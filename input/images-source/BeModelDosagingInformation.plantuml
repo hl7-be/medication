@@ -1,0 +1,23 @@
+@startuml
+skinparam linetype polyline
+hide circle
+hide stereotype
+
+skinparam class {
+ BorderColor #505090
+ BackgroundColor APPLICATION
+ HeaderBackgroundColor SkyBlue
+}
+
+class "**BeModelDosagingInformation**" as BeModelDosagingInformation {
+  |_ timing 0..1   
+    |_ event 0..*   
+    |_ code 0..1   
+  |_ doseRange 0..1   
+  |_ doseQuantity 0..1   
+  |_ instructions 0..1   
+  |_ asNeeded 0..1   
+  |_ asNeededFor 0..*   
+  |_ routeOfAdministration 0..1   
+}
+@enduml
