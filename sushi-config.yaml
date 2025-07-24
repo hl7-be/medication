@@ -282,4 +282,4 @@ parameters:
   special-url-base: https://www.ehealth.fgov.be/standards/fhir/terminology
 
 
-  path-expansion-params: ../../input/Parameters-terminology-expansion.json
+#  path-expansion-params: ../../input/Parameters-terminology-expansion.json
