@@ -1,0 +1,50 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://snomed.info/sct",
+      "version" : null,
+      "status" : "active",
+      "name" : "SNOMED_CT",
+      "title" : "SNOMED CT (all versions)",
+      "description" : "SNOMED CT is the most comprehensive and precise clinical health terminology product in the world, owned and distributed around the world by The International Health Terminology Standards Development Organisation (IHTSDO).",
+      "oids" : ["2.16.840.1.113883.6.96"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-medication-codes.html" : "SNOMED CT Medication Codes",
+      "ValueSet-medication-exposure-category-vs.html" : "Medication exposure intent"
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty",
+      "version" : "2.1.2",
+      "status" : "active",
+      "name" : "HCParty",
+      "title" : "BeCdHcParty",
+      "description" : "healthcare party in Belgium.",
+      "uses" : {
+      },
+      "ValueSet-be-vs-dispenser-types.html" : "Dispenser Types"
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-line-origin-type",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "MedicationLineOrigintype",
+      "title" : "Medication origin type",
+      "description" : "Medication treatment origin type - what is the type of care that originated the medication treatment",
+      "uses" : {
+      },
+      "ValueSet-medication-line-origin-type-vs.html" : "Medication origin type ValueSet"
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+      "version" : "1.1.0",
+      "status" : "draft",
+      "name" : "BEMedicationType",
+      "title" : "Medication preparation Type",
+      "description" : "Medication preparation type",
+      "uses" : {
+      },
+      "ValueSet-medication-type-vs.html" : "Medication preparation Type value set"
+    }
+  ]
+}

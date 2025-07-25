@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="be-vs-dispenser-types"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="https://www.ehealth.fgov.be/standards/fhir/core/2.0.0/CodeSystem-cd-hcparty.html"><code>https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="https://www.ehealth.fgov.be/standards/fhir/core/2.0.0/CodeSystem-cd-hcparty.html#cd-hcparty-deptpharmacy">deptpharmacy</a></td><td>Pharmacy service or department within an organisation</td></tr><tr><td><a href="https://www.ehealth.fgov.be/standards/fhir/core/2.0.0/CodeSystem-cd-hcparty.html#cd-hcparty-perspharmacist">perspharmacist</a></td><td>pharmacist</td></tr><tr><td><a href="https://www.ehealth.fgov.be/standards/fhir/core/2.0.0/CodeSystem-cd-hcparty.html#cd-hcparty-orgpharmacy">orgpharmacy</a></td><td>Independent pharmacy</td></tr><tr><td><a href="https://www.ehealth.fgov.be/standards/fhir/core/2.0.0/CodeSystem-cd-hcparty.html#cd-hcparty-perspharmacyassistant">perspharmacyassistant</a></td><td>pharmacy assistant</td></tr><tr><td><a href="https://www.ehealth.fgov.be/standards/fhir/core/2.0.0/CodeSystem-cd-hcparty.html#cd-hcparty-perspharmacistclinicalbiologist">perspharmacistclinicalbiologist</a></td><td>pharmacist-clinical biologist</td></tr><tr><td><a href="https://www.ehealth.fgov.be/standards/fhir/core/2.0.0/CodeSystem-cd-hcparty.html#cd-hcparty-persdentist">persdentist</a></td><td>dentist</td></tr><tr><td><a href="https://www.ehealth.fgov.be/standards/fhir/core/2.0.0/CodeSystem-cd-hcparty.html#cd-hcparty-deptdentistry">deptdentistry</a></td><td>dentistry</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/be-vs-dispenser-types"/>
+  <version value="1.0.0"/>
+  <name value="DispenserTypes"/>
+  <title value="Dispenser Types"/>
+  <status value="active"/>
+  <date value="2022-05-06T14:52:18+00:00"/>
+  <publisher value="eHealth Platform"/>
+  <contact>
+    <name value="eHealth Platform"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.ehealth.fgov.be/standards/fhir"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="message-structure@ehealth.fgov.be"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Message Structure eHealth"/>
+    <telecom>
+      <system value="email"/>
+      <value value="message-structure@ehealth.fgov.be"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Dispenser Types - from hcparty"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
+      <display value="Belgium"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty"/>
+      <concept>
+        <code value="deptpharmacy"/>
+      </concept>
+      <concept>
+        <code value="perspharmacist"/>
+      </concept>
+      <concept>
+        <code value="orgpharmacy"/>
+      </concept>
+      <concept>
+        <code value="perspharmacyassistant"/>
+      </concept>
+      <concept>
+        <code value="perspharmacistclinicalbiologist"/>
+      </concept>
+      <concept>
+        <code value="persdentist"/>
+      </concept>
+      <concept>
+        <code value="deptdentistry"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,41 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "9e440d46-630f-48f4-94a7-b192f92e9c62-2",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/9e440d46-630f-48f4-94a7-b192f92e9c62-2",
+  "name" : "UnionDispenserTypesAndDispenserTypes",
+  "title" : "Union of Dispenser Types And Dispenser Types",
+  "status" : "active",
+  "date" : "2025-07-25T19:44:13+00:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BE",
+      "display" : "Belgium"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "deptpharmacy"
+      },
+      {
+        "code" : "perspharmacist"
+      },
+      {
+        "code" : "orgpharmacy"
+      },
+      {
+        "code" : "perspharmacyassistant"
+      },
+      {
+        "code" : "perspharmacistclinicalbiologist"
+      },
+      {
+        "code" : "persdentist"
+      },
+      {
+        "code" : "deptdentistry"
+      }]
+    }]
+  }
+}

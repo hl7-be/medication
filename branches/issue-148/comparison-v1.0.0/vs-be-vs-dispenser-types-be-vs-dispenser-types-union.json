@@ -1,0 +1,78 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "ac19b166-1ffb-44d8-8954-ad245e086964-8",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/ac19b166-1ffb-44d8-8954-ad245e086964-8",
+  "name" : "UnionDispenserTypesAndDispenserTypes",
+  "title" : "Union of Dispenser Types And Dispenser Types",
+  "status" : "active",
+  "date" : "2022-06-17T12:47:32+00:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BE",
+      "display" : "Belgium"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "deptpharmacy"
+      },
+      {
+        "code" : "perspharmacist"
+      },
+      {
+        "code" : "orgpharmacy"
+      },
+      {
+        "code" : "perspharmacyassistant"
+      },
+      {
+        "code" : "perspharmacistclinicalbiologist"
+      },
+      {
+        "code" : "persdentist"
+      },
+      {
+        "code" : "deptdentistry"
+      }]
+    }]
+  },
+  "expansion" : {
+    "contains" : [{
+      "system" : "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty",
+      "code" : "deptpharmacy",
+      "display" : "Pharmacy service or department within an organisation"
+    },
+    {
+      "system" : "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty",
+      "code" : "perspharmacist",
+      "display" : "pharmacist"
+    },
+    {
+      "system" : "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty",
+      "code" : "orgpharmacy",
+      "display" : "Independent pharmacy"
+    },
+    {
+      "system" : "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty",
+      "code" : "perspharmacyassistant",
+      "display" : "pharmacy assistant"
+    },
+    {
+      "system" : "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty",
+      "code" : "perspharmacistclinicalbiologist",
+      "display" : "pharmacist-clinical biologist"
+    },
+    {
+      "system" : "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty",
+      "code" : "persdentist",
+      "display" : "dentist"
+    },
+    {
+      "system" : "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty",
+      "code" : "deptdentistry",
+      "display" : "dentistry"
+    }]
+  }
+}

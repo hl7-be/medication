@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="apotheek-onder-de-toren"/>
+  <meta>
+    <profile value="https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-organization"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Organization</b><a name="apotheek-onder-de-toren"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Organization "apotheek-onder-de-toren" </p><p style="margin-bottom: 0px">Profile: <a href="https://www.ehealth.fgov.be/standards/fhir/core/2.0.0/StructureDefinition-be-organization.html">Organisation core BE profile</a></p></div><p><b>identifier</b>: id: 27457532</p><p><b>type</b>: Independent pharmacy <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://www.ehealth.fgov.be/standards/fhir/core/2.0.0/CodeSystem-cd-hcparty.html">HCParty</a>#orgpharmacy)</span></p></div>
+  </text>
+  <identifier>
+    <system value="https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi-organization"/>
+    <value value="27457532"/>
+  </identifier>
+  <type>
+    <coding>
+      <system value="https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty"/>
+      <code value="orgpharmacy"/>
+    </coding>
+  </type>
+</Organization>

@@ -1,0 +1,67 @@
+{
+  "resourceType": "ValueSet",
+  "id": "be-vs-dispenser-types",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>deptpharmacy</td><td/></tr><tr><td>perspharmacist</td><td/></tr><tr><td>orgpharmacy</td><td/></tr><tr><td>perspharmacyassistant</td><td/></tr><tr><td>perspharmacistclinicalbiologist</td><td/></tr><tr><td>persdentist</td><td/></tr><tr><td>deptdentistry</td><td/></tr></table></li></ul></div>"
+  },
+  "url": "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/be-vs-dispenser-types",
+  "version": "0.2.0",
+  "name": "DispenserTypes",
+  "title": "Dispenser Types",
+  "status": "active",
+  "date": "2022-03-29T15:00:59+00:00",
+  "publisher": "HL7 Belgium/eHealth Platform",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7belgium.org"
+        }
+      ]
+    }
+  ],
+  "description": "Dispenser Types - from hcparty",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "BE"
+        }
+      ],
+      "text": "Belgium"
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty",
+        "concept": [
+          {
+            "code": "deptpharmacy"
+          },
+          {
+            "code": "perspharmacist"
+          },
+          {
+            "code": "orgpharmacy"
+          },
+          {
+            "code": "perspharmacyassistant"
+          },
+          {
+            "code": "perspharmacistclinicalbiologist"
+          },
+          {
+            "code": "persdentist"
+          },
+          {
+            "code": "deptdentistry"
+          }
+        ]
+      }
+    ]
+  }
+}

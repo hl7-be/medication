@@ -1,0 +1,205 @@
+{
+  "package": "hl7.fhir.be.medication",
+  "version": "1.1.0",
+  "fhirVersion": "4.0.1",
+  "jurisdiction": "BE",
+  "extensions": [
+    {
+      "url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BasedOnMedicationLine",
+      "title": "BasedOnMedicationLine",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/DispenseRequestNeededCategory",
+      "title": "DispenseRequestNeededCategory",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/ExposureCategory",
+      "title": "ExposureCategory",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/InstructionsForReimbursement",
+      "title": "InstructionsForReimbursement",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-ext-OffLabel",
+      "title": "MedicationRequest - Off-label use",
+      "types": [
+        "boolean",
+        "CodeableConcept",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    }
+  ],
+  "profiles": {
+    "MedicationDispense": [
+      {
+        "url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationDispense",
+        "title": "BeMedicationDispense"
+      }
+    ],
+    "MedicationStatement": [
+      {
+        "url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine",
+        "title": "BeMedicationLine"
+      }
+    ],
+    "MedicationRequest": [
+      {
+        "url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationPrescription",
+        "title": "BeMedicationPrescription"
+      }
+    ]
+  },
+  "usage": {
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationRequest.statusChanged": [
+      "MedicationRequest"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence": [
+      "MedicationStatement"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.url": [
+      "NamingSystem"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.version": [
+      "NamingSystem"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/artifact-date|5.2.0": [
+      "MedicationStatement"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/artifact-version|5.2.0": [
+      "MedicationStatement"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.differential.element.binding",
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-identifier|5.2.0": [
+      "BeModelMedicationPrescription"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/regex": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm": [
+      "StructureDefinition",
+      "ValueSet"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics": [
+      "StructureDefinition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/translation": [
+      "MedicationDispense.dosageInstruction.text",
+      "MedicationDispense.medicationCodeableConcept.coding.display"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name": [
+      "ImplementationGuide.definition.page",
+      "ImplementationGuide.definition.page.page"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment": [
+      "ImplementationGuide.dependsOn"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
+      "ImplementationGuide.definition.resource"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version": [
+      "StructureDefinition.snapshot"
+    ],
+    "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BasedOnMedicationLine": [
+      "MedicationRequest"
+    ],
+    "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/DispenseRequestNeededCategory": [
+      "MedicationStatement"
+    ],
+    "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/ExposureCategory": [
+      "MedicationStatement"
+    ],
+    "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/InstructionsForReimbursement": [
+      "MedicationRequest"
+    ],
+    "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-ext-OffLabel": [
+      "MedicationRequest",
+      "MedicationStatement"
+    ]
+  }
+}

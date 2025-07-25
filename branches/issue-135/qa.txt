@@ -1,0 +1,77 @@
+﻿BEMedicationIG : Validation Results
+=========================================
+
+err = 6, warn = 27, info = 11
+IG Publisher Version: 1.1.113
+Generated Tue Mar 29 14:40:20 UTC 2022. FHIR version 4.0.1 for hl7.fhir.be.medication#0.2.0 (canonical = https://www.ehealth.fgov.be/standards/fhir/medication)
+ Build Errors : 3 / 0 / 0
+ /github/workspace/fsh-generated/resources/MedicationDispense-example-dispense-communitypharmacy-1med : 0 / 2 / 3
+ /github/workspace/fsh-generated/resources/MedicationDispense-example-dispense-hospital : 0 / 0 / 3
+ /github/workspace/fsh-generated/resources/MedicationDispense-example-minimal-dispense : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/MedicationDispense-medication-dispense-example-2 : 3 / 3 / 5
+ /github/workspace/fsh-generated/resources/NamingSystem-be-ns-cnk-codes : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/NamingSystem-be-ns-prescription-ids : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/NamingSystem-be-ns-product-package-type : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-be-medicationdispense : 0 / 12 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-be-model-medication-dispense : 0 / 6 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-be-vs-dispenser-types : 0 / 2 / 1
+ /github/workspace/input/be-medication : 0 / 0 / 1
+ /github/workspace/input/examples/MedicationDispense/medication-dispense-example-1 : 0 / 2 / 3
+</table>
+== n/a ==
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource NamingSystem/be-ns-cnk-codes.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource NamingSystem/be-ns-product-package-type.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource NamingSystem/be-ns-prescription-ids.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+== fsh-generated/resources/MedicationDispense-example-dispense-communitypharmacy-1med.json ==
+WARNING: MedicationDispense/example-dispense-communitypharmacy-1med: MedicationDispense.identifier[0].type.coding[0]: A code with no system has no defined meaning. A system should be provided
+INFORMATION: MedicationDispense/example-dispense-communitypharmacy-1med: MedicationDispense.medication.ofType(CodeableConcept).coding[0]: Code System URI 'https://cnk.apb.be/codings/cnk_product_codes' is unknown so the code cannot be validated
+WARNING: MedicationDispense/example-dispense-communitypharmacy-1med: MedicationDispense.context.identifier.type.coding[0]: A code with no system has no defined meaning. A system should be provided
+INFORMATION: MedicationDispense/example-dispense-communitypharmacy-1med: MedicationDispense.quantity: Code System URI 'https://www.gfd-dpp.be/fhir/reference/packaging' is unknown so the code cannot be validated
+== fsh-generated/resources/MedicationDispense-example-dispense-hospital.json ==
+INFORMATION: MedicationDispense/example-dispense-hospital: MedicationDispense.identifier[0].type.coding[0]: Code System URI 'https://www.nexuzhealth.be/fhir/prescription/ambulatory' is unknown so the code cannot be validated
+INFORMATION: MedicationDispense/example-dispense-hospital: MedicationDispense.medication.ofType(CodeableConcept).coding[0]: Code System URI 'https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes' is unknown so the code cannot be validated
+== fsh-generated/resources/MedicationDispense-example-minimal-dispense.json ==
+INFORMATION: MedicationDispense/example-minimal-dispense: MedicationDispense.medication.ofType(CodeableConcept).coding[0]: Code System URI 'https://cnk.apb.be/codings/cnk_product_codes' is unknown so the code cannot be validated
+== fsh-generated/resources/MedicationDispense-medication-dispense-example-2.json ==
+INFORMATION: MedicationDispense/medication-dispense-example-2: MedicationDispense.contained[0].ofType(Organization).type[0].coding[0]: Code System URI 'https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty' is unknown so the code cannot be validated
+WARNING: MedicationDispense/medication-dispense-example-2: MedicationDispense.contained[0].ofType(Organization).meta.profile[0]: Profile reference 'https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-organization' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles
+WARNING: MedicationDispense/medication-dispense-example-2: MedicationDispense.identifier[0].type.coding[0]: A code with no system has no defined meaning. A system should be provided
+INFORMATION: MedicationDispense/medication-dispense-example-2: MedicationDispense.medication.ofType(CodeableConcept).coding[0]: Code System URI 'https://cnk.apb.be/codings/cnk_product_codes' is unknown so the code cannot be validated
+WARNING: MedicationDispense/medication-dispense-example-2: MedicationDispense.context.identifier.type.coding[0]: A code with no system has no defined meaning. A system should be provided
+ERROR: MedicationDispense/medication-dispense-example-2: MedicationDispense.performer[0].actor: Unable to resolve the profile reference 'https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-organization'
+ERROR: MedicationDispense/medication-dispense-example-2: MedicationDispense.performer[0].actor: Unable to resolve the profile reference 'https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitioner'
+ERROR: MedicationDispense/medication-dispense-example-2: MedicationDispense.performer[0].actor: Invalid Resource target type. Found Organization, but expected one of ([])
+INFORMATION: MedicationDispense/medication-dispense-example-2: MedicationDispense.quantity: Code System URI 'https://www.gfd-dpp.be/fhir/reference/packaging' is unknown so the code cannot be validated
+== fsh-generated/resources/NamingSystem-be-ns-cnk-codes.json ==
+== fsh-generated/resources/NamingSystem-be-ns-prescription-ids.json ==
+== fsh-generated/resources/NamingSystem-be-ns-product-package-type.json ==
+== fsh-generated/resources/StructureDefinition-be-medicationdispense.json ==
+WARNING: https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationdispense#MedicationDispense.subject: Cannot check whether the target profile https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-patient is valid constraint on the base because it is not known
+WARNING: https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationdispense#MedicationDispense.performer.actor: Cannot check whether the target profile https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-organization is valid constraint on the base because it is not known
+WARNING: https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationdispense#MedicationDispense.performer.actor: Cannot check whether the target profile https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitioner is valid constraint on the base because it is not known
+INFORMATION: StructureDefinition/be-medicationdispense: StructureDefinition.snapshot.element[85].mapping[0].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+WARNING: StructureDefinition/be-medicationdispense: StructureDefinition.differential.element.where(path = 'MedicationDispense.subject'): Cannot check whether the target profile https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-patient is valid constraint on the base because it is not known
+WARNING: StructureDefinition/be-medicationdispense: StructureDefinition.differential.element.where(path = 'MedicationDispense.performer.actor'): Cannot check whether the target profile https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-organization is valid constraint on the base because it is not known
+WARNING: StructureDefinition/be-medicationdispense: StructureDefinition.differential.element.where(path = 'MedicationDispense.performer.actor'): Cannot check whether the target profile https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitioner is valid constraint on the base because it is not known
+WARNING: StructureDefinition/be-medicationdispense: StructureDefinition.differential.element[7].type[0].targetProfile[0]: Unable to resolve profile https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-patient
+WARNING: StructureDefinition/be-medicationdispense: StructureDefinition.differential.element[15].type[0].targetProfile[0]: Unable to resolve profile https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-organization
+WARNING: StructureDefinition/be-medicationdispense: StructureDefinition.differential.element[15].type[0].targetProfile[0]: Unable to resolve profile https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitioner
+WARNING: StructureDefinition/be-medicationdispense: StructureDefinition.snapshot.element[37].type[0].targetProfile[0]: Unable to resolve profile https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-patient
+WARNING: StructureDefinition/be-medicationdispense: StructureDefinition.snapshot.element[74].type[0].targetProfile[0]: Unable to resolve profile https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-organization
+WARNING: StructureDefinition/be-medicationdispense: StructureDefinition.snapshot.element[74].type[0].targetProfile[0]: Unable to resolve profile https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitioner
+== fsh-generated/resources/StructureDefinition-be-model-medication-dispense.json ==
+WARNING: StructureDefinition/be-model-medication-dispense: StructureDefinition.differential.element[2].type[0].targetProfile[0]: Unable to resolve profile https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-patient
+WARNING: StructureDefinition/be-model-medication-dispense: StructureDefinition.differential.element[4].type[0].targetProfile[0]: Unable to resolve profile https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitioner
+WARNING: StructureDefinition/be-model-medication-dispense: StructureDefinition.differential.element[5].type[0].targetProfile[0]: Unable to resolve profile https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-organization
+WARNING: StructureDefinition/be-model-medication-dispense: StructureDefinition.snapshot.element[4].type[0].targetProfile[0]: Unable to resolve profile https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-patient
+WARNING: StructureDefinition/be-model-medication-dispense: StructureDefinition.snapshot.element[6].type[0].targetProfile[0]: Unable to resolve profile https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitioner
+WARNING: StructureDefinition/be-model-medication-dispense: StructureDefinition.snapshot.element[7].type[0].targetProfile[0]: Unable to resolve profile https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-organization
+== fsh-generated/resources/ValueSet-be-vs-dispenser-types.json ==
+WARNING: ValueSet/be-vs-dispenser-types: ValueSet.compose[0].include[0]: Unknown System specified, so Concepts and Filters can''t be checked
+WARNING: ValueSet.where(id = 'be-vs-dispenser-types'): Error from server: Unable to provide support for code system https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty
+== input/be-medication.xml ==
+== input/examples/MedicationDispense/medication-dispense-example-1.json ==
+WARNING: MedicationDispense/medication-dispense-example-1: MedicationDispense.identifier[0].type.coding[0]: A code with no system has no defined meaning. A system should be provided
+INFORMATION: MedicationDispense/medication-dispense-example-1: MedicationDispense.medication.ofType(CodeableConcept).coding[0]: Code System URI 'https://cnk.apb.be/codings/cnk_product_codes' is unknown so the code cannot be validated
+WARNING: MedicationDispense/medication-dispense-example-1: MedicationDispense.context.identifier.type.coding[0]: A code with no system has no defined meaning. A system should be provided
+INFORMATION: MedicationDispense/medication-dispense-example-1: MedicationDispense.quantity: Code System URI 'https://www.gfd-dpp.be/fhir/reference/packaging' is unknown so the code cannot be validated

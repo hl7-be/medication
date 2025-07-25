@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="medication-line-origin-type"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem medication-line-origin-type</b></p><a name="medication-line-origin-type"> </a><a name="hcmedication-line-origin-type"> </a><p>This case-sensitive code system <code>https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-line-origin-type</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">ambulatory<a name="medication-line-origin-type-ambulatory"> </a></td><td>Ambulatory</td></tr><tr><td style="white-space:nowrap">hospital<a name="medication-line-origin-type-hospital"> </a></td><td>Hospital</td></tr><tr><td style="white-space:nowrap">self-medication<a name="medication-line-origin-type-self-medication"> </a></td><td>Self-medication</td></tr><tr><td style="white-space:nowrap">with-request<a name="medication-line-origin-type-with-request"> </a></td><td>With request</td></tr><tr><td style="white-space:nowrap">without-request<a name="medication-line-origin-type-without-request"> </a></td><td>Without request</td></tr><tr><td style="white-space:nowrap">pharmacist-advice<a name="medication-line-origin-type-pharmacist-advice"> </a></td><td>Pharmacist advice</td></tr></table></div>
+  </text>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-line-origin-type"/>
+  <version value="1.1.0"/>
+  <name value="MedicationLineOrigintype"/>
+  <title value="Medication origin type"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-07-13T10:12:54+00:00"/>
+  <publisher value="HL7 Belgium"/>
+  <contact>
+    <name value="HL7 Belgium"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.hl7belgium.org"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="hl7belgium@hl7belgium.org"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Message Structure eHealth"/>
+    <telecom>
+      <system value="email"/>
+      <value value="message-structure@ehealth.fgov.be"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Medication treatment origin type - what is the type of care that originated the medication treatment"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
+      <display value="Belgium"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="6"/>
+  <concept>
+    <code value="ambulatory"/>
+    <display value="Ambulatory"/>
+  </concept>
+  <concept>
+    <code value="hospital"/>
+    <display value="Hospital"/>
+  </concept>
+  <concept>
+    <code value="self-medication"/>
+    <display value="Self-medication"/>
+  </concept>
+  <concept>
+    <code value="with-request"/>
+    <display value="With request"/>
+  </concept>
+  <concept>
+    <code value="without-request"/>
+    <display value="Without request"/>
+  </concept>
+  <concept>
+    <code value="pharmacist-advice"/>
+    <display value="Pharmacist advice"/>
+  </concept>
+</CodeSystem>

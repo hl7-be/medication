@@ -1,0 +1,55 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.ehealth.fgov.be/standards/fhir/medication/MedicationDispense/example-minimal-dispense> a fhir:MedicationDispense;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "example-minimal-dispense"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationdispense";
+       fhir:index 0;
+       fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationdispense>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MedicationDispense</b><a name=\"example-minimal-dispense\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MedicationDispense \"example-minimal-dispense\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-be-medicationdispense.html\">BeMedicationDispense</a></p></div><p><b>status</b>: completed</p><p><b>medication</b>: Topazolam tab 50x 1,0mg <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (cnk-codes#1439562)</span></p><p><b>subject</b>: <span></span></p><h3>Performers</h3><table class=\"grid\"><tr><td>-</td><td><b>Actor</b></td></tr><tr><td>*</td><td><span>: Jan Janssen</span></td></tr></table><p><b>whenHandedOver</b>: 2020-03-10</p></div>"
+  ];
+  fhir:MedicationDispense.status [ fhir:value "completed"];
+  fhir:MedicationDispense.medicationCodeableConcept [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes" ];
+       fhir:Coding.code [ fhir:value "1439562" ];
+       fhir:Coding.display [ fhir:value "Topazolam tab 50x 1,0mg" ]
+     ]
+  ];
+  fhir:MedicationDispense.subject [
+     fhir:Reference.identifier [
+       fhir:Identifier.system [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin" ];
+       fhir:Identifier.value [ fhir:value "64110219106" ]
+     ]
+  ];
+  fhir:MedicationDispense.performer [
+     fhir:index 0;
+     fhir:MedicationDispense.performer.actor [
+       fhir:Reference.identifier [
+         fhir:Identifier.system [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi-practitioner" ];
+         fhir:Identifier.value [ fhir:value "6547432" ]
+       ];
+       fhir:Reference.display [ fhir:value "Jan Janssen" ]
+     ]
+  ];
+  fhir:MedicationDispense.whenHandedOver [ fhir:value "2020-03-10"^^xsd:date] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://www.ehealth.fgov.be/standards/fhir/medication/MedicationDispense/example-minimal-dispense.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
