@@ -2,7 +2,7 @@
 Profile:        BeDosage
 Parent:         Dosage
 Id:             BeDosage
-Title:          "BeMedicationDosage"
+Title:          "Medication Dosage"
 Description: "Specifications for a medication dosage for use in Belgian profiles."
 
 * timing

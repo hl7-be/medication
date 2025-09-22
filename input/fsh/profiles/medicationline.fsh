@@ -74,7 +74,7 @@ For the full definition see here: [http://hl7.org/fhir/R5/medicationstatement-de
 * reasonReference 0..1 MS
 * reasonCode MS
 * reasonReference MS
-* dosage only BeMedicationDosage
+* dosage only BeDosage
 * dosage MS
 * extension contains 
    BeExtOffLabel named offLabel 0..1 MS

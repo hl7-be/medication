@@ -55,7 +55,7 @@ Description: "Defines constraints and extensions on the Medication Dispense reso
 * whenHandedOver 1.. MS
 * note MS
 * dosageInstruction MS
-* dosageInstruction only BeMedicationDosage
+* dosageInstruction only BeDosage
 * dosageInstruction.text MS
 * dosageInstruction.patientInstruction MS
 * extension contains 
