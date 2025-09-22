@@ -1,6 +1,7 @@
 Alias: $be-patient = https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-patient
 Alias: $be-organization = https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-organization
 Alias: $be-practitioner = https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitioner
+Alias: $be-practitionerrole = https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitionerrole
 
 
 Profile:        BeMedicationDispense
@@ -45,7 +46,7 @@ Description: "Defines constraints and extensions on the Medication Dispense reso
 
 * performer 1.. MS
 * performer.function.text = "dispenser"
-* performer.actor only Reference($be-organization or $be-practitioner)
+* performer.actor only Reference($be-organization or $be-practitioner or $be-practitionerrole)
 * authorizingPrescription MS
 * authorizingPrescription.identifier MS
 * authorizingPrescription.display MS
