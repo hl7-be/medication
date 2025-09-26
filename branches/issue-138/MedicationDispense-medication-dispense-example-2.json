@@ -1,0 +1,145 @@
+{
+  "resourceType": "MedicationDispense",
+  "id": "medication-dispense-example-2",
+  "meta": {
+    "profile": [
+      "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationdispense"
+    ]
+  },
+  "language": "nl-BE",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"nl-BE\" lang=\"nl-BE\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"medication-dispense-example-2\"  (Language \"nl-BE\") </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-be-medicationdispense.html\">BeMedicationDispense</a></p></div><p><b>identifier</b>: dguid: a8ca980c-72aa-11e7-8cf7-a6006ad3dba0</p><p><b>status</b>: completed</p><p><b>medication</b>: Topazolam tab 50x 1,0mg <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (cnk_product_codes#1439562)</span></p><p><b>subject</b>: <span></span></p><p><b>context</b>: <span></span></p><h3>Performers</h3><table class=\"grid\"><tr><td>-</td><td><b>Actor</b></td></tr><tr><td>*</td><td><a name=\"apotheek-onder-de-toren\"> </a><blockquote><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"apotheek-onder-de-toren\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://www.ehealth.fgov.be/standards/fhir/core/2.0.0/StructureDefinition-be-organization.html\">Organisation core BE profile</a></p></div><p><b>identifier</b>: id: 27457532</p><p><b>type</b>: Independent pharmacy <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://www.ehealth.fgov.be/standards/fhir/core/2.0.0/CodeSystem-cd-hcparty.html\">HCParty</a>#orgpharmacy)</span></p></blockquote></td></tr></table><p><b>authorizingPrescription</b>: <span>: Prescription</span></p><p><b>quantity</b>: 1(unit package from https://www.gfd-dpp.be/fhir/reference/packaging)<span style=\"background: LightGoldenRodYellow\"> (Details: https://www.gfd-dpp.be/fhir/reference/packaging code package = 'package')</span></p><p><b>whenHandedOver</b>: 2020-03-10</p></div>"
+  },
+  "contained": [
+    {
+      "resourceType": "Organization",
+      "id": "apotheek-onder-de-toren",
+      "meta": {
+        "profile": [
+          "https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-organization"
+        ]
+      },
+      "identifier": [
+        {
+          "system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi-organization",
+          "value": "27457532"
+        }
+      ],
+      "type": [
+        {
+          "coding": [
+            {
+              "system": "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty",
+              "code": "orgpharmacy"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "identifier": [
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "dguid"
+          }
+        ]
+      },
+      "system": "https://www.gfd-dpp.be/fhir/reference/dguid",
+      "value": "a8ca980c-72aa-11e7-8cf7-a6006ad3dba0"
+    }
+  ],
+  "status": "completed",
+  "medicationCodeableConcept": {
+    "coding": [
+      {
+        "system": "https://cnk.apb.be/codings/cnk_product_codes",
+        "code": "1439562",
+        "display": "Topazolam tab 50x 1,0mg",
+        "_display": {
+          "extension": [
+            {
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "nl-BE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Topazolam tab 50x 1,0mg"
+                }
+              ],
+              "url": "http://hl7.org/fhir/StructureDefinition/translation"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "subject": {
+    "identifier": {
+      "system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+      "value": "64110219106"
+    }
+  },
+  "context": {
+    "identifier": {
+      "type": {
+        "coding": [
+          {
+            "code": "sguid"
+          }
+        ]
+      },
+      "system": "https://www.gfd-dpp.be/fhir/reference/sguid",
+      "value": "b8ca980c-72aa-11e7-8cf7-a6006ad3dba0"
+    }
+  },
+  "performer": [
+    {
+      "actor": {
+        "reference": "#apotheek-onder-de-toren",
+        "identifier": {
+          "system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi-organization",
+          "value": "27457532"
+        },
+        "display": "Apotheek onder de toren"
+      }
+    }
+  ],
+  "authorizingPrescription": [
+    {
+      "display": "Prescription"
+    }
+  ],
+  "quantity": {
+    "value": 1,
+    "system": "https://www.gfd-dpp.be/fhir/reference/packaging",
+    "code": "package"
+  },
+  "whenHandedOver": "2020-03-10",
+  "dosageInstruction": [
+    {
+      "text": "3 x per dag",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "fr-BE"
+              },
+              {
+                "url": "content",
+                "valueString": "3 x par jour"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    }
+  ]
+}

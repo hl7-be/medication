@@ -1,0 +1,7 @@
+URL,Version,Status,OIDs,Name,Title,Description,Used
+https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatus,1.1.0,active,,BeMedicationLineAdherenceStatus,Medication Line Adherence Status,"Medication Line Adherence Status - ValueSet.",
+https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatusReason,1.1.0,active,,BeMedicationLineAdherenceStatusReason,Adherence Status Reason,"Reasons for non-adherence to a treatment or intervention.",
+https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineOriginType,1.1.0,active,,BeMedicationLineOriginType,Medication origin Type,"Medication origin type",
+https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineRegistrationStatus,1.1.0,draft,,BeMedicationLineRegistrationStatus,Medication Line Registration Status,"This code system defines the registration statuses for medication lines.",
+https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationRequestReimbursementType,1.1.0,active,,BeMedicationRequestReimbursementType,Medication request reimbursement type,"Medication request reimbursement type - instructions for reimbursement of the medication request",
+https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationType,1.1.0,active,,BeMedicationType,Medication preparation Type,"Medication preparation type",

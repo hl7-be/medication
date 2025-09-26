@@ -1,0 +1,2116 @@
+{
+  "date" : "Fri, 26 Sep, 2025 15:03:56 +0000",
+  "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
+  "files" : [
+    {
+      "name" : "/fsh-generated/resources/ImplementationGuide-hl7.fhir.be.medication.json",
+      "size" : 19092,
+      "processes" : [
+        {
+          "activity" : "load",
+          "start" : 45,
+          "length" : 149
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 46,
+          "length" : 1
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 46,
+          "length" : 15
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 46,
+          "length" : 60
+        },
+        {
+          "activity" : "validate",
+          "start" : 62,
+          "length" : 2826
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 75,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 77,
+          "length" : 147
+        },
+        {
+          "activity" : "generate2",
+          "start" : 83,
+          "length" : 117
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 104,
+          "length" : 11
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 115,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/CodeSystem-BeMedicationLineAdherenceStatus.json",
+      "size" : 2692,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 44,
+          "length" : 5
+        },
+        {
+          "activity" : "load",
+          "start" : 44,
+          "length" : 7
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 46,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 46,
+          "length" : 12
+        },
+        {
+          "activity" : "validate",
+          "start" : 50,
+          "length" : 21
+        },
+        {
+          "activity" : "generate1",
+          "start" : 77,
+          "length" : 35
+        },
+        {
+          "activity" : "generate2",
+          "start" : 83,
+          "length" : 586
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 104,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/CodeSystem-BeMedicationLineAdherenceStatusReason.json",
+      "size" : 3076,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 44,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 44,
+          "length" : 6
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 46,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 46,
+          "length" : 12
+        },
+        {
+          "activity" : "validate",
+          "start" : 50,
+          "length" : 410
+        },
+        {
+          "activity" : "generate1",
+          "start" : 77,
+          "length" : 31
+        },
+        {
+          "activity" : "generate2",
+          "start" : 84,
+          "length" : 111
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 104,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/CodeSystem-BeMedicationLineOriginType.json",
+      "size" : 1032,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 44,
+          "length" : 6
+        },
+        {
+          "activity" : "load",
+          "start" : 44,
+          "length" : 5
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 46,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 46,
+          "length" : 6
+        },
+        {
+          "activity" : "validate",
+          "start" : 50,
+          "length" : 7
+        },
+        {
+          "activity" : "generate1",
+          "start" : 77,
+          "length" : 25
+        },
+        {
+          "activity" : "generate2",
+          "start" : 84,
+          "length" : 82
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/CodeSystem-BeMedicationLineRegistrationStatus.json",
+      "size" : 725,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 44,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 44,
+          "length" : 5
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 46,
+          "length" : 11
+        },
+        {
+          "activity" : "validate",
+          "start" : 50,
+          "length" : 7
+        },
+        {
+          "activity" : "generate1",
+          "start" : 77,
+          "length" : 23
+        },
+        {
+          "activity" : "generate2",
+          "start" : 84,
+          "length" : 65
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 104,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/CodeSystem-BeMedicationRequestReimbursementType.json",
+      "size" : 3556,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 44,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 44,
+          "length" : 5
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 46,
+          "length" : 1
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 46,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 46,
+          "length" : 7
+        },
+        {
+          "activity" : "validate",
+          "start" : 50,
+          "length" : 14
+        },
+        {
+          "activity" : "generate1",
+          "start" : 77,
+          "length" : 28
+        },
+        {
+          "activity" : "generate2",
+          "start" : 84,
+          "length" : 51
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 104,
+          "length" : 2
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/CodeSystem-BeMedicationType.json",
+      "size" : 679,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 44,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 44,
+          "length" : 3
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 46,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 46,
+          "length" : 5
+        },
+        {
+          "activity" : "validate",
+          "start" : 50,
+          "length" : 8
+        },
+        {
+          "activity" : "generate1",
+          "start" : 77,
+          "length" : 23
+        },
+        {
+          "activity" : "generate2",
+          "start" : 84,
+          "length" : 39
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/MedicationDispense-example-dispense-communitypharmacy-1med.json",
+      "size" : 3080,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 44,
+          "length" : 6
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 46,
+          "length" : 779
+        },
+        {
+          "activity" : "validate",
+          "start" : 75,
+          "length" : 692
+        },
+        {
+          "activity" : "generate1",
+          "start" : 77,
+          "length" : 19
+        },
+        {
+          "activity" : "generate2",
+          "start" : 84,
+          "length" : 31
+        },
+        {
+          "activity" : "generateExampleZip",
+          "start" : 104,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/MedicationDispense-example-dispense-hospital.json",
+      "size" : 3049,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 44,
+          "length" : 7
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 46,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 47,
+          "length" : 622
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 75,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 76,
+          "length" : 947
+        },
+        {
+          "activity" : "generate1",
+          "start" : 77,
+          "length" : 19
+        },
+        {
+          "activity" : "generate2",
+          "start" : 84,
+          "length" : 22
+        },
+        {
+          "activity" : "generateExampleZip",
+          "start" : 103,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/MedicationDispense-example-minimal-dispense.json",
+      "size" : 941,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 44,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 48,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 77,
+          "length" : 7
+        },
+        {
+          "activity" : "generate1",
+          "start" : 77,
+          "length" : 13
+        },
+        {
+          "activity" : "generate2",
+          "start" : 84,
+          "length" : 12
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/MedicationDispense-medicationdispense-example-1.json",
+      "size" : 2649,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 44,
+          "length" : 4
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 46,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 48,
+          "length" : 178
+        },
+        {
+          "activity" : "validate",
+          "start" : 77,
+          "length" : 36
+        },
+        {
+          "activity" : "generate1",
+          "start" : 77,
+          "length" : 24
+        },
+        {
+          "activity" : "generate2",
+          "start" : 84,
+          "length" : 10
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/MedicationDispense-medicationdispense-example-2.json",
+      "size" : 3379,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 44,
+          "length" : 4
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 48,
+          "length" : 181
+        },
+        {
+          "activity" : "validate",
+          "start" : 77,
+          "length" : 85
+        },
+        {
+          "activity" : "generate1",
+          "start" : 77,
+          "length" : 19
+        },
+        {
+          "activity" : "generate2",
+          "start" : 84,
+          "length" : 13
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/NamingSystem-be-ns-cnk-codes.json",
+      "size" : 559,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 44,
+          "length" : 5
+        },
+        {
+          "activity" : "load",
+          "start" : 44,
+          "length" : 12
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 46,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 48,
+          "length" : 12
+        },
+        {
+          "activity" : "validate",
+          "start" : 49,
+          "length" : 608
+        },
+        {
+          "activity" : "generate1",
+          "start" : 77,
+          "length" : 13
+        },
+        {
+          "activity" : "generate2",
+          "start" : 84,
+          "length" : 9
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/NamingSystem-be-ns-cti-extended-code.json",
+      "size" : 1075,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 44,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 44,
+          "length" : 4
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 48,
+          "length" : 10
+        },
+        {
+          "activity" : "validate",
+          "start" : 50,
+          "length" : 12
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 65,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 77,
+          "length" : 22
+        },
+        {
+          "activity" : "generate2",
+          "start" : 84,
+          "length" : 8
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 104,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/NamingSystem-be-ns-prescription-ids.json",
+      "size" : 570,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 44,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 44,
+          "length" : 4
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 46,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 48,
+          "length" : 10
+        },
+        {
+          "activity" : "validate",
+          "start" : 50,
+          "length" : 12
+        },
+        {
+          "activity" : "generate1",
+          "start" : 77,
+          "length" : 22
+        },
+        {
+          "activity" : "generate2",
+          "start" : 84,
+          "length" : 9
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/NamingSystem-be-ns-product-package-type.json",
+      "size" : 585,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 44,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 44,
+          "length" : 4
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 48,
+          "length" : 10
+        },
+        {
+          "activity" : "validate",
+          "start" : 50,
+          "length" : 8
+        },
+        {
+          "activity" : "generate1",
+          "start" : 77,
+          "length" : 15
+        },
+        {
+          "activity" : "generate2",
+          "start" : 84,
+          "length" : 10
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Organization-apotheek-onder-de-toren.json",
+      "size" : 559,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 44,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 48,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 77,
+          "length" : 11
+        },
+        {
+          "activity" : "generate1",
+          "start" : 77,
+          "length" : 17
+        },
+        {
+          "activity" : "generate2",
+          "start" : 84,
+          "length" : 9
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-BasedOnMedicationLine.json",
+      "size" : 1471,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 44,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 44,
+          "length" : 8
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 45,
+          "length" : 14
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 46,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 48,
+          "length" : 34
+        },
+        {
+          "activity" : "validate",
+          "start" : 51,
+          "length" : 7705
+        },
+        {
+          "activity" : "generate1",
+          "start" : 77,
+          "length" : 41
+        },
+        {
+          "activity" : "generate2",
+          "start" : 84,
+          "length" : 194
+        },
+        {
+          "activity" : "generate2",
+          "start" : 89,
+          "length" : 527
+        },
+        {
+          "activity" : "makeDependencies",
+          "start" : 95,
+          "length" : 1
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 104,
+          "length" : 3
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-BeDosage.json",
+      "size" : 2336,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 44,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 44,
+          "length" : 5
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 45,
+          "length" : 65
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 48,
+          "length" : 64
+        },
+        {
+          "activity" : "validate",
+          "start" : 59,
+          "length" : 340
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 75,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 78,
+          "length" : 168
+        },
+        {
+          "activity" : "generate2",
+          "start" : 84,
+          "length" : 412
+        },
+        {
+          "activity" : "generate2",
+          "start" : 90,
+          "length" : 584
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 104,
+          "length" : 8
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 115,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-BeExtAdherenceStatus.json",
+      "size" : 1595,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 44,
+          "length" : 5
+        },
+        {
+          "activity" : "load",
+          "start" : 45,
+          "length" : 4
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 45,
+          "length" : 30
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 48,
+          "length" : 15
+        },
+        {
+          "activity" : "validate",
+          "start" : 59,
+          "length" : 40
+        },
+        {
+          "activity" : "generate1",
+          "start" : 78,
+          "length" : 63
+        },
+        {
+          "activity" : "generate2",
+          "start" : 85,
+          "length" : 81
+        },
+        {
+          "activity" : "generate2",
+          "start" : 90,
+          "length" : 72
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 104,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-BeExtInstructionsForReimbursement.json",
+      "size" : 1498,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 44,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 45,
+          "length" : 5
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 45,
+          "length" : 28
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 48,
+          "length" : 14
+        },
+        {
+          "activity" : "validate",
+          "start" : 59,
+          "length" : 41
+        },
+        {
+          "activity" : "generate1",
+          "start" : 78,
+          "length" : 55
+        },
+        {
+          "activity" : "generate2",
+          "start" : 85,
+          "length" : 81
+        },
+        {
+          "activity" : "generate2",
+          "start" : 90,
+          "length" : 51
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 104,
+          "length" : 3
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-BeExtMedicationLineRegistrationStatus.json",
+      "size" : 1807,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 44,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 45,
+          "length" : 4
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 45,
+          "length" : 26
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 48,
+          "length" : 17
+        },
+        {
+          "activity" : "validate",
+          "start" : 59,
+          "length" : 39
+        },
+        {
+          "activity" : "generate1",
+          "start" : 78,
+          "length" : 54
+        },
+        {
+          "activity" : "generate2",
+          "start" : 85,
+          "length" : 73
+        },
+        {
+          "activity" : "generate2",
+          "start" : 90,
+          "length" : 73
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 104,
+          "length" : 4
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-BeExtMedicationType.json",
+      "size" : 1588,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 44,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 45,
+          "length" : 4
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 45,
+          "length" : 26
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 46,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 48,
+          "length" : 15
+        },
+        {
+          "activity" : "validate",
+          "start" : 60,
+          "length" : 39
+        },
+        {
+          "activity" : "generate1",
+          "start" : 78,
+          "length" : 50
+        },
+        {
+          "activity" : "generate2",
+          "start" : 85,
+          "length" : 68
+        },
+        {
+          "activity" : "generate2",
+          "start" : 91,
+          "length" : 52
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 104,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-BeExtOffLabel.json",
+      "size" : 3795,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 44,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 45,
+          "length" : 8
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 45,
+          "length" : 38
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 48,
+          "length" : 25
+        },
+        {
+          "activity" : "validate",
+          "start" : 60,
+          "length" : 153
+        },
+        {
+          "activity" : "generate1",
+          "start" : 78,
+          "length" : 103
+        },
+        {
+          "activity" : "generate2",
+          "start" : 85,
+          "length" : 106
+        },
+        {
+          "activity" : "generate2",
+          "start" : 91,
+          "length" : 106
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 104,
+          "length" : 4
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-BeExtRecordedDate.json",
+      "size" : 1326,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 44,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 45,
+          "length" : 7
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 45,
+          "length" : 50
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 48,
+          "length" : 14
+        },
+        {
+          "activity" : "validate",
+          "start" : 60,
+          "length" : 33
+        },
+        {
+          "activity" : "generate1",
+          "start" : 78,
+          "length" : 55
+        },
+        {
+          "activity" : "generate2",
+          "start" : 85,
+          "length" : 73
+        },
+        {
+          "activity" : "generate2",
+          "start" : 91,
+          "length" : 45
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 104,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-BeExtRecorder.json",
+      "size" : 1586,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 44,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 45,
+          "length" : 7
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 45,
+          "length" : 51
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 48,
+          "length" : 13
+        },
+        {
+          "activity" : "validate",
+          "start" : 60,
+          "length" : 38
+        },
+        {
+          "activity" : "generate1",
+          "start" : 78,
+          "length" : 39
+        },
+        {
+          "activity" : "generate2",
+          "start" : 85,
+          "length" : 56
+        },
+        {
+          "activity" : "generate2",
+          "start" : 91,
+          "length" : 42
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 104,
+          "length" : 2
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 115,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-BeMedicationDispense.json",
+      "size" : 9368,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 44,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 45,
+          "length" : 8
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 45,
+          "length" : 148
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 48,
+          "length" : 56
+        },
+        {
+          "activity" : "validate",
+          "start" : 60,
+          "length" : 515
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 75,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 78,
+          "length" : 330
+        },
+        {
+          "activity" : "generate2",
+          "start" : 85,
+          "length" : 807
+        },
+        {
+          "activity" : "generate2",
+          "start" : 91,
+          "length" : 420
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 104,
+          "length" : 20
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-BeMedicationExposureCategory.json",
+      "size" : 1450,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 44,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 45,
+          "length" : 5
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 45,
+          "length" : 44
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 48,
+          "length" : 15
+        },
+        {
+          "activity" : "validate",
+          "start" : 60,
+          "length" : 50
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 75,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 78,
+          "length" : 34
+        },
+        {
+          "activity" : "generate2",
+          "start" : 86,
+          "length" : 93
+        },
+        {
+          "activity" : "generate2",
+          "start" : 91,
+          "length" : 38
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 104,
+          "length" : 2
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-BeMedicationLine.json",
+      "size" : 12031,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 44,
+          "length" : 5
+        },
+        {
+          "activity" : "load",
+          "start" : 45,
+          "length" : 7
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 45,
+          "length" : 66
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 46,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 48,
+          "length" : 50
+        },
+        {
+          "activity" : "validate",
+          "start" : 60,
+          "length" : 347
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 65,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 78,
+          "length" : 235
+        },
+        {
+          "activity" : "generate2",
+          "start" : 86,
+          "length" : 561
+        },
+        {
+          "activity" : "generate2",
+          "start" : 91,
+          "length" : 227
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 104,
+          "length" : 21
+        },
+        {
+          "activity" : "scanProfilesForR5",
+          "start" : 115,
+          "length" : 1
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 115,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-BeMedicationPrescription.json",
+      "size" : 10485,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 44,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 45,
+          "length" : 6
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 45,
+          "length" : 98
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 49,
+          "length" : 51
+        },
+        {
+          "activity" : "validate",
+          "start" : 61,
+          "length" : 442
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 75,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 79,
+          "length" : 277
+        },
+        {
+          "activity" : "generate2",
+          "start" : 87,
+          "length" : 572
+        },
+        {
+          "activity" : "generate2",
+          "start" : 91,
+          "length" : 265
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 104,
+          "length" : 18
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 115,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-BeModelDosagingInformation.json",
+      "size" : 4271,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 44,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 45,
+          "length" : 7
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 45,
+          "length" : 16
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 49,
+          "length" : 17
+        },
+        {
+          "activity" : "validate",
+          "start" : 61,
+          "length" : 79
+        },
+        {
+          "activity" : "generate1",
+          "start" : 79,
+          "length" : 51
+        },
+        {
+          "activity" : "generate2",
+          "start" : 87,
+          "length" : 103
+        },
+        {
+          "activity" : "generate2",
+          "start" : 92,
+          "length" : 41
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 104,
+          "length" : 3
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-BeModelMedication.json",
+      "size" : 6124,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 44,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 45,
+          "length" : 8
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 46,
+          "length" : 17
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 49,
+          "length" : 19
+        },
+        {
+          "activity" : "validate",
+          "start" : 61,
+          "length" : 131
+        },
+        {
+          "activity" : "generate1",
+          "start" : 79,
+          "length" : 79
+        },
+        {
+          "activity" : "generate2",
+          "start" : 88,
+          "length" : 135
+        },
+        {
+          "activity" : "generate2",
+          "start" : 92,
+          "length" : 66
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 104,
+          "length" : 4
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-BeModelMedicationDispense.json",
+      "size" : 10473,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 44,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 45,
+          "length" : 8
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 46,
+          "length" : 23
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 49,
+          "length" : 23
+        },
+        {
+          "activity" : "validate",
+          "start" : 61,
+          "length" : 165
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 75,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 79,
+          "length" : 104
+        },
+        {
+          "activity" : "generate2",
+          "start" : 88,
+          "length" : 160
+        },
+        {
+          "activity" : "generate2",
+          "start" : 92,
+          "length" : 79
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 104,
+          "length" : 5
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-BeModelMedicationLine.json",
+      "size" : 11285,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 44,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 45,
+          "length" : 54
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 46,
+          "length" : 22
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 49,
+          "length" : 30
+        },
+        {
+          "activity" : "validate",
+          "start" : 62,
+          "length" : 183
+        },
+        {
+          "activity" : "generate1",
+          "start" : 79,
+          "length" : 131
+        },
+        {
+          "activity" : "generate2",
+          "start" : 88,
+          "length" : 187
+        },
+        {
+          "activity" : "generate2",
+          "start" : 92,
+          "length" : 85
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 104,
+          "length" : 7
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-BeModelMedicationPrescription.json",
+      "size" : 14264,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 44,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 45,
+          "length" : 6
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 46,
+          "length" : 18
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 46,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 49,
+          "length" : 69
+        },
+        {
+          "activity" : "validate",
+          "start" : 62,
+          "length" : 207
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 65,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 79,
+          "length" : 132
+        },
+        {
+          "activity" : "generate2",
+          "start" : 88,
+          "length" : 215
+        },
+        {
+          "activity" : "generate2",
+          "start" : 92,
+          "length" : 71
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 104,
+          "length" : 8
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-BeMedicationExposureIntentVS.json",
+      "size" : 1056,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 44,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 44,
+          "length" : 5
+        },
+        {
+          "activity" : "loadDepInfo",
+          "start" : 46,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 49,
+          "length" : 240
+        },
+        {
+          "activity" : "validate",
+          "start" : 50,
+          "length" : 386
+        },
+        {
+          "activity" : "generate1",
+          "start" : 79,
+          "length" : 12
+        },
+        {
+          "activity" : "generate2",
+          "start" : 88,
+          "length" : 288
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-BeMedicationLineAdherenceStatusReasonVS.json",
+      "size" : 627,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 44,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 44,
+          "length" : 4
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 49,
+          "length" : 6
+        },
+        {
+          "activity" : "validate",
+          "start" : 51,
+          "length" : 10
+        },
+        {
+          "activity" : "generate1",
+          "start" : 79,
+          "length" : 12
+        },
+        {
+          "activity" : "generate2",
+          "start" : 89,
+          "length" : 52
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 115,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-BeMedicationLineAdherenceStatusVS.json",
+      "size" : 550,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 44,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 44,
+          "length" : 3
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 46,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 49,
+          "length" : 5
+        },
+        {
+          "activity" : "validate",
+          "start" : 51,
+          "length" : 7
+        },
+        {
+          "activity" : "generate1",
+          "start" : 79,
+          "length" : 13
+        },
+        {
+          "activity" : "generate2",
+          "start" : 89,
+          "length" : 58
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 104,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-BeMedicationLineOriginTypeVS.json",
+      "size" : 539,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 44,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 44,
+          "length" : 6
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 49,
+          "length" : 5
+        },
+        {
+          "activity" : "validate",
+          "start" : 51,
+          "length" : 7
+        },
+        {
+          "activity" : "generate1",
+          "start" : 80,
+          "length" : 12
+        },
+        {
+          "activity" : "generate2",
+          "start" : 89,
+          "length" : 49
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-BeMedicationLineRegistrationStatusVS.json",
+      "size" : 622,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 44,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 44,
+          "length" : 5
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 49,
+          "length" : 4
+        },
+        {
+          "activity" : "validate",
+          "start" : 51,
+          "length" : 6
+        },
+        {
+          "activity" : "generate1",
+          "start" : 80,
+          "length" : 11
+        },
+        {
+          "activity" : "generate2",
+          "start" : 89,
+          "length" : 42
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-BeMedicationPrescriptionStatusVS.json",
+      "size" : 835,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 44,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 44,
+          "length" : 3
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 46,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 49,
+          "length" : 14
+        },
+        {
+          "activity" : "validate",
+          "start" : 51,
+          "length" : 15
+        },
+        {
+          "activity" : "generate1",
+          "start" : 80,
+          "length" : 13
+        },
+        {
+          "activity" : "generate2",
+          "start" : 89,
+          "length" : 46
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-BeMedicationRequestReimbursementTypeVS.json",
+      "size" : 657,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 44,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 44,
+          "length" : 4
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 49,
+          "length" : 9
+        },
+        {
+          "activity" : "validate",
+          "start" : 51,
+          "length" : 6
+        },
+        {
+          "activity" : "generate1",
+          "start" : 80,
+          "length" : 11
+        },
+        {
+          "activity" : "generate2",
+          "start" : 89,
+          "length" : 47
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 104,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-BeMedicationTypeVS.json",
+      "size" : 509,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 44,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 44,
+          "length" : 4
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 49,
+          "length" : 4
+        },
+        {
+          "activity" : "validate",
+          "start" : 51,
+          "length" : 6
+        },
+        {
+          "activity" : "generate1",
+          "start" : 80,
+          "length" : 13
+        },
+        {
+          "activity" : "generate2",
+          "start" : 89,
+          "length" : 41
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-BeRouteOfAdministrationVS.json",
+      "size" : 9280,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 44,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 44,
+          "length" : 6
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 46,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 49,
+          "length" : 166
+        },
+        {
+          "activity" : "validate",
+          "start" : 51,
+          "length" : 585
+        },
+        {
+          "activity" : "generate1",
+          "start" : 80,
+          "length" : 28
+        },
+        {
+          "activity" : "generate2",
+          "start" : 89,
+          "length" : 293
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 104,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-be-vs-dispenser-types.json",
+      "size" : 1085,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 44,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 44,
+          "length" : 5
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 46,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 49,
+          "length" : 12
+        },
+        {
+          "activity" : "validate",
+          "start" : 51,
+          "length" : 18
+        },
+        {
+          "activity" : "generate1",
+          "start" : 80,
+          "length" : 14
+        },
+        {
+          "activity" : "generate2",
+          "start" : 89,
+          "length" : 46
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 104,
+          "length" : 1
+        }
+      ]
+    }
+  ]
+}

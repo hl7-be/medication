@@ -1,0 +1,48 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "medication-line-origin-type-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet medication-line-origin-type-vs</b></p><a name=\"medication-line-origin-type-vs\"> </a><a name=\"hcmedication-line-origin-type-vs\"> </a><a name=\"medication-line-origin-type-vs-en-US\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-medication-line-origin-type.html\"><code>https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-line-origin-type</code></a></li></ul></div>"
+  },
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/medication-line-origin-type-vs",
+  "version" : "1.1.0",
+  "name" : "MedicationLineOrigintypeVS",
+  "title" : "Medication origin type ValueSet",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2024-09-06T15:59:56+00:00",
+  "publisher" : "HL7 Belgium",
+  "contact" : [{
+    "name" : "HL7 Belgium",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.hl7belgium.org"
+    },
+    {
+      "system" : "email",
+      "value" : "hl7belgium@hl7belgium.org"
+    }]
+  },
+  {
+    "name" : "Message Structure eHealth",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "message-structure@ehealth.fgov.be",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Medication treatment origin type - what is the type of care that originated the medication treatment",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BE",
+      "display" : "Belgium"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-line-origin-type"
+    }]
+  }
+}

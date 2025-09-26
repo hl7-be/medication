@@ -1,0 +1,48 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "BeMedicationLineAdherenceStatusReasonVS",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet BeMedicationLineAdherenceStatusReasonVS</b></p><a name=\"BeMedicationLineAdherenceStatusReasonVS\"> </a><a name=\"hcBeMedicationLineAdherenceStatusReasonVS\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-BeMedicationLineAdherenceStatusReason.html\"><code>https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatusReason</code></a></li></ul></div>"
+  },
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/BeMedicationLineAdherenceStatusReasonVS",
+  "version" : "1.1.0",
+  "name" : "BeMedicationLineAdherenceStatusReasonVS",
+  "title" : "Adherence Status Reason ValueSet",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2025-09-26T15:03:09+00:00",
+  "publisher" : "HL7 Belgium",
+  "contact" : [{
+    "name" : "HL7 Belgium",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.hl7belgium.org"
+    },
+    {
+      "system" : "email",
+      "value" : "hl7belgium@hl7belgium.org"
+    }]
+  },
+  {
+    "name" : "Message Structure eHealth",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "message-structure@ehealth.fgov.be",
+      "use" : "work"
+    }]
+  }],
+  "description" : "ValueSet containing reasons for non-adherence to a treatment or intervention.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BE",
+      "display" : "Belgium"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatusReason"
+    }]
+  }
+}

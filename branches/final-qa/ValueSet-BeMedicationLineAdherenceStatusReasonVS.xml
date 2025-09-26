@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="BeMedicationLineAdherenceStatusReasonVS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet BeMedicationLineAdherenceStatusReasonVS</b></p><a name="BeMedicationLineAdherenceStatusReasonVS"> </a><a name="hcBeMedicationLineAdherenceStatusReasonVS"> </a><ul><li>Include all codes defined in <a href="CodeSystem-BeMedicationLineAdherenceStatusReason.html"><code>https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatusReason</code></a></li></ul></div>
+  </text>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/BeMedicationLineAdherenceStatusReasonVS"/>
+  <version value="1.1.0"/>
+  <name value="BeMedicationLineAdherenceStatusReasonVS"/>
+  <title value="Adherence Status Reason ValueSet"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2025-09-26T15:03:09+00:00"/>
+  <publisher value="HL7 Belgium"/>
+  <contact>
+    <name value="HL7 Belgium"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.hl7belgium.org"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="hl7belgium@hl7belgium.org"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Message Structure eHealth"/>
+    <telecom>
+      <system value="email"/>
+      <value value="message-structure@ehealth.fgov.be"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="ValueSet containing reasons for non-adherence to a treatment or intervention."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
+      <display value="Belgium"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatusReason"/>
+    </include>
+  </compose>
+</ValueSet>

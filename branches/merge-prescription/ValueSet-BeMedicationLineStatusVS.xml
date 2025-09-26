@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="BeMedicationLineStatusVS"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet BeMedicationLineStatusVS</b></p><a name="BeMedicationLineStatusVS"> </a><a name="hcBeMedicationLineStatusVS"> </a><ul><li>Include these codes as defined in <a href="http://hl7.org/fhir/R4/codesystem-medication-statement-status.html"><code>http://hl7.org/fhir/CodeSystem/medication-statement-status</code></a> version <code>5.0.0</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="http://hl7.org/fhir/R4/codesystem-medication-statement-status.html#medication-statement-status-recorded">recorded</a></td><td/><td/></tr><tr><td><a href="http://hl7.org/fhir/R4/codesystem-medication-statement-status.html#medication-statement-status-entered-in-error">entered-in-error</a></td><td style="color: #cccccc">Entered in Error</td><td>Some of the actions that are implied by the medication statement may have occurred.  For example, the patient may have taken some of the medication.  Clinical decision support systems should take this status into account.</td></tr><tr><td><a href="http://hl7.org/fhir/R4/codesystem-medication-statement-status.html#medication-statement-status-draft">draft</a></td><td/><td/></tr></table></li></ul></div>
+  </text>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/BeMedicationLineStatusVS"/>
+  <version value="1.1.0"/>
+  <name value="BeMedicationLineStatusVS"/>
+  <title value="Medication Statement Status Codes"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-07-17T13:48:32+00:00"/>
+  <publisher value="HL7 Belgium"/>
+  <contact>
+    <name value="HL7 Belgium"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.hl7belgium.org"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="hl7belgium@hl7belgium.org"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Message Structure eHealth"/>
+    <telecom>
+      <system value="email"/>
+      <value value="message-structure@ehealth.fgov.be"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="This value set includes a selection of medication statement status codes from FHIR."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
+      <display value="Belgium"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/CodeSystem/medication-statement-status"/>
+      <version value="5.0.0"/>
+      <concept>
+        <code value="recorded"/>
+      </concept>
+      <concept>
+        <code value="entered-in-error"/>
+      </concept>
+      <concept>
+        <code value="draft"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,41 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "e9ba3f2f-3200-4aa7-8077-e5700c2abb3b-18",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/e9ba3f2f-3200-4aa7-8077-e5700c2abb3b-18",
+  "name" : "IntersectionDispenserTypesAndDispenserTypes",
+  "title" : "Intersection of Dispenser Types And Dispenser Types",
+  "status" : "active",
+  "date" : "2024-09-06T16:00:30+00:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BE",
+      "display" : "Belgium"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "deptpharmacy"
+      },
+      {
+        "code" : "perspharmacist"
+      },
+      {
+        "code" : "orgpharmacy"
+      },
+      {
+        "code" : "perspharmacyassistant"
+      },
+      {
+        "code" : "perspharmacistclinicalbiologist"
+      },
+      {
+        "code" : "persdentist"
+      },
+      {
+        "code" : "deptdentistry"
+      }]
+    }]
+  }
+}

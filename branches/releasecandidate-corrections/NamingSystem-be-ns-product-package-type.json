@@ -1,0 +1,42 @@
+{
+  "resourceType": "NamingSystem",
+  "id": "be-ns-product-package-type",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h3>Summary</h3><table class=\"grid\"><tr><td>Defining URL</td><td>https://www.hl7belgium.org/fhir/NamingSystem/be-ns-product-package-type</td></tr><tr><td>Version</td><td>0.2.0</td></tr><tr><td>Name</td><td>BeNSProductPackage</td></tr><tr><td>Status</td><td>active</td></tr><tr><td>Definition</td><td><div><p>Naming System - Product Package Types</p>\n</div></td></tr><tr><td>Publisher</td><td>HL7 Belgium</td></tr></table><h3>Identifiers</h3><table class=\"grid\"><tr><td><b>Type</b></td><td><b>Value</b></td><td><b>Preferred</b></td></tr><tr><td>URI</td><td>https://www.ehealth.fgov.be/standards/fhir/NamingSystem/product-package-type</td><td>true</td></tr></table></div>"
+  },
+  "name": "BeNSProductPackage",
+  "status": "active",
+  "kind": "codesystem",
+  "date": "2020-07-24",
+  "publisher": "HL7 Belgium",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7belgium.org"
+        }
+      ]
+    }
+  ],
+  "description": "Naming System - Product Package Types",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "056"
+        }
+      ],
+      "text": "Belgium"
+    }
+  ],
+  "uniqueId": [
+    {
+      "type": "uri",
+      "value": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/product-package-type",
+      "preferred": true
+    }
+  ]
+}

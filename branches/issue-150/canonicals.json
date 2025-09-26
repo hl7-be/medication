@@ -1,0 +1,58 @@
+[
+  {
+    "id": "hl7.fhir.be.medication",
+    "type": "ImplementationGuide",
+    "url": "https://www.ehealth.fgov.be/standards/fhir/medication/ImplementationGuide/hl7.fhir.be.medication",
+    "version": "1.0.1",
+    "name": "Medication"
+  },
+  {
+    "id": "be-ns-cnk-codes",
+    "type": "NamingSystem",
+    "url": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-cnk-codes",
+    "version": "1.0.1",
+    "name": "BeNSCNK"
+  },
+  {
+    "id": "be-ns-cti-extended-code",
+    "type": "NamingSystem",
+    "url": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-cti-extended-code",
+    "version": "1.0.1",
+    "name": "BeNSCTIExtended"
+  },
+  {
+    "id": "be-ns-prescription-ids",
+    "type": "NamingSystem",
+    "url": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-prescription-ids",
+    "version": "1.0.1",
+    "name": "BeNSPrescriptions"
+  },
+  {
+    "id": "be-ns-product-package-type",
+    "type": "NamingSystem",
+    "url": "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-product-package-type",
+    "version": "1.0.1",
+    "name": "BeNSProductPackage"
+  },
+  {
+    "id": "be-medicationdispense",
+    "type": "StructureDefinition",
+    "url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationdispense",
+    "version": "1.0.1",
+    "name": "BeMedicationDispense"
+  },
+  {
+    "id": "be-model-medication-dispense",
+    "type": "StructureDefinition",
+    "url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-model-medication-dispense",
+    "version": "1.0.1",
+    "name": "BeModelMedicationDispense"
+  },
+  {
+    "id": "be-vs-dispenser-types",
+    "type": "ValueSet",
+    "url": "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/be-vs-dispenser-types",
+    "version": "1.0.1",
+    "name": "DispenserTypes"
+  }
+]
