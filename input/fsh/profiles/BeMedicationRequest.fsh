@@ -34,6 +34,7 @@ Description: "Medication Request profile - The common structure for medication r
   http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationRequest.statusChanged named statusChanged 0..1 MS
 
 * obeys dosage-override-reason-required
+* dosageInstruction only BeDosage
 
 * extension[basedOnMedicationLine] ^short = "Medication Line where this prescription is based upon"
 //* extension[organization] ^short = "The organization where the requester is operating, e.g. an hospital"
