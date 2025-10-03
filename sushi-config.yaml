@@ -13,9 +13,9 @@ canonical: https://www.ehealth.fgov.be/standards/fhir/medication
 name: Medication 
 title: "Medication"
 description: FHIR Medication specifications
-status: draft
+status: active
 license: CC0-1.0
-date: 2020-02-26
+date: 2025-09-26
 version: 1.1.0
 
 # Although fhirVersions is 0..* in the ImplementationGuide resource
