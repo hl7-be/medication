@@ -280,6 +280,7 @@ parameters:
   apply-version: 'true'  
   pin-canonicals: pin-multiples
   special-url-base: https://www.ehealth.fgov.be/standards/fhir/terminology
+  path-history: https://www.ehealth.fgov.be/standards/fhir/patient-care/history.html
 
 
 #  path-expansion-params: ../../input/Parameters-terminology-expansion.json
