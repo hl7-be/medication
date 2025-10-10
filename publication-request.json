@@ -1,0 +1,12 @@
+{
+  "package-id": "hl7.fhir.be.medication",
+  "version": "1.1.0",
+  "status": "release",
+  "sequence": "Trial Use",
+  "fhirversion": "R4",
+  "desc": "eHealth FHIR Medication Profiles for Belgium",
+  "path": "https://www.ehealth.fgov.be/standards/fhir/medication/1.1.0",
+  "mode" : "milestone",
+  "milestone" : true,
+  "first": false
+}
