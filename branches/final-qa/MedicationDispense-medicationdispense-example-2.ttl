@@ -1,0 +1,138 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.ehealth.fgov.be/standards/fhir/medication/MedicationDispense/medicationdispense-example-2> a fhir:MedicationDispense ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "medicationdispense-example-2"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationDispense"^^xsd:anyURI ;
+       fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationDispense>
+     ] )
+  ] ; # 
+  fhir:language [ fhir:v "nl-BE"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"nl-BE\" lang=\"nl-BE\"><p class=\"res-header-id\"><b>Generated Narrative: MedicationDispense medicationdispense-example-2</b></p><a name=\"medicationdispense-example-2\"> </a><a name=\"hcmedicationdispense-example-2\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Language: nl-BE</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-BeMedicationDispense.html\">BeMedicationDispense</a></p></div><p><b>identifier</b>: dguid/a8ca980c-aa4f-44f3-8cf7-547e6ad3dba0</p><p><b>status</b>: Completed</p><p><b>medication</b>: <span title=\"Codes:{https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes 1439562}\">Topazolam tab 50x 1,0mg</span></p><p><b>subject</b>: Identifier: <code>https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin</code>/64110219106</p><p><b>context</b>: Identifier: sguid/b8ca980c-72aa-11e7-8cf7-a6006ad3dba0</p><h3>Performers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Actor</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"#hcmedicationdispense-example-2/apotheek-onder-de-toren\">Apotheek onder de toren</a></td></tr></table><p><b>authorizingPrescription</b>: Prescription</p><p><b>quantity</b>: 1(unit package from https://www.gfd-dpp.be/fhir/reference/packaging)<span style=\"background: LightGoldenRodYellow\"> (Details: packaging  codepackage = 'package')</span></p><p><b>whenHandedOver</b>: 2020-03-10</p><h3>DosageInstructions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td>3 x per dag</td></tr></table><hr/><blockquote><p class=\"res-header-id\"><b>Generated Narrative: Organization #apotheek-onder-de-toren</b></p><a name=\"medicationdispense-example-2/apotheek-onder-de-toren\"> </a><a name=\"hcmedicationdispense-example-2/apotheek-onder-de-toren\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://www.ehealth.fgov.be/standards/fhir/core/2.1.2/StructureDefinition-be-organization.html\">BeOrganization</a></p></div><p><b>identifier</b>: <code>https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi-organization</code>/27457532</p><p><b>type</b>: <span title=\"Codes:{https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty orgpharmacy}\">independent pharmacy</span></p></blockquote></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:contained ( [
+     a fhir:Organization ;
+     fhir:id [ fhir:v "apotheek-onder-de-toren" ] ;
+     fhir:meta [
+       fhir:profile ( [
+         fhir:v "https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-organization"^^xsd:anyURI ;
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-organization>
+       ] )
+     ] ;
+     fhir:identifier ( [
+       fhir:system [ fhir:v "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi-organization"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "27457532" ]
+     ] ) ;
+     fhir:type ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "orgpharmacy" ]
+       ] )
+     ] )
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:code [ fhir:v "dguid" ]
+       ] )
+     ] ;
+     fhir:system [ fhir:v "https://www.gfd-dpp.be/fhir/reference/dguid"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "a8ca980c-aa4f-44f3-8cf7-547e6ad3dba0" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:medication [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "1439562" ] ;
+       fhir:display [
+         fhir:v "Topazolam tab 50x 1,0mg" ;
+         fhir:extension ( [
+           fhir:extension ( [
+             fhir:url [ fhir:v "lang"^^xsd:anyURI ] ;
+             fhir:value [
+               a fhir:code ;
+               fhir:v "nl-BE"
+             ]
+           ] [
+             fhir:url [ fhir:v "content"^^xsd:anyURI ] ;
+             fhir:value [
+               a fhir:string ;
+               fhir:v "Topazolam tab 50x 1,0mg"
+             ]
+           ] ) ;
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ]
+         ] )
+       ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:identifier [
+       fhir:system [ fhir:v "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "64110219106" ]
+     ]
+  ] ; # 
+  fhir:context [
+     fhir:identifier [
+       fhir:type [
+         fhir:coding ( [
+           fhir:code [ fhir:v "sguid" ]
+         ] )
+       ] ;
+       fhir:system [ fhir:v "https://www.gfd-dpp.be/fhir/reference/sguid"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "b8ca980c-72aa-11e7-8cf7-a6006ad3dba0" ]
+     ]
+  ] ; # 
+  fhir:performer ( [
+     fhir:actor [
+       fhir:reference [ fhir:v "#apotheek-onder-de-toren" ] ;
+       fhir:identifier [
+         fhir:system [ fhir:v "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi-organization"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "27457532" ]
+       ] ;
+       fhir:display [ fhir:v "Apotheek onder de toren" ]
+     ]
+  ] ) ; # 
+  fhir:authorizingPrescription ( [
+     fhir:display [ fhir:v "Prescription" ]
+  ] ) ; # 
+  fhir:quantity [
+     fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+     fhir:system [ fhir:v "https://www.gfd-dpp.be/fhir/reference/packaging"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "package" ]
+  ] ; # 
+  fhir:whenHandedOver [ fhir:v "2020-03-10"^^xsd:date] ; # 
+  fhir:dosageInstruction ( [
+     fhir:text [
+       fhir:v "3 x per dag" ;
+       fhir:extension ( [
+         fhir:extension ( [
+           fhir:url [ fhir:v "lang"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:code ;
+             fhir:v "fr-BE"
+           ]
+         ] [
+           fhir:url [ fhir:v "content"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:string ;
+             fhir:v "3 x par jour"
+           ]
+         ] ) ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ]
+       ] )
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

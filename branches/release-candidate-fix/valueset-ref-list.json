@@ -1,0 +1,190 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medication-codes",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTMedicationCodes",
+      "title" : "SNOMED CT Medication Codes",
+      "description" : "This value set includes all drug or medicament substance codes and all pharmaceutical/biologic products from SNOMED CT - provided as an exemplar value set.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.375"],
+      "sources" : ["2.16.840.1.113883.4.642.3.375"],
+      "uses" : {
+      },
+      "StructureDefinition-BeMedicationDispense.html" : "BeMedicationDispense"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medicationdispense-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "MedicationDispense Status Codes",
+      "title" : "Medication dispense  status  codes",
+      "description" : "MedicationDispense Status Codes",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/medicationdispense-status"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.1312"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1312"],
+      "uses" : {
+      },
+      "StructureDefinition-BeModelMedicationDispense.html" : "Medication Dispense (model)"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medicationdispense-status-reason",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "MedicationDispense Status Reason Codes",
+      "title" : "Medication dispense  status  reason  codes",
+      "description" : "MedicationDispense Status Codes",
+      "systems" : [
+        "http://terminology.hl7.org/fhir/CodeSystem/medicationdispense-status-reason"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.1316"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1316"],
+      "uses" : {
+      },
+      "StructureDefinition-BeModelMedicationDispense.html" : "Medication Dispense (model)"
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/be-vs-dispenser-types",
+      "version" : "1.1.0",
+      "status" : "draft",
+      "name" : "DispenserTypes",
+      "title" : "Dispenser Types",
+      "description" : "Dispenser Types - from hcparty",
+      "systems" : [
+        "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty"
+      ]
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/BeMedicationExposureIntentVS",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "BeMedicationExposureIntentVS",
+      "title" : "Medication exposure intent",
+      "description" : "The exposure purpose of a medication - whether the medication is given for therapeutic or prophylactic purposes.",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-BeMedicationExposureCategory.html" : "BeMedicationExposureCategory",
+      "StructureDefinition-BeModelMedicationLine.html" : "Medication Line (model)"
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/BeMedicationLineAdherenceStatusReasonVS",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "BeMedicationLineAdherenceStatusReasonVS",
+      "title" : "Adherence Status Reason ValueSet",
+      "description" : "ValueSet containing reasons for non-adherence to a treatment or intervention.",
+      "systems" : [
+        "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatusReason"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-BeModelMedicationLine.html" : "Medication Line (model)",
+      "StructureDefinition-BeMedicationLine.html" : "BeMedicationLine"
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/BeMedicationLineAdherenceStatusVS",
+      "version" : "1.1.0",
+      "status" : "draft",
+      "name" : "BeMedicationLineAdherenceStatusVS",
+      "title" : "BeExtAdherenceStatus",
+      "description" : "The status of taking the medication.",
+      "systems" : [
+        "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatus"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-BeExtAdherenceStatus.html" : "BeExtAdherenceStatus",
+      "StructureDefinition-BeModelMedicationLine.html" : "Medication Line (model)",
+      "StructureDefinition-BeMedicationLine.html" : "BeMedicationLine"
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/BeMedicationLineOriginTypeVS",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "BeMedicationLineOriginTypeVS",
+      "title" : "Medication origin type value set",
+      "description" : "Medication origin type value set",
+      "systems" : [
+        "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineOriginType"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-BeModelMedicationLine.html" : "Medication Line (model)",
+      "StructureDefinition-BeMedicationLine.html" : "BeMedicationLine"
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/BeMedicationLineRegistrationStatusVS",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "BeMedicationLineRegistrationStatusVS",
+      "title" : "Medication Line Registration Status Value Set",
+      "description" : "This value set includes the registration statuses for medication lines.",
+      "systems" : [
+        "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineRegistrationStatus"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-BeExtMedicationLineRegistrationStatus.html" : "Medication Line Registration Status"
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/BeMedicationPrescriptionStatusVS",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "BeMedicationPrescriptionStatusVS",
+      "title" : "Medication Prescription Status",
+      "description" : "Medication prescription status codes.",
+      "systems" : ["http://hl7.org/fhir/CodeSystem/medicationrequest-status"],
+      "uses" : {
+      },
+      "StructureDefinition-BeMedicationPrescription.html" : "BeMedicationPrescription",
+      "StructureDefinition-BeModelMedicationPrescription.html" : "Medication prescription (model)"
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/BeMedicationRequestReimbursementTypeVS",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "BeMedicationRequestReimbursementTypeVS",
+      "title" : "Medication request reimbursement type ValueSet",
+      "description" : "Medication request reimbursement type - instructions for reimbursement of the medication request",
+      "systems" : [
+        "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationRequestReimbursementType"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-BeModelMedicationPrescription.html" : "Medication prescription (model)",
+      "StructureDefinition-BeExtInstructionsForReimbursement.html" : "BeExtInstructionsForReimbursement"
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/BeMedicationTypeVS",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "BeMedicationTypeVS",
+      "title" : "Medication preparation Type value set",
+      "description" : "Medication preparation type value set",
+      "systems" : [
+        "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationType"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-BeExtMedicationType.html" : "BeExtMedicationType",
+      "StructureDefinition-BeModelMedicationLine.html" : "Medication Line (model)"
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/BeRouteOfAdministrationVS",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "BeRouteOfAdministrationVS",
+      "title" : "Route of Administration ValueSet",
+      "description" : "This ValueSet contains codes for the route of administration of medications. It is used to specify how a medication is administered to a patient, such as orally, intravenously, or topically.",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-BeDosage.html" : "Medication Dosage",
+      "StructureDefinition-BeModelDosagingInformation.html" : "Dosaging (model)"
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.hl7belgium.be/fhir/MedicationDispense/medication-dispense-hospital> a fhir:MedicationDispense;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "medication-dispense-hospital"];
+  fhir:Resource.meta [
+     fhir:Meta.versionId [ fhir:value "1" ];
+     fhir:Meta.profile [
+       fhir:value "https://www.hl7belgium.be/fhir/StructureDefinition/be-medicationdispense";
+       fhir:index 0;
+       fhir:link <https://www.hl7belgium.be/fhir/StructureDefinition/be-medicationdispense>
+     ]
+  ];
+  fhir:Resource.language [ fhir:value "nl-BE"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"nl-BE\" lang=\"nl-BE\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: 1000321345: ?ngen-9?</p><p><b>status</b>: completed</p><p><b>medication</b>: <span title=\"Codes: {https://cnk.apb.be/codings/cnk_product_codes 2055218}\">2055218</span></p><p><b>subject</b>: <span></span></p><p><b>authorizingPrescription</b>: <span>Prescription</span></p><p><b>quantity</b>: 1 package</p><p><b>whenHandedOver</b>: Sep 21, 2020, 11:00:00 AM</p></div>"
+  ];
+  fhir:MedicationDispense.identifier [
+     fhir:index 0;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "https://www.nexuzhealth.be/fhir/prescription/ambulatory" ];
+         fhir:Coding.version [ fhir:value "1" ];
+         fhir:Coding.code [ fhir:value "1000321345" ]
+       ]
+     ];
+     fhir:Identifier.system [ fhir:value "https://www.gfd-dpp.be/fhir/reference/dguid" ]
+  ];
+  fhir:MedicationDispense.status [ fhir:value "completed"];
+  fhir:MedicationDispense.medicationCodeableConcept [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "https://cnk.apb.be/codings/cnk_product_codes" ];
+       fhir:Coding.code [ fhir:value "2055218" ];
+       fhir:Coding.display [
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Element.extension [
+             fhir:index 0;
+             fhir:Extension.url [ fhir:value "lang" ];
+             fhir:Extension.valueCode [ fhir:value "nl-BE" ]
+           ], [
+             fhir:index 1;
+             fhir:Extension.url [ fhir:value "content" ];
+             fhir:Extension.valueString [ fhir:value "Crestor filmomh. tabl. 100x 10mg" ]
+           ];
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/translation" ]
+         ]
+       ]
+     ]
+  ];
+  fhir:MedicationDispense.subject [
+     fhir:Reference.identifier [
+       fhir:Identifier.system [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin" ];
+       fhir:Identifier.value [ fhir:value "64110219106" ]
+     ]
+  ];
+  fhir:MedicationDispense.authorizingPrescription [
+     fhir:index 0;
+     fhir:Reference.identifier [
+       fhir:Identifier.system [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/prescription-id" ];
+       fhir:Identifier.value [ fhir:value "BEP1TSRY1XGE" ]
+     ];
+     fhir:Reference.display [ fhir:value "Prescription" ]
+  ];
+  fhir:MedicationDispense.quantity [
+     fhir:Quantity.value [ fhir:value "1"^^xsd:decimal ];
+     fhir:Quantity.unit [ fhir:value "package" ];
+     fhir:Quantity.system [ fhir:value "http://hl7.org/fhir/Valueset/ucum-units" ];
+     fhir:Quantity.code [ fhir:value "{package}" ]
+  ];
+  fhir:MedicationDispense.whenHandedOver [ fhir:value "2020-09-21T13:00:00+02:00"^^xsd:dateTime];
+  fhir:MedicationDispense.dosageInstruction [
+     fhir:index 0;
+     fhir:Dosage.text [
+       fhir:value "3 x a day";
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "lang" ];
+           fhir:Extension.valueCode [ fhir:value "nl-BE" ]
+         ], [
+           fhir:index 1;
+           fhir:Extension.url [ fhir:value "content" ];
+           fhir:Extension.valueString [ fhir:value "3 x per dag" ]
+         ];
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/translation" ]
+       ], [
+         fhir:index 1;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "lang" ];
+           fhir:Extension.valueCode [ fhir:value "fr-BE" ]
+         ], [
+           fhir:index 1;
+           fhir:Extension.url [ fhir:value "content" ];
+           fhir:Extension.valueString [ fhir:value "3 x par jour" ]
+         ];
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/translation" ]
+       ]
+     ];
+     fhir:Dosage.timing [
+       fhir:Timing.repeat [
+         fhir:Timing.repeat.frequency [ fhir:value "3"^^xsd:positiveInteger ];
+         fhir:Timing.repeat.period [ fhir:value "1"^^xsd:decimal ];
+         fhir:Timing.repeat.periodUnit [ fhir:value "d" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://www.hl7belgium.be/fhir/MedicationDispense/medication-dispense-hospital.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

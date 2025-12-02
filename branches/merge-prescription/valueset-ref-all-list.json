@@ -1,0 +1,600 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/additional-instruction-codes",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTAdditionalDosageInstructions",
+      "title" : "SNOMED CT Additional Dosage Instructions",
+      "description" : "This value set includes all SNOMED CT Additional Dosage Instructions.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.95"],
+      "sources" : ["2.16.840.1.113883.4.642.3.95"],
+      "uses" : {
+      },
+      "StructureDefinition-BeDosage.html" : "BeMedicationDosage",
+      "StructureDefinition-BeMedicationDispense.html" : "BeMedicationDispense"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/administration-method-codes",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTAdministrationMethodCodes",
+      "title" : "SNOMED CT Administration Method Codes",
+      "description" : "This value set includes some method codes from SNOMED CT - provided as an exemplar",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.97"],
+      "sources" : ["2.16.840.1.113883.4.642.3.97"],
+      "uses" : {
+      },
+      "StructureDefinition-BeDosage.html" : "BeMedicationDosage",
+      "StructureDefinition-BeMedicationDispense.html" : "BeMedicationDispense"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/approach-site-codes",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTAnatomicalStructureForAdministrationSiteCodes",
+      "title" : "SNOMED CT Anatomical Structure for Administration Site Codes",
+      "description" : "This value set includes Anatomical Structure codes from SNOMED CT - provided as an exemplar.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.346"],
+      "sources" : ["2.16.840.1.113883.4.642.3.346"],
+      "uses" : {
+      },
+      "StructureDefinition-BeDosage.html" : "BeMedicationDosage",
+      "StructureDefinition-BeMedicationDispense.html" : "BeMedicationDispense"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-code",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "Condition/Problem/DiagnosisCodes",
+      "title" : "Condition/Problem/Diagnosis Codes",
+      "description" : "Example value set for Condition/Problem/Diagnosis codes.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.161"],
+      "sources" : ["2.16.840.1.113883.4.642.3.161"],
+      "uses" : {
+      },
+      "StructureDefinition-BeMedicationLine.html" : "BeMedicationLine",
+      "StructureDefinition-BeMedicationPrescription.html" : "BeMedicationPrescription"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/days-of-week",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "DaysOfWeek",
+      "title" : "DaysOfWeek",
+      "description" : "The days of the week.",
+      "systems" : ["http://hl7.org/fhir/days-of-week"],
+      "oids" : ["2.16.840.1.113883.4.642.3.512"],
+      "sources" : ["2.16.840.1.113883.4.642.3.512"],
+      "uses" : {
+      },
+      "StructureDefinition-BeDosage.html" : "BeMedicationDosage"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/dose-rate-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "DoseAndRateType",
+      "title" : "DoseAndRateType",
+      "description" : "The kind of dose or rate specified.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/dose-rate-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.981"],
+      "sources" : ["2.16.840.1.113883.4.642.3.981"],
+      "uses" : {
+      },
+      "StructureDefinition-BeDosage.html" : "BeMedicationDosage",
+      "StructureDefinition-BeMedicationDispense.html" : "BeMedicationDispense"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/event-timing",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "EventTiming",
+      "title" : "EventTiming",
+      "description" : "Real world event relating to the schedule.",
+      "systems" : [
+        "http://hl7.org/fhir/event-timing",
+        "http://terminology.hl7.org/CodeSystem/v3-TimingEvent"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.75"],
+      "sources" : ["2.16.840.1.113883.4.642.3.75"],
+      "uses" : {
+      },
+      "StructureDefinition-BeDosage.html" : "BeMedicationDosage"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/identifier-type",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "Identifier Type Codes",
+      "title" : "IdentifierType",
+      "description" : "A coded type for an identifier that can be used to determine which identifier to use for a specific purpose.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0203"],
+      "oids" : ["2.16.840.1.113883.4.642.3.45"],
+      "sources" : ["2.16.840.1.113883.4.642.3.45"],
+      "uses" : {
+      },
+      "StructureDefinition-BeMedicationLine.html" : "BeMedicationLine",
+      "StructureDefinition-BeMedicationDispense.html" : "BeMedicationDispense",
+      "StructureDefinition-BeMedicationPrescription.html" : "BeMedicationPrescription"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "IdentifierUse",
+      "title" : "IdentifierUse",
+      "description" : "Identifies the purpose for this identifier, if known .",
+      "systems" : ["http://hl7.org/fhir/identifier-use"],
+      "oids" : ["2.16.840.1.113883.4.642.3.57"],
+      "sources" : ["2.16.840.1.113883.4.642.3.57"],
+      "uses" : {
+      },
+      "StructureDefinition-BeMedicationLine.html" : "BeMedicationLine",
+      "StructureDefinition-BeMedicationDispense.html" : "BeMedicationDispense",
+      "StructureDefinition-BeMedicationPrescription.html" : "BeMedicationPrescription"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/languages",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CommonLanguages",
+      "title" : "Common Languages",
+      "description" : "This value set includes common codes from BCP-47 (http://tools.ietf.org/html/bcp47)",
+      "systems" : ["urn:ietf:bcp:47"],
+      "oids" : ["2.16.840.1.113883.4.642.3.20"],
+      "sources" : ["2.16.840.1.113883.4.642.3.20"],
+      "uses" : {
+      },
+      "StructureDefinition-BeMedicationLine.html" : "BeMedicationLine",
+      "StructureDefinition-BeMedicationDispense.html" : "BeMedicationDispense",
+      "StructureDefinition-BeMedicationPrescription.html" : "BeMedicationPrescription"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medication-as-needed-reason",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTMedicationAsNeededReasonCodes",
+      "title" : "SNOMED CT Medication As Needed Reason Codes",
+      "description" : "This value set includes all clinical findings from SNOMED CT - provided as an exemplar value set.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.96"],
+      "sources" : ["2.16.840.1.113883.4.642.3.96"],
+      "uses" : {
+      },
+      "StructureDefinition-BeDosage.html" : "BeMedicationDosage",
+      "StructureDefinition-BeMedicationDispense.html" : "BeMedicationDispense"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medication-codes",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTMedicationCodes",
+      "title" : "SNOMED CT Medication Codes",
+      "description" : "This value set includes all drug or medicament substance codes and all pharmaceutical/biologic products from SNOMED CT - provided as an exemplar value set.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.375"],
+      "sources" : ["2.16.840.1.113883.4.642.3.375"],
+      "uses" : {
+      },
+      "StructureDefinition-BeMedicationLine.html" : "BeMedicationLine",
+      "StructureDefinition-BeMedicationDispense.html" : "BeMedicationDispense",
+      "StructureDefinition-BeMedicationPrescription.html" : "BeMedicationPrescription"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medication-statement-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "Medication Status Codes",
+      "title" : "Medication  status  codes",
+      "description" : "Medication Status Codes",
+      "systems" : ["http://hl7.org/fhir/CodeSystem/medication-statement-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.367"],
+      "sources" : ["2.16.840.1.113883.4.642.3.367"],
+      "uses" : {
+      },
+      "StructureDefinition-BeMedicationLine.html" : "BeMedicationLine"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medicationdispense-category",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "MedicationDispense Category Codes",
+      "title" : "Medication dispense  category  codes",
+      "description" : "MedicationDispense Category Codes",
+      "systems" : [
+        "http://terminology.hl7.org/fhir/CodeSystem/medicationdispense-category"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.1314"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1314"],
+      "uses" : {
+      },
+      "StructureDefinition-BeMedicationDispense.html" : "BeMedicationDispense"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medicationdispense-performer-function",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "MedicationDispense Performer Function Codes",
+      "title" : "Medication dispense  performer  function  codes",
+      "description" : "MedicationDispense Performer Function Codes",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/medicationdispense-performer-function"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.1318"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1318"],
+      "uses" : {
+      },
+      "StructureDefinition-BeMedicationDispense.html" : "BeMedicationDispense"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medicationdispense-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "MedicationDispense Status Codes",
+      "title" : "Medication dispense  status  codes",
+      "description" : "MedicationDispense Status Codes",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/medicationdispense-status"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.1312"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1312"],
+      "uses" : {
+      },
+      "StructureDefinition-BeModelMedicationDispense.html" : "Medication Dispense (model)",
+      "StructureDefinition-BeMedicationDispense.html" : "BeMedicationDispense"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medicationdispense-status-reason",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "MedicationDispense Status Reason Codes",
+      "title" : "Medication dispense  status  reason  codes",
+      "description" : "MedicationDispense Status Codes",
+      "systems" : [
+        "http://terminology.hl7.org/fhir/CodeSystem/medicationdispense-status-reason"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.1316"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1316"],
+      "uses" : {
+      },
+      "StructureDefinition-BeModelMedicationDispense.html" : "Medication Dispense (model)",
+      "StructureDefinition-BeMedicationDispense.html" : "BeMedicationDispense"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medicationrequest-category",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "medicationRequest Category Codes",
+      "title" : "Medication request  category  codes",
+      "description" : "MedicationRequest Category Codes",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/medicationrequest-category"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.1322"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1322"],
+      "uses" : {
+      },
+      "StructureDefinition-BeMedicationPrescription.html" : "BeMedicationPrescription"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medicationrequest-course-of-therapy",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "medicationRequest Course of Therapy Codes",
+      "title" : "Medication request  course of  therapy  codes",
+      "description" : "MedicationRequest Course of Therapy Codes",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.1326"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1326"],
+      "uses" : {
+      },
+      "StructureDefinition-BeMedicationPrescription.html" : "BeMedicationPrescription"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medicationrequest-intent",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "medicationRequest Intent",
+      "title" : "Medication request  intent",
+      "description" : "MedicationRequest Intent Codes",
+      "systems" : ["http://hl7.org/fhir/CodeSystem/medicationrequest-intent"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1321"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1321"],
+      "uses" : {
+      },
+      "StructureDefinition-BeMedicationPrescription.html" : "BeMedicationPrescription"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medicationrequest-status-reason",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "medicationRequest Status Reason Codes",
+      "title" : "Medication request  status  reason  codes",
+      "description" : "MedicationRequest Status Reason Codes",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/medicationrequest-status-reason"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.1324"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1324"],
+      "uses" : {
+      },
+      "StructureDefinition-BeMedicationPrescription.html" : "BeMedicationPrescription"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/performer-role",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ProcedurePerformerRoleCodes",
+      "title" : "Procedure Performer Role Codes",
+      "description" : "This example value set defines the set of codes that can be used to indicate a role of a procedure performer.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.433"],
+      "sources" : ["2.16.840.1.113883.4.642.3.433"],
+      "uses" : {
+      },
+      "StructureDefinition-BeMedicationPrescription.html" : "BeMedicationPrescription"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/request-priority",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "RequestPriority",
+      "title" : "Request priority",
+      "description" : "The clinical priority of a diagnostic order.",
+      "systems" : ["http://hl7.org/fhir/request-priority"],
+      "oids" : ["2.16.840.1.113883.4.642.3.115"],
+      "sources" : ["2.16.840.1.113883.4.642.3.115"],
+      "uses" : {
+      },
+      "StructureDefinition-BeMedicationPrescription.html" : "BeMedicationPrescription"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/resource-types",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ResourceType",
+      "title" : "ResourceType",
+      "description" : "One of the resource types defined as part of this version of FHIR.",
+      "systems" : ["http://hl7.org/fhir/resource-types"],
+      "oids" : ["2.16.840.1.113883.4.642.3.27"],
+      "sources" : ["2.16.840.1.113883.4.642.3.27"],
+      "uses" : {
+      },
+      "StructureDefinition-BeMedicationDispense.html" : "BeMedicationDispense"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/route-codes",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTRouteCodes",
+      "title" : "SNOMED CT Route Codes",
+      "description" : "This value set includes all Route codes from SNOMED CT - provided as an exemplar.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.98"],
+      "sources" : ["2.16.840.1.113883.4.642.3.98"],
+      "uses" : {
+      },
+      "StructureDefinition-BeMedicationDispense.html" : "BeMedicationDispense"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/timing-abbreviation",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "TimingAbbreviation",
+      "title" : "TimingAbbreviation",
+      "description" : "Code for a known / defined timing pattern.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-GTSAbbreviation"],
+      "oids" : ["2.16.840.1.113883.4.642.3.78"],
+      "sources" : ["2.16.840.1.113883.4.642.3.78"],
+      "uses" : {
+      },
+      "StructureDefinition-BeDosage.html" : "BeMedicationDosage"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/units-of-time",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "UnitsOfTime",
+      "title" : "UnitsOfTime",
+      "description" : "A unit of time (units from UCUM).",
+      "systems" : ["http://unitsofmeasure.org"],
+      "oids" : ["2.16.840.1.113883.4.642.3.77"],
+      "sources" : ["2.16.840.1.113883.4.642.3.77"],
+      "uses" : {
+      },
+      "StructureDefinition-BeDosage.html" : "BeMedicationDosage"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-ActPharmacySupplyType",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "ActPharmacySupplyType",
+      "title" : "ActPharmacySupplyType",
+      "description" : "Identifies types of dispensing events",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActCode"],
+      "oids" : ["2.16.840.1.113883.1.11.16208"],
+      "sources" : ["2.16.840.1.113883.1.11.16208"],
+      "uses" : {
+      },
+      "StructureDefinition-BeMedicationDispense.html" : "BeMedicationDispense"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-ActSubstanceAdminSubstitutionCode",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "ActSubstanceAdminSubstitutionCode",
+      "title" : "ActSubstanceAdminSubstitutionCode",
+      "description" : "***No description***",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-substanceAdminSubstitution"
+      ],
+      "oids" : ["2.16.840.1.113883.1.11.16621"],
+      "sources" : ["2.16.840.1.113883.1.11.16621"],
+      "uses" : {
+      },
+      "StructureDefinition-BeMedicationDispense.html" : "BeMedicationDispense"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-SubstanceAdminSubstitutionReason",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "SubstanceAdminSubstitutionReason",
+      "title" : "SubstanceAdminSubstitutionReason",
+      "description" : "***No description***",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActReason"],
+      "oids" : ["2.16.840.1.113883.1.11.19377"],
+      "sources" : ["2.16.840.1.113883.1.11.19377"],
+      "uses" : {
+      },
+      "StructureDefinition-BeMedicationDispense.html" : "BeMedicationDispense",
+      "StructureDefinition-BeMedicationPrescription.html" : "BeMedicationPrescription"
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/be-vs-dispenser-types",
+      "version" : "1.1.0",
+      "status" : "draft",
+      "name" : "DispenserTypes",
+      "title" : "Dispenser Types",
+      "description" : "Dispenser Types - from hcparty",
+      "systems" : [
+        "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty"
+      ]
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/BeMedicationExposureIntentVS",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "BeMedicationExposureIntentVS",
+      "title" : "Medication exposure intent",
+      "description" : "The exposure purpose of a medication - whether the medication is given for therapeutic or prophylactic purposes.",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-BeMedicationExposureCategory.html" : "BeMedicationExposureCategory",
+      "StructureDefinition-BeModelMedicationLine.html" : "Medication Line (model)"
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/BeMedicationLineAdherenceStatusReasonVS",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "BeMedicationLineAdherenceStatusReasonVS",
+      "title" : "Adherence Status Reason ValueSet",
+      "description" : "ValueSet containing reasons for non-adherence to a treatment or intervention.",
+      "systems" : [
+        "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatusReason"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-BeMedicationLine.html" : "BeMedicationLine",
+      "StructureDefinition-BeModelMedicationLine.html" : "Medication Line (model)"
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/BeMedicationLineAdherenceStatusVS",
+      "version" : "1.1.0",
+      "status" : "draft",
+      "name" : "BeMedicationLineAdherenceStatusVS",
+      "title" : "BeExtAdherenceStatus",
+      "description" : "The status of taking the medication.",
+      "systems" : [
+        "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatus"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-BeMedicationLine.html" : "BeMedicationLine",
+      "StructureDefinition-BeExtAdherenceStatus.html" : "BeExtAdherenceStatus",
+      "StructureDefinition-BeModelMedicationLine.html" : "Medication Line (model)"
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/BeMedicationLineOriginTypeVS",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "BeMedicationLineOriginTypeVS",
+      "title" : "Medication origin type value set",
+      "description" : "Medication origin type value set",
+      "systems" : [
+        "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineOriginType"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-BeMedicationLine.html" : "BeMedicationLine",
+      "StructureDefinition-BeModelMedicationLine.html" : "Medication Line (model)"
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/BeMedicationLineRegistrationStatusVS",
+      "version" : "1.1.0",
+      "status" : "draft",
+      "name" : "BeMedicationLineRegistrationStatusVS",
+      "title" : "Medication Line Registration Status Value Set",
+      "description" : "This value set includes the registration statuses for medication lines.",
+      "systems" : [
+        "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineRegistrationStatus"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-BeExtMedicationLineRegistrationStatus.html" : "Medication Line Registration Status"
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/BeMedicationPrescriptionStatusVS",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "BeMedicationPrescriptionStatusVS",
+      "title" : "Medication Prescription Status",
+      "description" : "Medication prescription status codes.",
+      "systems" : ["http://hl7.org/fhir/CodeSystem/medicationrequest-status"],
+      "uses" : {
+      },
+      "StructureDefinition-BeModelMedicationPrescription.html" : "Medication prescription (model)",
+      "StructureDefinition-BeMedicationPrescription.html" : "BeMedicationPrescription"
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/BeMedicationRequestReimbursementTypeVS",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "BeMedicationRequestReimbursementTypeVS",
+      "title" : "Medication request reimbursement type ValueSet",
+      "description" : "Medication request reimbursement type - instructions for reimbursement of the medication request",
+      "systems" : [
+        "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationRequestReimbursementType"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-BeExtInstructionsForReimbursement.html" : "BeExtInstructionsForReimbursement",
+      "StructureDefinition-BeModelMedicationPrescription.html" : "Medication prescription (model)"
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/BeMedicationTypeVS",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "BeMedicationTypeVS",
+      "title" : "Medication preparation Type value set",
+      "description" : "Medication preparation type value set",
+      "systems" : [
+        "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationType"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-BeExtMedicationType.html" : "BeMedicationType",
+      "StructureDefinition-BeModelMedicationLine.html" : "Medication Line (model)"
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/BeRouteOfAdministrationVS",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "BeRouteOfAdministrationVS",
+      "title" : "Route of Administration ValueSet",
+      "description" : "This ValueSet contains codes for the route of administration of medications. It is used to specify how a medication is administered to a patient, such as orally, intravenously, or topically.",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-BeDosage.html" : "BeMedicationDosage",
+      "StructureDefinition-BeModelDosagingInformation.html" : "Dosaging (model)"
+    }
+  ]
+}

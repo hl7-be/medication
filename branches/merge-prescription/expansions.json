@@ -1,0 +1,1208 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "fc462783-45fd-4b2a-8131-e6adb70ea650",
+  "meta" : {
+    "lastUpdated" : "2025-07-20T21:37:41.256+00:00"
+  },
+  "type" : "collection",
+  "entry" : [{
+    "fullUrl" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/BeMedicationExposureIntentVS",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025</p><p>This value set contains 2 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-360271000\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/360271000\">360271000</a></td><td>http://snomed.info/sct</td><td>Prophylaxis - intent</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-360270004\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/360270004\">360270004</a></td><td>http://snomed.info/sct</td><td>Therapy - action</td></tr></table></div>"
+      },
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/BeMedicationExposureIntentVS",
+      "version" : "1.1.0",
+      "name" : "BeMedicationExposureIntentVS",
+      "title" : "Medication exposure intent",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2025-07-20T21:36:53+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "BE",
+          "display" : "Belgium"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:15b372f8-6ca1-4cb8-817e-b0ae755df3ed",
+        "timestamp" : "2025-07-20T21:38:34+00:00",
+        "total" : 2,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en-US"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-valueset",
+          "valueUri" : "null"
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
+        }],
+        "contains" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "360271000",
+          "display" : "Prophylaxis - intent"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "360270004",
+          "display" : "Therapy - action"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/BeMedicationLineAdherenceStatusReasonVS",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-BeMedicationLineAdherenceStatusReason.html\">codesystem Adherence Status Reason v1.1.0 (CodeSystem)</a></p><p>This value set contains 7 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatusReason-medprec\"> </a>\u00a0\u00a0<a href=\"CodeSystem-BeMedicationLineAdherenceStatusReason.html#BeMedicationLineAdherenceStatusReason-medprec\">medprec</a></td><td>https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatusReason</td><td>Medical precaution</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatusReason-immune\"> </a>\u00a0\u00a0<a href=\"CodeSystem-BeMedicationLineAdherenceStatusReason.html#BeMedicationLineAdherenceStatusReason-immune\">immune</a></td><td>https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatusReason</td><td>Already immune</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatusReason-patobj\"> </a>\u00a0\u00a0<a href=\"CodeSystem-BeMedicationLineAdherenceStatusReason.html#BeMedicationLineAdherenceStatusReason-patobj\">patobj</a></td><td>https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatusReason</td><td>Patient objection</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatusReason-ostock\"> </a>\u00a0\u00a0<a href=\"CodeSystem-BeMedicationLineAdherenceStatusReason.html#BeMedicationLineAdherenceStatusReason-ostock\">ostock</a></td><td>https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatusReason</td><td>Out of stock</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatusReason-allergy\"> </a>\u00a0\u00a0<a href=\"CodeSystem-BeMedicationLineAdherenceStatusReason.html#BeMedicationLineAdherenceStatusReason-allergy\">allergy</a></td><td>https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatusReason</td><td>Allergy</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatusReason-modified\"> </a>\u00a0\u00a0<a href=\"CodeSystem-BeMedicationLineAdherenceStatusReason.html#BeMedicationLineAdherenceStatusReason-modified\">modified</a></td><td>https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatusReason</td><td>Treatment modified</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatusReason-other\"> </a>\u00a0\u00a0<a href=\"CodeSystem-BeMedicationLineAdherenceStatusReason.html#BeMedicationLineAdherenceStatusReason-other\">other</a></td><td>https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatusReason</td><td>Other</td></tr></table></div>"
+      },
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/BeMedicationLineAdherenceStatusReasonVS",
+      "version" : "1.1.0",
+      "name" : "BeMedicationLineAdherenceStatusReasonVS",
+      "title" : "Adherence Status Reason ValueSet",
+      "status" : "active",
+      "experimental" : true,
+      "date" : "2025-07-20T21:36:53+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "BE",
+          "display" : "Belgium"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:13c3d695-4f77-4651-ad2c-cb14a5399510",
+        "timestamp" : "2025-07-20T21:38:34+00:00",
+        "total" : 7,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en-US"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatusReason|1.1.0"
+        }],
+        "contains" : [{
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatusReason",
+          "code" : "medprec",
+          "display" : "Medical precaution"
+        },
+        {
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatusReason",
+          "code" : "immune",
+          "display" : "Already immune"
+        },
+        {
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatusReason",
+          "code" : "patobj",
+          "display" : "Patient objection"
+        },
+        {
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatusReason",
+          "code" : "ostock",
+          "display" : "Out of stock"
+        },
+        {
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatusReason",
+          "code" : "allergy",
+          "display" : "Allergy"
+        },
+        {
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatusReason",
+          "code" : "modified",
+          "display" : "Treatment modified"
+        },
+        {
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatusReason",
+          "code" : "other",
+          "display" : "Other"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/BeMedicationLineAdherenceStatusVS",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-BeMedicationLineAdherenceStatus.html\">codesystem Medication Line Adherence Status v1.1.0 (CodeSystem)</a></p><p>This value set contains 11 concepts</p><table class=\"codes\"><tr><td><b>Level</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td><td><b>Definition</b></td></tr><tr><td><a name=\"x-https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatus-taking\"> </a>1</td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-BeMedicationLineAdherenceStatus.html#BeMedicationLineAdherenceStatus-taking\">taking</a></td><td>https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatus</td><td>Taking</td><td>The medication is being taken.</td></tr><tr><td><a name=\"x-https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatus-taking-as-directed\"> </a>2</td><td style=\"white-space:nowrap\">\u00a0\u00a0\u00a0\u00a0<a href=\"CodeSystem-BeMedicationLineAdherenceStatus.html#BeMedicationLineAdherenceStatus-taking-as-directed\">taking-as-directed</a></td><td>https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatus</td><td>Taking As Directed</td><td>The medication is being taken as directed.</td></tr><tr><td><a name=\"x-https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatus-taking-not-as-directed\"> </a>2</td><td style=\"white-space:nowrap\">\u00a0\u00a0\u00a0\u00a0<a href=\"CodeSystem-BeMedicationLineAdherenceStatus.html#BeMedicationLineAdherenceStatus-taking-not-as-directed\">taking-not-as-directed</a></td><td>https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatus</td><td>Taking Not As Directed</td><td>The medication is not being taken as directed.</td></tr><tr><td><a name=\"x-https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatus-not-taking\"> </a>1</td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-BeMedicationLineAdherenceStatus.html#BeMedicationLineAdherenceStatus-not-taking\">not-taking</a></td><td>https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatus</td><td>Not Taking</td><td>The medication is not being taken.</td></tr><tr><td><a name=\"x-https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatus-on-hold\"> </a>2</td><td style=\"white-space:nowrap\">\u00a0\u00a0\u00a0\u00a0<a href=\"CodeSystem-BeMedicationLineAdherenceStatus.html#BeMedicationLineAdherenceStatus-on-hold\">on-hold</a></td><td>https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatus</td><td>On Hold</td><td>The medication is on hold.</td></tr><tr><td><a name=\"x-https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatus-on-hold-as-directed\"> </a>3</td><td style=\"white-space:nowrap\">\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0<a href=\"CodeSystem-BeMedicationLineAdherenceStatus.html#BeMedicationLineAdherenceStatus-on-hold-as-directed\">on-hold-as-directed</a></td><td>https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatus</td><td>On Hold As Directed</td><td>The medication is on hold as directed.</td></tr><tr><td><a name=\"x-https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatus-on-hold-not-as-directed\"> </a>3</td><td style=\"white-space:nowrap\">\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0<a href=\"CodeSystem-BeMedicationLineAdherenceStatus.html#BeMedicationLineAdherenceStatus-on-hold-not-as-directed\">on-hold-not-as-directed</a></td><td>https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatus</td><td>On Hold Not As Directed</td><td>The medication is on hold not as directed.</td></tr><tr><td><a name=\"x-https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatus-stopped\"> </a>2</td><td style=\"white-space:nowrap\">\u00a0\u00a0\u00a0\u00a0<a href=\"CodeSystem-BeMedicationLineAdherenceStatus.html#BeMedicationLineAdherenceStatus-stopped\">stopped</a></td><td>https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatus</td><td>Stopped</td><td>The medication is stopped.</td></tr><tr><td><a name=\"x-https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatus-stopped-as-directed\"> </a>3</td><td style=\"white-space:nowrap\">\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0<a href=\"CodeSystem-BeMedicationLineAdherenceStatus.html#BeMedicationLineAdherenceStatus-stopped-as-directed\">stopped-as-directed</a></td><td>https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatus</td><td>Stopped As Directed</td><td>The medication is stopped as directed.</td></tr><tr><td><a name=\"x-https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatus-stopped-not-as-directed\"> </a>3</td><td style=\"white-space:nowrap\">\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0<a href=\"CodeSystem-BeMedicationLineAdherenceStatus.html#BeMedicationLineAdherenceStatus-stopped-not-as-directed\">stopped-not-as-directed</a></td><td>https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatus</td><td>Stopped Not As Directed</td><td>The medication is stopped not as directed.</td></tr><tr><td><a name=\"x-https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatus-unknown\"> </a>1</td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-BeMedicationLineAdherenceStatus.html#BeMedicationLineAdherenceStatus-unknown\">unknown</a></td><td>https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatus</td><td>Unknown</td><td>Whether the medication is being taken or not is not currently known.</td></tr></table></div>"
+      },
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/BeMedicationLineAdherenceStatusVS",
+      "version" : "1.1.0",
+      "name" : "BeMedicationLineAdherenceStatusVS",
+      "title" : "BeExtAdherenceStatus",
+      "status" : "draft",
+      "experimental" : false,
+      "date" : "2025-07-20T21:36:53+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "BE",
+          "display" : "Belgium"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:3a623fc4-7de9-4902-a25c-617119e5fcdb",
+        "timestamp" : "2025-07-20T21:38:34+00:00",
+        "total" : 11,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en-US"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatus|1.1.0"
+        }],
+        "contains" : [{
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatus",
+          "code" : "taking",
+          "display" : "Taking",
+          "contains" : [{
+            "system" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatus",
+            "code" : "taking-as-directed",
+            "display" : "Taking As Directed"
+          },
+          {
+            "system" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatus",
+            "code" : "taking-not-as-directed",
+            "display" : "Taking Not As Directed"
+          }]
+        },
+        {
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatus",
+          "code" : "not-taking",
+          "display" : "Not Taking",
+          "contains" : [{
+            "system" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatus",
+            "code" : "on-hold",
+            "display" : "On Hold",
+            "contains" : [{
+              "system" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatus",
+              "code" : "on-hold-as-directed",
+              "display" : "On Hold As Directed"
+            },
+            {
+              "system" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatus",
+              "code" : "on-hold-not-as-directed",
+              "display" : "On Hold Not As Directed"
+            }]
+          },
+          {
+            "system" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatus",
+            "code" : "stopped",
+            "display" : "Stopped",
+            "contains" : [{
+              "system" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatus",
+              "code" : "stopped-as-directed",
+              "display" : "Stopped As Directed"
+            },
+            {
+              "system" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatus",
+              "code" : "stopped-not-as-directed",
+              "display" : "Stopped Not As Directed"
+            }]
+          }]
+        },
+        {
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatus",
+          "code" : "unknown",
+          "display" : "Unknown"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/BeMedicationLineOriginTypeVS",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-BeMedicationLineOriginType.html\">codesystem Medication origin Type v1.1.0 (CodeSystem)</a></p><p>This value set contains 6 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineOriginType-ambulatory-request\"> </a>\u00a0\u00a0<a href=\"CodeSystem-BeMedicationLineOriginType.html#BeMedicationLineOriginType-ambulatory-request\">ambulatory-request</a></td><td>https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineOriginType</td><td>Ambulatory prescription</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineOriginType-hospital-request\"> </a>\u00a0\u00a0<a href=\"CodeSystem-BeMedicationLineOriginType.html#BeMedicationLineOriginType-hospital-request\">hospital-request</a></td><td>https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineOriginType</td><td>Hospital prescription</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineOriginType-self-medication\"> </a>\u00a0\u00a0<a href=\"CodeSystem-BeMedicationLineOriginType.html#BeMedicationLineOriginType-self-medication\">self-medication</a></td><td>https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineOriginType</td><td>Upon patient demand - Self-medication</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineOriginType-with-request\"> </a>\u00a0\u00a0<a href=\"CodeSystem-BeMedicationLineOriginType.html#BeMedicationLineOriginType-with-request\">with-request</a></td><td>https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineOriginType</td><td>Medication not sold in Belgium, with prescription</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineOriginType-without-request\"> </a>\u00a0\u00a0<a href=\"CodeSystem-BeMedicationLineOriginType.html#BeMedicationLineOriginType-without-request\">without-request</a></td><td>https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineOriginType</td><td>Medication not sold in Belgium, without prescription</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineOriginType-pharmacist-advice\"> </a>\u00a0\u00a0<a href=\"CodeSystem-BeMedicationLineOriginType.html#BeMedicationLineOriginType-pharmacist-advice\">pharmacist-advice</a></td><td>https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineOriginType</td><td>Upon pharmacist advice</td></tr></table></div>"
+      },
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/BeMedicationLineOriginTypeVS",
+      "version" : "1.1.0",
+      "name" : "BeMedicationLineOriginTypeVS",
+      "title" : "Medication origin type value set",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2025-07-20T21:36:53+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "BE",
+          "display" : "Belgium"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:09629088-eb1f-42ad-858a-e8d7d3a7f682",
+        "timestamp" : "2025-07-20T21:38:34+00:00",
+        "total" : 6,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en-US"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineOriginType|1.1.0"
+        }],
+        "contains" : [{
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineOriginType",
+          "code" : "ambulatory-request",
+          "display" : "Ambulatory prescription"
+        },
+        {
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineOriginType",
+          "code" : "hospital-request",
+          "display" : "Hospital prescription"
+        },
+        {
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineOriginType",
+          "code" : "self-medication",
+          "display" : "Upon patient demand - Self-medication"
+        },
+        {
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineOriginType",
+          "code" : "with-request",
+          "display" : "Medication not sold in Belgium, with prescription"
+        },
+        {
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineOriginType",
+          "code" : "without-request",
+          "display" : "Medication not sold in Belgium, without prescription"
+        },
+        {
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineOriginType",
+          "code" : "pharmacist-advice",
+          "display" : "Upon pharmacist advice"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/BeMedicationLineRegistrationStatusVS",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-BeMedicationLineRegistrationStatus.html\">codesystem Medication Line Registration Status v1.1.0 (CodeSystem)</a></p><p>This value set contains 3 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineRegistrationStatus-draft\"> </a>\u00a0\u00a0<a href=\"CodeSystem-BeMedicationLineRegistrationStatus.html#BeMedicationLineRegistrationStatus-draft\">draft</a></td><td>https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineRegistrationStatus</td><td>Draft</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineRegistrationStatus-recorded\"> </a>\u00a0\u00a0<a href=\"CodeSystem-BeMedicationLineRegistrationStatus.html#BeMedicationLineRegistrationStatus-recorded\">recorded</a></td><td>https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineRegistrationStatus</td><td>Recorded</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineRegistrationStatus-entered-in-error\"> </a>\u00a0\u00a0<a href=\"CodeSystem-BeMedicationLineRegistrationStatus.html#BeMedicationLineRegistrationStatus-entered-in-error\">entered-in-error</a></td><td>https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineRegistrationStatus</td><td>Entered in Error</td></tr></table></div>"
+      },
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/BeMedicationLineRegistrationStatusVS",
+      "version" : "1.1.0",
+      "name" : "BeMedicationLineRegistrationStatusVS",
+      "title" : "Medication Line Registration Status Value Set",
+      "status" : "draft",
+      "experimental" : false,
+      "date" : "2025-07-20T21:36:53+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "BE",
+          "display" : "Belgium"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:be21d537-cd16-4f8f-9ada-9f4ca30728cf",
+        "timestamp" : "2025-07-20T21:38:34+00:00",
+        "total" : 3,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en-US"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineRegistrationStatus|1.1.0"
+        }],
+        "contains" : [{
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineRegistrationStatus",
+          "code" : "draft",
+          "display" : "Draft"
+        },
+        {
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineRegistrationStatus",
+          "code" : "recorded",
+          "display" : "Recorded"
+        },
+        {
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineRegistrationStatus",
+          "code" : "entered-in-error",
+          "display" : "Entered in Error"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/BeMedicationPrescriptionStatusVS",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"http://hl7.org/fhir/R4/codesystem-medicationrequest-status.html\">codesystem Medicationrequest  status v4.0.1 (CodeSystem)</a></p><p>This value set contains 5 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/CodeSystem/medicationrequest-status-active\"> </a>\u00a0\u00a0<a href=\"http://hl7.org/fhir/R4/codesystem-medicationrequest-status.html#medicationrequest-status-active\">active</a></td><td>http://hl7.org/fhir/CodeSystem/medicationrequest-status</td><td>Active</td><td>The prescription is 'actionable', but not all actions that are implied by it have occurred yet.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/CodeSystem/medicationrequest-status-completed\"> </a>\u00a0\u00a0<a href=\"http://hl7.org/fhir/R4/codesystem-medicationrequest-status.html#medicationrequest-status-completed\">completed</a></td><td>http://hl7.org/fhir/CodeSystem/medicationrequest-status</td><td>Completed</td><td>All actions that are implied by the prescription have occurred.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/CodeSystem/medicationrequest-status-cancelled\"> </a>\u00a0\u00a0<a href=\"http://hl7.org/fhir/R4/codesystem-medicationrequest-status.html#medicationrequest-status-cancelled\">cancelled</a></td><td>http://hl7.org/fhir/CodeSystem/medicationrequest-status</td><td>Cancelled</td><td>The prescription has been withdrawn before any administrations have occurred</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/CodeSystem/medicationrequest-status-stopped\"> </a>\u00a0\u00a0<a href=\"http://hl7.org/fhir/R4/codesystem-medicationrequest-status.html#medicationrequest-status-stopped\">stopped</a></td><td>http://hl7.org/fhir/CodeSystem/medicationrequest-status</td><td>Stopped</td><td>Actions implied by the prescription are to be permanently halted, before all of the administrations occurred. This should not be used if the original order was entered in error</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://hl7.org/fhir/CodeSystem/medicationrequest-status-entered-in-error\"> </a>\u00a0\u00a0<a href=\"http://hl7.org/fhir/R4/codesystem-medicationrequest-status.html#medicationrequest-status-entered-in-error\">entered-in-error</a></td><td>http://hl7.org/fhir/CodeSystem/medicationrequest-status</td><td>Entered in Error</td><td>Some of the actions that are implied by the medication request may have occurred.  For example, the medication may have been dispensed and the patient may have taken some of the medication.  Clinical decision support systems should take this status into account</td></tr></table></div>"
+      },
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/BeMedicationPrescriptionStatusVS",
+      "version" : "1.1.0",
+      "name" : "BeMedicationPrescriptionStatusVS",
+      "title" : "Medication Prescription Status",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2025-07-20T21:36:53+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "BE",
+          "display" : "Belgium"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:dbc0980b-57b3-4a3f-bb5b-b83270f27f89",
+        "timestamp" : "2025-07-20T21:38:34+00:00",
+        "total" : 5,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en-US"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "warning-draft",
+          "valueUri" : "http://hl7.org/fhir/CodeSystem/medicationrequest-status|4.0.1"
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://hl7.org/fhir/CodeSystem/medicationrequest-status|4.0.1"
+        }],
+        "contains" : [{
+          "system" : "http://hl7.org/fhir/CodeSystem/medicationrequest-status",
+          "code" : "active",
+          "display" : "Active"
+        },
+        {
+          "system" : "http://hl7.org/fhir/CodeSystem/medicationrequest-status",
+          "code" : "completed",
+          "display" : "Completed"
+        },
+        {
+          "system" : "http://hl7.org/fhir/CodeSystem/medicationrequest-status",
+          "code" : "cancelled",
+          "display" : "Cancelled"
+        },
+        {
+          "system" : "http://hl7.org/fhir/CodeSystem/medicationrequest-status",
+          "code" : "stopped",
+          "display" : "Stopped"
+        },
+        {
+          "system" : "http://hl7.org/fhir/CodeSystem/medicationrequest-status",
+          "code" : "entered-in-error",
+          "display" : "Entered in Error"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/BeMedicationRequestReimbursementTypeVS",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-BeMedicationRequestReimbursementType.html\">codesystem Medication request reimbursement type v1.1.0 (CodeSystem)</a></p><p>This value set contains 9 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationRequestReimbursementType-third-party-payer-applicable\"> </a>\u00a0\u00a0<a href=\"CodeSystem-BeMedicationRequestReimbursementType.html#BeMedicationRequestReimbursementType-third-party-payer-applicable\">third-party-payer-applicable</a></td><td>https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationRequestReimbursementType</td><td>Third-party payer applicable</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationRequestReimbursementType-first-dose\"> </a>\u00a0\u00a0<a href=\"CodeSystem-BeMedicationRequestReimbursementType.html#BeMedicationRequestReimbursementType-first-dose\">first-dose</a></td><td>https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationRequestReimbursementType</td><td>First dose</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationRequestReimbursementType-second-dose\"> </a>\u00a0\u00a0<a href=\"CodeSystem-BeMedicationRequestReimbursementType.html#BeMedicationRequestReimbursementType-second-dose\">second-dose</a></td><td>https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationRequestReimbursementType</td><td>Second dose + [date of the first dose]</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationRequestReimbursementType-third-dose\"> </a>\u00a0\u00a0<a href=\"CodeSystem-BeMedicationRequestReimbursementType.html#BeMedicationRequestReimbursementType-third-dose\">third-dose</a></td><td>https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationRequestReimbursementType</td><td>Third dose + [date of the first and second dose]</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationRequestReimbursementType-chronic-renal-failure-pathway\"> </a>\u00a0\u00a0<a href=\"CodeSystem-BeMedicationRequestReimbursementType.html#BeMedicationRequestReimbursementType-chronic-renal-failure-pathway\">chronic-renal-failure-pathway</a></td><td>https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationRequestReimbursementType</td><td>Care pathway chronic renal failure</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationRequestReimbursementType-diabetes-care-pathway\"> </a>\u00a0\u00a0<a href=\"CodeSystem-BeMedicationRequestReimbursementType.html#BeMedicationRequestReimbursementType-diabetes-care-pathway\">diabetes-care-pathway</a></td><td>https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationRequestReimbursementType</td><td>Care pathway diabetes</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationRequestReimbursementType-diabetes-convention\"> </a>\u00a0\u00a0<a href=\"CodeSystem-BeMedicationRequestReimbursementType.html#BeMedicationRequestReimbursementType-diabetes-convention\">diabetes-convention</a></td><td>https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationRequestReimbursementType</td><td>Diabetes convention</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationRequestReimbursementType-non-reimbursable\"> </a>\u00a0\u00a0<a href=\"CodeSystem-BeMedicationRequestReimbursementType.html#BeMedicationRequestReimbursementType-non-reimbursable\">non-reimbursable</a></td><td>https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationRequestReimbursementType</td><td>Non-reimbursable</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationRequestReimbursementType-startup-pathway-type-2-diabetes\"> </a>\u00a0\u00a0<a href=\"CodeSystem-BeMedicationRequestReimbursementType.html#BeMedicationRequestReimbursementType-startup-pathway-type-2-diabetes\">startup-pathway-type-2-diabetes</a></td><td>https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationRequestReimbursementType</td><td>Start-up pathway type 2 diabetes</td></tr></table></div>"
+      },
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/BeMedicationRequestReimbursementTypeVS",
+      "version" : "1.1.0",
+      "name" : "BeMedicationRequestReimbursementTypeVS",
+      "title" : "Medication request reimbursement type ValueSet",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2025-07-20T21:36:53+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "BE",
+          "display" : "Belgium"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:cdfc4871-663c-4e56-9cab-3669068a8d5f",
+        "timestamp" : "2025-07-20T21:38:34+00:00",
+        "total" : 9,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en-US"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationRequestReimbursementType|1.1.0"
+        }],
+        "contains" : [{
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationRequestReimbursementType",
+          "code" : "third-party-payer-applicable",
+          "display" : "Third-party payer applicable"
+        },
+        {
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationRequestReimbursementType",
+          "code" : "first-dose",
+          "display" : "First dose"
+        },
+        {
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationRequestReimbursementType",
+          "code" : "second-dose",
+          "display" : "Second dose + [date of the first dose]"
+        },
+        {
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationRequestReimbursementType",
+          "code" : "third-dose",
+          "display" : "Third dose + [date of the first and second dose]"
+        },
+        {
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationRequestReimbursementType",
+          "code" : "chronic-renal-failure-pathway",
+          "display" : "Care pathway chronic renal failure"
+        },
+        {
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationRequestReimbursementType",
+          "code" : "diabetes-care-pathway",
+          "display" : "Care pathway diabetes"
+        },
+        {
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationRequestReimbursementType",
+          "code" : "diabetes-convention",
+          "display" : "Diabetes convention"
+        },
+        {
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationRequestReimbursementType",
+          "code" : "non-reimbursable",
+          "display" : "Non-reimbursable"
+        },
+        {
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationRequestReimbursementType",
+          "code" : "startup-pathway-type-2-diabetes",
+          "display" : "Start-up pathway type 2 diabetes"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/BeMedicationTypeVS",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-BeMedicationType.html\">codesystem Medication preparation Type v1.1.0 (CodeSystem)</a></p><p>This value set contains 3 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationType-magistral\"> </a>\u00a0\u00a0<a href=\"CodeSystem-BeMedicationType.html#BeMedicationType-magistral\">magistral</a></td><td>https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationType</td><td>Magistral preparation</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationType-registered-medicinal-product\"> </a>\u00a0\u00a0<a href=\"CodeSystem-BeMedicationType.html#BeMedicationType-registered-medicinal-product\">registered-medicinal-product</a></td><td>https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationType</td><td>Medicinal Product</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationType-non-medicinal-product\"> </a>\u00a0\u00a0<a href=\"CodeSystem-BeMedicationType.html#BeMedicationType-non-medicinal-product\">non-medicinal-product</a></td><td>https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationType</td><td>Non-medicinal product</td></tr></table></div>"
+      },
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/BeMedicationTypeVS",
+      "version" : "1.1.0",
+      "name" : "BeMedicationTypeVS",
+      "title" : "Medication preparation Type value set",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2025-07-20T21:36:53+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "BE",
+          "display" : "Belgium"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:6b36e8c8-0f87-4daa-9202-47b584cf717d",
+        "timestamp" : "2025-07-20T21:38:35+00:00",
+        "total" : 3,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en-US"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationType|1.1.0"
+        }],
+        "contains" : [{
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationType",
+          "code" : "magistral",
+          "display" : "Magistral preparation"
+        },
+        {
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationType",
+          "code" : "registered-medicinal-product",
+          "display" : "Medicinal Product"
+        },
+        {
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationType",
+          "code" : "non-medicinal-product",
+          "display" : "Non-medicinal product"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/BeRouteOfAdministrationVS",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025</p><p>This value set contains 83 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-738982001\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/738982001\">738982001</a></td><td>http://snomed.info/sct</td><td>Oromucosal</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-54471007\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/54471007\">54471007</a></td><td>http://snomed.info/sct</td><td>Buccal route</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-448598008\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/448598008\">448598008</a></td><td>http://snomed.info/sct</td><td>Cutaneous route (qualifier value)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-372449004\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/372449004\">372449004</a></td><td>http://snomed.info/sct</td><td>Dental use</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-372450004\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/372450004\">372450004</a></td><td>http://snomed.info/sct</td><td>Endocervical use</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-372451000\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/372451000\">372451000</a></td><td>http://snomed.info/sct</td><td>Endosinusial use</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-372452007\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/372452007\">372452007</a></td><td>http://snomed.info/sct</td><td>Endotracheopulmonary use</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-417985001\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/417985001\">417985001</a></td><td>http://snomed.info/sct</td><td>Enteral route (qualifier value)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-764723001\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/764723001\">764723001</a></td><td>http://snomed.info/sct</td><td>Epilesional route (qualifier value)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-372453002\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/372453002\">372453002</a></td><td>http://snomed.info/sct</td><td>Extra-amniotic use</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-766790006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/766790006\">766790006</a></td><td>http://snomed.info/sct</td><td>Extracorporeal hemodialysis route (qualifier value)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-714743009\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/714743009\">714743009</a></td><td>http://snomed.info/sct</td><td>Extracorporeal route (qualifier value)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-372454008\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/372454008\">372454008</a></td><td>http://snomed.info/sct</td><td>Gastroenteral use</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-372457001\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/372457001\">372457001</a></td><td>http://snomed.info/sct</td><td>Gingival use</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-718329006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/718329006\">718329006</a></td><td>http://snomed.info/sct</td><td>Infiltration route (qualifier value)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-372458006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/372458006\">372458006</a></td><td>http://snomed.info/sct</td><td>Intraamniotic use</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-58100008\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/58100008\">58100008</a></td><td>http://snomed.info/sct</td><td>Intra-arterial route</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-12130007\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/12130007\">12130007</a></td><td>http://snomed.info/sct</td><td>Intra-articular route</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-372459003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/372459003\">372459003</a></td><td>http://snomed.info/sct</td><td>Intrabursal use</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-418821007\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/418821007\">418821007</a></td><td>http://snomed.info/sct</td><td>Intracameral route (qualifier value)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-372460008\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/372460008\">372460008</a></td><td>http://snomed.info/sct</td><td>Intracardiac use</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-418331006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/418331006\">418331006</a></td><td>http://snomed.info/sct</td><td>Intracartilaginous route (qualifier value)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-372461007\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/372461007\">372461007</a></td><td>http://snomed.info/sct</td><td>Intracavernous use</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-446540005\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/446540005\">446540005</a></td><td>http://snomed.info/sct</td><td>Intracerebral route (qualifier value)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-420719007\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/420719007\">420719007</a></td><td>http://snomed.info/sct</td><td>Intracerebroventricular route (qualifier value)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-372462000\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/372462000\">372462000</a></td><td>http://snomed.info/sct</td><td>Intracervical route (qualifier value)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-58761000052107\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/58761000052107\">58761000052107</a></td><td>http://snomed.info/sct</td><td>Intracholangiopancreatic route</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-418892005\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/418892005\">418892005</a></td><td>http://snomed.info/sct</td><td>Intracisternal route (qualifier value)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-418608002\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/418608002\">418608002</a></td><td>http://snomed.info/sct</td><td>Intracorneal route (qualifier value)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-372463005\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/372463005\">372463005</a></td><td>http://snomed.info/sct</td><td>Intracoronary use</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-372464004\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/372464004\">372464004</a></td><td>http://snomed.info/sct</td><td>Intradermal use</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-372465003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/372465003\">372465003</a></td><td>http://snomed.info/sct</td><td>Intradiscal use</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-448077001\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/448077001\">448077001</a></td><td>http://snomed.info/sct</td><td>Intraepidermal route (qualifier value)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-445768003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/445768003\">445768003</a></td><td>http://snomed.info/sct</td><td>Intragastric route (qualifier value)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-58751000052109\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/58751000052109\">58751000052109</a></td><td>http://snomed.info/sct</td><td>Intraglandular route (qualifier value)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-372466002\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/372466002\">372466002</a></td><td>http://snomed.info/sct</td><td>Intralesional use</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-372467006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/372467006\">372467006</a></td><td>http://snomed.info/sct</td><td>Intralymphatic use</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-447121004\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/447121004\">447121004</a></td><td>http://snomed.info/sct</td><td>Intramammary route (qualifier value)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-78421000\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/78421000\">78421000</a></td><td>http://snomed.info/sct</td><td>Intramuscular route</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-372468001\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/372468001\">372468001</a></td><td>http://snomed.info/sct</td><td>Intraocular use</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-417255000\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/417255000\">417255000</a></td><td>http://snomed.info/sct</td><td>Intraosseous route (qualifier value)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-445771006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/445771006\">445771006</a></td><td>http://snomed.info/sct</td><td>Intrapericardial route (qualifier value)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-38239002\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/38239002\">38239002</a></td><td>http://snomed.info/sct</td><td>Intraperitoneal route</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-372469009\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/372469009\">372469009</a></td><td>http://snomed.info/sct</td><td>Intrapleural use</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-58771000052103\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/58771000052103\">58771000052103</a></td><td>http://snomed.info/sct</td><td>Intraportal route</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-419810008\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/419810008\">419810008</a></td><td>http://snomed.info/sct</td><td>Intraprostatic route (qualifier value)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-420201002\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/420201002\">420201002</a></td><td>http://snomed.info/sct</td><td>Intrapulmonary route (qualifier value)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-372470005\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/372470005\">372470005</a></td><td>http://snomed.info/sct</td><td>Intrasternal use</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-72607000\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/72607000\">72607000</a></td><td>http://snomed.info/sct</td><td>Intrathecal route</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-447122006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/447122006\">447122006</a></td><td>http://snomed.info/sct</td><td>Intratumor route (qualifier value)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-62226000\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/62226000\">62226000</a></td><td>http://snomed.info/sct</td><td>Intrauterine route</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-47625008\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/47625008\">47625008</a></td><td>http://snomed.info/sct</td><td>Intravenous route</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-420287000\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/420287000\">420287000</a></td><td>http://snomed.info/sct</td><td>Intraventricular route - cardiac (qualifier value)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-372471009\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/372471009\">372471009</a></td><td>http://snomed.info/sct</td><td>Intravesical use</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-418401004\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/418401004\">418401004</a></td><td>http://snomed.info/sct</td><td>Intravitreal route (qualifier value)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-420185003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/420185003\">420185003</a></td><td>http://snomed.info/sct</td><td>Laryngeal route (qualifier value)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-46713006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/46713006\">46713006</a></td><td>http://snomed.info/sct</td><td>Nasal route</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-385432009\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/385432009\">385432009</a></td><td>http://snomed.info/sct</td><td>Not applicable (qualifier value)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-372472002\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/372472002\">372472002</a></td><td>http://snomed.info/sct</td><td>Ocular route (qualifier value)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-54485002\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/54485002\">54485002</a></td><td>http://snomed.info/sct</td><td>Ophthalmic route</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-26643006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/26643006\">26643006</a></td><td>http://snomed.info/sct</td><td>Oral route</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-418664002\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/418664002\">418664002</a></td><td>http://snomed.info/sct</td><td>Oropharyngeal route (qualifier value)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-10547007\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/10547007\">10547007</a></td><td>http://snomed.info/sct</td><td>Otic route</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-419165009\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/419165009\">419165009</a></td><td>http://snomed.info/sct</td><td>Paravertebral route (qualifier value)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-372474001\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/372474001\">372474001</a></td><td>http://snomed.info/sct</td><td>Periarticular use</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-447080003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/447080003\">447080003</a></td><td>http://snomed.info/sct</td><td>Peridural route (qualifier value)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-372475000\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/372475000\">372475000</a></td><td>http://snomed.info/sct</td><td>Perineural use</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-447052000\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/447052000\">447052000</a></td><td>http://snomed.info/sct</td><td>Periodontal route (qualifier value)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-420047004\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/420047004\">420047004</a></td><td>http://snomed.info/sct</td><td>Periosteal route (qualifier value)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-58811000052103\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/58811000052103\">58811000052103</a></td><td>http://snomed.info/sct</td><td>Peritumoral route (qualifier value)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-58821000052106\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/58821000052106\">58821000052106</a></td><td>http://snomed.info/sct</td><td>Posterior juxtascleral route (qualifier value)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-37161004\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/37161004\">37161004</a></td><td>http://snomed.info/sct</td><td>Per rectum</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-447694001\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/447694001\">447694001</a></td><td>http://snomed.info/sct</td><td>Respiratory tract route (qualifier value)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-418321004\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/418321004\">418321004</a></td><td>http://snomed.info/sct</td><td>Retrobulbar route (qualifier value)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-372476004\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/372476004\">372476004</a></td><td>http://snomed.info/sct</td><td>Subconjunctival use</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-34206005\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/34206005\">34206005</a></td><td>http://snomed.info/sct</td><td>Subcutaneous route</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-37839007\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/37839007\">37839007</a></td><td>http://snomed.info/sct</td><td>Sublingual route</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-419874009\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/419874009\">419874009</a></td><td>http://snomed.info/sct</td><td>Submucosal route (qualifier value)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-58831000052108\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/58831000052108\">58831000052108</a></td><td>http://snomed.info/sct</td><td>Subretinal route (qualifier value)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-6064005\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/6064005\">6064005</a></td><td>http://snomed.info/sct</td><td>Topical route</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-45890007\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/45890007\">45890007</a></td><td>http://snomed.info/sct</td><td>Transdermal route</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-90028008\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/90028008\">90028008</a></td><td>http://snomed.info/sct</td><td>Urethral route</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-16857009\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/16857009\">16857009</a></td><td>http://snomed.info/sct</td><td>Per vagina</td></tr></table></div>"
+      },
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/BeRouteOfAdministrationVS",
+      "version" : "1.1.0",
+      "name" : "BeRouteOfAdministrationVS",
+      "title" : "Route of Administration ValueSet",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2025-07-20T21:36:53+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "BE",
+          "display" : "Belgium"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:bd7aa368-2bdc-4613-a1ea-d257ac274ab1",
+        "timestamp" : "2025-07-20T21:38:35+00:00",
+        "total" : 83,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en-US"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-valueset",
+          "valueUri" : "null"
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
+        }],
+        "contains" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "738982001",
+          "display" : "Oromucosal"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "54471007",
+          "display" : "Buccal route"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "448598008",
+          "display" : "Cutaneous route (qualifier value)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "372449004",
+          "display" : "Dental use"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "372450004",
+          "display" : "Endocervical use"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "372451000",
+          "display" : "Endosinusial use"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "372452007",
+          "display" : "Endotracheopulmonary use"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "417985001",
+          "display" : "Enteral route (qualifier value)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "764723001",
+          "display" : "Epilesional route (qualifier value)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "372453002",
+          "display" : "Extra-amniotic use"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "766790006",
+          "display" : "Extracorporeal hemodialysis route (qualifier value)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "714743009",
+          "display" : "Extracorporeal route (qualifier value)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "372454008",
+          "display" : "Gastroenteral use"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "372457001",
+          "display" : "Gingival use"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "718329006",
+          "display" : "Infiltration route (qualifier value)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "372458006",
+          "display" : "Intraamniotic use"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "58100008",
+          "display" : "Intra-arterial route"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "12130007",
+          "display" : "Intra-articular route"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "372459003",
+          "display" : "Intrabursal use"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "418821007",
+          "display" : "Intracameral route (qualifier value)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "372460008",
+          "display" : "Intracardiac use"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "418331006",
+          "display" : "Intracartilaginous route (qualifier value)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "372461007",
+          "display" : "Intracavernous use"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "446540005",
+          "display" : "Intracerebral route (qualifier value)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "420719007",
+          "display" : "Intracerebroventricular route (qualifier value)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "372462000",
+          "display" : "Intracervical route (qualifier value)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "58761000052107",
+          "display" : "Intracholangiopancreatic route"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "418892005",
+          "display" : "Intracisternal route (qualifier value)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "418608002",
+          "display" : "Intracorneal route (qualifier value)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "372463005",
+          "display" : "Intracoronary use"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "372464004",
+          "display" : "Intradermal use"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "372465003",
+          "display" : "Intradiscal use"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "448077001",
+          "display" : "Intraepidermal route (qualifier value)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "445768003",
+          "display" : "Intragastric route (qualifier value)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "58751000052109",
+          "display" : "Intraglandular route (qualifier value)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "372466002",
+          "display" : "Intralesional use"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "372467006",
+          "display" : "Intralymphatic use"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "447121004",
+          "display" : "Intramammary route (qualifier value)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "78421000",
+          "display" : "Intramuscular route"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "372468001",
+          "display" : "Intraocular use"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "417255000",
+          "display" : "Intraosseous route (qualifier value)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "445771006",
+          "display" : "Intrapericardial route (qualifier value)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "38239002",
+          "display" : "Intraperitoneal route"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "372469009",
+          "display" : "Intrapleural use"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "58771000052103",
+          "display" : "Intraportal route"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "419810008",
+          "display" : "Intraprostatic route (qualifier value)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "420201002",
+          "display" : "Intrapulmonary route (qualifier value)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "372470005",
+          "display" : "Intrasternal use"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "72607000",
+          "display" : "Intrathecal route"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "447122006",
+          "display" : "Intratumor route (qualifier value)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "62226000",
+          "display" : "Intrauterine route"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "47625008",
+          "display" : "Intravenous route"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "420287000",
+          "display" : "Intraventricular route - cardiac (qualifier value)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "372471009",
+          "display" : "Intravesical use"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "418401004",
+          "display" : "Intravitreal route (qualifier value)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "420185003",
+          "display" : "Laryngeal route (qualifier value)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "46713006",
+          "display" : "Nasal route"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "385432009",
+          "display" : "Not applicable (qualifier value)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "372472002",
+          "display" : "Ocular route (qualifier value)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "54485002",
+          "display" : "Ophthalmic route"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "26643006",
+          "display" : "Oral route"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "418664002",
+          "display" : "Oropharyngeal route (qualifier value)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "10547007",
+          "display" : "Otic route"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "419165009",
+          "display" : "Paravertebral route (qualifier value)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "372474001",
+          "display" : "Periarticular use"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "447080003",
+          "display" : "Peridural route (qualifier value)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "372475000",
+          "display" : "Perineural use"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "447052000",
+          "display" : "Periodontal route (qualifier value)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "420047004",
+          "display" : "Periosteal route (qualifier value)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "58811000052103",
+          "display" : "Peritumoral route (qualifier value)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "58821000052106",
+          "display" : "Posterior juxtascleral route (qualifier value)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "37161004",
+          "display" : "Per rectum"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "447694001",
+          "display" : "Respiratory tract route (qualifier value)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "418321004",
+          "display" : "Retrobulbar route (qualifier value)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "372476004",
+          "display" : "Subconjunctival use"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "34206005",
+          "display" : "Subcutaneous route"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "37839007",
+          "display" : "Sublingual route"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "419874009",
+          "display" : "Submucosal route (qualifier value)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "58831000052108",
+          "display" : "Subretinal route (qualifier value)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "6064005",
+          "display" : "Topical route"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "45890007",
+          "display" : "Transdermal route"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "90028008",
+          "display" : "Urethral route"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "16857009",
+          "display" : "Per vagina"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/be-vs-dispenser-types",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"https://www.ehealth.fgov.be/standards/fhir/core/2.1.2/CodeSystem-cd-hcparty.html\">codesystem BeCdHcParty v2.1.2 (CodeSystem)</a></p><p>This value set contains 7 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty-deptpharmacy\"> </a>\u00a0\u00a0<a href=\"https://www.ehealth.fgov.be/standards/fhir/core/2.1.2/CodeSystem-cd-hcparty.html#cd-hcparty-deptpharmacy\">deptpharmacy</a></td><td>https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty</td><td>pharmacy service or department within an organisation</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty-perspharmacist\"> </a>\u00a0\u00a0<a href=\"https://www.ehealth.fgov.be/standards/fhir/core/2.1.2/CodeSystem-cd-hcparty.html#cd-hcparty-perspharmacist\">perspharmacist</a></td><td>https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty</td><td>pharmacist</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty-orgpharmacy\"> </a>\u00a0\u00a0<a href=\"https://www.ehealth.fgov.be/standards/fhir/core/2.1.2/CodeSystem-cd-hcparty.html#cd-hcparty-orgpharmacy\">orgpharmacy</a></td><td>https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty</td><td>independent pharmacy</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty-perspharmacyassistant\"> </a>\u00a0\u00a0<a href=\"https://www.ehealth.fgov.be/standards/fhir/core/2.1.2/CodeSystem-cd-hcparty.html#cd-hcparty-perspharmacyassistant\">perspharmacyassistant</a></td><td>https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty</td><td>pharmacy assistant</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty-perspharmacistclinicalbiologist\"> </a>\u00a0\u00a0<a href=\"https://www.ehealth.fgov.be/standards/fhir/core/2.1.2/CodeSystem-cd-hcparty.html#cd-hcparty-perspharmacistclinicalbiologist\">perspharmacistclinicalbiologist</a></td><td>https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty</td><td>pharmacist-clinical biologist</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty-persdentist\"> </a>\u00a0\u00a0<a href=\"https://www.ehealth.fgov.be/standards/fhir/core/2.1.2/CodeSystem-cd-hcparty.html#cd-hcparty-persdentist\">persdentist</a></td><td>https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty</td><td>dentist</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty-deptdentistry\"> </a>\u00a0\u00a0<a href=\"https://www.ehealth.fgov.be/standards/fhir/core/2.1.2/CodeSystem-cd-hcparty.html#cd-hcparty-deptdentistry\">deptdentistry</a></td><td>https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty</td><td>dentistry</td></tr></table></div>"
+      },
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/be-vs-dispenser-types",
+      "version" : "1.1.0",
+      "name" : "DispenserTypes",
+      "title" : "Dispenser Types",
+      "status" : "draft",
+      "experimental" : false,
+      "date" : "2025-07-20T21:36:53+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "BE",
+          "display" : "Belgium"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:e8c6cc81-476a-4222-a059-05f55dbf6162",
+        "timestamp" : "2025-07-20T21:38:35+00:00",
+        "total" : 7,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en-US"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty|2.1.2"
+        }],
+        "contains" : [{
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty",
+          "code" : "deptpharmacy",
+          "display" : "pharmacy service or department within an organisation"
+        },
+        {
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty",
+          "code" : "perspharmacist",
+          "display" : "pharmacist"
+        },
+        {
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty",
+          "code" : "orgpharmacy",
+          "display" : "independent pharmacy"
+        },
+        {
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty",
+          "code" : "perspharmacyassistant",
+          "display" : "pharmacy assistant"
+        },
+        {
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty",
+          "code" : "perspharmacistclinicalbiologist",
+          "display" : "pharmacist-clinical biologist"
+        },
+        {
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty",
+          "code" : "persdentist",
+          "display" : "dentist"
+        },
+        {
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty",
+          "code" : "deptdentistry",
+          "display" : "dentistry"
+        }]
+      }
+    }
+  }]
+}

@@ -1,0 +1,154 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "BeMedicationRequestReimbursementType",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem BeMedicationRequestReimbursementType</b></p><a name=\"BeMedicationRequestReimbursementType\"> </a><a name=\"hcBeMedicationRequestReimbursementType\"> </a><p>This case-sensitive code system <code>https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationRequestReimbursementType</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">third-party-payer-applicable<a name=\"BeMedicationRequestReimbursementType-third-party-payer-applicable\"> </a></td><td>Third-party payer applicable</td></tr><tr><td style=\"white-space:nowrap\">first-dose<a name=\"BeMedicationRequestReimbursementType-first-dose\"> </a></td><td>First dose</td></tr><tr><td style=\"white-space:nowrap\">second-dose<a name=\"BeMedicationRequestReimbursementType-second-dose\"> </a></td><td>Second dose + [date of the first dose]</td></tr><tr><td style=\"white-space:nowrap\">third-dose<a name=\"BeMedicationRequestReimbursementType-third-dose\"> </a></td><td>Third dose + [date of the first and second dose]</td></tr><tr><td style=\"white-space:nowrap\">chronic-renal-failure-pathway<a name=\"BeMedicationRequestReimbursementType-chronic-renal-failure-pathway\"> </a></td><td>Care pathway chronic renal failure</td></tr><tr><td style=\"white-space:nowrap\">diabetes-care-pathway<a name=\"BeMedicationRequestReimbursementType-diabetes-care-pathway\"> </a></td><td>Care pathway diabetes</td></tr><tr><td style=\"white-space:nowrap\">diabetes-convention<a name=\"BeMedicationRequestReimbursementType-diabetes-convention\"> </a></td><td>Diabetes convention</td></tr><tr><td style=\"white-space:nowrap\">non-reimbursable<a name=\"BeMedicationRequestReimbursementType-non-reimbursable\"> </a></td><td>Non-reimbursable</td></tr><tr><td style=\"white-space:nowrap\">startup-pathway-type-2-diabetes<a name=\"BeMedicationRequestReimbursementType-startup-pathway-type-2-diabetes\"> </a></td><td>Start-up pathway type 2 diabetes</td></tr></table><p><b>Additional Language Displays</b></p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>French (Belgium) (fr)</b></td><td><b>Nederlands (België) (Dutch (Belgium), nl)</b></td></tr><tr><td>third-party-payer-applicable</td><td>Tiers-payant applicable</td><td>Derdebetalersregeling van toepassing</td></tr><tr><td>first-dose</td><td>1ère dose</td><td>1ste toediening</td></tr><tr><td>second-dose</td><td>2ème dose + [date de la 1ère dose]</td><td>2de toediening + [datum 1ste toediening]</td></tr><tr><td>third-dose</td><td>3ème dose + [date de la 1ère et 2ème dose]</td><td>3de toediening + [datum 1ste en 2de toediening]</td></tr><tr><td>chronic-renal-failure-pathway</td><td>Trajet de soins insuffisance rénale chronique</td><td>Zorgtraject chronische nierinsufficiëntie</td></tr><tr><td>diabetes-care-pathway</td><td>Trajet de soins diabète</td><td>Zorgtraject diabetes</td></tr><tr><td>diabetes-convention</td><td>Convention diabète</td><td>Diabetesconventie</td></tr><tr><td>non-reimbursable</td><td>Non remboursable</td><td>Niet-vergoedbaar</td></tr><tr><td>startup-pathway-type-2-diabetes</td><td>Trajet de démarrage diabète type 2</td><td>Opstarttraject diabetes type 2</td></tr></table></div>"
+  },
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationRequestReimbursementType",
+  "version" : "1.1.0",
+  "name" : "BeMedicationRequestReimbursementType",
+  "title" : "Medication request reimbursement type",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-12-02T14:49:22+00:00",
+  "publisher" : "eHealth Platform",
+  "contact" : [{
+    "name" : "eHealth Platform",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.ehealth.fgov.be/standards/fhir"
+    },
+    {
+      "system" : "email",
+      "value" : "support@be-ehealth-standards.atlassian.net"
+    }]
+  },
+  {
+    "name" : "Message Structure eHealth",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "support@be-ehealth-standards.atlassian.net",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Medication request reimbursement type - instructions for reimbursement of the medication request",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BE",
+      "display" : "Belgium"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 9,
+  "concept" : [{
+    "code" : "third-party-payer-applicable",
+    "display" : "Third-party payer applicable",
+    "designation" : [{
+      "language" : "fr-BE",
+      "value" : "Tiers-payant applicable"
+    },
+    {
+      "language" : "nl-BE",
+      "value" : "Derdebetalersregeling van toepassing"
+    }]
+  },
+  {
+    "code" : "first-dose",
+    "display" : "First dose",
+    "designation" : [{
+      "language" : "fr-BE",
+      "value" : "1ère dose"
+    },
+    {
+      "language" : "nl-BE",
+      "value" : "1ste toediening"
+    }]
+  },
+  {
+    "code" : "second-dose",
+    "display" : "Second dose + [date of the first dose]",
+    "designation" : [{
+      "language" : "fr-BE",
+      "value" : "2ème dose + [date de la 1ère dose]"
+    },
+    {
+      "language" : "nl-BE",
+      "value" : "2de toediening + [datum 1ste toediening]"
+    }]
+  },
+  {
+    "code" : "third-dose",
+    "display" : "Third dose + [date of the first and second dose]",
+    "designation" : [{
+      "language" : "fr-BE",
+      "value" : "3ème dose + [date de la 1ère et 2ème dose]"
+    },
+    {
+      "language" : "nl-BE",
+      "value" : "3de toediening + [datum 1ste en 2de toediening]"
+    }]
+  },
+  {
+    "code" : "chronic-renal-failure-pathway",
+    "display" : "Care pathway chronic renal failure",
+    "designation" : [{
+      "language" : "fr-BE",
+      "value" : "Trajet de soins insuffisance rénale chronique"
+    },
+    {
+      "language" : "nl-BE",
+      "value" : "Zorgtraject chronische nierinsufficiëntie"
+    }]
+  },
+  {
+    "code" : "diabetes-care-pathway",
+    "display" : "Care pathway diabetes",
+    "designation" : [{
+      "language" : "fr-BE",
+      "value" : "Trajet de soins diabète"
+    },
+    {
+      "language" : "nl-BE",
+      "value" : "Zorgtraject diabetes"
+    }]
+  },
+  {
+    "code" : "diabetes-convention",
+    "display" : "Diabetes convention",
+    "designation" : [{
+      "language" : "fr-BE",
+      "value" : "Convention diabète"
+    },
+    {
+      "language" : "nl-BE",
+      "value" : "Diabetesconventie"
+    }]
+  },
+  {
+    "code" : "non-reimbursable",
+    "display" : "Non-reimbursable",
+    "designation" : [{
+      "language" : "fr-BE",
+      "value" : "Non remboursable"
+    },
+    {
+      "language" : "nl-BE",
+      "value" : "Niet-vergoedbaar"
+    }]
+  },
+  {
+    "code" : "startup-pathway-type-2-diabetes",
+    "display" : "Start-up pathway type 2 diabetes",
+    "designation" : [{
+      "language" : "fr-BE",
+      "value" : "Trajet de démarrage diabète type 2"
+    },
+    {
+      "language" : "nl-BE",
+      "value" : "Opstarttraject diabetes type 2"
+    }]
+  }]
+}

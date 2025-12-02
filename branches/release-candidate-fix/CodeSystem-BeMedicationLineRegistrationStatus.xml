@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="BeMedicationLineRegistrationStatus"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem BeMedicationLineRegistrationStatus</b></p><a name="BeMedicationLineRegistrationStatus"> </a><a name="hcBeMedicationLineRegistrationStatus"> </a><p>This case-sensitive code system <code>https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineRegistrationStatus</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">draft<a name="BeMedicationLineRegistrationStatus-draft"> </a></td><td>Draft</td></tr><tr><td style="white-space:nowrap">recorded<a name="BeMedicationLineRegistrationStatus-recorded"> </a></td><td>Recorded</td></tr><tr><td style="white-space:nowrap">entered-in-error<a name="BeMedicationLineRegistrationStatus-entered-in-error"> </a></td><td>Entered in Error</td></tr></table></div>
+  </text>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineRegistrationStatus"/>
+  <version value="1.1.0"/>
+  <name value="BeMedicationLineRegistrationStatus"/>
+  <title value="Medication Line Registration Status"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-10-10T10:05:23+00:00"/>
+  <publisher value="eHealth Platform"/>
+  <contact>
+    <name value="eHealth Platform"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.ehealth.fgov.be/standards/fhir"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="support@be-ehealth-standards.atlassian.net"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Message Structure eHealth"/>
+    <telecom>
+      <system value="email"/>
+      <value value="support@be-ehealth-standards.atlassian.net"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="This code system defines the registration statuses for medication lines."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
+      <display value="Belgium"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="3"/>
+  <concept>
+    <code value="draft"/>
+    <display value="Draft"/>
+  </concept>
+  <concept>
+    <code value="recorded"/>
+    <display value="Recorded"/>
+  </concept>
+  <concept>
+    <code value="entered-in-error"/>
+    <display value="Entered in Error"/>
+  </concept>
+</CodeSystem>

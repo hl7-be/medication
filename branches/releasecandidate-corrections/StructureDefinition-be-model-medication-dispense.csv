@@ -1,0 +1,41 @@
+"Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: RIM Mapping"
+"BeModelMedicationDispense","","","",0,*,"","","","","An individual record of a medication dispense","Base definition for all elements in a resource.","","","","","","","","","",,,,,"",,,,"Element",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","n/a"
+"BeModelMedicationDispense.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
+"BeModelMedicationDispense.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
+"BeModelMedicationDispense.identifier","","","",0,1,"","","","Identifier {[]} {[]}
+","The business identifier(s) for the medication dispense session","The business identifier(s) for the medication dispense session, also known as Session GUID (SGUID).","","","","","","","","","",,,,,"",,,,"BeModelMedicationDispense.identifier",0,1,"",""
+"BeModelMedicationDispense.patient","","","",1,1,"","","","Reference {[]} {[CanonicalType[https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient]]}
+","The person for which the medication is dispensed.","The person for which the medication is dispensed.","","","","","","","","","",,,,,"",,,,"BeModelMedicationDispense.patient",1,1,"",""
+"BeModelMedicationDispense.dispenser","","","",0,1,"","","","Reference {[]} {[]}
+","The dispenser, if known and relevant",".","","","","","","","","","",,,,,"",,,,"BeModelMedicationDispense.dispenser",0,1,"",""
+"BeModelMedicationDispense.dispenser.dispenser","","","",1,1,"","","","Reference {[]} {[CanonicalType[https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner]]}
+","Reference to person that performed the recording or reporting","Who was responsible for asserting the observed value as ""true"". (Reference)","","","","","","","","","",,,,,"",,,,"BeModelMedicationDispense.dispenser.dispenser",1,1,"",""
+"BeModelMedicationDispense.dispenser.organization","","","",1,1,"","","","Reference {[]} {[CanonicalType[https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-organization]]}
+","Reference to person that performed the recording or reporting","Who was responsible for asserting the observed value as ""true"". (Reference)","","","","","","","","","",,,,,"",,,,"BeModelMedicationDispense.dispenser.organization",1,1,"",""
+"BeModelMedicationDispense.dispenseDate","","","",1,1,"","","","dateTime {[CanonicalType[http://hl7.org/fhir/StructureDefinition/dateTime]]} {[]}
+","The date when the dispense ocurred","The date (or date-time) when the dispense ocurred","","","","","","","","","",,,,,"",,,,"BeModelMedicationDispense.dispenseDate",1,1,"",""
+"BeModelMedicationDispense.prescription","","","",0,1,"","","","BackboneElement {[]} {[]}
+","The information about a prescription related to the dispense",".","","","","","","","","","",,,,,"",,,,"BeModelMedicationDispense.prescription",0,1,"",""
+"BeModelMedicationDispense.prescription.isPrescribed","","","",0,1,"","","","boolean {[]} {[]}
+","Whether this dispense was performed against a prescription",".","","","","","","","","","",,,,,"",,,,"BeModelMedicationDispense.prescription.isPrescribed",0,1,"",""
+"BeModelMedicationDispense.prescription.prescription","","","",0,1,"","","","Reference {[]} {[]}
+","The prescription identification",".","","","","","","","","","",,,,,"",,,,"BeModelMedicationDispense.prescription.prescription",0,1,"",""
+"BeModelMedicationDispense.dispensedItem","","","",0,*,"","","","BackboneElement {[]} {[]}
+","Each product that was dispensed",".","","","","","","","","","",,,,,"",,,,"BeModelMedicationDispense.dispensedItem",0,*,"",""
+"BeModelMedicationDispense.dispensedItem.product","","","",0,1,"","","","Reference {[]} {[]}
+","The product that was dispensed - coded or not (e.g. for magistral preparations)",".","","","","","","","","","",,,,,"",,,,"BeModelMedicationDispense.dispensedItem.product",0,1,"",""
+"BeModelMedicationDispense.dispensedItem.quantityDispensed","","","",0,1,"","","","Quantity {[]} {[]}
+","The amound of product that was dispensed",".","","","","","","","","","",,,,,"",,,,"BeModelMedicationDispense.dispensedItem.quantityDispensed",0,1,"",""
+"BeModelMedicationDispense.dispensedItem.dosageInstructions","","","",0,1,"","","","Dosage {[]} {[]}
+","The instructions for use",".","","","","","","","","","",,,,,"",,,,"BeModelMedicationDispense.dispensedItem.dosageInstructions",0,1,"",""
+"BeModelMedicationDispense.dispensedItem.note","","","",0,*,"","","","Annotation {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Annotation]]} {[]}
+","Additional information about the dispensed item","Additional information about the dispense - this can be relevant history, any remarks by the patient or professional, etc.","","","","","","","","","",,,,,"",,,,"BeModelMedicationDispense.dispensedItem.note",0,*,"",""
+"BeModelMedicationDispense.note","","","",0,*,"","","","Annotation {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Annotation]]} {[]}
+","Additional information about the dispense","Additional information about the dispense - this can be relevant history, any remarks by the patient or professional, etc.","","","","","","","","","",,,,,"",,,,"BeModelMedicationDispense.note",0,*,"",""

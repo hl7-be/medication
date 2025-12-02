@@ -1,0 +1,164 @@
+Medication : Validation Results
+=========================================
+
+err = 0, warn = 5, info = 60
+IG Publisher Version: 2.0.27
+Generated Tue Dec 02 14:51:22 UTC 2025. FHIR version 4.0.1 for hl7.fhir.be.medication#1.1.0 (canonical = https://www.ehealth.fgov.be/standards/fhir/medication)
+ Build Errors : 0 / 2 / 0
+ /github/workspace/fsh-generated/resources/CodeSystem-BeMedicationLineAdherenceStatus : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/CodeSystem-BeMedicationLineAdherenceStatusReason : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/CodeSystem-BeMedicationLineOriginType : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/CodeSystem-BeMedicationLineRegistrationStatus : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/CodeSystem-BeMedicationRequestReimbursementType : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/CodeSystem-BeMedicationType : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ImplementationGuide-hl7.fhir.be.medication : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/MedicationDispense-example-dispense-communitypharmacy-1med : 0 / 9 / 2
+ /github/workspace/fsh-generated/resources/MedicationDispense-example-dispense-hospital : 0 / 5 / 1
+ /github/workspace/fsh-generated/resources/MedicationDispense-example-minimal-dispense : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/MedicationDispense-medicationdispense-example-1 : 0 / 8 / 2
+ /github/workspace/fsh-generated/resources/MedicationDispense-medicationdispense-example-2 : 0 / 9 / 5
+ /github/workspace/fsh-generated/resources/NamingSystem-be-ns-cnk-codes : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/NamingSystem-be-ns-cti-extended-code : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/NamingSystem-be-ns-prescription-ids : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/NamingSystem-be-ns-product-package-type : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Organization-apotheek-onder-de-toren : 0 / 1 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-BasedOnMedicationLine : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-BeDosage : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-BeExtAdherenceStatus : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-BeExtInstructionsForReimbursement : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-BeExtMedicationLineRegistrationStatus : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-BeExtMedicationType : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-BeExtOffLabel : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-BeExtRecordedDate : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-BeExtRecorder : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-BeMedicationDispense : 0 / 0 / 3
+ /github/workspace/fsh-generated/resources/StructureDefinition-BeMedicationExposureCategory : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-BeMedicationLine : 0 / 1 / 7
+ /github/workspace/fsh-generated/resources/StructureDefinition-BeMedicationPrescription : 0 / 1 / 3
+ /github/workspace/fsh-generated/resources/StructureDefinition-BeModelDosagingInformation : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-BeModelMedication : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-BeModelMedicationDispense : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-BeModelMedicationLine : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-BeModelMedicationPrescription : 0 / 0 / 5
+ /github/workspace/fsh-generated/resources/ValueSet-BeMedicationExposureIntentVS : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-BeMedicationLineAdherenceStatusReasonVS : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-BeMedicationLineAdherenceStatusVS : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-BeMedicationLineOriginTypeVS : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-BeMedicationLineRegistrationStatusVS : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-BeMedicationPrescriptionStatusVS : 0 / 0 / 6
+ /github/workspace/fsh-generated/resources/ValueSet-BeMedicationRequestReimbursementTypeVS : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-BeMedicationTypeVS : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-BeRouteOfAdministrationVS : 0 / 2 / 37
+ /github/workspace/fsh-generated/resources/ValueSet-be-vs-dispenser-types : 0 / 0 / 1
+</table>
+== n/a ==
+WARNING: ImplementationGuide.url: The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole
+WARNING: IG: The IG is not for the international realm, and it uses SNOMED CT, so it should fix the SCT edition in the expansion parameters
+== fsh-generated/resources/CodeSystem-BeMedicationLineAdherenceStatus.json ==
+== fsh-generated/resources/CodeSystem-BeMedicationLineAdherenceStatusReason.json ==
+== fsh-generated/resources/CodeSystem-BeMedicationLineOriginType.json ==
+== fsh-generated/resources/CodeSystem-BeMedicationLineRegistrationStatus.json ==
+== fsh-generated/resources/CodeSystem-BeMedicationRequestReimbursementType.json ==
+== fsh-generated/resources/CodeSystem-BeMedicationType.json ==
+== fsh-generated/resources/ImplementationGuide-hl7.fhir.be.medication.json ==
+== fsh-generated/resources/MedicationDispense-example-dispense-communitypharmacy-1med.json ==
+INFORMATION: MedicationDispense/example-dispense-communitypharmacy-1med: MedicationDispense.quantity: A definition for CodeSystem 'https://www.gfd-dpp.be/fhir/reference/packaging' could not be found, so the code cannot be validated
+== fsh-generated/resources/MedicationDispense-example-dispense-hospital.json ==
+WARNING: MedicationDispense/example-dispense-hospital: MedicationDispense.identifier[0].type.coding[0].system: A definition for CodeSystem 'https://www.nexuzhealth.be/fhir/prescription/ambulatory' version '1' could not be found, so the code cannot be validated. No versions of this code system are known
+== fsh-generated/resources/MedicationDispense-example-minimal-dispense.json ==
+== fsh-generated/resources/MedicationDispense-medicationdispense-example-1.json ==
+INFORMATION: MedicationDispense/medicationdispense-example-1: MedicationDispense.quantity: A definition for CodeSystem 'https://www.gfd-dpp.be/fhir/reference/packaging' could not be found, so the code cannot be validated
+== fsh-generated/resources/MedicationDispense-medicationdispense-example-2.json ==
+INFORMATION: MedicationDispense/medicationdispense-example-2: MedicationDispense.contained[0]/*Organization/apotheek-onder-de-toren*/.identifier[0]: This element does not match any known slice defined in the profile https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-organization|2.1.2 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: MedicationDispense/medicationdispense-example-2: MedicationDispense.quantity: A definition for CodeSystem 'https://www.gfd-dpp.be/fhir/reference/packaging' could not be found, so the code cannot be validated
+== fsh-generated/resources/NamingSystem-be-ns-cnk-codes.json ==
+== fsh-generated/resources/NamingSystem-be-ns-cti-extended-code.json ==
+== fsh-generated/resources/NamingSystem-be-ns-prescription-ids.json ==
+== fsh-generated/resources/NamingSystem-be-ns-product-package-type.json ==
+== fsh-generated/resources/Organization-apotheek-onder-de-toren.json ==
+INFORMATION: Organization/apotheek-onder-de-toren: Organization.identifier[0]: This element does not match any known slice defined in the profile https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-organization|2.1.2 (this may not be a problem, but you should check that it's not intended to match a slice)
+== fsh-generated/resources/StructureDefinition-BasedOnMedicationLine.json ==
+== fsh-generated/resources/StructureDefinition-BeDosage.json ==
+== fsh-generated/resources/StructureDefinition-BeExtAdherenceStatus.json ==
+== fsh-generated/resources/StructureDefinition-BeExtInstructionsForReimbursement.json ==
+== fsh-generated/resources/StructureDefinition-BeExtMedicationLineRegistrationStatus.json ==
+== fsh-generated/resources/StructureDefinition-BeExtMedicationType.json ==
+== fsh-generated/resources/StructureDefinition-BeExtOffLabel.json ==
+== fsh-generated/resources/StructureDefinition-BeExtRecordedDate.json ==
+== fsh-generated/resources/StructureDefinition-BeExtRecorder.json ==
+== fsh-generated/resources/StructureDefinition-BeMedicationDispense.json ==
+INFORMATION: StructureDefinition/BeMedicationDispense: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated
+INFORMATION: StructureDefinition/BeMedicationDispense: StructureDefinition.snapshot.element[88].mapping[0].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+== fsh-generated/resources/StructureDefinition-BeMedicationExposureCategory.json ==
+== fsh-generated/resources/StructureDefinition-BeMedicationLine.json ==
+INFORMATION: StructureDefinition.snapshot.element[11].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/artifact-version to 5.2.0 from choices of 5.1.0 (hl7.fhir.uv.extensions.r4#5.1.0), 5.2.0 (hl7.fhir.uv.extensions.r4#5.2.0)
+INFORMATION: StructureDefinition.snapshot.element[12].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/artifact-date to 5.2.0 from choices of 5.1.0 (hl7.fhir.uv.extensions.r4#5.1.0), 5.2.0 (hl7.fhir.uv.extensions.r4#5.2.0)
+INFORMATION: StructureDefinition.differential.element[5].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/artifact-version to 5.2.0 from choices of 5.1.0 (hl7.fhir.uv.extensions.r4#5.1.0), 5.2.0 (hl7.fhir.uv.extensions.r4#5.2.0)
+INFORMATION: StructureDefinition.differential.element[6].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/artifact-date to 5.2.0 from choices of 5.1.0 (hl7.fhir.uv.extensions.r4#5.1.0), 5.2.0 (hl7.fhir.uv.extensions.r4#5.2.0)
+INFORMATION: StructureDefinition/BeMedicationLine: StructureDefinition.differential.element[12].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/BeMedicationLine: StructureDefinition.snapshot.element[35].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+== fsh-generated/resources/StructureDefinition-BeMedicationPrescription.json ==
+INFORMATION: StructureDefinition/BeMedicationPrescription: StructureDefinition.differential.element[8].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/BeMedicationPrescription: StructureDefinition.snapshot.element[27].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+== fsh-generated/resources/StructureDefinition-BeModelDosagingInformation.json ==
+== fsh-generated/resources/StructureDefinition-BeModelMedication.json ==
+== fsh-generated/resources/StructureDefinition-BeModelMedicationDispense.json ==
+== fsh-generated/resources/StructureDefinition-BeModelMedicationLine.json ==
+== fsh-generated/resources/StructureDefinition-BeModelMedicationPrescription.json ==
+INFORMATION: StructureDefinition.snapshot.element[1].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/elementdefinition-identifier to 5.2.0 from choices of 4.0.1 (hl7.fhir.r4.core#4.0.1), 5.1.0 (hl7.fhir.uv.extensions.r4#5.1.0), 5.2.0 (hl7.fhir.uv.extensions.r4#5.2.0)
+INFORMATION: StructureDefinition.differential.element[1].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/elementdefinition-identifier to 5.2.0 from choices of 4.0.1 (hl7.fhir.r4.core#4.0.1), 5.1.0 (hl7.fhir.uv.extensions.r4#5.1.0), 5.2.0 (hl7.fhir.uv.extensions.r4#5.2.0)
+INFORMATION: StructureDefinition/BeModelMedicationPrescription: StructureDefinition.snapshot.element[21].type[0].extension[1]: The extension http://hl7.org/fhir/StructureDefinition/regex|5.2.0 is deprecated with the note: 'This was deprecated in favor of using a constraint on the element using FHIRPath, since constraints allow for the provision of a human readable message associated with the regex'
+INFORMATION: StructureDefinition/BeModelMedicationPrescription: BeModelMedicationPrescription.identifier: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-identifier|5.2.0 is deprecated
+== fsh-generated/resources/ValueSet-BeMedicationExposureIntentVS.json ==
+== fsh-generated/resources/ValueSet-BeMedicationLineAdherenceStatusReasonVS.json ==
+== fsh-generated/resources/ValueSet-BeMedicationLineAdherenceStatusVS.json ==
+== fsh-generated/resources/ValueSet-BeMedicationLineOriginTypeVS.json ==
+== fsh-generated/resources/ValueSet-BeMedicationLineRegistrationStatusVS.json ==
+== fsh-generated/resources/ValueSet-BeMedicationPrescriptionStatusVS.json ==
+INFORMATION: ValueSet/BeMedicationPrescriptionStatusVS: ValueSet.compose.include[0].concept[0]: Reference to draft CodeSystem http://hl7.org/fhir/CodeSystem/medicationrequest-status|4.0.1
+INFORMATION: ValueSet/BeMedicationPrescriptionStatusVS: ValueSet.compose.include[0].concept[1]: Reference to draft CodeSystem http://hl7.org/fhir/CodeSystem/medicationrequest-status|4.0.1
+INFORMATION: ValueSet/BeMedicationPrescriptionStatusVS: ValueSet.compose.include[0].concept[2]: Reference to draft CodeSystem http://hl7.org/fhir/CodeSystem/medicationrequest-status|4.0.1
+INFORMATION: ValueSet/BeMedicationPrescriptionStatusVS: ValueSet.compose.include[0].concept[3]: Reference to draft CodeSystem http://hl7.org/fhir/CodeSystem/medicationrequest-status|4.0.1
+INFORMATION: ValueSet/BeMedicationPrescriptionStatusVS: ValueSet.compose.include[0].concept[4]: Reference to draft CodeSystem http://hl7.org/fhir/CodeSystem/medicationrequest-status|4.0.1
+== fsh-generated/resources/ValueSet-BeMedicationRequestReimbursementTypeVS.json ==
+== fsh-generated/resources/ValueSet-BeMedicationTypeVS.json ==
+== fsh-generated/resources/ValueSet-BeRouteOfAdministrationVS.json ==
+INFORMATION: ValueSet/BeRouteOfAdministrationVS: ValueSet.compose.include[0].concept[0]: Wrong Display Name 'Oromucosal use' for http://snomed.info/sct#738982001. Valid display is 'Oromucosal' (en) (for the language(s) 'en, en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+INFORMATION: ValueSet/BeRouteOfAdministrationVS: ValueSet.compose.include[0].concept[2]: Wrong Display Name 'Cutaneous use' for http://snomed.info/sct#448598008. Valid display is 'Cutaneous route (qualifier value)' (en) (for the language(s) 'en, en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+INFORMATION: ValueSet/BeRouteOfAdministrationVS: ValueSet.compose.include[0].concept[7]: Wrong Display Name 'Intestinal use' for http://snomed.info/sct#417985001. Valid display is 'Enteral route (qualifier value)' (en) (for the language(s) 'en, en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+INFORMATION: ValueSet/BeRouteOfAdministrationVS: ValueSet.compose.include[0].concept[8]: Wrong Display Name 'Epilesional use' for http://snomed.info/sct#764723001. Valid display is 'Epilesional route (qualifier value)' (en) (for the language(s) 'en, en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+INFORMATION: ValueSet/BeRouteOfAdministrationVS: ValueSet.compose.include[0].concept[9]: Wrong Display Name 'Extraamniotic use' for http://snomed.info/sct#372453002. Valid display is 'Extra-amniotic use' (en) (for the language(s) 'en, en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+INFORMATION: ValueSet/BeRouteOfAdministrationVS: ValueSet.compose.include[0].concept[10]: Wrong Display Name 'Haemodialysis' for http://snomed.info/sct#766790006. Valid display is 'Extracorporeal hemodialysis route (qualifier value)' (en) (for the language(s) 'en, en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+INFORMATION: ValueSet/BeRouteOfAdministrationVS: ValueSet.compose.include[0].concept[11]: Wrong Display Name 'Extracorporeal use' for http://snomed.info/sct#714743009. Valid display is 'Extracorporeal route (qualifier value)' (en) (for the language(s) 'en, en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+INFORMATION: ValueSet/BeRouteOfAdministrationVS: ValueSet.compose.include[0].concept[14]: Wrong Display Name 'Infiltration' for http://snomed.info/sct#718329006. Valid display is 'Infiltration route (qualifier value)' (en) (for the language(s) 'en, en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+WARNING: ValueSet/BeRouteOfAdministrationVS: ValueSet.compose.include[0].concept[16].display: 'Intraarterial use' is no longer considered a correct display for code '58100008' (status = inactive). The correct display is one of "Intra-arterial route"
+INFORMATION: ValueSet/BeRouteOfAdministrationVS: ValueSet.compose.include[0].concept[17]: Wrong Display Name 'Intraarticular use' for http://snomed.info/sct#12130007. Valid display is 'Intra-articular route' (en) (for the language(s) 'en, en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+INFORMATION: ValueSet/BeRouteOfAdministrationVS: ValueSet.compose.include[0].concept[21]: Wrong Display Name 'Intracartilaginous use' for http://snomed.info/sct#418331006. Valid display is 'Intracartilaginous route (qualifier value)' (en) (for the language(s) 'en, en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+INFORMATION: ValueSet/BeRouteOfAdministrationVS: ValueSet.compose.include[0].concept[23]: Wrong Display Name 'Intracerebral use' for http://snomed.info/sct#446540005. Valid display is 'Intracerebral route (qualifier value)' (en) (for the language(s) 'en, en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+WARNING: ValueSet/BeRouteOfAdministrationVS: ValueSet.compose.include[0].concept[25].display: 'Intracervical use' is no longer considered a correct display for code '372462000' (status = inactive). The correct display is one of "Intracervical route (qualifier value)"
+INFORMATION: ValueSet/BeRouteOfAdministrationVS: ValueSet.compose.include[0].concept[26]: Wrong Display Name 'Intracholangiopancreatic use' for http://snomed.info/sct#58761000052107. Valid display is 'Intracholangiopancreatic route' (en) (for the language(s) 'en, en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+INFORMATION: ValueSet/BeRouteOfAdministrationVS: ValueSet.compose.include[0].concept[27]: Wrong Display Name 'Intracisternal use' for http://snomed.info/sct#418892005. Valid display is 'Intracisternal route (qualifier value)' (en) (for the language(s) 'en, en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+INFORMATION: ValueSet/BeRouteOfAdministrationVS: ValueSet.compose.include[0].concept[32]: Wrong Display Name 'Intraepidermal use' for http://snomed.info/sct#448077001. Valid display is 'Intraepidermal route (qualifier value)' (en) (for the language(s) 'en, en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+INFORMATION: ValueSet/BeRouteOfAdministrationVS: ValueSet.compose.include[0].concept[33]: Wrong Display Name 'Gastric use' for http://snomed.info/sct#445768003. Valid display is 'Intragastric route (qualifier value)' (en) (for the language(s) 'en, en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+INFORMATION: ValueSet/BeRouteOfAdministrationVS: ValueSet.compose.include[0].concept[34]: Wrong Display Name 'Intraglandular use' for http://snomed.info/sct#58751000052109. Valid display is 'Intraglandular route (qualifier value)' (en) (for the language(s) 'en, en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+INFORMATION: ValueSet/BeRouteOfAdministrationVS: ValueSet.compose.include[0].concept[37]: Wrong Display Name 'Intramammary use' for http://snomed.info/sct#447121004. Valid display is 'Intramammary route (qualifier value)' (en) (for the language(s) 'en, en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+INFORMATION: ValueSet/BeRouteOfAdministrationVS: ValueSet.compose.include[0].concept[40]: Wrong Display Name 'Intraosseous use' for http://snomed.info/sct#417255000. Valid display is 'Intraosseous route (qualifier value)' (en) (for the language(s) 'en, en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+INFORMATION: ValueSet/BeRouteOfAdministrationVS: ValueSet.compose.include[0].concept[41]: Wrong Display Name 'Intrapericardial use' for http://snomed.info/sct#445771006. Valid display is 'Intrapericardial route (qualifier value)' (en) (for the language(s) 'en, en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+INFORMATION: ValueSet/BeRouteOfAdministrationVS: ValueSet.compose.include[0].concept[44]: Wrong Display Name 'Intraportal use' for http://snomed.info/sct#58771000052103. Valid display is 'Intraportal route' (en) (for the language(s) 'en, en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+INFORMATION: ValueSet/BeRouteOfAdministrationVS: ValueSet.compose.include[0].concept[45]: Wrong Display Name 'Intraprostatic use' for http://snomed.info/sct#419810008. Valid display is 'Intraprostatic route (qualifier value)' (en) (for the language(s) 'en, en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+INFORMATION: ValueSet/BeRouteOfAdministrationVS: ValueSet.compose.include[0].concept[46]: Wrong Display Name 'Intrapulmonary use' for http://snomed.info/sct#420201002. Valid display is 'Intrapulmonary route (qualifier value)' (en) (for the language(s) 'en, en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+INFORMATION: ValueSet/BeRouteOfAdministrationVS: ValueSet.compose.include[0].concept[49]: Wrong Display Name 'Intratumoral use' for http://snomed.info/sct#447122006. Valid display is 'Intratumor route (qualifier value)' (en) (for the language(s) 'en, en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+INFORMATION: ValueSet/BeRouteOfAdministrationVS: ValueSet.compose.include[0].concept[52]: Wrong Display Name 'Intraventricular use' for http://snomed.info/sct#420287000. Valid display is 'Intraventricular route - cardiac (qualifier value)' (en) (for the language(s) 'en, en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+INFORMATION: ValueSet/BeRouteOfAdministrationVS: ValueSet.compose.include[0].concept[55]: Wrong Display Name 'Laryngopharyngeal use' for http://snomed.info/sct#420185003. Valid display is 'Laryngeal route (qualifier value)' (en) (for the language(s) 'en, en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+INFORMATION: ValueSet/BeRouteOfAdministrationVS: ValueSet.compose.include[0].concept[57]: Wrong Display Name 'Route of administration not applicable' for http://snomed.info/sct#385432009. Valid display is 'Not applicable (qualifier value)' (en) (for the language(s) 'en, en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+INFORMATION: ValueSet/BeRouteOfAdministrationVS: ValueSet.compose.include[0].concept[58]: Wrong Display Name 'Oculonasal use' for http://snomed.info/sct#372472002. Valid display is 'Ocular route (qualifier value)' (en) (for the language(s) 'en, en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+INFORMATION: ValueSet/BeRouteOfAdministrationVS: ValueSet.compose.include[0].concept[59]: Wrong Display Name 'Ocular use' for http://snomed.info/sct#54485002. Valid display is 'Ophthalmic route' (en) (for the language(s) 'en, en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+INFORMATION: ValueSet/BeRouteOfAdministrationVS: ValueSet.compose.include[0].concept[65]: Wrong Display Name 'Epidural use' for http://snomed.info/sct#447080003. Valid display is 'Peridural route (qualifier value)' (en) (for the language(s) 'en, en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+INFORMATION: ValueSet/BeRouteOfAdministrationVS: ValueSet.compose.include[0].concept[67]: Wrong Display Name 'Periodontal use' for http://snomed.info/sct#447052000. Valid display is 'Periodontal route (qualifier value)' (en) (for the language(s) 'en, en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+INFORMATION: ValueSet/BeRouteOfAdministrationVS: ValueSet.compose.include[0].concept[68]: Wrong Display Name 'Periosseous use' for http://snomed.info/sct#420047004. Valid display is 'Periosteal route (qualifier value)' (en) (for the language(s) 'en, en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+INFORMATION: ValueSet/BeRouteOfAdministrationVS: ValueSet.compose.include[0].concept[69]: Wrong Display Name 'Peritumoral use' for http://snomed.info/sct#58811000052103. Valid display is 'Peritumoral route (qualifier value)' (en) (for the language(s) 'en, en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+INFORMATION: ValueSet/BeRouteOfAdministrationVS: ValueSet.compose.include[0].concept[70]: Wrong Display Name 'Posterior juxtascleral use' for http://snomed.info/sct#58821000052106. Valid display is 'Posterior juxtascleral route (qualifier value)' (en) (for the language(s) 'en, en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+INFORMATION: ValueSet/BeRouteOfAdministrationVS: ValueSet.compose.include[0].concept[72]: Wrong Display Name 'Inhalation use' for http://snomed.info/sct#447694001. Valid display is 'Respiratory tract route (qualifier value)' (en) (for the language(s) 'en, en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+INFORMATION: ValueSet/BeRouteOfAdministrationVS: ValueSet.compose.include[0].concept[78]: Wrong Display Name 'Subretinal use' for http://snomed.info/sct#58831000052108. Valid display is 'Subretinal route (qualifier value)' (en) (for the language(s) 'en, en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+INFORMATION: ValueSet/BeRouteOfAdministrationVS: ValueSet.compose.include[0].concept[79]: Wrong Display Name 'Local use' for http://snomed.info/sct#6064005. Valid display is 'Topical route' (en) (for the language(s) 'en, en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+== fsh-generated/resources/ValueSet-be-vs-dispenser-types.json ==

@@ -1,0 +1,52 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatus",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "BeMedicationLineAdherenceStatus",
+      "title" : "Medication Line Adherence Status",
+      "description" : "Medication Line Adherence Status - ValueSet."
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatusReason",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "BeMedicationLineAdherenceStatusReason",
+      "title" : "Adherence Status Reason",
+      "description" : "Reasons for non-adherence to a treatment or intervention."
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineOriginType",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "BeMedicationLineOriginType",
+      "title" : "Medication origin Type",
+      "description" : "Medication origin type"
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineRegistrationStatus",
+      "version" : "1.1.0",
+      "status" : "draft",
+      "name" : "BeMedicationLineRegistrationStatus",
+      "title" : "Medication Line Registration Status",
+      "description" : "This code system defines the registration statuses for medication lines."
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationRequestReimbursementType",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "BeMedicationRequestReimbursementType",
+      "title" : "Medication request reimbursement type",
+      "description" : "Medication request reimbursement type - instructions for reimbursement of the medication request"
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationType",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "BeMedicationType",
+      "title" : "Medication preparation Type",
+      "description" : "Medication preparation type"
+    }
+  ]
+}

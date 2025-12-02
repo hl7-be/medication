@@ -1,0 +1,125 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/BeMedicationLineAdherenceStatusReason> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "BeMedicationLineAdherenceStatusReason"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem BeMedicationLineAdherenceStatusReason</b></p><a name=\"BeMedicationLineAdherenceStatusReason\"> </a><a name=\"hcBeMedicationLineAdherenceStatusReason\"> </a><p>This case-sensitive code system <code>https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatusReason</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">medprec<a name=\"BeMedicationLineAdherenceStatusReason-medprec\"> </a></td><td>Medical precaution</td></tr><tr><td style=\"white-space:nowrap\">immune<a name=\"BeMedicationLineAdherenceStatusReason-immune\"> </a></td><td>Already immune</td></tr><tr><td style=\"white-space:nowrap\">patobj<a name=\"BeMedicationLineAdherenceStatusReason-patobj\"> </a></td><td>Patient objection</td></tr><tr><td style=\"white-space:nowrap\">ostock<a name=\"BeMedicationLineAdherenceStatusReason-ostock\"> </a></td><td>Out of stock</td></tr><tr><td style=\"white-space:nowrap\">allergy<a name=\"BeMedicationLineAdherenceStatusReason-allergy\"> </a></td><td>Allergy</td></tr><tr><td style=\"white-space:nowrap\">modified<a name=\"BeMedicationLineAdherenceStatusReason-modified\"> </a></td><td>Treatment modified</td></tr><tr><td style=\"white-space:nowrap\">other<a name=\"BeMedicationLineAdherenceStatusReason-other\"> </a></td><td>Other</td></tr></table><p><b>Additional Language Displays</b></p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>French (Belgium) (fr)</b></td><td><b>Nederlands (België) (Dutch (Belgium), nl)</b></td></tr><tr><td>medprec</td><td>Le patient présente actuellement un état médical pour lequel le traitement est contre-indiqué ou pour lequel une précaution est justifiée</td><td>De patiënt heeft momenteel een medische toestand waarvoor de behandeling gecontra-indiceerd is of waarvoor voorzichtigheid geboden is</td></tr><tr><td>immune</td><td>Les tests ont montré que le patient était déjà immunisé contre l’agent ciblé</td><td>Tests hebben aangetoond dat de patiënt al immuun was voor het gerichte agens</td></tr><tr><td>patobj</td><td>Le patient refuse de suivre le traitement</td><td>De patiënt weigert de behandeling te volgen</td></tr><tr><td>ostock</td><td>Le produit n’est pas disponible</td><td>Het product is niet beschikbaar</td></tr><tr><td>allergy</td><td>Le patient est allergique à au moins un des composants du médicament.</td><td>De patiënt is allergisch voor minstens één van de bestanddelen van het geneesmiddel</td></tr><tr><td>modified</td><td>Le traitement a été modifié</td><td>De behandeling werd aangepast</td></tr><tr><td>other</td><td>Autre situation</td><td>Andere situatie</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatusReason"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.1.0"] ; # 
+  fhir:name [ fhir:v "BeMedicationLineAdherenceStatusReason"] ; # 
+  fhir:title [ fhir:v "Adherence Status Reason"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-07-20T21:36:53+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 Belgium"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Belgium" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.hl7belgium.org" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "hl7belgium@hl7belgium.org" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Message Structure eHealth" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "message-structure@ehealth.fgov.be" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Reasons for non-adherence to a treatment or intervention."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "BE" ] ;
+       fhir:display [ fhir:v "Belgium" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "7"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "medprec" ] ;
+     fhir:display [ fhir:v "Medical precaution" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "fr-BE" ] ;
+       fhir:value [ fhir:v "Le patient présente actuellement un état médical pour lequel le traitement est contre-indiqué ou pour lequel une précaution est justifiée" ]
+     ] [
+       fhir:language [ fhir:v "nl-BE" ] ;
+       fhir:value [ fhir:v "De patiënt heeft momenteel een medische toestand waarvoor de behandeling gecontra-indiceerd is of waarvoor voorzichtigheid geboden is" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "immune" ] ;
+     fhir:display [ fhir:v "Already immune" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "fr-BE" ] ;
+       fhir:value [ fhir:v "Les tests ont montré que le patient était déjà immunisé contre l’agent ciblé" ]
+     ] [
+       fhir:language [ fhir:v "nl-BE" ] ;
+       fhir:value [ fhir:v "Tests hebben aangetoond dat de patiënt al immuun was voor het gerichte agens" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "patobj" ] ;
+     fhir:display [ fhir:v "Patient objection" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "fr-BE" ] ;
+       fhir:value [ fhir:v "Le patient refuse de suivre le traitement" ]
+     ] [
+       fhir:language [ fhir:v "nl-BE" ] ;
+       fhir:value [ fhir:v "De patiënt weigert de behandeling te volgen" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "ostock" ] ;
+     fhir:display [ fhir:v "Out of stock" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "fr-BE" ] ;
+       fhir:value [ fhir:v "Le produit n’est pas disponible" ]
+     ] [
+       fhir:language [ fhir:v "nl-BE" ] ;
+       fhir:value [ fhir:v "Het product is niet beschikbaar" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "allergy" ] ;
+     fhir:display [ fhir:v "Allergy" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "fr-BE" ] ;
+       fhir:value [ fhir:v "Le patient est allergique à au moins un des composants du médicament." ]
+     ] [
+       fhir:language [ fhir:v "nl-BE" ] ;
+       fhir:value [ fhir:v "De patiënt is allergisch voor minstens één van de bestanddelen van het geneesmiddel" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "modified" ] ;
+     fhir:display [ fhir:v "Treatment modified" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "fr-BE" ] ;
+       fhir:value [ fhir:v "Le traitement a été modifié" ]
+     ] [
+       fhir:language [ fhir:v "nl-BE" ] ;
+       fhir:value [ fhir:v "De behandeling werd aangepast" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "other" ] ;
+     fhir:display [ fhir:v "Other" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "fr-BE" ] ;
+       fhir:value [ fhir:v "Autre situation" ]
+     ] [
+       fhir:language [ fhir:v "nl-BE" ] ;
+       fhir:value [ fhir:v "Andere situatie" ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

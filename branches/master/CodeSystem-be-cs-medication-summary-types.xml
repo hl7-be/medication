@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="be-cs-medication-summary-types"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system https://www.hl7belgium.be/fhir/CodeSystem/be-cs-medication-summary-types defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">kmehr-ms-5.6<a name="be-cs-medication-summary-types-kmehr-ms-5.466"> </a></td><td>Belgian Medication Schema v5.6 - 09/2018</td></tr><tr><td style="white-space:nowrap">kmehr-ms-5.5<a name="be-cs-medication-summary-types-kmehr-ms-5.465"> </a></td><td>Belgian Medication Schema v5.5 - 12-2017</td></tr></table></div>
+  </text>
+  <url value="https://www.hl7belgium.be/fhir/CodeSystem/be-cs-medication-summary-types"/>
+  <version value="0.2.0"/>
+  <name value="BeCSMedicationSummaryTypes"/>
+  <title value="Medication Summary types"/>
+  <status value="active"/>
+  <date value="2021-10-27T14:10:56+00:00"/>
+  <publisher value="HL7 Belgium"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7belgium.org"/>
+    </telecom>
+  </contact>
+  <description value="CodeSystem - Medication Summary types"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="056"/>
+    </coding>
+    <text value="Belgium"/>
+  </jurisdiction>
+  <content value="complete"/>
+  <count value="2"/>
+  <concept>
+    <code value="kmehr-ms-5.6"/>
+    <display value="Belgian Medication Schema v5.6 - 09/2018"/>
+  </concept>
+  <concept>
+    <code value="kmehr-ms-5.5"/>
+    <display value="Belgian Medication Schema v5.5 - 12-2017"/>
+  </concept>
+</CodeSystem>

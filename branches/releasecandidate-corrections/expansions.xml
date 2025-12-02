@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="f7504df7-24c5-49f1-82e6-5eff0a1e1252"/>
+  <meta>
+    <lastUpdated value="2022-03-29T12:11:46.605+00:00"/>
+  </meta>
+  <type value="collection"/>
+  <entry>
+    <fullUrl value="https://www.hl7belgium.org/fhir/ValueSet/be-vs-dispenser-types"/>
+    <resource>
+      <ValueSet>
+        <id value="be-vs-dispenser-types"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 7 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-cd-hcparty.html">HCParty v0.2.0 (CodeSystem)</a>
+            </p>
+            <p>All codes in this table are from the system 
+              <a href="CodeSystem-cd-hcparty.html">
+                <code>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-hcparty</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.ehealth.fgov.be-standards-fhir-CodeSystem-cd-hcparty-deptpharmacy"> </a>  
+                  <a href="CodeSystem-cd-hcparty.html#cd-hcparty-deptpharmacy">deptpharmacy</a>
+                </td>
+                <td>Pharmacy service or department within an organisation</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.ehealth.fgov.be-standards-fhir-CodeSystem-cd-hcparty-perspharmacist"> </a>  
+                  <a href="CodeSystem-cd-hcparty.html#cd-hcparty-perspharmacist">perspharmacist</a>
+                </td>
+                <td>pharmacist</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.ehealth.fgov.be-standards-fhir-CodeSystem-cd-hcparty-orgpharmacy"> </a>  
+                  <a href="CodeSystem-cd-hcparty.html#cd-hcparty-orgpharmacy">orgpharmacy</a>
+                </td>
+                <td>Independent pharmacy</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.ehealth.fgov.be-standards-fhir-CodeSystem-cd-hcparty-perspharmacyassistant"> </a>  
+                  <a href="CodeSystem-cd-hcparty.html#cd-hcparty-perspharmacyassistant">perspharmacyassistant</a>
+                </td>
+                <td>pharmacy assistant</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.ehealth.fgov.be-standards-fhir-CodeSystem-cd-hcparty-perspharmacistclinicalbiologist"> </a>  
+                  <a href="CodeSystem-cd-hcparty.html#cd-hcparty-perspharmacistclinicalbiologist">perspharmacistclinicalbiologist</a>
+                </td>
+                <td>pharmacist-clinical biologist</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.ehealth.fgov.be-standards-fhir-CodeSystem-cd-hcparty-persdentist"> </a>  
+                  <a href="CodeSystem-cd-hcparty.html#cd-hcparty-persdentist">persdentist</a>
+                </td>
+                <td>dentist</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.ehealth.fgov.be-standards-fhir-CodeSystem-cd-hcparty-deptdentistry"> </a>  
+                  <a href="CodeSystem-cd-hcparty.html#cd-hcparty-deptdentistry">deptdentistry</a>
+                </td>
+                <td>dentistry</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.hl7belgium.org/fhir/ValueSet/be-vs-dispenser-types"/>
+        <version value="0.2.0"/>
+        <name value="DispenserTypes"/>
+        <title value="Dispenser Types"/>
+        <status value="active"/>
+        <date value="2022-03-29T12:11:46+00:00"/>
+        <publisher value="HL7 Belgium"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+            <value value="http://hl7belgium.org"/>
+          </telecom>
+        </contact>
+        <description value="Dispenser Types - from hcparty"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="056"/>
+          </coding>
+          <text value="Belgium"/>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:5f00de4f-92b0-4d98-a06f-eb15eac34ded"/>
+          <timestamp value="2022-03-29T12:12:16+00:00"/>
+          <total value="7"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-hcparty|0.2.0"/>
+          </parameter>
+          <contains>
+            <system value="https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-hcparty"/>
+            <code value="deptpharmacy"/>
+            <display value="Pharmacy service or department within an organisation"/>
+          </contains>
+          <contains>
+            <system value="https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-hcparty"/>
+            <code value="perspharmacist"/>
+            <display value="pharmacist"/>
+          </contains>
+          <contains>
+            <system value="https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-hcparty"/>
+            <code value="orgpharmacy"/>
+            <display value="Independent pharmacy"/>
+          </contains>
+          <contains>
+            <system value="https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-hcparty"/>
+            <code value="perspharmacyassistant"/>
+            <display value="pharmacy assistant"/>
+          </contains>
+          <contains>
+            <system value="https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-hcparty"/>
+            <code value="perspharmacistclinicalbiologist"/>
+            <display value="pharmacist-clinical biologist"/>
+          </contains>
+          <contains>
+            <system value="https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-hcparty"/>
+            <code value="persdentist"/>
+            <display value="dentist"/>
+          </contains>
+          <contains>
+            <system value="https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-hcparty"/>
+            <code value="deptdentistry"/>
+            <display value="dentistry"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+</Bundle>

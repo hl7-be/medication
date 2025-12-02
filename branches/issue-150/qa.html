@@ -1,0 +1,663 @@
+﻿<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- broken links = errors = 0, warn = 11, info = 11, 89 -->
+<head>
+  <title>Medication : Validation Results</title>
+  <link href="fhir.css" rel="stylesheet"/>
+  <style>
+    span.flip  { background-color: #4CAF50; color: white; border: solid 1px #a6d8a8; padding: 2px }
+    span.toggle  { background-color: #e6f2ff; color: black; border: solid 1px #0056b3; padding: 2px; font-size: 10px }
+    span.toggle  { font-size: 10px }
+  </style>
+  <script>
+    function flip(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Reasoning') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Reasoning';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Reasoning';
+      }
+    }
+    function toggle(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Validation Information') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Validation Information';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Validation Information';
+      }
+    }
+  </script>
+</head>
+<body style="margin: 20px; background-color: #ffffff">
+ <h1>Validation Results for Medication</h1>
+ <p>Generated Mon Oct 17 09:08:29 UTC 2022, FHIR version 4.0.1 for hl7.fhir.be.medication#1.0.1 (canonical = <a href="https://www.ehealth.fgov.be/standards/fhir/medication">https://www.ehealth.fgov.be/standards/fhir/medication</a> (<a href="https://www.ehealth.fgov.be/standards/fhir/medication/history.html">history</a>)). See <a href="qa.min.html">Errors Only</a></p>
+<table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
+ <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.2.7</span></td></tr>
+ <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = hl7.fhir.be.medication, Canonical = https://www.ehealth.fgov.be/standards/fhir/medication</td></tr>
+ <tr><td>Realm Check for n/a:</td><td><span style="color: maroon; font-weight: bold"></span><ul><li>n/a</li></ul></td></tr>
+ <tr><td>Version Check:</td><td>1.0.1: <span stlye="color: marron; font-weight: bold">No entry in the package-list.json file for this version</span></td></tr>
+ <tr><td>Supressed Messages:</td><td><a href="#suppressed">2 Suppressed Issues</a>
+</td></tr>
+ <tr><td>Dependency Checks:</td><td><div><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The NPM Package Id">Package</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of the package">Version</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of FHIR that the package is based on">FHIR Release</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Canonical URL">Canonical</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Web Reference Base">Web Base</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Comments about this entry">Comment</span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/github/workspace/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.fhir.be.medication</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1.0.1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">4.0.1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">https://www.ehealth.fgov.be/standards/fhir/medication</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/github/workspace/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.fhir.be.core</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">2.0.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="Outdated Release">O</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">4.0.1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">https://www.ehealth.fgov.be/standards/fhir/core</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">https://www.ehealth.fgov.be/standards/fhir/core/2.0.0</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Latest Release is 2.0.1</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/github/workspace/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAJUlEQVR4Xu3IIQEAAAgDsHd9/w4EQIOamFnaBgAA4MMKAACAKwNp30CqZFfFmwAAAABJRU5ErkJggg==)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzME+lXFigAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+3OsRUAIAjEUOL+O8cJABttJM11/x1qZAGqRBEVcNIqdWj1efDqQbb3HwwwwEfABmQUHSPM9dtDAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.terminology</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">3.1.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="Outdated Release">O</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">4.0.1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org/3.1.0</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Latest Release is 4.0.0</td></tr>
+</table><para>Templates: hl7.be-medication.fhir.template#0.0.1 -&gt; hl7.be.fhir.template#0.0.1 -&gt; fhir.base.template#0.2.2</para></div></td></tr>
+ <tr><td>Dependent IGs:</td><td><a href="qa-dep.html">1 guide</a></td></tr>
+ <tr><td>Global Profiles:</td><td>(none declared)</td></tr>
+ <tr><td>Publication Rules:</td><td>Code = n/a. n/a - not an HL7.org or FHIR.org implementation guide
+ <br/><br/>The copyrightYear parameter ('2021+') in the IG resource is good</td></tr>
+ <tr><td>HTA Analysis:</td><td><a href="qa-hta.html">All OK</a></td></tr>
+ <tr><td>R5 Dependencies:</td><td><span style="color: grey">(none)</span></td></tr>
+ <tr><td>Modifier Extensions:</td><td><span style="color: grey">(none)</span></td></tr>
+ <tr><td>Previous Version Comparison:</td><td> <a href="comparison-v1.0.0/index.html">Comparison with version 1.0.0</a></td></tr>
+ <tr><td>IPA Comparison:</td><td> n/a</td></tr>
+ <tr><td>Summary:</td><td> errors = 0, warn = 11, info = 11, broken links = 89</td></tr>
+</table>
+ <table class="grid">
+   <tr>
+     <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>89</b></td><td><b>6</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_ImplementationGuide-hl7.fhir.be.medication"><b>/github/workspace/fsh-generated/resources/ImplementationGuide-hl7.fhir.be.medication</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_MedicationDispense-example-dispense-communitypharmacy-1med"><b>/github/workspace/fsh-generated/resources/MedicationDispense-example-dispense-communitypharmacy-1med</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_MedicationDispense-example-dispense-hospital"><b>/github/workspace/fsh-generated/resources/MedicationDispense-example-dispense-hospital</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_MedicationDispense-example-dispense-with-atc"><b>/github/workspace/fsh-generated/resources/MedicationDispense-example-dispense-with-atc</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_MedicationDispense-example-minimal-dispense"><b>/github/workspace/fsh-generated/resources/MedicationDispense-example-minimal-dispense</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_MedicationDispense-medication-dispense-example-2"><b>/github/workspace/fsh-generated/resources/MedicationDispense-medication-dispense-example-2</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>3</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_NamingSystem-be-ns-cnk-codes"><b>/github/workspace/fsh-generated/resources/NamingSystem-be-ns-cnk-codes</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_NamingSystem-be-ns-cti-extended-code"><b>/github/workspace/fsh-generated/resources/NamingSystem-be-ns-cti-extended-code</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_NamingSystem-be-ns-prescription-ids"><b>/github/workspace/fsh-generated/resources/NamingSystem-be-ns-prescription-ids</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_NamingSystem-be-ns-product-package-type"><b>/github/workspace/fsh-generated/resources/NamingSystem-be-ns-product-package-type</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_Organization-apotheek-onder-de-toren"><b>/github/workspace/fsh-generated/resources/Organization-apotheek-onder-de-toren</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-be-medicationdispense"><b>/github/workspace/fsh-generated/resources/StructureDefinition-be-medicationdispense</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-be-model-medication-dispense"><b>/github/workspace/fsh-generated/resources/StructureDefinition-be-model-medication-dispense</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_ValueSet-be-vs-dispenser-types"><b>/github/workspace/fsh-generated/resources/ValueSet-be-vs-dispenser-types</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="internal"> </a>
+<h2><a href="">n/a</a> <span id="sv" class="toggle" onclick="toggle('v')">Show Validation Information</span> <span class="vcount" onclick="toggle('v')"></span></h2>
+ <div style="border: 1px grey solid; display: none" id="v"></div>
+ <table class="grid">
+   <tr style="background-color: #ffebcc">
+     <td><b>ImplementationGuide.url</b></td><td><b>warning</b></td><td title=""><b>The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Organization/apotheek-onder-de-toren.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="MedicationDispense-example-dispense-communitypharmacy-1med.change.history.html#l301">output/MedicationDispense-example-dispense-communitypharmacy-1med.change.history.html#/html/body/div/div/ul/span/a at Line 203, column 14</a></b></td><td><b>error</b></td><td><b>The link '#bottom' for &quot;bottom&quot; cannot be resolved (valid targets: [project-logo, segment-header, project-nav, publish-box, hl7-logo, fhir-nav, segment-post-footer, ig-search, hl7-search-lnk, fhir-logo, ig-status, top, root, stripe, segment-footer, ig-nav, segment-navbar, segment-content, segment-breadcrumb, -medicationdispenseexample-dispense-communitypharmacy-1med-change-history])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="MedicationDispense-example-dispense-communitypharmacy-1med.html#l311">output/MedicationDispense-example-dispense-communitypharmacy-1med.html#/html/body/div/div/ul/span/a at Line 201, column 14</a></b></td><td><b>error</b></td><td><b>The link '#bottom' for &quot;bottom&quot; cannot be resolved (valid targets: [project-logo, dosageinstructions, segment-header, project-nav, publish-box, hl7-logo, fhir-nav, segment-post-footer, ig-search, hl7-search-lnk, fhir-logo, example-medicationdispense-dispense-entry-example-community-pharmacy-dispense-from-prescription, ig-status, top, example-dispense-communitypharmacy-1med, root, stripe, segment-footer, ig-nav, segment-navbar, segment-content, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="MedicationDispense-example-dispense-communitypharmacy-1med.json.html#l311">output/MedicationDispense-example-dispense-communitypharmacy-1med.json.html#/html/body/div/div/ul/span/a at Line 203, column 14</a></b></td><td><b>error</b></td><td><b>The link '#bottom' for &quot;bottom&quot; cannot be resolved (valid targets: [-dispense-entry-example-community-pharmacy-dispense-from-prescription-json-representation, project-logo, segment-header, project-nav, publish-box, hl7-logo, fhir-nav, segment-post-footer, ig-search, hl7-search-lnk, fhir-logo, ig-status, top, root, end-xhtml, stripe, segment-footer, ig-nav, segment-navbar, segment-content, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="MedicationDispense-example-dispense-communitypharmacy-1med.ttl.html#l311">output/MedicationDispense-example-dispense-communitypharmacy-1med.ttl.html#/html/body/div/div/ul/span/a at Line 203, column 14</a></b></td><td><b>error</b></td><td><b>The link '#bottom' for &quot;bottom&quot; cannot be resolved (valid targets: [project-logo, segment-header, project-nav, publish-box, hl7-logo, fhir-nav, segment-post-footer, ig-search, hl7-search-lnk, -dispense-entry-example-community-pharmacy-dispense-from-prescription-ttl-representation, fhir-logo, ig-status, top, root, stripe, segment-footer, ig-nav, segment-navbar, segment-content, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="MedicationDispense-example-dispense-communitypharmacy-1med.xml.html#l311">output/MedicationDispense-example-dispense-communitypharmacy-1med.xml.html#/html/body/div/div/ul/span/a at Line 203, column 14</a></b></td><td><b>error</b></td><td><b>The link '#bottom' for &quot;bottom&quot; cannot be resolved (valid targets: [project-logo, segment-header, project-nav, publish-box, hl7-logo, fhir-nav, segment-post-footer, ig-search, hl7-search-lnk, fhir-logo, ig-status, top, root, -dispense-entry-example-community-pharmacy-dispense-from-prescription-xml-representation, end-xhtml, stripe, segment-footer, ig-nav, segment-navbar, segment-content, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="MedicationDispense-example-dispense-hospital.change.history.html#l301">output/MedicationDispense-example-dispense-hospital.change.history.html#/html/body/div/div/ul/span/a at Line 203, column 14</a></b></td><td><b>error</b></td><td><b>The link '#bottom' for &quot;bottom&quot; cannot be resolved (valid targets: [-medicationdispenseexample-dispense-hospital-change-history, project-logo, segment-header, project-nav, publish-box, hl7-logo, fhir-nav, segment-post-footer, ig-search, hl7-search-lnk, fhir-logo, ig-status, top, root, stripe, segment-footer, ig-nav, segment-navbar, segment-content, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="MedicationDispense-example-dispense-hospital.html#l311">output/MedicationDispense-example-dispense-hospital.html#/html/body/div/div/ul/span/a at Line 201, column 14</a></b></td><td><b>error</b></td><td><b>The link '#bottom' for &quot;bottom&quot; cannot be resolved (valid targets: [example-dispense-hospital, project-logo, performers, dosageinstructions, segment-header, project-nav, publish-box, hl7-logo, fhir-nav, segment-post-footer, ig-search, hl7-search-lnk, example-medicationdispense-a-dispense-from-a-hospital-pharmacy, fhir-logo, ig-status, top, root, stripe, segment-footer, ig-nav, segment-navbar, segment-content, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="MedicationDispense-example-dispense-hospital.json.html#l311">output/MedicationDispense-example-dispense-hospital.json.html#/html/body/div/div/ul/span/a at Line 203, column 14</a></b></td><td><b>error</b></td><td><b>The link '#bottom' for &quot;bottom&quot; cannot be resolved (valid targets: [project-logo, segment-header, project-nav, publish-box, hl7-logo, fhir-nav, segment-post-footer, ig-search, hl7-search-lnk, -a-dispense-from-a-hospital-pharmacy-json-representation, fhir-logo, ig-status, top, root, end-xhtml, stripe, segment-footer, ig-nav, segment-navbar, segment-content, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="MedicationDispense-example-dispense-hospital.ttl.html#l311">output/MedicationDispense-example-dispense-hospital.ttl.html#/html/body/div/div/ul/span/a at Line 203, column 14</a></b></td><td><b>error</b></td><td><b>The link '#bottom' for &quot;bottom&quot; cannot be resolved (valid targets: [project-logo, segment-header, project-nav, publish-box, hl7-logo, fhir-nav, segment-post-footer, ig-search, hl7-search-lnk, fhir-logo, ig-status, top, root, stripe, segment-footer, ig-nav, -a-dispense-from-a-hospital-pharmacy-ttl-representation, segment-navbar, segment-content, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="MedicationDispense-example-dispense-hospital.xml.html#l311">output/MedicationDispense-example-dispense-hospital.xml.html#/html/body/div/div/ul/span/a at Line 203, column 14</a></b></td><td><b>error</b></td><td><b>The link '#bottom' for &quot;bottom&quot; cannot be resolved (valid targets: [project-logo, segment-header, project-nav, publish-box, hl7-logo, fhir-nav, segment-post-footer, ig-search, hl7-search-lnk, fhir-logo, ig-status, top, root, end-xhtml, stripe, -a-dispense-from-a-hospital-pharmacy-xml-representation, segment-footer, ig-nav, segment-navbar, segment-content, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="MedicationDispense-example-dispense-with-atc.change.history.html#l301">output/MedicationDispense-example-dispense-with-atc.change.history.html#/html/body/div/div/ul/span/a at Line 203, column 14</a></b></td><td><b>error</b></td><td><b>The link '#bottom' for &quot;bottom&quot; cannot be resolved (valid targets: [project-logo, segment-header, project-nav, publish-box, hl7-logo, fhir-nav, segment-post-footer, ig-search, hl7-search-lnk, fhir-logo, ig-status, top, root, stripe, segment-footer, -medicationdispenseexample-dispense-with-atc-change-history, ig-nav, segment-navbar, segment-content, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="MedicationDispense-example-dispense-with-atc.html#l311">output/MedicationDispense-example-dispense-with-atc.html#/html/body/div/div/ul/span/a at Line 201, column 14</a></b></td><td><b>error</b></td><td><b>The link '#bottom' for &quot;bottom&quot; cannot be resolved (valid targets: [project-logo, performers, segment-header, project-nav, publish-box, hl7-logo, example-medicationdispense-dispense-example-minimal-amount-of-information, fhir-nav, segment-post-footer, ig-search, hl7-search-lnk, example-dispense-with-atc, fhir-logo, ig-status, top, root, stripe, segment-footer, ig-nav, segment-navbar, segment-content, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="MedicationDispense-example-dispense-with-atc.json.html#l311">output/MedicationDispense-example-dispense-with-atc.json.html#/html/body/div/div/ul/span/a at Line 203, column 14</a></b></td><td><b>error</b></td><td><b>The link '#bottom' for &quot;bottom&quot; cannot be resolved (valid targets: [project-logo, segment-header, project-nav, publish-box, hl7-logo, fhir-nav, segment-post-footer, ig-search, hl7-search-lnk, fhir-logo, ig-status, top, root, end-xhtml, stripe, segment-footer, ig-nav, -dispense-example-minimal-amount-of-information-json-representation, segment-navbar, segment-content, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="MedicationDispense-example-dispense-with-atc.ttl.html#l311">output/MedicationDispense-example-dispense-with-atc.ttl.html#/html/body/div/div/ul/span/a at Line 203, column 14</a></b></td><td><b>error</b></td><td><b>The link '#bottom' for &quot;bottom&quot; cannot be resolved (valid targets: [project-logo, segment-header, project-nav, publish-box, hl7-logo, fhir-nav, segment-post-footer, ig-search, hl7-search-lnk, -dispense-example-minimal-amount-of-information-ttl-representation, fhir-logo, ig-status, top, root, stripe, segment-footer, ig-nav, segment-navbar, segment-content, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="MedicationDispense-example-dispense-with-atc.xml.html#l311">output/MedicationDispense-example-dispense-with-atc.xml.html#/html/body/div/div/ul/span/a at Line 203, column 14</a></b></td><td><b>error</b></td><td><b>The link '#bottom' for &quot;bottom&quot; cannot be resolved (valid targets: [project-logo, segment-header, -dispense-example-minimal-amount-of-information-xml-representation, project-nav, publish-box, hl7-logo, fhir-nav, segment-post-footer, ig-search, hl7-search-lnk, fhir-logo, ig-status, top, root, end-xhtml, stripe, segment-footer, ig-nav, segment-navbar, segment-content, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="MedicationDispense-example-minimal-dispense.change.history.html#l301">output/MedicationDispense-example-minimal-dispense.change.history.html#/html/body/div/div/ul/span/a at Line 203, column 14</a></b></td><td><b>error</b></td><td><b>The link '#bottom' for &quot;bottom&quot; cannot be resolved (valid targets: [project-logo, segment-header, project-nav, publish-box, hl7-logo, fhir-nav, segment-post-footer, ig-search, hl7-search-lnk, fhir-logo, ig-status, top, -medicationdispenseexample-minimal-dispense-change-history, root, stripe, segment-footer, ig-nav, segment-navbar, segment-content, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="MedicationDispense-example-minimal-dispense.html#l311">output/MedicationDispense-example-minimal-dispense.html#/html/body/div/div/ul/span/a at Line 201, column 14</a></b></td><td><b>error</b></td><td><b>The link '#bottom' for &quot;bottom&quot; cannot be resolved (valid targets: [project-logo, performers, segment-header, project-nav, publish-box, hl7-logo, example-medicationdispense-dispense-example-minimal-amount-of-information, fhir-nav, segment-post-footer, ig-search, hl7-search-lnk, fhir-logo, ig-status, top, root, stripe, segment-footer, ig-nav, segment-navbar, segment-content, example-minimal-dispense, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="MedicationDispense-example-minimal-dispense.json.html#l311">output/MedicationDispense-example-minimal-dispense.json.html#/html/body/div/div/ul/span/a at Line 203, column 14</a></b></td><td><b>error</b></td><td><b>The link '#bottom' for &quot;bottom&quot; cannot be resolved (valid targets: [project-logo, segment-header, project-nav, publish-box, hl7-logo, fhir-nav, segment-post-footer, ig-search, hl7-search-lnk, fhir-logo, ig-status, top, root, end-xhtml, stripe, segment-footer, ig-nav, -dispense-example-minimal-amount-of-information-json-representation, segment-navbar, segment-content, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="MedicationDispense-example-minimal-dispense.ttl.html#l311">output/MedicationDispense-example-minimal-dispense.ttl.html#/html/body/div/div/ul/span/a at Line 203, column 14</a></b></td><td><b>error</b></td><td><b>The link '#bottom' for &quot;bottom&quot; cannot be resolved (valid targets: [project-logo, segment-header, project-nav, publish-box, hl7-logo, fhir-nav, segment-post-footer, ig-search, hl7-search-lnk, -dispense-example-minimal-amount-of-information-ttl-representation, fhir-logo, ig-status, top, root, stripe, segment-footer, ig-nav, segment-navbar, segment-content, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="MedicationDispense-example-minimal-dispense.xml.html#l311">output/MedicationDispense-example-minimal-dispense.xml.html#/html/body/div/div/ul/span/a at Line 203, column 14</a></b></td><td><b>error</b></td><td><b>The link '#bottom' for &quot;bottom&quot; cannot be resolved (valid targets: [project-logo, segment-header, -dispense-example-minimal-amount-of-information-xml-representation, project-nav, publish-box, hl7-logo, fhir-nav, segment-post-footer, ig-search, hl7-search-lnk, fhir-logo, ig-status, top, root, end-xhtml, stripe, segment-footer, ig-nav, segment-navbar, segment-content, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="MedicationDispense-medication-dispense-example-2.change.history.html#l301">output/MedicationDispense-medication-dispense-example-2.change.history.html#/html/body/div/div/ul/span/a at Line 203, column 14</a></b></td><td><b>error</b></td><td><b>The link '#bottom' for &quot;bottom&quot; cannot be resolved (valid targets: [project-logo, segment-header, -medicationdispensemedication-dispense-example-2-change-history, project-nav, publish-box, hl7-logo, fhir-nav, segment-post-footer, ig-search, hl7-search-lnk, fhir-logo, ig-status, top, root, stripe, segment-footer, ig-nav, segment-navbar, segment-content, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="MedicationDispense-medication-dispense-example-2.html#l311">output/MedicationDispense-medication-dispense-example-2.html#/html/body/div/div/ul/span/a at Line 201, column 14</a></b></td><td><b>error</b></td><td><b>The link '#bottom' for &quot;bottom&quot; cannot be resolved (valid targets: [project-logo, performers, apotheek-onder-de-toren, dosageinstructions, segment-header, project-nav, publish-box, hl7-logo, fhir-nav, segment-post-footer, ig-search, hl7-search-lnk, fhir-logo, ig-status, top, root, stripe, segment-footer, ig-nav, segment-navbar, segment-content, example-medicationdispense-dispense-entry-example-community-pharmacy-dispense-from-prescription-with-contained-org, segment-breadcrumb, medication-dispense-example-2])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="MedicationDispense-medication-dispense-example-2.json.html#l311">output/MedicationDispense-medication-dispense-example-2.json.html#/html/body/div/div/ul/span/a at Line 203, column 14</a></b></td><td><b>error</b></td><td><b>The link '#bottom' for &quot;bottom&quot; cannot be resolved (valid targets: [project-logo, segment-header, -dispense-entry-example-community-pharmacy-dispense-from-prescription-with-contained-org-json-representation, project-nav, publish-box, hl7-logo, fhir-nav, segment-post-footer, ig-search, hl7-search-lnk, fhir-logo, ig-status, top, root, end-xhtml, stripe, segment-footer, ig-nav, segment-navbar, segment-content, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="MedicationDispense-medication-dispense-example-2.ttl.html#l311">output/MedicationDispense-medication-dispense-example-2.ttl.html#/html/body/div/div/ul/span/a at Line 203, column 14</a></b></td><td><b>error</b></td><td><b>The link '#bottom' for &quot;bottom&quot; cannot be resolved (valid targets: [project-logo, segment-header, project-nav, publish-box, hl7-logo, fhir-nav, segment-post-footer, ig-search, hl7-search-lnk, fhir-logo, ig-status, top, root, stripe, segment-footer, ig-nav, segment-navbar, segment-content, segment-breadcrumb, -dispense-entry-example-community-pharmacy-dispense-from-prescription-with-contained-org-ttl-representation])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="MedicationDispense-medication-dispense-example-2.xml.html#l311">output/MedicationDispense-medication-dispense-example-2.xml.html#/html/body/div/div/ul/span/a at Line 203, column 14</a></b></td><td><b>error</b></td><td><b>The link '#bottom' for &quot;bottom&quot; cannot be resolved (valid targets: [project-logo, segment-header, project-nav, publish-box, hl7-logo, fhir-nav, segment-post-footer, ig-search, hl7-search-lnk, fhir-logo, ig-status, top, root, -dispense-entry-example-community-pharmacy-dispense-from-prescription-with-contained-org-xml-representation, end-xhtml, stripe, segment-footer, ig-nav, segment-navbar, segment-content, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="NamingSystem-be-ns-cnk-codes.change.history.html#l301">output/NamingSystem-be-ns-cnk-codes.change.history.html#/html/body/div/div/ul/span/a at Line 203, column 14</a></b></td><td><b>error</b></td><td><b>The link '#bottom' for &quot;bottom&quot; cannot be resolved (valid targets: [project-logo, segment-header, -benscnk-change-history, project-nav, publish-box, hl7-logo, fhir-nav, segment-post-footer, ig-search, hl7-search-lnk, fhir-logo, ig-status, top, root, stripe, segment-footer, ig-nav, segment-navbar, segment-content, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="NamingSystem-be-ns-cnk-codes.html#l311">output/NamingSystem-be-ns-cnk-codes.html#/html/body/div/div/ul/span/a at Line 201, column 14</a></b></td><td><b>error</b></td><td><b>The link '#bottom' for &quot;bottom&quot; cannot be resolved (valid targets: [summary, project-logo, segment-header, project-nav, publish-box, identifiers, hl7-logo, fhir-nav, segment-post-footer, ig-search, hl7-search-lnk, fhir-logo, ig-status, top, root, namingsystem-be-ns-cnk-codes, stripe, segment-footer, ig-nav, segment-navbar, segment-content, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="NamingSystem-be-ns-cnk-codes.json.html#l311">output/NamingSystem-be-ns-cnk-codes.json.html#/html/body/div/div/ul/span/a at Line 203, column 14</a></b></td><td><b>error</b></td><td><b>The link '#bottom' for &quot;bottom&quot; cannot be resolved (valid targets: [project-logo, segment-header, project-nav, publish-box, hl7-logo, fhir-nav, segment-post-footer, ig-search, hl7-search-lnk, fhir-logo, ig-status, -be-ns-cnk-codes-json-representation, top, root, end-xhtml, stripe, segment-footer, ig-nav, segment-navbar, segment-content, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="NamingSystem-be-ns-cnk-codes.ttl.html#l311">output/NamingSystem-be-ns-cnk-codes.ttl.html#/html/body/div/div/ul/span/a at Line 203, column 14</a></b></td><td><b>error</b></td><td><b>The link '#bottom' for &quot;bottom&quot; cannot be resolved (valid targets: [project-logo, segment-header, project-nav, publish-box, hl7-logo, fhir-nav, segment-post-footer, ig-search, hl7-search-lnk, fhir-logo, -be-ns-cnk-codes-ttl-representation, ig-status, top, root, stripe, segment-footer, ig-nav, segment-navbar, segment-content, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="NamingSystem-be-ns-cnk-codes.xml.html#l311">output/NamingSystem-be-ns-cnk-codes.xml.html#/html/body/div/div/ul/span/a at Line 203, column 14</a></b></td><td><b>error</b></td><td><b>The link '#bottom' for &quot;bottom&quot; cannot be resolved (valid targets: [project-logo, segment-header, project-nav, publish-box, -be-ns-cnk-codes-xml-representation, hl7-logo, fhir-nav, segment-post-footer, ig-search, hl7-search-lnk, fhir-logo, ig-status, top, root, end-xhtml, stripe, segment-footer, ig-nav, segment-navbar, segment-content, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="NamingSystem-be-ns-cti-extended-code.change.history.html#l301">output/NamingSystem-be-ns-cti-extended-code.change.history.html#/html/body/div/div/ul/span/a at Line 203, column 14</a></b></td><td><b>error</b></td><td><b>The link '#bottom' for &quot;bottom&quot; cannot be resolved (valid targets: [project-logo, segment-header, project-nav, publish-box, hl7-logo, fhir-nav, segment-post-footer, ig-search, hl7-search-lnk, fhir-logo, ig-status, -bensctiextended-change-history, top, root, stripe, segment-footer, ig-nav, segment-navbar, segment-content, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="NamingSystem-be-ns-cti-extended-code.html#l311">output/NamingSystem-be-ns-cti-extended-code.html#/html/body/div/div/ul/span/a at Line 201, column 14</a></b></td><td><b>error</b></td><td><b>The link '#bottom' for &quot;bottom&quot; cannot be resolved (valid targets: [summary, project-logo, segment-header, project-nav, publish-box, identifiers, hl7-logo, fhir-nav, segment-post-footer, ig-search, hl7-search-lnk, fhir-logo, ig-status, top, namingsystem-be-ns-cti-extended-code, root, stripe, segment-footer, ig-nav, segment-navbar, segment-content, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="NamingSystem-be-ns-cti-extended-code.json.html#l311">output/NamingSystem-be-ns-cti-extended-code.json.html#/html/body/div/div/ul/span/a at Line 203, column 14</a></b></td><td><b>error</b></td><td><b>The link '#bottom' for &quot;bottom&quot; cannot be resolved (valid targets: [project-logo, segment-header, project-nav, publish-box, hl7-logo, fhir-nav, segment-post-footer, ig-search, hl7-search-lnk, fhir-logo, ig-status, top, root, end-xhtml, stripe, segment-footer, ig-nav, segment-navbar, segment-content, segment-breadcrumb, -be-ns-cti-extended-code-json-representation])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="NamingSystem-be-ns-cti-extended-code.ttl.html#l311">output/NamingSystem-be-ns-cti-extended-code.ttl.html#/html/body/div/div/ul/span/a at Line 203, column 14</a></b></td><td><b>error</b></td><td><b>The link '#bottom' for &quot;bottom&quot; cannot be resolved (valid targets: [project-logo, segment-header, project-nav, publish-box, hl7-logo, fhir-nav, segment-post-footer, ig-search, hl7-search-lnk, fhir-logo, ig-status, top, root, stripe, segment-footer, ig-nav, segment-navbar, segment-content, segment-breadcrumb, -be-ns-cti-extended-code-ttl-representation])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="NamingSystem-be-ns-cti-extended-code.xml.html#l311">output/NamingSystem-be-ns-cti-extended-code.xml.html#/html/body/div/div/ul/span/a at Line 203, column 14</a></b></td><td><b>error</b></td><td><b>The link '#bottom' for &quot;bottom&quot; cannot be resolved (valid targets: [project-logo, segment-header, project-nav, publish-box, hl7-logo, fhir-nav, segment-post-footer, -be-ns-cti-extended-code-xml-representation, ig-search, hl7-search-lnk, fhir-logo, ig-status, top, root, end-xhtml, stripe, segment-footer, ig-nav, segment-navbar, segment-content, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="NamingSystem-be-ns-prescription-ids.change.history.html#l301">output/NamingSystem-be-ns-prescription-ids.change.history.html#/html/body/div/div/ul/span/a at Line 203, column 14</a></b></td><td><b>error</b></td><td><b>The link '#bottom' for &quot;bottom&quot; cannot be resolved (valid targets: [project-logo, segment-header, project-nav, publish-box, -bensprescriptions-change-history, hl7-logo, fhir-nav, segment-post-footer, ig-search, hl7-search-lnk, fhir-logo, ig-status, top, root, stripe, segment-footer, ig-nav, segment-navbar, segment-content, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="NamingSystem-be-ns-prescription-ids.html#l311">output/NamingSystem-be-ns-prescription-ids.html#/html/body/div/div/ul/span/a at Line 201, column 14</a></b></td><td><b>error</b></td><td><b>The link '#bottom' for &quot;bottom&quot; cannot be resolved (valid targets: [summary, project-logo, segment-header, project-nav, publish-box, identifiers, hl7-logo, fhir-nav, segment-post-footer, ig-search, hl7-search-lnk, fhir-logo, ig-status, top, root, namingsystem-be-ns-prescription-ids, stripe, segment-footer, ig-nav, segment-navbar, segment-content, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="NamingSystem-be-ns-prescription-ids.json.html#l311">output/NamingSystem-be-ns-prescription-ids.json.html#/html/body/div/div/ul/span/a at Line 203, column 14</a></b></td><td><b>error</b></td><td><b>The link '#bottom' for &quot;bottom&quot; cannot be resolved (valid targets: [project-logo, segment-header, project-nav, publish-box, hl7-logo, fhir-nav, segment-post-footer, ig-search, hl7-search-lnk, fhir-logo, ig-status, -be-ns-prescription-ids-json-representation, top, root, end-xhtml, stripe, segment-footer, ig-nav, segment-navbar, segment-content, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="NamingSystem-be-ns-prescription-ids.ttl.html#l311">output/NamingSystem-be-ns-prescription-ids.ttl.html#/html/body/div/div/ul/span/a at Line 203, column 14</a></b></td><td><b>error</b></td><td><b>The link '#bottom' for &quot;bottom&quot; cannot be resolved (valid targets: [project-logo, segment-header, project-nav, publish-box, hl7-logo, fhir-nav, segment-post-footer, ig-search, hl7-search-lnk, fhir-logo, ig-status, top, -be-ns-prescription-ids-ttl-representation, root, stripe, segment-footer, ig-nav, segment-navbar, segment-content, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="NamingSystem-be-ns-prescription-ids.xml.html#l311">output/NamingSystem-be-ns-prescription-ids.xml.html#/html/body/div/div/ul/span/a at Line 203, column 14</a></b></td><td><b>error</b></td><td><b>The link '#bottom' for &quot;bottom&quot; cannot be resolved (valid targets: [project-logo, segment-header, project-nav, publish-box, hl7-logo, fhir-nav, segment-post-footer, ig-search, hl7-search-lnk, fhir-logo, ig-status, top, root, end-xhtml, stripe, segment-footer, ig-nav, segment-navbar, segment-content, segment-breadcrumb, -be-ns-prescription-ids-xml-representation])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="NamingSystem-be-ns-product-package-type.change.history.html#l301">output/NamingSystem-be-ns-product-package-type.change.history.html#/html/body/div/div/ul/span/a at Line 203, column 14</a></b></td><td><b>error</b></td><td><b>The link '#bottom' for &quot;bottom&quot; cannot be resolved (valid targets: [project-logo, segment-header, -bensproductpackage-change-history, project-nav, publish-box, hl7-logo, fhir-nav, segment-post-footer, ig-search, hl7-search-lnk, fhir-logo, ig-status, top, root, stripe, segment-footer, ig-nav, segment-navbar, segment-content, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="NamingSystem-be-ns-product-package-type.html#l311">output/NamingSystem-be-ns-product-package-type.html#/html/body/div/div/ul/span/a at Line 201, column 14</a></b></td><td><b>error</b></td><td><b>The link '#bottom' for &quot;bottom&quot; cannot be resolved (valid targets: [summary, namingsystem-be-ns-product-package-type, project-logo, segment-header, project-nav, publish-box, identifiers, hl7-logo, fhir-nav, segment-post-footer, ig-search, hl7-search-lnk, fhir-logo, ig-status, top, root, stripe, segment-footer, ig-nav, segment-navbar, segment-content, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="NamingSystem-be-ns-product-package-type.json.html#l311">output/NamingSystem-be-ns-product-package-type.json.html#/html/body/div/div/ul/span/a at Line 203, column 14</a></b></td><td><b>error</b></td><td><b>The link '#bottom' for &quot;bottom&quot; cannot be resolved (valid targets: [project-logo, segment-header, project-nav, publish-box, hl7-logo, fhir-nav, segment-post-footer, ig-search, hl7-search-lnk, fhir-logo, ig-status, top, -be-ns-product-package-type-json-representation, root, end-xhtml, stripe, segment-footer, ig-nav, segment-navbar, segment-content, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="NamingSystem-be-ns-product-package-type.ttl.html#l311">output/NamingSystem-be-ns-product-package-type.ttl.html#/html/body/div/div/ul/span/a at Line 203, column 14</a></b></td><td><b>error</b></td><td><b>The link '#bottom' for &quot;bottom&quot; cannot be resolved (valid targets: [project-logo, segment-header, project-nav, publish-box, hl7-logo, fhir-nav, segment-post-footer, ig-search, hl7-search-lnk, fhir-logo, ig-status, -be-ns-product-package-type-ttl-representation, top, root, stripe, segment-footer, ig-nav, segment-navbar, segment-content, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="NamingSystem-be-ns-product-package-type.xml.html#l311">output/NamingSystem-be-ns-product-package-type.xml.html#/html/body/div/div/ul/span/a at Line 203, column 14</a></b></td><td><b>error</b></td><td><b>The link '#bottom' for &quot;bottom&quot; cannot be resolved (valid targets: [project-logo, -be-ns-product-package-type-xml-representation, segment-header, project-nav, publish-box, hl7-logo, fhir-nav, segment-post-footer, ig-search, hl7-search-lnk, fhir-logo, ig-status, top, root, end-xhtml, stripe, segment-footer, ig-nav, segment-navbar, segment-content, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Organization-apotheek-onder-de-toren.change.history.html#l301">output/Organization-apotheek-onder-de-toren.change.history.html#/html/body/div/div/ul/span/a at Line 203, column 14</a></b></td><td><b>error</b></td><td><b>The link '#bottom' for &quot;bottom&quot; cannot be resolved (valid targets: [project-logo, segment-header, project-nav, publish-box, hl7-logo, fhir-nav, segment-post-footer, ig-search, hl7-search-lnk, fhir-logo, -organizationapotheek-onder-de-toren-change-history, ig-status, top, root, stripe, segment-footer, ig-nav, segment-navbar, segment-content, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Organization-apotheek-onder-de-toren.html#l311">output/Organization-apotheek-onder-de-toren.html#/html/body/div/div/ul/span/a at Line 201, column 14</a></b></td><td><b>error</b></td><td><b>The link '#bottom' for &quot;bottom&quot; cannot be resolved (valid targets: [project-logo, apotheek-onder-de-toren, segment-header, project-nav, publish-box, hl7-logo, fhir-nav, segment-post-footer, ig-search, hl7-search-lnk, fhir-logo, ig-status, top, root, stripe, segment-footer, ig-nav, segment-navbar, segment-content, segment-breadcrumb, example-organization-apotheek-onder-de-toren])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Organization-apotheek-onder-de-toren.json.html#l311">output/Organization-apotheek-onder-de-toren.json.html#/html/body/div/div/ul/span/a at Line 203, column 14</a></b></td><td><b>error</b></td><td><b>The link '#bottom' for &quot;bottom&quot; cannot be resolved (valid targets: [-apotheek-onder-de-toren-json-representation, project-logo, segment-header, project-nav, publish-box, hl7-logo, fhir-nav, segment-post-footer, ig-search, hl7-search-lnk, fhir-logo, ig-status, top, root, end-xhtml, stripe, segment-footer, ig-nav, segment-navbar, segment-content, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Organization-apotheek-onder-de-toren.ttl.html#l311">output/Organization-apotheek-onder-de-toren.ttl.html#/html/body/div/div/ul/span/a at Line 203, column 14</a></b></td><td><b>error</b></td><td><b>The link '#bottom' for &quot;bottom&quot; cannot be resolved (valid targets: [project-logo, segment-header, project-nav, publish-box, hl7-logo, fhir-nav, segment-post-footer, ig-search, hl7-search-lnk, fhir-logo, ig-status, -apotheek-onder-de-toren-ttl-representation, top, root, stripe, segment-footer, ig-nav, segment-navbar, segment-content, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Organization-apotheek-onder-de-toren.xml.html#l311">output/Organization-apotheek-onder-de-toren.xml.html#/html/body/div/div/ul/span/a at Line 203, column 14</a></b></td><td><b>error</b></td><td><b>The link '#bottom' for &quot;bottom&quot; cannot be resolved (valid targets: [project-logo, segment-header, project-nav, publish-box, hl7-logo, fhir-nav, segment-post-footer, ig-search, hl7-search-lnk, -apotheek-onder-de-toren-xml-representation, fhir-logo, ig-status, top, root, end-xhtml, stripe, segment-footer, ig-nav, segment-navbar, segment-content, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-be-medicationdispense-definitions.html#l312">output/StructureDefinition-be-medicationdispense-definitions.html#/html/body/div/div/ul/span/a at Line 205, column 14</a></b></td><td><b>error</b></td><td><b>The link '#bottom' for &quot;bottom&quot; cannot be resolved (valid targets: 228 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-be-medicationdispense-examples.html#l312">output/StructureDefinition-be-medicationdispense-examples.html#/html/body/div/div/ul/span/a at Line 205, column 14</a></b></td><td><b>error</b></td><td><b>The link '#bottom' for &quot;bottom&quot; cannot be resolved (valid targets: [project-logo, segment-header, project-nav, publish-box, hl7-logo, fhir-nav, segment-post-footer, ig-search, hl7-search-lnk, fhir-logo, ig-status, top, root, stripe, segment-footer, ig-nav, resource-profile-bemedicationdispense-examples, segment-navbar, segment-content, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-be-medicationdispense-mappings.html#l312">output/StructureDefinition-be-medicationdispense-mappings.html#/html/body/div/div/ul/span/a at Line 205, column 14</a></b></td><td><b>error</b></td><td><b>The link '#bottom' for &quot;bottom&quot; cannot be resolved (valid targets: [project-nav, publish-box, fhir-nav, segment-post-footer, hl7-search-lnk, mappings-for-fivews-pattern-mapping-http-hl7-orgfhirfivews, top, root, rim, stripe, mappings-for-workflow-pattern-http-hl7-orgfhirworkflow, segment-footer, ig-nav, segment-content, w5, rx-dispense-rmim, project-logo, segment-header, workflow, hl7-logo, ig-search, fhir-logo, ig-status, mappings-for-v3-pharmacy-dispense-rmim-http-www-hl7-orgv3porx_rm020070uv, mappings-for-hl7-v2-mapping-http-hl7-orgv2, resource-profile-bemedicationdispense-mappings, segment-navbar, v2, segment-breadcrumb, mappings-for-rim-mapping-http-hl7-orgv3])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-be-medicationdispense.html#l312">output/StructureDefinition-be-medicationdispense.html#/html/body/div/div/ul/span/a at Line 205, column 14</a></b></td><td><b>error</b></td><td><b>The link '#bottom' for &quot;bottom&quot; cannot be resolved (valid targets: 354 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-be-medicationdispense.profile.history.html#l300">output/StructureDefinition-be-medicationdispense.profile.history.html#/html/body/div/div/ul/span/a at Line 203, column 14</a></b></td><td><b>error</b></td><td><b>The link '#bottom' for &quot;bottom&quot; cannot be resolved (valid targets: [project-logo, segment-header, resource-profile-bemedicationdispense-change-history, project-nav, publish-box, hl7-logo, fhir-nav, segment-post-footer, ig-search, hl7-search-lnk, fhir-logo, ig-status, top, root, stripe, segment-footer, ig-nav, segment-navbar, segment-content, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-be-medicationdispense.profile.json.html#l312">output/StructureDefinition-be-medicationdispense.profile.json.html#/html/body/div/div/ul/span/a at Line 209, column 14</a></b></td><td><b>error</b></td><td><b>The link '#bottom' for &quot;bottom&quot; cannot be resolved (valid targets: [project-logo, segment-header, project-nav, publish-box, hl7-logo, fhir-nav, segment-post-footer, ig-search, hl7-search-lnk, fhir-logo, ig-status, top, root, end-xhtml, stripe, segment-footer, ig-nav, segment-navbar, segment-content, segment-breadcrumb, resource-profile-bemedicationdispense-json-profile])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-be-medicationdispense.profile.ttl.html#l312">output/StructureDefinition-be-medicationdispense.profile.ttl.html#/html/body/div/div/ul/span/a at Line 209, column 14</a></b></td><td><b>error</b></td><td><b>The link '#bottom' for &quot;bottom&quot; cannot be resolved (valid targets: [project-logo, segment-header, project-nav, publish-box, hl7-logo, fhir-nav, segment-post-footer, ig-search, hl7-search-lnk, fhir-logo, ig-status, top, root, stripe, segment-footer, ig-nav, segment-navbar, resource-profile-bemedicationdispense-ttl-profile, segment-content, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-be-medicationdispense.profile.xml.html#l312">output/StructureDefinition-be-medicationdispense.profile.xml.html#/html/body/div/div/ul/span/a at Line 209, column 14</a></b></td><td><b>error</b></td><td><b>The link '#bottom' for &quot;bottom&quot; cannot be resolved (valid targets: [project-logo, segment-header, project-nav, publish-box, hl7-logo, fhir-nav, segment-post-footer, ig-search, hl7-search-lnk, fhir-logo, ig-status, top, root, end-xhtml, stripe, segment-footer, ig-nav, segment-navbar, segment-content, segment-breadcrumb, resource-profile-bemedicationdispense-xml-profile])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-be-model-medication-dispense-definitions.html#l312">output/StructureDefinition-be-model-medication-dispense-definitions.html#/html/body/div/div/ul/span/a at Line 205, column 14</a></b></td><td><b>error</b></td><td><b>The link '#bottom' for &quot;bottom&quot; cannot be resolved (valid targets: 74 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-be-model-medication-dispense-examples.html#l300">output/StructureDefinition-be-model-medication-dispense-examples.html#/html/body/div/div/ul/span/a at Line 203, column 14</a></b></td><td><b>error</b></td><td><b>The link '#bottom' for &quot;bottom&quot; cannot be resolved (valid targets: [project-logo, segment-header, project-nav, publish-box, hl7-logo, fhir-nav, segment-post-footer, ig-search, hl7-search-lnk, logical-model-bemodelmedicationdispense-examples, fhir-logo, ig-status, top, root, stripe, segment-footer, ig-nav, segment-navbar, segment-content, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-be-model-medication-dispense-mappings.html#l312">output/StructureDefinition-be-model-medication-dispense-mappings.html#/html/body/div/div/ul/span/a at Line 205, column 14</a></b></td><td><b>error</b></td><td><b>The link '#bottom' for &quot;bottom&quot; cannot be resolved (valid targets: [project-logo, segment-header, project-nav, publish-box, hl7-logo, fhir-nav, segment-post-footer, logical-model-bemodelmedicationdispense-mappings, ig-search, hl7-search-lnk, fhir-logo, ig-status, top, root, rim, stripe, segment-footer, ig-nav, segment-navbar, segment-content, segment-breadcrumb, mappings-for-rim-mapping-http-hl7-orgv3])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-be-model-medication-dispense.html#l312">output/StructureDefinition-be-model-medication-dispense.html#/html/body/div/div/ul/span/a at Line 205, column 14</a></b></td><td><b>error</b></td><td><b>The link '#bottom' for &quot;bottom&quot; cannot be resolved (valid targets: 90 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-be-model-medication-dispense.profile.history.html#l300">output/StructureDefinition-be-model-medication-dispense.profile.history.html#/html/body/div/div/ul/span/a at Line 203, column 14</a></b></td><td><b>error</b></td><td><b>The link '#bottom' for &quot;bottom&quot; cannot be resolved (valid targets: [logical-model-bemodelmedicationdispense-change-history, project-logo, segment-header, project-nav, publish-box, hl7-logo, fhir-nav, segment-post-footer, ig-search, hl7-search-lnk, fhir-logo, ig-status, top, root, stripe, segment-footer, ig-nav, segment-navbar, segment-content, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-be-model-medication-dispense.profile.json.html#l312">output/StructureDefinition-be-model-medication-dispense.profile.json.html#/html/body/div/div/ul/span/a at Line 209, column 14</a></b></td><td><b>error</b></td><td><b>The link '#bottom' for &quot;bottom&quot; cannot be resolved (valid targets: [project-logo, segment-header, project-nav, publish-box, hl7-logo, fhir-nav, segment-post-footer, ig-search, hl7-search-lnk, fhir-logo, ig-status, top, root, end-xhtml, stripe, segment-footer, ig-nav, logical-model-bemodelmedicationdispense-json-profile, segment-navbar, segment-content, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-be-model-medication-dispense.profile.ttl.html#l312">output/StructureDefinition-be-model-medication-dispense.profile.ttl.html#/html/body/div/div/ul/span/a at Line 209, column 14</a></b></td><td><b>error</b></td><td><b>The link '#bottom' for &quot;bottom&quot; cannot be resolved (valid targets: [project-logo, segment-header, project-nav, publish-box, hl7-logo, fhir-nav, segment-post-footer, ig-search, hl7-search-lnk, fhir-logo, ig-status, top, root, stripe, logical-model-bemodelmedicationdispense-ttl-profile, segment-footer, ig-nav, segment-navbar, segment-content, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-be-model-medication-dispense.profile.xml.html#l312">output/StructureDefinition-be-model-medication-dispense.profile.xml.html#/html/body/div/div/ul/span/a at Line 209, column 14</a></b></td><td><b>error</b></td><td><b>The link '#bottom' for &quot;bottom&quot; cannot be resolved (valid targets: [project-logo, segment-header, project-nav, publish-box, hl7-logo, fhir-nav, segment-post-footer, ig-search, hl7-search-lnk, fhir-logo, ig-status, top, root, end-xhtml, stripe, segment-footer, ig-nav, segment-navbar, segment-content, segment-breadcrumb, logical-model-bemodelmedicationdispense-xml-profile])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-be-vs-dispenser-types.change.history.html#l301">output/ValueSet-be-vs-dispenser-types.change.history.html#/html/body/div/div/ul/span/a at Line 203, column 14</a></b></td><td><b>error</b></td><td><b>The link '#bottom' for &quot;bottom&quot; cannot be resolved (valid targets: [project-logo, segment-header, project-nav, publish-box, hl7-logo, fhir-nav, segment-post-footer, ig-search, hl7-search-lnk, fhir-logo, ig-status, top, root, stripe, segment-footer, ig-nav, segment-navbar, segment-content, segment-breadcrumb, -dispensertypes-change-history])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-be-vs-dispenser-types.html#l311">output/ValueSet-be-vs-dispenser-types.html#/html/body/div/div/ul/span/a at Line 201, column 14</a></b></td><td><b>error</b></td><td><b>The link '#bottom' for &quot;bottom&quot; cannot be resolved (valid targets: [https---www.ehealth.fgov.be-standards-fhir-core-CodeSystem-cd-hcparty-deptpharmacy, project-nav, publish-box, fhir-nav, logical-definition-cld, segment-post-footer, hl7-search-lnk, valueset-dispenser-types, https---www.ehealth.fgov.be-standards-fhir-core-CodeSystem-cd-hcparty-orgpharmacy, top, root, stripe, segment-footer, ig-nav, definition, https---www.ehealth.fgov.be-standards-fhir-core-CodeSystem-cd-hcparty-perspharmacist, https---www.ehealth.fgov.be-standards-fhir-core-CodeSystem-cd-hcparty-deptdentistry, segment-content, project-logo, segment-header, https---www.ehealth.fgov.be-standards-fhir-core-CodeSystem-cd-hcparty-persdentist, hl7-logo, ig-search, fhir-logo, expansion, ig-status, segment-navbar, https---www.ehealth.fgov.be-standards-fhir-core-CodeSystem-cd-hcparty-perspharmacyassistant, https---www.ehealth.fgov.be-standards-fhir-core-CodeSystem-cd-hcparty-perspharmacistclinicalbiologist, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-be-vs-dispenser-types.json.html#l311">output/ValueSet-be-vs-dispenser-types.json.html#/html/body/div/div/ul/span/a at Line 203, column 14</a></b></td><td><b>error</b></td><td><b>The link '#bottom' for &quot;bottom&quot; cannot be resolved (valid targets: [project-logo, segment-header, project-nav, publish-box, -dispenser-types-json-representation, hl7-logo, fhir-nav, segment-post-footer, ig-search, hl7-search-lnk, fhir-logo, ig-status, top, root, end-xhtml, stripe, segment-footer, ig-nav, segment-navbar, segment-content, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-be-vs-dispenser-types.ttl.html#l311">output/ValueSet-be-vs-dispenser-types.ttl.html#/html/body/div/div/ul/span/a at Line 203, column 14</a></b></td><td><b>error</b></td><td><b>The link '#bottom' for &quot;bottom&quot; cannot be resolved (valid targets: [project-logo, segment-header, project-nav, publish-box, hl7-logo, fhir-nav, segment-post-footer, ig-search, hl7-search-lnk, fhir-logo, ig-status, top, -dispenser-types-ttl-representation, root, stripe, segment-footer, ig-nav, segment-navbar, segment-content, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-be-vs-dispenser-types.xml.html#l311">output/ValueSet-be-vs-dispenser-types.xml.html#/html/body/div/div/ul/span/a at Line 203, column 14</a></b></td><td><b>error</b></td><td><b>The link '#bottom' for &quot;bottom&quot; cannot be resolved (valid targets: [project-logo, segment-header, project-nav, publish-box, hl7-logo, fhir-nav, segment-post-footer, -dispenser-types-xml-representation, ig-search, hl7-search-lnk, fhir-logo, ig-status, top, root, end-xhtml, stripe, segment-footer, ig-nav, segment-navbar, segment-content, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="artifacts.html#l307">output/artifacts.html#/html/body/div/div/ul/span/a at Line 201, column 14</a></b></td><td><b>error</b></td><td><b>The link '#bottom' for &quot;bottom&quot; cannot be resolved (valid targets: [terminology-value-sets, project-nav, publish-box, fhir-nav, segment-post-footer, hl7-search-lnk, top, example-example-instances, stripe, segment-footer, ig-nav, segment-content, project-logo, segment-header, hl7-logo, ig-search, terminology-naming-systems, structures-resource-profiles, fhir-logo, ig-status, artifacts-summary, 1, structures-logical-models, 2, 3, 4, 5, segment-navbar, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="downloads.html#l307">output/downloads.html#/html/body/div/div/ul/span/a at Line 201, column 14</a></b></td><td><b>error</b></td><td><b>The link '#bottom' for &quot;bottom&quot; cannot be resolved (valid targets: [project-logo, segment-header, project-nav, publish-box, hl7-logo, fhir-nav, segment-post-footer, ig-search, hl7-search-lnk, fhir-logo, ig-status, top, downloads, stripe, segment-footer, ig-nav, segment-navbar, segment-content, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="howto.html#l307">output/howto.html#/html/body/div/div/ul/span/a at Line 201, column 14</a></b></td><td><b>error</b></td><td><b>The link '#bottom' for &quot;bottom&quot; cannot be resolved (valid targets: [project-logo, segment-header, project-nav, publish-box, howto, hl7-logo, fhir-nav, segment-post-footer, ig-search, hl7-search-lnk, functional-module---for-clinicians-and-functional-business-analysts, detailed-specifications, fhir-logo, ig-status, background-information, top, terminology, stripe, segment-footer, functional-module-for-clinicians-and-functional-business-analysts, ig-nav, segment-navbar, segment-content, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="howto.html#l462">output/howto.html#/html/body/div/div/div/div/div/div/p/a at Line 260, column 65</a></b></td><td><b>error</b></td><td><b>The link 'http://build.fhir.org/terminologies' for &quot;http://build.fhir.org/terminologies&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="index.html#l307">output/index.html#/html/body/div/div/ul/span/a at Line 201, column 14</a></b></td><td><b>error</b></td><td><b>The link '#bottom' for &quot;bottom&quot; cannot be resolved (valid targets: [project-logo, segment-header, project-nav, publish-box, hl7-logo, ip, fhir-nav, segment-post-footer, ig-search, hl7-search-lnk, intellectual-property-considerations, content, fhir-logo, home, ig-status, navigation, top, scope, stripe, segment-footer, ig-nav, segment-navbar, segment-content, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="logical-models.html#l307">output/logical-models.html#/html/body/div/div/ul/span/a at Line 201, column 14</a></b></td><td><b>error</b></td><td><b>The link '#bottom' for &quot;bottom&quot; cannot be resolved (valid targets: [project-logo, segment-header, project-nav, publish-box, hl7-logo, fhir-nav, segment-post-footer, ig-search, hl7-search-lnk, fhir-logo, ig-status, logical-models, top, stripe, segment-footer, ig-nav, segment-navbar, segment-content, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="medicationrecord-definitions.html#l307">output/medicationrecord-definitions.html#/html/body/div/div/ul/span/a at Line 201, column 14</a></b></td><td><b>error</b></td><td><b>The link '#bottom' for &quot;bottom&quot; cannot be resolved (valid targets: [project-logo, segment-header, project-nav, publish-box, hl7-logo, fhir-nav, segment-post-footer, ig-search, hl7-search-lnk, medicationrecord-definitions, fhir-logo, ig-status, top, stripe, segment-footer, ig-nav, segment-navbar, segment-content, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="medicationrecord-pattern-1.html#l307">output/medicationrecord-pattern-1.html#/html/body/div/div/ul/span/a at Line 201, column 14</a></b></td><td><b>error</b></td><td><b>The link '#bottom' for &quot;bottom&quot; cannot be resolved (valid targets: [project-logo, segment-header, project-nav, publish-box, hl7-logo, fhir-nav, fih6qr3juvzkm, segment-post-footer, ig-search, hl7-search-lnk, medicationrecord-pattern-1, fhir-logo, ig-status, top, stripe, segment-footer, ig-nav, segment-navbar, segment-content, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="medicationrecord-pattern-2.html#l307">output/medicationrecord-pattern-2.html#/html/body/div/div/ul/span/a at Line 201, column 14</a></b></td><td><b>error</b></td><td><b>The link '#bottom' for &quot;bottom&quot; cannot be resolved (valid targets: [project-logo, ftce9ys4y7kic, segment-header, medicationrecord-pattern-2, project-nav, publish-box, hl7-logo, fhir-nav, segment-post-footer, ig-search, hl7-search-lnk, fhir-logo, ig-status, top, stripe, segment-footer, ig-nav, segment-navbar, segment-content, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="medicationrecord-pattern-3.html#l307">output/medicationrecord-pattern-3.html#/html/body/div/div/ul/span/a at Line 201, column 14</a></b></td><td><b>error</b></td><td><b>The link '#bottom' for &quot;bottom&quot; cannot be resolved (valid targets: [project-logo, segment-header, medicationrecord-pattern-3, project-nav, publish-box, hl7-logo, fhir-nav, segment-post-footer, ig-search, hl7-search-lnk, fhir-logo, ig-status, top, stripe, segment-footer, ig-nav, segment-navbar, segment-content, f1ipjba46besjh, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="medicationrecord-patterns.html#l307">output/medicationrecord-patterns.html#/html/body/div/div/ul/span/a at Line 201, column 14</a></b></td><td><b>error</b></td><td><b>The link '#bottom' for &quot;bottom&quot; cannot be resolved (valid targets: [updating-the-medication-schema-from-other-sources, project-nav, publish-box, markdown-toc-updating-the-medication-schema-from-other-sources, fhir-nav, consulting-the-medication-schema-for-a-patient, segment-post-footer, hl7-search-lnk, medicationrecord-patterns, markdown-toc-creating--updating-the-medication-schema-for-a-patient, markdown-toc-consulting-the-medication-schema-for-a-patient, top, stripe, segment-footer, ig-nav, segment-content, creating-updating-the-medication-schema-for-a-patient, project-logo, segment-header, hl7-logo, ig-search, fhir-logo, ig-status, markdown-toc, segment-navbar, creating--updating-the-medication-schema-for-a-patient, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="medicationrecord-requirements.html#l307">output/medicationrecord-requirements.html#/html/body/div/div/ul/span/a at Line 201, column 14</a></b></td><td><b>error</b></td><td><b>The link '#bottom' for &quot;bottom&quot; cannot be resolved (valid targets: [project-logo, segment-header, project-nav, publish-box, hl7-logo, fhir-nav, segment-post-footer, ig-search, hl7-search-lnk, fhir-logo, ig-status, medicationrecord-requirements, top, stripe, segment-footer, ig-nav, segment-navbar, segment-content, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="medicationrecord-scenario-1.html#l307">output/medicationrecord-scenario-1.html#/html/body/div/div/ul/span/a at Line 201, column 14</a></b></td><td><b>error</b></td><td><b>The link '#bottom' for &quot;bottom&quot; cannot be resolved (valid targets: [project-logo, segment-header, project-nav, publish-box, hl7-logo, fhir-nav, segment-post-footer, ig-search, hl7-search-lnk, fhir-logo, ig-status, top, stripe, segment-footer, ig-nav, segment-navbar, medicationrecord-scenario-1, segment-content, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="medicationrecord-scenario-2.html#l307">output/medicationrecord-scenario-2.html#/html/body/div/div/ul/span/a at Line 201, column 14</a></b></td><td><b>error</b></td><td><b>The link '#bottom' for &quot;bottom&quot; cannot be resolved (valid targets: [project-logo, segment-header, project-nav, publish-box, hl7-logo, fhir-nav, segment-post-footer, ig-search, hl7-search-lnk, fhir-logo, ig-status, top, stripe, medicationrecord-scenario-2, segment-footer, ig-nav, segment-navbar, segment-content, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="medicationrecord-scenarios.html#l307">output/medicationrecord-scenarios.html#/html/body/div/div/ul/span/a at Line 201, column 14</a></b></td><td><b>error</b></td><td><b>The link '#bottom' for &quot;bottom&quot; cannot be resolved (valid targets: [project-logo, segment-header, markdown-toc-concurrent-medications, project-nav, publish-box, hl7-logo, fhir-nav, segment-post-footer, concurrent-medications, ig-search, hl7-search-lnk, fhir-logo, ig-status, markdown-toc, markdown-toc-protocols, top, stripe, segment-footer, ig-nav, segment-navbar, segment-content, medicationrecord-scenarios, protocols, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="medicationrecord.html#l307">output/medicationrecord.html#/html/body/div/div/ul/span/a at Line 201, column 14</a></b></td><td><b>error</b></td><td><b>The link '#bottom' for &quot;bottom&quot; cannot be resolved (valid targets: [project-logo, segment-header, project-nav, publish-box, hl7-logo, fhir-nav, segment-post-footer, ig-search, hl7-search-lnk, fhir-logo, ig-status, top, medicationrecord, stripe, segment-footer, ig-nav, segment-navbar, segment-content, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="toc.html#l303">output/toc.html#/html/body/div/div/ul/span/a at Line 199, column 14</a></b></td><td><b>error</b></td><td><b>The link '#bottom' for &quot;bottom&quot; cannot be resolved (valid targets: 49 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="usecases-dispense.html#l307">output/usecases-dispense.html#/html/body/div/div/ul/span/a at Line 201, column 14</a></b></td><td><b>error</b></td><td><b>The link '#bottom' for &quot;bottom&quot; cannot be resolved (valid targets: [usecases-dispense, project-nav, publish-box, markdown-toc-registering-a-dispense, registering-a-dispense, fhir-nav, segment-post-footer, hl7-search-lnk, registering-a-dispense-of-a-single-item, top, stripe, segment-footer, fbnodmrbl37n4, ig-nav, segment-content, project-logo, segment-header, registering-a-dispense-of-several-items-in-a-single-session, hl7-logo, ig-search, markdown-toc-consulting-the-dispenses-for-a-given-patient, registering-a-dispense-of-a-magistral-preparation, fhir-logo, f1ikgs2xpsj7af, ig-status, markdown-toc, consulting-the-dispenses-for-a-given-patient, segment-navbar, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>1</b></td><td><b>warning</b></td><td title=""><b>The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>2</b></td><td><b>warning</b></td><td title=""><b>The HTML fragment 'cross-version-analysis.xhtml' is not included anywhere in the produced implementation guide</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>3</b></td><td><b>warning</b></td><td title=""><b>The HTML fragment 'dependency-table.xhtml' is not included anywhere in the produced implementation guide</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>4</b></td><td><b>warning</b></td><td title=""><b>The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_ImplementationGuide-hl7.fhir.be.medication"> </a>
+<h2><a href="ImplementationGuide-hl7.fhir.be.medication.html">fsh-generated/resources/ImplementationGuide-hl7.fhir.be.medication.json</a> <span id="svi1" class="toggle" onclick="toggle('vi1')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi1')">(0)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi1"></div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_MedicationDispense-example-dispense-communitypharmacy-1med"> </a>
+<h2><a href="MedicationDispense-example-dispense-communitypharmacy-1med.html">fsh-generated/resources/MedicationDispense-example-dispense-communitypharmacy-1med.json</a> <span id="svi2" class="toggle" onclick="toggle('vi2')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi2')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi2"><ul style="font-size: 7px"><li>MedicationDispense: Validated against <i>this.</i><a href="StructureDefinition-be-medicationdispense.html">BeMedicationDispense</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>MedicationDispense.identifier[0].type.coding[0] (l34/c12)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>MedicationDispense.medication.ofType(CodeableConcept).coding[0] (l45/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>MedicationDispense.context.identifier.type.coding[0] (l21/c12)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>MedicationDispense.quantity (l103/c16)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://www.gfd-dpp.be/fhir/reference/packaging' is unknown so the code cannot be validated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_MedicationDispense-example-dispense-hospital"> </a>
+<h2><a href="MedicationDispense-example-dispense-hospital.html">fsh-generated/resources/MedicationDispense-example-dispense-hospital.json</a> <span id="svi3" class="toggle" onclick="toggle('vi3')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi3')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi3"><ul style="font-size: 7px"><li>MedicationDispense: Validated against <i>this.</i><a href="StructureDefinition-be-medicationdispense.html">BeMedicationDispense</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>MedicationDispense.identifier[0].type.coding[0] (l16/c12)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://www.nexuzhealth.be/fhir/prescription/ambulatory' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>MedicationDispense.medication.ofType(CodeableConcept).coding[0] (l29/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes' is unknown so the code cannot be validated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_MedicationDispense-example-dispense-with-atc"> </a>
+<h2><a href="MedicationDispense-example-dispense-with-atc.html">fsh-generated/resources/MedicationDispense-example-dispense-with-atc.json</a> <span id="svi4" class="toggle" onclick="toggle('vi4')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi4')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi4"><ul style="font-size: 7px"><li>MedicationDispense: Validated against <i>this.</i><a href="StructureDefinition-be-medicationdispense.html">BeMedicationDispense</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>MedicationDispense.medication.ofType(CodeableConcept).coding[0] (l18/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes' is unknown so the code cannot be validated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_MedicationDispense-example-minimal-dispense"> </a>
+<h2><a href="MedicationDispense-example-minimal-dispense.html">fsh-generated/resources/MedicationDispense-example-minimal-dispense.json</a> <span id="svi5" class="toggle" onclick="toggle('vi5')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi5')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi5"><ul style="font-size: 7px"><li>MedicationDispense: Validated against <i>this.</i><a href="StructureDefinition-be-medicationdispense.html">BeMedicationDispense</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>MedicationDispense.medication.ofType(CodeableConcept).coding[0] (l18/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes' is unknown so the code cannot be validated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_MedicationDispense-medication-dispense-example-2"> </a>
+<h2><a href="MedicationDispense-medication-dispense-example-2.html">fsh-generated/resources/MedicationDispense-medication-dispense-example-2.json</a> <span id="svi6" class="toggle" onclick="toggle('vi6')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi6')">(4)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi6"><ul style="font-size: 7px"><li>MedicationDispense: Validated against <i>this.</i><a href="StructureDefinition-be-medicationdispense.html">BeMedicationDispense</a></li><li>MedicationDispense.contained[0]: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/organization.html">Organization</a>, hl7.fhir.be.core.<a href="https://www.ehealth.fgov.be/standards/fhir/core/2.0.0/StructureDefinition-be-organization.html">Organisation core BE profile</a> (per meta) and hl7.fhir.be.core.<a href="https://www.ehealth.fgov.be/standards/fhir/core/2.0.0/StructureDefinition-be-organization.html">Organisation core BE profile</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">MedicationDispense.contained[0].ofType(Organization).identifier[0] (l19/c10)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-organization</b> <span id="sl103" class="flip" onclick="flip('l103')">Show Reasoning</span><div id="l103" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttps://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-organization<ul><li>MedicationDispense.contained[0].ofType(Organization).identifier[0]: discriminator = true and ('https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi' in system)</li>, <li>MedicationDispense.contained[0].ofType(Organization).identifier[0]: discriminator = true and ('https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/cbe' in system)</li>, <li>MedicationDispense.contained[0].ofType(Organization).identifier[0]: discriminator = true and ('https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin' in system)</li>, <li>MedicationDispense.contained[0].ofType(Organization).identifier[0]: discriminator = true and ('https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ehp' in system)</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>MedicationDispense.identifier[0].type.coding[0] (l61/c12)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>MedicationDispense.medication.ofType(CodeableConcept).coding[0] (l72/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>MedicationDispense.context.identifier.type.coding[0] (l48/c12)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>MedicationDispense.quantity (l114/c16)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://www.gfd-dpp.be/fhir/reference/packaging' is unknown so the code cannot be validated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_NamingSystem-be-ns-cnk-codes"> </a>
+<h2><a href="NamingSystem-be-ns-cnk-codes.html">fsh-generated/resources/NamingSystem-be-ns-cnk-codes.json</a> <span id="svi7" class="toggle" onclick="toggle('vi7')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi7')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi7"><ul style="font-size: 7px"><li>NamingSystem: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/namingsystem.html">NamingSystem</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_NamingSystem-be-ns-cti-extended-code"> </a>
+<h2><a href="NamingSystem-be-ns-cti-extended-code.html">fsh-generated/resources/NamingSystem-be-ns-cti-extended-code.json</a> <span id="svi8" class="toggle" onclick="toggle('vi8')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi8')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi8"><ul style="font-size: 7px"><li>NamingSystem: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/namingsystem.html">NamingSystem</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_NamingSystem-be-ns-prescription-ids"> </a>
+<h2><a href="NamingSystem-be-ns-prescription-ids.html">fsh-generated/resources/NamingSystem-be-ns-prescription-ids.json</a> <span id="svi9" class="toggle" onclick="toggle('vi9')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi9')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi9"><ul style="font-size: 7px"><li>NamingSystem: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/namingsystem.html">NamingSystem</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_NamingSystem-be-ns-product-package-type"> </a>
+<h2><a href="NamingSystem-be-ns-product-package-type.html">fsh-generated/resources/NamingSystem-be-ns-product-package-type.json</a> <span id="svi10" class="toggle" onclick="toggle('vi10')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi10')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi10"><ul style="font-size: 7px"><li>NamingSystem: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/namingsystem.html">NamingSystem</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_Organization-apotheek-onder-de-toren"> </a>
+<h2><a href="Organization-apotheek-onder-de-toren.html">fsh-generated/resources/Organization-apotheek-onder-de-toren.json</a> <span id="svi11" class="toggle" onclick="toggle('vi11')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi11')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi11"><ul style="font-size: 7px"><li>Organization: Validated against hl7.fhir.be.core.<a href="https://www.ehealth.fgov.be/standards/fhir/core/2.0.0/StructureDefinition-be-organization.html">Organisation core BE profile</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Organization.identifier[0] (l10/c6)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-organization</b> <span id="sl108" class="flip" onclick="flip('l108')">Show Reasoning</span><div id="l108" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttps://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-organization<ul><li>Organization.identifier[0]: discriminator = true and ('https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi' in system)</li>, <li>Organization.identifier[0]: discriminator = true and ('https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/cbe' in system)</li>, <li>Organization.identifier[0]: discriminator = true and ('https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin' in system)</li>, <li>Organization.identifier[0]: discriminator = true and ('https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ehp' in system)</li></ul></div></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-be-medicationdispense"> </a>
+<h2><a href="StructureDefinition-be-medicationdispense.html">fsh-generated/resources/StructureDefinition-be-medicationdispense.json</a> <span id="svi12" class="toggle" onclick="toggle('vi12')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi12')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi12"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition.snapshot.element[85].mapping[0].map</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-be-model-medication-dispense"> </a>
+<h2><a href="StructureDefinition-be-model-medication-dispense.html">fsh-generated/resources/StructureDefinition-be-model-medication-dispense.json</a> <span id="svi13" class="toggle" onclick="toggle('vi13')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi13')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi13"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_ValueSet-be-vs-dispenser-types"> </a>
+<h2><a href="ValueSet-be-vs-dispenser-types.html">fsh-generated/resources/ValueSet-be-vs-dispenser-types.json</a> <span id="svi14" class="toggle" onclick="toggle('vi14')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi14')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi14"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet</b></td><td><b>warning</b></td><td title="VALUESET_SHAREABLE_MISSING"><b>The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile</b></td>
+   </tr>
+</table>
+<a name="suppressed"> </a>
+<p><b>Suppressed Messages (Warnings, hints, broken links)</b></p>
+<p><b>The following code systems are external and not supported by terminology server</b></p><ul>
+ <li>Code System URI 'http://www.ama-assn.org/go/cpt' is unknown so the code cannot be validated <span style="color: maroon">(0 uses)<span></li>
+</ul>
+<p><b>example for suppressing information messages</b></p><ul>
+ <li>Code System URI &quot;http://example.org&quot; is unknown so the code cannot be validated <span style="color: maroon">(0 uses)<span></li>
+</ul>
+<a name="sorted"> </a>
+<p><b>Errors sorted by type</b></p>
+<hr/>
+<a name="SECURITY_STRING_CONTENT_WARNING"> </a>
+<h2>SECURITY_STRING_CONTENT_WARNING</h2>
+ <table class="grid">
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-be-medicationdispense.html">fsh-generated/resources/StructureDefinition-be-medicationdispense.json</a></td><td><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="TERMINOLOGY_TX_SYSTEM_NO_CODE"> </a>
+<h2>TERMINOLOGY_TX_SYSTEM_NO_CODE</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="MedicationDispense-example-dispense-communitypharmacy-1med.html">fsh-generated/resources/MedicationDispense-example-dispense-communitypharmacy-1med.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="MedicationDispense-example-dispense-communitypharmacy-1med.html">fsh-generated/resources/MedicationDispense-example-dispense-communitypharmacy-1med.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="MedicationDispense-medication-dispense-example-2.html">fsh-generated/resources/MedicationDispense-medication-dispense-example-2.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="MedicationDispense-medication-dispense-example-2.html">fsh-generated/resources/MedicationDispense-medication-dispense-example-2.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Terminology_TX_System_NotKnown"> </a>
+<h2>Terminology_TX_System_NotKnown</h2>
+ <table class="grid">
+   <tr style="background-color: #fffff2">
+     <td><a href="MedicationDispense-example-dispense-communitypharmacy-1med.html">fsh-generated/resources/MedicationDispense-example-dispense-communitypharmacy-1med.json</a></td><td><b>Code System URI 'https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="MedicationDispense-example-dispense-communitypharmacy-1med.html">fsh-generated/resources/MedicationDispense-example-dispense-communitypharmacy-1med.json</a></td><td><b>Code System URI 'https://www.gfd-dpp.be/fhir/reference/packaging' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="MedicationDispense-example-dispense-hospital.html">fsh-generated/resources/MedicationDispense-example-dispense-hospital.json</a></td><td><b>Code System URI 'https://www.nexuzhealth.be/fhir/prescription/ambulatory' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="MedicationDispense-example-dispense-hospital.html">fsh-generated/resources/MedicationDispense-example-dispense-hospital.json</a></td><td><b>Code System URI 'https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="MedicationDispense-example-dispense-with-atc.html">fsh-generated/resources/MedicationDispense-example-dispense-with-atc.json</a></td><td><b>Code System URI 'https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="MedicationDispense-example-minimal-dispense.html">fsh-generated/resources/MedicationDispense-example-minimal-dispense.json</a></td><td><b>Code System URI 'https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="MedicationDispense-medication-dispense-example-2.html">fsh-generated/resources/MedicationDispense-medication-dispense-example-2.json</a></td><td><b>Code System URI 'https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="MedicationDispense-medication-dispense-example-2.html">fsh-generated/resources/MedicationDispense-medication-dispense-example-2.json</a></td><td><b>Code System URI 'https://www.gfd-dpp.be/fhir/reference/packaging' is unknown so the code cannot be validated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="VALUESET_SHAREABLE_MISSING"> </a>
+<h2>VALUESET_SHAREABLE_MISSING</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-be-vs-dispenser-types.html">fsh-generated/resources/ValueSet-be-vs-dispenser-types.json</a></td><td><b>The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile</b></td>
+   </tr>
+</table>
+</body>
+</html>

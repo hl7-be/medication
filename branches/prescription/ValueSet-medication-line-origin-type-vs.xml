@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="medication-line-origin-type-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet medication-line-origin-type-vs</b></p><a name="medication-line-origin-type-vs"> </a><a name="hcmedication-line-origin-type-vs"> </a><a name="medication-line-origin-type-vs-en-US"> </a><ul><li>Include all codes defined in <a href="CodeSystem-medication-line-origin-type.html"><code>https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-line-origin-type</code></a></li></ul></div>
+  </text>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/medication-line-origin-type-vs"/>
+  <version value="1.1.0"/>
+  <name value="MedicationLineOrigintypeVS"/>
+  <title value="Medication origin type ValueSet"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-04-09T15:44:53+00:00"/>
+  <publisher value="HL7 Belgium"/>
+  <contact>
+    <name value="HL7 Belgium"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.hl7belgium.org"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="hl7belgium@hl7belgium.org"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Message Structure eHealth"/>
+    <telecom>
+      <system value="email"/>
+      <value value="message-structure@ehealth.fgov.be"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Medication treatment origin type - what is the type of care that originated the medication treatment"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
+      <display value="Belgium"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-line-origin-type"/>
+    </include>
+  </compose>
+</ValueSet>

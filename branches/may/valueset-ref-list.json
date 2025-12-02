@@ -1,0 +1,71 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medication-codes",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTMedicationCodes",
+      "title" : "SNOMED CT Medication Codes",
+      "description" : "This value set includes all drug or medicament substance codes and all pharmaceutical/biologic products from SNOMED CT - provided as an exemplar value set.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.375"],
+      "sources" : ["2.16.840.1.113883.4.642.3.375"],
+      "uses" : {
+      },
+      "StructureDefinition-be-medicationdispense.html" : "BeMedicationDispense"
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/be-vs-dispenser-types",
+      "version" : "1.1.0",
+      "status" : "draft",
+      "name" : "DispenserTypes",
+      "title" : "Dispenser Types",
+      "description" : "Dispenser Types - from hcparty",
+      "systems" : [
+        "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty"
+      ]
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/medication-exposure-category-vs",
+      "version" : "1.1.0",
+      "status" : "draft",
+      "name" : "MedicationExposureCategoryVS",
+      "title" : "Medication exposure intent",
+      "description" : "The exposure purpose of a medication - whether the medication is given for therapeutic or prophylactic purposes.",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-be-model-medicationline.html" : "Medication Line - logical model",
+      "StructureDefinition-ExposureCategory.html" : "ExposureCategory"
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/medication-line-origin-type-vs",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "MedicationLineOriginTypeVS",
+      "title" : "Medication origin type ValueSet",
+      "description" : "Medication treatment origin type - what is the type of care that originated the medication treatment",
+      "systems" : [
+        "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-line-origin-type"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-BEMedicationLine.html" : "BEMedicationLine"
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/medication-type-vs",
+      "version" : "1.1.0",
+      "status" : "draft",
+      "name" : "BEMLMedicationTypeVS",
+      "title" : "Medication preparation Type value set",
+      "description" : "Medication preparation type value set",
+      "systems" : [
+        "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-MedicationType.html" : "MedicationType",
+      "StructureDefinition-be-model-medicationline.html" : "Medication Line - logical model"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "BeMedicationType",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem BeMedicationType</b></p><a name=\"BeMedicationType\"> </a><a name=\"hcBeMedicationType\"> </a><p>This case-insensitive code system <code>https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationType</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">magistral<a name=\"BeMedicationType-magistral\"> </a></td><td>Magistral preparation</td></tr><tr><td style=\"white-space:nowrap\">registered-medicinal-product<a name=\"BeMedicationType-registered-medicinal-product\"> </a></td><td>Medicinal Product</td></tr><tr><td style=\"white-space:nowrap\">non-medicinal-product<a name=\"BeMedicationType-non-medicinal-product\"> </a></td><td>Non-medicinal product</td></tr></table></div>"
+  },
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationType",
+  "version" : "1.1.0",
+  "name" : "BeMedicationType",
+  "title" : "Medication preparation Type",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-10-10T10:16:02+00:00",
+  "publisher" : "eHealth Platform",
+  "contact" : [{
+    "name" : "eHealth Platform",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.ehealth.fgov.be/standards/fhir"
+    },
+    {
+      "system" : "email",
+      "value" : "support@be-ehealth-standards.atlassian.net"
+    }]
+  },
+  {
+    "name" : "Message Structure eHealth",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "support@be-ehealth-standards.atlassian.net",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Medication preparation type",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BE",
+      "display" : "Belgium"
+    }]
+  }],
+  "caseSensitive" : false,
+  "content" : "complete",
+  "count" : 3,
+  "concept" : [{
+    "code" : "magistral",
+    "display" : "Magistral preparation"
+  },
+  {
+    "code" : "registered-medicinal-product",
+    "display" : "Medicinal Product"
+  },
+  {
+    "code" : "non-medicinal-product",
+    "display" : "Non-medicinal product"
+  }]
+}

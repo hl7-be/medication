@@ -1,0 +1,48 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "BeMedicationLineAdherenceStatusVS",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet BeMedicationLineAdherenceStatusVS</b></p><a name=\"BeMedicationLineAdherenceStatusVS\"> </a><a name=\"hcBeMedicationLineAdherenceStatusVS\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-BeMedicationLineAdherenceStatus.html\"><code>https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatus</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;1.1.0</span></li></ul></div>"
+  },
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/BeMedicationLineAdherenceStatusVS",
+  "version" : "1.1.0",
+  "name" : "BeMedicationLineAdherenceStatusVS",
+  "title" : "BeExtAdherenceStatus",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2025-12-02T14:49:22+00:00",
+  "publisher" : "eHealth Platform",
+  "contact" : [{
+    "name" : "eHealth Platform",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.ehealth.fgov.be/standards/fhir"
+    },
+    {
+      "system" : "email",
+      "value" : "support@be-ehealth-standards.atlassian.net"
+    }]
+  },
+  {
+    "name" : "Message Structure eHealth",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "support@be-ehealth-standards.atlassian.net",
+      "use" : "work"
+    }]
+  }],
+  "description" : "The status of taking the medication.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BE",
+      "display" : "Belgium"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatus"
+    }]
+  }
+}

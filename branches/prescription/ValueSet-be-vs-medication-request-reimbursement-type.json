@@ -1,0 +1,48 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "be-vs-medication-request-reimbursement-type",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet be-vs-medication-request-reimbursement-type</b></p><a name=\"be-vs-medication-request-reimbursement-type\"> </a><a name=\"hcbe-vs-medication-request-reimbursement-type\"> </a><a name=\"be-vs-medication-request-reimbursement-type-en-US\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-be-cs-medication-request-reimbursement-type.html\"><code>https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/be-cs-medication-request-reimbursement-type</code></a></li></ul></div>"
+  },
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/be-vs-medication-request-reimbursement-type",
+  "version" : "1.1.0",
+  "name" : "MedicationRequestReimbursementTypeVS",
+  "title" : "Medication request reimbursement type ValueSet",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2025-04-06T07:14:46+00:00",
+  "publisher" : "HL7 Belgium",
+  "contact" : [{
+    "name" : "HL7 Belgium",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.hl7belgium.org"
+    },
+    {
+      "system" : "email",
+      "value" : "hl7belgium@hl7belgium.org"
+    }]
+  },
+  {
+    "name" : "Message Structure eHealth",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "message-structure@ehealth.fgov.be",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Medication request reimbursement type - instructions for reimbursement of the medication request",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BE",
+      "display" : "Belgium"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/be-cs-medication-request-reimbursement-type"
+    }]
+  }
+}

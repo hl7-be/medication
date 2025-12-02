@@ -1,0 +1,48 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "BeMedicationLineRegistrationStatusVS",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet BeMedicationLineRegistrationStatusVS</b></p><a name=\"BeMedicationLineRegistrationStatusVS\"> </a><a name=\"hcBeMedicationLineRegistrationStatusVS\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-BeMedicationLineRegistrationStatus.html\"><code>https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineRegistrationStatus</code></a></li></ul></div>"
+  },
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/BeMedicationLineRegistrationStatusVS",
+  "version" : "1.1.0",
+  "name" : "BeMedicationLineRegistrationStatusVS",
+  "title" : "Medication Line Registration Status Value Set",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2025-07-20T21:36:53+00:00",
+  "publisher" : "HL7 Belgium",
+  "contact" : [{
+    "name" : "HL7 Belgium",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.hl7belgium.org"
+    },
+    {
+      "system" : "email",
+      "value" : "hl7belgium@hl7belgium.org"
+    }]
+  },
+  {
+    "name" : "Message Structure eHealth",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "message-structure@ehealth.fgov.be",
+      "use" : "work"
+    }]
+  }],
+  "description" : "This value set includes the registration statuses for medication lines.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BE",
+      "display" : "Belgium"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineRegistrationStatus"
+    }]
+  }
+}

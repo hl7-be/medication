@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="apotheek-onder-de-toren"/>
+  <meta>
+    <profile value="https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-organization"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Organization apotheek-onder-de-toren</b></p><a name="apotheek-onder-de-toren"> </a><a name="hcapotheek-onder-de-toren"> </a><a name="apotheek-onder-de-toren-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="https://www.ehealth.fgov.be/standards/fhir/core/2.1.2/StructureDefinition-be-organization.html">BeOrganization</a></p></div><p><b>identifier</b>: <a href="https://www.ehealth.fgov.be/standards/fhir/core/2.1.2/NamingSystem-be-ns-nihdi-organization.html" title="Naming System - Nihdi - Organization">BeNSNIHDIOrganization</a>/27457532</p><p><b>type</b>: <span title="Codes:{https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty orgpharmacy}">independent pharmacy</span></p></div>
+  </text>
+  <identifier>
+    <system value="https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi-organization"/>
+    <value value="27457532"/>
+  </identifier>
+  <type>
+    <coding>
+      <system value="https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty"/>
+      <code value="orgpharmacy"/>
+    </coding>
+  </type>
+</Organization>

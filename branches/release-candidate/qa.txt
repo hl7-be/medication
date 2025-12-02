@@ -1,0 +1,121 @@
+Medication : Validation Results
+=========================================
+
+err = 0, warn = 3, info = 19
+IG Publisher Version: 2.0.20
+Generated Fri Oct 10 10:17:58 UTC 2025. FHIR version 4.0.1 for hl7.fhir.be.medication#1.1.0 (canonical = https://www.ehealth.fgov.be/standards/fhir/medication)
+ Build Errors : 0 / 2 / 0
+ /github/workspace/fsh-generated/resources/CodeSystem-BeMedicationLineAdherenceStatus : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/CodeSystem-BeMedicationLineAdherenceStatusReason : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/CodeSystem-BeMedicationLineOriginType : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/CodeSystem-BeMedicationLineRegistrationStatus : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/CodeSystem-BeMedicationRequestReimbursementType : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/CodeSystem-BeMedicationType : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ImplementationGuide-hl7.fhir.be.medication : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/MedicationDispense-example-dispense-communitypharmacy-1med : 0 / 9 / 2
+ /github/workspace/fsh-generated/resources/MedicationDispense-example-dispense-hospital : 0 / 5 / 1
+ /github/workspace/fsh-generated/resources/MedicationDispense-example-minimal-dispense : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/MedicationDispense-medicationdispense-example-1 : 0 / 8 / 2
+ /github/workspace/fsh-generated/resources/MedicationDispense-medicationdispense-example-2 : 0 / 9 / 5
+ /github/workspace/fsh-generated/resources/NamingSystem-be-ns-cnk-codes : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/NamingSystem-be-ns-cti-extended-code : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/NamingSystem-be-ns-prescription-ids : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/NamingSystem-be-ns-product-package-type : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Organization-apotheek-onder-de-toren : 0 / 1 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-BasedOnMedicationLine : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-BeDosage : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-BeExtAdherenceStatus : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-BeExtInstructionsForReimbursement : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-BeExtMedicationLineRegistrationStatus : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-BeExtMedicationType : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-BeExtOffLabel : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-BeExtRecordedDate : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-BeExtRecorder : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-BeMedicationDispense : 0 / 0 / 3
+ /github/workspace/fsh-generated/resources/StructureDefinition-BeMedicationExposureCategory : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-BeMedicationLine : 0 / 1 / 7
+ /github/workspace/fsh-generated/resources/StructureDefinition-BeMedicationPrescription : 0 / 1 / 3
+ /github/workspace/fsh-generated/resources/StructureDefinition-BeModelDosagingInformation : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-BeModelMedication : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-BeModelMedicationDispense : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-BeModelMedicationLine : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-BeModelMedicationPrescription : 0 / 0 / 5
+ /github/workspace/fsh-generated/resources/ValueSet-BeMedicationExposureIntentVS : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-BeMedicationLineAdherenceStatusReasonVS : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-BeMedicationLineAdherenceStatusVS : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-BeMedicationLineOriginTypeVS : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-BeMedicationLineRegistrationStatusVS : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-BeMedicationPrescriptionStatusVS : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-BeMedicationRequestReimbursementTypeVS : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-BeMedicationTypeVS : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-BeRouteOfAdministrationVS : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-be-vs-dispenser-types : 0 / 0 / 1
+</table>
+== n/a ==
+WARNING: ImplementationGuide.url: The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole
+WARNING: IG: The IG is not for the international realm, and it uses SNOMED CT, so it should fix the SCT edition in the expansion parameters
+== fsh-generated/resources/CodeSystem-BeMedicationLineAdherenceStatus.json ==
+== fsh-generated/resources/CodeSystem-BeMedicationLineAdherenceStatusReason.json ==
+== fsh-generated/resources/CodeSystem-BeMedicationLineOriginType.json ==
+== fsh-generated/resources/CodeSystem-BeMedicationLineRegistrationStatus.json ==
+== fsh-generated/resources/CodeSystem-BeMedicationRequestReimbursementType.json ==
+== fsh-generated/resources/CodeSystem-BeMedicationType.json ==
+== fsh-generated/resources/ImplementationGuide-hl7.fhir.be.medication.json ==
+== fsh-generated/resources/MedicationDispense-example-dispense-communitypharmacy-1med.json ==
+INFORMATION: MedicationDispense/example-dispense-communitypharmacy-1med: MedicationDispense.quantity: A definition for CodeSystem 'https://www.gfd-dpp.be/fhir/reference/packaging' could not be found, so the code cannot be validated
+== fsh-generated/resources/MedicationDispense-example-dispense-hospital.json ==
+WARNING: MedicationDispense/example-dispense-hospital: MedicationDispense.identifier[0].type.coding[0].system: A definition for CodeSystem 'https://www.nexuzhealth.be/fhir/prescription/ambulatory' version '1' could not be found, so the code cannot be validated. No versions of this code system are known
+== fsh-generated/resources/MedicationDispense-example-minimal-dispense.json ==
+== fsh-generated/resources/MedicationDispense-medicationdispense-example-1.json ==
+INFORMATION: MedicationDispense/medicationdispense-example-1: MedicationDispense.quantity: A definition for CodeSystem 'https://www.gfd-dpp.be/fhir/reference/packaging' could not be found, so the code cannot be validated
+== fsh-generated/resources/MedicationDispense-medicationdispense-example-2.json ==
+INFORMATION: MedicationDispense/medicationdispense-example-2: MedicationDispense.contained[0]/*Organization/apotheek-onder-de-toren*/.identifier[0]: This element does not match any known slice defined in the profile https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-organization|2.1.2 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: MedicationDispense/medicationdispense-example-2: MedicationDispense.quantity: A definition for CodeSystem 'https://www.gfd-dpp.be/fhir/reference/packaging' could not be found, so the code cannot be validated
+== fsh-generated/resources/NamingSystem-be-ns-cnk-codes.json ==
+== fsh-generated/resources/NamingSystem-be-ns-cti-extended-code.json ==
+== fsh-generated/resources/NamingSystem-be-ns-prescription-ids.json ==
+== fsh-generated/resources/NamingSystem-be-ns-product-package-type.json ==
+== fsh-generated/resources/Organization-apotheek-onder-de-toren.json ==
+INFORMATION: Organization/apotheek-onder-de-toren: Organization.identifier[0]: This element does not match any known slice defined in the profile https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-organization|2.1.2 (this may not be a problem, but you should check that it's not intended to match a slice)
+== fsh-generated/resources/StructureDefinition-BasedOnMedicationLine.json ==
+== fsh-generated/resources/StructureDefinition-BeDosage.json ==
+== fsh-generated/resources/StructureDefinition-BeExtAdherenceStatus.json ==
+== fsh-generated/resources/StructureDefinition-BeExtInstructionsForReimbursement.json ==
+== fsh-generated/resources/StructureDefinition-BeExtMedicationLineRegistrationStatus.json ==
+== fsh-generated/resources/StructureDefinition-BeExtMedicationType.json ==
+== fsh-generated/resources/StructureDefinition-BeExtOffLabel.json ==
+== fsh-generated/resources/StructureDefinition-BeExtRecordedDate.json ==
+== fsh-generated/resources/StructureDefinition-BeExtRecorder.json ==
+== fsh-generated/resources/StructureDefinition-BeMedicationDispense.json ==
+INFORMATION: StructureDefinition/BeMedicationDispense: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated
+INFORMATION: StructureDefinition/BeMedicationDispense: StructureDefinition.snapshot.element[88].mapping[0].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+== fsh-generated/resources/StructureDefinition-BeMedicationExposureCategory.json ==
+== fsh-generated/resources/StructureDefinition-BeMedicationLine.json ==
+INFORMATION: StructureDefinition.snapshot.element[11].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/artifact-version to 5.2.0 from choices of 5.1.0 (hl7.fhir.uv.extensions.r4#5.1.0), 5.2.0 (hl7.fhir.uv.extensions.r4#5.2.0)
+INFORMATION: StructureDefinition.snapshot.element[12].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/artifact-date to 5.2.0 from choices of 5.1.0 (hl7.fhir.uv.extensions.r4#5.1.0), 5.2.0 (hl7.fhir.uv.extensions.r4#5.2.0)
+INFORMATION: StructureDefinition.differential.element[5].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/artifact-version to 5.2.0 from choices of 5.1.0 (hl7.fhir.uv.extensions.r4#5.1.0), 5.2.0 (hl7.fhir.uv.extensions.r4#5.2.0)
+INFORMATION: StructureDefinition.differential.element[6].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/artifact-date to 5.2.0 from choices of 5.1.0 (hl7.fhir.uv.extensions.r4#5.1.0), 5.2.0 (hl7.fhir.uv.extensions.r4#5.2.0)
+INFORMATION: StructureDefinition/BeMedicationLine: StructureDefinition.differential.element[12].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/BeMedicationLine: StructureDefinition.snapshot.element[35].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+== fsh-generated/resources/StructureDefinition-BeMedicationPrescription.json ==
+INFORMATION: StructureDefinition/BeMedicationPrescription: StructureDefinition.differential.element[8].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/BeMedicationPrescription: StructureDefinition.snapshot.element[27].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+== fsh-generated/resources/StructureDefinition-BeModelDosagingInformation.json ==
+== fsh-generated/resources/StructureDefinition-BeModelMedication.json ==
+== fsh-generated/resources/StructureDefinition-BeModelMedicationDispense.json ==
+== fsh-generated/resources/StructureDefinition-BeModelMedicationLine.json ==
+== fsh-generated/resources/StructureDefinition-BeModelMedicationPrescription.json ==
+INFORMATION: StructureDefinition.snapshot.element[1].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/elementdefinition-identifier to 5.2.0 from choices of 4.0.1 (hl7.fhir.r4.core#4.0.1), 5.1.0 (hl7.fhir.uv.extensions.r4#5.1.0), 5.2.0 (hl7.fhir.uv.extensions.r4#5.2.0)
+INFORMATION: StructureDefinition.differential.element[1].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/elementdefinition-identifier to 5.2.0 from choices of 4.0.1 (hl7.fhir.r4.core#4.0.1), 5.1.0 (hl7.fhir.uv.extensions.r4#5.1.0), 5.2.0 (hl7.fhir.uv.extensions.r4#5.2.0)
+INFORMATION: StructureDefinition/BeModelMedicationPrescription: StructureDefinition.snapshot.element[21].type[0].extension[1]: The extension http://hl7.org/fhir/StructureDefinition/regex|5.2.0 is deprecated with the note: 'This was deprecated in favor of using a constraint on the element using FHIRPath, since constraints allow for the provision of a human readable message associated with the regex'
+INFORMATION: StructureDefinition/BeModelMedicationPrescription: BeModelMedicationPrescription.identifier: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-identifier|5.2.0 is deprecated
+== fsh-generated/resources/ValueSet-BeMedicationExposureIntentVS.json ==
+== fsh-generated/resources/ValueSet-BeMedicationLineAdherenceStatusReasonVS.json ==
+== fsh-generated/resources/ValueSet-BeMedicationLineAdherenceStatusVS.json ==
+== fsh-generated/resources/ValueSet-BeMedicationLineOriginTypeVS.json ==
+== fsh-generated/resources/ValueSet-BeMedicationLineRegistrationStatusVS.json ==
+== fsh-generated/resources/ValueSet-BeMedicationPrescriptionStatusVS.json ==
+== fsh-generated/resources/ValueSet-BeMedicationRequestReimbursementTypeVS.json ==
+== fsh-generated/resources/ValueSet-BeMedicationTypeVS.json ==
+== fsh-generated/resources/ValueSet-BeRouteOfAdministrationVS.json ==
+== fsh-generated/resources/ValueSet-be-vs-dispenser-types.json ==

@@ -1,0 +1,381 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "BeRouteOfAdministrationVS",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet BeRouteOfAdministrationVS</b></p><a name=\"BeRouteOfAdministrationVS\"> </a><a name=\"hcBeRouteOfAdministrationVS\"> </a><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/738982001\">738982001</a></td><td>Oromucosal use</td></tr><tr><td><a href=\"http://snomed.info/id/54471007\">54471007</a></td><td>Buccal use</td></tr><tr><td><a href=\"http://snomed.info/id/448598008\">448598008</a></td><td>Cutaneous use</td></tr><tr><td><a href=\"http://snomed.info/id/372449004\">372449004</a></td><td>Dental use</td></tr><tr><td><a href=\"http://snomed.info/id/372450004\">372450004</a></td><td>Endocervical use</td></tr><tr><td><a href=\"http://snomed.info/id/372451000\">372451000</a></td><td>Endosinusial use</td></tr><tr><td><a href=\"http://snomed.info/id/372452007\">372452007</a></td><td>Endotracheopulmonary use</td></tr><tr><td><a href=\"http://snomed.info/id/417985001\">417985001</a></td><td>Intestinal use</td></tr><tr><td><a href=\"http://snomed.info/id/764723001\">764723001</a></td><td>Epilesional use</td></tr><tr><td><a href=\"http://snomed.info/id/372453002\">372453002</a></td><td>Extraamniotic use</td></tr><tr><td><a href=\"http://snomed.info/id/766790006\">766790006</a></td><td>Haemodialysis</td></tr><tr><td><a href=\"http://snomed.info/id/714743009\">714743009</a></td><td>Extracorporeal use</td></tr><tr><td><a href=\"http://snomed.info/id/372454008\">372454008</a></td><td>Gastroenteral use</td></tr><tr><td><a href=\"http://snomed.info/id/372457001\">372457001</a></td><td>Gingival use</td></tr><tr><td><a href=\"http://snomed.info/id/718329006\">718329006</a></td><td>Infiltration</td></tr><tr><td><a href=\"http://snomed.info/id/372458006\">372458006</a></td><td>Intraamniotic use</td></tr><tr><td><a href=\"http://snomed.info/id/58100008\">58100008</a></td><td>Intraarterial use</td></tr><tr><td><a href=\"http://snomed.info/id/12130007\">12130007</a></td><td>Intraarticular use</td></tr><tr><td><a href=\"http://snomed.info/id/372459003\">372459003</a></td><td>Intrabursal use</td></tr><tr><td><a href=\"http://snomed.info/id/418821007\">418821007</a></td><td>Intracameral use</td></tr><tr><td><a href=\"http://snomed.info/id/372460008\">372460008</a></td><td>Intracardiac use</td></tr><tr><td><a href=\"http://snomed.info/id/418331006\">418331006</a></td><td>Intracartilaginous use</td></tr><tr><td><a href=\"http://snomed.info/id/372461007\">372461007</a></td><td>Intracavernous use</td></tr><tr><td><a href=\"http://snomed.info/id/446540005\">446540005</a></td><td>Intracerebral use</td></tr><tr><td><a href=\"http://snomed.info/id/420719007\">420719007</a></td><td>Intracerebroventricular use</td></tr><tr><td><a href=\"http://snomed.info/id/372462000\">372462000</a></td><td>Intracervical use</td></tr><tr><td><a href=\"http://snomed.info/id/58761000052107\">58761000052107</a></td><td>Intracholangiopancreatic use</td></tr><tr><td><a href=\"http://snomed.info/id/418892005\">418892005</a></td><td>Intracisternal use</td></tr><tr><td><a href=\"http://snomed.info/id/418608002\">418608002</a></td><td>Intracorneal use</td></tr><tr><td><a href=\"http://snomed.info/id/372463005\">372463005</a></td><td>Intracoronary use</td></tr><tr><td><a href=\"http://snomed.info/id/372464004\">372464004</a></td><td>Intradermal use</td></tr><tr><td><a href=\"http://snomed.info/id/372465003\">372465003</a></td><td>Intradiscal use</td></tr><tr><td><a href=\"http://snomed.info/id/448077001\">448077001</a></td><td>Intraepidermal use</td></tr><tr><td><a href=\"http://snomed.info/id/445768003\">445768003</a></td><td>Gastric use</td></tr><tr><td><a href=\"http://snomed.info/id/58751000052109\">58751000052109</a></td><td>Intraglandular use</td></tr><tr><td><a href=\"http://snomed.info/id/372466002\">372466002</a></td><td>Intralesional use</td></tr><tr><td><a href=\"http://snomed.info/id/372467006\">372467006</a></td><td>Intralymphatic use</td></tr><tr><td><a href=\"http://snomed.info/id/447121004\">447121004</a></td><td>Intramammary use</td></tr><tr><td><a href=\"http://snomed.info/id/78421000\">78421000</a></td><td>Intramuscular use</td></tr><tr><td><a href=\"http://snomed.info/id/372468001\">372468001</a></td><td>Intraocular use</td></tr><tr><td><a href=\"http://snomed.info/id/417255000\">417255000</a></td><td>Intraosseous use</td></tr><tr><td><a href=\"http://snomed.info/id/445771006\">445771006</a></td><td>Intrapericardial use</td></tr><tr><td><a href=\"http://snomed.info/id/38239002\">38239002</a></td><td>Intraperitoneal use</td></tr><tr><td><a href=\"http://snomed.info/id/372469009\">372469009</a></td><td>Intrapleural use</td></tr><tr><td><a href=\"http://snomed.info/id/58771000052103\">58771000052103</a></td><td>Intraportal use</td></tr><tr><td><a href=\"http://snomed.info/id/419810008\">419810008</a></td><td>Intraprostatic use</td></tr><tr><td><a href=\"http://snomed.info/id/420201002\">420201002</a></td><td>Intrapulmonary use</td></tr><tr><td><a href=\"http://snomed.info/id/372470005\">372470005</a></td><td>Intrasternal use</td></tr><tr><td><a href=\"http://snomed.info/id/72607000\">72607000</a></td><td>Intrathecal use</td></tr><tr><td><a href=\"http://snomed.info/id/447122006\">447122006</a></td><td>Intratumoral use</td></tr><tr><td><a href=\"http://snomed.info/id/62226000\">62226000</a></td><td>Intrauterine use</td></tr><tr><td><a href=\"http://snomed.info/id/47625008\">47625008</a></td><td>Intravenous use</td></tr><tr><td><a href=\"http://snomed.info/id/420287000\">420287000</a></td><td>Intraventricular use</td></tr><tr><td><a href=\"http://snomed.info/id/372471009\">372471009</a></td><td>Intravesical use</td></tr><tr><td><a href=\"http://snomed.info/id/418401004\">418401004</a></td><td>Intravitreal use</td></tr><tr><td><a href=\"http://snomed.info/id/420185003\">420185003</a></td><td>Laryngopharyngeal use</td></tr><tr><td><a href=\"http://snomed.info/id/46713006\">46713006</a></td><td>Nasal use</td></tr><tr><td><a href=\"http://snomed.info/id/385432009\">385432009</a></td><td>Route of administration not applicable</td></tr><tr><td><a href=\"http://snomed.info/id/372472002\">372472002</a></td><td>Oculonasal use</td></tr><tr><td><a href=\"http://snomed.info/id/54485002\">54485002</a></td><td>Ocular use</td></tr><tr><td><a href=\"http://snomed.info/id/26643006\">26643006</a></td><td>Oral use</td></tr><tr><td><a href=\"http://snomed.info/id/418664002\">418664002</a></td><td>Oropharyngeal use</td></tr><tr><td><a href=\"http://snomed.info/id/10547007\">10547007</a></td><td>Auricular use</td></tr><tr><td><a href=\"http://snomed.info/id/419165009\">419165009</a></td><td>Paravertebral use</td></tr><tr><td><a href=\"http://snomed.info/id/372474001\">372474001</a></td><td>Periarticular use</td></tr><tr><td><a href=\"http://snomed.info/id/447080003\">447080003</a></td><td>Epidural use</td></tr><tr><td><a href=\"http://snomed.info/id/372475000\">372475000</a></td><td>Perineural use</td></tr><tr><td><a href=\"http://snomed.info/id/447052000\">447052000</a></td><td>Periodontal use</td></tr><tr><td><a href=\"http://snomed.info/id/420047004\">420047004</a></td><td>Periosseous use</td></tr><tr><td><a href=\"http://snomed.info/id/58811000052103\">58811000052103</a></td><td>Peritumoral use</td></tr><tr><td><a href=\"http://snomed.info/id/58821000052106\">58821000052106</a></td><td>Posterior juxtascleral use</td></tr><tr><td><a href=\"http://snomed.info/id/37161004\">37161004</a></td><td>Rectal use</td></tr><tr><td><a href=\"http://snomed.info/id/447694001\">447694001</a></td><td>Inhalation use</td></tr><tr><td><a href=\"http://snomed.info/id/418321004\">418321004</a></td><td>Retrobulbar use</td></tr><tr><td><a href=\"http://snomed.info/id/372476004\">372476004</a></td><td>Subconjunctival use</td></tr><tr><td><a href=\"http://snomed.info/id/34206005\">34206005</a></td><td>Subcutaneous use</td></tr><tr><td><a href=\"http://snomed.info/id/37839007\">37839007</a></td><td>Sublingual use</td></tr><tr><td><a href=\"http://snomed.info/id/419874009\">419874009</a></td><td>Submucosal use</td></tr><tr><td><a href=\"http://snomed.info/id/58831000052108\">58831000052108</a></td><td>Subretinal use</td></tr><tr><td><a href=\"http://snomed.info/id/6064005\">6064005</a></td><td>Local use</td></tr><tr><td><a href=\"http://snomed.info/id/45890007\">45890007</a></td><td>Transdermal use</td></tr><tr><td><a href=\"http://snomed.info/id/90028008\">90028008</a></td><td>Urethral use</td></tr><tr><td><a href=\"http://snomed.info/id/16857009\">16857009</a></td><td>Vaginal use</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/BeRouteOfAdministrationVS",
+  "version" : "1.1.0",
+  "name" : "BeRouteOfAdministrationVS",
+  "title" : "Route of Administration ValueSet",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-07-20T21:36:53+00:00",
+  "publisher" : "HL7 Belgium",
+  "contact" : [{
+    "name" : "HL7 Belgium",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.hl7belgium.org"
+    },
+    {
+      "system" : "email",
+      "value" : "hl7belgium@hl7belgium.org"
+    }]
+  },
+  {
+    "name" : "Message Structure eHealth",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "message-structure@ehealth.fgov.be",
+      "use" : "work"
+    }]
+  }],
+  "description" : "This ValueSet contains codes for the route of administration of medications. It is used to specify how a medication is administered to a patient, such as orally, intravenously, or topically.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BE",
+      "display" : "Belgium"
+    }]
+  }],
+  "copyright" : "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO); Belgium is a member of IHTSDO. Implementers of SNOMED CT should review usage terms or directly contact SNOMED International: info@snomed.org",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "738982001",
+        "display" : "Oromucosal use"
+      },
+      {
+        "code" : "54471007",
+        "display" : "Buccal use"
+      },
+      {
+        "code" : "448598008",
+        "display" : "Cutaneous use"
+      },
+      {
+        "code" : "372449004",
+        "display" : "Dental use"
+      },
+      {
+        "code" : "372450004",
+        "display" : "Endocervical use"
+      },
+      {
+        "code" : "372451000",
+        "display" : "Endosinusial use"
+      },
+      {
+        "code" : "372452007",
+        "display" : "Endotracheopulmonary use"
+      },
+      {
+        "code" : "417985001",
+        "display" : "Intestinal use"
+      },
+      {
+        "code" : "764723001",
+        "display" : "Epilesional use"
+      },
+      {
+        "code" : "372453002",
+        "display" : "Extraamniotic use"
+      },
+      {
+        "code" : "766790006",
+        "display" : "Haemodialysis"
+      },
+      {
+        "code" : "714743009",
+        "display" : "Extracorporeal use"
+      },
+      {
+        "code" : "372454008",
+        "display" : "Gastroenteral use"
+      },
+      {
+        "code" : "372457001",
+        "display" : "Gingival use"
+      },
+      {
+        "code" : "718329006",
+        "display" : "Infiltration"
+      },
+      {
+        "code" : "372458006",
+        "display" : "Intraamniotic use"
+      },
+      {
+        "code" : "58100008",
+        "display" : "Intraarterial use"
+      },
+      {
+        "code" : "12130007",
+        "display" : "Intraarticular use"
+      },
+      {
+        "code" : "372459003",
+        "display" : "Intrabursal use"
+      },
+      {
+        "code" : "418821007",
+        "display" : "Intracameral use"
+      },
+      {
+        "code" : "372460008",
+        "display" : "Intracardiac use"
+      },
+      {
+        "code" : "418331006",
+        "display" : "Intracartilaginous use"
+      },
+      {
+        "code" : "372461007",
+        "display" : "Intracavernous use"
+      },
+      {
+        "code" : "446540005",
+        "display" : "Intracerebral use"
+      },
+      {
+        "code" : "420719007",
+        "display" : "Intracerebroventricular use"
+      },
+      {
+        "code" : "372462000",
+        "display" : "Intracervical use"
+      },
+      {
+        "code" : "58761000052107",
+        "display" : "Intracholangiopancreatic use"
+      },
+      {
+        "code" : "418892005",
+        "display" : "Intracisternal use"
+      },
+      {
+        "code" : "418608002",
+        "display" : "Intracorneal use"
+      },
+      {
+        "code" : "372463005",
+        "display" : "Intracoronary use"
+      },
+      {
+        "code" : "372464004",
+        "display" : "Intradermal use"
+      },
+      {
+        "code" : "372465003",
+        "display" : "Intradiscal use"
+      },
+      {
+        "code" : "448077001",
+        "display" : "Intraepidermal use"
+      },
+      {
+        "code" : "445768003",
+        "display" : "Gastric use"
+      },
+      {
+        "code" : "58751000052109",
+        "display" : "Intraglandular use"
+      },
+      {
+        "code" : "372466002",
+        "display" : "Intralesional use"
+      },
+      {
+        "code" : "372467006",
+        "display" : "Intralymphatic use"
+      },
+      {
+        "code" : "447121004",
+        "display" : "Intramammary use"
+      },
+      {
+        "code" : "78421000",
+        "display" : "Intramuscular use"
+      },
+      {
+        "code" : "372468001",
+        "display" : "Intraocular use"
+      },
+      {
+        "code" : "417255000",
+        "display" : "Intraosseous use"
+      },
+      {
+        "code" : "445771006",
+        "display" : "Intrapericardial use"
+      },
+      {
+        "code" : "38239002",
+        "display" : "Intraperitoneal use"
+      },
+      {
+        "code" : "372469009",
+        "display" : "Intrapleural use"
+      },
+      {
+        "code" : "58771000052103",
+        "display" : "Intraportal use"
+      },
+      {
+        "code" : "419810008",
+        "display" : "Intraprostatic use"
+      },
+      {
+        "code" : "420201002",
+        "display" : "Intrapulmonary use"
+      },
+      {
+        "code" : "372470005",
+        "display" : "Intrasternal use"
+      },
+      {
+        "code" : "72607000",
+        "display" : "Intrathecal use"
+      },
+      {
+        "code" : "447122006",
+        "display" : "Intratumoral use"
+      },
+      {
+        "code" : "62226000",
+        "display" : "Intrauterine use"
+      },
+      {
+        "code" : "47625008",
+        "display" : "Intravenous use"
+      },
+      {
+        "code" : "420287000",
+        "display" : "Intraventricular use"
+      },
+      {
+        "code" : "372471009",
+        "display" : "Intravesical use"
+      },
+      {
+        "code" : "418401004",
+        "display" : "Intravitreal use"
+      },
+      {
+        "code" : "420185003",
+        "display" : "Laryngopharyngeal use"
+      },
+      {
+        "code" : "46713006",
+        "display" : "Nasal use"
+      },
+      {
+        "code" : "385432009",
+        "display" : "Route of administration not applicable"
+      },
+      {
+        "code" : "372472002",
+        "display" : "Oculonasal use"
+      },
+      {
+        "code" : "54485002",
+        "display" : "Ocular use"
+      },
+      {
+        "code" : "26643006",
+        "display" : "Oral use"
+      },
+      {
+        "code" : "418664002",
+        "display" : "Oropharyngeal use"
+      },
+      {
+        "code" : "10547007",
+        "display" : "Auricular use"
+      },
+      {
+        "code" : "419165009",
+        "display" : "Paravertebral use"
+      },
+      {
+        "code" : "372474001",
+        "display" : "Periarticular use"
+      },
+      {
+        "code" : "447080003",
+        "display" : "Epidural use"
+      },
+      {
+        "code" : "372475000",
+        "display" : "Perineural use"
+      },
+      {
+        "code" : "447052000",
+        "display" : "Periodontal use"
+      },
+      {
+        "code" : "420047004",
+        "display" : "Periosseous use"
+      },
+      {
+        "code" : "58811000052103",
+        "display" : "Peritumoral use"
+      },
+      {
+        "code" : "58821000052106",
+        "display" : "Posterior juxtascleral use"
+      },
+      {
+        "code" : "37161004",
+        "display" : "Rectal use"
+      },
+      {
+        "code" : "447694001",
+        "display" : "Inhalation use"
+      },
+      {
+        "code" : "418321004",
+        "display" : "Retrobulbar use"
+      },
+      {
+        "code" : "372476004",
+        "display" : "Subconjunctival use"
+      },
+      {
+        "code" : "34206005",
+        "display" : "Subcutaneous use"
+      },
+      {
+        "code" : "37839007",
+        "display" : "Sublingual use"
+      },
+      {
+        "code" : "419874009",
+        "display" : "Submucosal use"
+      },
+      {
+        "code" : "58831000052108",
+        "display" : "Subretinal use"
+      },
+      {
+        "code" : "6064005",
+        "display" : "Local use"
+      },
+      {
+        "code" : "45890007",
+        "display" : "Transdermal use"
+      },
+      {
+        "code" : "90028008",
+        "display" : "Urethral use"
+      },
+      {
+        "code" : "16857009",
+        "display" : "Vaginal use"
+      }]
+    }]
+  }
+}

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="medication-exposuretype"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This  code system <code>https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-exposuretype</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">prophylaxys<a name="medication-exposuretype-prophylaxys"> </a></td><td>Prophylactic purpose</td></tr><tr><td style="white-space:nowrap">therapy<a name="medication-exposuretype-therapy"> </a></td><td>Therapeutic purpose</td></tr><tr><td style="white-space:nowrap">other<a name="medication-exposuretype-other"> </a></td><td>Other e.g. diagnostic purposes</td></tr></table></div>
+  </text>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-exposuretype"/>
+  <version value="1.0.1"/>
+  <name value="BEMLMExposureType"/>
+  <title value="Medication exposure purpose"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2024-03-24T09:50:04+00:00"/>
+  <publisher value="HL7 Belgium"/>
+  <contact>
+    <name value="HL7 Belgium"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.hl7belgium.org"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="hl7belgium@hl7belgium.org"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Message Structure eHealth"/>
+    <telecom>
+      <system value="email"/>
+      <value value="message-structure@ehealth.fgov.be"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Medication exposure purpose"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
+      <display value="Belgium"/>
+    </coding>
+  </jurisdiction>
+  <content value="complete"/>
+  <count value="3"/>
+  <concept>
+    <code value="prophylaxys"/>
+    <display value="Prophylactic purpose"/>
+  </concept>
+  <concept>
+    <code value="therapy"/>
+    <display value="Therapeutic purpose"/>
+  </concept>
+  <concept>
+    <code value="other"/>
+    <display value="Other e.g. diagnostic purposes"/>
+  </concept>
+</CodeSystem>

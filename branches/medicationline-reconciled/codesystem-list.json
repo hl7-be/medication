@@ -1,0 +1,20 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-line-origin-type",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "MedicationLineOrigintype",
+      "title" : "Medication origin type",
+      "description" : "Medication treatment origin type - what is the type of care that originated the medication treatment"
+    },
+    {
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+      "version" : "1.1.0",
+      "status" : "draft",
+      "name" : "BEMLMedicationType",
+      "title" : "Medication preparation Type",
+      "description" : "Medication preparation type"
+    }
+  ]
+}

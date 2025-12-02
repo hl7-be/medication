@@ -1,0 +1,49 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.ehealth.fgov.be/standards/fhir/medication/MedicationDispense/example-minimal-dispense> a fhir:MedicationDispense ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "example-minimal-dispense"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationdispense"^^xsd:anyURI ;
+       fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationdispense>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: MedicationDispense example-minimal-dispense</b></p><a name=\"example-minimal-dispense\"> </a><a name=\"hcexample-minimal-dispense\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-be-medicationdispense.html\">BeMedicationDispense</a></p></div><p><b>status</b>: Completed</p><p><b>medication</b>: <span title=\"Codes:{https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes 1439562}\">Topazolam tab 50x 1,0mg</span></p><p><b>subject</b>: Identifier: <a href=\"https://www.ehealth.fgov.be/standards/fhir/core/2.1.2/NamingSystem-be-ssin.html\" title=\"NISS/INSZ\">BeSSINNamingSystem</a>/64110219106</p><h3>Performers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Actor</b></td></tr><tr><td style=\"display: none\">*</td><td>Jan Janssen (Identifier: <code>https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi-practitioner</code>/6547432)</td></tr></table><p><b>whenHandedOver</b>: 2020-03-10</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:medication [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "1439562" ] ;
+       fhir:display [ fhir:v "Topazolam tab 50x 1,0mg" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:identifier [
+       fhir:system [ fhir:v "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "64110219106" ]
+     ]
+  ] ; # 
+  fhir:performer ( [
+     fhir:actor [
+       fhir:identifier [
+         fhir:system [ fhir:v "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi-practitioner"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "6547432" ]
+       ] ;
+       fhir:display [ fhir:v "Jan Janssen" ]
+     ]
+  ] ) ; # 
+  fhir:whenHandedOver [ fhir:v "2020-03-10"^^xsd:date] . # 
+
+# -------------------------------------------------------------------------------------
+

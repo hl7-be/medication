@@ -1,0 +1,4 @@
+URL,Version,Status,OIDs,Name,Title,Descriptino,Uses,Used,Sources
+https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/be-vs-dispenser-types,2.0.0,draft,,DispenserTypes,Dispenser Types,"Dispenser Types - from hcparty",,"hl7.fhir.be.core"
+https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/medication-exposure-category-vs,2.0.0,draft,,MedicationExposureCategoryVS,Medication exposure intent,"The exposure purpose of a medication - whether the medication is given for therapeutic or prophylactic purposes.",,"SCT"
+https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/medication-type-vs,2.0.0,draft,,BEMLMedicationTypeVS,Medication preparation Type value set,"Medication preparation type value set",,"Internal"

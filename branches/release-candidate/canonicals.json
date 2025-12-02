@@ -1,0 +1,275 @@
+[
+  {
+    "id" : "hl7.fhir.be.medication",
+    "type" : "ImplementationGuide",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/ImplementationGuide/hl7.fhir.be.medication",
+    "version" : "1.1.0",
+    "name" : "Medication"
+  },
+  {
+    "id" : "be-ns-cnk-codes",
+    "type" : "NamingSystem",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-cnk-codes",
+    "version" : "1.1.0",
+    "name" : "BeNSCNK"
+  },
+  {
+    "id" : "be-ns-cti-extended-code",
+    "type" : "NamingSystem",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-cti-extended-code",
+    "version" : "1.1.0",
+    "name" : "BeNSCTIExtended"
+  },
+  {
+    "id" : "be-ns-prescription-ids",
+    "type" : "NamingSystem",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-prescription-ids",
+    "version" : "1.1.0",
+    "name" : "BeNSPrescriptions"
+  },
+  {
+    "id" : "be-ns-product-package-type",
+    "type" : "NamingSystem",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-product-package-type",
+    "version" : "1.1.0",
+    "name" : "BeNSProductPackage"
+  },
+  {
+    "id" : "BasedOnMedicationLine",
+    "type" : "StructureDefinition",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BasedOnMedicationLine",
+    "version" : "1.1.0",
+    "name" : "BasedOnMedicationLine"
+  },
+  {
+    "id" : "BeDosage",
+    "type" : "StructureDefinition",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeDosage",
+    "version" : "1.1.0",
+    "name" : "BeDosage"
+  },
+  {
+    "id" : "BeExtAdherenceStatus",
+    "type" : "StructureDefinition",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
+    "version" : "1.1.0",
+    "name" : "BeExtAdherenceStatus"
+  },
+  {
+    "id" : "BeExtInstructionsForReimbursement",
+    "type" : "StructureDefinition",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtInstructionsForReimbursement",
+    "version" : "1.1.0",
+    "name" : "BeExtInstructionsForReimbursement"
+  },
+  {
+    "id" : "BeExtMedicationLineRegistrationStatus",
+    "type" : "StructureDefinition",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtMedicationLineRegistrationStatus",
+    "version" : "1.1.0",
+    "name" : "BeExtMedicationLineRegistrationStatus"
+  },
+  {
+    "id" : "BeExtMedicationType",
+    "type" : "StructureDefinition",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtMedicationType",
+    "version" : "1.1.0",
+    "name" : "BeExtMedicationType"
+  },
+  {
+    "id" : "BeExtOffLabel",
+    "type" : "StructureDefinition",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtOffLabel",
+    "version" : "1.1.0",
+    "name" : "BeExtOffLabel"
+  },
+  {
+    "id" : "BeExtRecordedDate",
+    "type" : "StructureDefinition",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
+    "version" : "1.1.0",
+    "name" : "BeExtRecordedDate"
+  },
+  {
+    "id" : "BeExtRecorder",
+    "type" : "StructureDefinition",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecorder",
+    "version" : "1.1.0",
+    "name" : "BeExtRecorder"
+  },
+  {
+    "id" : "BeMedicationDispense",
+    "type" : "StructureDefinition",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationDispense",
+    "version" : "1.1.0",
+    "name" : "BeMedicationDispense"
+  },
+  {
+    "id" : "BeMedicationExposureCategory",
+    "type" : "StructureDefinition",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationExposureCategory",
+    "version" : "1.1.0",
+    "name" : "BeMedicationExposureCategory"
+  },
+  {
+    "id" : "BeMedicationLine",
+    "type" : "StructureDefinition",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine",
+    "version" : "1.1.0",
+    "name" : "BeMedicationLine"
+  },
+  {
+    "id" : "BeMedicationPrescription",
+    "type" : "StructureDefinition",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationPrescription",
+    "version" : "1.1.0",
+    "name" : "BeMedicationPrescription"
+  },
+  {
+    "id" : "BeModelDosagingInformation",
+    "type" : "StructureDefinition",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeModelDosagingInformation",
+    "version" : "1.1.0",
+    "name" : "BeModelDosagingInformation"
+  },
+  {
+    "id" : "BeModelMedication",
+    "type" : "StructureDefinition",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeModelMedication",
+    "version" : "1.1.0",
+    "name" : "BeModelMedication"
+  },
+  {
+    "id" : "BeModelMedicationDispense",
+    "type" : "StructureDefinition",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeModelMedicationDispense",
+    "version" : "1.1.0",
+    "name" : "BeModelMedicationDispense"
+  },
+  {
+    "id" : "BeModelMedicationLine",
+    "type" : "StructureDefinition",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeModelMedicationLine",
+    "version" : "1.1.0",
+    "name" : "MedicationLine"
+  },
+  {
+    "id" : "BeModelMedicationPrescription",
+    "type" : "StructureDefinition",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeModelMedicationPrescription",
+    "version" : "1.1.0",
+    "name" : "BeModelMedicationPrescription"
+  },
+  {
+    "id" : "be-vs-dispenser-types",
+    "type" : "ValueSet",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/be-vs-dispenser-types",
+    "version" : "1.1.0",
+    "name" : "DispenserTypes"
+  },
+  {
+    "id" : "BeMedicationLineAdherenceStatus",
+    "type" : "CodeSystem",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatus",
+    "version" : "1.1.0",
+    "name" : "BeMedicationLineAdherenceStatus"
+  },
+  {
+    "id" : "BeMedicationLineAdherenceStatusReason",
+    "type" : "CodeSystem",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatusReason",
+    "version" : "1.1.0",
+    "name" : "BeMedicationLineAdherenceStatusReason"
+  },
+  {
+    "id" : "BeMedicationLineOriginType",
+    "type" : "CodeSystem",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineOriginType",
+    "version" : "1.1.0",
+    "name" : "BeMedicationLineOriginType"
+  },
+  {
+    "id" : "BeMedicationLineRegistrationStatus",
+    "type" : "CodeSystem",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineRegistrationStatus",
+    "version" : "1.1.0",
+    "name" : "BeMedicationLineRegistrationStatus"
+  },
+  {
+    "id" : "BeMedicationRequestReimbursementType",
+    "type" : "CodeSystem",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationRequestReimbursementType",
+    "version" : "1.1.0",
+    "name" : "BeMedicationRequestReimbursementType"
+  },
+  {
+    "id" : "BeMedicationType",
+    "type" : "CodeSystem",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationType",
+    "version" : "1.1.0",
+    "name" : "BeMedicationType"
+  },
+  {
+    "id" : "BeMedicationExposureIntentVS",
+    "type" : "ValueSet",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/BeMedicationExposureIntentVS",
+    "version" : "1.1.0",
+    "name" : "BeMedicationExposureIntentVS"
+  },
+  {
+    "id" : "BeMedicationLineAdherenceStatusReasonVS",
+    "type" : "ValueSet",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/BeMedicationLineAdherenceStatusReasonVS",
+    "version" : "1.1.0",
+    "name" : "BeMedicationLineAdherenceStatusReasonVS"
+  },
+  {
+    "id" : "BeMedicationLineAdherenceStatusVS",
+    "type" : "ValueSet",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/BeMedicationLineAdherenceStatusVS",
+    "version" : "1.1.0",
+    "name" : "BeMedicationLineAdherenceStatusVS"
+  },
+  {
+    "id" : "BeMedicationLineOriginTypeVS",
+    "type" : "ValueSet",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/BeMedicationLineOriginTypeVS",
+    "version" : "1.1.0",
+    "name" : "BeMedicationLineOriginTypeVS"
+  },
+  {
+    "id" : "BeMedicationLineRegistrationStatusVS",
+    "type" : "ValueSet",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/BeMedicationLineRegistrationStatusVS",
+    "version" : "1.1.0",
+    "name" : "BeMedicationLineRegistrationStatusVS"
+  },
+  {
+    "id" : "BeMedicationPrescriptionStatusVS",
+    "type" : "ValueSet",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/BeMedicationPrescriptionStatusVS",
+    "version" : "1.1.0",
+    "name" : "BeMedicationPrescriptionStatusVS"
+  },
+  {
+    "id" : "BeMedicationRequestReimbursementTypeVS",
+    "type" : "ValueSet",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/BeMedicationRequestReimbursementTypeVS",
+    "version" : "1.1.0",
+    "name" : "BeMedicationRequestReimbursementTypeVS"
+  },
+  {
+    "id" : "BeMedicationTypeVS",
+    "type" : "ValueSet",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/BeMedicationTypeVS",
+    "version" : "1.1.0",
+    "name" : "BeMedicationTypeVS"
+  },
+  {
+    "id" : "BeRouteOfAdministrationVS",
+    "type" : "ValueSet",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/BeRouteOfAdministrationVS",
+    "version" : "1.1.0",
+    "name" : "BeRouteOfAdministrationVS"
+  }
+]

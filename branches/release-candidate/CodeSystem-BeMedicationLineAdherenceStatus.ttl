@@ -1,0 +1,104 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/BeMedicationLineAdherenceStatus> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "BeMedicationLineAdherenceStatus"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem BeMedicationLineAdherenceStatus</b></p><a name=\"BeMedicationLineAdherenceStatus\"> </a><a name=\"hcBeMedicationLineAdherenceStatus\"> </a><p>This case-sensitive code system <code>https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatus</code> defines the following codes in a Is-A hierarchy:</p><table class=\"codes\"><tr><td><b>Lvl</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>1</td><td style=\"white-space:nowrap\">taking<a name=\"BeMedicationLineAdherenceStatus-taking\"> </a></td><td>Taking</td><td>The medication is being taken.</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  taking-as-directed<a name=\"BeMedicationLineAdherenceStatus-taking-as-directed\"> </a></td><td>Taking As Directed</td><td>The medication is being taken as directed.</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  taking-not-as-directed<a name=\"BeMedicationLineAdherenceStatus-taking-not-as-directed\"> </a></td><td>Taking Not As Directed</td><td>The medication is not being taken as directed.</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">not-taking<a name=\"BeMedicationLineAdherenceStatus-not-taking\"> </a></td><td>Not Taking</td><td>The medication is not being taken.</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  on-hold<a name=\"BeMedicationLineAdherenceStatus-on-hold\"> </a></td><td>On Hold</td><td>The medication is on hold.</td></tr><tr><td>3</td><td style=\"white-space:nowrap\">    on-hold-as-directed<a name=\"BeMedicationLineAdherenceStatus-on-hold-as-directed\"> </a></td><td>On Hold As Directed</td><td>The medication is on hold as directed.</td></tr><tr><td>3</td><td style=\"white-space:nowrap\">    on-hold-not-as-directed<a name=\"BeMedicationLineAdherenceStatus-on-hold-not-as-directed\"> </a></td><td>On Hold Not As Directed</td><td>The medication is on hold not as directed.</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  stopped<a name=\"BeMedicationLineAdherenceStatus-stopped\"> </a></td><td>Stopped</td><td>The medication is stopped.</td></tr><tr><td>3</td><td style=\"white-space:nowrap\">    stopped-as-directed<a name=\"BeMedicationLineAdherenceStatus-stopped-as-directed\"> </a></td><td>Stopped As Directed</td><td>The medication is stopped as directed.</td></tr><tr><td>3</td><td style=\"white-space:nowrap\">    stopped-not-as-directed<a name=\"BeMedicationLineAdherenceStatus-stopped-not-as-directed\"> </a></td><td>Stopped Not As Directed</td><td>The medication is stopped not as directed.</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">unknown<a name=\"BeMedicationLineAdherenceStatus-unknown\"> </a></td><td>Unknown</td><td>Whether the medication is being taken or not is not currently known.</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatus"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.1.0"] ; # 
+  fhir:name [ fhir:v "BeMedicationLineAdherenceStatus"] ; # 
+  fhir:title [ fhir:v "Medication Line Adherence Status"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-10-10T10:16:02+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "eHealth Platform"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "eHealth Platform" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.ehealth.fgov.be/standards/fhir" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "support@be-ehealth-standards.atlassian.net" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Message Structure eHealth" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "support@be-ehealth-standards.atlassian.net" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Medication Line Adherence Status - ValueSet."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "BE" ] ;
+       fhir:display [ fhir:v "Belgium" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:hierarchyMeaning [ fhir:v "is-a"] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "11"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "taking" ] ;
+     fhir:display [ fhir:v "Taking" ] ;
+     fhir:definition [ fhir:v "The medication is being taken." ] ;
+     fhir:concept ( [
+       fhir:code [ fhir:v "taking-as-directed" ] ;
+       fhir:display [ fhir:v "Taking As Directed" ] ;
+       fhir:definition [ fhir:v "The medication is being taken as directed." ]
+     ] [
+       fhir:code [ fhir:v "taking-not-as-directed" ] ;
+       fhir:display [ fhir:v "Taking Not As Directed" ] ;
+       fhir:definition [ fhir:v "The medication is not being taken as directed." ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "not-taking" ] ;
+     fhir:display [ fhir:v "Not Taking" ] ;
+     fhir:definition [ fhir:v "The medication is not being taken." ] ;
+     fhir:concept ( [
+       fhir:code [ fhir:v "on-hold" ] ;
+       fhir:display [ fhir:v "On Hold" ] ;
+       fhir:definition [ fhir:v "The medication is on hold." ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "on-hold-as-directed" ] ;
+         fhir:display [ fhir:v "On Hold As Directed" ] ;
+         fhir:definition [ fhir:v "The medication is on hold as directed." ]
+       ] [
+         fhir:code [ fhir:v "on-hold-not-as-directed" ] ;
+         fhir:display [ fhir:v "On Hold Not As Directed" ] ;
+         fhir:definition [ fhir:v "The medication is on hold not as directed." ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "stopped" ] ;
+       fhir:display [ fhir:v "Stopped" ] ;
+       fhir:definition [ fhir:v "The medication is stopped." ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "stopped-as-directed" ] ;
+         fhir:display [ fhir:v "Stopped As Directed" ] ;
+         fhir:definition [ fhir:v "The medication is stopped as directed." ]
+       ] [
+         fhir:code [ fhir:v "stopped-not-as-directed" ] ;
+         fhir:display [ fhir:v "Stopped Not As Directed" ] ;
+         fhir:definition [ fhir:v "The medication is stopped not as directed." ]
+       ] )
+     ] )
+  ] [
+     fhir:code [ fhir:v "unknown" ] ;
+     fhir:display [ fhir:v "Unknown" ] ;
+     fhir:definition [ fhir:v "Whether the medication is being taken or not is not currently known." ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

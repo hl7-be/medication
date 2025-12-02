@@ -1,0 +1,67 @@
+{
+  "resourceType": "ValueSet",
+  "id": "be-vs-dispenser-types",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"CodeSystem-cd-hcparty.html\"><code>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-hcparty</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-cd-hcparty.html#cd-hcparty-deptpharmacy\">deptpharmacy</a></td><td>Pharmacy service or department within an organisation</td></tr><tr><td><a href=\"CodeSystem-cd-hcparty.html#cd-hcparty-perspharmacist\">perspharmacist</a></td><td>pharmacist</td></tr><tr><td><a href=\"CodeSystem-cd-hcparty.html#cd-hcparty-orgpharmacy\">orgpharmacy</a></td><td>Independent pharmacy</td></tr><tr><td><a href=\"CodeSystem-cd-hcparty.html#cd-hcparty-perspharmacyassistant\">perspharmacyassistant</a></td><td>pharmacy assistant</td></tr><tr><td><a href=\"CodeSystem-cd-hcparty.html#cd-hcparty-perspharmacistclinicalbiologist\">perspharmacistclinicalbiologist</a></td><td>pharmacist-clinical biologist</td></tr><tr><td><a href=\"CodeSystem-cd-hcparty.html#cd-hcparty-persdentist\">persdentist</a></td><td>dentist</td></tr><tr><td><a href=\"CodeSystem-cd-hcparty.html#cd-hcparty-deptdentistry\">deptdentistry</a></td><td>dentistry</td></tr></table></li></ul></div>"
+  },
+  "url": "https://www.hl7belgium.org/fhir/ValueSet/be-vs-dispenser-types",
+  "version": "0.2.0",
+  "name": "DispenserTypes",
+  "title": "Dispenser Types",
+  "status": "active",
+  "date": "2022-03-29T12:11:46+00:00",
+  "publisher": "HL7 Belgium",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7belgium.org"
+        }
+      ]
+    }
+  ],
+  "description": "Dispenser Types - from hcparty",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "056"
+        }
+      ],
+      "text": "Belgium"
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-hcparty",
+        "concept": [
+          {
+            "code": "deptpharmacy"
+          },
+          {
+            "code": "perspharmacist"
+          },
+          {
+            "code": "orgpharmacy"
+          },
+          {
+            "code": "perspharmacyassistant"
+          },
+          {
+            "code": "perspharmacistclinicalbiologist"
+          },
+          {
+            "code": "persdentist"
+          },
+          {
+            "code": "deptdentistry"
+          }
+        ]
+      }
+    ]
+  }
+}

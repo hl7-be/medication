@@ -1,0 +1,48 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "medication-type-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-medication-type.html\"><code>https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type</code></a></li></ul></div>"
+  },
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/medication-type-vs",
+  "version" : "1.1.0",
+  "name" : "BEMLMedicationTypeVS",
+  "title" : "Medication preparation Type value set",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2024-04-07T13:19:46+00:00",
+  "publisher" : "HL7 Belgium",
+  "contact" : [{
+    "name" : "HL7 Belgium",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.hl7belgium.org"
+    },
+    {
+      "system" : "email",
+      "value" : "hl7belgium@hl7belgium.org"
+    }]
+  },
+  {
+    "name" : "Message Structure eHealth",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "message-structure@ehealth.fgov.be",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Medication preparation type value set",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BE",
+      "display" : "Belgium"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type"
+    }]
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "BeMedicationLineRegistrationStatus",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem BeMedicationLineRegistrationStatus</b></p><a name=\"BeMedicationLineRegistrationStatus\"> </a><a name=\"hcBeMedicationLineRegistrationStatus\"> </a><p>This case-sensitive code system <code>https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineRegistrationStatus</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">draft<a name=\"BeMedicationLineRegistrationStatus-draft\"> </a></td><td>Draft</td></tr><tr><td style=\"white-space:nowrap\">recorded<a name=\"BeMedicationLineRegistrationStatus-recorded\"> </a></td><td>Recorded</td></tr><tr><td style=\"white-space:nowrap\">entered-in-error<a name=\"BeMedicationLineRegistrationStatus-entered-in-error\"> </a></td><td>Entered in Error</td></tr></table></div>"
+  },
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineRegistrationStatus",
+  "version" : "1.1.0",
+  "name" : "BeMedicationLineRegistrationStatus",
+  "title" : "Medication Line Registration Status",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2025-07-20T21:36:53+00:00",
+  "publisher" : "HL7 Belgium",
+  "contact" : [{
+    "name" : "HL7 Belgium",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.hl7belgium.org"
+    },
+    {
+      "system" : "email",
+      "value" : "hl7belgium@hl7belgium.org"
+    }]
+  },
+  {
+    "name" : "Message Structure eHealth",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "message-structure@ehealth.fgov.be",
+      "use" : "work"
+    }]
+  }],
+  "description" : "This code system defines the registration statuses for medication lines.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BE",
+      "display" : "Belgium"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 3,
+  "concept" : [{
+    "code" : "draft",
+    "display" : "Draft"
+  },
+  {
+    "code" : "recorded",
+    "display" : "Recorded"
+  },
+  {
+    "code" : "entered-in-error",
+    "display" : "Entered in Error"
+  }]
+}

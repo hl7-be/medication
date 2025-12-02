@@ -1,0 +1,307 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/BeRouteOfAdministrationVS> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "BeRouteOfAdministrationVS"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet BeRouteOfAdministrationVS</b></p><a name=\"BeRouteOfAdministrationVS\"> </a><a name=\"hcBeRouteOfAdministrationVS\"> </a><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> version <span title=\"Version is not explicity stated. No matching Code System found\">Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/738982001\">738982001</a></td><td>Oromucosal use</td></tr><tr><td><a href=\"http://snomed.info/id/54471007\">54471007</a></td><td>Buccal use</td></tr><tr><td><a href=\"http://snomed.info/id/448598008\">448598008</a></td><td>Cutaneous use</td></tr><tr><td><a href=\"http://snomed.info/id/372449004\">372449004</a></td><td>Dental use</td></tr><tr><td><a href=\"http://snomed.info/id/372450004\">372450004</a></td><td>Endocervical use</td></tr><tr><td><a href=\"http://snomed.info/id/372451000\">372451000</a></td><td>Endosinusial use</td></tr><tr><td><a href=\"http://snomed.info/id/372452007\">372452007</a></td><td>Endotracheopulmonary use</td></tr><tr><td><a href=\"http://snomed.info/id/417985001\">417985001</a></td><td>Intestinal use</td></tr><tr><td><a href=\"http://snomed.info/id/764723001\">764723001</a></td><td>Epilesional use</td></tr><tr><td><a href=\"http://snomed.info/id/372453002\">372453002</a></td><td>Extraamniotic use</td></tr><tr><td><a href=\"http://snomed.info/id/766790006\">766790006</a></td><td>Haemodialysis</td></tr><tr><td><a href=\"http://snomed.info/id/714743009\">714743009</a></td><td>Extracorporeal use</td></tr><tr><td><a href=\"http://snomed.info/id/372454008\">372454008</a></td><td>Gastroenteral use</td></tr><tr><td><a href=\"http://snomed.info/id/372457001\">372457001</a></td><td>Gingival use</td></tr><tr><td><a href=\"http://snomed.info/id/718329006\">718329006</a></td><td>Infiltration</td></tr><tr><td><a href=\"http://snomed.info/id/372458006\">372458006</a></td><td>Intraamniotic use</td></tr><tr><td><a href=\"http://snomed.info/id/58100008\">58100008</a></td><td>Intraarterial use</td></tr><tr><td><a href=\"http://snomed.info/id/12130007\">12130007</a></td><td>Intraarticular use</td></tr><tr><td><a href=\"http://snomed.info/id/372459003\">372459003</a></td><td>Intrabursal use</td></tr><tr><td><a href=\"http://snomed.info/id/418821007\">418821007</a></td><td>Intracameral use</td></tr><tr><td><a href=\"http://snomed.info/id/372460008\">372460008</a></td><td>Intracardiac use</td></tr><tr><td><a href=\"http://snomed.info/id/418331006\">418331006</a></td><td>Intracartilaginous use</td></tr><tr><td><a href=\"http://snomed.info/id/372461007\">372461007</a></td><td>Intracavernous use</td></tr><tr><td><a href=\"http://snomed.info/id/446540005\">446540005</a></td><td>Intracerebral use</td></tr><tr><td><a href=\"http://snomed.info/id/420719007\">420719007</a></td><td>Intracerebroventricular use</td></tr><tr><td><a href=\"http://snomed.info/id/372462000\">372462000</a></td><td>Intracervical use</td></tr><tr><td><a href=\"http://snomed.info/id/58761000052107\">58761000052107</a></td><td>Intracholangiopancreatic use</td></tr><tr><td><a href=\"http://snomed.info/id/418892005\">418892005</a></td><td>Intracisternal use</td></tr><tr><td><a href=\"http://snomed.info/id/418608002\">418608002</a></td><td>Intracorneal use</td></tr><tr><td><a href=\"http://snomed.info/id/372463005\">372463005</a></td><td>Intracoronary use</td></tr><tr><td><a href=\"http://snomed.info/id/372464004\">372464004</a></td><td>Intradermal use</td></tr><tr><td><a href=\"http://snomed.info/id/372465003\">372465003</a></td><td>Intradiscal use</td></tr><tr><td><a href=\"http://snomed.info/id/448077001\">448077001</a></td><td>Intraepidermal use</td></tr><tr><td><a href=\"http://snomed.info/id/445768003\">445768003</a></td><td>Gastric use</td></tr><tr><td><a href=\"http://snomed.info/id/58751000052109\">58751000052109</a></td><td>Intraglandular use</td></tr><tr><td><a href=\"http://snomed.info/id/372466002\">372466002</a></td><td>Intralesional use</td></tr><tr><td><a href=\"http://snomed.info/id/372467006\">372467006</a></td><td>Intralymphatic use</td></tr><tr><td><a href=\"http://snomed.info/id/447121004\">447121004</a></td><td>Intramammary use</td></tr><tr><td><a href=\"http://snomed.info/id/78421000\">78421000</a></td><td>Intramuscular use</td></tr><tr><td><a href=\"http://snomed.info/id/372468001\">372468001</a></td><td>Intraocular use</td></tr><tr><td><a href=\"http://snomed.info/id/417255000\">417255000</a></td><td>Intraosseous use</td></tr><tr><td><a href=\"http://snomed.info/id/445771006\">445771006</a></td><td>Intrapericardial use</td></tr><tr><td><a href=\"http://snomed.info/id/38239002\">38239002</a></td><td>Intraperitoneal use</td></tr><tr><td><a href=\"http://snomed.info/id/372469009\">372469009</a></td><td>Intrapleural use</td></tr><tr><td><a href=\"http://snomed.info/id/58771000052103\">58771000052103</a></td><td>Intraportal use</td></tr><tr><td><a href=\"http://snomed.info/id/419810008\">419810008</a></td><td>Intraprostatic use</td></tr><tr><td><a href=\"http://snomed.info/id/420201002\">420201002</a></td><td>Intrapulmonary use</td></tr><tr><td><a href=\"http://snomed.info/id/372470005\">372470005</a></td><td>Intrasternal use</td></tr><tr><td><a href=\"http://snomed.info/id/72607000\">72607000</a></td><td>Intrathecal use</td></tr><tr><td><a href=\"http://snomed.info/id/447122006\">447122006</a></td><td>Intratumoral use</td></tr><tr><td><a href=\"http://snomed.info/id/62226000\">62226000</a></td><td>Intrauterine use</td></tr><tr><td><a href=\"http://snomed.info/id/47625008\">47625008</a></td><td>Intravenous use</td></tr><tr><td><a href=\"http://snomed.info/id/420287000\">420287000</a></td><td>Intraventricular use</td></tr><tr><td><a href=\"http://snomed.info/id/372471009\">372471009</a></td><td>Intravesical use</td></tr><tr><td><a href=\"http://snomed.info/id/418401004\">418401004</a></td><td>Intravitreal use</td></tr><tr><td><a href=\"http://snomed.info/id/420185003\">420185003</a></td><td>Laryngopharyngeal use</td></tr><tr><td><a href=\"http://snomed.info/id/46713006\">46713006</a></td><td>Nasal use</td></tr><tr><td><a href=\"http://snomed.info/id/385432009\">385432009</a></td><td>Route of administration not applicable</td></tr><tr><td><a href=\"http://snomed.info/id/372472002\">372472002</a></td><td>Oculonasal use</td></tr><tr><td><a href=\"http://snomed.info/id/54485002\">54485002</a></td><td>Ocular use</td></tr><tr><td><a href=\"http://snomed.info/id/26643006\">26643006</a></td><td>Oral use</td></tr><tr><td><a href=\"http://snomed.info/id/418664002\">418664002</a></td><td>Oropharyngeal use</td></tr><tr><td><a href=\"http://snomed.info/id/10547007\">10547007</a></td><td>Auricular use</td></tr><tr><td><a href=\"http://snomed.info/id/419165009\">419165009</a></td><td>Paravertebral use</td></tr><tr><td><a href=\"http://snomed.info/id/372474001\">372474001</a></td><td>Periarticular use</td></tr><tr><td><a href=\"http://snomed.info/id/447080003\">447080003</a></td><td>Epidural use</td></tr><tr><td><a href=\"http://snomed.info/id/372475000\">372475000</a></td><td>Perineural use</td></tr><tr><td><a href=\"http://snomed.info/id/447052000\">447052000</a></td><td>Periodontal use</td></tr><tr><td><a href=\"http://snomed.info/id/420047004\">420047004</a></td><td>Periosseous use</td></tr><tr><td><a href=\"http://snomed.info/id/58811000052103\">58811000052103</a></td><td>Peritumoral use</td></tr><tr><td><a href=\"http://snomed.info/id/58821000052106\">58821000052106</a></td><td>Posterior juxtascleral use</td></tr><tr><td><a href=\"http://snomed.info/id/37161004\">37161004</a></td><td>Rectal use</td></tr><tr><td><a href=\"http://snomed.info/id/447694001\">447694001</a></td><td>Inhalation use</td></tr><tr><td><a href=\"http://snomed.info/id/418321004\">418321004</a></td><td>Retrobulbar use</td></tr><tr><td><a href=\"http://snomed.info/id/372476004\">372476004</a></td><td>Subconjunctival use</td></tr><tr><td><a href=\"http://snomed.info/id/34206005\">34206005</a></td><td>Subcutaneous use</td></tr><tr><td><a href=\"http://snomed.info/id/37839007\">37839007</a></td><td>Sublingual use</td></tr><tr><td><a href=\"http://snomed.info/id/419874009\">419874009</a></td><td>Submucosal use</td></tr><tr><td><a href=\"http://snomed.info/id/58831000052108\">58831000052108</a></td><td>Subretinal use</td></tr><tr><td><a href=\"http://snomed.info/id/6064005\">6064005</a></td><td>Local use</td></tr><tr><td><a href=\"http://snomed.info/id/45890007\">45890007</a></td><td>Transdermal use</td></tr><tr><td><a href=\"http://snomed.info/id/90028008\">90028008</a></td><td>Urethral use</td></tr><tr><td><a href=\"http://snomed.info/id/16857009\">16857009</a></td><td>Vaginal use</td></tr></table></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/BeRouteOfAdministrationVS"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.1.0"] ; # 
+  fhir:name [ fhir:v "BeRouteOfAdministrationVS"] ; # 
+  fhir:title [ fhir:v "Route of Administration ValueSet"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-10-10T10:05:23+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "eHealth Platform"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "eHealth Platform" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.ehealth.fgov.be/standards/fhir" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "support@be-ehealth-standards.atlassian.net" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Message Structure eHealth" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "support@be-ehealth-standards.atlassian.net" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "This ValueSet contains codes for the route of administration of medications. It is used to specify how a medication is administered to a patient, such as orally, intravenously, or topically."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "BE" ] ;
+       fhir:display [ fhir:v "Belgium" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO); Belgium is a member of IHTSDO. Implementers of SNOMED CT should review usage terms or directly contact SNOMED International: info@snomed.org"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "738982001" ] ;
+         fhir:display [ fhir:v "Oromucosal use" ]
+       ] [
+         fhir:code [ fhir:v "54471007" ] ;
+         fhir:display [ fhir:v "Buccal use" ]
+       ] [
+         fhir:code [ fhir:v "448598008" ] ;
+         fhir:display [ fhir:v "Cutaneous use" ]
+       ] [
+         fhir:code [ fhir:v "372449004" ] ;
+         fhir:display [ fhir:v "Dental use" ]
+       ] [
+         fhir:code [ fhir:v "372450004" ] ;
+         fhir:display [ fhir:v "Endocervical use" ]
+       ] [
+         fhir:code [ fhir:v "372451000" ] ;
+         fhir:display [ fhir:v "Endosinusial use" ]
+       ] [
+         fhir:code [ fhir:v "372452007" ] ;
+         fhir:display [ fhir:v "Endotracheopulmonary use" ]
+       ] [
+         fhir:code [ fhir:v "417985001" ] ;
+         fhir:display [ fhir:v "Intestinal use" ]
+       ] [
+         fhir:code [ fhir:v "764723001" ] ;
+         fhir:display [ fhir:v "Epilesional use" ]
+       ] [
+         fhir:code [ fhir:v "372453002" ] ;
+         fhir:display [ fhir:v "Extraamniotic use" ]
+       ] [
+         fhir:code [ fhir:v "766790006" ] ;
+         fhir:display [ fhir:v "Haemodialysis" ]
+       ] [
+         fhir:code [ fhir:v "714743009" ] ;
+         fhir:display [ fhir:v "Extracorporeal use" ]
+       ] [
+         fhir:code [ fhir:v "372454008" ] ;
+         fhir:display [ fhir:v "Gastroenteral use" ]
+       ] [
+         fhir:code [ fhir:v "372457001" ] ;
+         fhir:display [ fhir:v "Gingival use" ]
+       ] [
+         fhir:code [ fhir:v "718329006" ] ;
+         fhir:display [ fhir:v "Infiltration" ]
+       ] [
+         fhir:code [ fhir:v "372458006" ] ;
+         fhir:display [ fhir:v "Intraamniotic use" ]
+       ] [
+         fhir:code [ fhir:v "58100008" ] ;
+         fhir:display [ fhir:v "Intraarterial use" ]
+       ] [
+         fhir:code [ fhir:v "12130007" ] ;
+         fhir:display [ fhir:v "Intraarticular use" ]
+       ] [
+         fhir:code [ fhir:v "372459003" ] ;
+         fhir:display [ fhir:v "Intrabursal use" ]
+       ] [
+         fhir:code [ fhir:v "418821007" ] ;
+         fhir:display [ fhir:v "Intracameral use" ]
+       ] [
+         fhir:code [ fhir:v "372460008" ] ;
+         fhir:display [ fhir:v "Intracardiac use" ]
+       ] [
+         fhir:code [ fhir:v "418331006" ] ;
+         fhir:display [ fhir:v "Intracartilaginous use" ]
+       ] [
+         fhir:code [ fhir:v "372461007" ] ;
+         fhir:display [ fhir:v "Intracavernous use" ]
+       ] [
+         fhir:code [ fhir:v "446540005" ] ;
+         fhir:display [ fhir:v "Intracerebral use" ]
+       ] [
+         fhir:code [ fhir:v "420719007" ] ;
+         fhir:display [ fhir:v "Intracerebroventricular use" ]
+       ] [
+         fhir:code [ fhir:v "372462000" ] ;
+         fhir:display [ fhir:v "Intracervical use" ]
+       ] [
+         fhir:code [ fhir:v "58761000052107" ] ;
+         fhir:display [ fhir:v "Intracholangiopancreatic use" ]
+       ] [
+         fhir:code [ fhir:v "418892005" ] ;
+         fhir:display [ fhir:v "Intracisternal use" ]
+       ] [
+         fhir:code [ fhir:v "418608002" ] ;
+         fhir:display [ fhir:v "Intracorneal use" ]
+       ] [
+         fhir:code [ fhir:v "372463005" ] ;
+         fhir:display [ fhir:v "Intracoronary use" ]
+       ] [
+         fhir:code [ fhir:v "372464004" ] ;
+         fhir:display [ fhir:v "Intradermal use" ]
+       ] [
+         fhir:code [ fhir:v "372465003" ] ;
+         fhir:display [ fhir:v "Intradiscal use" ]
+       ] [
+         fhir:code [ fhir:v "448077001" ] ;
+         fhir:display [ fhir:v "Intraepidermal use" ]
+       ] [
+         fhir:code [ fhir:v "445768003" ] ;
+         fhir:display [ fhir:v "Gastric use" ]
+       ] [
+         fhir:code [ fhir:v "58751000052109" ] ;
+         fhir:display [ fhir:v "Intraglandular use" ]
+       ] [
+         fhir:code [ fhir:v "372466002" ] ;
+         fhir:display [ fhir:v "Intralesional use" ]
+       ] [
+         fhir:code [ fhir:v "372467006" ] ;
+         fhir:display [ fhir:v "Intralymphatic use" ]
+       ] [
+         fhir:code [ fhir:v "447121004" ] ;
+         fhir:display [ fhir:v "Intramammary use" ]
+       ] [
+         fhir:code [ fhir:v "78421000" ] ;
+         fhir:display [ fhir:v "Intramuscular use" ]
+       ] [
+         fhir:code [ fhir:v "372468001" ] ;
+         fhir:display [ fhir:v "Intraocular use" ]
+       ] [
+         fhir:code [ fhir:v "417255000" ] ;
+         fhir:display [ fhir:v "Intraosseous use" ]
+       ] [
+         fhir:code [ fhir:v "445771006" ] ;
+         fhir:display [ fhir:v "Intrapericardial use" ]
+       ] [
+         fhir:code [ fhir:v "38239002" ] ;
+         fhir:display [ fhir:v "Intraperitoneal use" ]
+       ] [
+         fhir:code [ fhir:v "372469009" ] ;
+         fhir:display [ fhir:v "Intrapleural use" ]
+       ] [
+         fhir:code [ fhir:v "58771000052103" ] ;
+         fhir:display [ fhir:v "Intraportal use" ]
+       ] [
+         fhir:code [ fhir:v "419810008" ] ;
+         fhir:display [ fhir:v "Intraprostatic use" ]
+       ] [
+         fhir:code [ fhir:v "420201002" ] ;
+         fhir:display [ fhir:v "Intrapulmonary use" ]
+       ] [
+         fhir:code [ fhir:v "372470005" ] ;
+         fhir:display [ fhir:v "Intrasternal use" ]
+       ] [
+         fhir:code [ fhir:v "72607000" ] ;
+         fhir:display [ fhir:v "Intrathecal use" ]
+       ] [
+         fhir:code [ fhir:v "447122006" ] ;
+         fhir:display [ fhir:v "Intratumoral use" ]
+       ] [
+         fhir:code [ fhir:v "62226000" ] ;
+         fhir:display [ fhir:v "Intrauterine use" ]
+       ] [
+         fhir:code [ fhir:v "47625008" ] ;
+         fhir:display [ fhir:v "Intravenous use" ]
+       ] [
+         fhir:code [ fhir:v "420287000" ] ;
+         fhir:display [ fhir:v "Intraventricular use" ]
+       ] [
+         fhir:code [ fhir:v "372471009" ] ;
+         fhir:display [ fhir:v "Intravesical use" ]
+       ] [
+         fhir:code [ fhir:v "418401004" ] ;
+         fhir:display [ fhir:v "Intravitreal use" ]
+       ] [
+         fhir:code [ fhir:v "420185003" ] ;
+         fhir:display [ fhir:v "Laryngopharyngeal use" ]
+       ] [
+         fhir:code [ fhir:v "46713006" ] ;
+         fhir:display [ fhir:v "Nasal use" ]
+       ] [
+         fhir:code [ fhir:v "385432009" ] ;
+         fhir:display [ fhir:v "Route of administration not applicable" ]
+       ] [
+         fhir:code [ fhir:v "372472002" ] ;
+         fhir:display [ fhir:v "Oculonasal use" ]
+       ] [
+         fhir:code [ fhir:v "54485002" ] ;
+         fhir:display [ fhir:v "Ocular use" ]
+       ] [
+         fhir:code [ fhir:v "26643006" ] ;
+         fhir:display [ fhir:v "Oral use" ]
+       ] [
+         fhir:code [ fhir:v "418664002" ] ;
+         fhir:display [ fhir:v "Oropharyngeal use" ]
+       ] [
+         fhir:code [ fhir:v "10547007" ] ;
+         fhir:display [ fhir:v "Auricular use" ]
+       ] [
+         fhir:code [ fhir:v "419165009" ] ;
+         fhir:display [ fhir:v "Paravertebral use" ]
+       ] [
+         fhir:code [ fhir:v "372474001" ] ;
+         fhir:display [ fhir:v "Periarticular use" ]
+       ] [
+         fhir:code [ fhir:v "447080003" ] ;
+         fhir:display [ fhir:v "Epidural use" ]
+       ] [
+         fhir:code [ fhir:v "372475000" ] ;
+         fhir:display [ fhir:v "Perineural use" ]
+       ] [
+         fhir:code [ fhir:v "447052000" ] ;
+         fhir:display [ fhir:v "Periodontal use" ]
+       ] [
+         fhir:code [ fhir:v "420047004" ] ;
+         fhir:display [ fhir:v "Periosseous use" ]
+       ] [
+         fhir:code [ fhir:v "58811000052103" ] ;
+         fhir:display [ fhir:v "Peritumoral use" ]
+       ] [
+         fhir:code [ fhir:v "58821000052106" ] ;
+         fhir:display [ fhir:v "Posterior juxtascleral use" ]
+       ] [
+         fhir:code [ fhir:v "37161004" ] ;
+         fhir:display [ fhir:v "Rectal use" ]
+       ] [
+         fhir:code [ fhir:v "447694001" ] ;
+         fhir:display [ fhir:v "Inhalation use" ]
+       ] [
+         fhir:code [ fhir:v "418321004" ] ;
+         fhir:display [ fhir:v "Retrobulbar use" ]
+       ] [
+         fhir:code [ fhir:v "372476004" ] ;
+         fhir:display [ fhir:v "Subconjunctival use" ]
+       ] [
+         fhir:code [ fhir:v "34206005" ] ;
+         fhir:display [ fhir:v "Subcutaneous use" ]
+       ] [
+         fhir:code [ fhir:v "37839007" ] ;
+         fhir:display [ fhir:v "Sublingual use" ]
+       ] [
+         fhir:code [ fhir:v "419874009" ] ;
+         fhir:display [ fhir:v "Submucosal use" ]
+       ] [
+         fhir:code [ fhir:v "58831000052108" ] ;
+         fhir:display [ fhir:v "Subretinal use" ]
+       ] [
+         fhir:code [ fhir:v "6064005" ] ;
+         fhir:display [ fhir:v "Local use" ]
+       ] [
+         fhir:code [ fhir:v "45890007" ] ;
+         fhir:display [ fhir:v "Transdermal use" ]
+       ] [
+         fhir:code [ fhir:v "90028008" ] ;
+         fhir:display [ fhir:v "Urethral use" ]
+       ] [
+         fhir:code [ fhir:v "16857009" ] ;
+         fhir:display [ fhir:v "Vaginal use" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

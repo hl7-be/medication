@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <id value="medication-dispense-hospital"/>
+  <meta>
+    <versionId value="1"/>
+    <profile value="https://www.hl7belgium.be/fhir/StructureDefinition/be-medicationdispense"/>
+  </meta>
+  <language value="nl-BE"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="nl-BE" lang="nl-BE"><p><b>Generated Narrative</b></p><p><b>identifier</b>: 1000321345: ?ngen-9?</p><p><b>status</b>: completed</p><p><b>medication</b>: <span title="Codes: {https://cnk.apb.be/codings/cnk_product_codes 2055218}">2055218</span></p><p><b>subject</b>: <span></span></p><p><b>authorizingPrescription</b>: <span>Prescription</span></p><p><b>quantity</b>: 1 package</p><p><b>whenHandedOver</b>: Sep 21, 2020, 11:00:00 AM</p></div>
+  </text>
+  <identifier>
+    <type>
+      <coding>
+        <system value="https://www.nexuzhealth.be/fhir/prescription/ambulatory"/>
+        <version value="1"/>
+        <code value="1000321345"/>
+      </coding>
+    </type>
+    <system value="https://www.gfd-dpp.be/fhir/reference/dguid"/>
+  </identifier>
+  <status value="completed"/>
+  <medicationCodeableConcept>
+    <coding>
+      <system value="https://cnk.apb.be/codings/cnk_product_codes"/>
+      <code value="2055218"/>
+      <display>
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="nl-BE"/>
+          </extension>
+          <extension url="content">
+            <valueString value="Crestor filmomh. tabl. 100x 10mg"/>
+          </extension>
+        </extension>
+      </display>
+    </coding>
+  </medicationCodeableConcept>
+  <subject>
+    <identifier>
+      <system value="https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"/>
+      <value value="64110219106"/>
+    </identifier>
+  </subject>
+  <authorizingPrescription>
+    <identifier>
+      <system value="https://www.ehealth.fgov.be/standards/fhir/NamingSystem/prescription-id"/>
+      <value value="BEP1TSRY1XGE"/>
+    </identifier>
+    <display value="Prescription"/>
+  </authorizingPrescription>
+  <quantity>
+    <value value="1"/>
+    <unit value="package"/>
+    <system value="http://hl7.org/fhir/Valueset/ucum-units"/>
+    <code value="{package}"/>
+  </quantity>
+  <whenHandedOver value="2020-09-21T13:00:00+02:00"/>
+  <dosageInstruction>
+    <text value="3 x a day">
+      <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+        <extension url="lang">
+          <valueCode value="nl-BE"/>
+        </extension>
+        <extension url="content">
+          <valueString value="3 x per dag"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+        <extension url="lang">
+          <valueCode value="fr-BE"/>
+        </extension>
+        <extension url="content">
+          <valueString value="3 x par jour"/>
+        </extension>
+      </extension>
+    </text>
+    <timing>
+      <repeat>
+        <frequency value="3"/>
+        <period value="1"/>
+        <periodUnit value="d"/>
+      </repeat>
+    </timing>
+  </dosageInstruction>
+</MedicationDispense>

@@ -1,0 +1,119 @@
+{
+  "resourceType": "MedicationDispense",
+  "id": "medication-dispense-hospital",
+  "meta": {
+    "versionId": "1",
+    "profile": [
+      "https://www.hl7belgium.be/fhir/StructureDefinition/be-medicationdispense"
+    ]
+  },
+  "language": "nl-BE",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"nl-BE\" lang=\"nl-BE\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: 1000321345: ?ngen-9?</p><p><b>status</b>: completed</p><p><b>medication</b>: <span title=\"Codes: {https://cnk.apb.be/codings/cnk_product_codes 2055218}\">2055218</span></p><p><b>subject</b>: <span></span></p><p><b>authorizingPrescription</b>: <span>Prescription</span></p><p><b>quantity</b>: 1 package</p><p><b>whenHandedOver</b>: Sep 21, 2020, 11:00:00 AM</p></div>"
+  },
+  "identifier": [
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "https://www.nexuzhealth.be/fhir/prescription/ambulatory",
+            "version": "1",
+            "code": "1000321345"
+          }
+        ]
+      },
+      "system": "https://www.gfd-dpp.be/fhir/reference/dguid"
+    }
+  ],
+  "status": "completed",
+  "medicationCodeableConcept": {
+    "coding": [
+      {
+        "system": "https://cnk.apb.be/codings/cnk_product_codes",
+        "code": "2055218",
+        "_display": {
+          "extension": [
+            {
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "nl-BE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Crestor filmomh. tabl. 100x 10mg"
+                }
+              ],
+              "url": "http://hl7.org/fhir/StructureDefinition/translation"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "subject": {
+    "identifier": {
+      "system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+      "value": "64110219106"
+    }
+  },
+  "authorizingPrescription": [
+    {
+      "identifier": {
+        "system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/prescription-id",
+        "value": "BEP1TSRY1XGE"
+      },
+      "display": "Prescription"
+    }
+  ],
+  "quantity": {
+    "value": 1,
+    "unit": "package",
+    "system": "http://hl7.org/fhir/Valueset/ucum-units",
+    "code": "{package}"
+  },
+  "whenHandedOver": "2020-09-21T13:00:00+02:00",
+  "dosageInstruction": [
+    {
+      "text": "3 x a day",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "nl-BE"
+              },
+              {
+                "url": "content",
+                "valueString": "3 x per dag"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          },
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "fr-BE"
+              },
+              {
+                "url": "content",
+                "valueString": "3 x par jour"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      },
+      "timing": {
+        "repeat": {
+          "frequency": 3,
+          "period": 1,
+          "periodUnit": "d"
+        }
+      }
+    }
+  ]
+}
