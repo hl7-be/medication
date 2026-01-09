@@ -136,7 +136,7 @@ groups:
     - StructureDefinition/BeExtRecordedDate
     - StructureDefinition/BeExtRecorder
     - StructureDefinition/BeExtInstructionsForReimbursement
-    - StructureDefinition/BeExtAdherenceStatus
+#    - StructureDefinition/BeExtAdherenceStatus
     - StructureDefinition/BeExtMedicationType
     - StructureDefinition/BeExtMedicationLineRegistrationStatus
 
