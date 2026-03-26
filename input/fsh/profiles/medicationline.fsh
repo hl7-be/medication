@@ -32,7 +32,7 @@ Description: "Medication Line profile - contains the overview information for a 
     http://hl7.org/fhir/StructureDefinition/artifact-version named artifact-version 1..1 MS and
     http://hl7.org/fhir/StructureDefinition/artifact-date named artifact-date 0..1 MS and
 
-    http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence.code named adherenceStatus 1..1 MS
+    http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence.extension[code] named adherenceStatus 1..1 MS
 //    BeExtAdherenceStatus named adherenceStatus 1..1 MS
 
 
