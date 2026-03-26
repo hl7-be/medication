@@ -1,0 +1,70 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "BeMedicationLineOriginType",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem BeMedicationLineOriginType</b></p><a name=\"BeMedicationLineOriginType\"> </a><a name=\"hcBeMedicationLineOriginType\"> </a><p>This case-insensitive code system <code>https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineOriginType</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">ambulatory-request<a name=\"BeMedicationLineOriginType-ambulatory-request\"> </a></td><td>Ambulatory prescription</td></tr><tr><td style=\"white-space:nowrap\">hospital-request<a name=\"BeMedicationLineOriginType-hospital-request\"> </a></td><td>Hospital prescription</td></tr><tr><td style=\"white-space:nowrap\">self-medication<a name=\"BeMedicationLineOriginType-self-medication\"> </a></td><td>Upon patient demand - Self-medication</td></tr><tr><td style=\"white-space:nowrap\">with-request<a name=\"BeMedicationLineOriginType-with-request\"> </a></td><td>Medication not sold in Belgium, with prescription</td></tr><tr><td style=\"white-space:nowrap\">without-request<a name=\"BeMedicationLineOriginType-without-request\"> </a></td><td>Medication not sold in Belgium, without prescription</td></tr><tr><td style=\"white-space:nowrap\">pharmacist-advice<a name=\"BeMedicationLineOriginType-pharmacist-advice\"> </a></td><td>Upon pharmacist advice</td></tr></table></div>"
+  },
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineOriginType",
+  "version" : "1.1.0",
+  "name" : "BeMedicationLineOriginType",
+  "title" : "Medication origin Type",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-10-10T10:16:02+00:00",
+  "publisher" : "eHealth Platform",
+  "contact" : [{
+    "name" : "eHealth Platform",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.ehealth.fgov.be/standards/fhir"
+    },
+    {
+      "system" : "email",
+      "value" : "support@be-ehealth-standards.atlassian.net"
+    }]
+  },
+  {
+    "name" : "Message Structure eHealth",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "support@be-ehealth-standards.atlassian.net",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Medication origin type",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BE",
+      "display" : "Belgium"
+    }]
+  }],
+  "caseSensitive" : false,
+  "content" : "complete",
+  "count" : 6,
+  "concept" : [{
+    "code" : "ambulatory-request",
+    "display" : "Ambulatory prescription"
+  },
+  {
+    "code" : "hospital-request",
+    "display" : "Hospital prescription"
+  },
+  {
+    "code" : "self-medication",
+    "display" : "Upon patient demand - Self-medication"
+  },
+  {
+    "code" : "with-request",
+    "display" : "Medication not sold in Belgium, with prescription"
+  },
+  {
+    "code" : "without-request",
+    "display" : "Medication not sold in Belgium, without prescription"
+  },
+  {
+    "code" : "pharmacist-advice",
+    "display" : "Upon pharmacist advice"
+  }]
+}

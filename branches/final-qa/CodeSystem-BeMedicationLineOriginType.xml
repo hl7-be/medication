@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="BeMedicationLineOriginType"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem BeMedicationLineOriginType</b></p><a name="BeMedicationLineOriginType"> </a><a name="hcBeMedicationLineOriginType"> </a><p>This case-insensitive code system <code>https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineOriginType</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">ambulatory-request<a name="BeMedicationLineOriginType-ambulatory-request"> </a></td><td>Ambulatory prescription</td></tr><tr><td style="white-space:nowrap">hospital-request<a name="BeMedicationLineOriginType-hospital-request"> </a></td><td>Hospital prescription</td></tr><tr><td style="white-space:nowrap">self-medication<a name="BeMedicationLineOriginType-self-medication"> </a></td><td>Upon patient demand - Self-medication</td></tr><tr><td style="white-space:nowrap">with-request<a name="BeMedicationLineOriginType-with-request"> </a></td><td>Medication not sold in Belgium, with prescription</td></tr><tr><td style="white-space:nowrap">without-request<a name="BeMedicationLineOriginType-without-request"> </a></td><td>Medication not sold in Belgium, without prescription</td></tr><tr><td style="white-space:nowrap">pharmacist-advice<a name="BeMedicationLineOriginType-pharmacist-advice"> </a></td><td>Upon pharmacist advice</td></tr></table></div>
+  </text>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineOriginType"/>
+  <version value="1.1.0"/>
+  <name value="BeMedicationLineOriginType"/>
+  <title value="Medication origin Type"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-09-26T15:03:09+00:00"/>
+  <publisher value="HL7 Belgium"/>
+  <contact>
+    <name value="HL7 Belgium"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.hl7belgium.org"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="hl7belgium@hl7belgium.org"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Message Structure eHealth"/>
+    <telecom>
+      <system value="email"/>
+      <value value="message-structure@ehealth.fgov.be"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Medication origin type"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
+      <display value="Belgium"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <count value="6"/>
+  <concept>
+    <code value="ambulatory-request"/>
+    <display value="Ambulatory prescription"/>
+  </concept>
+  <concept>
+    <code value="hospital-request"/>
+    <display value="Hospital prescription"/>
+  </concept>
+  <concept>
+    <code value="self-medication"/>
+    <display value="Upon patient demand - Self-medication"/>
+  </concept>
+  <concept>
+    <code value="with-request"/>
+    <display value="Medication not sold in Belgium, with prescription"/>
+  </concept>
+  <concept>
+    <code value="without-request"/>
+    <display value="Medication not sold in Belgium, without prescription"/>
+  </concept>
+  <concept>
+    <code value="pharmacist-advice"/>
+    <display value="Upon pharmacist advice"/>
+  </concept>
+</CodeSystem>

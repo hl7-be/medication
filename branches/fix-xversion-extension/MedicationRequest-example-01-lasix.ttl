@@ -1,0 +1,142 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.ehealth.fgov.be/standards/fhir/medication/MedicationRequest/example-01-lasix> a fhir:MedicationRequest ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "example-01-lasix"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationPrescription"^^xsd:anyURI ;
+       fhir:l <https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationPrescription>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: MedicationRequest example-01-lasix</b></p><a name=\"example-01-lasix\"> </a><a name=\"hcexample-01-lasix\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-BeMedicationPrescription.html\">BeMedicationPrescription</a></p></div><p><b>identifier</b>: <code>http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-prescription</code>/BEP1LASIX001, <code>urn:be:swh:ns-identifier</code>/SWH-RX-2025-001</p><p><b>status</b>: Active</p><p><b>intent</b>: Order</p><p><b>priority</b>: Routine</p><p><b>medication</b>: <span title=\"Codes:{urn:be:samv2:amppackage 067663-02}\">Lasix 40 mg tabl. 50</span></p><p><b>subject</b>: Identifier: <a href=\"https://www.ehealth.fgov.be/standards/fhir/core/2.1.2/NamingSystem-be-ssin.html\" title=\"NISS/INSZ\">BeSSINNamingSystem</a>/urn:be:fgov:ehealth:pseudo:v2:BAEeFgg-BNMHWl1EQ3T8Ox4unll26hx_3EnYGQ6i3qfQyOChof_TWFgR8RBGSN6sqpe_I7UBGgy-Btb1use9uA42RQEyw105JK9PFPzTMUbIm_tXNRszA5IGtrpW47a9g9y9b0grudGfutTfVpipAPR0h0Br9TZ1GfSCDcFKkNGVumZzwg:eyJhdWQiOiJ1aG1lcF92MSIsImVuYyI6IkEyNTZHQ00iLCJleHAiOjE3NzMyMzg0NzAsImlhdCI6MTc3MzE1MjA3MCwiYWxnIjoiZGlyIiwia2lkIjoiYWMwNWIzMjktMzhhOS00NTE0LThlMGMtMjI0NTcyOTI4ZWI5In0..O06ctnwl5suSzwgy.Q0qq4ydRxYUQpjixPggakcNiEIbdv-hZqmp5nY_Xh058EO_qeAUZGcwfxtAzdRHC2zcGR3E1AznVvwVORU6xTMF2C088u0FKHiG8p8aA_4A58YTOjX3XeFqclR6_AAhOv-OeQLhCUzjUqrKRQhOg4EedKEmJ0eOce4uPZS0XiZ6QmdA8T6Er.QKUT6gMzTYvf7EAf_Gwwdg</p><p><b>authoredOn</b>: 2025-10-19 00:00:00+0200</p><p><b>requester</b>: <a href=\"#hcexample-01-lasix/practitionerrole-example\">PractitionerRole physician</a></p><h3>DosageInstructions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Timing</b></td></tr><tr><td style=\"display: none\">*</td><td>Code </td></tr></table><h3>DispenseRequests</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>ValidityPeriod</b></td></tr><tr><td style=\"display: none\">*</td><td>2025-10-19 00:00:00+0200 --&gt; 2026-01-18 00:00:00+0100</td></tr></table><hr/><blockquote><p class=\"res-header-id\"><b>Generated Narrative: PractitionerRole #practitionerrole-example</b></p><a name=\"example-01-lasix/practitionerrole-example\"> </a><a name=\"hcexample-01-lasix/practitionerrole-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://www.ehealth.fgov.be/standards/fhir/core/2.1.2/StructureDefinition-be-practitionerrole.html\">BePractitionerRole</a></p></div><p><b>practitioner</b>: Identifier: <a href=\"https://www.ehealth.fgov.be/standards/fhir/core/2.1.2/NamingSystem-be-nihdi.html\" title=\"RIZIV/INAMI\">BeNIHDINamingSystem</a>/12345678004</p><p><b>code</b>: <span title=\"Codes:{https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty persphysician}\">physician</span></p></blockquote></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:contained ( [
+     a fhir:PractitionerRole ;
+     fhir:id [ fhir:v "practitionerrole-example" ] ;
+     fhir:meta [
+       fhir:profile ( [
+         fhir:v "https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitionerrole"^^xsd:anyURI ;
+         fhir:l <https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitionerrole>
+       ] )
+     ] ;
+     fhir:practitioner [
+       fhir:identifier [
+         fhir:system [
+           fhir:v "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi"^^xsd:anyURI ;
+           fhir:l <https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi>
+         ] ;
+         fhir:value [ fhir:v "12345678004" ]
+       ]
+     ] ;
+     fhir:code ( [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty"^^xsd:anyURI ;
+           fhir:l <https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty>
+         ] ;
+         fhir:code [ fhir:v "persphysician" ] ;
+         fhir:display [ fhir:v "physician" ]
+       ] )
+     ] )
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:system [
+       fhir:v "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-prescription"^^xsd:anyURI ;
+       fhir:l <http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-prescription>
+     ] ;
+     fhir:value [ fhir:v "BEP1LASIX001" ]
+  ] [
+     fhir:system [
+       fhir:v "urn:be:swh:ns-identifier"^^xsd:anyURI ;
+       fhir:l <urn:be:swh:ns-identifier>
+     ] ;
+     fhir:value [ fhir:v "SWH-RX-2025-001" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:intent [ fhir:v "order"] ; # 
+  fhir:priority [ fhir:v "routine"] ; # 
+  fhir:medication [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:be:samv2:amppackage"^^xsd:anyURI ;
+         fhir:l <urn:be:samv2:amppackage>
+       ] ;
+       fhir:code [ fhir:v "067663-02" ] ;
+       fhir:display [ fhir:v "Lasix 40 mg tabl. 50" ] ;
+       fhir:userSelected [ fhir:v true ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:identifier [
+       fhir:system [
+         fhir:v "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin"^^xsd:anyURI ;
+         fhir:l <https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin>
+       ] ;
+       fhir:value [
+         fhir:v "urn:be:fgov:ehealth:pseudo:v2:BAEeFgg-BNMHWl1EQ3T8Ox4unll26hx_3EnYGQ6i3qfQyOChof_TWFgR8RBGSN6sqpe_I7UBGgy-Btb1use9uA42RQEyw105JK9PFPzTMUbIm_tXNRszA5IGtrpW47a9g9y9b0grudGfutTfVpipAPR0h0Br9TZ1GfSCDcFKkNGVumZzwg:eyJhdWQiOiJ1aG1lcF92MSIsImVuYyI6IkEyNTZHQ00iLCJleHAiOjE3NzMyMzg0NzAsImlhdCI6MTc3MzE1MjA3MCwiYWxnIjoiZGlyIiwia2lkIjoiYWMwNWIzMjktMzhhOS00NTE0LThlMGMtMjI0NTcyOTI4ZWI5In0..O06ctnwl5suSzwgy.Q0qq4ydRxYUQpjixPggakcNiEIbdv-hZqmp5nY_Xh058EO_qeAUZGcwfxtAzdRHC2zcGR3E1AznVvwVORU6xTMF2C088u0FKHiG8p8aA_4A58YTOjX3XeFqclR6_AAhOv-OeQLhCUzjUqrKRQhOg4EedKEmJ0eOce4uPZS0XiZ6QmdA8T6Er.QKUT6gMzTYvf7EAf_Gwwdg" ;
+         fhir:extension ( [
+           fhir:extension ( [
+             fhir:url [
+               fhir:v "format"^^xsd:anyURI ;
+               fhir:l fhir:format
+             ] ;
+             fhir:value [
+               a fhir:Code ;
+               fhir:v "direct"
+             ]
+           ] [
+             fhir:url [
+               fhir:v "marker"^^xsd:anyURI ;
+               fhir:l fhir:marker
+             ] ;
+             fhir:value [
+               a fhir:Boolean ;
+               fhir:v true
+             ]
+           ] ) ;
+           fhir:url [
+             fhir:v "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-pseudonymization"^^xsd:anyURI ;
+             fhir:l <https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-pseudonymization>
+           ]
+         ] )
+       ]
+     ]
+  ] ; # 
+  fhir:authoredOn [ fhir:v "2025-10-19T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:requester [
+     fhir:l <#practitionerrole-example> ;
+     fhir:reference [ fhir:v "#practitionerrole-example" ]
+  ] ; # 
+  fhir:dosageInstruction ( [
+     fhir:timing [
+       fhir:code [
+         fhir:coding ( [
+           fhir:system [
+             fhir:v "http://terminology.hl7.org/CodeSystem/timing-abbreviation"^^xsd:anyURI ;
+             fhir:l <http://terminology.hl7.org/CodeSystem/timing-abbreviation>
+           ] ;
+           fhir:code [ fhir:v "QOD" ] ;
+           fhir:display [ fhir:v "QOD" ]
+         ] )
+       ]
+     ]
+  ] ) ; # 
+  fhir:dispenseRequest [
+     fhir:validityPeriod [
+       fhir:start [ fhir:v "2025-10-19T00:00:00+02:00"^^xsd:dateTime ] ;
+       fhir:end [ fhir:v "2026-01-18T00:00:00+01:00"^^xsd:dateTime ]
+     ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

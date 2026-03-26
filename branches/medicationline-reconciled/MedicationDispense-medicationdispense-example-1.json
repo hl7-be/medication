@@ -1,0 +1,93 @@
+{
+  "resourceType" : "MedicationDispense",
+  "id" : "medicationdispense-example-1",
+  "meta" : {
+    "profile" : ["https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationdispense"]
+  },
+  "language" : "fr-BE",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"fr-BE\" lang=\"fr-BE\"><p><b>Generated Narrative: MedicationDispense</b><a name=\"medicationdispense-example-1\"> </a><a name=\"hcmedicationdispense-example-1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MedicationDispense &quot;medicationdispense-example-1&quot;  (Language &quot;fr-BE&quot;) </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-be-medicationdispense.html\">BeMedicationDispense</a></p></div><p><b>identifier</b>: dguid/a8ca980c-72aa-11e7-8cf7-a6006ad3dba0</p><p><b>status</b>: completed</p><p><b>medication</b>: Topazolam tab 50x 1,0mg <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (cnk-codes#1439562)</span></p><p><b>subject</b>: <span><code>https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin</code>/64110219106</span></p><p><b>context</b>: <span>sguid/b8ca980c-72aa-11e7-8cf7-a6006ad3dba0</span></p><h3>Performers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Actor</b></td></tr><tr><td style=\"display: none\">*</td><td><span>: Apotheek onder de toren</span></td></tr></table><p><b>authorizingPrescription</b>: <span>: Prescription</span></p><p><b>quantity</b>: 1(unit package from https://www.gfd-dpp.be/fhir/reference/packaging)<span style=\"background: LightGoldenRodYellow\"> (Details: https://www.gfd-dpp.be/fhir/reference/packaging code package = 'package')</span></p><p><b>whenHandedOver</b>: 2020-03-10</p><h3>DosageInstructions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td>3 x par jour</td></tr></table></div>"
+  },
+  "identifier" : [{
+    "type" : {
+      "coding" : [{
+        "code" : "dguid"
+      }]
+    },
+    "system" : "https://www.gfd-dpp.be/fhir/reference/dguid",
+    "value" : "a8ca980c-72aa-11e7-8cf7-a6006ad3dba0"
+  }],
+  "status" : "completed",
+  "medicationCodeableConcept" : {
+    "coding" : [{
+      "system" : "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+      "code" : "1439562",
+      "display" : "Topazolam tab 50x 1,0mg",
+      "_display" : {
+        "extension" : [{
+          "extension" : [{
+            "url" : "lang",
+            "valueCode" : "nl-BE"
+          },
+          {
+            "url" : "content",
+            "valueString" : "Topazolam tab 50x 1,0mg"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+        }]
+      }
+    }]
+  },
+  "subject" : {
+    "identifier" : {
+      "system" : "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+      "value" : "64110219106"
+    }
+  },
+  "context" : {
+    "identifier" : {
+      "type" : {
+        "coding" : [{
+          "code" : "sguid"
+        }]
+      },
+      "system" : "https://www.gfd-dpp.be/fhir/reference/sguid",
+      "value" : "b8ca980c-72aa-11e7-8cf7-a6006ad3dba0"
+    }
+  },
+  "performer" : [{
+    "actor" : {
+      "identifier" : {
+        "system" : "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi-organization",
+        "value" : "27457532"
+      },
+      "display" : "Apotheek onder de toren"
+    }
+  }],
+  "authorizingPrescription" : [{
+    "display" : "Prescription"
+  }],
+  "quantity" : {
+    "value" : 1,
+    "system" : "https://www.gfd-dpp.be/fhir/reference/packaging",
+    "code" : "package"
+  },
+  "whenHandedOver" : "2020-03-10",
+  "dosageInstruction" : [{
+    "text" : "3 x par jour",
+    "_text" : {
+      "extension" : [{
+        "extension" : [{
+          "url" : "lang",
+          "valueCode" : "nl-BE"
+        },
+        {
+          "url" : "content",
+          "valueString" : "3 x per dag"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+      }]
+    }
+  }]
+}

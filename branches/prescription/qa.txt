@@ -1,0 +1,129 @@
+Medication : Validation Results
+=========================================
+
+err = 2, warn = 29, info = 23
+IG Publisher Version: 1.8.23
+Generated Wed Apr 09 15:46:57 UTC 2025. FHIR version 4.0.1 for hl7.fhir.be.medication#1.1.0 (canonical = https://www.ehealth.fgov.be/standards/fhir/medication)
+ Build Errors : 0 / 1 / 0
+ /github/workspace/fsh-generated/resources/CodeSystem-be-cs-medication-request-reimbursement-type : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/CodeSystem-medication-line-origin-type : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/CodeSystem-medication-type : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ImplementationGuide-hl7.fhir.be.medication : 2 / 0 / 3
+ /github/workspace/fsh-generated/resources/MedicationDispense-example-dispense-communitypharmacy-1med : 0 / 8 / 2
+ /github/workspace/fsh-generated/resources/MedicationDispense-example-dispense-hospital : 0 / 4 / 1
+ /github/workspace/fsh-generated/resources/MedicationDispense-example-minimal-dispense : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/MedicationDispense-medicationdispense-example-1 : 0 / 6 / 2
+ /github/workspace/fsh-generated/resources/MedicationDispense-medicationdispense-example-2 : 0 / 6 / 5
+ /github/workspace/fsh-generated/resources/NamingSystem-be-ns-cnk-codes : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/NamingSystem-be-ns-cti-extended-code : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/NamingSystem-be-ns-prescription-ids : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/NamingSystem-be-ns-product-package-type : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Organization-apotheek-onder-de-toren : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-BasedOnMedicationLine : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-BeMedicationDispense : 0 / 0 / 3
+ /github/workspace/fsh-generated/resources/StructureDefinition-BeMedicationLine : 0 / 1 / 7
+ /github/workspace/fsh-generated/resources/StructureDefinition-BeMedicationPrescription : 0 / 1 / 3
+ /github/workspace/fsh-generated/resources/StructureDefinition-BeModelDosagingInformation : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-BeModelMedication : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-BeModelMedicationDispense : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-BeModelMedicationLine : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-BeModelMedicationPrescription : 0 / 0 / 6
+ /github/workspace/fsh-generated/resources/StructureDefinition-DispenseRequestNeededCategory : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-ExposureCategory : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-InstructionsForReimbursement : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-be-dosage : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-be-ext-OffLabel : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-MedicationRequestReimbursementTypeVS : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-be-vs-dispenser-types : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-medication-exposure-category-vs : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-medication-line-origin-type-vs : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-medication-type-vs : 0 / 0 / 1
+</table>
+== n/a ==
+WARNING: IG: The IG is not for the international realm, and it uses SNOMED CT, so it should fix the SCT edition in the expansion parameters
+== fsh-generated/resources/CodeSystem-be-cs-medication-request-reimbursement-type.json ==
+== fsh-generated/resources/CodeSystem-medication-line-origin-type.json ==
+== fsh-generated/resources/CodeSystem-medication-type.json ==
+== fsh-generated/resources/ImplementationGuide-hl7.fhir.be.medication.json ==
+INFORMATION: ImplementationGuide.dependsOn[0].uri: Pinned the version of http://terminology.hl7.org/ImplementationGuide/hl7.terminology to 6.2.0 from choices of 6.0.2 (hl7.terminology.r4#6.0.2), 6.2.0 (hl7.terminology.r4#6.2.0)
+INFORMATION: ImplementationGuide.dependsOn[1].uri: Pinned the version of http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions to 5.2.0 from choices of 5.1.0 (hl7.fhir.uv.extensions.r4#5.1.0), 5.2.0 (hl7.fhir.uv.extensions.r4#5.2.0)
+ERROR: ImplementationGuide/hl7.fhir.be.medication: ImplementationGuide.definition.extension[7].extension[0].value.ofType(string): The value provided ('pin-canonicals') was not found in the value set 'ig-parameters Codes ValueSet' (http://hl7.org/fhir/tools/ValueSet/ig-parameters|0.4.1), and a code is required from this value set  (error message = The System URI could not be determined for the code 'pin-canonicals' in the ValueSet 'http://hl7.org/fhir/tools/ValueSet/ig-parameters|0.4.1'; The provided code '#pin-canonicals' was not found in the value set 'http://hl7.org/fhir/tools/ValueSet/ig-parameters|0.4.1')
+ERROR: ImplementationGuide/hl7.fhir.be.medication: ImplementationGuide.definition.extension[35].extension[0].value.ofType(code): The value provided ('pin-canonicals') was not found in the value set 'ig-parameters Codes ValueSet' (http://hl7.org/fhir/tools/ValueSet/ig-parameters|0.4.1), and a code is required from this value set  (error message = The System URI could not be determined for the code 'pin-canonicals' in the ValueSet 'http://hl7.org/fhir/tools/ValueSet/ig-parameters|0.4.1'; The provided code '#pin-canonicals' was not found in the value set 'http://hl7.org/fhir/tools/ValueSet/ig-parameters|0.4.1')
+== fsh-generated/resources/MedicationDispense-example-dispense-communitypharmacy-1med.json ==
+WARNING: MedicationDispense/example-dispense-communitypharmacy-1med: MedicationDispense.identifier[0].type.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: MedicationDispense/example-dispense-communitypharmacy-1med: MedicationDispense.identifier[0].system: URL value 'https://www.gfd-dpp.be/fhir/reference/dguid' does not resolve
+WARNING: MedicationDispense/example-dispense-communitypharmacy-1med: MedicationDispense.medication.ofType(CodeableConcept).coding[0]: A definition for CodeSystem 'https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes' could not be found, so the code cannot be validated
+WARNING: MedicationDispense/example-dispense-communitypharmacy-1med: MedicationDispense.context.identifier.type.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: MedicationDispense/example-dispense-communitypharmacy-1med: MedicationDispense.context.identifier.system: URL value 'https://www.gfd-dpp.be/fhir/reference/sguid' does not resolve
+WARNING: MedicationDispense/example-dispense-communitypharmacy-1med: MedicationDispense.performer[0].actor.identifier.system: URL value 'https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi-practitioner' does not resolve
+WARNING: MedicationDispense/example-dispense-communitypharmacy-1med: MedicationDispense.authorizingPrescription[0].identifier.system: URL value 'https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/prescription-id' does not resolve
+INFORMATION: MedicationDispense/example-dispense-communitypharmacy-1med: MedicationDispense.quantity: A definition for CodeSystem 'https://www.gfd-dpp.be/fhir/reference/packaging' could not be found, so the code cannot be validated
+WARNING: MedicationDispense/example-dispense-communitypharmacy-1med: MedicationDispense.quantity.system: URL value 'https://www.gfd-dpp.be/fhir/reference/packaging' does not resolve
+== fsh-generated/resources/MedicationDispense-example-dispense-hospital.json ==
+WARNING: MedicationDispense/example-dispense-hospital: MedicationDispense.identifier[0].type.coding[0].system: A definition for CodeSystem 'https://www.nexuzhealth.be/fhir/prescription/ambulatory' version '1' could not be found, so the code cannot be validated. Valid versions: []
+WARNING: MedicationDispense/example-dispense-hospital: MedicationDispense.identifier[0].type.coding[0].system: URL value 'https://www.nexuzhealth.be/fhir/prescription/ambulatory' does not resolve
+WARNING: MedicationDispense/example-dispense-hospital: MedicationDispense.identifier[0].system: URL value 'https://www.gfd-dpp.be/fhir/reference/dguid' does not resolve
+WARNING: MedicationDispense/example-dispense-hospital: MedicationDispense.medication.ofType(CodeableConcept).coding[0]: A definition for CodeSystem 'https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes' could not be found, so the code cannot be validated
+== fsh-generated/resources/MedicationDispense-example-minimal-dispense.json ==
+WARNING: MedicationDispense/example-minimal-dispense: MedicationDispense.medication.ofType(CodeableConcept).coding[0]: A definition for CodeSystem 'https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes' could not be found, so the code cannot be validated
+WARNING: MedicationDispense/example-minimal-dispense: MedicationDispense.performer[0].actor.identifier.system: URL value 'https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi-practitioner' does not resolve
+== fsh-generated/resources/MedicationDispense-medicationdispense-example-1.json ==
+WARNING: MedicationDispense/medicationdispense-example-1: MedicationDispense.identifier[0].type.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: MedicationDispense/medicationdispense-example-1: MedicationDispense.identifier[0].system: URL value 'https://www.gfd-dpp.be/fhir/reference/dguid' does not resolve
+WARNING: MedicationDispense/medicationdispense-example-1: MedicationDispense.medication.ofType(CodeableConcept).coding[0]: A definition for CodeSystem 'https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes' could not be found, so the code cannot be validated
+WARNING: MedicationDispense/medicationdispense-example-1: MedicationDispense.context.identifier.type.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: MedicationDispense/medicationdispense-example-1: MedicationDispense.context.identifier.system: URL value 'https://www.gfd-dpp.be/fhir/reference/sguid' does not resolve
+INFORMATION: MedicationDispense/medicationdispense-example-1: MedicationDispense.quantity: A definition for CodeSystem 'https://www.gfd-dpp.be/fhir/reference/packaging' could not be found, so the code cannot be validated
+WARNING: MedicationDispense/medicationdispense-example-1: MedicationDispense.quantity.system: URL value 'https://www.gfd-dpp.be/fhir/reference/packaging' does not resolve
+== fsh-generated/resources/MedicationDispense-medicationdispense-example-2.json ==
+INFORMATION: MedicationDispense/medicationdispense-example-2: MedicationDispense.contained[0]/*Organization/apotheek-onder-de-toren*/.identifier[0]: This element does not match any known slice defined in the profile https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-organization|2.1.2 (this may not be a problem, but you should check that it's not intended to match a slice)
+WARNING: MedicationDispense/medicationdispense-example-2: MedicationDispense.identifier[0].type.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: MedicationDispense/medicationdispense-example-2: MedicationDispense.identifier[0].system: URL value 'https://www.gfd-dpp.be/fhir/reference/dguid' does not resolve
+WARNING: MedicationDispense/medicationdispense-example-2: MedicationDispense.medication.ofType(CodeableConcept).coding[0]: A definition for CodeSystem 'https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes' could not be found, so the code cannot be validated
+WARNING: MedicationDispense/medicationdispense-example-2: MedicationDispense.context.identifier.type.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: MedicationDispense/medicationdispense-example-2: MedicationDispense.context.identifier.system: URL value 'https://www.gfd-dpp.be/fhir/reference/sguid' does not resolve
+INFORMATION: MedicationDispense/medicationdispense-example-2: MedicationDispense.quantity: A definition for CodeSystem 'https://www.gfd-dpp.be/fhir/reference/packaging' could not be found, so the code cannot be validated
+WARNING: MedicationDispense/medicationdispense-example-2: MedicationDispense.quantity.system: URL value 'https://www.gfd-dpp.be/fhir/reference/packaging' does not resolve
+== fsh-generated/resources/NamingSystem-be-ns-cnk-codes.json ==
+== fsh-generated/resources/NamingSystem-be-ns-cti-extended-code.json ==
+== fsh-generated/resources/NamingSystem-be-ns-prescription-ids.json ==
+== fsh-generated/resources/NamingSystem-be-ns-product-package-type.json ==
+== fsh-generated/resources/Organization-apotheek-onder-de-toren.json ==
+INFORMATION: Organization/apotheek-onder-de-toren: Organization.identifier[0]: This element does not match any known slice defined in the profile https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-organization|2.1.2 (this may not be a problem, but you should check that it's not intended to match a slice)
+== fsh-generated/resources/StructureDefinition-BasedOnMedicationLine.json ==
+== fsh-generated/resources/StructureDefinition-BeMedicationDispense.json ==
+INFORMATION: StructureDefinition/BeMedicationDispense: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated
+INFORMATION: StructureDefinition/BeMedicationDispense: StructureDefinition.snapshot.element[85].mapping[0].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+== fsh-generated/resources/StructureDefinition-BeMedicationLine.json ==
+INFORMATION: StructureDefinition.snapshot.element[25].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/artifact-version to 5.2.0 from choices of 5.1.0 (hl7.fhir.uv.extensions.r4#5.1.0), 5.2.0 (hl7.fhir.uv.extensions.r4#5.2.0)
+INFORMATION: StructureDefinition.snapshot.element[26].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/artifact-date to 5.2.0 from choices of 5.1.0 (hl7.fhir.uv.extensions.r4#5.1.0), 5.2.0 (hl7.fhir.uv.extensions.r4#5.2.0)
+INFORMATION: StructureDefinition.differential.element[6].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/artifact-version to 5.2.0 from choices of 5.1.0 (hl7.fhir.uv.extensions.r4#5.1.0), 5.2.0 (hl7.fhir.uv.extensions.r4#5.2.0)
+INFORMATION: StructureDefinition.differential.element[7].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/artifact-date to 5.2.0 from choices of 5.1.0 (hl7.fhir.uv.extensions.r4#5.1.0), 5.2.0 (hl7.fhir.uv.extensions.r4#5.2.0)
+INFORMATION: StructureDefinition/BeMedicationLine: StructureDefinition.differential.element[9].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/BeMedicationLine: StructureDefinition.snapshot.element[29].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+WARNING: StructureDefinition.where(url = 'https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-BeMedicationPrescription.json ==
+INFORMATION: StructureDefinition/BeMedicationPrescription: StructureDefinition.differential.element[8].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/BeMedicationPrescription: StructureDefinition.snapshot.element[27].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+WARNING: StructureDefinition.where(url = 'https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationPrescription'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-BeModelDosagingInformation.json ==
+== fsh-generated/resources/StructureDefinition-BeModelMedication.json ==
+== fsh-generated/resources/StructureDefinition-BeModelMedicationDispense.json ==
+== fsh-generated/resources/StructureDefinition-BeModelMedicationLine.json ==
+INFORMATION: StructureDefinition/BeModelMedicationLine: StructureDefinition.snapshot.element[47].type[0].extension[1]: The extension http://hl7.org/fhir/StructureDefinition/regex|5.2.0 is deprecated with the note This was deprecated in favor of using a constraint on the element using FHIRPath, since constraints allow for the provision of a human readable message associated with the regex
+== fsh-generated/resources/StructureDefinition-BeModelMedicationPrescription.json ==
+INFORMATION: StructureDefinition.snapshot.element[1].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/elementdefinition-identifier to 5.2.0 from choices of 4.0.1 (hl7.fhir.r4.core#4.0.1), 5.1.0 (hl7.fhir.uv.extensions.r4#5.1.0), 5.2.0 (hl7.fhir.uv.extensions.r4#5.2.0)
+INFORMATION: StructureDefinition.snapshot.element[2].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/elementdefinition-identifier to 5.2.0 from choices of 4.0.1 (hl7.fhir.r4.core#4.0.1), 5.1.0 (hl7.fhir.uv.extensions.r4#5.1.0), 5.2.0 (hl7.fhir.uv.extensions.r4#5.2.0)
+INFORMATION: StructureDefinition.differential.element[1].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/elementdefinition-identifier to 5.2.0 from choices of 4.0.1 (hl7.fhir.r4.core#4.0.1), 5.1.0 (hl7.fhir.uv.extensions.r4#5.1.0), 5.2.0 (hl7.fhir.uv.extensions.r4#5.2.0)
+INFORMATION: StructureDefinition.differential.element[2].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/elementdefinition-identifier to 5.2.0 from choices of 4.0.1 (hl7.fhir.r4.core#4.0.1), 5.1.0 (hl7.fhir.uv.extensions.r4#5.1.0), 5.2.0 (hl7.fhir.uv.extensions.r4#5.2.0)
+INFORMATION: StructureDefinition/BeModelMedicationPrescription: BeModelMedicationPrescription.groupIdentifier: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-identifier|5.2.0 is deprecated
+== fsh-generated/resources/StructureDefinition-DispenseRequestNeededCategory.json ==
+== fsh-generated/resources/StructureDefinition-ExposureCategory.json ==
+== fsh-generated/resources/StructureDefinition-InstructionsForReimbursement.json ==
+== fsh-generated/resources/StructureDefinition-be-dosage.json ==
+== fsh-generated/resources/StructureDefinition-be-ext-OffLabel.json ==
+== fsh-generated/resources/ValueSet-MedicationRequestReimbursementTypeVS.json ==
+== fsh-generated/resources/ValueSet-be-vs-dispenser-types.json ==
+== fsh-generated/resources/ValueSet-medication-exposure-category-vs.json ==
+== fsh-generated/resources/ValueSet-medication-line-origin-type-vs.json ==
+== fsh-generated/resources/ValueSet-medication-type-vs.json ==

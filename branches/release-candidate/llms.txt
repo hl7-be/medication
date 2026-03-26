@@ -1,0 +1,87 @@
+# hl7.fhir.be.medication#1.1.0: Medication
+
+## Pages
+
+* [Home](index.md)
+* [Definitions](definitions.md)
+* [Record - Use cases](usecases-medicationrecord.md)
+* [Dispense - Use cases](usecases-dispense.md)
+* [Record - Extended scenarios](medicationrecord-scenarios.md)
+* [Artifacts Summary](artifacts.md)
+* [How to read this specification](howto.md)
+* [Belgian  Record overview](medicationrecord.md)
+* [Downloads](downloads.md)
+
+## Resources
+
+### CodeSystems
+
+* [Medication Line Adherence Status](CodeSystem-BeMedicationLineAdherenceStatus.md)
+* [Adherence Status Reason](CodeSystem-BeMedicationLineAdherenceStatusReason.md)
+* [Medication origin Type](CodeSystem-BeMedicationLineOriginType.md)
+* [Medication Line Registration Status](CodeSystem-BeMedicationLineRegistrationStatus.md)
+* [Medication request reimbursement type](CodeSystem-BeMedicationRequestReimbursementType.md)
+* [Medication preparation Type](CodeSystem-BeMedicationType.md)
+
+### ValueSets
+
+* [Medication exposure intent](ValueSet-BeMedicationExposureIntentVS.md)
+* [Adherence Status Reason ValueSet](ValueSet-BeMedicationLineAdherenceStatusReasonVS.md)
+* [BeExtAdherenceStatus](ValueSet-BeMedicationLineAdherenceStatusVS.md)
+* [Medication origin type value set](ValueSet-BeMedicationLineOriginTypeVS.md)
+* [Medication Line Registration Status Value Set](ValueSet-BeMedicationLineRegistrationStatusVS.md)
+* [Medication Prescription Status](ValueSet-BeMedicationPrescriptionStatusVS.md)
+* [Medication request reimbursement type ValueSet](ValueSet-BeMedicationRequestReimbursementTypeVS.md)
+* [Medication preparation Type value set](ValueSet-BeMedicationTypeVS.md)
+* [Route of Administration ValueSet](ValueSet-BeRouteOfAdministrationVS.md)
+* [Dispenser Types](ValueSet-be-vs-dispenser-types.md)
+
+### Logicals
+
+* [Dosaging (model)](StructureDefinition-BeModelDosagingInformation.md)
+* [Medication (model)](StructureDefinition-BeModelMedication.md)
+* [Medication Dispense (model)](StructureDefinition-BeModelMedicationDispense.md)
+* [Medication Line (model)](StructureDefinition-BeModelMedicationLine.md)
+* [Medication prescription (model)](StructureDefinition-BeModelMedicationPrescription.md)
+
+### Complex-type Profiles
+
+* [Medication Dosage](StructureDefinition-BeDosage.md)
+
+### Resource Profiles
+
+* [BeMedicationDispense](StructureDefinition-BeMedicationDispense.md)
+* [BeMedicationLine](StructureDefinition-BeMedicationLine.md)
+* [BeMedicationPrescription](StructureDefinition-BeMedicationPrescription.md)
+
+### Extensions
+
+* [BasedOnMedicationLine](StructureDefinition-BasedOnMedicationLine.md)
+* [BeExtAdherenceStatus](StructureDefinition-BeExtAdherenceStatus.md)
+* [BeExtInstructionsForReimbursement](StructureDefinition-BeExtInstructionsForReimbursement.md)
+* [Medication Line Registration Status](StructureDefinition-BeExtMedicationLineRegistrationStatus.md)
+* [BeExtMedicationType](StructureDefinition-BeExtMedicationType.md)
+* [MedicationRequest - Off-label use](StructureDefinition-BeExtOffLabel.md)
+* [BeExtRecordedDate](StructureDefinition-BeExtRecordedDate.md)
+* [BeExtRecorder](StructureDefinition-BeExtRecorder.md)
+* [BeMedicationExposureCategory](StructureDefinition-BeMedicationExposureCategory.md)
+
+### ImplementationGuides
+
+* [Medication](index.md)
+
+### NamingSystems
+
+* [BeNSCNK](NamingSystem-be-ns-cnk-codes.md)
+* [BeNSCTIExtended](NamingSystem-be-ns-cti-extended-code.md)
+* [BeNSPrescriptions](NamingSystem-be-ns-prescription-ids.md)
+* [BeNSProductPackage](NamingSystem-be-ns-product-package-type.md)
+
+### Examples
+
+* [example-dispense-communitypharmacy-1med (MedicationDispense)](MedicationDispense-example-dispense-communitypharmacy-1med.md)
+* [example-dispense-hospital (MedicationDispense)](MedicationDispense-example-dispense-hospital.md)
+* [example-minimal-dispense (MedicationDispense)](MedicationDispense-example-minimal-dispense.md)
+* [medicationdispense-example-1 (MedicationDispense)](MedicationDispense-medicationdispense-example-1.md)
+* [medicationdispense-example-2 (MedicationDispense)](MedicationDispense-medicationdispense-example-2.md)
+* [apotheek-onder-de-toren (Organization)](Organization-apotheek-onder-de-toren.md)
