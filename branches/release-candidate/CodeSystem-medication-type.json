@@ -3,7 +3,7 @@
   "id" : "medication-type",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem medication-type</b></p><a name=\"medication-type\"> </a><a name=\"hcmedication-type\"> </a><a name=\"medication-type-en-US\"> </a><p>This case-insensitive code system <code>https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">magistral<a name=\"medication-type-magistral\"> </a></td><td>Magistral preparation</td></tr><tr><td style=\"white-space:nowrap\">officinal<a name=\"medication-type-officinal\"> </a></td><td>Officinal preparation</td></tr><tr><td style=\"white-space:nowrap\">medicinal-product<a name=\"medication-type-medicinal-product\"> </a></td><td>Medicinal Product</td></tr><tr><td style=\"white-space:nowrap\">non-medicinal-product<a name=\"medication-type-non-medicinal-product\"> </a></td><td>non-medicinal product e.g. supplement</td></tr></table></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem medication-type</b></p><a name=\"medication-type\"> </a><a name=\"hcmedication-type\"> </a><p>This case-insensitive code system <code>https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">magistral<a name=\"medication-type-magistral\"> </a></td><td>Magistral preparation</td></tr><tr><td style=\"white-space:nowrap\">officinal<a name=\"medication-type-officinal\"> </a></td><td>Officinal preparation</td></tr><tr><td style=\"white-space:nowrap\">medicinal-product<a name=\"medication-type-medicinal-product\"> </a></td><td>Medicinal Product</td></tr><tr><td style=\"white-space:nowrap\">non-medicinal-product<a name=\"medication-type-non-medicinal-product\"> </a></td><td>non-medicinal product e.g. supplement</td></tr></table></div>"
   },
   "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
   "version" : "1.1.0",
@@ -11,7 +11,7 @@
   "title" : "Medication preparation Type",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2024-11-19T08:07:39+00:00",
+  "date" : "2026-03-27T06:32:22+00:00",
   "publisher" : "HL7 Belgium",
   "contact" : [{
     "name" : "HL7 Belgium",

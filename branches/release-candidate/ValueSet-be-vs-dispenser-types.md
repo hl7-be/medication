@@ -9,7 +9,7 @@
 | | | |
 | :--- | :--- | :--- |
 | *Official URL*:https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/be-vs-dispenser-types | *Version*:1.1.0 | |
-| Draft as of 2025-10-10 | [Maturity Level](http://hl7.org/fhir/versions.html#maturity): 1 | *Computable Name*:DispenserTypes |
+| Draft as of 2026-03-27 | [Maturity Level](http://hl7.org/fhir/versions.html#maturity): 1 | *Computable Name*:DispenserTypes |
 
  
 Dispenser Types - from hcparty 
@@ -45,86 +45,70 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
 {
   "resourceType" : "ValueSet",
   "id" : "be-vs-dispenser-types",
-  "extension" : [
-    {
-      "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
-      "valueInteger" : 1
-    }
-  ],
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 1
+  }],
   "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/be-vs-dispenser-types",
   "version" : "1.1.0",
   "name" : "DispenserTypes",
   "title" : "Dispenser Types",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2025-10-10T10:16:02+00:00",
-  "publisher" : "eHealth Platform",
-  "contact" : [
-    {
-      "name" : "eHealth Platform",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "https://www.ehealth.fgov.be/standards/fhir"
-        },
-        {
-          "system" : "email",
-          "value" : "support@be-ehealth-standards.atlassian.net"
-        }
-      ]
+  "date" : "2026-03-27T06:32:22+00:00",
+  "publisher" : "HL7 Belgium",
+  "contact" : [{
+    "name" : "HL7 Belgium",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.hl7belgium.org"
     },
     {
-      "name" : "Message Structure eHealth",
-      "telecom" : [
-        {
-          "system" : "email",
-          "value" : "support@be-ehealth-standards.atlassian.net",
-          "use" : "work"
-        }
-      ]
-    }
-  ],
+      "system" : "email",
+      "value" : "hl7belgium@hl7belgium.org"
+    }]
+  },
+  {
+    "name" : "Message Structure eHealth",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "message-structure@ehealth.fgov.be",
+      "use" : "work"
+    }]
+  }],
   "description" : "Dispenser Types - from hcparty",
-  "jurisdiction" : [
-    {
-      "coding" : [
-        {
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "BE",
-          "display" : "Belgium"
-        }
-      ]
-    }
-  ],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BE",
+      "display" : "Belgium"
+    }]
+  }],
   "compose" : {
-    "include" : [
+    "include" : [{
+      "system" : "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty",
+      "concept" : [{
+        "code" : "deptpharmacy"
+      },
       {
-        "system" : "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty",
-        "concept" : [
-          {
-            "code" : "deptpharmacy"
-          },
-          {
-            "code" : "perspharmacist"
-          },
-          {
-            "code" : "orgpharmacy"
-          },
-          {
-            "code" : "perspharmacyassistant"
-          },
-          {
-            "code" : "perspharmacistclinicalbiologist"
-          },
-          {
-            "code" : "persdentist"
-          },
-          {
-            "code" : "deptdentistry"
-          }
-        ]
-      }
-    ]
+        "code" : "perspharmacist"
+      },
+      {
+        "code" : "orgpharmacy"
+      },
+      {
+        "code" : "perspharmacyassistant"
+      },
+      {
+        "code" : "perspharmacistclinicalbiologist"
+      },
+      {
+        "code" : "persdentist"
+      },
+      {
+        "code" : "deptdentistry"
+      }]
+    }]
   }
 }
 

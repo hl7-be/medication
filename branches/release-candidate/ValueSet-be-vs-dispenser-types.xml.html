@@ -24,10 +24,10 @@
     <!-- Placeholder for child template CSS declarations -->
 <link href="assets/css/hl7-be.css" rel="stylesheet"/>
 <!-- Placeholder for child template CSS declarations -->
-<!-- eHealth Platform -->
-<!-- active -->
+<!-- HL7 Belgium -->
+<!-- draft -->
 
-<link href="assets/css/federal-colors.css" rel="stylesheet"/>
+<link href="assets/css/colors.css" rel="stylesheet"/>
 
 <link href="assets/css/lforms.min.css" rel="stylesheet"/>
 
@@ -52,21 +52,27 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"9.26"}
-    h3,h4,h5,h6{--heading-prefix:"9.26"}</style>
+    <style type="text/css">h2{--heading-prefix:"9.27"}
+    h3,h4,h5,h6{--heading-prefix:"9.27"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
         <!-- Placeholder for child template header declarations -->
 
         
-<!-- eHealth Platform -->
-<!-- active -->
+<!-- HL7 Belgium -->
+<!-- draft -->
 
 <div id="ig-nav">
-  <a id="standards-logo" no-external="true" href="index.html">
-    <img height="50" alt="Welcome on standards website" src="assets/images/standards.svg"/>
+  <a id="hl7-logo" no-external="true" href="https://hl7belgium.org">
+    <img height="65" alt="HL7 Belgium" src="assets/images/hl7be-logo-header.png"/>
   </a>
+</div>
+<div id="fhir-nav">
+  <a id="fhir-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+</div>
+<div id="ig-search">
+  <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
 </div>
 
 
@@ -217,7 +223,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 7" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">Medication, published by eHealth Platform. This guide is not an authorized publication; it is the continuous build for version 1.1.0  built by the FHIR (HL7&reg; FHIR&reg; Standard) CI Build. This version is based on the current content of <a href='https://github.com/hl7-be/medication/tree/release-candidate'>https://github.com/hl7-be/medication/tree/release-candidate</a> and changes regularly. See the <a href='https://www.ehealth.fgov.be/standards/fhir/medication/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">Medication, published by HL7 Belgium. This guide is not an authorized publication; it is the continuous build for version 1.1.0  built by the FHIR (HL7&reg; FHIR&reg; Standard) CI Build. This version is based on the current content of <a href='https://github.com/hl7-be/medication'>https://github.com/hl7-be/medication</a> and changes regularly. See the <a href='https://www.ehealth.fgov.be/standards/fhir/medication/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
 
 
 
@@ -272,7 +278,7 @@
         
           Draft
           
-            as of 2025-10-10
+            as of 2026-03-27
           
         
       </td>
@@ -295,15 +301,15 @@
 
   <pre class="xml" data-fhir="generated" style="white-space: pre; text-wrap: nowrap; width: auto;"><code class="language-xml" style="white-space: pre; text-wrap: nowrap;">
 &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet">ValueSet</a> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;be-vs-dispenser-types&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.text">text</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/resource.html#ValueSet.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;be-vs-dispenser-types&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/domainresource.html#ValueSet.text">text</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
-    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p class=&quot;res-header-id&quot;&gt;&lt;b&gt;Generated Narrative: ValueSet be-vs-dispenser-types&lt;/b&gt;&lt;/p&gt;&lt;a name=&quot;be-vs-dispenser-types&quot;&gt; &lt;/a&gt;&lt;a name=&quot;hcbe-vs-dispenser-types&quot;&gt; &lt;/a&gt;&lt;ul&gt;&lt;li&gt;Include these codes as defined in &lt;a href=&quot;https://www.ehealth.fgov.be/standards/fhir/core/2.1.2/CodeSystem-cd-hcparty.html&quot;&gt;&lt;code&gt;https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty&lt;/code&gt;&lt;/a&gt; version &lt;span title=&quot;Version is not explicitly stated, which means it is fixed to 2.1.2, the version found through the package references&quot;&gt;&amp;#x1F4E6;2.1.2&lt;/span&gt;&lt;table class=&quot;none&quot;&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;https://www.ehealth.fgov.be/standards/fhir/core/2.1.2/CodeSystem-cd-hcparty.html#cd-hcparty-deptpharmacy&quot;&gt;deptpharmacy&lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;color: #cccccc&quot;&gt;pharmacy service or department within an organisation&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;https://www.ehealth.fgov.be/standards/fhir/core/2.1.2/CodeSystem-cd-hcparty.html#cd-hcparty-perspharmacist&quot;&gt;perspharmacist&lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;color: #cccccc&quot;&gt;pharmacist&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;https://www.ehealth.fgov.be/standards/fhir/core/2.1.2/CodeSystem-cd-hcparty.html#cd-hcparty-orgpharmacy&quot;&gt;orgpharmacy&lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;color: #cccccc&quot;&gt;independent pharmacy&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;https://www.ehealth.fgov.be/standards/fhir/core/2.1.2/CodeSystem-cd-hcparty.html#cd-hcparty-perspharmacyassistant&quot;&gt;perspharmacyassistant&lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;color: #cccccc&quot;&gt;pharmacy assistant&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;https://www.ehealth.fgov.be/standards/fhir/core/2.1.2/CodeSystem-cd-hcparty.html#cd-hcparty-perspharmacistclinicalbiologist&quot;&gt;perspharmacistclinicalbiologist&lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;color: #cccccc&quot;&gt;pharmacist-clinical biologist&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;https://www.ehealth.fgov.be/standards/fhir/core/2.1.2/CodeSystem-cd-hcparty.html#cd-hcparty-persdentist&quot;&gt;persdentist&lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;color: #cccccc&quot;&gt;dentist&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;https://www.ehealth.fgov.be/standards/fhir/core/2.1.2/CodeSystem-cd-hcparty.html#cd-hcparty-deptdentistry&quot;&gt;deptdentistry&lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;color: #cccccc&quot;&gt;dentistry&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;<a name="end-xhtml"></a>
-  &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.text">text</a>&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.extension">extension</a>
+    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p class=&quot;res-header-id&quot;&gt;&lt;b&gt;Generated Narrative: ValueSet be-vs-dispenser-types&lt;/b&gt;&lt;/p&gt;&lt;a name=&quot;be-vs-dispenser-types&quot;&gt; &lt;/a&gt;&lt;a name=&quot;hcbe-vs-dispenser-types&quot;&gt; &lt;/a&gt;&lt;ul&gt;&lt;li&gt;Include these codes as defined in &lt;a href=&quot;https://www.ehealth.fgov.be/standards/fhir/core/2.1.2/CodeSystem-cd-hcparty.html&quot;&gt;&lt;code&gt;https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty&lt;/code&gt;&lt;/a&gt;&lt;span title=&quot;Version is not explicitly stated, which means it is fixed to 2.1.2, the version found through the package references&quot;&gt; version &amp;#x1F4E6;2.1.2&lt;/span&gt;&lt;table class=&quot;none&quot;&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;https://www.ehealth.fgov.be/standards/fhir/core/2.1.2/CodeSystem-cd-hcparty.html#cd-hcparty-deptpharmacy&quot;&gt;deptpharmacy&lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;color: #cccccc&quot;&gt;pharmacy service or department within an organisation&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;https://www.ehealth.fgov.be/standards/fhir/core/2.1.2/CodeSystem-cd-hcparty.html#cd-hcparty-perspharmacist&quot;&gt;perspharmacist&lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;color: #cccccc&quot;&gt;pharmacist&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;https://www.ehealth.fgov.be/standards/fhir/core/2.1.2/CodeSystem-cd-hcparty.html#cd-hcparty-orgpharmacy&quot;&gt;orgpharmacy&lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;color: #cccccc&quot;&gt;independent pharmacy&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;https://www.ehealth.fgov.be/standards/fhir/core/2.1.2/CodeSystem-cd-hcparty.html#cd-hcparty-perspharmacyassistant&quot;&gt;perspharmacyassistant&lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;color: #cccccc&quot;&gt;pharmacy assistant&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;https://www.ehealth.fgov.be/standards/fhir/core/2.1.2/CodeSystem-cd-hcparty.html#cd-hcparty-perspharmacistclinicalbiologist&quot;&gt;perspharmacistclinicalbiologist&lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;color: #cccccc&quot;&gt;pharmacist-clinical biologist&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;https://www.ehealth.fgov.be/standards/fhir/core/2.1.2/CodeSystem-cd-hcparty.html#cd-hcparty-persdentist&quot;&gt;persdentist&lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;color: #cccccc&quot;&gt;dentist&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;https://www.ehealth.fgov.be/standards/fhir/core/2.1.2/CodeSystem-cd-hcparty.html#cd-hcparty-deptdentistry&quot;&gt;deptdentistry&lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;color: #cccccc&quot;&gt;dentistry&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+  &lt;/<a href="http://hl7.org/fhir/R4/domainresource.html#ValueSet.text">text</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/domainresource.html#ValueSet.extension">extension</a>
              <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm&quot;&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueInteger</a> <a href="http://hl7.org/fhir/R4/datatypes.html#integer">value</a>=&quot;1&quot;/&gt;
-  &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.extension">extension</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueInteger</a> <a href="http://hl7.org/fhir/R4/datatypes.html#integer">value</a>=&quot;1&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/domainresource.html#ValueSet.extension">extension</a>&gt;
   &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.url">url</a>
        <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/be-vs-dispenser-types&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">version</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;1.1.0&quot;/&gt;
@@ -311,24 +317,24 @@
   &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.title">title</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Dispenser Types&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;draft&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.experimental">experimental</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2025-10-10T10:16:02+00:00&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.publisher">publisher</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;eHealth Platform&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2026-03-27T06:32:22+00:00&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.publisher">publisher</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;HL7 Belgium&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.contact">contact</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;eHealth Platform&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;HL7 Belgium&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;url&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;https://www.ehealth.fgov.be/standards/fhir&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;https://www.hl7belgium.org&quot;/&gt;
     &lt;/<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;email&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;support@be-ehealth-standards.atlassian.net&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;hl7belgium@hl7belgium.org&quot;/&gt;
     &lt;/<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>&gt;
   &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.contact">contact</a>&gt;
   &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.contact">contact</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Message Structure eHealth&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;email&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;support@be-ehealth-standards.atlassian.net&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;message-structure@ehealth.fgov.be&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.use">use</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;work&quot;/&gt;
     &lt;/<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>&gt;
   &lt;/<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.contact">contact</a>&gt;
@@ -413,27 +419,18 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.ehealth.fgov.be/standards/fhir">eHealth Platform</a>.  Package hl7.fhir.be.medication#1.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Oct 10, 2025 10:16+0000">2025-10-10</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.hl7belgium.org">HL7 Belgium</a>.  Package hl7.fhir.be.medication#1.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Mar 27, 2026 06:32+0000">2026-03-27</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
-            <!-- eHealth Platform -->
-<!-- active -->
+            <!-- HL7 Belgium -->
+<!-- draft -->
 
-Links:
-<a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
-<a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
-
-  
-
-
-<span class="footer-logos-row">
-  <a id="belgium-logo" href="https://www.belgium.be/en" target="_blank">
-    <img alt="belgium.be" src="assets/images/logo-be.png"/>
-  </a>
-  <a id="ehealth-logo" href="https://www.ehealth.fgov.be" style="text-decoration:none">
-    <img height="50" alt="Welcome to ehealth website" src="assets/images/logo-ehealth.png"/>
-  </a>
-</span>
+Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a> |
+                 
+                 <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://www.ehealth.fgov.be/standards/fhir/medication/history.html">Version History</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC-BY" src="assets/images/cc-by.png" height="17"/></a>
+<!-- no fitting stylesheet found (status/publisher)-->
 
 
           </span>

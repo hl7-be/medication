@@ -14,23 +14,6 @@
  
 Naming System - Prescription IDs 
 
-### Summary
-
-| | |
-| :--- | :--- |
-| Defining URL | https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-prescription-ids |
-| Version | 1.1.0 |
-| Name | BeNSPrescriptions |
-| Status | active |
-| Definition | Naming System - Prescription IDs |
-| Publisher | eHealth Platform |
-
-### Identifiers
-
-* **Type**: URI
-  * **Value**: https://www.ehealth.fgov.be/standards/fhir/NamingSystem/prescription-id
-  * **Preferred**: true
-
 
 
 ## Resource Content
@@ -39,65 +22,51 @@ Naming System - Prescription IDs
 {
   "resourceType" : "NamingSystem",
   "id" : "be-ns-prescription-ids",
-  "extension" : [
-    {
-      "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.url",
-      "valueUri" : "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-prescription-ids"
-    },
-    {
-      "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.version",
-      "valueString" : "1.1.0"
-    }
-  ],
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.url",
+    "valueUri" : "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-prescription-ids"
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.version",
+    "valueString" : "1.1.0"
+  }],
   "name" : "BeNSPrescriptions",
   "status" : "active",
   "kind" : "identifier",
   "date" : "2020-07-24",
-  "publisher" : "eHealth Platform",
-  "contact" : [
-    {
-      "name" : "eHealth Platform",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "https://www.ehealth.fgov.be/standards/fhir"
-        },
-        {
-          "system" : "email",
-          "value" : "support@be-ehealth-standards.atlassian.net"
-        }
-      ]
+  "publisher" : "HL7 Belgium",
+  "contact" : [{
+    "name" : "HL7 Belgium",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.hl7belgium.org"
     },
     {
-      "name" : "Message Structure eHealth",
-      "telecom" : [
-        {
-          "system" : "email",
-          "value" : "support@be-ehealth-standards.atlassian.net",
-          "use" : "work"
-        }
-      ]
-    }
-  ],
+      "system" : "email",
+      "value" : "hl7belgium@hl7belgium.org"
+    }]
+  },
+  {
+    "name" : "Message Structure eHealth",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "message-structure@ehealth.fgov.be",
+      "use" : "work"
+    }]
+  }],
   "description" : "Naming System - Prescription IDs",
-  "jurisdiction" : [
-    {
-      "coding" : [
-        {
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "BE",
-          "display" : "Belgium"
-        }
-      ]
-    }
-  ],
-  "uniqueId" : [
-    {
-      "type" : "uri",
-      "value" : "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/prescription-id",
-      "preferred" : true
-    }
-  ]
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BE",
+      "display" : "Belgium"
+    }]
+  }],
+  "uniqueId" : [{
+    "type" : "uri",
+    "value" : "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/prescription-id",
+    "preferred" : true
+  }]
 }
 
 ```

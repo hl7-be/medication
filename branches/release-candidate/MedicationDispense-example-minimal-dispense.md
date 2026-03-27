@@ -1,12 +1,12 @@
-# Example Dispense (minimal) - Medication v1.1.0
+# Dispense Example - Minimal amount of information - Medication v1.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Example Dispense (minimal)**
+* **Dispense Example - Minimal amount of information**
 
-## Example MedicationDispense: Example Dispense (minimal)
+## Example MedicationDispense: Dispense Example - Minimal amount of information
 
-Profile: [BeMedicationDispense](StructureDefinition-BeMedicationDispense.md)
+Profile: [BeMedicationDispense](StructureDefinition-be-medicationdispense.md)
 
 **status**: Completed
 
@@ -19,7 +19,7 @@ Profile: [BeMedicationDispense](StructureDefinition-BeMedicationDispense.md)
 | | |
 | :--- | :--- |
 | - | **Actor** |
-| * | Jan Janssen (Identifier:`https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi-practitioner`/6547432) |
+| * | Jan Janssen (Identifier:`https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi-practitioner`/6547432) |
 
 **whenHandedOver**: 2020-03-10
 
@@ -32,19 +32,15 @@ Profile: [BeMedicationDispense](StructureDefinition-BeMedicationDispense.md)
   "resourceType" : "MedicationDispense",
   "id" : "example-minimal-dispense",
   "meta" : {
-    "profile" : [
-      "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationDispense"
-    ]
+    "profile" : ["https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationdispense"]
   },
   "status" : "completed",
   "medicationCodeableConcept" : {
-    "coding" : [
-      {
-        "system" : "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
-        "code" : "1439562",
-        "display" : "Topazolam tab 50x 1,0mg"
-      }
-    ]
+    "coding" : [{
+      "system" : "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes",
+      "code" : "1439562",
+      "display" : "Topazolam tab 50x 1,0mg"
+    }]
   },
   "subject" : {
     "identifier" : {
@@ -52,17 +48,15 @@ Profile: [BeMedicationDispense](StructureDefinition-BeMedicationDispense.md)
       "value" : "64110219106"
     }
   },
-  "performer" : [
-    {
-      "actor" : {
-        "identifier" : {
-          "system" : "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi-practitioner",
-          "value" : "6547432"
-        },
-        "display" : "Jan Janssen"
-      }
+  "performer" : [{
+    "actor" : {
+      "identifier" : {
+        "system" : "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi-practitioner",
+        "value" : "6547432"
+      },
+      "display" : "Jan Janssen"
     }
-  ],
+  }],
   "whenHandedOver" : "2020-03-10"
 }
 

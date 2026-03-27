@@ -11,8 +11,8 @@
 ","Status of the line entry","Status of the line entry","","","","","","","","","",,,,,"",,,,"be-model-medicationline.status",1,1,"",""
 "be-model-medicationline.statusReason","be-model-medicationline.statusReason","","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","Reason for the status","Reason for the status"," We consider this is not necessary - should we add?","","","","","","","","",,,,,"",,,,"be-model-medicationline.statusReason",0,1,"",""
-"be-model-medicationline.assertedDate","be-model-medicationline.assertedDate","","","",0,1,"","","","dateTime {[]} {[]}
-","Date the medication line was first asserted or known","Date the medication line was first asserted or known"," We consider this is not necessary","","","","","","","","",,,,,"",,,,"be-model-medicationline.assertedDate",0,1,"",""
+"be-model-medicationline.dateAsserted","be-model-medicationline.dateAsserted","","","",0,1,"","","","dateTime {[]} {[]}
+","Date the medication line was first asserted or known","Date the medication line was first asserted or known"," We consider this is not necessary","","","","","","","","",,,,,"",,,,"be-model-medicationline.dateAsserted",0,1,"",""
 "be-model-medicationline.recorder","be-model-medicationline.recorder","","","",1,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Practitioner]]}
 ","Recorder","Recorder","We understand this will be updated as the line changes","","","","","","","","",,,,,"",,,,"be-model-medicationline.recorder",1,1,"",""
 "be-model-medicationline.patient","be-model-medicationline.patient","","","",1,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient]]}

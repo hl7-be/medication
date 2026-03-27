@@ -3,68 +3,66 @@
 ## Pages
 
 * [Home](index.md)
-* [Definitions](definitions.md)
-* [Record - Use cases](usecases-medicationrecord.md)
-* [Dispense - Use cases](usecases-dispense.md)
 * [Record - Extended scenarios](medicationrecord-scenarios.md)
-* [Artifacts Summary](artifacts.md)
+* [Dispense - Use cases](usecases-dispense.md)
+* [Record - Use cases](usecases-medicationrecord.md)
 * [How to read this specification](howto.md)
-* [Belgian  Record overview](medicationrecord.md)
+* [Artifacts Summary](artifacts.md)
 * [Downloads](downloads.md)
+* [Belgian  Record overview](medicationrecord.md)
+* [Definitions](definitions.md)
 
 ## Resources
 
 ### CodeSystems
 
-* [Medication Line Adherence Status](CodeSystem-BeMedicationLineAdherenceStatus.md)
-* [Adherence Status Reason](CodeSystem-BeMedicationLineAdherenceStatusReason.md)
-* [Medication origin Type](CodeSystem-BeMedicationLineOriginType.md)
-* [Medication Line Registration Status](CodeSystem-BeMedicationLineRegistrationStatus.md)
-* [Medication request reimbursement type](CodeSystem-BeMedicationRequestReimbursementType.md)
-* [Medication preparation Type](CodeSystem-BeMedicationType.md)
+* [Medication origin type](CodeSystem-medication-line-origin-type.md)
+* [Medication preparation Type](CodeSystem-medication-type.md)
 
 ### ValueSets
 
-* [Medication exposure intent](ValueSet-BeMedicationExposureIntentVS.md)
-* [Adherence Status Reason ValueSet](ValueSet-BeMedicationLineAdherenceStatusReasonVS.md)
-* [BeExtAdherenceStatus](ValueSet-BeMedicationLineAdherenceStatusVS.md)
-* [Medication origin type value set](ValueSet-BeMedicationLineOriginTypeVS.md)
-* [Medication Line Registration Status Value Set](ValueSet-BeMedicationLineRegistrationStatusVS.md)
-* [Medication Prescription Status](ValueSet-BeMedicationPrescriptionStatusVS.md)
-* [Medication request reimbursement type ValueSet](ValueSet-BeMedicationRequestReimbursementTypeVS.md)
-* [Medication preparation Type value set](ValueSet-BeMedicationTypeVS.md)
-* [Route of Administration ValueSet](ValueSet-BeRouteOfAdministrationVS.md)
 * [Dispenser Types](ValueSet-be-vs-dispenser-types.md)
+* [Medication exposure intent](ValueSet-medication-exposure-category-vs.md)
+* [Medication origin type ValueSet](ValueSet-medication-line-origin-type-vs.md)
+* [Medication preparation Type value set](ValueSet-medication-type-vs.md)
 
 ### Logicals
 
-* [Dosaging (model)](StructureDefinition-BeModelDosagingInformation.md)
-* [Medication (model)](StructureDefinition-BeModelMedication.md)
-* [Medication Dispense (model)](StructureDefinition-BeModelMedicationDispense.md)
-* [Medication Line (model)](StructureDefinition-BeModelMedicationLine.md)
-* [Medication prescription (model)](StructureDefinition-BeModelMedicationPrescription.md)
+* [Medicinal Product](StructureDefinition-BELMMedProduct.md)
+* [KMEHR Medication Schema v5.8](StructureDefinition-KMEHRMS.md)
+* [BeModelMedicationDispense](StructureDefinition-be-model-medicationdispense.md)
+* [Medication Line - logical model](StructureDefinition-be-model-medicationline.md)
 
 ### Complex-type Profiles
 
-* [Medication Dosage](StructureDefinition-BeDosage.md)
+* [AD](StructureDefinition-AD.md)
+* [ANY](StructureDefinition-ANY.md)
+* [BL](StructureDefinition-BL.md)
+* [CD](StructureDefinition-CD.md)
+* [Class](StructureDefinition-Class.md)
+* [DT](StructureDefinition-DT.md)
+* [EN](StructureDefinition-EN.md)
+* [II](StructureDefinition-II.md)
+* [INT](StructureDefinition-INT.md)
+* [PQ](StructureDefinition-PQ.md)
+* [REAL](StructureDefinition-REAL.md)
+* [RTO](StructureDefinition-RTO.md)
+* [ST](StructureDefinition-ST.md)
+* [TS](StructureDefinition-TS.md)
+* [Untyped](StructureDefinition-Untyped.md)
 
 ### Resource Profiles
 
-* [BeMedicationDispense](StructureDefinition-BeMedicationDispense.md)
-* [BeMedicationLine](StructureDefinition-BeMedicationLine.md)
-* [BeMedicationPrescription](StructureDefinition-BeMedicationPrescription.md)
+* [BeMedicationDispense](StructureDefinition-be-medicationdispense.md)
+* [BEMedicationLine](StructureDefinition-be-medicationline.md)
 
 ### Extensions
 
-* [BasedOnMedicationLine](StructureDefinition-BasedOnMedicationLine.md)
-* [BeExtAdherenceStatus](StructureDefinition-BeExtAdherenceStatus.md)
-* [BeExtInstructionsForReimbursement](StructureDefinition-BeExtInstructionsForReimbursement.md)
-* [Medication Line Registration Status](StructureDefinition-BeExtMedicationLineRegistrationStatus.md)
+* [BeExtDispenseRequestNeededCategory](StructureDefinition-BeExtDispenseRequestNeededCategory.md)
+* [BeExtDosageOverride](StructureDefinition-BeExtDosageOverride.md)
+* [BeExtDosageOverrideReason](StructureDefinition-BeExtDosageOverrideReason.md)
+* [BeExtExposureCategory](StructureDefinition-BeExtExposureCategory.md)
 * [BeExtMedicationType](StructureDefinition-BeExtMedicationType.md)
-* [MedicationRequest - Off-label use](StructureDefinition-BeExtOffLabel.md)
-* [BeExtRecordedDate](StructureDefinition-BeExtRecordedDate.md)
-* [BeExtRecorder](StructureDefinition-BeExtRecorder.md)
-* [BeMedicationExposureCategory](StructureDefinition-BeMedicationExposureCategory.md)
 
 ### ImplementationGuides
 

@@ -9,25 +9,25 @@
   "version" : "1.1.0",
   "name" : "Medication",
   "title" : "Medication",
-  "status" : "active",
-  "date" : "2025-09-26",
-  "publisher" : "eHealth Platform",
+  "status" : "draft",
+  "date" : "2020-02-26",
+  "publisher" : "HL7 Belgium",
   "contact" : [{
-    "name" : "eHealth Platform",
+    "name" : "HL7 Belgium",
     "telecom" : [{
       "system" : "url",
-      "value" : "https://www.ehealth.fgov.be/standards/fhir"
+      "value" : "https://www.hl7belgium.org"
     },
     {
       "system" : "email",
-      "value" : "support@be-ehealth-standards.atlassian.net"
+      "value" : "hl7belgium@hl7belgium.org"
     }]
   },
   {
     "name" : "Message Structure eHealth",
     "telecom" : [{
       "system" : "email",
-      "value" : "support@be-ehealth-standards.atlassian.net",
+      "value" : "message-structure@ehealth.fgov.be",
       "use" : "work"
     }]
   }],
@@ -50,7 +50,7 @@
     }],
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r4",
-    "version" : "6.5.0"
+    "version" : "7.1.0"
   },
   {
     "id" : "hl7ext",
@@ -149,39 +149,6 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "pin-canonicals"
-      },
-      {
-        "url" : "value",
-        "valueString" : "pin-multiples"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "special-url-base"
-      },
-      {
-        "url" : "value",
-        "valueString" : "https://www.ehealth.fgov.be/standards/fhir/terminology"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "path-history"
-      },
-      {
-        "url" : "value",
-        "valueString" : "https://www.ehealth.fgov.be/standards/fhir/medication/history.html"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
         "valueString" : "autoload-resources"
       },
       {
@@ -253,6 +220,17 @@
       {
         "url" : "value",
         "valueString" : "input/ignoreWarnings.txt"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "path-history"
+      },
+      {
+        "url" : "value",
+        "valueString" : "https://www.ehealth.fgov.be/standards/fhir/medication/history.html"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -379,7 +357,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
-      "valueCode" : "hl7.fhir.uv.tools.r4#0.8.0"
+      "valueCode" : "hl7.fhir.uv.tools.r4#1.1.2"
     },
     {
       "extension" : [{
@@ -461,39 +439,6 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueCode" : "pin-canonicals"
-      },
-      {
-        "url" : "value",
-        "valueString" : "pin-multiples"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueCode" : "special-url-base"
-      },
-      {
-        "url" : "value",
-        "valueString" : "https://www.ehealth.fgov.be/standards/fhir/terminology"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueCode" : "path-history"
-      },
-      {
-        "url" : "value",
-        "valueString" : "https://www.ehealth.fgov.be/standards/fhir/medication/history.html"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
         "valueCode" : "autoload-resources"
       },
       {
@@ -565,6 +510,17 @@
       {
         "url" : "value",
         "valueString" : "input/ignoreWarnings.txt"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-history"
+      },
+      {
+        "url" : "value",
+        "valueString" : "https://www.ehealth.fgov.be/standards/fhir/medication/history.html"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -689,76 +645,41 @@
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     }],
-    "grouping" : [{
-      "id" : "LogicalModels",
-      "name" : "Logical Data Models",
-      "description" : "Logical data models. The Logical data models are representations of the data needs for the scope of this Implementation Guide. The data models are primarily aligned with key projects, namely VIDIS, but are prepared in coordination with the Belgian community to ensure a common data structure that supports the projects and the implementation data needs."
-    },
-    {
-      "id" : "Profiles",
-      "name" : "Profiles",
-      "description" : "Profiles for Medication. These are implementable FHIR profiles."
-    },
-    {
-      "id" : "Extensions",
-      "name" : "Extensions",
-      "description" : "Extensions for FHIR resources, to be used in Profiles"
-    },
-    {
-      "id" : "Terminology",
-      "name" : "Terminology",
-      "description" : "Terminology for Medication. These are value sets, code systems and naming systems for identifiers."
-    }],
     "resource" : [{
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
+        "valueString" : "MedicationDispense"
       }],
       "reference" : {
-        "reference" : "CodeSystem/BeMedicationLineAdherenceStatusReason"
+        "reference" : "MedicationDispense/example-dispense-hospital"
       },
-      "name" : "Adherence Status Reason",
-      "description" : "Reasons for non-adherence to a treatment or intervention.",
-      "exampleBoolean" : false,
-      "groupingId" : "Terminology"
+      "name" : "A dispense from a hospital pharmacy",
+      "description" : "A dispense from a hospital pharmacy, with a hospital nihdi and based on a prescription",
+      "exampleCanonical" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationdispense"
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
+        "valueString" : "StructureDefinition:complex-type"
       }],
       "reference" : {
-        "reference" : "ValueSet/BeMedicationLineAdherenceStatusReasonVS"
+        "reference" : "StructureDefinition/AD"
       },
-      "name" : "Adherence Status Reason ValueSet",
-      "description" : "ValueSet containing reasons for non-adherence to a treatment or intervention.",
-      "exampleBoolean" : false,
-      "groupingId" : "Terminology"
+      "name" : "AD",
+      "description" : "Address",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Organization"
+        "valueString" : "StructureDefinition:complex-type"
       }],
       "reference" : {
-        "reference" : "Organization/apotheek-onder-de-toren"
+        "reference" : "StructureDefinition/ANY"
       },
-      "name" : "apotheek-onder-de-toren",
-      "description" : "Example organization for a pharmacy",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/BasedOnMedicationLine"
-      },
-      "name" : "BasedOnMedicationLine",
-      "description" : "Based on medication line.",
-      "exampleBoolean" : false,
-      "groupingId" : "Extensions"
+      "name" : "ANY",
+      "description" : "An abstract type",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -770,8 +691,7 @@
       },
       "name" : "be-ns-cnk-codes",
       "description" : "Naming System - CNK Product Codes",
-      "exampleBoolean" : false,
-      "groupingId" : "Terminology"
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -783,8 +703,7 @@
       },
       "name" : "be-ns-cti-extended-code",
       "description" : "Naming System - CTI Extended Codes",
-      "exampleBoolean" : false,
-      "groupingId" : "Terminology"
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -796,8 +715,7 @@
       },
       "name" : "be-ns-prescription-ids",
       "description" : "Naming System - Prescription IDs",
-      "exampleBoolean" : false,
-      "groupingId" : "Terminology"
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -809,8 +727,7 @@
       },
       "name" : "be-ns-product-package-type",
       "description" : "Naming System - Prescription IDs",
-      "exampleBoolean" : false,
-      "groupingId" : "Terminology"
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -818,25 +735,11 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/BeExtAdherenceStatus"
+        "reference" : "StructureDefinition/BeExtDispenseRequestNeededCategory"
       },
-      "name" : "BeExtAdherenceStatus",
-      "description" : "Medication Line Adherence Status - statuses of taking the medication.",
-      "exampleBoolean" : false,
-      "groupingId" : "Extensions"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/BeMedicationLineAdherenceStatusVS"
-      },
-      "name" : "BeExtAdherenceStatus",
-      "description" : "The status of taking the medication.",
-      "exampleBoolean" : false,
-      "groupingId" : "Terminology"
+      "name" : "BeExtDispenseRequestNeededCategory",
+      "description" : "Dispense Request Needed - category.",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -844,12 +747,35 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/BeExtInstructionsForReimbursement"
+        "reference" : "StructureDefinition/BeExtDosageOverride"
       },
-      "name" : "BeExtInstructionsForReimbursement",
-      "description" : "Instructions for Reimbursement.",
-      "exampleBoolean" : false,
-      "groupingId" : "Extensions"
+      "name" : "BeExtDosageOverride",
+      "description" : "Dispense override.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/BeExtDosageOverrideReason"
+      },
+      "name" : "BeExtDosageOverrideReason",
+      "description" : "Dispense Request Needed - category.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/BeExtExposureCategory"
+      },
+      "name" : "BeExtExposureCategory",
+      "description" : "Exposure - category.",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -860,35 +786,8 @@
         "reference" : "StructureDefinition/BeExtMedicationType"
       },
       "name" : "BeExtMedicationType",
-      "description" : "The type of medication.",
-      "exampleBoolean" : false,
-      "groupingId" : "Extensions"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/BeExtRecordedDate"
-      },
-      "name" : "BeExtRecordedDate",
-      "description" : "The date the information was recorded",
-      "exampleBoolean" : false,
-      "groupingId" : "Extensions"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/BeExtRecorder"
-      },
-      "name" : "BeExtRecorder",
-      "description" : "The person that recorded the information",
-      "exampleBoolean" : false,
-      "groupingId" : "Extensions"
+      "description" : "MedicationType",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -896,25 +795,11 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/BeMedicationDispense"
+        "reference" : "StructureDefinition/be-medicationdispense"
       },
       "name" : "BeMedicationDispense",
       "description" : "Defines constraints and extensions on the Medication Dispense resource for a record of a dispensation in Belgium.",
-      "exampleBoolean" : false,
-      "groupingId" : "Profiles"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/BeMedicationExposureCategory"
-      },
-      "name" : "BeMedicationExposureCategory",
-      "description" : "Exposure - category.",
-      "exampleBoolean" : false,
-      "groupingId" : "Extensions"
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -922,25 +807,95 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/BeMedicationLine"
+        "reference" : "StructureDefinition/be-medicationline"
       },
-      "name" : "BeMedicationLine",
+      "name" : "BEMedicationLine",
       "description" : "Medication Line profile - contains the overview information for a single medication item",
-      "exampleBoolean" : false,
-      "groupingId" : "Profiles"
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
+        "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/BeMedicationPrescription"
+        "reference" : "StructureDefinition/be-model-medicationdispense"
       },
-      "name" : "BeMedicationPrescription",
-      "description" : "Medication Request profile - The common structure for medication request",
-      "exampleBoolean" : false,
-      "groupingId" : "Profiles"
+      "name" : "BeModelMedicationDispense",
+      "description" : "This is the logical model for the Dispense Record entry - the information that can be captured upon the act of dispensing - in a hospital pharmacy, or a community pharmacy. This is not for a future dispense, rather a record of an actual dispense.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:complex-type"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/BL"
+      },
+      "name" : "BL",
+      "description" : "Boolean - true or false",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:complex-type"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/CD"
+      },
+      "name" : "CD",
+      "description" : "ConceptDescriptor",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:complex-type"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/Class"
+      },
+      "name" : "Class",
+      "description" : "Class of data elements",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MedicationDispense"
+      }],
+      "reference" : {
+        "reference" : "MedicationDispense/example-dispense-communitypharmacy-1med"
+      },
+      "name" : "Dispense entry Example - Community Pharmacy dispense, from prescription",
+      "description" : "Medication Dispense example",
+      "exampleCanonical" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationdispense"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MedicationDispense"
+      }],
+      "reference" : {
+        "reference" : "MedicationDispense/medicationdispense-example-2"
+      },
+      "name" : "Dispense entry Example - Community Pharmacy dispense, from prescription, with contained org.",
+      "description" : "Medication Dispense example",
+      "exampleCanonical" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationdispense"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MedicationDispense"
+      }],
+      "reference" : {
+        "reference" : "MedicationDispense/example-minimal-dispense"
+      },
+      "name" : "Dispense Example - Minimal amount of information",
+      "description" : "Medication Dispense example",
+      "exampleCanonical" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationdispense"
     },
     {
       "extension" : [{
@@ -952,8 +907,67 @@
       },
       "name" : "Dispenser Types",
       "description" : "Dispenser Types - from hcparty",
-      "exampleBoolean" : false,
-      "groupingId" : "Terminology"
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:complex-type"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DT"
+      },
+      "name" : "DT",
+      "description" : "Date",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:complex-type"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/EN"
+      },
+      "name" : "EN",
+      "description" : "EntityName",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/apotheek-onder-de-toren"
+      },
+      "name" : "Example organization for a pharmacy",
+      "description" : "Example Pharmacy (Organization): Apotheek onder de toren",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:complex-type"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/II"
+      },
+      "name" : "II",
+      "description" : "InstanceIdentifier",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:complex-type"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/INT"
+      },
+      "name" : "INT",
+      "description" : "IntegerNumber",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -961,24 +975,83 @@
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/BeModelDosagingInformation"
+        "reference" : "StructureDefinition/KMEHRMS"
       },
-      "name" : "Dosaging (model)",
-      "description" : "Structured Dosage data model.",
-      "exampleBoolean" : false,
-      "groupingId" : "LogicalModels"
+      "name" : "KMEHR Medication Schema v5.8",
+      "description" : "This model represents the Medication Schema KMEHR V5.8. It is shown for demonstrating the field correspondence/equivalence, and not to imply any intended scope or intended behaviour.",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "MedicationDispense"
+        "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "MedicationDispense/example-minimal-dispense"
+        "reference" : "ValueSet/medication-exposure-category-vs"
       },
-      "name" : "Example Dispense (minimal)",
-      "description" : "Dispense Example - Minimal amount of information",
-      "exampleCanonical" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationDispense"
+      "name" : "Medication exposure intent",
+      "description" : "The exposure purpose of a medication - whether the medication is given for therapeutic or prophylactic purposes.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/be-model-medicationline"
+      },
+      "name" : "Medication Line - logical model",
+      "description" : "A logical data model of the medication line.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/medication-line-origin-type"
+      },
+      "name" : "Medication origin type",
+      "description" : "Medication treatment origin type - what is the type of care that originated the medication treatment",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/medication-line-origin-type-vs"
+      },
+      "name" : "Medication origin type ValueSet",
+      "description" : "Medication treatment origin type - what is the type of care that originated the medication treatment",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/medication-type"
+      },
+      "name" : "Medication preparation Type",
+      "description" : "Medication preparation type",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/medication-type-vs"
+      },
+      "name" : "Medication preparation Type value set",
+      "description" : "Medication preparation type value set",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -988,33 +1061,8 @@
       "reference" : {
         "reference" : "MedicationDispense/medicationdispense-example-1"
       },
-      "name" : "Example Dispense (simple)",
-      "description" : "Dispense Example - Simple example of a dispense",
-      "exampleCanonical" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationDispense"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "MedicationDispense"
-      }],
-      "reference" : {
-        "reference" : "MedicationDispense/medicationdispense-example-2"
-      },
-      "name" : "Example Dispense entry - Community Pharmacy dispense, from prescription, with contained org.",
-      "description" : "Medication Dispense example",
-      "exampleCanonical" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationDispense"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "MedicationDispense"
-      }],
-      "reference" : {
-        "reference" : "MedicationDispense/example-dispense-hospital"
-      },
-      "name" : "Example Dispense from a hospital pharmacy",
-      "description" : "A dispense from a hospital pharmacy, with a hospital nihdi and based on a prescription",
-      "exampleCanonical" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationDispense"
+      "name" : "medicationdispense-example-1",
+      "exampleCanonical" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationdispense"
     },
     {
       "extension" : [{
@@ -1022,37 +1070,11 @@
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/BeModelMedication"
+        "reference" : "StructureDefinition/BELMMedProduct"
       },
-      "name" : "Medication (model)",
-      "description" : "Logical data model for medication.",
-      "exampleBoolean" : false,
-      "groupingId" : "LogicalModels"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/BeModelMedicationDispense"
-      },
-      "name" : "Medication Dispense (model)",
-      "description" : "This is the logical model for the Dispense Record entry - the information that can be captured upon the act of dispensing - in a hospital pharmacy, or a community pharmacy. This is not for a future dispense, rather a record of an actual dispense.",
-      "exampleBoolean" : false,
-      "groupingId" : "LogicalModels"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "MedicationDispense"
-      }],
-      "reference" : {
-        "reference" : "MedicationDispense/example-dispense-communitypharmacy-1med"
-      },
-      "name" : "Medication Dispense example",
-      "description" : "Dispense entry Example - Community Pharmacy dispense, from prescription",
-      "exampleCanonical" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationDispense"
+      "name" : "Medicinal Product",
+      "description" : "A logical data model for representing a medicinal product.",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -1060,220 +1082,71 @@
         "valueString" : "StructureDefinition:complex-type"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/BeDosage"
+        "reference" : "StructureDefinition/PQ"
       },
-      "name" : "Medication Dosage",
-      "description" : "Specifications for a medication dosage for use in Belgian profiles.",
-      "exampleBoolean" : false,
-      "groupingId" : "Profiles"
+      "name" : "PQ",
+      "description" : "PhysicalQuantity",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
+        "valueString" : "StructureDefinition:complex-type"
       }],
       "reference" : {
-        "reference" : "ValueSet/BeMedicationExposureIntentVS"
+        "reference" : "StructureDefinition/REAL"
       },
-      "name" : "Medication exposure intent",
-      "description" : "The exposure purpose of a medication - whether the medication is given for therapeutic or prophylactic purposes.",
-      "exampleBoolean" : false,
-      "groupingId" : "Terminology"
+      "name" : "REAL",
+      "description" : "RealNumber",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
+        "valueString" : "StructureDefinition:complex-type"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/BeModelMedicationLine"
+        "reference" : "StructureDefinition/RTO"
       },
-      "name" : "Medication Line (model)",
-      "description" : "Logical data model for medication line.",
-      "exampleBoolean" : false,
-      "groupingId" : "LogicalModels"
+      "name" : "RTO",
+      "description" : "Ratio",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
+        "valueString" : "StructureDefinition:complex-type"
       }],
       "reference" : {
-        "reference" : "CodeSystem/BeMedicationLineAdherenceStatus"
+        "reference" : "StructureDefinition/ST"
       },
-      "name" : "Medication Line Adherence Status",
-      "description" : "Medication Line Adherence Status - ValueSet.",
-      "exampleBoolean" : false,
-      "groupingId" : "Terminology"
+      "name" : "ST",
+      "description" : "CharacterString",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
+        "valueString" : "StructureDefinition:complex-type"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/BeExtMedicationLineRegistrationStatus"
+        "reference" : "StructureDefinition/TS"
       },
-      "name" : "Medication Line Registration Status",
-      "description" : "This extension indicates the registration status of a medication line, such as whether it is draft, recorded, or entered-in-error.",
-      "exampleBoolean" : false,
-      "groupingId" : "Extensions"
+      "name" : "TS",
+      "description" : "TimeStamp",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
+        "valueString" : "StructureDefinition:complex-type"
       }],
       "reference" : {
-        "reference" : "CodeSystem/BeMedicationLineRegistrationStatus"
+        "reference" : "StructureDefinition/Untyped"
       },
-      "name" : "Medication Line Registration Status",
-      "description" : "This code system defines the registration statuses for medication lines.",
-      "exampleBoolean" : false,
-      "groupingId" : "Terminology"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/BeMedicationLineRegistrationStatusVS"
-      },
-      "name" : "Medication Line Registration Status Value Set",
-      "description" : "This value set includes the registration statuses for medication lines.",
-      "exampleBoolean" : false,
-      "groupingId" : "Terminology"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/BeMedicationLineOriginType"
-      },
-      "name" : "Medication origin Type",
-      "description" : "Medication origin type",
-      "exampleBoolean" : false,
-      "groupingId" : "Terminology"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/BeMedicationLineOriginTypeVS"
-      },
-      "name" : "Medication origin type value set",
-      "description" : "Medication origin type value set",
-      "exampleBoolean" : false,
-      "groupingId" : "Terminology"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/BeMedicationType"
-      },
-      "name" : "Medication preparation Type",
-      "description" : "Medication preparation type",
-      "exampleBoolean" : false,
-      "groupingId" : "Terminology"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/BeMedicationTypeVS"
-      },
-      "name" : "Medication preparation Type value set",
-      "description" : "Medication preparation type value set",
-      "exampleBoolean" : false,
-      "groupingId" : "Terminology"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/BeModelMedicationPrescription"
-      },
-      "name" : "Medication prescription (model)",
-      "description" : "Logical model for medication prescription (or some other form of order)",
-      "exampleBoolean" : false,
-      "groupingId" : "LogicalModels"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/BeMedicationPrescriptionStatusVS"
-      },
-      "name" : "Medication Prescription Status",
-      "description" : "Medication prescription status codes.",
-      "exampleBoolean" : false,
-      "groupingId" : "Terminology"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/BeMedicationRequestReimbursementType"
-      },
-      "name" : "Medication request reimbursement type",
-      "description" : "Medication request reimbursement type - instructions for reimbursement of the medication request",
-      "exampleBoolean" : false,
-      "groupingId" : "Terminology"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/BeMedicationRequestReimbursementTypeVS"
-      },
-      "name" : "Medication request reimbursement type ValueSet",
-      "description" : "Medication request reimbursement type - instructions for reimbursement of the medication request",
-      "exampleBoolean" : false,
-      "groupingId" : "Terminology"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/BeExtOffLabel"
-      },
-      "name" : "MedicationRequest - Off-label use",
-      "description" : "Indicates that the order placer has knowingly prescribed the medication for an indication, age group, dosage, or route of administration that is not approved by the regulatory agencies and is not mentioned in the prescribing information for the product.",
-      "exampleBoolean" : false,
-      "groupingId" : "Extensions"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/BeRouteOfAdministrationVS"
-      },
-      "name" : "Route of Administration ValueSet",
-      "description" : "This ValueSet contains codes for the route of administration of medications. It is used to specify how a medication is administered to a patient, such as orally, intravenously, or topically.",
-      "exampleBoolean" : false,
-      "groupingId" : "Terminology"
+      "name" : "Untyped",
+      "description" : "No data type defined",
+      "exampleBoolean" : false
     }],
     "page" : {
       "extension" : [{
@@ -1290,7 +1163,7 @@
         }],
         "nameUrl" : "index.html",
         "title" : "Home",
-        "generation" : "markdown"
+        "generation" : "html"
       },
       {
         "extension" : [{
