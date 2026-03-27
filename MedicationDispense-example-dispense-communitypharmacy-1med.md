@@ -1,14 +1,14 @@
-# Medication Dispense example - Medication v1.1.0
+# Dispense entry Example - Community Pharmacy dispense, from prescription - Medication v1.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Medication Dispense example**
+* **Dispense entry Example - Community Pharmacy dispense, from prescription**
 
-## Example MedicationDispense: Medication Dispense example
+## Example MedicationDispense: Dispense entry Example - Community Pharmacy dispense, from prescription
 
 Language: fr-BE
 
-Profile: [BeMedicationDispense](StructureDefinition-BeMedicationDispense.md)
+Profile: [BeMedicationDispense](StructureDefinition-be-medicationdispense.md)
 
 **identifier**: dguid/a8c45fdc-72aa-11e7-8cf7-a6007ad37dc0
 
@@ -16,15 +16,15 @@ Profile: [BeMedicationDispense](StructureDefinition-BeMedicationDispense.md)
 
 **medication**: Topazolam tab 50x 1,0mg
 
-**subject**: Identifier: `https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin`/64110219106
+**subject**: Identifier: [BeSSINNamingSystem](https://www.ehealth.fgov.be/standards/fhir/core/2.1.2/NamingSystem-be-ssin.html)/64110219106
 
 **context**: Identifier: sguid/b8ca980c-72aa-11e7-8cf7-a6006ad3dba0
 
-> **performer****actor**: Jan Janssen (Identifier: `https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi-practitioner`/6547432)
+> **performer****actor**: Jan Janssen (Identifier: `https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi-practitioner`/6547432)
 
-> **performer****actor**: Apotheek onder de toren (Identifier: `https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi-organization`/27457532)
+> **performer****actor**: Apotheek onder de toren (Identifier: [BeNSNIHDIOrganization](https://www.ehealth.fgov.be/standards/fhir/core/2.1.2/NamingSystem-be-ns-nihdi-organization.html)/27457532)
 
-**authorizingPrescription**: Prescription 2014fd (Identifier: [BeNSPrescriptions](NamingSystem-be-ns-prescription-ids.md)/2d8dab92-5c38-4380-96a9-e461be2014fd)
+**authorizingPrescription**: Prescription 2014fd (Identifier: `https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/prescription-id`/2d8dab92-5c38-4380-96a9-e461be2014fd)
 
 **quantity**: 1(unit package from https://www.gfd-dpp.be/fhir/reference/packaging) (Details: packaging codepackage = 'package')
 
@@ -46,7 +46,7 @@ Profile: [BeMedicationDispense](StructureDefinition-BeMedicationDispense.md)
   "resourceType" : "MedicationDispense",
   "id" : "example-dispense-communitypharmacy-1med",
   "meta" : {
-    "profile" : ["https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationDispense"]
+    "profile" : ["https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationdispense"]
   },
   "language" : "fr-BE",
   "identifier" : [{
@@ -81,7 +81,7 @@ Profile: [BeMedicationDispense](StructureDefinition-BeMedicationDispense.md)
   },
   "subject" : {
     "identifier" : {
-      "system" : "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+      "system" : "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
       "value" : "64110219106"
     }
   },
@@ -99,7 +99,7 @@ Profile: [BeMedicationDispense](StructureDefinition-BeMedicationDispense.md)
   "performer" : [{
     "actor" : {
       "identifier" : {
-        "system" : "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi-practitioner",
+        "system" : "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi-practitioner",
         "value" : "6547432"
       },
       "display" : "Jan Janssen"
@@ -108,7 +108,7 @@ Profile: [BeMedicationDispense](StructureDefinition-BeMedicationDispense.md)
   {
     "actor" : {
       "identifier" : {
-        "system" : "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi-organization",
+        "system" : "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi-organization",
         "value" : "27457532"
       },
       "display" : "Apotheek onder de toren"
@@ -116,7 +116,7 @@ Profile: [BeMedicationDispense](StructureDefinition-BeMedicationDispense.md)
   }],
   "authorizingPrescription" : [{
     "identifier" : {
-      "system" : "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/prescription-id",
+      "system" : "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/prescription-id",
       "value" : "2d8dab92-5c38-4380-96a9-e461be2014fd"
     },
     "display" : "Prescription 2014fd"

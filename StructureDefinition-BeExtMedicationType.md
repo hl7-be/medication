@@ -9,9 +9,9 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtMedicationType | *Version*:1.1.0 |
-| Active as of 2026-03-24 | *Computable Name*:BeExtMedicationType |
+| Draft as of 2026-03-27 | *Computable Name*:BeExtMedicationType |
 
-The type of medication.
+MedicationType
 
 **Context of Use**
 
@@ -19,7 +19,7 @@ The type of medication.
 
 **Usages:**
 
-* Use this Extension: [BeMedicationLine](StructureDefinition-BeMedicationLine.md)
+* Use this Extension: [BEMedicationLine](StructureDefinition-be-medicationline.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.be.medication|current/StructureDefinition/BeExtMedicationType)
 
@@ -46,30 +46,29 @@ Other representations of profile: [CSV](StructureDefinition-BeExtMedicationType.
   "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtMedicationType",
   "version" : "1.1.0",
   "name" : "BeExtMedicationType",
-  "title" : "BeExtMedicationType",
-  "status" : "active",
-  "date" : "2026-03-24T06:59:28+00:00",
-  "publisher" : "eHealth Platform",
+  "status" : "draft",
+  "date" : "2026-03-27T06:32:22+00:00",
+  "publisher" : "HL7 Belgium",
   "contact" : [{
-    "name" : "eHealth Platform",
+    "name" : "HL7 Belgium",
     "telecom" : [{
       "system" : "url",
-      "value" : "https://www.ehealth.fgov.be/standards/fhir"
+      "value" : "https://www.hl7belgium.org"
     },
     {
       "system" : "email",
-      "value" : "support@be-ehealth-standards.atlassian.net"
+      "value" : "hl7belgium@hl7belgium.org"
     }]
   },
   {
     "name" : "Message Structure eHealth",
     "telecom" : [{
       "system" : "email",
-      "value" : "support@be-ehealth-standards.atlassian.net",
+      "value" : "message-structure@ehealth.fgov.be",
       "use" : "work"
     }]
   }],
-  "description" : "The type of medication.",
+  "description" : "MedicationType",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -87,11 +86,7 @@ Other representations of profile: [CSV](StructureDefinition-BeExtMedicationType.
   "abstract" : false,
   "context" : [{
     "type" : "element",
-    "expression" : "MedicationStatement.medication[x]"
-  },
-  {
-    "type" : "element",
-    "expression" : "MedicationRequest.medication[x]"
+    "expression" : "MedicationStatement.dosage"
   }],
   "type" : "Extension",
   "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
@@ -100,8 +95,7 @@ Other representations of profile: [CSV](StructureDefinition-BeExtMedicationType.
     "element" : [{
       "id" : "Extension",
       "path" : "Extension",
-      "short" : "BeExtMedicationType",
-      "definition" : "The type of medication."
+      "definition" : "MedicationType"
     },
     {
       "id" : "Extension.extension",
@@ -120,8 +114,8 @@ Other representations of profile: [CSV](StructureDefinition-BeExtMedicationType.
         "code" : "CodeableConcept"
       }],
       "binding" : {
-        "strength" : "required",
-        "valueSet" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/BeMedicationTypeVS"
+        "strength" : "extensible",
+        "valueSet" : "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/medication-type-vs"
       }
     }]
   }

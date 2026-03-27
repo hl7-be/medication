@@ -1,14 +1,14 @@
-# Example Dispense from a hospital pharmacy - Medication v1.1.0
+# A dispense from a hospital pharmacy - Medication v1.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Example Dispense from a hospital pharmacy**
+* **A dispense from a hospital pharmacy**
 
-## Example MedicationDispense: Example Dispense from a hospital pharmacy
+## Example MedicationDispense: A dispense from a hospital pharmacy
 
 version: 1; Language: nl-BE
 
-Profile: [BeMedicationDispense](StructureDefinition-BeMedicationDispense.md)
+Profile: [BeMedicationDispense](StructureDefinition-be-medicationdispense.md)
 
 **identifier**: dguid/1000321345
 
@@ -16,16 +16,16 @@ Profile: [BeMedicationDispense](StructureDefinition-BeMedicationDispense.md)
 
 **medication**: 2055218
 
-**subject**: Identifier: `https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin`/64110219106
+**subject**: Identifier: [BeSSINNamingSystem](https://www.ehealth.fgov.be/standards/fhir/core/2.1.2/NamingSystem-be-ssin.html)/64110219106
 
 ### Performers
 
 | | |
 | :--- | :--- |
 | - | **Actor** |
-| * | Identifier:`https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi-organization`/123123123 |
+| * | Identifier:[BeNSNIHDIOrganization](https://www.ehealth.fgov.be/standards/fhir/core/2.1.2/NamingSystem-be-ns-nihdi-organization.html)/123123123 |
 
-**authorizingPrescription**: Prescription (Identifier: [BeNSPrescriptions](NamingSystem-be-ns-prescription-ids.md)/BEP1TSRY1XGE)
+**authorizingPrescription**: Prescription (Identifier: `https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/prescription-id`/BEP1TSRY1XGE)
 
 **quantity**: 1 package (Details: UCUM code1 = '1')
 
@@ -48,7 +48,7 @@ Profile: [BeMedicationDispense](StructureDefinition-BeMedicationDispense.md)
   "id" : "example-dispense-hospital",
   "meta" : {
     "versionId" : "1",
-    "profile" : ["https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationDispense"]
+    "profile" : ["https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationdispense"]
   },
   "language" : "nl-BE",
   "identifier" : [{
@@ -84,21 +84,21 @@ Profile: [BeMedicationDispense](StructureDefinition-BeMedicationDispense.md)
   },
   "subject" : {
     "identifier" : {
-      "system" : "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+      "system" : "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
       "value" : "64110219106"
     }
   },
   "performer" : [{
     "actor" : {
       "identifier" : {
-        "system" : "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi-organization",
+        "system" : "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi-organization",
         "value" : "123123123"
       }
     }
   }],
   "authorizingPrescription" : [{
     "identifier" : {
-      "system" : "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/prescription-id",
+      "system" : "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/prescription-id",
       "value" : "BEP1TSRY1XGE"
     },
     "display" : "Prescription"

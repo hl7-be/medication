@@ -1,14 +1,14 @@
-# apotheek-onder-de-toren - Medication v1.1.0
+# Example organization for a pharmacy - Medication v1.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **apotheek-onder-de-toren**
+* **Example organization for a pharmacy**
 
-## Example Organization: apotheek-onder-de-toren
+## Example Organization: Example organization for a pharmacy
 
 Profile: [BeOrganization](https://www.ehealth.fgov.be/standards/fhir/core/2.1.2/StructureDefinition-be-organization.html)
 
-**identifier**: `https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi-organization`/27457532
+**identifier**: [BeNSNIHDIOrganization](https://www.ehealth.fgov.be/standards/fhir/core/2.1.2/NamingSystem-be-ns-nihdi-organization.html)/27457532
 
 **type**: independent pharmacy
 
@@ -24,7 +24,7 @@ Profile: [BeOrganization](https://www.ehealth.fgov.be/standards/fhir/core/2.1.2/
     "profile" : ["https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-organization"]
   },
   "identifier" : [{
-    "system" : "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi-organization",
+    "system" : "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi-organization",
     "value" : "27457532"
   }],
   "type" : [{

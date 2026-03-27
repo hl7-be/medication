@@ -1,14 +1,14 @@
-# Example Dispense (simple) - Medication v1.1.0
+# medicationdispense-example-1 - Medication v1.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Example Dispense (simple)**
+* **medicationdispense-example-1**
 
-## Example MedicationDispense: Example Dispense (simple)
+## Example MedicationDispense: medicationdispense-example-1
 
 Language: fr-BE
 
-Profile: [BeMedicationDispense](StructureDefinition-BeMedicationDispense.md)
+Profile: [BeMedicationDispense](StructureDefinition-be-medicationdispense.md)
 
 **identifier**: dguid/a8ca980c-72aa-11e7-8cf7-a6006ad3dba0
 
@@ -16,7 +16,7 @@ Profile: [BeMedicationDispense](StructureDefinition-BeMedicationDispense.md)
 
 **medication**: Topazolam tab 50x 1,0mg
 
-**subject**: Identifier: `https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin`/64110219106
+**subject**: Identifier: [BeSSINNamingSystem](https://www.ehealth.fgov.be/standards/fhir/core/2.1.2/NamingSystem-be-ssin.html)/64110219106
 
 **context**: Identifier: sguid/b8ca980c-72aa-11e7-8cf7-a6006ad3dba0
 
@@ -25,7 +25,7 @@ Profile: [BeMedicationDispense](StructureDefinition-BeMedicationDispense.md)
 | | |
 | :--- | :--- |
 | - | **Actor** |
-| * | Apotheek onder de toren (Identifier:`https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi-organization`/27457532) |
+| * | Apotheek onder de toren (Identifier:[BeNSNIHDIOrganization](https://www.ehealth.fgov.be/standards/fhir/core/2.1.2/NamingSystem-be-ns-nihdi-organization.html)/27457532) |
 
 **authorizingPrescription**: Prescription
 
@@ -49,7 +49,7 @@ Profile: [BeMedicationDispense](StructureDefinition-BeMedicationDispense.md)
   "resourceType" : "MedicationDispense",
   "id" : "medicationdispense-example-1",
   "meta" : {
-    "profile" : ["https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationDispense"]
+    "profile" : ["https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationdispense"]
   },
   "language" : "fr-BE",
   "identifier" : [{
@@ -84,7 +84,7 @@ Profile: [BeMedicationDispense](StructureDefinition-BeMedicationDispense.md)
   },
   "subject" : {
     "identifier" : {
-      "system" : "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+      "system" : "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
       "value" : "64110219106"
     }
   },
@@ -102,7 +102,7 @@ Profile: [BeMedicationDispense](StructureDefinition-BeMedicationDispense.md)
   "performer" : [{
     "actor" : {
       "identifier" : {
-        "system" : "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi-organization",
+        "system" : "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi-organization",
         "value" : "27457532"
       },
       "display" : "Apotheek onder de toren"

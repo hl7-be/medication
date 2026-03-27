@@ -9,7 +9,7 @@
 | | | |
 | :--- | :--- | :--- |
 | *Official URL*:https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/be-vs-dispenser-types | *Version*:1.1.0 | |
-| Draft as of 2026-03-24 | [Maturity Level](http://hl7.org/fhir/versions.html#maturity): 1 | *Computable Name*:DispenserTypes |
+| Draft as of 2026-03-27 | [Maturity Level](http://hl7.org/fhir/versions.html#maturity): 1 | *Computable Name*:DispenserTypes |
 
  
 Dispenser Types - from hcparty 
@@ -55,24 +55,24 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "title" : "Dispenser Types",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-03-24T06:59:28+00:00",
-  "publisher" : "eHealth Platform",
+  "date" : "2026-03-27T06:32:22+00:00",
+  "publisher" : "HL7 Belgium",
   "contact" : [{
-    "name" : "eHealth Platform",
+    "name" : "HL7 Belgium",
     "telecom" : [{
       "system" : "url",
-      "value" : "https://www.ehealth.fgov.be/standards/fhir"
+      "value" : "https://www.hl7belgium.org"
     },
     {
       "system" : "email",
-      "value" : "support@be-ehealth-standards.atlassian.net"
+      "value" : "hl7belgium@hl7belgium.org"
     }]
   },
   {
     "name" : "Message Structure eHealth",
     "telecom" : [{
       "system" : "email",
-      "value" : "support@be-ehealth-standards.atlassian.net",
+      "value" : "message-structure@ehealth.fgov.be",
       "use" : "work"
     }]
   }],

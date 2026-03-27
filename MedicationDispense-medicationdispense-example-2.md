@@ -1,10 +1,10 @@
-# Example Dispense entry - Community Pharmacy dispense, from prescription, with contained org. - Medication v1.1.0
+# Dispense entry Example - Community Pharmacy dispense, from prescription, with contained org. - Medication v1.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Example Dispense entry - Community Pharmacy dispense, from prescription, with contained org.**
+* **Dispense entry Example - Community Pharmacy dispense, from prescription, with contained org.**
 
-## Example MedicationDispense: Example Dispense entry - Community Pharmacy dispense, from prescription, with contained org.
+## Example MedicationDispense: Dispense entry Example - Community Pharmacy dispense, from prescription, with contained org.
 
 
 
@@ -15,7 +15,7 @@
   "resourceType" : "MedicationDispense",
   "id" : "medicationdispense-example-2",
   "meta" : {
-    "profile" : ["https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationDispense"]
+    "profile" : ["https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationdispense"]
   },
   "language" : "nl-BE",
   "contained" : [{
@@ -25,7 +25,7 @@
       "profile" : ["https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-organization"]
     },
     "identifier" : [{
-      "system" : "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi-organization",
+      "system" : "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi-organization",
       "value" : "27457532"
     }],
     "type" : [{
@@ -67,7 +67,7 @@
   },
   "subject" : {
     "identifier" : {
-      "system" : "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+      "system" : "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
       "value" : "64110219106"
     }
   },
@@ -86,7 +86,7 @@
     "actor" : {
       "reference" : "#apotheek-onder-de-toren",
       "identifier" : {
-        "system" : "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi-organization",
+        "system" : "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi-organization",
         "value" : "27457532"
       },
       "display" : "Apotheek onder de toren"

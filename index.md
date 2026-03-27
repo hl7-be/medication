@@ -8,88 +8,49 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.ehealth.fgov.be/standards/fhir/medication/ImplementationGuide/hl7.fhir.be.medication | *Version*:1.1.0 |
-| Active as of 2025-09-26 | *Computable Name*:Medication |
+| Draft as of 2020-02-26 | *Computable Name*:Medication |
 
-This is the specification for the Medication CareSet, developed by the HL7 Belgium community. It includes the following parts:
+ This is the HL7 Belgium FHIR Implementation Guide for the Medication workgroup. 
 
-* Medication Dispense
-* Medication Line
-* Medication Prescription
+ 
 
-### Use of MUST, SHOULD, MAY
+### Content
 
-The key words “MUST”, “MUST NOT”, “REQUIRED”, “SHALL”, “SHALL NOT”, “SHOULD”, “SHOULD NOT”, “RECOMMENDED”, “MAY”, and “OPTIONAL” in this document are to be interpreted as described in RFC 2119:
+This publication contains the specifications related to the medication areas and is structured in the following content sections:
 
-1. **MUST**, or the terms **“REQUIRED”** or **“SHALL”**, mean that the definition is an absolute requirement of the specification.
-1. **MUST NOT**, or the phrase **“SHALL NOT”**, mean that the definition is an absolute prohibition of the specification.
-1. **SHOULD**, or the adjective **“RECOMMENDED”**, mean that there may exist valid reasons in particular circumstances to ignore a particular item, but the full implications must be understood and carefully weighed before choosing a different course.
-1. **SHOULD NOT**, or the phrase **“NOT RECOMMENDED”** mean that there may exist valid reasons in particular circumstances when the particular behaviour is acceptable or even useful, but the full implications should be understood and the case carefully weighed before implementing any behaviour described with this label.
-1. **MAY**, or the adjective **“OPTIONAL”**, mean that an item is truly optional. One vendor may choose to include the item because a particular marketplace requires it or because the vendor feels that it enhances the product while another vendor may omit the same item. An implementation which does not include a particular option MUST be prepared to interoperate with another implementation which does include the option, though perhaps with reduced functionality. In the same vein an implementation which does include a particular option MUST be prepared to interoperate with another implementation which does not include the option (except, of course, for the feature the option provides.)
+**Background:** Information about the specifications, or what you should know to be able to best navigate and use these specifications. Contains a general introduction to the publication structure and content, the artefact types, common privacy and security specifications and the official HL7 FHIR release that this specification is based upon.
 
-### Must Support
+**Functional Description:** Functional content, more relevant for business or functional analysts, as well as health professionals. Contains the context around these specifications (relevant projects, legal and implementation aspects), the interoperability actors and transactions, and especially the use cases that have been considered in the specification and the logical data models – the functional (i.e. non-technical) data sets that are used in data exchange.
 
-Unless otherwise stated, the following criteria apply to elements marked as “Must Support” in this Implementation Guide:
+**Detailed Specifications:** The actual technical specifications – the FHIR conformance resources that are defined in this specification – profiles, data types, capability statements. This is targeted at (technical) implementers.
 
-#### For technical profiles
+**Terminology:** The vocabulary resources – Naming Systems, Code Systems and Value Sets, which support semantic interoperability. These resources define the use of standard terminologies (e.g. LOINC, SNOMED-CT) or internal codes for Belgium, e.g. official codes for Civil Status).
 
-**Systems supporting the profile MUST NOT ignore the element**.
+### Navigation
 
-* Systems receiving or consuming a resource instance: 
-* MUST be able to process the element’s content when it is present
-* MUST process the content according to the rules defined for the profile
-* MUST NOT fail when the value is not present.
- 
-* Systems sending or creating a resource instance 
-* SHOULD populate the element when the information is available
-* MUST populate the element according to the rules defined for the profile
- 
+This implementation guide uses the FHIR web-based publication. This allows easy navigation between the Belgium-specific portion of the implementation guide and the resources, data types, value sets and other specification components leveraged from the FHIR core specification. This approach also allows implementers to easily navigate to the information needed to perform a task.
 
-#### For Logical Models
+The top menu allows quick navigation to the different sections, and a [Table of Contents](toc.md)  is provided with the entire content of this Implementation Guide. (Be aware that some pages have multiple tabs).
 
-* **Functional Analysis MUST consider the data element as defined** 
-* “Must Support” elements that are used in an implementation MUST inherit the behaviour and constraints defined for the data element
-* “Must Support” elements not needed in a particular implementation MAY be excluded from implementation but such exclusion MUST be described
- 
-* **Derived implementations SHOULD inherit the field’s “Must Support” flag**
+### Intellectual Property Considerations
 
-### Dependencies
-
-This IG Contains the following dependencies on other IGs.
-
-
-
-
-
-### Cross Version Analysis
-
-This is an R4 IG. None of the features it uses are changed in R4B, so it can be used as is with R4B systems. Packages for both [R4 (hl7.fhir.be.medication.r4)](package.r4.tgz) and [R4B (hl7.fhir.be.medication.r4b)](package.r4b.tgz) are available. 
-
-### Global Profiles
-
-*There are no Global profiles defined*
-
-### Intellectual Property
+ While this implementation guide and the underlying FHIR are licensed as public domain, this guide includes examples making use of terminologies such as LOINC, SNOMED CT and others which have more restrictive licensing requirements. Implementers should make themselves familiar with licensing and any other constraints of terminologies, questionnaires, and other components used as part of their implementation process. In some cases, licensing requirements may limit the systems that data captured using certain questionnaires may be shared with. 
 
 This publication includes IP covered under the following statements.
 
 * ISO maintains the copyright on the country codes, and controls its use carefully. For further details see the ISO 3166 web page: [https://www.iso.org/iso-3166-country-codes.html](https://www.iso.org/iso-3166-country-codes.html)
 
-* [ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code](http://terminology.hl7.org/6.0.2/CodeSystem-ISO3166Part1.html): [BasedOnMedicationLine](StructureDefinition-BasedOnMedicationLine.md), [BeDosage](StructureDefinition-BeDosage.md)... Show 37 more, [BeExtAdherenceStatus](StructureDefinition-BeExtAdherenceStatus.md), [BeExtInstructionsForReimbursement](StructureDefinition-BeExtInstructionsForReimbursement.md), [BeExtMedicationLineRegistrationStatus](StructureDefinition-BeExtMedicationLineRegistrationStatus.md), [BeExtMedicationType](StructureDefinition-BeExtMedicationType.md), [BeExtOffLabel](StructureDefinition-BeExtOffLabel.md), [BeExtRecordedDate](StructureDefinition-BeExtRecordedDate.md), [BeExtRecorder](StructureDefinition-BeExtRecorder.md), [BeMedicationDispense](StructureDefinition-BeMedicationDispense.md), [BeMedicationExposureCategory](StructureDefinition-BeMedicationExposureCategory.md), [BeMedicationExposureIntentVS](ValueSet-BeMedicationExposureIntentVS.md), [BeMedicationLine](StructureDefinition-BeMedicationLine.md), [BeMedicationLineAdherenceStatus](CodeSystem-BeMedicationLineAdherenceStatus.md), [BeMedicationLineAdherenceStatusReason](CodeSystem-BeMedicationLineAdherenceStatusReason.md), [BeMedicationLineAdherenceStatusReasonVS](ValueSet-BeMedicationLineAdherenceStatusReasonVS.md), [BeMedicationLineAdherenceStatusVS](ValueSet-BeMedicationLineAdherenceStatusVS.md), [BeMedicationLineOriginType](CodeSystem-BeMedicationLineOriginType.md), [BeMedicationLineOriginTypeVS](ValueSet-BeMedicationLineOriginTypeVS.md), [BeMedicationLineRegistrationStatus](CodeSystem-BeMedicationLineRegistrationStatus.md), [BeMedicationLineRegistrationStatusVS](ValueSet-BeMedicationLineRegistrationStatusVS.md), [BeMedicationPrescription](StructureDefinition-BeMedicationPrescription.md), [BeMedicationPrescriptionStatusVS](ValueSet-BeMedicationPrescriptionStatusVS.md), [BeMedicationRequestReimbursementType](CodeSystem-BeMedicationRequestReimbursementType.md), [BeMedicationRequestReimbursementTypeVS](ValueSet-BeMedicationRequestReimbursementTypeVS.md), [BeMedicationType](CodeSystem-BeMedicationType.md), [BeMedicationTypeVS](ValueSet-BeMedicationTypeVS.md), [BeModelDosagingInformation](StructureDefinition-BeModelDosagingInformation.md), [BeModelMedication](StructureDefinition-BeModelMedication.md), [BeModelMedicationDispense](StructureDefinition-BeModelMedicationDispense.md), [BeModelMedicationPrescription](StructureDefinition-BeModelMedicationPrescription.md), [BeNSCNK](NamingSystem-be-ns-cnk-codes.md), [BeNSCTIExtended](NamingSystem-be-ns-cti-extended-code.md), [BeNSPrescriptions](NamingSystem-be-ns-prescription-ids.md), [BeNSProductPackage](NamingSystem-be-ns-product-package-type.md), [BeRouteOfAdministrationVS](ValueSet-BeRouteOfAdministrationVS.md), [DispenserTypes](ValueSet-be-vs-dispenser-types.md), [Medication](index.md) and [MedicationLine](StructureDefinition-BeModelMedicationLine.md)
+* [ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code](http://terminology.hl7.org/6.0.2/CodeSystem-ISO3166Part1.html): [AD](StructureDefinition-AD.md), [ANY](StructureDefinition-ANY.md)... Show 35 more, [BELMMedProduct](StructureDefinition-BELMMedProduct.md), [BEMedicationLine](StructureDefinition-be-medicationline.md), [BEMedicationType](CodeSystem-medication-type.md), [BEMedicationTypeVS](ValueSet-medication-type-vs.md), [BEModelMedicationDispense](StructureDefinition-be-model-medicationdispense.md), [BL](StructureDefinition-BL.md), [BeExtDispenseRequestNeededCategory](StructureDefinition-BeExtDispenseRequestNeededCategory.md), [BeExtDosageOverride](StructureDefinition-BeExtDosageOverride.md), [BeExtDosageOverrideReason](StructureDefinition-BeExtDosageOverrideReason.md), [BeExtExposureCategory](StructureDefinition-BeExtExposureCategory.md), [BeExtMedicationType](StructureDefinition-BeExtMedicationType.md), [BeMedicationDispense](StructureDefinition-be-medicationdispense.md), [BeNSCNK](NamingSystem-be-ns-cnk-codes.md), [BeNSCTIExtended](NamingSystem-be-ns-cti-extended-code.md), [BeNSPrescriptions](NamingSystem-be-ns-prescription-ids.md), [BeNSProductPackage](NamingSystem-be-ns-product-package-type.md), [CD](StructureDefinition-CD.md), [Class](StructureDefinition-Class.md), [DT](StructureDefinition-DT.md), [DispenserTypes](ValueSet-be-vs-dispenser-types.md), [EN](StructureDefinition-EN.md), [II](StructureDefinition-II.md), [INT](StructureDefinition-INT.md), [KMEHRMS](StructureDefinition-KMEHRMS.md), [Medication](index.md), [MedicationExposureCategoryVS](ValueSet-medication-exposure-category-vs.md), [MedicationLine](StructureDefinition-be-model-medicationline.md), [MedicationLineOrigintype](CodeSystem-medication-line-origin-type.md), [MedicationLineOrigintypeVS](ValueSet-medication-line-origin-type-vs.md), [PQ](StructureDefinition-PQ.md), [REAL](StructureDefinition-REAL.md), [RTO](StructureDefinition-RTO.md), [ST](StructureDefinition-ST.md), [TS](StructureDefinition-TS.md) and [Untyped](StructureDefinition-Untyped.md)
 
 
 * The UCUM codes, UCUM table (regardless of format), and UCUM Specification are copyright 1999-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. [https://ucum.org/trac/wiki/TermsOfUse](https://ucum.org/trac/wiki/TermsOfUse)
 
-* [Unified Code for Units of Measure (UCUM)](http://terminology.hl7.org/6.0.2/CodeSystem-v3-ucum.html): [MedicationDispense/example-dispense-hospital](MedicationDispense-example-dispense-hospital.md), [MedicationRequest/example-02-hukyndra](MedicationRequest-example-02-hukyndra.md), [MedicationRequest/example-03-bisoprolol](MedicationRequest-example-03-bisoprolol.md) and [MedicationRequest/example-04-gutron](MedicationRequest-example-04-gutron.md)
+* [Unified Code for Units of Measure (UCUM)](http://terminology.hl7.org/6.0.2/CodeSystem-v3-ucum.html): [MedicationDispense/example-dispense-hospital](MedicationDispense-example-dispense-hospital.md)
 
 
 * This material contains content that is copyright of SNOMED International. Implementers of these specifications must have the appropriate SNOMED CT Affiliate license - for more information contact [https://www.snomed.org/get-snomed](https://www.snomed.org/get-snomed) or [info@snomed.org](mailto:info@snomed.org).
 
-* [SNOMED Clinical Terms&reg; (SNOMED CT&reg;)](http://hl7.org/fhir/R4/codesystem-snomedct.html): [BeDosage](StructureDefinition-BeDosage.md), [BeMedicationDispense](StructureDefinition-BeMedicationDispense.md)... Show 5 more, [BeMedicationExposureCategory](StructureDefinition-BeMedicationExposureCategory.md), [BeMedicationExposureIntentVS](ValueSet-BeMedicationExposureIntentVS.md), [BeModelDosagingInformation](StructureDefinition-BeModelDosagingInformation.md), [BeRouteOfAdministrationVS](ValueSet-BeRouteOfAdministrationVS.md) and [MedicationLine](StructureDefinition-BeModelMedicationLine.md)
-
-
-* This material derives from the HL7 Terminology (THO). THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: [https://terminology.hl7.org/license.html](https://terminology.hl7.org/license.html)
-
-* [DoseAndRateType](http://terminology.hl7.org/7.1.0/CodeSystem-dose-rate-type.html): [MedicationRequest/example-02-hukyndra](MedicationRequest-example-02-hukyndra.md), [MedicationRequest/example-03-bisoprolol](MedicationRequest-example-03-bisoprolol.md) and [MedicationRequest/example-04-gutron](MedicationRequest-example-04-gutron.md)
+* [SNOMED Clinical Terms&reg; (SNOMED CT&reg;)](http://hl7.org/fhir/R4/codesystem-snomedct.html): [BeExtExposureCategory](StructureDefinition-BeExtExposureCategory.md), [BeMedicationDispense](StructureDefinition-be-medicationdispense.md), [MedicationExposureCategoryVS](ValueSet-medication-exposure-category-vs.md) and [MedicationLine](StructureDefinition-be-model-medicationline.md)
 
 
 
@@ -104,25 +65,25 @@ This publication includes IP covered under the following statements.
   "version" : "1.1.0",
   "name" : "Medication",
   "title" : "Medication",
-  "status" : "active",
-  "date" : "2025-09-26",
-  "publisher" : "eHealth Platform",
+  "status" : "draft",
+  "date" : "2020-02-26",
+  "publisher" : "HL7 Belgium",
   "contact" : [{
-    "name" : "eHealth Platform",
+    "name" : "HL7 Belgium",
     "telecom" : [{
       "system" : "url",
-      "value" : "https://www.ehealth.fgov.be/standards/fhir"
+      "value" : "https://www.hl7belgium.org"
     },
     {
       "system" : "email",
-      "value" : "support@be-ehealth-standards.atlassian.net"
+      "value" : "hl7belgium@hl7belgium.org"
     }]
   },
   {
     "name" : "Message Structure eHealth",
     "telecom" : [{
       "system" : "email",
-      "value" : "support@be-ehealth-standards.atlassian.net",
+      "value" : "message-structure@ehealth.fgov.be",
       "use" : "work"
     }]
   }],
@@ -244,39 +205,6 @@ This publication includes IP covered under the following statements.
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "pin-canonicals"
-      },
-      {
-        "url" : "value",
-        "valueString" : "pin-multiples"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "special-url-base"
-      },
-      {
-        "url" : "value",
-        "valueString" : "https://www.ehealth.fgov.be/standards/fhir/terminology"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "path-history"
-      },
-      {
-        "url" : "value",
-        "valueString" : "https://www.ehealth.fgov.be/standards/fhir/medication/history.html"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
         "valueString" : "autoload-resources"
       },
       {
@@ -348,6 +276,17 @@ This publication includes IP covered under the following statements.
       {
         "url" : "value",
         "valueString" : "input/ignoreWarnings.txt"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "path-history"
+      },
+      {
+        "url" : "value",
+        "valueString" : "https://www.ehealth.fgov.be/standards/fhir/medication/history.html"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -474,7 +413,7 @@ This publication includes IP covered under the following statements.
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
-      "valueCode" : "hl7.fhir.uv.tools.r4#1.1.0"
+      "valueCode" : "hl7.fhir.uv.tools.r4#1.1.2"
     },
     {
       "extension" : [{
@@ -556,39 +495,6 @@ This publication includes IP covered under the following statements.
     {
       "extension" : [{
         "url" : "code",
-        "valueCode" : "pin-canonicals"
-      },
-      {
-        "url" : "value",
-        "valueString" : "pin-multiples"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueCode" : "special-url-base"
-      },
-      {
-        "url" : "value",
-        "valueString" : "https://www.ehealth.fgov.be/standards/fhir/terminology"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueCode" : "path-history"
-      },
-      {
-        "url" : "value",
-        "valueString" : "https://www.ehealth.fgov.be/standards/fhir/medication/history.html"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
         "valueCode" : "autoload-resources"
       },
       {
@@ -660,6 +566,17 @@ This publication includes IP covered under the following statements.
       {
         "url" : "value",
         "valueString" : "input/ignoreWarnings.txt"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-history"
+      },
+      {
+        "url" : "value",
+        "valueString" : "https://www.ehealth.fgov.be/standards/fhir/medication/history.html"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -784,76 +701,41 @@ This publication includes IP covered under the following statements.
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     }],
-    "grouping" : [{
-      "id" : "LogicalModels",
-      "name" : "Logical Data Models",
-      "description" : "Logical data models. The Logical data models are representations of the data needs for the scope of this Implementation Guide. The data models are primarily aligned with key projects, namely VIDIS, but are prepared in coordination with the Belgian community to ensure a common data structure that supports the projects and the implementation data needs."
-    },
-    {
-      "id" : "Profiles",
-      "name" : "Profiles",
-      "description" : "Profiles for Medication. These are implementable FHIR profiles."
-    },
-    {
-      "id" : "Extensions",
-      "name" : "Extensions",
-      "description" : "Extensions for FHIR resources, to be used in Profiles"
-    },
-    {
-      "id" : "Terminology",
-      "name" : "Terminology",
-      "description" : "Terminology for Medication. These are value sets, code systems and naming systems for identifiers."
-    }],
     "resource" : [{
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
+        "valueString" : "MedicationDispense"
       }],
       "reference" : {
-        "reference" : "CodeSystem/BeMedicationLineAdherenceStatusReason"
+        "reference" : "MedicationDispense/example-dispense-hospital"
       },
-      "name" : "Adherence Status Reason",
-      "description" : "Reasons for non-adherence to a treatment or intervention.",
-      "exampleBoolean" : false,
-      "groupingId" : "Terminology"
+      "name" : "A dispense from a hospital pharmacy",
+      "description" : "A dispense from a hospital pharmacy, with a hospital nihdi and based on a prescription",
+      "exampleCanonical" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationdispense"
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
+        "valueString" : "StructureDefinition:complex-type"
       }],
       "reference" : {
-        "reference" : "ValueSet/BeMedicationLineAdherenceStatusReasonVS"
+        "reference" : "StructureDefinition/AD"
       },
-      "name" : "Adherence Status Reason ValueSet",
-      "description" : "ValueSet containing reasons for non-adherence to a treatment or intervention.",
-      "exampleBoolean" : false,
-      "groupingId" : "Terminology"
+      "name" : "AD",
+      "description" : "Address",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Organization"
+        "valueString" : "StructureDefinition:complex-type"
       }],
       "reference" : {
-        "reference" : "Organization/apotheek-onder-de-toren"
+        "reference" : "StructureDefinition/ANY"
       },
-      "name" : "apotheek-onder-de-toren",
-      "description" : "Example organization for a pharmacy",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/BasedOnMedicationLine"
-      },
-      "name" : "BasedOnMedicationLine",
-      "description" : "Based on medication line.",
-      "exampleBoolean" : false,
-      "groupingId" : "Extensions"
+      "name" : "ANY",
+      "description" : "An abstract type",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -865,8 +747,7 @@ This publication includes IP covered under the following statements.
       },
       "name" : "be-ns-cnk-codes",
       "description" : "Naming System - CNK Product Codes",
-      "exampleBoolean" : false,
-      "groupingId" : "Terminology"
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -878,8 +759,7 @@ This publication includes IP covered under the following statements.
       },
       "name" : "be-ns-cti-extended-code",
       "description" : "Naming System - CTI Extended Codes",
-      "exampleBoolean" : false,
-      "groupingId" : "Terminology"
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -891,8 +771,7 @@ This publication includes IP covered under the following statements.
       },
       "name" : "be-ns-prescription-ids",
       "description" : "Naming System - Prescription IDs",
-      "exampleBoolean" : false,
-      "groupingId" : "Terminology"
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -904,8 +783,7 @@ This publication includes IP covered under the following statements.
       },
       "name" : "be-ns-product-package-type",
       "description" : "Naming System - Prescription IDs",
-      "exampleBoolean" : false,
-      "groupingId" : "Terminology"
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -913,25 +791,11 @@ This publication includes IP covered under the following statements.
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/BeExtAdherenceStatus"
+        "reference" : "StructureDefinition/BeExtDispenseRequestNeededCategory"
       },
-      "name" : "BeExtAdherenceStatus",
-      "description" : "Medication Line Adherence Status - statuses of taking the medication.",
-      "exampleBoolean" : false,
-      "groupingId" : "Extensions"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/BeMedicationLineAdherenceStatusVS"
-      },
-      "name" : "BeExtAdherenceStatus",
-      "description" : "The status of taking the medication.",
-      "exampleBoolean" : false,
-      "groupingId" : "Terminology"
+      "name" : "BeExtDispenseRequestNeededCategory",
+      "description" : "Dispense Request Needed - category.",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -939,12 +803,35 @@ This publication includes IP covered under the following statements.
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/BeExtInstructionsForReimbursement"
+        "reference" : "StructureDefinition/BeExtDosageOverride"
       },
-      "name" : "BeExtInstructionsForReimbursement",
-      "description" : "Instructions for Reimbursement.",
-      "exampleBoolean" : false,
-      "groupingId" : "Extensions"
+      "name" : "BeExtDosageOverride",
+      "description" : "Dispense override.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/BeExtDosageOverrideReason"
+      },
+      "name" : "BeExtDosageOverrideReason",
+      "description" : "Dispense Request Needed - category.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/BeExtExposureCategory"
+      },
+      "name" : "BeExtExposureCategory",
+      "description" : "Exposure - category.",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -955,35 +842,8 @@ This publication includes IP covered under the following statements.
         "reference" : "StructureDefinition/BeExtMedicationType"
       },
       "name" : "BeExtMedicationType",
-      "description" : "The type of medication.",
-      "exampleBoolean" : false,
-      "groupingId" : "Extensions"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/BeExtRecordedDate"
-      },
-      "name" : "BeExtRecordedDate",
-      "description" : "The date the information was recorded",
-      "exampleBoolean" : false,
-      "groupingId" : "Extensions"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/BeExtRecorder"
-      },
-      "name" : "BeExtRecorder",
-      "description" : "The person that recorded the information",
-      "exampleBoolean" : false,
-      "groupingId" : "Extensions"
+      "description" : "MedicationType",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -991,25 +851,11 @@ This publication includes IP covered under the following statements.
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/BeMedicationDispense"
+        "reference" : "StructureDefinition/be-medicationdispense"
       },
       "name" : "BeMedicationDispense",
       "description" : "Defines constraints and extensions on the Medication Dispense resource for a record of a dispensation in Belgium.",
-      "exampleBoolean" : false,
-      "groupingId" : "Profiles"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/BeMedicationExposureCategory"
-      },
-      "name" : "BeMedicationExposureCategory",
-      "description" : "Exposure - category.",
-      "exampleBoolean" : false,
-      "groupingId" : "Extensions"
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -1017,25 +863,95 @@ This publication includes IP covered under the following statements.
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/BeMedicationLine"
+        "reference" : "StructureDefinition/be-medicationline"
       },
-      "name" : "BeMedicationLine",
+      "name" : "BEMedicationLine",
       "description" : "Medication Line profile - contains the overview information for a single medication item",
-      "exampleBoolean" : false,
-      "groupingId" : "Profiles"
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
+        "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/BeMedicationPrescription"
+        "reference" : "StructureDefinition/be-model-medicationdispense"
       },
-      "name" : "BeMedicationPrescription",
-      "description" : "Medication Request profile - The common structure for medication request",
-      "exampleBoolean" : false,
-      "groupingId" : "Profiles"
+      "name" : "BeModelMedicationDispense",
+      "description" : "This is the logical model for the Dispense Record entry - the information that can be captured upon the act of dispensing - in a hospital pharmacy, or a community pharmacy. This is not for a future dispense, rather a record of an actual dispense.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:complex-type"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/BL"
+      },
+      "name" : "BL",
+      "description" : "Boolean - true or false",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:complex-type"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/CD"
+      },
+      "name" : "CD",
+      "description" : "ConceptDescriptor",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:complex-type"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/Class"
+      },
+      "name" : "Class",
+      "description" : "Class of data elements",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MedicationDispense"
+      }],
+      "reference" : {
+        "reference" : "MedicationDispense/example-dispense-communitypharmacy-1med"
+      },
+      "name" : "Dispense entry Example - Community Pharmacy dispense, from prescription",
+      "description" : "Medication Dispense example",
+      "exampleCanonical" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationdispense"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MedicationDispense"
+      }],
+      "reference" : {
+        "reference" : "MedicationDispense/medicationdispense-example-2"
+      },
+      "name" : "Dispense entry Example - Community Pharmacy dispense, from prescription, with contained org.",
+      "description" : "Medication Dispense example",
+      "exampleCanonical" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationdispense"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MedicationDispense"
+      }],
+      "reference" : {
+        "reference" : "MedicationDispense/example-minimal-dispense"
+      },
+      "name" : "Dispense Example - Minimal amount of information",
+      "description" : "Medication Dispense example",
+      "exampleCanonical" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationdispense"
     },
     {
       "extension" : [{
@@ -1047,8 +963,67 @@ This publication includes IP covered under the following statements.
       },
       "name" : "Dispenser Types",
       "description" : "Dispenser Types - from hcparty",
-      "exampleBoolean" : false,
-      "groupingId" : "Terminology"
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:complex-type"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DT"
+      },
+      "name" : "DT",
+      "description" : "Date",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:complex-type"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/EN"
+      },
+      "name" : "EN",
+      "description" : "EntityName",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/apotheek-onder-de-toren"
+      },
+      "name" : "Example organization for a pharmacy",
+      "description" : "Example Pharmacy (Organization): Apotheek onder de toren",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:complex-type"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/II"
+      },
+      "name" : "II",
+      "description" : "InstanceIdentifier",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:complex-type"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/INT"
+      },
+      "name" : "INT",
+      "description" : "IntegerNumber",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -1056,24 +1031,83 @@ This publication includes IP covered under the following statements.
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/BeModelDosagingInformation"
+        "reference" : "StructureDefinition/KMEHRMS"
       },
-      "name" : "Dosaging (model)",
-      "description" : "Structured Dosage data model.",
-      "exampleBoolean" : false,
-      "groupingId" : "LogicalModels"
+      "name" : "KMEHR Medication Schema v5.8",
+      "description" : "This model represents the Medication Schema KMEHR V5.8. It is shown for demonstrating the field correspondence/equivalence, and not to imply any intended scope or intended behaviour.",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "MedicationDispense"
+        "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "MedicationDispense/example-minimal-dispense"
+        "reference" : "ValueSet/medication-exposure-category-vs"
       },
-      "name" : "Example Dispense (minimal)",
-      "description" : "Dispense Example - Minimal amount of information",
-      "exampleCanonical" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationDispense"
+      "name" : "Medication exposure intent",
+      "description" : "The exposure purpose of a medication - whether the medication is given for therapeutic or prophylactic purposes.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/be-model-medicationline"
+      },
+      "name" : "Medication Line - logical model",
+      "description" : "A logical data model of the medication line.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/medication-line-origin-type"
+      },
+      "name" : "Medication origin type",
+      "description" : "Medication treatment origin type - what is the type of care that originated the medication treatment",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/medication-line-origin-type-vs"
+      },
+      "name" : "Medication origin type ValueSet",
+      "description" : "Medication treatment origin type - what is the type of care that originated the medication treatment",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/medication-type"
+      },
+      "name" : "Medication preparation Type",
+      "description" : "Medication preparation type",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/medication-type-vs"
+      },
+      "name" : "Medication preparation Type value set",
+      "description" : "Medication preparation type value set",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -1083,33 +1117,8 @@ This publication includes IP covered under the following statements.
       "reference" : {
         "reference" : "MedicationDispense/medicationdispense-example-1"
       },
-      "name" : "Example Dispense (simple)",
-      "description" : "Dispense Example - Simple example of a dispense",
-      "exampleCanonical" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationDispense"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "MedicationDispense"
-      }],
-      "reference" : {
-        "reference" : "MedicationDispense/medicationdispense-example-2"
-      },
-      "name" : "Example Dispense entry - Community Pharmacy dispense, from prescription, with contained org.",
-      "description" : "Medication Dispense example",
-      "exampleCanonical" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationDispense"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "MedicationDispense"
-      }],
-      "reference" : {
-        "reference" : "MedicationDispense/example-dispense-hospital"
-      },
-      "name" : "Example Dispense from a hospital pharmacy",
-      "description" : "A dispense from a hospital pharmacy, with a hospital nihdi and based on a prescription",
-      "exampleCanonical" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationDispense"
+      "name" : "medicationdispense-example-1",
+      "exampleCanonical" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationdispense"
     },
     {
       "extension" : [{
@@ -1117,37 +1126,11 @@ This publication includes IP covered under the following statements.
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/BeModelMedication"
+        "reference" : "StructureDefinition/BELMMedProduct"
       },
-      "name" : "Medication (model)",
-      "description" : "Logical data model for medication.",
-      "exampleBoolean" : false,
-      "groupingId" : "LogicalModels"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/BeModelMedicationDispense"
-      },
-      "name" : "Medication Dispense (model)",
-      "description" : "This is the logical model for the Dispense Record entry - the information that can be captured upon the act of dispensing - in a hospital pharmacy, or a community pharmacy. This is not for a future dispense, rather a record of an actual dispense.",
-      "exampleBoolean" : false,
-      "groupingId" : "LogicalModels"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "MedicationDispense"
-      }],
-      "reference" : {
-        "reference" : "MedicationDispense/example-dispense-communitypharmacy-1med"
-      },
-      "name" : "Medication Dispense example",
-      "description" : "Dispense entry Example - Community Pharmacy dispense, from prescription",
-      "exampleCanonical" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationDispense"
+      "name" : "Medicinal Product",
+      "description" : "A logical data model for representing a medicinal product.",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -1155,268 +1138,71 @@ This publication includes IP covered under the following statements.
         "valueString" : "StructureDefinition:complex-type"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/BeDosage"
+        "reference" : "StructureDefinition/PQ"
       },
-      "name" : "Medication Dosage",
-      "description" : "Specifications for a medication dosage for use in Belgian profiles.",
-      "exampleBoolean" : false,
-      "groupingId" : "Profiles"
+      "name" : "PQ",
+      "description" : "PhysicalQuantity",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
+        "valueString" : "StructureDefinition:complex-type"
       }],
       "reference" : {
-        "reference" : "ValueSet/BeMedicationExposureIntentVS"
+        "reference" : "StructureDefinition/REAL"
       },
-      "name" : "Medication exposure intent",
-      "description" : "The exposure purpose of a medication - whether the medication is given for therapeutic or prophylactic purposes.",
-      "exampleBoolean" : false,
-      "groupingId" : "Terminology"
+      "name" : "REAL",
+      "description" : "RealNumber",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
+        "valueString" : "StructureDefinition:complex-type"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/BeModelMedicationLine"
+        "reference" : "StructureDefinition/RTO"
       },
-      "name" : "Medication Line (model)",
-      "description" : "Logical data model for medication line.",
-      "exampleBoolean" : false,
-      "groupingId" : "LogicalModels"
+      "name" : "RTO",
+      "description" : "Ratio",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
+        "valueString" : "StructureDefinition:complex-type"
       }],
       "reference" : {
-        "reference" : "CodeSystem/BeMedicationLineAdherenceStatus"
+        "reference" : "StructureDefinition/ST"
       },
-      "name" : "Medication Line Adherence Status",
-      "description" : "Medication Line Adherence Status - ValueSet.",
-      "exampleBoolean" : false,
-      "groupingId" : "Terminology"
+      "name" : "ST",
+      "description" : "CharacterString",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
+        "valueString" : "StructureDefinition:complex-type"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/BeExtMedicationLineRegistrationStatus"
+        "reference" : "StructureDefinition/TS"
       },
-      "name" : "Medication Line Registration Status",
-      "description" : "This extension indicates the registration status of a medication line, such as whether it is draft, recorded, or entered-in-error.",
-      "exampleBoolean" : false,
-      "groupingId" : "Extensions"
+      "name" : "TS",
+      "description" : "TimeStamp",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
+        "valueString" : "StructureDefinition:complex-type"
       }],
       "reference" : {
-        "reference" : "CodeSystem/BeMedicationLineRegistrationStatus"
+        "reference" : "StructureDefinition/Untyped"
       },
-      "name" : "Medication Line Registration Status",
-      "description" : "This code system defines the registration statuses for medication lines.",
-      "exampleBoolean" : false,
-      "groupingId" : "Terminology"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/BeMedicationLineRegistrationStatusVS"
-      },
-      "name" : "Medication Line Registration Status Value Set",
-      "description" : "This value set includes the registration statuses for medication lines.",
-      "exampleBoolean" : false,
-      "groupingId" : "Terminology"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/BeMedicationLineOriginType"
-      },
-      "name" : "Medication origin Type",
-      "description" : "Medication origin type",
-      "exampleBoolean" : false,
-      "groupingId" : "Terminology"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/BeMedicationLineOriginTypeVS"
-      },
-      "name" : "Medication origin type value set",
-      "description" : "Medication origin type value set",
-      "exampleBoolean" : false,
-      "groupingId" : "Terminology"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/BeMedicationType"
-      },
-      "name" : "Medication preparation Type",
-      "description" : "Medication preparation type",
-      "exampleBoolean" : false,
-      "groupingId" : "Terminology"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/BeMedicationTypeVS"
-      },
-      "name" : "Medication preparation Type value set",
-      "description" : "Medication preparation type value set",
-      "exampleBoolean" : false,
-      "groupingId" : "Terminology"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/BeModelMedicationPrescription"
-      },
-      "name" : "Medication prescription (model)",
-      "description" : "Logical model for medication prescription (or some other form of order)",
-      "exampleBoolean" : false,
-      "groupingId" : "LogicalModels"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/BeMedicationPrescriptionStatusVS"
-      },
-      "name" : "Medication Prescription Status",
-      "description" : "Medication prescription status codes.",
-      "exampleBoolean" : false,
-      "groupingId" : "Terminology"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/BeMedicationRequestReimbursementType"
-      },
-      "name" : "Medication request reimbursement type",
-      "description" : "Medication request reimbursement type - instructions for reimbursement of the medication request",
-      "exampleBoolean" : false,
-      "groupingId" : "Terminology"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/BeMedicationRequestReimbursementTypeVS"
-      },
-      "name" : "Medication request reimbursement type ValueSet",
-      "description" : "Medication request reimbursement type - instructions for reimbursement of the medication request",
-      "exampleBoolean" : false,
-      "groupingId" : "Terminology"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/BeExtOffLabel"
-      },
-      "name" : "MedicationRequest - Off-label use",
-      "description" : "Indicates that the order placer has knowingly prescribed the medication for an indication, age group, dosage, or route of administration that is not approved by the regulatory agencies and is not mentioned in the prescribing information for the product.",
-      "exampleBoolean" : false,
-      "groupingId" : "Extensions"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "MedicationRequest"
-      }],
-      "reference" : {
-        "reference" : "MedicationRequest/example-01-lasix"
-      },
-      "name" : "Prescription Example 01 - Lasix",
-      "description" : "Lasix 50 x 40 mg - Every other day (QOD)",
-      "exampleCanonical" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationPrescription"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "MedicationRequest"
-      }],
-      "reference" : {
-        "reference" : "MedicationRequest/example-02-hukyndra"
-      },
-      "name" : "Prescription Example 02 - Hukyndra",
-      "description" : "Hukyndra 6 x 40mg/0.4ml - Loading dose: week 0: 80mg, week 2: 40mg, then 40mg every 2 weeks",
-      "exampleCanonical" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationPrescription"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "MedicationRequest"
-      }],
-      "reference" : {
-        "reference" : "MedicationRequest/example-03-bisoprolol"
-      },
-      "name" : "Prescription Example 03 - Bisoprolol (VOS)",
-      "description" : "Bisoprolol tablets 2.5 mg - 1 x / day 2.5 mg for 3 months (VOS - Voorschrift Op Stofnaam)",
-      "exampleCanonical" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationPrescription"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "MedicationRequest"
-      }],
-      "reference" : {
-        "reference" : "MedicationRequest/example-04-gutron"
-      },
-      "name" : "Prescription Example 04 - Gutron (Import)",
-      "description" : "Gutron 5mg - Dose escalation: 2.5mg 3x/day for 1 week, then increase weekly by 2.5mg to 10mg 3x/day maintenance",
-      "exampleCanonical" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationPrescription"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/BeRouteOfAdministrationVS"
-      },
-      "name" : "Route of Administration ValueSet",
-      "description" : "This ValueSet contains codes for the route of administration of medications. It is used to specify how a medication is administered to a patient, such as orally, intravenously, or topically.",
-      "exampleBoolean" : false,
-      "groupingId" : "Terminology"
+      "name" : "Untyped",
+      "description" : "No data type defined",
+      "exampleBoolean" : false
     }],
     "page" : {
       "extension" : [{
@@ -1433,7 +1219,7 @@ This publication includes IP covered under the following statements.
         }],
         "nameUrl" : "index.html",
         "title" : "Home",
-        "generation" : "markdown"
+        "generation" : "html"
       },
       {
         "extension" : [{

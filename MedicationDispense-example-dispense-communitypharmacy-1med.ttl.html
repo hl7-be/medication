@@ -5,7 +5,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Medication Dispense example - TTL Representation - Medication v1.1.0</title>
+    <title>Dispense entry Example - Community Pharmacy dispense, from prescription - TTL Representation - Medication v1.1.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -24,10 +24,10 @@
     <!-- Placeholder for child template CSS declarations -->
 <link href="assets/css/hl7-be.css" rel="stylesheet"/>
 <!-- Placeholder for child template CSS declarations -->
-<!-- eHealth Platform -->
-<!-- active -->
+<!-- HL7 Belgium -->
+<!-- draft -->
 
-<link href="assets/css/federal-colors.css" rel="stylesheet"/>
+<link href="assets/css/colors.css" rel="stylesheet"/>
 
 <link href="assets/css/lforms.min.css" rel="stylesheet"/>
 
@@ -52,21 +52,27 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"9.44"}
-    h3,h4,h5,h6{--heading-prefix:"9.44"}</style>
+    <style type="text/css">h2{--heading-prefix:"9.38"}
+    h3,h4,h5,h6{--heading-prefix:"9.38"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
         <!-- Placeholder for child template header declarations -->
 
         
-<!-- eHealth Platform -->
-<!-- active -->
+<!-- HL7 Belgium -->
+<!-- draft -->
 
 <div id="ig-nav">
-  <a id="standards-logo" no-external="true" href="index.html">
-    <img height="50" alt="Welcome on standards website" src="assets/images/standards.svg"/>
+  <a id="hl7-logo" no-external="true" href="https://hl7belgium.org">
+    <img height="65" alt="HL7 Belgium" src="assets/images/hl7be-logo-header.png"/>
   </a>
+</div>
+<div id="fhir-nav">
+  <a id="fhir-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+</div>
+<div id="ig-search">
+  <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
 </div>
 
 
@@ -194,7 +200,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Medication Dispense example</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Dispense entry Example - Community Pharmacy dispense, from prescription</b></li>
 
           <span style="float:right;">
 
@@ -202,7 +208,7 @@
 
             <a href="#bottom">bottom</a>
 
-          | <a href="MedicationRequest-example-01-lasix.html">next&gt;</a>
+          | <a href="MedicationDispense-medicationdispense-example-2.html">next&gt;</a>
 
           </span>
 
@@ -217,7 +223,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 9" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">Medication, published by eHealth Platform. This guide is not an authorized publication; it is the continuous build for version 1.1.0  built by the FHIR (HL7&reg; FHIR&reg; Standard) CI Build. This version is based on the current content of <a href='https://github.com/hl7-be/medication/tree/master'>https://github.com/hl7-be/medication/tree/master</a> and changes regularly. See the <a href='https://www.ehealth.fgov.be/standards/fhir/medication/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">Medication, published by HL7 Belgium. This guide is not an authorized publication; it is the continuous build for version 1.1.0  built by the FHIR (HL7&reg; FHIR&reg; Standard) CI Build. This version is based on the current content of <a href='https://github.com/hl7-be/medication'>https://github.com/hl7-be/medication</a> and changes regularly. See the <a href='https://www.ehealth.fgov.be/standards/fhir/medication/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
 
 
 
@@ -263,7 +269,7 @@
 <a name="root"> </a>
 
 
-<h2 id="root">: Medication Dispense example - TTL Representation</h2>
+<h2 id="root">: Dispense entry Example - Community Pharmacy dispense, from prescription - TTL Representation</h2>
 
 
 <p><a href="MedicationDispense-example-dispense-communitypharmacy-1med.ttl" no-download="true">Raw ttl</a> | <a href="MedicationDispense-example-dispense-communitypharmacy-1med.ttl" download>Download</a></p>
@@ -287,13 +293,13 @@
   <a href="http://hl7.org/fhir/R4/resource.html#MedicationDispense.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;example-dispense-communitypharmacy-1med&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/resource.html#MedicationDispense.meta">fhir:meta</a> [
     ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationDispense&quot;^^xsd:anyURI ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:l</a> &lt;https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationDispense&gt;     ] )
+<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationdispense&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:l</a> &lt;https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationdispense&gt;     ] )
   ] ; # 
   <a href="http://hl7.org/fhir/R4/resource.html#MedicationDispense.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;fr-BE&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/domainresource.html#MedicationDispense.text">fhir:text</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">fhir:div</a> [ <a href="http://hl7.org/fhir/R4/narrative.html#xhtml">fhir:v</a> &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot; xml:lang=\&quot;fr-BE\&quot; lang=\&quot;fr-BE\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: MedicationDispense example-dispense-communitypharmacy-1med&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;example-dispense-communitypharmacy-1med\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcexample-dispense-communitypharmacy-1med\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Language: fr-BE&lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-BeMedicationDispense.html\&quot;&gt;BeMedicationDispense&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: dguid/a8c45fdc-72aa-11e7-8cf7-a6007ad37dc0&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Completed&lt;/p&gt;&lt;p&gt;&lt;b&gt;medication&lt;/b&gt;: &lt;span title=\&quot;Codes:{https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes 1439562}\&quot;&gt;Topazolam tab 50x 1,0mg&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: Identifier: &lt;code&gt;https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin&lt;/code&gt;/64110219106&lt;/p&gt;&lt;p&gt;&lt;b&gt;context&lt;/b&gt;: Identifier: sguid/b8ca980c-72aa-11e7-8cf7-a6006ad3dba0&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;performer&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;actor&lt;/b&gt;: Jan Janssen (Identifier: &lt;code&gt;https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi-practitioner&lt;/code&gt;/6547432)&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;performer&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;actor&lt;/b&gt;: Apotheek onder de toren (Identifier: &lt;code&gt;https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi-organization&lt;/code&gt;/27457532)&lt;/p&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;b&gt;authorizingPrescription&lt;/b&gt;: Prescription 2014fd (Identifier: &lt;a href=\&quot;NamingSystem-be-ns-prescription-ids.html\&quot; title=\&quot;Naming System - Prescription IDs\&quot;&gt;BeNSPrescriptions&lt;/a&gt;/2d8dab92-5c38-4380-96a9-e461be2014fd)&lt;/p&gt;&lt;p&gt;&lt;b&gt;quantity&lt;/b&gt;: 1(unit package from https://www.gfd-dpp.be/fhir/reference/packaging)&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: packaging  codepackage = 'package')&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;whenHandedOver&lt;/b&gt;: 2020-03-10&lt;/p&gt;&lt;h3&gt;DosageInstructions&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Text&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;3 x par jour&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&quot;^^rdf:XMLLiteral ]
+<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">fhir:div</a> [ <a href="http://hl7.org/fhir/R4/narrative.html#xhtml">fhir:v</a> &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot; xml:lang=\&quot;fr-BE\&quot; lang=\&quot;fr-BE\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: MedicationDispense example-dispense-communitypharmacy-1med&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;example-dispense-communitypharmacy-1med\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcexample-dispense-communitypharmacy-1med\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Language: fr-BE&lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-be-medicationdispense.html\&quot;&gt;BeMedicationDispense&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: dguid/a8c45fdc-72aa-11e7-8cf7-a6007ad37dc0&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Completed&lt;/p&gt;&lt;p&gt;&lt;b&gt;medication&lt;/b&gt;: &lt;span title=\&quot;Codes:{https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes 1439562}\&quot;&gt;Topazolam tab 50x 1,0mg&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: Identifier: &lt;a href=\&quot;https://www.ehealth.fgov.be/standards/fhir/core/2.1.2/NamingSystem-be-ssin.html\&quot; title=\&quot;NISS/INSZ\&quot;&gt;BeSSINNamingSystem&lt;/a&gt;/64110219106&lt;/p&gt;&lt;p&gt;&lt;b&gt;context&lt;/b&gt;: Identifier: sguid/b8ca980c-72aa-11e7-8cf7-a6006ad3dba0&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;performer&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;actor&lt;/b&gt;: Jan Janssen (Identifier: &lt;code&gt;https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi-practitioner&lt;/code&gt;/6547432)&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;performer&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;actor&lt;/b&gt;: Apotheek onder de toren (Identifier: &lt;a href=\&quot;https://www.ehealth.fgov.be/standards/fhir/core/2.1.2/NamingSystem-be-ns-nihdi-organization.html\&quot; title=\&quot;Naming System - Nihdi - Organization\&quot;&gt;BeNSNIHDIOrganization&lt;/a&gt;/27457532)&lt;/p&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;b&gt;authorizingPrescription&lt;/b&gt;: Prescription 2014fd (Identifier: &lt;code&gt;https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/prescription-id&lt;/code&gt;/2d8dab92-5c38-4380-96a9-e461be2014fd)&lt;/p&gt;&lt;p&gt;&lt;b&gt;quantity&lt;/b&gt;: 1(unit package from https://www.gfd-dpp.be/fhir/reference/packaging)&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: packaging  codepackage = 'package')&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;whenHandedOver&lt;/b&gt;: 2020-03-10&lt;/p&gt;&lt;h3&gt;DosageInstructions&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Text&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;3 x par jour&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&quot;^^rdf:XMLLiteral ]
   ] ; # 
   <a href="http://hl7.org/fhir/R4/medicationdispense.html#MedicationDispense.identifier">fhir:identifier</a> ( [
 <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.type">fhir:type</a> [
@@ -335,8 +341,8 @@
   <a href="http://hl7.org/fhir/R4/medicationdispense.html#MedicationDispense.subject">fhir:subject</a> [
 <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.identifier">fhir:identifier</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">fhir:system</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin&quot;^^xsd:anyURI ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:l</a> &lt;https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin&gt;       ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:l</a> &lt;https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin&gt;       ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;64110219106&quot; ]     ]
   ] ; # 
   <a href="http://hl7.org/fhir/R4/medicationdispense.html#MedicationDispense.context">fhir:context</a> [
@@ -353,24 +359,24 @@
 <a href="http://hl7.org/fhir/R4/medicationdispense.html#MedicationDispense.performer.actor">fhir:actor</a> [
 <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.identifier">fhir:identifier</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">fhir:system</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi-practitioner&quot;^^xsd:anyURI ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:l</a> &lt;https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi-practitioner&gt;         ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi-practitioner&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:l</a> &lt;https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi-practitioner&gt;         ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;6547432&quot; ]       ] ;
 <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Jan Janssen&quot; ]     ]
   ] [
 <a href="http://hl7.org/fhir/R4/medicationdispense.html#MedicationDispense.performer.actor">fhir:actor</a> [
 <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.identifier">fhir:identifier</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">fhir:system</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi-organization&quot;^^xsd:anyURI ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:l</a> &lt;https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi-organization&gt;         ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi-organization&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:l</a> &lt;https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi-organization&gt;         ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;27457532&quot; ]       ] ;
 <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Apotheek onder de toren&quot; ]     ]
   ] ) ; # 
   <a href="http://hl7.org/fhir/R4/medicationdispense.html#MedicationDispense.authorizingPrescription">fhir:authorizingPrescription</a> ( [
 <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.identifier">fhir:identifier</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">fhir:system</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://www.ehealth.fgov.be/standards/fhir/NamingSystem/prescription-id&quot;^^xsd:anyURI ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:l</a> &lt;https://www.ehealth.fgov.be/standards/fhir/NamingSystem/prescription-id&gt;       ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/prescription-id&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:l</a> &lt;https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/prescription-id&gt;       ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;2d8dab92-5c38-4380-96a9-e461be2014fd&quot; ]     ] ;
 <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Prescription 2014fd&quot; ]
   ] ) ; # 
@@ -441,7 +447,7 @@
               </td>
               <td style="text-align:right">&#xA0;
 
-                <a href="MedicationRequest-example-01-lasix.html">next&gt;</a>
+                <a href="MedicationDispense-medicationdispense-example-2.html">next&gt;</a>
 
               </td>
             </tr>
@@ -451,27 +457,18 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.ehealth.fgov.be/standards/fhir">eHealth Platform</a>.  Package hl7.fhir.be.medication#1.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Mar 24, 2026 06:59+0000">2026-03-24</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.hl7belgium.org">HL7 Belgium</a>.  Package hl7.fhir.be.medication#1.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Mar 27, 2026 06:32+0000">2026-03-27</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
-            <!-- eHealth Platform -->
-<!-- active -->
+            <!-- HL7 Belgium -->
+<!-- draft -->
 
-Links:
-<a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
-<a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
-
-  
-
-
-<span class="footer-logos-row">
-  <a id="belgium-logo" href="https://www.belgium.be/en" target="_blank">
-    <img alt="belgium.be" src="assets/images/logo-be.png"/>
-  </a>
-  <a id="ehealth-logo" href="https://www.ehealth.fgov.be" style="text-decoration:none">
-    <img height="50" alt="Welcome to ehealth website" src="assets/images/logo-ehealth.png"/>
-  </a>
-</span>
+Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a> |
+                 
+                 <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://www.ehealth.fgov.be/standards/fhir/medication/history.html">Version History</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC-BY" src="assets/images/cc-by.png" height="17"/></a>
+<!-- no fitting stylesheet found (status/publisher)-->
 
 
           </span>

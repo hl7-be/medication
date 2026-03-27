@@ -5,31 +5,31 @@
   "jurisdiction": "BE",
   "extensions": [
     {
-      "url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BasedOnMedicationLine",
-      "title": "BasedOnMedicationLine",
+      "url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtDispenseRequestNeededCategory",
+      "title": "BeExtDispenseRequestNeededCategory",
       "types": [
-        "Reference"
+        "boolean"
       ]
     },
     {
-      "url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtAdherenceStatus",
-      "title": "BeExtAdherenceStatus",
+      "url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtDosageOverride",
+      "title": "BeExtDosageOverride",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtDosageOverrideReason",
+      "title": "BeExtDosageOverrideReason",
       "types": [
         "CodeableConcept"
       ]
     },
     {
-      "url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtInstructionsForReimbursement",
-      "title": "BeExtInstructionsForReimbursement",
+      "url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtExposureCategory",
+      "title": "BeExtExposureCategory",
       "types": [
         "CodeableConcept"
-      ]
-    },
-    {
-      "url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtMedicationLineRegistrationStatus",
-      "title": "Medication Line Registration Status",
-      "types": [
-        "code"
       ]
     },
     {
@@ -38,115 +38,24 @@
       "types": [
         "CodeableConcept"
       ]
-    },
-    {
-      "url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtOffLabel",
-      "title": "MedicationRequest - Off-label use",
-      "types": [
-        "boolean",
-        "CodeableConcept",
-        "base64Binary",
-        "boolean",
-        "canonical",
-        "code",
-        "date",
-        "dateTime",
-        "decimal",
-        "id",
-        "instant",
-        "integer",
-        "markdown",
-        "oid",
-        "positiveInt",
-        "string",
-        "time",
-        "unsignedInt",
-        "uri",
-        "url",
-        "uuid",
-        "Address",
-        "Age",
-        "Annotation",
-        "Attachment",
-        "CodeableConcept",
-        "Coding",
-        "ContactPoint",
-        "Count",
-        "Distance",
-        "Duration",
-        "HumanName",
-        "Identifier",
-        "Money",
-        "Period",
-        "Quantity",
-        "Range",
-        "Ratio",
-        "Reference",
-        "SampledData",
-        "Signature",
-        "Timing",
-        "ContactDetail",
-        "Contributor",
-        "DataRequirement",
-        "Expression",
-        "ParameterDefinition",
-        "RelatedArtifact",
-        "TriggerDefinition",
-        "UsageContext",
-        "Dosage",
-        "Meta"
-      ]
-    },
-    {
-      "url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate",
-      "title": "BeExtRecordedDate",
-      "types": [
-        "dateTime"
-      ]
-    },
-    {
-      "url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecorder",
-      "title": "BeExtRecorder",
-      "types": [
-        "Reference"
-      ]
-    },
-    {
-      "url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationExposureCategory",
-      "title": "BeMedicationExposureCategory",
-      "types": [
-        "CodeableConcept"
-      ]
     }
   ],
   "profiles": {
     "MedicationDispense": [
       {
-        "url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationDispense",
+        "url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationdispense",
         "title": "BeMedicationDispense"
       }
     ],
     "MedicationStatement": [
       {
-        "url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine",
-        "title": "BeMedicationLine"
-      }
-    ],
-    "MedicationRequest": [
-      {
-        "url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationPrescription",
-        "title": "BeMedicationPrescription"
+        "url": "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationline",
+        "title": "BEMedicationLine"
       }
     ]
   },
   "usage": {
-    "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationDispense.recorded": [
-      "MedicationDispense"
-    ],
-    "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationRequest.statusChanged": [
-      "MedicationRequest"
-    ],
-    "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence.code": [
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence": [
       "MedicationStatement"
     ],
     "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.url": [
@@ -155,10 +64,10 @@
     "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.version": [
       "NamingSystem"
     ],
-    "http://hl7.org/fhir/StructureDefinition/artifact-date|5.2.0": [
+    "http://hl7.org/fhir/StructureDefinition/artifact-date": [
       "MedicationStatement"
     ],
-    "http://hl7.org/fhir/StructureDefinition/artifact-version|5.2.0": [
+    "http://hl7.org/fhir/StructureDefinition/artifact-version": [
       "MedicationStatement"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
@@ -170,9 +79,6 @@
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
       "StructureDefinition.differential.element.binding",
       "StructureDefinition.snapshot.element.binding"
-    ],
-    "http://hl7.org/fhir/StructureDefinition/elementdefinition-identifier|5.2.0": [
-      "BeModelMedicationPrescription"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
       "StructureDefinition.snapshot.element.binding"
@@ -210,41 +116,29 @@
     "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment": [
       "ImplementationGuide.dependsOn"
     ],
+    "http://hl7.org/fhir/tools/StructureDefinition/logical-target": [
+      "StructureDefinition"
+    ],
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version": [
       "StructureDefinition.snapshot"
     ],
-    "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-pseudonymization": [
-      "MedicationRequest.subject.identifier.value"
+    "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtDispenseRequestNeededCategory": [
+      "MedicationStatement"
     ],
-    "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BasedOnMedicationLine": [
-      "MedicationDispense",
-      "MedicationRequest"
+    "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtDosageOverride": [
+      "MedicationStatement.dosage"
     ],
-    "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtInstructionsForReimbursement": [
-      "MedicationRequest"
+    "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtDosageOverrideReason": [
+      "MedicationStatement.dosage"
     ],
-    "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtMedicationLineRegistrationStatus": [
+    "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtExposureCategory": [
       "MedicationStatement"
     ],
     "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtMedicationType": [
       "MedicationStatement.medication[x]"
-    ],
-    "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtOffLabel": [
-      "MedicationDispense",
-      "MedicationRequest",
-      "MedicationStatement"
-    ],
-    "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecordedDate": [
-      "MedicationStatement"
-    ],
-    "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtRecorder": [
-      "MedicationStatement"
-    ],
-    "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationExposureCategory": [
-      "MedicationStatement"
     ]
   }
 }

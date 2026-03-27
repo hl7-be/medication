@@ -32,22 +32,22 @@
   fhir:title [ fhir:v "Dispenser Types"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:experimental [ fhir:v false] ; # 
-  fhir:date [ fhir:v "2026-03-24T06:59:28+00:00"^^xsd:dateTime] ; # 
-  fhir:publisher [ fhir:v "eHealth Platform"] ; # 
+  fhir:date [ fhir:v "2026-03-27T06:32:22+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 Belgium"] ; # 
   fhir:contact ( [
-     fhir:name [ fhir:v "eHealth Platform" ] ;
+     fhir:name [ fhir:v "HL7 Belgium" ] ;
      fhir:telecom ( [
        fhir:system [ fhir:v "url" ] ;
-       fhir:value [ fhir:v "https://www.ehealth.fgov.be/standards/fhir" ]
+       fhir:value [ fhir:v "https://www.hl7belgium.org" ]
      ] [
        fhir:system [ fhir:v "email" ] ;
-       fhir:value [ fhir:v "support@be-ehealth-standards.atlassian.net" ]
+       fhir:value [ fhir:v "hl7belgium@hl7belgium.org" ]
      ] )
   ] [
      fhir:name [ fhir:v "Message Structure eHealth" ] ;
      fhir:telecom ( [
        fhir:system [ fhir:v "email" ] ;
-       fhir:value [ fhir:v "support@be-ehealth-standards.atlassian.net" ] ;
+       fhir:value [ fhir:v "message-structure@ehealth.fgov.be" ] ;
        fhir:use [ fhir:v "work" ]
      ] )
   ] ) ; # 

@@ -11,7 +11,7 @@
   fhir:id [ fhir:v "be-ns-prescription-ids"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: NamingSystem be-ns-prescription-ids</b></p><a name=\"be-ns-prescription-ids\"> </a><a name=\"hcbe-ns-prescription-ids\"> </a><h3>Summary</h3><table class=\"grid\"><tr><td>Defining URL</td><td>https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-prescription-ids</td></tr><tr><td>Version</td><td>1.1.0</td></tr><tr><td>Name</td><td>BeNSPrescriptions</td></tr><tr><td>Status</td><td>active</td></tr><tr><td>Definition</td><td><div><p>Naming System - Prescription IDs</p>\n</div></td></tr><tr><td>Publisher</td><td>eHealth Platform</td></tr></table><h3>Identifiers</h3><table class=\"grid\"><tr><td><b>Type</b></td><td><b>Value</b></td><td><b>Preferred</b></td></tr><tr><td>URI</td><td>https://www.ehealth.fgov.be/standards/fhir/NamingSystem/prescription-id</td><td>true</td></tr></table></div>"^^rdf:XMLLiteral ]
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: NamingSystem be-ns-prescription-ids</b></p><a name=\"be-ns-prescription-ids\"> </a><a name=\"hcbe-ns-prescription-ids\"> </a><h3>Summary</h3><table class=\"grid\"><tr><td>Defining URL</td><td>https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-prescription-ids</td></tr><tr><td>Version</td><td>1.1.0</td></tr><tr><td>Name</td><td>BeNSPrescriptions</td></tr><tr><td>Status</td><td>active</td></tr><tr><td>Definition</td><td><div><p>Naming System - Prescription IDs</p>\n</div></td></tr><tr><td>Publisher</td><td>HL7 Belgium</td></tr></table><h3>Identifiers</h3><table class=\"grid\"><tr><td><b>Type</b></td><td><b>Value</b></td><td><b>Preferred</b></td></tr><tr><td>URI</td><td>https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/prescription-id</td><td>true</td></tr></table></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:extension ( [
      fhir:url [
@@ -37,21 +37,21 @@
   fhir:status [ fhir:v "active"] ; # 
   fhir:kind [ fhir:v "identifier"] ; # 
   fhir:date [ fhir:v "2020-07-24"^^xsd:date] ; # 
-  fhir:publisher [ fhir:v "eHealth Platform"] ; # 
+  fhir:publisher [ fhir:v "HL7 Belgium"] ; # 
   fhir:contact ( [
-     fhir:name [ fhir:v "eHealth Platform" ] ;
+     fhir:name [ fhir:v "HL7 Belgium" ] ;
      fhir:telecom ( [
        fhir:system [ fhir:v "url" ] ;
-       fhir:value [ fhir:v "https://www.ehealth.fgov.be/standards/fhir" ]
+       fhir:value [ fhir:v "https://www.hl7belgium.org" ]
      ] [
        fhir:system [ fhir:v "email" ] ;
-       fhir:value [ fhir:v "support@be-ehealth-standards.atlassian.net" ]
+       fhir:value [ fhir:v "hl7belgium@hl7belgium.org" ]
      ] )
   ] [
      fhir:name [ fhir:v "Message Structure eHealth" ] ;
      fhir:telecom ( [
        fhir:system [ fhir:v "email" ] ;
-       fhir:value [ fhir:v "support@be-ehealth-standards.atlassian.net" ] ;
+       fhir:value [ fhir:v "message-structure@ehealth.fgov.be" ] ;
        fhir:use [ fhir:v "work" ]
      ] )
   ] ) ; # 
@@ -68,7 +68,7 @@
   ] ) ; # 
   fhir:uniqueId ( [
      fhir:type [ fhir:v "uri" ] ;
-     fhir:value [ fhir:v "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/prescription-id" ] ;
+     fhir:value [ fhir:v "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/prescription-id" ] ;
      fhir:preferred [ fhir:v true ]
   ] ) . # 
 

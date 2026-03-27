@@ -1,17 +1,5 @@
 {
   "codeSystems" : [{
-    "url" : "http://hl7.org/fhir/CodeSystem/medicationrequest-status",
-    "version" : "4.0.1",
-    "status" : "draft",
-    "name" : "medicationrequest Status",
-    "title" : "Medicationrequest  status",
-    "description" : "MedicationRequest Status Codes",
-    "oids" : ["2.16.840.1.113883.4.642.4.1377"],
-    "uses" : {
-    },
-    "ValueSet-BeMedicationPrescriptionStatusVS.html" : "Medication Prescription Status"
-  },
-  {
     "url" : "http://snomed.info/sct",
     "version" : null,
     "status" : "active",
@@ -21,33 +9,8 @@
     "oids" : ["2.16.840.1.113883.6.96"],
     "uses" : {
     },
-    "ValueSet-BeRouteOfAdministrationVS.html" : "Route of Administration ValueSet",
-    "http://hl7.org/fhir/R4/valueset-medication-codes.html" : "SNOMED CT Medication Codes",
-    "ValueSet-BeMedicationExposureIntentVS.html" : "Medication exposure intent"
-  },
-  {
-    "url" : "http://terminology.hl7.org/CodeSystem/medicationdispense-status",
-    "version" : "4.0.1",
-    "status" : "draft",
-    "name" : "MedicationDispense Status Codes",
-    "title" : "Medication dispense  status  codes",
-    "description" : "MedicationDispense Status Codes",
-    "oids" : ["2.16.840.1.113883.4.642.4.1313"],
-    "uses" : {
-    },
-    "http://hl7.org/fhir/R4/valueset-medicationdispense-status.html" : "Medication dispense  status  codes"
-  },
-  {
-    "url" : "http://terminology.hl7.org/fhir/CodeSystem/medicationdispense-status-reason",
-    "version" : "4.0.1",
-    "status" : "draft",
-    "name" : "MedicationDispense Status Reason Codes",
-    "title" : "Medication dispense  status  reason  codes",
-    "description" : "MedicationDispense Status Codes",
-    "oids" : ["2.16.840.1.113883.4.642.4.1317"],
-    "uses" : {
-    },
-    "http://hl7.org/fhir/R4/valueset-medicationdispense-status-reason.html" : "Medication dispense  status  reason  codes"
+    "ValueSet-medication-exposure-category-vs.html" : "Medication exposure intent",
+    "http://hl7.org/fhir/R4/valueset-medication-codes.html" : "SNOMED CT Medication Codes"
   },
   {
     "url" : "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty",
@@ -61,69 +24,25 @@
     "ValueSet-be-vs-dispenser-types.html" : "Dispenser Types"
   },
   {
-    "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatus",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-line-origin-type",
     "version" : "1.1.0",
     "status" : "active",
-    "name" : "BeMedicationLineAdherenceStatus",
-    "title" : "Medication Line Adherence Status",
-    "description" : "Medication Line Adherence Status - ValueSet.",
+    "name" : "MedicationLineOrigintype",
+    "title" : "Medication origin type",
+    "description" : "Medication treatment origin type - what is the type of care that originated the medication treatment",
     "uses" : {
     },
-    "ValueSet-BeMedicationLineAdherenceStatusVS.html" : "BeExtAdherenceStatus"
+    "ValueSet-medication-line-origin-type-vs.html" : "Medication origin type ValueSet"
   },
   {
-    "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatusReason",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
     "version" : "1.1.0",
-    "status" : "active",
-    "name" : "BeMedicationLineAdherenceStatusReason",
-    "title" : "Adherence Status Reason",
-    "description" : "Reasons for non-adherence to a treatment or intervention.",
-    "uses" : {
-    },
-    "ValueSet-BeMedicationLineAdherenceStatusReasonVS.html" : "Adherence Status Reason ValueSet"
-  },
-  {
-    "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineOriginType",
-    "version" : "1.1.0",
-    "status" : "active",
-    "name" : "BeMedicationLineOriginType",
-    "title" : "Medication origin Type",
-    "description" : "Medication origin type",
-    "uses" : {
-    },
-    "ValueSet-BeMedicationLineOriginTypeVS.html" : "Medication origin type value set"
-  },
-  {
-    "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineRegistrationStatus",
-    "version" : "1.1.0",
-    "status" : "active",
-    "name" : "BeMedicationLineRegistrationStatus",
-    "title" : "Medication Line Registration Status",
-    "description" : "This code system defines the registration statuses for medication lines.",
-    "uses" : {
-    },
-    "ValueSet-BeMedicationLineRegistrationStatusVS.html" : "Medication Line Registration Status Value Set"
-  },
-  {
-    "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationRequestReimbursementType",
-    "version" : "1.1.0",
-    "status" : "active",
-    "name" : "BeMedicationRequestReimbursementType",
-    "title" : "Medication request reimbursement type",
-    "description" : "Medication request reimbursement type - instructions for reimbursement of the medication request",
-    "uses" : {
-    },
-    "ValueSet-BeMedicationRequestReimbursementTypeVS.html" : "Medication request reimbursement type ValueSet"
-  },
-  {
-    "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationType",
-    "version" : "1.1.0",
-    "status" : "active",
-    "name" : "BeMedicationType",
+    "status" : "draft",
+    "name" : "BEMedicationType",
     "title" : "Medication preparation Type",
     "description" : "Medication preparation type",
     "uses" : {
     },
-    "ValueSet-BeMedicationTypeVS.html" : "Medication preparation Type value set"
+    "ValueSet-medication-type-vs.html" : "Medication preparation Type value set"
   }]
 }
