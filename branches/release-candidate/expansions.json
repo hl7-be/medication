@@ -1,0 +1,291 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "8653f4d1-4e3f-4767-954a-adef3527d290",
+  "meta" : {
+    "lastUpdated" : "2026-03-27T06:32:22.940+00:00"
+  },
+  "type" : "collection",
+  "entry" : [{
+    "fullUrl" : "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/be-vs-dispenser-types",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"https://www.ehealth.fgov.be/standards/fhir/core/2.1.2/CodeSystem-cd-hcparty.html\">codesystem BeCdHcParty v2.1.2 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty|2.1.2\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></p><p>This value set contains 7 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty-deptpharmacy\"> </a><code>https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"https://www.ehealth.fgov.be/standards/fhir/core/2.1.2/CodeSystem-cd-hcparty.html#cd-hcparty-deptpharmacy\">deptpharmacy</a></td><td>pharmacy service or department within an organisation</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty&quot;, &quot;version&quot;: &quot;2.1.2&quot;, &quot;code&quot;: &quot;deptpharmacy&quot;, &quot;display&quot;: &quot;pharmacy service or department within an organisation&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty&quot;&gt;&lt;version value=&quot;2.1.2&quot;&gt;&lt;code value=&quot;deptpharmacy&quot;&gt;&lt;display value=&quot;pharmacy service or department within an organisation&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty-perspharmacist\"> </a><code>https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"https://www.ehealth.fgov.be/standards/fhir/core/2.1.2/CodeSystem-cd-hcparty.html#cd-hcparty-perspharmacist\">perspharmacist</a></td><td>pharmacist</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty&quot;, &quot;version&quot;: &quot;2.1.2&quot;, &quot;code&quot;: &quot;perspharmacist&quot;, &quot;display&quot;: &quot;pharmacist&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty&quot;&gt;&lt;version value=&quot;2.1.2&quot;&gt;&lt;code value=&quot;perspharmacist&quot;&gt;&lt;display value=&quot;pharmacist&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty-orgpharmacy\"> </a><code>https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"https://www.ehealth.fgov.be/standards/fhir/core/2.1.2/CodeSystem-cd-hcparty.html#cd-hcparty-orgpharmacy\">orgpharmacy</a></td><td>independent pharmacy</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty&quot;, &quot;version&quot;: &quot;2.1.2&quot;, &quot;code&quot;: &quot;orgpharmacy&quot;, &quot;display&quot;: &quot;independent pharmacy&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty&quot;&gt;&lt;version value=&quot;2.1.2&quot;&gt;&lt;code value=&quot;orgpharmacy&quot;&gt;&lt;display value=&quot;independent pharmacy&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty-perspharmacyassistant\"> </a><code>https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"https://www.ehealth.fgov.be/standards/fhir/core/2.1.2/CodeSystem-cd-hcparty.html#cd-hcparty-perspharmacyassistant\">perspharmacyassistant</a></td><td>pharmacy assistant</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty&quot;, &quot;version&quot;: &quot;2.1.2&quot;, &quot;code&quot;: &quot;perspharmacyassistant&quot;, &quot;display&quot;: &quot;pharmacy assistant&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty&quot;&gt;&lt;version value=&quot;2.1.2&quot;&gt;&lt;code value=&quot;perspharmacyassistant&quot;&gt;&lt;display value=&quot;pharmacy assistant&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty-perspharmacistclinicalbiologist\"> </a><code>https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"https://www.ehealth.fgov.be/standards/fhir/core/2.1.2/CodeSystem-cd-hcparty.html#cd-hcparty-perspharmacistclinicalbiologist\">perspharmacistclinicalbiologist</a></td><td>pharmacist-clinical biologist</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty&quot;, &quot;version&quot;: &quot;2.1.2&quot;, &quot;code&quot;: &quot;perspharmacistclinicalbiologist&quot;, &quot;display&quot;: &quot;pharmacist-clinical biologist&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty&quot;&gt;&lt;version value=&quot;2.1.2&quot;&gt;&lt;code value=&quot;perspharmacistclinicalbiologist&quot;&gt;&lt;display value=&quot;pharmacist-clinical biologist&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty-persdentist\"> </a><code>https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"https://www.ehealth.fgov.be/standards/fhir/core/2.1.2/CodeSystem-cd-hcparty.html#cd-hcparty-persdentist\">persdentist</a></td><td>dentist</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty&quot;, &quot;version&quot;: &quot;2.1.2&quot;, &quot;code&quot;: &quot;persdentist&quot;, &quot;display&quot;: &quot;dentist&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty&quot;&gt;&lt;version value=&quot;2.1.2&quot;&gt;&lt;code value=&quot;persdentist&quot;&gt;&lt;display value=&quot;dentist&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty-deptdentistry\"> </a><code>https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"https://www.ehealth.fgov.be/standards/fhir/core/2.1.2/CodeSystem-cd-hcparty.html#cd-hcparty-deptdentistry\">deptdentistry</a></td><td>dentistry</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty&quot;, &quot;version&quot;: &quot;2.1.2&quot;, &quot;code&quot;: &quot;deptdentistry&quot;, &quot;display&quot;: &quot;dentistry&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty&quot;&gt;&lt;version value=&quot;2.1.2&quot;&gt;&lt;code value=&quot;deptdentistry&quot;&gt;&lt;display value=&quot;dentistry&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
+      },
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/be-vs-dispenser-types",
+      "version" : "1.1.0",
+      "name" : "DispenserTypes",
+      "title" : "Dispenser Types",
+      "status" : "draft",
+      "experimental" : false,
+      "date" : "2026-03-27T06:32:22+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "BE",
+          "display" : "Belgium"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:3cd57903-7d95-4e3b-b402-242e4edb03ac",
+        "timestamp" : "2026-03-27T06:34:05+00:00",
+        "total" : 7,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty|2.1.2"
+        }],
+        "contains" : [{
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty",
+          "code" : "deptpharmacy",
+          "display" : "pharmacy service or department within an organisation"
+        },
+        {
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty",
+          "code" : "perspharmacist",
+          "display" : "pharmacist"
+        },
+        {
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty",
+          "code" : "orgpharmacy",
+          "display" : "independent pharmacy"
+        },
+        {
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty",
+          "code" : "perspharmacyassistant",
+          "display" : "pharmacy assistant"
+        },
+        {
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty",
+          "code" : "perspharmacistclinicalbiologist",
+          "display" : "pharmacist-clinical biologist"
+        },
+        {
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty",
+          "code" : "persdentist",
+          "display" : "dentist"
+        },
+        {
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty",
+          "code" : "deptdentistry",
+          "display" : "dentistry"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/medication-exposure-category-vs",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025<span class=\"copy-text-inline\"><button data-clipboard-text=\"http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></p><p>This value set contains 2 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-http://snomed.info/sct-360271000\"> </a><code>http://snomed.info/sct</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://snomed.info/id/360271000\">360271000</a></td><td>Prophylaxis - intent</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;360271000&quot;, &quot;display&quot;: &quot;Prophylaxis - intent&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;360271000&quot;&gt;&lt;display value=&quot;Prophylaxis - intent&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://snomed.info/sct-360270004\"> </a><code>http://snomed.info/sct</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://snomed.info/id/360270004\">360270004</a></td><td>Therapy - action</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;360270004&quot;, &quot;display&quot;: &quot;Therapy - action&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;360270004&quot;&gt;&lt;display value=&quot;Therapy - action&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
+      },
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/medication-exposure-category-vs",
+      "version" : "1.1.0",
+      "name" : "MedicationExposureCategoryVS",
+      "title" : "Medication exposure intent",
+      "status" : "draft",
+      "experimental" : false,
+      "date" : "2026-03-27T06:32:22+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "BE",
+          "display" : "Belgium"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:fec3e0d9-bed1-40cd-88e5-c3bf6ae99ea2",
+        "timestamp" : "2026-03-27T06:34:05+00:00",
+        "total" : 2,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-valueset",
+          "valueUri" : "null"
+        },
+        {
+          "name" : "includeDefinition",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
+        }],
+        "contains" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "360271000",
+          "display" : "Prophylaxis - intent"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "360270004",
+          "display" : "Therapy - action"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/medication-line-origin-type-vs",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-medication-line-origin-type.html\">codesystem Medication origin type v1.1.0 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-line-origin-type|1.1.0\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></p><p>This value set contains 2 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-line-origin-type-ambulatory\"> </a><code>https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-line-origin-type</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-medication-line-origin-type.html#medication-line-origin-type-ambulatory\">ambulatory</a></td><td>Ambulatory</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-line-origin-type&quot;, &quot;version&quot;: &quot;1.1.0&quot;, &quot;code&quot;: &quot;ambulatory&quot;, &quot;display&quot;: &quot;Ambulatory&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-line-origin-type&quot;&gt;&lt;version value=&quot;1.1.0&quot;&gt;&lt;code value=&quot;ambulatory&quot;&gt;&lt;display value=&quot;Ambulatory&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-line-origin-type-hospital\"> </a><code>https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-line-origin-type</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-medication-line-origin-type.html#medication-line-origin-type-hospital\">hospital</a></td><td>Hospital</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-line-origin-type&quot;, &quot;version&quot;: &quot;1.1.0&quot;, &quot;code&quot;: &quot;hospital&quot;, &quot;display&quot;: &quot;Hospital&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-line-origin-type&quot;&gt;&lt;version value=&quot;1.1.0&quot;&gt;&lt;code value=&quot;hospital&quot;&gt;&lt;display value=&quot;Hospital&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
+      },
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/medication-line-origin-type-vs",
+      "version" : "1.1.0",
+      "name" : "MedicationLineOrigintypeVS",
+      "title" : "Medication origin type ValueSet",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-03-27T06:32:22+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "BE",
+          "display" : "Belgium"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:5207119f-f40e-43c6-a056-91f2b502bb81",
+        "timestamp" : "2026-03-27T06:34:05+00:00",
+        "total" : 2,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-line-origin-type|1.1.0"
+        }],
+        "contains" : [{
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-line-origin-type",
+          "code" : "ambulatory",
+          "display" : "Ambulatory"
+        },
+        {
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-line-origin-type",
+          "code" : "hospital",
+          "display" : "Hospital"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/medication-type-vs",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-medication-type.html\">codesystem Medication preparation Type v1.1.0 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type|1.1.0\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></p><p>This value set contains 4 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type-magistral\"> </a><code>https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-medication-type.html#medication-type-magistral\">magistral</a></td><td>Magistral preparation</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type&quot;, &quot;version&quot;: &quot;1.1.0&quot;, &quot;code&quot;: &quot;magistral&quot;, &quot;display&quot;: &quot;Magistral preparation&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type&quot;&gt;&lt;version value=&quot;1.1.0&quot;&gt;&lt;code value=&quot;magistral&quot;&gt;&lt;display value=&quot;Magistral preparation&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type-officinal\"> </a><code>https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-medication-type.html#medication-type-officinal\">officinal</a></td><td>Officinal preparation</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type&quot;, &quot;version&quot;: &quot;1.1.0&quot;, &quot;code&quot;: &quot;officinal&quot;, &quot;display&quot;: &quot;Officinal preparation&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type&quot;&gt;&lt;version value=&quot;1.1.0&quot;&gt;&lt;code value=&quot;officinal&quot;&gt;&lt;display value=&quot;Officinal preparation&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type-medicinal-product\"> </a><code>https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-medication-type.html#medication-type-medicinal-product\">medicinal-product</a></td><td>Medicinal Product</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type&quot;, &quot;version&quot;: &quot;1.1.0&quot;, &quot;code&quot;: &quot;medicinal-product&quot;, &quot;display&quot;: &quot;Medicinal Product&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type&quot;&gt;&lt;version value=&quot;1.1.0&quot;&gt;&lt;code value=&quot;medicinal-product&quot;&gt;&lt;display value=&quot;Medicinal Product&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type-non-medicinal-product\"> </a><code>https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-medication-type.html#medication-type-non-medicinal-product\">non-medicinal-product</a></td><td>non-medicinal product e.g. supplement</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type&quot;, &quot;version&quot;: &quot;1.1.0&quot;, &quot;code&quot;: &quot;non-medicinal-product&quot;, &quot;display&quot;: &quot;non-medicinal product e.g. supplement&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type&quot;&gt;&lt;version value=&quot;1.1.0&quot;&gt;&lt;code value=&quot;non-medicinal-product&quot;&gt;&lt;display value=&quot;non-medicinal product e.g. supplement&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
+      },
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/medication-type-vs",
+      "version" : "1.1.0",
+      "name" : "BEMedicationTypeVS",
+      "title" : "Medication preparation Type value set",
+      "status" : "draft",
+      "experimental" : false,
+      "date" : "2026-03-27T06:32:22+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "BE",
+          "display" : "Belgium"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:675c20e3-070b-4bfb-a804-4844607d2622",
+        "timestamp" : "2026-03-27T06:34:05+00:00",
+        "total" : 4,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type|1.1.0"
+        }],
+        "contains" : [{
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+          "code" : "magistral",
+          "display" : "Magistral preparation"
+        },
+        {
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+          "code" : "officinal",
+          "display" : "Officinal preparation"
+        },
+        {
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+          "code" : "medicinal-product",
+          "display" : "Medicinal Product"
+        },
+        {
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+          "code" : "non-medicinal-product",
+          "display" : "non-medicinal product e.g. supplement"
+        }]
+      }
+    }
+  }]
+}

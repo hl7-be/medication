@@ -1,0 +1,71 @@
+"Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: RIM Mapping"
+"BeMedicationRecord","","","",0,*,"","","","","Base for all elements","Base definition for all elements in a resource.","","","","","","","","","",,,,,"",,,,"Element",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","n/a"
+"BeMedicationRecord.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
+"BeMedicationRecord.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
+"BeMedicationRecord.patient","","","",1,1,"","","","BackboneElement {[]} {[]}
+","The patient that has the medication","The patient that has the medication","","","","","","","","","",,,,,"",,,,"BeMedicationRecord.patient",1,1,"",""
+"BeMedicationRecord.patient.name","","","",0,1,"","","","HumanName {[]} {[]}
+","The name of the patient","The name of the patient","","","","","","","","","",,,,,"",,,,"BeMedicationRecord.patient.name",0,1,"",""
+"BeMedicationRecord.patient.identifier","","","",0,1,"","","","CodeableReference {[]} {[]}
+","An identifier or reference to the patient defined elsewhere","An identifier or reference to the patient defined elsewhere","","","","","","","","","",,,,,"",,,,"BeMedicationRecord.patient.identifier",0,1,"",""
+"BeMedicationRecord.recordIdentifier","","","",0,*,"","","","Identifier {[]} {[]}
+","An identifier of the medication record when it needs to be exchanged or tracked","An identifier of the medication record when it needs to be exchanged or tracked","","","","","","","","","",,,,,"",,,,"BeMedicationRecord.recordIdentifier",0,*,"",""
+"BeMedicationRecord.summary","","","",0,*,"","","","BackboneElement {[]} {[]}
+","Summary section(s)","An overview (possibly aggregated) of the medication","","","","","","","","","",,,,,"",,,,"BeMedicationRecord.summary",0,*,"",""
+"BeMedicationRecord.summary.identifier","","","",0,*,"","","","Identifier {[]} {[]}
+","Unique business identifier for this summary","Unique business identifier for this summary","","","","","","","","","",,,,,"",,,,"BeMedicationRecord.summary.identifier",0,*,"",""
+"BeMedicationRecord.summary.recordDate","","","",0,1,"","","","date {[]} {[]}
+","The date the summary was created","The date the summary was created","","","","","","","","","",,,,,"",,,,"BeMedicationRecord.summary.recordDate",0,1,"",""
+"BeMedicationRecord.summary.lastUpdated","","","",0,1,"","","","date {[]} {[]}
+","The date the summary was last updated","The date the summary was last updated","","","","","","","","","",,,,,"",,,,"BeMedicationRecord.summary.lastUpdated",0,1,"",""
+"BeMedicationRecord.summary.author","","","",1,1,"","","","Reference {[]} {[]}
+","The author of the summary","The author of the summary","","","","","","","","","",,,,,"",,,,"BeMedicationRecord.summary.author",1,1,"",""
+"BeMedicationRecord.summary.type","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","The type of summary","The type of summary, which determines the rules for the creation of this summary","","","","","","","","","",,"required","","be-vs-medication-summary-types","",,,,"BeMedicationRecord.summary.type",1,1,"",""
+"BeMedicationRecord.summary.basedOn","","","",0,*,"","","","Reference {[]} {[]}
+","The information that this summary is basedOn","The information that this summary is basedOn, e.g. Provenance, MedicationRequest, MedicationDispense..","","","","","","","","","",,,,,"",,,,"BeMedicationRecord.summary.basedOn",0,*,"",""
+"BeMedicationRecord.summary.criteria","","","",0,1,"","","","Annotation {[]} {[]}
+","A description of the criteria for this summary","A description of the criteria for this summary","","","","","","","","","",,,,,"",,,,"BeMedicationRecord.summary.criteria",0,1,"",""
+"BeMedicationRecord.summary.period","","","",0,1,"","","","Period {[]} {[]}
+","The period covered by this summary","The period to which the summary refers","","","","","","","","","",,,,,"",,,,"BeMedicationRecord.summary.period",0,1,"",""
+"BeMedicationRecord.summary.treatmentLine","","","",0,*,"","","","BackboneElement {[]} {[]}
+","Each line in the summary","Each line in the summary - different types of summary may have different criteria for what constitutes a unique line","","","","","","","","","",,,,,"",,,,"BeMedicationRecord.summary.treatmentLine",0,*,"",""
+"BeMedicationRecord.summary.treatmentLine.identifier","","","",0,*,"","","","Identifier {[]} {[]}
+","Unique business identifier for this treatment line","Unique business identifier for this treatment line","","","","","","","","","",,,,,"",,,,"BeMedicationRecord.summary.treatmentLine.identifier",0,*,"",""
+"BeMedicationRecord.summary.treatmentLine.details","","","",0,1,"","","","BackboneElement {[]} {[]}
+","The details of the medication","The details of the medication","","","","","","","","","",,,,,"",,,,"BeMedicationRecord.summary.treatmentLine.details",0,1,"",""
+"BeMedicationRecord.summary.treatmentLine.details.dosage","","","",0,1,"","","","Dosage {[]} {[]}
+","The medication dosage","The medication dosage","","","","","","","","","",,,,,"",,,,"BeMedicationRecord.summary.treatmentLine.details.dosage",0,1,"",""
+"BeMedicationRecord.summary.treatmentLine.details.status","","","",1,1,"","","","code {[]} {[]}
+","The medication status","The medication status","","","","","","","","","",,,,,"",,,,"BeMedicationRecord.summary.treatmentLine.details.status",1,1,"",""
+"BeMedicationRecord.summary.treatmentLine.details.type","","","",0,1,"","","","code {[]} {[]}
+","The type of medication - OTC, hospital, or other","The type of medication - OTC, hospital, or other","","","","","","","","","",,,,,"",,,,"BeMedicationRecord.summary.treatmentLine.details.type",0,1,"",""
+"BeMedicationRecord.summary.treatmentLine.details.indication","","","",0,*,"","","","CodeableReference {[]} {[]}
+","The indication(s) for which this medication is taken","The indication(s) for which this medication is taken","","","","","","","","","",,,,,"",,,,"BeMedicationRecord.summary.treatmentLine.details.indication",0,*,"",""
+"BeMedicationRecord.summary.treatmentLine.details.medication","","","",1,*,"","","","BackboneElement {[]} {[]}
+","The medication that is planned or taken","The medication that is planned or taken","","","","","","","","","",,,,,"",,,,"BeMedicationRecord.summary.treatmentLine.details.medication",1,*,"",""
+"BeMedicationRecord.summary.treatmentLine.details.medication.reference","","","",0,1,"","","","Reference {[]} {[]}
+","A reference to a medication description","A reference to a medication description","","","","","","","","","",,,,,"",,,,"BeMedicationRecord.summary.treatmentLine.details.medication.reference",0,1,"",""
+"BeMedicationRecord.summary.treatmentLine.details.medication.code","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","The code of the medication","The code of the medication","","","","","","","","","",,,,,"",,,,"BeMedicationRecord.summary.treatmentLine.details.medication.code",0,1,"",""
+"BeMedicationRecord.summary.treatmentLine.details.medication.class","","","",0,*,"","","","CodeableConcept {[]} {[]}
+","The class of the medication e.g. ATC","The class of the medication e.g. ATC","","","","","","","","","",,,,,"",,,,"BeMedicationRecord.summary.treatmentLine.details.medication.class",0,*,"",""
+"BeMedicationRecord.historyDetails","","","",0,1,"","","","BackboneElement {[]} {[]}
+","The details about the medication history","The details about the medication history","","","","","","","","","",,,,,"",,,,"BeMedicationRecord.historyDetails",0,1,"",""
+"BeMedicationRecord.historyDetails.orders","","","",0,*,"","","","Reference {[]} {[]}
+","History of orders and order changes for the medication","History of orders and order changes for the medication","","","","","","","","","",,,,,"",,,,"BeMedicationRecord.historyDetails.orders",0,*,"",""
+"BeMedicationRecord.historyDetails.dispenses","","","",0,*,"","","","Reference {[]} {[]}
+","History of dispenses of the medication","History of dispenses of the medication","","","","","","","","","",,,,,"",,,,"BeMedicationRecord.historyDetails.dispenses",0,*,"",""
+"BeMedicationRecord.historyDetails.administrations","","","",0,*,"","","","Reference {[]} {[]}
+","History of administrations of the medication","History of administrations of the medication","","","","","","","","","",,,,,"",,,,"BeMedicationRecord.historyDetails.administrations",0,*,"",""
+"BeMedicationRecord.historyDetails.adverseEvents","","","",0,*,"","","","Reference {[]} {[]}
+","History of adverse events","History of adverse events","","","","","","","","","",,,,,"",,,,"BeMedicationRecord.historyDetails.adverseEvents",0,*,"",""
+"BeMedicationRecord.medicationAllergyIntolerance","","","",0,*,"","","","Reference {[]} {[]}
+","Known Allergies to medication","Known Allergies to medication","","","","","","","","","",,,,,"",,,,"BeMedicationRecord.medicationAllergyIntolerance",0,*,"",""

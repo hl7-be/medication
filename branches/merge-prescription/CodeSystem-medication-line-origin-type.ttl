@@ -1,0 +1,73 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-line-origin-type> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "medication-line-origin-type"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem medication-line-origin-type</b></p><a name=\"medication-line-origin-type\"> </a><a name=\"hcmedication-line-origin-type\"> </a><p>This case-sensitive code system <code>https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-line-origin-type</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">ambulatory<a name=\"medication-line-origin-type-ambulatory\"> </a></td><td>Ambulatory</td></tr><tr><td style=\"white-space:nowrap\">hospital<a name=\"medication-line-origin-type-hospital\"> </a></td><td>Hospital</td></tr><tr><td style=\"white-space:nowrap\">self-medication<a name=\"medication-line-origin-type-self-medication\"> </a></td><td>Self-medication</td></tr><tr><td style=\"white-space:nowrap\">with-request<a name=\"medication-line-origin-type-with-request\"> </a></td><td>With request</td></tr><tr><td style=\"white-space:nowrap\">without-request<a name=\"medication-line-origin-type-without-request\"> </a></td><td>Without request</td></tr><tr><td style=\"white-space:nowrap\">pharmacist-advice<a name=\"medication-line-origin-type-pharmacist-advice\"> </a></td><td>Pharmacist advice</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-line-origin-type"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.1.0"] ; # 
+  fhir:name [ fhir:v "MedicationLineOrigintype"] ; # 
+  fhir:title [ fhir:v "Medication origin type"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-07-13T10:12:54+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 Belgium"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Belgium" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.hl7belgium.org" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "hl7belgium@hl7belgium.org" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Message Structure eHealth" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "message-structure@ehealth.fgov.be" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Medication treatment origin type - what is the type of care that originated the medication treatment"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "BE" ] ;
+       fhir:display [ fhir:v "Belgium" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "6"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "ambulatory" ] ;
+     fhir:display [ fhir:v "Ambulatory" ]
+  ] [
+     fhir:code [ fhir:v "hospital" ] ;
+     fhir:display [ fhir:v "Hospital" ]
+  ] [
+     fhir:code [ fhir:v "self-medication" ] ;
+     fhir:display [ fhir:v "Self-medication" ]
+  ] [
+     fhir:code [ fhir:v "with-request" ] ;
+     fhir:display [ fhir:v "With request" ]
+  ] [
+     fhir:code [ fhir:v "without-request" ] ;
+     fhir:display [ fhir:v "Without request" ]
+  ] [
+     fhir:code [ fhir:v "pharmacist-advice" ] ;
+     fhir:display [ fhir:v "Pharmacist advice" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

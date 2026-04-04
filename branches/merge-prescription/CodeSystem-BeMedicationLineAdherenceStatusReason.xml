@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="BeMedicationLineAdherenceStatusReason"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem BeMedicationLineAdherenceStatusReason</b></p><a name="BeMedicationLineAdherenceStatusReason"> </a><a name="hcBeMedicationLineAdherenceStatusReason"> </a><p>This case-sensitive code system <code>https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatusReason</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">medprec<a name="BeMedicationLineAdherenceStatusReason-medprec"> </a></td><td>Medical precaution</td></tr><tr><td style="white-space:nowrap">immune<a name="BeMedicationLineAdherenceStatusReason-immune"> </a></td><td>Already immune</td></tr><tr><td style="white-space:nowrap">patobj<a name="BeMedicationLineAdherenceStatusReason-patobj"> </a></td><td>Patient objection</td></tr><tr><td style="white-space:nowrap">ostock<a name="BeMedicationLineAdherenceStatusReason-ostock"> </a></td><td>Out of stock</td></tr><tr><td style="white-space:nowrap">allergy<a name="BeMedicationLineAdherenceStatusReason-allergy"> </a></td><td>Allergy</td></tr><tr><td style="white-space:nowrap">modified<a name="BeMedicationLineAdherenceStatusReason-modified"> </a></td><td>Treatment modified</td></tr><tr><td style="white-space:nowrap">other<a name="BeMedicationLineAdherenceStatusReason-other"> </a></td><td>Other</td></tr></table><p><b>Additional Language Displays</b></p><table class="codes"><tr><td><b>Code</b></td><td><b>French (Belgium) (fr)</b></td><td><b>Nederlands (België) (Dutch (Belgium), nl)</b></td></tr><tr><td>medprec</td><td>Le patient présente actuellement un état médical pour lequel le traitement est contre-indiqué ou pour lequel une précaution est justifiée</td><td>De patiënt heeft momenteel een medische toestand waarvoor de behandeling gecontra-indiceerd is of waarvoor voorzichtigheid geboden is</td></tr><tr><td>immune</td><td>Les tests ont montré que le patient était déjà immunisé contre l’agent ciblé</td><td>Tests hebben aangetoond dat de patiënt al immuun was voor het gerichte agens</td></tr><tr><td>patobj</td><td>Le patient refuse de suivre le traitement</td><td>De patiënt weigert de behandeling te volgen</td></tr><tr><td>ostock</td><td>Le produit n’est pas disponible</td><td>Het product is niet beschikbaar</td></tr><tr><td>allergy</td><td>Le patient est allergique à au moins un des composants du médicament.</td><td>De patiënt is allergisch voor minstens één van de bestanddelen van het geneesmiddel</td></tr><tr><td>modified</td><td>Le traitement a été modifié</td><td>De behandeling werd aangepast</td></tr><tr><td>other</td><td>Autre situation</td><td>Andere situatie</td></tr></table></div>
+  </text>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatusReason"/>
+  <version value="1.1.0"/>
+  <name value="BeMedicationLineAdherenceStatusReason"/>
+  <title value="Adherence Status Reason"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-07-20T21:36:53+00:00"/>
+  <publisher value="HL7 Belgium"/>
+  <contact>
+    <name value="HL7 Belgium"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.hl7belgium.org"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="hl7belgium@hl7belgium.org"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Message Structure eHealth"/>
+    <telecom>
+      <system value="email"/>
+      <value value="message-structure@ehealth.fgov.be"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Reasons for non-adherence to a treatment or intervention."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
+      <display value="Belgium"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="7"/>
+  <concept>
+    <code value="medprec"/>
+    <display value="Medical precaution"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="Le patient présente actuellement un état médical pour lequel le traitement est contre-indiqué ou pour lequel une précaution est justifiée"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="De patiënt heeft momenteel een medische toestand waarvoor de behandeling gecontra-indiceerd is of waarvoor voorzichtigheid geboden is"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="immune"/>
+    <display value="Already immune"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="Les tests ont montré que le patient était déjà immunisé contre l’agent ciblé"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="Tests hebben aangetoond dat de patiënt al immuun was voor het gerichte agens"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="patobj"/>
+    <display value="Patient objection"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="Le patient refuse de suivre le traitement"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="De patiënt weigert de behandeling te volgen"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="ostock"/>
+    <display value="Out of stock"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="Le produit n’est pas disponible"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="Het product is niet beschikbaar"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="allergy"/>
+    <display value="Allergy"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="Le patient est allergique à au moins un des composants du médicament."/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="De patiënt is allergisch voor minstens één van de bestanddelen van het geneesmiddel"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="modified"/>
+    <display value="Treatment modified"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="Le traitement a été modifié"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="De behandeling werd aangepast"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="other"/>
+    <display value="Other"/>
+    <designation>
+      <language value="fr-BE"/>
+      <value value="Autre situation"/>
+    </designation>
+    <designation>
+      <language value="nl-BE"/>
+      <value value="Andere situatie"/>
+    </designation>
+  </concept>
+</CodeSystem>

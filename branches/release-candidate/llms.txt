@@ -1,0 +1,85 @@
+# hl7.fhir.be.medication#1.1.0: Medication
+
+## Pages
+
+* [Home](index.md)
+* [Record - Extended scenarios](medicationrecord-scenarios.md)
+* [Dispense - Use cases](usecases-dispense.md)
+* [Record - Use cases](usecases-medicationrecord.md)
+* [How to read this specification](howto.md)
+* [Artifacts Summary](artifacts.md)
+* [Downloads](downloads.md)
+* [Belgian  Record overview](medicationrecord.md)
+* [Definitions](definitions.md)
+
+## Resources
+
+### CodeSystems
+
+* [Medication origin type](CodeSystem-medication-line-origin-type.md)
+* [Medication preparation Type](CodeSystem-medication-type.md)
+
+### ValueSets
+
+* [Dispenser Types](ValueSet-be-vs-dispenser-types.md)
+* [Medication exposure intent](ValueSet-medication-exposure-category-vs.md)
+* [Medication origin type ValueSet](ValueSet-medication-line-origin-type-vs.md)
+* [Medication preparation Type value set](ValueSet-medication-type-vs.md)
+
+### Logicals
+
+* [Medicinal Product](StructureDefinition-BELMMedProduct.md)
+* [KMEHR Medication Schema v5.8](StructureDefinition-KMEHRMS.md)
+* [BeModelMedicationDispense](StructureDefinition-be-model-medicationdispense.md)
+* [Medication Line - logical model](StructureDefinition-be-model-medicationline.md)
+
+### Complex-type Profiles
+
+* [AD](StructureDefinition-AD.md)
+* [ANY](StructureDefinition-ANY.md)
+* [BL](StructureDefinition-BL.md)
+* [CD](StructureDefinition-CD.md)
+* [Class](StructureDefinition-Class.md)
+* [DT](StructureDefinition-DT.md)
+* [EN](StructureDefinition-EN.md)
+* [II](StructureDefinition-II.md)
+* [INT](StructureDefinition-INT.md)
+* [PQ](StructureDefinition-PQ.md)
+* [REAL](StructureDefinition-REAL.md)
+* [RTO](StructureDefinition-RTO.md)
+* [ST](StructureDefinition-ST.md)
+* [TS](StructureDefinition-TS.md)
+* [Untyped](StructureDefinition-Untyped.md)
+
+### Resource Profiles
+
+* [BeMedicationDispense](StructureDefinition-be-medicationdispense.md)
+* [BEMedicationLine](StructureDefinition-be-medicationline.md)
+
+### Extensions
+
+* [BeExtDispenseRequestNeededCategory](StructureDefinition-BeExtDispenseRequestNeededCategory.md)
+* [BeExtDosageOverride](StructureDefinition-BeExtDosageOverride.md)
+* [BeExtDosageOverrideReason](StructureDefinition-BeExtDosageOverrideReason.md)
+* [BeExtExposureCategory](StructureDefinition-BeExtExposureCategory.md)
+* [BeExtMedicationType](StructureDefinition-BeExtMedicationType.md)
+
+### ImplementationGuides
+
+* [Medication](index.md)
+
+### NamingSystems
+
+* [BeNSCNK](NamingSystem-be-ns-cnk-codes.md)
+* [BeNSCTIExtended](NamingSystem-be-ns-cti-extended-code.md)
+* [BeNSPrescriptions](NamingSystem-be-ns-prescription-ids.md)
+* [BeNSProductPackage](NamingSystem-be-ns-product-package-type.md)
+
+### Examples
+
+* [example-dispense-communitypharmacy-1med (MedicationDispense)](MedicationDispense-example-dispense-communitypharmacy-1med.md)
+* [example-dispense-hospital (MedicationDispense)](MedicationDispense-example-dispense-hospital.md)
+* [example-minimal-dispense (MedicationDispense)](MedicationDispense-example-minimal-dispense.md)
+* [medicationdispense-example-1 (MedicationDispense)](MedicationDispense-medicationdispense-example-1.md)
+* [medicationdispense-example-2 (MedicationDispense)](MedicationDispense-medicationdispense-example-2.md)
+* [apotheek-onder-de-toren (Organization)](Organization-apotheek-onder-de-toren.md)

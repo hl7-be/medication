@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MedicationRequest xmlns="http://hl7.org/fhir">
+  <id value="example-02-hukyndra"/>
+  <meta>
+    <profile value="https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationPrescription"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: MedicationRequest example-02-hukyndra</b></p><a name="example-02-hukyndra"> </a><a name="hcexample-02-hukyndra"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-BeMedicationPrescription.html">BeMedicationPrescription</a></p></div><p><b>identifier</b>: <code>http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-prescription</code>/BEP1HUKYN002, <code>urn:be:swh:ns-identifier</code>/SWH-RX-2025-002</p><p><b>status</b>: Active</p><p><b>intent</b>: Order</p><p><b>priority</b>: Routine</p><p><b>medication</b>: <span title="Codes:{urn:be:samv2:amppackage 594755-01}">Hukyndra 40 mg inf. opl. s.c. voorgev. spuit 6 x 0.4 ml</span></p><p><b>subject</b>: Identifier: <a href="https://www.ehealth.fgov.be/standards/fhir/core/2.1.2/NamingSystem-be-ssin.html" title="NISS/INSZ">BeSSINNamingSystem</a>/urn:be:fgov:ehealth:pseudo:v2:BAEeFgg-BNMHWl1EQ3T8Ox4unll26hx_3EnYGQ6i3qfQyOChof_TWFgR8RBGSN6sqpe_I7UBGgy-Btb1use9uA42RQEyw105JK9PFPzTMUbIm_tXNRszA5IGtrpW47a9g9y9b0grudGfutTfVpipAPR0h0Br9TZ1GfSCDcFKkNGVumZzwg:eyJhdWQiOiJ1aG1lcF92MSIsImVuYyI6IkEyNTZHQ00iLCJleHAiOjE3NzMyMzg0NzAsImlhdCI6MTc3MzE1MjA3MCwiYWxnIjoiZGlyIiwia2lkIjoiYWMwNWIzMjktMzhhOS00NTE0LThlMGMtMjI0NTcyOTI4ZWI5In0..O06ctnwl5suSzwgy.Q0qq4ydRxYUQpjixPggakcNiEIbdv-hZqmp5nY_Xh058EO_qeAUZGcwfxtAzdRHC2zcGR3E1AznVvwVORU6xTMF2C088u0FKHiG8p8aA_4A58YTOjX3XeFqclR6_AAhOv-OeQLhCUzjUqrKRQhOg4EedKEmJ0eOce4uPZS0XiZ6QmdA8T6Er.QKUT6gMzTYvf7EAf_Gwwdg</p><p><b>authoredOn</b>: 2025-10-19 00:00:00+0200</p><p><b>requester</b>: <a href="#hcexample-02-hukyndra/practitionerrole-example">PractitionerRole physician</a></p><blockquote><p><b>dosageInstruction</b></p><p><b>sequence</b>: 1</p><p><b>timing</b>: Once</p><h3>DoseAndRates</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Dose[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://terminology.hl7.org/CodeSystem/dose-rate-type ordered}">Ordered</span></td><td>80 mg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg = 'mg')</span></td></tr></table></blockquote><blockquote><p><b>dosageInstruction</b></p><p><b>sequence</b>: 2</p><p><b>timing</b>: Once</p><h3>DoseAndRates</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Dose[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://terminology.hl7.org/CodeSystem/dose-rate-type ordered}">Ordered</span></td><td>40 mg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg = 'mg')</span></td></tr></table></blockquote><blockquote><p><b>dosageInstruction</b></p><p><b>sequence</b>: 3</p><p><b>timing</b>: Once per 2 weeks</p><h3>DoseAndRates</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Dose[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://terminology.hl7.org/CodeSystem/dose-rate-type ordered}">Ordered</span></td><td>40 mg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg = 'mg')</span></td></tr></table></blockquote><h3>DispenseRequests</h3><table class="grid"><tr><td style="display: none">-</td><td><b>ValidityPeriod</b></td></tr><tr><td style="display: none">*</td><td>2025-10-19 00:00:00+0200 --&gt; 2026-01-18 00:00:00+0100</td></tr></table><hr/><blockquote><p class="res-header-id"><b>Generated Narrative: PractitionerRole #practitionerrole-example</b></p><a name="example-02-hukyndra/practitionerrole-example"> </a><a name="hcexample-02-hukyndra/practitionerrole-example"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="https://www.ehealth.fgov.be/standards/fhir/core/2.1.2/StructureDefinition-be-practitionerrole.html">BePractitionerRole</a></p></div><p><b>practitioner</b>: Identifier: <a href="https://www.ehealth.fgov.be/standards/fhir/core/2.1.2/NamingSystem-be-nihdi.html" title="RIZIV/INAMI">BeNIHDINamingSystem</a>/12345678004</p><p><b>code</b>: <span title="Codes:{https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty persphysician}">physician</span></p></blockquote></div>
+  </text>
+  <contained>
+    <PractitionerRole>
+      <id value="practitionerrole-example"/>
+      <meta>
+        <profile value="https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitionerrole"/>
+      </meta>
+      <practitioner>
+        <identifier>
+          <system value="https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi"/>
+          <value value="12345678004"/>
+        </identifier>
+      </practitioner>
+      <code>
+        <coding>
+          <system value="https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty"/>
+          <code value="persphysician"/>
+          <display value="physician"/>
+        </coding>
+      </code>
+    </PractitionerRole>
+  </contained>
+  <identifier>
+    <system value="http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-prescription"/>
+    <value value="BEP1HUKYN002"/>
+  </identifier>
+  <identifier>
+    <system value="urn:be:swh:ns-identifier"/>
+    <value value="SWH-RX-2025-002"/>
+  </identifier>
+  <status value="active"/>
+  <intent value="order"/>
+  <priority value="routine"/>
+  <medicationCodeableConcept>
+    <coding>
+      <system value="urn:be:samv2:amppackage"/>
+      <code value="594755-01"/>
+      <display value="Hukyndra 40 mg inf. opl. s.c. voorgev. spuit 6 x 0.4 ml"/>
+      <userSelected value="true"/>
+    </coding>
+  </medicationCodeableConcept>
+  <subject>
+    <identifier>
+      <system value="https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin"/>
+      <value value="urn:be:fgov:ehealth:pseudo:v2:BAEeFgg-BNMHWl1EQ3T8Ox4unll26hx_3EnYGQ6i3qfQyOChof_TWFgR8RBGSN6sqpe_I7UBGgy-Btb1use9uA42RQEyw105JK9PFPzTMUbIm_tXNRszA5IGtrpW47a9g9y9b0grudGfutTfVpipAPR0h0Br9TZ1GfSCDcFKkNGVumZzwg:eyJhdWQiOiJ1aG1lcF92MSIsImVuYyI6IkEyNTZHQ00iLCJleHAiOjE3NzMyMzg0NzAsImlhdCI6MTc3MzE1MjA3MCwiYWxnIjoiZGlyIiwia2lkIjoiYWMwNWIzMjktMzhhOS00NTE0LThlMGMtMjI0NTcyOTI4ZWI5In0..O06ctnwl5suSzwgy.Q0qq4ydRxYUQpjixPggakcNiEIbdv-hZqmp5nY_Xh058EO_qeAUZGcwfxtAzdRHC2zcGR3E1AznVvwVORU6xTMF2C088u0FKHiG8p8aA_4A58YTOjX3XeFqclR6_AAhOv-OeQLhCUzjUqrKRQhOg4EedKEmJ0eOce4uPZS0XiZ6QmdA8T6Er.QKUT6gMzTYvf7EAf_Gwwdg">
+        <extension url="https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-pseudonymization">
+          <extension url="format">
+            <valueCode value="direct"/>
+          </extension>
+          <extension url="marker">
+            <valueBoolean value="true"/>
+          </extension>
+        </extension>
+      </value>
+    </identifier>
+  </subject>
+  <authoredOn value="2025-10-19T00:00:00+02:00"/>
+  <requester>
+    <reference value="#practitionerrole-example"/>
+  </requester>
+  <dosageInstruction>
+    <sequence value="1"/>
+    <timing>
+      <repeat>
+        <boundsDuration>
+          <value value="1"/>
+          <unit value="week"/>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="wk"/>
+        </boundsDuration>
+      </repeat>
+    </timing>
+    <doseAndRate>
+      <type>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/dose-rate-type"/>
+          <code value="ordered"/>
+          <display value="Ordered"/>
+        </coding>
+      </type>
+      <doseQuantity>
+        <value value="80"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="mg"/>
+      </doseQuantity>
+    </doseAndRate>
+  </dosageInstruction>
+  <dosageInstruction>
+    <sequence value="2"/>
+    <timing>
+      <repeat>
+        <boundsDuration>
+          <value value="1"/>
+          <unit value="week"/>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="wk"/>
+        </boundsDuration>
+      </repeat>
+    </timing>
+    <doseAndRate>
+      <type>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/dose-rate-type"/>
+          <code value="ordered"/>
+          <display value="Ordered"/>
+        </coding>
+      </type>
+      <doseQuantity>
+        <value value="40"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="mg"/>
+      </doseQuantity>
+    </doseAndRate>
+  </dosageInstruction>
+  <dosageInstruction>
+    <sequence value="3"/>
+    <timing>
+      <repeat>
+        <frequency value="1"/>
+        <period value="2"/>
+        <periodUnit value="wk"/>
+      </repeat>
+    </timing>
+    <doseAndRate>
+      <type>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/dose-rate-type"/>
+          <code value="ordered"/>
+          <display value="Ordered"/>
+        </coding>
+      </type>
+      <doseQuantity>
+        <value value="40"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="mg"/>
+      </doseQuantity>
+    </doseAndRate>
+  </dosageInstruction>
+  <dispenseRequest>
+    <validityPeriod>
+      <start value="2025-10-19T00:00:00+02:00"/>
+      <end value="2026-01-18T00:00:00+01:00"/>
+    </validityPeriod>
+  </dispenseRequest>
+</MedicationRequest>

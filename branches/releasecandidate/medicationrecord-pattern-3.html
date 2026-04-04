@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>HL7.FHIR.BE.MEDICATION\Medicationrecord Pattern 3 - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/hl7-be.css" rel="stylesheet"/>
+<!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/ehealth.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+<!--
+  Questionnaire:
+-->
+    <link href="assets/css/lforms.min.css" rel="stylesheet"/>
+
+
+
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"9"}
+    h3,h4,h5,h6{--heading-prefix:"9"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+        <div id="ig-nav">
+          <a id="standards-logo" no-external="true" href="index.html">
+            <img height="50" alt="Welcome on standards website" src="assets/images/standards.svg"/>
+          </a>
+        </div>
+<!--
+        <div id="fhir-nav">
+          <a id="fhir-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+        </div>
+        <div id="ig-search">
+          <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
+-->
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Medication</span><br/>1.0.0 - STU1</p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul
+	xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+	<li>
+		<a href="index.html">IG Home</a>
+	</li>
+	<li>
+		<a href="toc.html">Table of Contents</a>
+	</li>
+	<li class="dropdown">
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Background<b class="caret"></b>
+		</a>
+		<ul class="dropdown-menu">
+			<li>
+				<a href="howto.html">How to use this Publication</a>
+			</li>
+			<li>
+				<a target="_blank" href="http://hl7.org/fhir/R4/index.html">FHIR Spec
+				</a>
+			</li>
+		</ul>
+	</li>
+	<li class="dropdown">
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Functional Description<b class="caret"></b>
+		</a>
+		<ul class="dropdown-menu">
+			<li>
+				<a href="usecases-dispense.html">Use Cases</a>
+			</li>
+			<li>
+				<a href="logical-models.html">Logical Models</a>
+			</li>
+<!--
+			<li>
+				<a target="_blank" href="#">Services &amp; Transactions</a>
+			</li>
+-->
+		</ul>
+
+	</li>
+	<li class="dropdown">
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Detailed Specifications<b class="caret"></b>
+		</a>
+		<ul class="dropdown-menu">
+			<li>
+				<a href="artifacts.html">Artifact Index</a>
+			</li>
+		</ul>
+	</li>
+<!--
+	<li class="dropdown">
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Project-specific
+			<b class="caret"></b>
+		</a>
+		<ul class="dropdown-menu">
+			<li>
+				<a href="#">Core Profiles</a>
+			</li>
+			<li class="divider"></li>
+			<li>
+				<a href="#">DZOP</a>
+			</li>
+            <li>
+				<a href="#">EFRO</a>
+			</li>
+		</ul>
+	</li>
+-->
+	<li class="dropdown">
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Implementation<b class="caret"></b></a>
+		<ul class="dropdown-menu">
+<!--			<li><a target="_blank" href="openapi.html">OpenAPI</a></li>
+			<li><a href="testservers.html">Test Servers</a></li>
+-->
+			<li><a href="downloads.html">Downloads</a></li>
+		</ul>
+	</li>
+</ul>      
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+    
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Medicationrecord Pattern 3</b></li>
+          
+          <span style="float:right;">
+
+            <a href="medicationrecord-pattern-2.html">&lt;prev</a> | 
+
+            <a href="#bottom">bottom</a>
+
+          | <a href="medicationrecord-patterns.html">next&gt;</a>
+
+          </span>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Medication - Local Development build (v1.0.0). See the <a href="https://www.ehealth.fgov.be/standards/fhir/medication/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Medicationrecord Pattern 3</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div>
+<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+</div>
+
+<p>In this use case…….</p>
+
+<div>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="731px" preserveAspectRatio="none" style="width:670px;height:731px;background:#FFFFFF;" version="1.1" viewBox="0 0 670 731" width="670px" zoomAndPan="magnify"><defs><filter height="300%" id="f1ipjba46besjh" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0" /><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0" /><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3" /><feBlend in="SourceGraphic" in2="blurOut3" mode="normal" /></filter></defs><g><text fill="#000000" font-family="sans-serif" font-size="18" lengthAdjust="spacing" textLength="379" x="140" y="28.708">Use Case 3  -  Compile Medication Schema</text><text fill="#000000" font-family="sans-serif" font-size="18" lengthAdjust="spacing" textLength="0" x="335.5" y="49.6611" /><rect fill="#FFFFFF" filter="url(#f1ipjba46besjh)" height="128.6641" style="stroke:#000000;stroke-width:2.0;" width="502.5" x="120" y="180.2031" /><rect fill="#FFFFFF" filter="url(#f1ipjba46besjh)" height="169.6641" style="stroke:#000000;stroke-width:2.0;" width="308.5" x="304" y="354.8672" /><rect fill="#FFFFFF" filter="url(#f1ipjba46besjh)" height="129.6641" style="stroke:#000000;stroke-width:2.0;" width="493" x="17.5" y="570.5313" /><line style="stroke:#A80036;stroke-width:1.0;" x1="33.5" x2="33.5" y1="140.2031" y2="148.2031" /><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:1.0,4.0;" x1="33.5" x2="33.5" y1="148.2031" y2="176.2031" /><line style="stroke:#A80036;stroke-width:1.0;" x1="33.5" x2="33.5" y1="176.2031" y2="322.8672" /><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:1.0,4.0;" x1="33.5" x2="33.5" y1="322.8672" y2="350.8672" /><line style="stroke:#A80036;stroke-width:1.0;" x1="33.5" x2="33.5" y1="350.8672" y2="439.2656" /><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:1.0,4.0;" x1="33.5" x2="33.5" y1="439.2656" y2="467.2656" /><line style="stroke:#A80036;stroke-width:1.0;" x1="33.5" x2="33.5" y1="467.2656" y2="538.5313" /><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:1.0,4.0;" x1="33.5" x2="33.5" y1="538.5313" y2="566.5313" /><line style="stroke:#A80036;stroke-width:1.0;" x1="33.5" x2="33.5" y1="566.5313" y2="724.1953" /><line style="stroke:#A80036;stroke-width:1.0;" x1="188.5" x2="188.5" y1="140.2031" y2="148.2031" /><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:1.0,4.0;" x1="188.5" x2="188.5" y1="148.2031" y2="176.2031" /><line style="stroke:#A80036;stroke-width:1.0;" x1="188.5" x2="188.5" y1="176.2031" y2="322.8672" /><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:1.0,4.0;" x1="188.5" x2="188.5" y1="322.8672" y2="350.8672" /><line style="stroke:#A80036;stroke-width:1.0;" x1="188.5" x2="188.5" y1="350.8672" y2="439.2656" /><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:1.0,4.0;" x1="188.5" x2="188.5" y1="439.2656" y2="467.2656" /><line style="stroke:#A80036;stroke-width:1.0;" x1="188.5" x2="188.5" y1="467.2656" y2="538.5313" /><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:1.0,4.0;" x1="188.5" x2="188.5" y1="538.5313" y2="566.5313" /><line style="stroke:#A80036;stroke-width:1.0;" x1="188.5" x2="188.5" y1="566.5313" y2="724.1953" /><rect fill="#FFFFFF" filter="url(#f1ipjba46besjh)" height="43.2656" style="stroke:#A80036;stroke-width:1.0;" width="10" x="183.5" y="213.3359" /><rect fill="#FFFFFF" filter="url(#f1ipjba46besjh)" height="71.2656" style="stroke:#A80036;stroke-width:1.0;" width="10" x="183.5" y="633.9297" /><line style="stroke:#A80036;stroke-width:1.0;" x1="431.5" x2="431.5" y1="140.2031" y2="148.2031" /><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:1.0,4.0;" x1="431.5" x2="431.5" y1="148.2031" y2="176.2031" /><line style="stroke:#A80036;stroke-width:1.0;" x1="431.5" x2="431.5" y1="176.2031" y2="322.8672" /><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:1.0,4.0;" x1="431.5" x2="431.5" y1="322.8672" y2="350.8672" /><line style="stroke:#A80036;stroke-width:1.0;" x1="431.5" x2="431.5" y1="350.8672" y2="439.2656" /><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:1.0,4.0;" x1="431.5" x2="431.5" y1="439.2656" y2="467.2656" /><line style="stroke:#A80036;stroke-width:1.0;" x1="431.5" x2="431.5" y1="467.2656" y2="538.5313" /><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:1.0,4.0;" x1="431.5" x2="431.5" y1="538.5313" y2="566.5313" /><line style="stroke:#A80036;stroke-width:1.0;" x1="431.5" x2="431.5" y1="566.5313" y2="724.1953" /><rect fill="#FFFFFF" filter="url(#f1ipjba46besjh)" height="44.2656" style="stroke:#A80036;stroke-width:1.0;" width="10" x="426.5" y="243.6016" /><rect fill="#FFFFFF" filter="url(#f1ipjba46besjh)" height="8" style="stroke:#FFFFFF;stroke-width:1.0;" width="10" x="426.5" y="431.2656" /><line style="stroke:#A80036;stroke-width:1.0;" x1="426.5" x2="426.5" y1="431.2656" y2="439.2656" /><line style="stroke:#A80036;stroke-width:1.0;" x1="436.5" x2="436.5" y1="431.2656" y2="439.2656" /><line style="stroke:#A80036;stroke-width:1.0;" x1="426.5" x2="436.5" y1="431.2656" y2="431.2656" /><rect fill="#FFFFFF" filter="url(#f1ipjba46besjh)" height="36.2656" style="stroke:#FFFFFF;stroke-width:1.0;" width="10" x="426.5" y="467.2656" /><line style="stroke:#A80036;stroke-width:1.0;" x1="426.5" x2="426.5" y1="467.2656" y2="503.5313" /><line style="stroke:#A80036;stroke-width:1.0;" x1="436.5" x2="436.5" y1="467.2656" y2="503.5313" /><line style="stroke:#A80036;stroke-width:1.0;" x1="426.5" x2="436.5" y1="503.5313" y2="503.5313" /><rect fill="#FFFFFF" filter="url(#f1ipjba46besjh)" height="29.1328" style="stroke:#A80036;stroke-width:1.0;" width="10" x="426.5" y="663.0625" /><line style="stroke:#A80036;stroke-width:1.0;" x1="606.5" x2="606.5" y1="140.2031" y2="148.2031" /><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:1.0,4.0;" x1="606.5" x2="606.5" y1="148.2031" y2="176.2031" /><line style="stroke:#A80036;stroke-width:1.0;" x1="606.5" x2="606.5" y1="176.2031" y2="322.8672" /><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:1.0,4.0;" x1="606.5" x2="606.5" y1="322.8672" y2="350.8672" /><line style="stroke:#A80036;stroke-width:1.0;" x1="606.5" x2="606.5" y1="350.8672" y2="439.2656" /><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:1.0,4.0;" x1="606.5" x2="606.5" y1="439.2656" y2="467.2656" /><line style="stroke:#A80036;stroke-width:1.0;" x1="606.5" x2="606.5" y1="467.2656" y2="538.5313" /><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:1.0,4.0;" x1="606.5" x2="606.5" y1="538.5313" y2="566.5313" /><line style="stroke:#A80036;stroke-width:1.0;" x1="606.5" x2="606.5" y1="566.5313" y2="724.1953" /><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="22" x="19.5" y="136.9014">GP</text><ellipse cx="33.5" cy="78.4063" fill="#FEFECE" filter="url(#f1ipjba46besjh)" rx="16" ry="16" style="stroke:#A80036;stroke-width:1.5;" /><path d="M33.5,98.4063 C37.5,98.4063 40.5,98.4063 44.5,94.4063 C52.5,94.4063 60.5,102.4063 60.5,110.4063 L60.5,114.4063 C60.5,118.4063 56.5,122.4063 52.5,122.4063 L14.5,122.4063 C10.5,122.4063 6.5,118.4063 6.5,114.4063 L6.5,110.4063 C6.5,102.4063 14.5,94.4063 22.5,94.4063 C26.5,98.4063 29.5,98.4063 33.5,98.4063 " fill="#FEFECE" filter="url(#f1ipjba46besjh)" style="stroke:#A80036;stroke-width:1.5;" /><rect fill="#FEFECE" filter="url(#f1ipjba46besjh)" height="46.5938" style="stroke:#A80036;stroke-width:1.5;" width="101" x="136" y="88.6094" /><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="77" x="148" y="108.6045">Pharmacy</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="58" x="157.5" y="124.9014">System</text><rect fill="#FEFECE" filter="url(#f1ipjba46besjh)" height="46.5938" style="stroke:#A80036;stroke-width:1.5;" width="122" x="368.5" y="88.6094" /><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="98" x="380.5" y="108.6045">Vault / other</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="392.5" y="124.9014" /><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="58" x="402.5" y="124.9014">System</text><rect fill="#FEFECE" filter="url(#f1ipjba46besjh)" height="46.5938" style="stroke:#A80036;stroke-width:1.5;" width="103" x="553" y="88.6094" /><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="45" x="582" y="108.6045">Other</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="564" y="124.9014" /><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="65" x="574" y="124.9014">Sources</text><path d="M120,180.2031 L391,180.2031 L391,187.2031 L381,197.2031 L120,197.2031 L120,180.2031 " fill="#EEEEEE" style="stroke:#000000;stroke-width:1.0;" /><rect fill="none" height="128.6641" style="stroke:#000000;stroke-width:2.0;" width="502.5" x="120" y="180.2031" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="226" x="135" y="193.27">Collect Medication Information</text><polygon fill="#A80036" points="419.5,239.6016,429.5,243.6016,419.5,247.6016,423.5,243.6016" style="stroke:#A80036;stroke-width:1.0;" /><line style="stroke:#A80036;stroke-width:1.0;" x1="193.5" x2="425.5" y1="243.6016" y2="243.6016" /><polygon fill="#A80036" points="447.5,239.6016,437.5,243.6016,447.5,247.6016,443.5,243.6016" style="stroke:#A80036;stroke-width:1.0;" /><line style="stroke:#A80036;stroke-width:1.0;" x1="441.5" x2="605.5" y1="243.6016" y2="243.6016" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="84" x="453.5" y="223.4028">Submit other</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="146" x="453.5" y="238.5356">Medication information</text><line style="stroke:#A80036;stroke-width:1.0;" x1="436.5" x2="478.5" y1="287.8672" y2="287.8672" /><line style="stroke:#A80036;stroke-width:1.0;" x1="478.5" x2="478.5" y1="287.8672" y2="300.8672" /><line style="stroke:#A80036;stroke-width:1.0;" x1="431.5" x2="478.5" y1="300.8672" y2="300.8672" /><polygon fill="#A80036" points="441.5,296.8672,431.5,300.8672,441.5,304.8672,437.5,300.8672" style="stroke:#A80036;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="67" x="443.5" y="267.6685">Aggregate</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="146" x="443.5" y="282.8013">Medication information</text><path d="M304,354.8672 L569,354.8672 L569,361.8672 L559,371.8672 L304,371.8672 L304,354.8672 " fill="#EEEEEE" style="stroke:#000000;stroke-width:1.0;" /><rect fill="none" height="169.6641" style="stroke:#000000;stroke-width:2.0;" width="308.5" x="304" y="354.8672" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="220" x="319" y="367.9341">Compile Medication Summary</text><line style="stroke:#A80036;stroke-width:1.0;" x1="431.5" x2="478.5" y1="418.2656" y2="418.2656" /><line style="stroke:#A80036;stroke-width:1.0;" x1="478.5" x2="478.5" y1="418.2656" y2="431.2656" /><line style="stroke:#A80036;stroke-width:1.0;" x1="437.5" x2="478.5" y1="431.2656" y2="431.2656" /><polygon fill="#A80036" points="447.5,427.2656,437.5,431.2656,447.5,435.2656,443.5,431.2656" style="stroke:#A80036;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="60" x="443.5" y="398.0669">Reconcile</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="146" x="443.5" y="413.1997">Medication Information</text><line style="stroke:#A80036;stroke-width:1.0;" x1="436.5" x2="478.5" y1="503.5313" y2="503.5313" /><line style="stroke:#A80036;stroke-width:1.0;" x1="478.5" x2="478.5" y1="503.5313" y2="516.5313" /><line style="stroke:#A80036;stroke-width:1.0;" x1="431.5" x2="478.5" y1="516.5313" y2="516.5313" /><polygon fill="#A80036" points="441.5,512.5313,431.5,516.5313,441.5,520.5313,437.5,516.5313" style="stroke:#A80036;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="102" x="443.5" y="483.3325">Create / Update</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="136" x="443.5" y="498.4653">Medication Summary</text><path d="M17.5,570.5313 L283.5,570.5313 L283.5,577.5313 L273.5,587.5313 L17.5,587.5313 L17.5,570.5313 " fill="#EEEEEE" style="stroke:#000000;stroke-width:1.0;" /><rect fill="none" height="129.6641" style="stroke:#000000;stroke-width:2.0;" width="493" x="17.5" y="570.5313" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="221" x="32.5" y="583.5981">Request Medication Summary</text><polygon fill="#A80036" points="171.5,629.9297,181.5,633.9297,171.5,637.9297,175.5,633.9297" style="stroke:#A80036;stroke-width:1.0;" /><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="33.5" x2="177.5" y1="633.9297" y2="633.9297" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="111" x="40.5" y="613.731">Request Patient's</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="126" x="40.5" y="628.8638">medication schema</text><polygon fill="#A80036" points="414.5,659.0625,424.5,663.0625,414.5,667.0625,418.5,663.0625" style="stroke:#A80036;stroke-width:1.0;" /><line style="stroke:#A80036;stroke-width:1.0;" x1="193.5" x2="420.5" y1="663.0625" y2="663.0625" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="199" x="200.5" y="657.9966">Query for Medication Summary</text><polygon fill="#A80036" points="204.5,688.1953,194.5,692.1953,204.5,696.1953,200.5,692.1953" style="stroke:#A80036;stroke-width:1.0;" /><line style="stroke:#A80036;stroke-width:1.0;" x1="198.5" x2="425.5" y1="692.1953" y2="692.1953" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="209" x="210.5" y="687.1294">Return Medication Summary</text></g></svg>
+</div>
+
+<p><br />
+<br /></p>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div style="background-color:var(--footer-nav-bg-color)">
+        <table style="width:100%">
+          <tbody>
+            <tr>
+              <td style="text-align:left">&#xA0;
+
+                <a href="medicationrecord-pattern-2.html">&lt;prev</a>
+
+              </td>
+              <td style="text-align:center">
+                <a href="#top">top</a>
+              </td>
+              <td style="text-align:right">&#xA0;
+
+                <a href="medicationrecord-patterns.html">next&gt;</a>
+
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.ehealth.fgov.be/standards/fhir">eHealth Platform</a>.  Package hl7.fhir.be.medication#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, May 6, 2022 14:52+0000">2022-05-06</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)"></span>
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                  | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://github.com/hl7-be/hl7-be-fhir-medication/projects/1">Issues</a>
+
+
+                 <a id="belgium-logo" href="https://www.belgium.be/en" target="_blank">
+                     <img  alt="belgium.be" src="assets/images/logo-be.png">
+                 </a>
+                 <a id="ehealth-logo" href="https://www.ehealth.fgov.be" style="text-decoration:none">
+                     <img height="50" alt="Welcome to ehealth website" src="assets/images/logo-ehealth.png"/>
+                 </a>
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+  
+    
+    <script type="text/javascript">
+     /* <![CDATA[ */
+        $(':header[id]').each(function() { // apply this to each heading
+          var id = $(this).attr('id');
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSfFeLMvb7wmUDGa181obPb04Igny75iqSy2jMSp6Wg40LKWjw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';  // The feedback label is a string
+            
+
+            
+              var parameterFieldId = '';
+              var parameterVariableName = '';
+              var parameterValue = '';
+              parameterFieldId = 'entry.'+parseInt(1353807103).toString(); // the parameter fields is parsed as an integer, i presume this means no code can be injected there.
+              parameterVariableName = 'pageTitle';
+
+              switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to "not supported"
+                default:
+                    console.log("Parameter value not supported");
+                    break;
+                  case "pageTitle":
+                    parameterValue = encodeURIComponent($(document).attr('title'));
+                    break;
+                  case "sectionId":
+                    parameterValue = id;
+                    break;
+                  case "sectionName":
+                    parameterValue = document.getElementById(id).textContent;
+                    break;
+              }
+/* <![CDATA[ */
+              feedbackurl = feedbackurl + '&';
+              feedbackurl = feedbackurl + parameterFieldId + '=' + parameterValue;
+/* ]]> */
+            
+              var parameterFieldId = '';
+              var parameterVariableName = '';
+              var parameterValue = '';
+              parameterFieldId = 'entry.'+parseInt(247644557).toString(); // the parameter fields is parsed as an integer, i presume this means no code can be injected there.
+              parameterVariableName = 'sectionName';
+
+              switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to "not supported"
+                default:
+                    console.log("Parameter value not supported");
+                    break;
+                  case "pageTitle":
+                    parameterValue = encodeURIComponent($(document).attr('title'));
+                    break;
+                  case "sectionId":
+                    parameterValue = id;
+                    break;
+                  case "sectionName":
+                    parameterValue = document.getElementById(id).textContent;
+                    break;
+              }
+/* <![CDATA[ */
+              feedbackurl = feedbackurl + '&';
+              feedbackurl = feedbackurl + parameterFieldId + '=' + parameterValue;
+/* ]]> */
+            
+            
+          if (id) { //To make sure the element has an id
+            $(this).append(function () {
+              return $('<a/>', {
+                id,
+                href: feedbackurl,
+                text: feedbacklabel+' ' ,
+                class: 'feedback',
+                target: '_blank',
+                onclick: 'window.open('+feedbackurl+',\'newwindow\',\'width=300,height=250\');return false;'
+        
+              });
+            });
+          }
+        }) 
+/* ]]> */
+      </script>  
+    
+  
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

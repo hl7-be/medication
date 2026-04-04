@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="medication-type"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem medication-type</b></p><a name="medication-type"> </a><a name="hcmedication-type"> </a><p>This case-insensitive code system <code>https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">magistral<a name="medication-type-magistral"> </a></td><td>Magistral preparation</td></tr><tr><td style="white-space:nowrap">registered-medicinal-product<a name="medication-type-registered-medicinal-product"> </a></td><td>Medicinal Product</td></tr><tr><td style="white-space:nowrap">non-medicinal-product<a name="medication-type-non-medicinal-product"> </a></td><td>Non-medicinal product</td></tr></table></div>
+  </text>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type"/>
+  <version value="1.1.0"/>
+  <name value="BeMedicationType"/>
+  <title value="Medication preparation Type"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-07-13T10:12:54+00:00"/>
+  <publisher value="HL7 Belgium"/>
+  <contact>
+    <name value="HL7 Belgium"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.hl7belgium.org"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="hl7belgium@hl7belgium.org"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Message Structure eHealth"/>
+    <telecom>
+      <system value="email"/>
+      <value value="message-structure@ehealth.fgov.be"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Medication preparation type"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
+      <display value="Belgium"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <count value="3"/>
+  <concept>
+    <code value="magistral"/>
+    <display value="Magistral preparation"/>
+  </concept>
+  <concept>
+    <code value="registered-medicinal-product"/>
+    <display value="Medicinal Product"/>
+  </concept>
+  <concept>
+    <code value="non-medicinal-product"/>
+    <display value="Non-medicinal product"/>
+  </concept>
+</CodeSystem>

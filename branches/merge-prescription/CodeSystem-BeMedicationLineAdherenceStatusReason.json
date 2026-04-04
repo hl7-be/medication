@@ -1,0 +1,130 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "BeMedicationLineAdherenceStatusReason",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem BeMedicationLineAdherenceStatusReason</b></p><a name=\"BeMedicationLineAdherenceStatusReason\"> </a><a name=\"hcBeMedicationLineAdherenceStatusReason\"> </a><p>This case-sensitive code system <code>https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatusReason</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">medprec<a name=\"BeMedicationLineAdherenceStatusReason-medprec\"> </a></td><td>Medical precaution</td></tr><tr><td style=\"white-space:nowrap\">immune<a name=\"BeMedicationLineAdherenceStatusReason-immune\"> </a></td><td>Already immune</td></tr><tr><td style=\"white-space:nowrap\">patobj<a name=\"BeMedicationLineAdherenceStatusReason-patobj\"> </a></td><td>Patient objection</td></tr><tr><td style=\"white-space:nowrap\">ostock<a name=\"BeMedicationLineAdherenceStatusReason-ostock\"> </a></td><td>Out of stock</td></tr><tr><td style=\"white-space:nowrap\">allergy<a name=\"BeMedicationLineAdherenceStatusReason-allergy\"> </a></td><td>Allergy</td></tr><tr><td style=\"white-space:nowrap\">modified<a name=\"BeMedicationLineAdherenceStatusReason-modified\"> </a></td><td>Treatment modified</td></tr><tr><td style=\"white-space:nowrap\">other<a name=\"BeMedicationLineAdherenceStatusReason-other\"> </a></td><td>Other</td></tr></table><p><b>Additional Language Displays</b></p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>French (Belgium) (fr)</b></td><td><b>Nederlands (België) (Dutch (Belgium), nl)</b></td></tr><tr><td>medprec</td><td>Le patient présente actuellement un état médical pour lequel le traitement est contre-indiqué ou pour lequel une précaution est justifiée</td><td>De patiënt heeft momenteel een medische toestand waarvoor de behandeling gecontra-indiceerd is of waarvoor voorzichtigheid geboden is</td></tr><tr><td>immune</td><td>Les tests ont montré que le patient était déjà immunisé contre l’agent ciblé</td><td>Tests hebben aangetoond dat de patiënt al immuun was voor het gerichte agens</td></tr><tr><td>patobj</td><td>Le patient refuse de suivre le traitement</td><td>De patiënt weigert de behandeling te volgen</td></tr><tr><td>ostock</td><td>Le produit n’est pas disponible</td><td>Het product is niet beschikbaar</td></tr><tr><td>allergy</td><td>Le patient est allergique à au moins un des composants du médicament.</td><td>De patiënt is allergisch voor minstens één van de bestanddelen van het geneesmiddel</td></tr><tr><td>modified</td><td>Le traitement a été modifié</td><td>De behandeling werd aangepast</td></tr><tr><td>other</td><td>Autre situation</td><td>Andere situatie</td></tr></table></div>"
+  },
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineAdherenceStatusReason",
+  "version" : "1.1.0",
+  "name" : "BeMedicationLineAdherenceStatusReason",
+  "title" : "Adherence Status Reason",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-07-20T21:36:53+00:00",
+  "publisher" : "HL7 Belgium",
+  "contact" : [{
+    "name" : "HL7 Belgium",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.hl7belgium.org"
+    },
+    {
+      "system" : "email",
+      "value" : "hl7belgium@hl7belgium.org"
+    }]
+  },
+  {
+    "name" : "Message Structure eHealth",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "message-structure@ehealth.fgov.be",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Reasons for non-adherence to a treatment or intervention.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BE",
+      "display" : "Belgium"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 7,
+  "concept" : [{
+    "code" : "medprec",
+    "display" : "Medical precaution",
+    "designation" : [{
+      "language" : "fr-BE",
+      "value" : "Le patient présente actuellement un état médical pour lequel le traitement est contre-indiqué ou pour lequel une précaution est justifiée"
+    },
+    {
+      "language" : "nl-BE",
+      "value" : "De patiënt heeft momenteel een medische toestand waarvoor de behandeling gecontra-indiceerd is of waarvoor voorzichtigheid geboden is"
+    }]
+  },
+  {
+    "code" : "immune",
+    "display" : "Already immune",
+    "designation" : [{
+      "language" : "fr-BE",
+      "value" : "Les tests ont montré que le patient était déjà immunisé contre l’agent ciblé"
+    },
+    {
+      "language" : "nl-BE",
+      "value" : "Tests hebben aangetoond dat de patiënt al immuun was voor het gerichte agens"
+    }]
+  },
+  {
+    "code" : "patobj",
+    "display" : "Patient objection",
+    "designation" : [{
+      "language" : "fr-BE",
+      "value" : "Le patient refuse de suivre le traitement"
+    },
+    {
+      "language" : "nl-BE",
+      "value" : "De patiënt weigert de behandeling te volgen"
+    }]
+  },
+  {
+    "code" : "ostock",
+    "display" : "Out of stock",
+    "designation" : [{
+      "language" : "fr-BE",
+      "value" : "Le produit n’est pas disponible"
+    },
+    {
+      "language" : "nl-BE",
+      "value" : "Het product is niet beschikbaar"
+    }]
+  },
+  {
+    "code" : "allergy",
+    "display" : "Allergy",
+    "designation" : [{
+      "language" : "fr-BE",
+      "value" : "Le patient est allergique à au moins un des composants du médicament."
+    },
+    {
+      "language" : "nl-BE",
+      "value" : "De patiënt is allergisch voor minstens één van de bestanddelen van het geneesmiddel"
+    }]
+  },
+  {
+    "code" : "modified",
+    "display" : "Treatment modified",
+    "designation" : [{
+      "language" : "fr-BE",
+      "value" : "Le traitement a été modifié"
+    },
+    {
+      "language" : "nl-BE",
+      "value" : "De behandeling werd aangepast"
+    }]
+  },
+  {
+    "code" : "other",
+    "display" : "Other",
+    "designation" : [{
+      "language" : "fr-BE",
+      "value" : "Autre situation"
+    },
+    {
+      "language" : "nl-BE",
+      "value" : "Andere situatie"
+    }]
+  }]
+}

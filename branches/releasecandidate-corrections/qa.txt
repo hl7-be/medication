@@ -1,0 +1,98 @@
+﻿BEMedicationIG : Validation Results
+=========================================
+
+err = 1, warn = 26, info = 12
+IG Publisher Version: 1.1.113
+Generated Tue Mar 29 12:12:26 UTC 2022. FHIR version 4.0.1 for hl7.be.fhir.medicationig#0.2.0 (canonical = https://www.hl7belgium.org/fhir)
+ Build Errors : 13 / 0 / 0
+ /github/workspace/fsh-generated/resources/MedicationDispense-example-dispense-communitypharmacy-1med : 0 / 2 / 3
+ /github/workspace/fsh-generated/resources/MedicationDispense-example-dispense-hospital : 0 / 0 / 3
+ /github/workspace/fsh-generated/resources/MedicationDispense-example-minimal-dispense : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/MedicationDispense-medication-dispense-example-2 : 0 / 2 / 6
+ /github/workspace/fsh-generated/resources/NamingSystem-be-ns-cnk-codes : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/NamingSystem-be-ns-prescription-ids : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/NamingSystem-be-ns-product-package-type : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-be-medicationdispense : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-be-model-medication-dispense : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-be-vs-dispenser-types : 0 / 0 / 1
+ /github/workspace/input/be-medication : 0 / 0 / 1
+ /github/workspace/input/examples/MedicationDispense/medication-dispense-example-1 : 0 / 2 / 3
+ /github/workspace/input/resources/StructureDefinition-be-organization : 0 / 5 / 1
+ /github/workspace/input/resources/StructureDefinition-be-patient : 0 / 9 / 1
+ /github/workspace/input/resources/StructureDefinition-be-practitioner : 0 / 5 / 1
+ /github/workspace/input/resources/StructureDefinition-be-practitionerrole : 0 / 1 / 1
+ /github/workspace/input/vocabulary/be-ns-nihdi-organization : 0 / 0 / 1
+ /github/workspace/input/vocabulary/be-ns-nihdi-professional : 0 / 0 / 1
+ /github/workspace/input/vocabulary/cd-hcparty : 0 / 0 / 2
+</table>
+== n/a ==
+ERROR: ?pkp-1?: The reference https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-address could not be resolved
+ERROR: /github/workspace/output/StructureDefinition-be-organization.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 429, column 665: The link 'unknown.html' for "?pkp-2?" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-be-organization.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 513, column 717: The link 'unknown.html' for "?pkp-2?" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-be-organization.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 723, column 665: The link 'unknown.html' for "?pkp-2?" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-be-organization.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 807, column 717: The link 'unknown.html' for "?pkp-2?" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-be-patient.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 444, column 784: The link 'unknown.html' for "?pkp-2?" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-be-patient.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 545, column 802: The link 'unknown.html' for "?pkp-2?" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-be-patient.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 821, column 784: The link 'unknown.html' for "?pkp-2?" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-be-patient.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 922, column 802: The link 'unknown.html' for "?pkp-2?" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-be-practitioner.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 418, column 1310: The link 'unknown.html' for "?pkp-2?" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-be-practitioner.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 481, column 727: The link 'unknown.html' for "?pkp-2?" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-be-practitioner.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 659, column 1310: The link 'unknown.html' for "?pkp-2?" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-be-practitioner.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 722, column 727: The link 'unknown.html' for "?pkp-2?" cannot be resolved
+== fsh-generated/resources/MedicationDispense-example-dispense-communitypharmacy-1med.json ==
+WARNING: MedicationDispense/example-dispense-communitypharmacy-1med: MedicationDispense.identifier[0].type.coding[0]: A code with no system has no defined meaning. A system should be provided
+INFORMATION: MedicationDispense/example-dispense-communitypharmacy-1med: MedicationDispense.medication.ofType(CodeableConcept).coding[0]: Code System URI 'https://cnk.apb.be/codings/cnk_product_codes' is unknown so the code cannot be validated
+WARNING: MedicationDispense/example-dispense-communitypharmacy-1med: MedicationDispense.context.identifier.type.coding[0]: A code with no system has no defined meaning. A system should be provided
+INFORMATION: MedicationDispense/example-dispense-communitypharmacy-1med: MedicationDispense.quantity: Code System URI 'https://www.gfd-dpp.be/fhir/reference/packaging' is unknown so the code cannot be validated
+== fsh-generated/resources/MedicationDispense-example-dispense-hospital.json ==
+INFORMATION: MedicationDispense/example-dispense-hospital: MedicationDispense.identifier[0].type.coding[0]: Code System URI 'https://www.nexuzhealth.be/fhir/prescription/ambulatory' is unknown so the code cannot be validated
+INFORMATION: MedicationDispense/example-dispense-hospital: MedicationDispense.medication.ofType(CodeableConcept).coding[0]: Code System URI 'https://www.ehealth.fgov.be/standards/fhir/NamingSystem/cnk-codes' is unknown so the code cannot be validated
+== fsh-generated/resources/MedicationDispense-example-minimal-dispense.json ==
+INFORMATION: MedicationDispense/example-minimal-dispense: MedicationDispense.medication.ofType(CodeableConcept).coding[0]: Code System URI 'https://cnk.apb.be/codings/cnk_product_codes' is unknown so the code cannot be validated
+== fsh-generated/resources/MedicationDispense-medication-dispense-example-2.json ==
+INFORMATION: MedicationDispense/medication-dispense-example-2: MedicationDispense.contained[0].ofType(Organization).identifier[0]: This element does not match any known slice defined in the profile https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-organization
+WARNING: MedicationDispense/medication-dispense-example-2: MedicationDispense.identifier[0].type.coding[0]: A code with no system has no defined meaning. A system should be provided
+INFORMATION: MedicationDispense/medication-dispense-example-2: MedicationDispense.medication.ofType(CodeableConcept).coding[0]: Code System URI 'https://cnk.apb.be/codings/cnk_product_codes' is unknown so the code cannot be validated
+WARNING: MedicationDispense/medication-dispense-example-2: MedicationDispense.context.identifier.type.coding[0]: A code with no system has no defined meaning. A system should be provided
+INFORMATION: MedicationDispense/medication-dispense-example-2: MedicationDispense.quantity: Code System URI 'https://www.gfd-dpp.be/fhir/reference/packaging' is unknown so the code cannot be validated
+== fsh-generated/resources/NamingSystem-be-ns-cnk-codes.json ==
+== fsh-generated/resources/NamingSystem-be-ns-prescription-ids.json ==
+== fsh-generated/resources/NamingSystem-be-ns-product-package-type.json ==
+== fsh-generated/resources/StructureDefinition-be-medicationdispense.json ==
+INFORMATION: StructureDefinition/be-medicationdispense: StructureDefinition.snapshot.element[85].mapping[0].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+== fsh-generated/resources/StructureDefinition-be-model-medication-dispense.json ==
+== fsh-generated/resources/ValueSet-be-vs-dispenser-types.json ==
+== input/be-medication.xml ==
+== input/examples/MedicationDispense/medication-dispense-example-1.json ==
+WARNING: MedicationDispense/medication-dispense-example-1: MedicationDispense.identifier[0].type.coding[0]: A code with no system has no defined meaning. A system should be provided
+INFORMATION: MedicationDispense/medication-dispense-example-1: MedicationDispense.medication.ofType(CodeableConcept).coding[0]: Code System URI 'https://cnk.apb.be/codings/cnk_product_codes' is unknown so the code cannot be validated
+WARNING: MedicationDispense/medication-dispense-example-1: MedicationDispense.context.identifier.type.coding[0]: A code with no system has no defined meaning. A system should be provided
+INFORMATION: MedicationDispense/medication-dispense-example-1: MedicationDispense.quantity: Code System URI 'https://www.gfd-dpp.be/fhir/reference/packaging' is unknown so the code cannot be validated
+== input/resources/StructureDefinition-be-organization.json ==
+WARNING: https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-organization#Organization.address: The type of profile https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-address cannot be checked as the profile is not known
+WARNING: StructureDefinition/be-organization: StructureDefinition.differential.element.where(path = 'Organization.address'): The type of profile https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-address cannot be checked as the profile is not known
+WARNING: StructureDefinition/be-organization: StructureDefinition.differential.element[20].type[0].profile[0]: Unable to resolve profile https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-address
+WARNING: StructureDefinition/be-organization: StructureDefinition.snapshot.element[63].type[0].profile[0]: Unable to resolve profile https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-address
+WARNING: StructureDefinition.where(url = 'https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-organization'): The Implementation Guide contains no examples for this profile
+== input/resources/StructureDefinition-be-patient.json ==
+WARNING: https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient#Patient.address: The type of profile https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-address cannot be checked as the profile is not known
+WARNING: StructureDefinition/be-patient: StructureDefinition.differential.element.where(path = 'Patient.address'): The type of profile https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-address cannot be checked as the profile is not known
+WARNING: StructureDefinition/be-patient: StructureDefinition.differential.element[21].type[0].profile[0]: Unable to resolve profile https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-address
+WARNING: StructureDefinition/be-patient: StructureDefinition.differential.element[22].binding: The valueSet reference https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-civilstate on element Patient.maritalStatus could not be resolved
+WARNING: StructureDefinition/be-patient: StructureDefinition.differential.element[25].binding: The valueSet reference https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-contactperson on element Patient.contact.relationship could not be resolved
+WARNING: StructureDefinition/be-patient: StructureDefinition.snapshot.element[53].type[0].profile[0]: Unable to resolve profile https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-address
+WARNING: StructureDefinition/be-patient: StructureDefinition.snapshot.element[54].binding: The valueSet reference https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-civilstate on element Patient.maritalStatus could not be resolved
+WARNING: StructureDefinition/be-patient: StructureDefinition.snapshot.element[61].binding: The valueSet reference https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-contactperson on element Patient.contact.relationship could not be resolved
+WARNING: StructureDefinition.where(url = 'https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient'): The Implementation Guide contains no examples for this profile
+== input/resources/StructureDefinition-be-practitioner.json ==
+WARNING: https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner#Practitioner.address: The type of profile https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-address cannot be checked as the profile is not known
+WARNING: StructureDefinition/be-practitioner: StructureDefinition.differential.element.where(path = 'Practitioner.address'): The type of profile https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-address cannot be checked as the profile is not known
+WARNING: StructureDefinition/be-practitioner: StructureDefinition.differential.element[14].type[0].profile[0]: Unable to resolve profile https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-address
+WARNING: StructureDefinition/be-practitioner: StructureDefinition.snapshot.element[40].type[0].profile[0]: Unable to resolve profile https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-address
+WARNING: StructureDefinition.where(url = 'https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner'): The Implementation Guide contains no examples for this profile
+== input/resources/StructureDefinition-be-practitionerrole.json ==
+WARNING: StructureDefinition.where(url = 'https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitionerrole'): The Implementation Guide contains no examples for this profile
+== input/vocabulary/be-ns-nihdi-organization.json ==
+== input/vocabulary/be-ns-nihdi-professional.json ==
+== input/vocabulary/cd-hcparty.json ==
+INFORMATION: CodeSystem/cd-hcparty: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly

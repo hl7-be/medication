@@ -1,0 +1,191 @@
+[
+  {
+    "id" : "be-cs-medication-request-reimbursement-type",
+    "type" : "CodeSystem",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/be-cs-medication-request-reimbursement-type",
+    "version" : "1.1.0",
+    "name" : "MedicationRequestReimbursementType"
+  },
+  {
+    "id" : "medication-line-origin-type",
+    "type" : "CodeSystem",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-line-origin-type",
+    "version" : "1.1.0",
+    "name" : "MedicationLineOrigintype"
+  },
+  {
+    "id" : "medication-type",
+    "type" : "CodeSystem",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/CodeSystem/medication-type",
+    "version" : "1.1.0",
+    "name" : "BeModelMedicationType"
+  },
+  {
+    "id" : "hl7.fhir.be.medication",
+    "type" : "ImplementationGuide",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/ImplementationGuide/hl7.fhir.be.medication",
+    "version" : "1.1.0",
+    "name" : "Medication"
+  },
+  {
+    "id" : "be-ns-cnk-codes",
+    "type" : "NamingSystem",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-cnk-codes",
+    "version" : "1.1.0",
+    "name" : "BeNSCNK"
+  },
+  {
+    "id" : "be-ns-cti-extended-code",
+    "type" : "NamingSystem",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-cti-extended-code",
+    "version" : "1.1.0",
+    "name" : "BeNSCTIExtended"
+  },
+  {
+    "id" : "be-ns-prescription-ids",
+    "type" : "NamingSystem",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-prescription-ids",
+    "version" : "1.1.0",
+    "name" : "BeNSPrescriptions"
+  },
+  {
+    "id" : "be-ns-product-package-type",
+    "type" : "NamingSystem",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-product-package-type",
+    "version" : "1.1.0",
+    "name" : "BeNSProductPackage"
+  },
+  {
+    "id" : "BasedOnMedicationLine",
+    "type" : "StructureDefinition",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BasedOnMedicationLine",
+    "version" : "1.1.0",
+    "name" : "BasedOnMedicationLine"
+  },
+  {
+    "id" : "BeMedicationDispense",
+    "type" : "StructureDefinition",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationDispense",
+    "version" : "1.1.0",
+    "name" : "BeMedicationDispense"
+  },
+  {
+    "id" : "BeMedicationLine",
+    "type" : "StructureDefinition",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationLine",
+    "version" : "1.1.0",
+    "name" : "BeMedicationLine"
+  },
+  {
+    "id" : "BeMedicationPrescription",
+    "type" : "StructureDefinition",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationPrescription",
+    "version" : "1.1.0",
+    "name" : "BeMedicationPrescription"
+  },
+  {
+    "id" : "BeModelDosagingInformation",
+    "type" : "StructureDefinition",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeModelDosagingInformation",
+    "version" : "1.1.0",
+    "name" : "BeModelDosagingInformation"
+  },
+  {
+    "id" : "BeModelMedication",
+    "type" : "StructureDefinition",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeModelMedication",
+    "version" : "1.1.0",
+    "name" : "BeModelMedication"
+  },
+  {
+    "id" : "BeModelMedicationDispense",
+    "type" : "StructureDefinition",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeModelMedicationDispense",
+    "version" : "1.1.0",
+    "name" : "BeModelMedicationDispense"
+  },
+  {
+    "id" : "BeModelMedicationLine",
+    "type" : "StructureDefinition",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeModelMedicationLine",
+    "version" : "1.1.0",
+    "name" : "MedicationLine"
+  },
+  {
+    "id" : "BeModelMedicationPrescription",
+    "type" : "StructureDefinition",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeModelMedicationPrescription",
+    "version" : "1.1.0",
+    "name" : "BeModelMedicationPrescription"
+  },
+  {
+    "id" : "DispenseRequestNeededCategory",
+    "type" : "StructureDefinition",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/DispenseRequestNeededCategory",
+    "version" : "1.1.0",
+    "name" : "DispenseRequestNeededCategory"
+  },
+  {
+    "id" : "ExposureCategory",
+    "type" : "StructureDefinition",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/ExposureCategory",
+    "version" : "1.1.0",
+    "name" : "ExposureCategory"
+  },
+  {
+    "id" : "InstructionsForReimbursement",
+    "type" : "StructureDefinition",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/InstructionsForReimbursement",
+    "version" : "1.1.0",
+    "name" : "InstructionsForReimbursement"
+  },
+  {
+    "id" : "be-dosage",
+    "type" : "StructureDefinition",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-dosage",
+    "version" : "1.1.0",
+    "name" : "BeDosage"
+  },
+  {
+    "id" : "be-ext-OffLabel",
+    "type" : "StructureDefinition",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-ext-OffLabel",
+    "version" : "1.1.0",
+    "name" : "OffLabel"
+  },
+  {
+    "id" : "MedicationRequestReimbursementTypeVS",
+    "type" : "ValueSet",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/MedicationRequestReimbursementTypeVS",
+    "version" : "1.1.0",
+    "name" : "MedicationRequestReimbursementTypeVS"
+  },
+  {
+    "id" : "be-vs-dispenser-types",
+    "type" : "ValueSet",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/be-vs-dispenser-types",
+    "version" : "1.1.0",
+    "name" : "DispenserTypes"
+  },
+  {
+    "id" : "medication-exposure-category-vs",
+    "type" : "ValueSet",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/medication-exposure-category-vs",
+    "version" : "1.1.0",
+    "name" : "MedicationExposureCategoryVS"
+  },
+  {
+    "id" : "medication-line-origin-type-vs",
+    "type" : "ValueSet",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/medication-line-origin-type-vs",
+    "version" : "1.1.0",
+    "name" : "MedicationLineOrigintypeVS"
+  },
+  {
+    "id" : "medication-type-vs",
+    "type" : "ValueSet",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/medication/ValueSet/medication-type-vs",
+    "version" : "1.1.0",
+    "name" : "BeModelMedicationTypeVS"
+  }
+]

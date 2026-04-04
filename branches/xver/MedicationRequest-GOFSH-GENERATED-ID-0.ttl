@@ -1,0 +1,148 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.ehealth.fgov.be/standards/fhir/medication/MedicationRequest/GOFSH-GENERATED-ID-0> a fhir:MedicationRequest ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "GOFSH-GENERATED-ID-0"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationPrescription"^^xsd:anyURI ;
+       fhir:l <https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeMedicationPrescription>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: MedicationRequest GOFSH-GENERATED-ID-0</b></p><a name=\"GOFSH-GENERATED-ID-0\"> </a><a name=\"hcGOFSH-GENERATED-ID-0\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-BeMedicationPrescription.html\">BeMedicationPrescription</a></p></div><blockquote><p><b>MedicationRequest - Off-label use</b></p><ul><li>isOffLabelUse: false</li></ul></blockquote><p><b>identifier</b>: <code>http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-prescription</code>/?ngen-9?</p><p><b>status</b>: Active</p><p><b>intent</b>: Order</p><p><b>priority</b>: Routine</p><p><b>medication</b>: <span title=\"Codes:\">qwer</span></p><p><b>subject</b>: Identifier: <a href=\"https://www.ehealth.fgov.be/standards/fhir/core/2.1.2/NamingSystem-be-ssin.html\" title=\"NISS/INSZ\">BeSSINNamingSystem</a>/urn:be:fgov:ehealth:pseudo:v2:BAEeFgg-BNMHWl1EQ3T8Ox4unll26hx_3EnYGQ6i3qfQyOChof_TWFgR8RBGSN6sqpe_I7UBGgy-Btb1use9uA42RQEyw105JK9PFPzTMUbIm_tXNRszA5IGtrpW47a9g9y9b0grudGfutTfVpipAPR0h0Br9TZ1GfSCDcFKkNGVumZzwg:eyJhdWQiOiJ1aG1lcF92MSIsImVuYyI6IkEyNTZHQ00iLCJleHAiOjE3NzMyMzg0NzAsImlhdCI6MTc3MzE1MjA3MCwiYWxnIjoiZGlyIiwia2lkIjoiYWMwNWIzMjktMzhhOS00NTE0LThlMGMtMjI0NTcyOTI4ZWI5In0..O06ctnwl5suSzwgy.Q0qq4ydRxYUQpjixPggakcNiEIbdv-hZqmp5nY_Xh058EO_qeAUZGcwfxtAzdRHC2zcGR3E1AznVvwVORU6xTMF2C088u0FKHiG8p8aA_4A58YTOjX3XeFqclR6_AAhOv-OeQLhCUzjUqrKRQhOg4EedKEmJ0eOce4uPZS0XiZ6QmdA8T6Er.QKUT6gMzTYvf7EAf_Gwwdg</p><p><b>authoredOn</b>: 2026-03-10 00:00:00+0100</p><p><b>requester</b>: <a href=\"#hcGOFSH-GENERATED-ID-0/1eb84eda-44db-4d69-ad29-633cbf3e8c33\">PractitionerRole persdentist</a></p><h3>DosageInstructions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>AsNeeded[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>false</td></tr></table><h3>DispenseRequests</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>ValidityPeriod</b></td></tr><tr><td style=\"display: none\">*</td><td>2026-03-10 00:00:00+0100 --&gt; 2026-06-09 00:00:00+0200</td></tr></table><h3>Substitutions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Allowed[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>false</td></tr></table><hr/><blockquote><p class=\"res-header-id\"><b>Generated Narrative: PractitionerRole #1eb84eda-44db-4d69-ad29-633cbf3e8c33</b></p><a name=\"GOFSH-GENERATED-ID-0/1eb84eda-44db-4d69-ad29-633cbf3e8c33\"> </a><a name=\"hcGOFSH-GENERATED-ID-0/1eb84eda-44db-4d69-ad29-633cbf3e8c33\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://www.ehealth.fgov.be/standards/fhir/core/2.1.2/StructureDefinition-be-practitionerrole.html\">BePractitionerRole</a></p></div><p><b>practitioner</b>: Identifier: <a href=\"https://www.ehealth.fgov.be/standards/fhir/core/2.1.2/NamingSystem-be-nihdi.html\" title=\"RIZIV/INAMI\">BeNIHDINamingSystem</a>/30021203001</p><p><b>code</b>: <span title=\"Codes:{https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty persdentist}\">persdentist</span></p></blockquote></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:contained ( [
+     a fhir:PractitionerRole ;
+     fhir:id [ fhir:v "1eb84eda-44db-4d69-ad29-633cbf3e8c33" ] ;
+     fhir:meta [
+       fhir:profile ( [
+         fhir:v "https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitionerrole"^^xsd:anyURI ;
+         fhir:l <https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitionerrole>
+       ] )
+     ] ;
+     fhir:practitioner [
+       fhir:identifier [
+         fhir:system [
+           fhir:v "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi"^^xsd:anyURI ;
+           fhir:l <https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi>
+         ] ;
+         fhir:value [ fhir:v "30021203001" ]
+       ]
+     ] ;
+     fhir:code ( [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty"^^xsd:anyURI ;
+           fhir:l <https://www.ehealth.fgov.be/standards/fhir/core/CodeSystem/cd-hcparty>
+         ] ;
+         fhir:code [ fhir:v "persdentist" ] ;
+         fhir:display [ fhir:v "persdentist" ]
+       ] )
+     ] )
+  ] ) ; # 
+  fhir:extension ( [
+     fhir:extension ( [
+       fhir:url [
+         fhir:v "isOffLabelUse"^^xsd:anyURI ;
+         fhir:l fhir:isOffLabelUse
+       ] ;
+       fhir:value [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] ) ;
+     fhir:url [
+       fhir:v "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtOffLabel"^^xsd:anyURI ;
+       fhir:l <https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/BeExtOffLabel>
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:system [
+       fhir:v "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-prescription"^^xsd:anyURI ;
+       fhir:l <http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-prescription>
+     ]
+  ] ) ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:intent [ fhir:v "order"] ; # 
+  fhir:priority [ fhir:v "routine"] ; # 
+  fhir:medication [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:be:samv2:amppackage"^^xsd:anyURI ;
+         fhir:l <urn:be:samv2:amppackage>
+       ] ;
+       fhir:userSelected [ fhir:v false ]
+     ] ) ;
+     fhir:text [ fhir:v "qwer" ]
+  ] ; # 
+  fhir:subject [
+     fhir:identifier [
+       fhir:system [
+         fhir:v "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin"^^xsd:anyURI ;
+         fhir:l <https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin>
+       ] ;
+       fhir:value [
+         fhir:v "urn:be:fgov:ehealth:pseudo:v2:BAEeFgg-BNMHWl1EQ3T8Ox4unll26hx_3EnYGQ6i3qfQyOChof_TWFgR8RBGSN6sqpe_I7UBGgy-Btb1use9uA42RQEyw105JK9PFPzTMUbIm_tXNRszA5IGtrpW47a9g9y9b0grudGfutTfVpipAPR0h0Br9TZ1GfSCDcFKkNGVumZzwg:eyJhdWQiOiJ1aG1lcF92MSIsImVuYyI6IkEyNTZHQ00iLCJleHAiOjE3NzMyMzg0NzAsImlhdCI6MTc3MzE1MjA3MCwiYWxnIjoiZGlyIiwia2lkIjoiYWMwNWIzMjktMzhhOS00NTE0LThlMGMtMjI0NTcyOTI4ZWI5In0..O06ctnwl5suSzwgy.Q0qq4ydRxYUQpjixPggakcNiEIbdv-hZqmp5nY_Xh058EO_qeAUZGcwfxtAzdRHC2zcGR3E1AznVvwVORU6xTMF2C088u0FKHiG8p8aA_4A58YTOjX3XeFqclR6_AAhOv-OeQLhCUzjUqrKRQhOg4EedKEmJ0eOce4uPZS0XiZ6QmdA8T6Er.QKUT6gMzTYvf7EAf_Gwwdg" ;
+         fhir:extension ( [
+           fhir:extension ( [
+             fhir:url [
+               fhir:v "format"^^xsd:anyURI ;
+               fhir:l fhir:format
+             ] ;
+             fhir:value [
+               a fhir:Code ;
+               fhir:v "direct"
+             ]
+           ] [
+             fhir:url [
+               fhir:v "marker"^^xsd:anyURI ;
+               fhir:l fhir:marker
+             ] ;
+             fhir:value [
+               a fhir:Boolean ;
+               fhir:v true
+             ]
+           ] ) ;
+           fhir:url [
+             fhir:v "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-pseudonymization"^^xsd:anyURI ;
+             fhir:l <https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-pseudonymization>
+           ]
+         ] )
+       ]
+     ]
+  ] ; # 
+  fhir:authoredOn [ fhir:v "2026-03-10T00:00:00+01:00"^^xsd:dateTime] ; # 
+  fhir:requester [
+     fhir:l <#1eb84eda-44db-4d69-ad29-633cbf3e8c33> ;
+     fhir:reference [ fhir:v "#1eb84eda-44db-4d69-ad29-633cbf3e8c33" ]
+  ] ; # 
+  fhir:dosageInstruction ( [
+     fhir:asNeeded [
+       a fhir:Boolean ;
+       fhir:v false
+     ]
+  ] ) ; # 
+  fhir:dispenseRequest [
+     fhir:validityPeriod [
+       fhir:start [ fhir:v "2026-03-10T00:00:00+01:00"^^xsd:dateTime ] ;
+       fhir:end [ fhir:v "2026-06-09T00:00:00+02:00"^^xsd:dateTime ]
+     ]
+  ] ; # 
+  fhir:substitution [
+     fhir:allowed [
+       a fhir:Boolean ;
+       fhir:v false
+     ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

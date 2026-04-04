@@ -1,0 +1,134 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.ehealth.fgov.be/standards/fhir/medication/MedicationDispense/example-dispense-hospital> a fhir:MedicationDispense ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "example-dispense-hospital"] ; # 
+  fhir:meta [
+     fhir:versionId [ fhir:v "1" ] ;
+     fhir:profile ( [
+       fhir:v "https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationdispense"^^xsd:anyURI ;
+       fhir:link <https://www.ehealth.fgov.be/standards/fhir/medication/StructureDefinition/be-medicationdispense>
+     ] )
+  ] ; # 
+  fhir:language [ fhir:v "nl-BE"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"nl-BE\" lang=\"nl-BE\"><p class=\"res-header-id\"><b>Generated Narrative: MedicationDispense example-dispense-hospital</b></p><a name=\"example-dispense-hospital\"> </a><a name=\"hcexample-dispense-hospital\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">version: 1; Language: nl-BE</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-be-medicationdispense.html\">BeMedicationDispense</a></p></div><p><b>identifier</b>: dguid/1000321345</p><p><b>status</b>: Completed</p><p><b>medication</b>: <span title=\"Codes:{https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes 2055218}\">2055218</span></p><p><b>subject</b>: Identifier: <a href=\"https://www.ehealth.fgov.be/standards/fhir/core/2.1.2/NamingSystem-be-ssin.html\" title=\"NISS/INSZ\">BeSSINNamingSystem</a>/64110219106</p><h3>Performers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Actor</b></td></tr><tr><td style=\"display: none\">*</td><td>Identifier: <a href=\"https://www.ehealth.fgov.be/standards/fhir/core/2.1.2/NamingSystem-be-ns-nihdi-organization.html\" title=\"Naming System - Nihdi - Organization\">BeNSNIHDIOrganization</a>/123123123</td></tr></table><p><b>authorizingPrescription</b>: Prescription (Identifier: <code>https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/prescription-id</code>/BEP1TSRY1XGE)</p><p><b>quantity</b>: 1 package<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code1 = '1')</span></p><p><b>whenHandedOver</b>: 2020-09-21 13:00:00+0200</p><h3>DosageInstructions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td><td><b>Timing</b></td></tr><tr><td style=\"display: none\">*</td><td>3 x a day</td><td>3 per 1 day</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://www.nexuzhealth.be/fhir/prescription/ambulatory"^^xsd:anyURI ] ;
+         fhir:version [ fhir:v "1" ] ;
+         fhir:code [ fhir:v "dguid" ]
+       ] )
+     ] ;
+     fhir:system [ fhir:v "https://www.gfd-dpp.be/fhir/reference/dguid"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "1000321345" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:medication [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://www.ehealth.fgov.be/standards/fhir/medication/NamingSystem/cnk-codes"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "2055218" ] ;
+       fhir:display [
+         fhir:extension ( [
+           fhir:extension ( [
+             fhir:url [ fhir:v "lang"^^xsd:anyURI ] ;
+             fhir:value [
+               a fhir:code ;
+               fhir:v "nl-BE"
+             ]
+           ] [
+             fhir:url [ fhir:v "content"^^xsd:anyURI ] ;
+             fhir:value [
+               a fhir:string ;
+               fhir:v "Crestor filmomh. tabl. 100x 10mg"
+             ]
+           ] ) ;
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ]
+         ] )
+       ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:identifier [
+       fhir:system [ fhir:v "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "64110219106" ]
+     ]
+  ] ; # 
+  fhir:performer ( [
+     fhir:actor [
+       fhir:identifier [
+         fhir:system [ fhir:v "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/nihdi-organization"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "123123123" ]
+       ]
+     ]
+  ] ) ; # 
+  fhir:authorizingPrescription ( [
+     fhir:identifier [
+       fhir:system [ fhir:v "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/prescription-id"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "BEP1TSRY1XGE" ]
+     ] ;
+     fhir:display [ fhir:v "Prescription" ]
+  ] ) ; # 
+  fhir:quantity [
+     fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+     fhir:unit [ fhir:v "package" ] ;
+     fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "1" ]
+  ] ; # 
+  fhir:whenHandedOver [ fhir:v "2020-09-21T13:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:dosageInstruction ( [
+     fhir:text [
+       fhir:v "3 x a day" ;
+       fhir:extension ( [
+         fhir:extension ( [
+           fhir:url [ fhir:v "lang"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:code ;
+             fhir:v "nl-BE"
+           ]
+         ] [
+           fhir:url [ fhir:v "content"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:string ;
+             fhir:v "3 x per dag"
+           ]
+         ] ) ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "lang"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:code ;
+             fhir:v "fr-BE"
+           ]
+         ] [
+           fhir:url [ fhir:v "content"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:string ;
+             fhir:v "3 x par jour"
+           ]
+         ] ) ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ]
+       ] )
+     ] ;
+     fhir:timing [
+       fhir:repeat [
+         fhir:frequency [ fhir:v "3"^^xsd:positiveInteger ] ;
+         fhir:period [ fhir:v "1"^^xsd:decimal ] ;
+         fhir:periodUnit [ fhir:v "d" ]
+       ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+
