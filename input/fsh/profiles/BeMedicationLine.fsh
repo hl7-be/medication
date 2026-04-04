@@ -32,9 +32,11 @@ Description: "Medication Line profile - contains the overview information for a 
     http://hl7.org/fhir/StructureDefinition/artifact-version named artifact-version 1..1 MS and
     http://hl7.org/fhir/StructureDefinition/artifact-date named artifact-date 0..1 MS and
 
-    http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence.extension[code] named adherenceStatus 1..1 MS
+    http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.adherence named adherence 1..1 MS
 //    BeExtAdherenceStatus named adherenceStatus 1..1 MS
 
+
+* extension[adherence].extension[code] MS
 
 
 * extension[exposure-category] ^short = "Exposure category"
@@ -42,11 +44,11 @@ Description: "Medication Line profile - contains the overview information for a 
 //* extension[visibility-flag] ^short = "Coded preference or assertion about the visibility of the medication line"
 * extension[artifact-version] ^short = "The business version of the medication line - this version changes when the content update is considered clinically relevant"
 * extension[artifact-date] ^short = "The business-relevant recorded date - the date the medication line was created or changed"
-* extension[adherenceStatus] ^short = "Indicates whether the medication is or is not being consumed or administered"
-* extension[adherenceStatus] ^comment = """This is a FHIR R5 element, preadopted as an extension in this FHIR R4 specification. 
+* extension[adherence].extension[code] ^short = "Indicates whether the medication is or is not being consumed or administered"
+* extension[adherence].extension[code] ^comment = """This is a FHIR R5 element, preadopted as an extension in this FHIR R4 specification. 
 For the full definition see here: [http://hl7.org/fhir/R5/medicationstatement-definitions.html#MedicationStatement.adherence](http://hl7.org/fhir/R5/medicationstatement-definitions.html#MedicationStatement.adherence)"""
 
-* extension[adherenceStatus].valueCodeableConcept from BeMedicationLineAdherenceStatusVS
+* extension[adherence].extension[code].valueCodeableConcept from BeMedicationLineAdherenceStatusVS
 
 //* extension[adherenceStatus].valueCodeableConcept from BeMedicationLineAdherenceStatusVS
 * status MS
