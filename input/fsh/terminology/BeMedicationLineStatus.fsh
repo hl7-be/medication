@@ -24,7 +24,7 @@ Description: "Medication Line Adherence Status - ValueSet."
 
 
 ValueSet: BeMedicationLineAdherenceStatusVS
-Title: "BeExtAdherenceStatus"
+Title: "BeExtAdherenceStatus ValueSet"
 Description: "The status of taking the medication."
 * ^url = "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/BeMedicationLineAdherenceStatusVS"
 
