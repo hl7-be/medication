@@ -9,7 +9,7 @@
 
 id: hl7.fhir.be.medication
 canonical: https://www.ehealth.fgov.be/standards/fhir/medication
-url: https://www.ehealth.fgov.be/standards/fhir/medication
+#url: https://www.ehealth.fgov.be/standards/fhir/medication
 name: Medication 
 title: "Medication"
 description: FHIR Medication specifications
@@ -210,8 +210,8 @@ pages:
     title: Dispense - Use cases
   howto.xml:
     title: How to read this specification
-  downloads.xml:
-    title: Downloads
+  #downloads.xml:
+   # title: Downloads
 
 #  examples.xml:
 #    title: Examples Overview
