@@ -24,7 +24,7 @@ Description: "Lasix 50 x 40 mg - Every other day (QOD)"
 * authoredOn = "2025-10-19T00:00:00+02:00"
 * contained = practitionerrole-example
 * requester = Reference(practitionerrole-example)
-* dosageInstruction[+].timing.code.coding[+].system = "http://terminology.hl7.org/CodeSystem/timing-abbreviation"
+* dosageInstruction[+].timing.code.coding[+].system = "http://terminology.hl7.org/CodeSystem/v3-GTSAbbreviation"
 * dosageInstruction[=].timing.code.coding[=].code = #QOD
 * dosageInstruction[=].timing.code.coding[=].display = "QOD"
 * dispenseRequest.validityPeriod.start = "2025-10-19T00:00:00+02:00"
