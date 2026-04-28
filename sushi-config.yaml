@@ -13,7 +13,7 @@ url: https://www.ehealth.fgov.be/standards/fhir/medication
 name: Medication 
 title: "Medication"
 description: FHIR Medication specifications
-status: active
+status: draft
 license: CC0-1.0
 date: 2025-09-26
 version: 1.1.0
@@ -268,7 +268,7 @@ FSHOnly: false
 
 dependencies: 
   hl7.fhir.be.core: 2.1.2
-  hl7.fhir.extensions.r5: 4.0.1
+  hl7.fhir.uv.xver-r5.r4: 0.1.0
 #  hl7.terminology.r4: 6.5.0
 
 parameters:
