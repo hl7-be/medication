@@ -9,14 +9,14 @@
 
 id: hl7.fhir.be.medication
 canonical: https://www.ehealth.fgov.be/standards/fhir/medication
-url: https://www.ehealth.fgov.be/standards/fhir/medication
+#url: https://www.ehealth.fgov.be/standards/fhir/medication
 name: Medication 
 title: "Medication"
 description: FHIR Medication specifications
-status: draft
+status: active
 license: CC0-1.0
-date: 2025-09-26
-version: 1.1.0
+date: 2026-04-24
+version: 1.1.1
 
 # Although fhirVersions is 0..* in the ImplementationGuide resource
 # it can be a single item OR and array here (but so far SUSHI only
@@ -209,8 +209,8 @@ pages:
     title: Dispense - Use cases
   howto.xml:
     title: How to read this specification
-  downloads.xml:
-    title: Downloads
+  #downloads.xml:
+   # title: Downloads
 
 #  examples.xml:
 #    title: Examples Overview
@@ -268,6 +268,7 @@ FSHOnly: false
 dependencies: 
   hl7.fhir.be.core: 2.1.2
   hl7.fhir.uv.xver-r5.r4: 0.1.0
+  hl7.fhir.be.infsec: 1.2.0
 #  hl7.terminology.r4: 6.5.0
 
 parameters:

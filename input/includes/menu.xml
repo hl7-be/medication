@@ -1,5 +1,4 @@
-<ul>
-	xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+<ul class="nav navbar-nav">
 	<li>
 		<a href="index.html">IG Home</a>
 	</li>
@@ -63,13 +62,14 @@
 		</ul>
 	</li>
 -->
-	<li class="dropdown">
+<!--	<li class="dropdown">
 		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Implementation<b class="caret"></b></a>
 		<ul class="dropdown-menu">
-<!--			<li><a target="_blank" href="openapi.html">OpenAPI</a></li>
+			<li><a target="_blank" href="openapi.html">OpenAPI</a></li>
 			<li><a href="testservers.html">Test Servers</a></li>
--->
+
 			<li><a href="downloads.html">Downloads</a></li>
 		</ul>
 	</li>
+	-->
 </ul>      
