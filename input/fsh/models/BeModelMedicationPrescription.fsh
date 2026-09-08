@@ -11,7 +11,8 @@ Characteristics: #can-be-target
 
 * recordedDate 1..1 dateTime "Time of authoring the prescription/draft in the information system"
 
-* basedOnMedicationLine 0..1 Reference (BeModelMedicationLine) "Link to the Medication Line from which this request is based"
+* basedOn 0..* Reference (BeModelPlannedLine) "Link to the Planned Line (declaration of intent) from which this prescription is issued"
+// .basedOn
 
 * patient 1..1 Reference "The person for whom the medication is prescribed/ordered" // "Question: would we want to add basic Patient model?"
 // .subject

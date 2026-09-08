@@ -111,6 +111,7 @@ groups:
     description: Logical data models. The Logical data models are representations of the data needs for the scope of this Implementation Guide. The data models are primarily aligned with key projects, namely VIDIS, but are prepared in coordination with the Belgian community to ensure a common data structure that supports the projects and the implementation data needs.
     resources:
     - StructureDefinition/BeModelMedicationLine
+    - StructureDefinition/BeModelPlannedLine
     - StructureDefinition/BeModelMedicationDispense
     - StructureDefinition/BeModelMedicationPrescription
     - StructureDefinition/BeModelDosagingInformation
@@ -122,6 +123,7 @@ groups:
     resources:
     - StructureDefinition/BeMedicationDispense
     - StructureDefinition/BeMedicationLine
+    - StructureDefinition/BePlannedLine
     - StructureDefinition/BeMedicationPrescription
     - StructureDefinition/BeMedicationDispense
     - StructureDefinition/BeDosage

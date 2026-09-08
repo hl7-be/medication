@@ -52,9 +52,9 @@ For the full definition see here: [http://hl7.org/fhir/R5/medicationstatement-de
 
 //* extension[adherenceStatus].valueCodeableConcept from BeMedicationLineAdherenceStatusVS
 * status MS
-
-* status = #unknown
-* status
+* status ^short = "R4 status of the statement - the registration status of the line is carried by the registrationStatus extension"
+* status ^comment = """The R4 status conflates the record lifecycle with whether the medication is taken. In this profile the record lifecycle is expressed with the `registrationStatus` extension (pre-adopting the R5 `MedicationStatement.status` values `draft`, `recorded`, `entered-in-error`) and whether the medication is taken is expressed with the `adherence` extension.
+The R4 status is therefore not constrained. Suggested correspondence: `recorded` -> `active`, `entered-in-error` -> `entered-in-error`, `draft` -> `unknown` (R4 has no draft state). A line whose treatment period has ended may use `completed`."""
 * extension contains BeExtMedicationLineRegistrationStatus named registrationStatus 1..1 MS
 * extension[registrationStatus] ^short = "The registration status of the medication line - preadopting the values in R5"
 * extension[registrationStatus] ^definition = "The registration status of the medication line, indicating whether it is draft, recorded, or entered-in-error."
