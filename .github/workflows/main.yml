@@ -12,3 +12,4 @@ jobs:
   # This workflow contains a single job called "build"
   call_build: 
     uses: WorldHealthOrganization/smart-base/.github/workflows/ghbuild.yml@v1
+
