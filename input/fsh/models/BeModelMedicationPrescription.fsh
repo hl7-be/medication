@@ -78,7 +78,7 @@ Characteristics: #can-be-target
 
 
 * dispenseRequest 0..1 BackboneElement "Dispense Request or authorization for the prescribed medication"
-  * dispenseInterval 0..1 Duration "Minimum period of time between dispenses"
+  * dispenseInterval 0..1 Duration "Minimum period of time between dispenses" "Minimum period of time between dispenses. Together with quantityPerDispense and the validity period this replaces a number of repeats."
   // .dispenseRequest.dispenseInterval
   * quantityPerDispense 0..1 SimpleQuantity "Amount of medication to supply per dispense"
   // .dispenseRequest.quantity

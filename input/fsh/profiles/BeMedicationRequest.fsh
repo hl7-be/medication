@@ -74,7 +74,10 @@ For the full definition see here: [http://hl7.org/fhir/R5/medicationrequest-defi
 * dispenseRequest.validityPeriod.start 1.. MS
 * dispenseRequest.validityPeriod.end 0.. MS
 * dispenseRequest.quantity MS
-* dispenseRequest.numberOfRepeatsAllowed MS
+* dispenseRequest.dispenseInterval MS
+* dispenseRequest.dispenseInterval ^short = "Minimum period of time between dispenses"
+* dispenseRequest.dispenseInterval ^comment = "The dispense pattern is expressed as a quantity per dispense and a minimum interval between dispenses, together with the validity period. numberOfRepeatsAllowed is not used."
+* dispenseRequest.numberOfRepeatsAllowed ^comment = "Not used in Belgian prescriptions; use dispenseInterval, quantity and validityPeriod instead."
 
 * note MS
 * substitution MS
