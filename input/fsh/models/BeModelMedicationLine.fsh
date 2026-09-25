@@ -27,6 +27,11 @@ Characteristics: #can-be-target
 * status from BeMedicationLineRegistrationStatusVS (required)
   * ^comment = "Whether the line entry stands (recorded) or is withdrawn (entered-in-error). In the FHIR profile this converges with clinicalStatus into MedicationStatement.status: entered-in-error is carried as such, recorded is implied by any of the clinical status codes."
 
+* clinicalStatus 1..1 code "Clinical status of the treatment - active, on-hold, stopped, completed"
+// .status
+* clinicalStatus from BeMedicationLineClinicalStatusVS (required)
+  * ^comment = "The status of the treatment the line describes. In the FHIR profile this is carried directly in MedicationStatement.status. Whether the patient is actually taking the medication is recorded separately in adherence."
+
 
 * adherence 0..1 BackboneElement "Whether the patient is known to be taking the medication"
 // extension[adherence]
