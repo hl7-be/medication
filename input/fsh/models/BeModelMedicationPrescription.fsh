@@ -19,10 +19,10 @@ Characteristics: #can-be-target
 * status 1..1 CodeableConcept "Status of the prescription, this should not be status of treatment"
 * status from BeMedicationPrescriptionStatusVS
 // .status
-* statusReason 0..1 CodeableConcept "Reason for the current status of prescription, for example the reason why the prescription was made invalid"
+* statusReason 0..1 CodeableConcept "Reason for the current status of prescription, for example the reason why the prescription was made invalid, or that it expired"
 // .statusReason
-
-//  The statusReason is NOT binding, and FHIR has already a valueset, so we don'd add it here.
+* statusReason from BeMedicationPrescriptionStatusReasonVS (extensible)
+  * ^comment = "The FHIR medicationrequest-status-reason codes, complemented with Belgian codes; `expired` is the reason for a prescription whose validity period has passed."
 
 
 * statusChanged 0..1 dateTime "Date and time when the status of the prescription was changed"

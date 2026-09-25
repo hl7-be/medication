@@ -46,6 +46,8 @@ For the full definition see here: [http://hl7.org/fhir/R5/medicationrequest-defi
 * status MS
 * status from BeMedicationPrescriptionStatusVS
 * statusReason MS
+* statusReason from BeMedicationPrescriptionStatusReasonVS (extensible)
+* statusReason ^short = "Reason for the current status, e.g. expired, cancelled after a clarification, stopped because of an interaction"
 * priority MS
 * intent MS
 * medication[x] MS
