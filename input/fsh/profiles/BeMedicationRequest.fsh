@@ -80,6 +80,9 @@ For the full definition see here: [http://hl7.org/fhir/R5/medicationrequest-defi
 * substitution MS
 * substitution.allowed[x] MS
 * substitution.allowed[x] only boolean
-//* substitution.reason MS
+* substitution.reason MS
+* substitution.reason ^short = "The main reason why substitution is allowed or not allowed"
+* substitution.reason ^definition = "The main reason for the substitution instruction, coded or as text. When several reasons apply, this is the principal one."
+* substitution.reason ^comment = "The base resource carries an example binding to v3-SubstanceAdminSubstitutionReason. A profile cannot remove a binding; an example binding does not constrain the content, so any code or text may be used. No Belgian value set is imposed."
 
 
