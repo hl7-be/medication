@@ -52,6 +52,8 @@ For the full definition see here: [http://hl7.org/fhir/R5/medicationstatement-de
 
 //* extension[adherenceStatus].valueCodeableConcept from BeMedicationLineAdherenceStatusVS
 * status MS
+* status from BeMedicationLineStatusVS (required)
+* status ^short = "Status of the line - active, on-hold, stopped, completed, or entered-in-error"
 * status ^comment = """The logical model has two elements: `status` (registration: recorded, entered-in-error) and `clinicalStatus` (active, on-hold, stopped, completed). In this profile they converge into this element:
 
 * `active`, `on-hold`, `stopped`, `completed` carry the clinical status and imply a recorded entry;
