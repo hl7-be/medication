@@ -145,7 +145,10 @@ groups:
     resources:
     - ValueSet/be-vs-dispenser-types
     - ValueSet/BeMedicationPrescriptionStatusVS
-#    - ValueSet/BeMedicationLineStatusVS
+    - ValueSet/BeMedicationPrescriptionStatusReasonVS
+    - CodeSystem/BeMedicationPrescriptionStatusReason
+    - ValueSet/BeMedicationLineStatusVS
+    - ValueSet/BeMedicationLineClinicalStatusVS
     - ValueSet/BeMedicationLineAdherenceStatusReasonVS
     - ValueSet/BeMedicationLineAdherenceStatusVS
     - ValueSet/BeMedicationLineOriginTypeVS

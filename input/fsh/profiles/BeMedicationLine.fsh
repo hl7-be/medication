@@ -52,12 +52,14 @@ For the full definition see here: [http://hl7.org/fhir/R5/medicationstatement-de
 
 //* extension[adherenceStatus].valueCodeableConcept from BeMedicationLineAdherenceStatusVS
 * status MS
+* status from BeMedicationLineStatusVS (required)
+* status ^short = "Status of the line - active, on-hold, stopped, completed, or entered-in-error"
+* status ^comment = """The logical model has two elements: `status` (registration: recorded, entered-in-error) and `clinicalStatus` (active, on-hold, stopped, completed). In this profile they converge into this element:
 
-* status = #unknown
-* status
-* extension contains BeExtMedicationLineRegistrationStatus named registrationStatus 1..1 MS
-* extension[registrationStatus] ^short = "The registration status of the medication line - preadopting the values in R5"
-* extension[registrationStatus] ^definition = "The registration status of the medication line, indicating whether it is draft, recorded, or entered-in-error."
+* `active`, `on-hold`, `stopped`, `completed` carry the clinical status and imply a recorded entry;
+* `entered-in-error` carries the registration status; the clinical status is then not conveyed.
+
+Whether the patient is actually taking the medication is recorded separately in the adherence extension; the R4 codes `unknown`, `intended` and `not-taken` are therefore excluded."""
 
 
 * statusReason MS

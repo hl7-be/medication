@@ -22,11 +22,15 @@ Characteristics: #can-be-target
 * patient 1..1 Reference(BePatient) "Patient"
 // .subject
 
-* status 1..1 code "Status of the line entry"
-//.status
-* status
-  * ^binding.description = "`Draft`, `Recorded`, or `Entered in Error`"
-  * ^binding.strength = #preferred
+* status 1..1 code "Registration status of the line entry - recorded, entered-in-error"
+// .status (entered-in-error); recorded is implied by any clinical status code
+* status from BeMedicationLineRegistrationStatusVS (required)
+  * ^comment = "Whether the line entry stands (recorded) or is withdrawn (entered-in-error). In the FHIR profile this converges with clinicalStatus into MedicationStatement.status: entered-in-error is carried as such, recorded is implied by any of the clinical status codes."
+
+* clinicalStatus 1..1 code "Clinical status of the treatment - active, on-hold, stopped, completed"
+// .status
+* clinicalStatus from BeMedicationLineClinicalStatusVS (required)
+  * ^comment = "The status of the treatment the line describes. In the FHIR profile this is carried directly in MedicationStatement.status. Whether the patient is actually taking the medication is recorded separately in adherence."
 
 
 * adherence 0..1 BackboneElement "Whether the patient is known to be taking the medication"

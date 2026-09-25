@@ -19,10 +19,10 @@ Characteristics: #can-be-target
 * status 1..1 CodeableConcept "Status of the prescription, this should not be status of treatment"
 * status from BeMedicationPrescriptionStatusVS
 // .status
-* statusReason 0..1 CodeableConcept "Reason for the current status of prescription, for example the reason why the prescription was made invalid"
+* statusReason 0..1 CodeableConcept "Reason for the current status of prescription, for example the reason why the prescription was made invalid, or that it expired"
 // .statusReason
-
-//  The statusReason is NOT binding, and FHIR has already a valueset, so we don'd add it here.
+* statusReason from BeMedicationPrescriptionStatusReasonVS (extensible)
+  * ^comment = "The FHIR medicationrequest-status-reason codes, complemented with Belgian codes; `expired` is the reason for a prescription whose validity period has passed."
 
 
 * statusChanged 0..1 dateTime "Date and time when the status of the prescription was changed"
@@ -56,7 +56,8 @@ Characteristics: #can-be-target
 * substitution 0..1 BackboneElement "Whether substitution is allowed, and reason"
 // .substitution(.allowed)
   * substitutionAllowed 1..1 boolean "Substitution of the product is allowed."
-//  * substitutionAllowedReason 0..1 CodeableConcept "Coded or Text reason for the no-substitution requirement"
+  * substitutionAllowedReason 0..1 CodeableConcept "The main reason why substitution is allowed or not allowed" "The main reason for the substitution instruction, coded or as text. When several reasons apply, this is the principal one."
+  // .substitution.reason
 
 * instructionForReimbursement 0..1 CodeableConcept "Instructions for reimbursement"
 * instructionForReimbursement from BeMedicationRequestReimbursementTypeVS (extensible)
@@ -77,7 +78,7 @@ Characteristics: #can-be-target
 
 
 * dispenseRequest 0..1 BackboneElement "Dispense Request or authorization for the prescribed medication"
-  * dispenseInterval 0..1 Duration "Minimum period of time between dispenses"
+  * dispenseInterval 0..1 Duration "Minimum period of time between dispenses" "Minimum period of time between dispenses. Together with quantityPerDispense and the validity period this replaces a number of repeats."
   // .dispenseRequest.dispenseInterval
   * quantityPerDispense 0..1 SimpleQuantity "Amount of medication to supply per dispense"
   // .dispenseRequest.quantity
