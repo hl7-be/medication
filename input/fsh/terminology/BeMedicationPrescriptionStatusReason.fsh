@@ -8,8 +8,8 @@ Description: "Belgian codes for the reason of a medication prescription status, 
 * ^url = "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationPrescriptionStatusReason"
 
 * #expired "Expired" "The validity period of the prescription has passed without the prescription being (fully) dispensed."
-* #prescriber-deceased "Prescriber deceased" "The prescriber was deceased at the time the prescription was issued; the prescription is withdrawn (entered in error)."
-* #prescriber-not-licensed "Prescriber not licensed" "The prescriber was not licensed or authorised to practise (e.g. no visa, no registration with the Order, no licence to practise) at the time the prescription was issued; the prescription is withdrawn (entered in error)."
+* #prescriber-deceased "Prescriber deceased" "The prescriber was deceased at the time the prescription was issued."
+* #prescriber-not-authorized "Prescriber not authorized" "The prescriber was not licensed or authorised to practise (e.g. no visa, no registration with the Order, no licence to practise) at the time the prescription was issued."
 
 
 ValueSet: BeMedicationPrescriptionStatusReasonVS
