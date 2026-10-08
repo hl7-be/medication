@@ -51,6 +51,9 @@ For the full definition see here: [http://hl7.org/fhir/R5/medicationrequest-defi
 * priority MS
 * intent MS
 * medication[x] MS
+* medication[x] ^short = "The prescribed product, coded with the Belgian authentic source SAM v2"
+* medication[x] ^binding.strength = #example
+* medication[x] ^binding.description = "The medication is identified with a code from the Belgian authentic source SAM v2 (CTI-extended, CNK, VMP group, or ATC), or by a magistral formula. The FHIR example value set of SNOMED CT medication codes is not used in Belgium."
 * reasonCode MS // only if reason/indication is allowed?
 * reasonReference MS // only if reason/indication is allowed?
 * supportingInformation MS
