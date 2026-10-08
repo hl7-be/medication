@@ -46,9 +46,14 @@ For the full definition see here: [http://hl7.org/fhir/R5/medicationrequest-defi
 * status MS
 * status from BeMedicationPrescriptionStatusVS
 * statusReason MS
+* statusReason from BeMedicationPrescriptionStatusReasonVS (extensible)
+* statusReason ^short = "Reason for the current status, e.g. expired, cancelled after a clarification, stopped because of an interaction"
 * priority MS
 * intent MS
 * medication[x] MS
+* medication[x] ^short = "The prescribed product, coded with the Belgian authentic source SAM v2"
+* medication[x] ^binding.strength = #example
+* medication[x] ^binding.description = "The medication is identified with a code from the Belgian authentic source SAM v2 (CTI-extended, CNK, VMP group, or ATC), or by a magistral formula. The FHIR example value set of SNOMED CT medication codes is not used in Belgium."
 * reasonCode MS // only if reason/indication is allowed?
 * reasonReference MS // only if reason/indication is allowed?
 * supportingInformation MS
@@ -72,12 +77,18 @@ For the full definition see here: [http://hl7.org/fhir/R5/medicationrequest-defi
 * dispenseRequest.validityPeriod.start 1.. MS
 * dispenseRequest.validityPeriod.end 0.. MS
 * dispenseRequest.quantity MS
-* dispenseRequest.numberOfRepeatsAllowed MS
+* dispenseRequest.dispenseInterval MS
+* dispenseRequest.dispenseInterval ^short = "Minimum period of time between dispenses"
+* dispenseRequest.dispenseInterval ^comment = "The dispense pattern is expressed as a quantity per dispense and a minimum interval between dispenses, together with the validity period. numberOfRepeatsAllowed is not used."
+* dispenseRequest.numberOfRepeatsAllowed ^comment = "Not used in Belgian prescriptions; use dispenseInterval, quantity and validityPeriod instead."
 
 * note MS
 * substitution MS
 * substitution.allowed[x] MS
 * substitution.allowed[x] only boolean
-//* substitution.reason MS
+* substitution.reason MS
+* substitution.reason ^short = "The main reason why substitution is allowed or not allowed"
+* substitution.reason ^definition = "The main reason for the substitution instruction, coded or as text. When several reasons apply, this is the principal one."
+* substitution.reason ^comment = "The base resource carries an example binding to v3-SubstanceAdminSubstitutionReason. A profile cannot remove a binding; an example binding does not constrain the content, so any code or text may be used. No Belgian value set is imposed."
 
 
