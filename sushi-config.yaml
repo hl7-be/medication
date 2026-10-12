@@ -147,8 +147,7 @@ groups:
     - ValueSet/BeMedicationPrescriptionStatusVS
     - ValueSet/BeMedicationPrescriptionStatusReasonVS
     - CodeSystem/BeMedicationPrescriptionStatusReason
-    - ValueSet/BeMedicationLineStatusVS
-    - ValueSet/BeMedicationLineClinicalStatusVS
+#    - ValueSet/BeMedicationLineStatusVS
     - ValueSet/BeMedicationLineAdherenceStatusReasonVS
     - ValueSet/BeMedicationLineAdherenceStatusVS
     - ValueSet/BeMedicationLineOriginTypeVS
