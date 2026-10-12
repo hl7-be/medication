@@ -4,7 +4,7 @@ Medication ImplementationGuide
 
 This is a draft publication by the HL7 Belgium Medication work group. 
 
-The continuous Build is published in https://build.hir.org/ig/hl7-be/medication
+The continuous Build is published in https://build.fhir.org/ig/hl7-be/medication
 
 
 
