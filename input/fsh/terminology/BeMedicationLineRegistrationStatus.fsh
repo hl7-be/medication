@@ -6,6 +6,7 @@ Description: "This code system defines the registration statuses for medication 
 * ^caseSensitive = true
 * ^url = "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/BeMedicationLineRegistrationStatus"
 
+* #draft "Draft"
 * #recorded "Recorded"
 * #entered-in-error "Entered in Error"
 
