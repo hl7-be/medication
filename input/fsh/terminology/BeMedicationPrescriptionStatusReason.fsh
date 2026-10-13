@@ -26,3 +26,4 @@ Description: "Reasons for the status of a medication prescription: the Belgian c
 * http://terminology.hl7.org/CodeSystem/medicationrequest-status-reason#preg
 * http://terminology.hl7.org/CodeSystem/medicationrequest-status-reason#sintol
 
+
