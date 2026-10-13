@@ -8,7 +8,7 @@ The continuous Build is published in https://build.hir.org/ig/hl7-be/medication
 
 
 
-This framework is published under a Creative Commons - IGO [license](LICENSE.md).
+This framework is published under a Creative Common license](LICENSE.md).
 
 ## Changes and feedback
 
