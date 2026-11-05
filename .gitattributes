@@ -1,0 +1,15 @@
+# Line endings: store LF in the repository and check out LF everywhere.
+# Text/binary detection is automatic; common binaries are listed explicitly.
+* text=auto eol=lf
+
+*.png binary
+*.jpg binary
+*.gif binary
+*.ico binary
+*.jar binary
+*.zip binary
+*.tgz binary
+*.gz binary
+*.pdf binary
+*.xlsx binary
+*.docx binary
