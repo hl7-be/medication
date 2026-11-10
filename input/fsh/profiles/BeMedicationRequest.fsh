@@ -44,6 +44,7 @@ Description: "Medication Request profile - The common structure for medication r
 For the full definition see here: [http://hl7.org/fhir/R5/medicationrequest-definitions.html#MedicationRequest.statusChanged](http://hl7.org/fhir/R5/medicationrequest-definitions.html#MedicationRequest.statusChanged)"""
 
 * status MS
+* status ^short = "Status of the medication prescription"
 * status from BeMedicationPrescriptionStatusVS
 * statusReason MS
 * statusReason from BeMedicationPrescriptionStatusReasonVS (extensible)
