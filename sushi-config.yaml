@@ -161,6 +161,7 @@ groups:
     - NamingSystem/be-ns-cnk-codes
     - NamingSystem/be-ns-cti-extended-code
     - NamingSystem/be-ns-prescription-ids
+    - NamingSystem/be-ns-medicationline
     - NamingSystem/be-ns-product-package-type
     - CodeSystem/BeMedicationLineRegistrationStatus
     - CodeSystem/BeMedicationLineAdherenceStatus
