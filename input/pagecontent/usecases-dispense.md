@@ -1,4 +1,8 @@
 
+### Scope
+
+A medication dispense is the record of a medication being assigned, reserved or delivered to an identified patient. It does not cover deliveries that are not for a named patient, such as deliveries to a stock, the replenishment of a ward or care-home supply, or returns to a wholesaler. Those are supply processes, handled by other, supply-related FHIR resources and not by this specification. If there is a need for such functionality, please [submit an issue](https://github.com/hl7-be/medication/issues/new).
+
 The following use cases related to the Dispense process are supported with this specification:
 
 ### Registering a dispense
