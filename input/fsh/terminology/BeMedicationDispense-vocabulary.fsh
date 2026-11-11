@@ -37,6 +37,22 @@ Description: "Naming System - Prescription IDs"
 * jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#056
 
 
+Instance: be-ns-medicationline
+InstanceOf: NamingSystem
+Usage: #definition
+Description: "Naming System - Medication line IDs (VIDIS)"
+* status = #active
+* name = "BeNSMedicationLine"
+* date = "2026-11-11"
+* kind = #identifier
+* description = "Naming System - Medication line IDs (VIDIS)"
+* uniqueId[0].type = #uri
+* uniqueId[0].value = "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-medicationline"
+* uniqueId[0].preferred = true
+* uniqueId[0].comment = "The value BeMedicationLine requires (identifier vidis). Pending decision (#373): add the https and www form."
+* jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#056
+
+
 
 
 Instance: be-ns-product-package-type
