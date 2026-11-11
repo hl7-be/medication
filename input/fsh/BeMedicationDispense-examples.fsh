@@ -38,7 +38,7 @@ Description:    "Dispense entry Example - Community Pharmacy dispense, from pres
 
 * authorizingPrescription.display = "Prescription 2014fd"
 * authorizingPrescription.identifier.value = "2d8dab92-5c38-4380-96a9-e461be2014fd"
-* authorizingPrescription.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/prescription-id"
+* authorizingPrescription.identifier.system = "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-prescription"
 * quantity.value = 1
 * quantity.system = "https://www.gfd-dpp.be/fhir/reference/packaging"
 * quantity.code = #package
@@ -165,7 +165,7 @@ Title: "Example Dispense from a hospital pharmacy"
 //* context.identifier = ...
 * authorizingPrescription.display = "Prescription"
 * authorizingPrescription.identifier.value = "BEP1TSRY1XGE"
-* authorizingPrescription.identifier.system = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/prescription-id" //Recip-e ID
+* authorizingPrescription.identifier.system = "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-prescription" //Recip-e ID
 //* type = 
 * quantity.value = 1 
 * quantity.unit = "package"
