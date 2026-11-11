@@ -51,6 +51,11 @@ Description: "Medication request reimbursement type - instructions for reimburse
   * ^designation[=].value = "Trajet de démarrage diabète type 2"
   * ^designation[+].language = #nl-BE
   * ^designation[=].value = "Opstarttraject diabetes type 2"
+* #education-and-self-care-program-type-2-diabetes "\"Education and self-care\" programme for type 2 diabetes"
+  * ^designation[0].language = #fr-BE
+  * ^designation[=].value = "Programme « Éducation et autogestion » pour le diabète de type 2"
+  * ^designation[+].language = #nl-BE
+  * ^designation[=].value = "Programma \"Educatie en zelfzorg\" diabetes type 2"
 
 
 ValueSet: BeMedicationRequestReimbursementTypeVS
