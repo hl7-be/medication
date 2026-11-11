@@ -27,8 +27,13 @@ Description: "Naming System - Prescription IDs"
 * kind = #identifier
 * description = "Naming System - Prescription IDs"
 * uniqueId[0].type = #uri
-* uniqueId[0].value = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/prescription-id"
+* uniqueId[0].value = "http://ehealth.fgov.be/standards/fhir/medication/NamingSystem/be-ns-prescription"
 * uniqueId[0].preferred = true
+* uniqueId[0].comment = "The value BeMedicationPrescription requires (identifier recip-e). Pending decision (#373): add the https and www form."
+* uniqueId[1].type = #uri
+* uniqueId[1].value = "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/prescription-id"
+* uniqueId[1].preferred = false
+* uniqueId[1].comment = "Published preferred uniqueId of this NamingSystem up to medication 1.1.1. Pending decision (#373): keep or remove."
 * jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#056
 
 
